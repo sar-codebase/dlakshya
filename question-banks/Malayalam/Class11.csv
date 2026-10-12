@@ -1,0 +1,101 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Sets,സഞ്ചം A = {1, 2, 3}, B = {3, 4, 5} എങ്കിൽ A union B എന്തായിരിക്കും?,{1, 2, 3},{3},{1, 2, 3, 4, 5},{2, 4},2,Sets Theory
+Mathematics,Complex Numbers,സമ്മിശ്ര സംഖ്യ i^2 ന്റെ വില എത്രയാകുന്നു?,1,-1,0,i,1,Complex Numbers
+Mathematics,Permutations and Combinations,6P2 ന്റെ വില കണക്കാക്കുക.,15,30,12,6,1,Permutations
+Mathematics,Binomial Theorem,(x + y)^4 ന്റെ വിപുലീകരണത്തിൽ ആകെ എത്ര പദങ്ങൾ ഉണ്ടാകും?,3,4,5,6,2,Binomial Theorem
+Mathematics,Sequence and Series,ഒരു സമാന്തര ശ്രേണിയുടെ (AP) ആദ്യ പദം 2 ഉം പൊതുവ്യത്യാസം 3 ഉം ആയാൽ 10-ആം പദം എത്ര?,27,29,31,33,1,Progressions
+Mathematics,Straight Lines,2x - 3y + 5 = 0 എന്ന രേഖയുടെ ചായ്വ് (Slope) എത്ര?,2/3,-2/3,3/2,-3/2,0,Straight Lines
+Mathematics,Limits and Derivatives,lim (x->0) (sin x)/x ന്റെ പരിധി വില എത്രയാണ്?,0,1,-1,അവ്യാഖ്യേയം,1,Limits
+Mathematics,Statistics,തന്നിരിക്കുന്ന വിവരങ്ങളുടെ സ്റ്റാൻഡേർഡ് ഡീവിയേഷൻ (Standard Deviation) കാണുന്നതിനുള്ള സൂത്രവാക്യം ഏത്?,sum(x-mean)^2 / n,sqrt(sum(x-mean)^2 / n),sum(x)/n,മറ്റൊന്ന്,1,Statistics
+Mathematics,Probability,ഒരു നാണയം രണ്ടുതവണ എറിഞ്ഞാൽ കുറഞ്ഞത് ഒരു പൂവ് (Head) ലഭിക്കാനുള്ള സാധ്യത എത്ര?,1/4,1/2,3/4,1,2,Probability
+Mathematics,Trigonometry,sin(2A) ന്റെ സമവാക്യം എന്താണ്?,2sin A cos A,cos^2 A - sin^2 A,2tan A / (1 + tan^2 A),മുകളിൽ പറഞ്ഞതെല്ലാം,3,Trigonometric Formulas
+English,Grammar,'Had I known you were coming, I would have received you.' ഇത് ഏത് തരം Conditional ആണ്?,First Conditional,Second Conditional,Third Conditional (Inverted),Zero Conditional,2,Conditionals
+English,Vocabulary,'Meticulous' എന്ന വാക്കിന്റെ സമാനപദം (Synonym) ഏത്?,Careless,Careful / Thorough (സൂക്ഷ്മമായ),Slow,Dull,1,Synonyms
+English,Grammar,'She insisted ___ going there.' ശരിയായ Preposition തിരഞ്ഞെടുക്കുക.,on,in,at,for,0,Prepositions
+English,Plurals,'Hypothesis' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Hypotheses,Hypothesises,Hypothese,Hypothesiss,0,Plural Forms
+English,Pronouns,'___ of the two plans is acceptable.' ശരിയായ Determiner തിരഞ്ഞെടുക്കുക.,Neither,Every,All,Both,0,Determiners
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Lieutenant,Leutinant,Lietenant,Lieutanent,0,Spelling Accuracy
+English,Tenses,'By the time he arrives, we will have finished our work.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Future Continuous,Future Perfect (ഭാവി പൂർണ്ണ കാലം),Present Perfect,Past Perfect,1,Verb Tenses
+English,Action Verbs,'Strive' എന്ന ക്രിയയുടെ Past Participle (V3) രൂപം ഏത്?,Strived,Striven,Striving,Strives,1,Verb Forms
+English,Question Words,'___ clever the boy is!' ആശ്ചര്യവാചകങ്ങളിൽ ഏത് ചോദ്യപദം ഉപയോഗിക്കണം?,What,How,Which,Whose,1,Exclamatory Sentences
+English,Rhyming Words,'MIND' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Find,Kind,Wind,All of these (എല്ലാം ശരിയാണ്),3,Rhyming Words
+Physics,Units and Measurements,പ്രകാശത്തിന്റെ അപവർത്തനാങ്കത്തിന്റെ (Refractive Index) യൂണിറ്റ് അല്ലെങ്കിൽ അളവ് എന്താണ്?,മീറ്റർ,കിലോഗ്രാം,അളവില്ലാത്തത് (Dimensionless),സെക്കൻഡ്,2,Units and Dimensions
+Physics,Motion in a Straight Line,വേഗത-സമയ ഗ്രാഫിന്റെ (Velocity-Time graph) അടിയിലുള്ള പരപ്പളവ് എന്ത് അളവാണ് സൂചിപ്പിക്കുന്നത്?,ത്വരണം,സ്ഥാനമാറ്റം (Displacement),വേഗത,ബലം,1,Kinematics
+Physics,Laws of Motion,ന്യൂട്ടന്റെ ഏത് ചലന നിയമമാണ് 'ജഡത്വ നിയമം' (Law of Inertia) എന്നറിയപ്പെടുന്നത്?,ഒന്നാം ചലന നിയമം,രണ്ടാം ചലന നിയമം,മൂന്നാം ചലന നിയമം,മറ്റൊന്ന്,0,Laws of Motion
+Physics,Work Energy and Power,ഭൗതികശാസ്ത്രത്തിൽ പ്രവൃത്തി (Work) എന്നത് എന്ത് തരം അളവാണ്?,വെക്ടർ അളവ്,സ്കേലാർ അളവ് (Scalar Quantity),രണ്ടും,ഒന്നുമല്ല,1,Work and Energy
+Physics,System of Particles and Rotational Motion,ഒരു വസ്തുവിന്റെ ജഡത്വ ഭ്രമണം (Moment of Inertia) പ്രധാനമായും എന്തിനെ ആശ്രയിച്ചിരിക്കുന്നു?,বস্তുമാത്രം,അക്ഷത്തിന്റെ സ്ഥാനവും വസ്തുമാത്ര വിതരണവും (Axis and mass distribution),വേഗത മാത്രം,ആരം മാത്രം,1,Rotational Mechanics
+Physics,Gravitation,ഭൂമിയുടെ ഉപരിതലത്തിൽ നിന്ന് മുകളിലേക്ക് പോകുമ്പോൾ ഗുരുത്വീയ ത്വരണത്തിന്റെ (g) മൂല്യം എന്ത് സംഭവിക്കുന്നു?,വർദ്ധിക്കുന്നു,കുറയുന്നു (Decreases),മാറ്റമില്ലാതെ നിൽക്കുന്നു,പൂജ്യമാകുന്നു,1,Gravitation
+Physics,Mechanical Properties of Solids,ഹുക്കിന്റെ നിയമം (Hooke's Law) പ്രധാനമായും എന്തുമായി ബന്ധപ്പെട്ടിരിക്കുന്നു?,താനും വികൃതിയും (Stress and Strain),ഉष्णത,മർദ്ദം,പ്രതതല ബലം,0,Properties of Solids
+Physics,Thermodynamics,താപഗതികശാസ്ത്രത്തിന്റെ ഒന്നാം നിയമം (First Law of Thermodynamics) ഏത് തത്വത്തെ അടിസ്ഥാനമാക്കിയുള്ളതാണ്?,ഊർജ്ജ സംരക്ഷണ നിയമം (Conservation of Energy),വസ്തുമാത്ര സംരക്ഷണ നിയമം,മർദ്ദ നിയമം,താപ പ്രസരണം,0,Thermodynamics
+Physics,Kinetic Theory of Gases,ആദർശ വാതക തന്മാത്രകളുടെ ശരാശരി ഗതികോർജ്ജം പ്രധാനമായും എന്തിന് നേർപ്രമാണത്തിലാണ്?,മർദ്ദം,കേവല താപനില (Absolute Temperature),സാന്ദ്രത,സ്ഥിതി,1,Kinetic Theory
+Physics,Oscillations and Waves,ലഘുലോളകത്തിന്റെ (Simple Pendulum) ആവർത്തന കാലം എന്തിനെ ആശ്രയിച്ചിരിക്കുന്നില്ല?,ലോലകത്തിന്റെ നീളം,ഗുരുത്വാകരണ ത്വരണം,ലോലകത്തിന്റെ പിണ്ഡം / മാസ് (Mass of Bob),മറ്റൊന്ന്,2,Oscillations
+Chemistry,Some Basic Concepts of Chemistry,ഒരു മോൾ പദാർത്ഥത്തിൽ അടങ്ങിയിരിക്കുന്ന കണികകളുടെ എണ്ണം എത്രയാണ്?,അവോഗാഡ്രോ സംഖ്യ 6.022 * 10^23,3.14 * 10^22,1.6 * 10^-19,9.1 * 10^-31,0,Mole Concept
+Chemistry,Structure of Atom,ഹൈഡ്രജൻ വർണ്ണപടത്തിലെ (Hydrogen Spectrum) ബാമർ സീരീസ് (Balmer series) ഏത് മേഖലയിലാണ് കാണപ്പെടുന്നത്?,ദൃശ്യ മേഖല (Visible Region),അൾട്രാ വയലറ്റ്,ഇൻഫ്രാറെഡ്,എക്സ്-റേ,0,Atomic Structure
+Chemistry,Classification of Elements,ആവർത്തന പട്ടികയിൽ ഇടത്തുനിന്ന് വലത്തോട്ടേക്ക് പോകുമ്പോൾ ആറ്റത്തിന്റെ ആരം (Atomic Radius) എങ്ങനെ മാറുന്നു?,വർദ്ധിക്കുന്നു,കുറയുന്നു (Decreases),മാറ്റമില്ല,ആദ്യം കൂടി പിന്നീട് കുറയുന്നു,1,Periodic Table Trends
+Chemistry,Chemical Bonding,ജല തന്മാത്രയിൽ (H2O) കേന്ദ്ര ഓക്സിജൻ അണുവിന്മേൽ എത്ര ലോൺ ജോഡികൾ (Lone pairs) ഉണ്ട്?,0,1,2 (Two lone pairs),3,2,Chemical Bonding VSEPR
+Chemistry,States of Matter,ബോയിൽ നിയമപ്രകാരം (Boyle's Law) സ്ഥിര താപനിലയിൽ വാതകത്തിന്റെ മർദ്ദവും വ്യാപ്തവും തമ്മിലുള്ള ബന്ധം എന്ത്?,വിപരീത അനുപാതം (Inverse proportional),നേർ അനുപാതം,തുല്യം,സ്ഥിരം തുക,0,States of Matter
+Chemistry,Thermodynamics,എന്താൽപി (Enthalpy, H) കണക്കാക്കുന്നതിനുള്ള സമവാക്യം ഏത്?,H = U + PV,H = U - PV,H = P/V,H = PV,0,Thermodynamics
+Chemistry,Equilibrium,രാസസന്തുലിതാവസ്ഥയിൽ (Chemical Equilibrium) താപനിലയുടെ സ്വാധീനം വിശദീകരിക്കുന്ന പ്രധാന നിയമം ഏത്?,ലീ ശാത്ലിയേ തത്വം (Le Chatelier's Principle),ബോയിൽ നിയമം,ചാൾസ് നിയമം,ഹെസ് നിയമം,0,Chemical Equilibrium
+Chemistry,Redox Reactions,ഓക്സിഡേഷൻ (Oxidation) പ്രക്രിയയിൽ സാധാരണയായി എന്ത് സംഭവിക്കുന്നു?,ഇലക്ട്രോൺ നഷ്ടപ്പെടൽ (Loss of electrons),ഇലക്ട്രോൺ ലഭിക്കൽ,പ്രോട്ടാൻ നഷ്ടപ്പെടൽ,ഹൈഡ്രജൻ കൂടൽ,1,Redox Reactions
+Chemistry,Organic Chemistry,IUPAC നാമകരണ സമ്പ്രദായപ്രകാരം CH3-CH2-OH ന്റെ പേര് എന്ത്?,ഇഥനോൾ (Ethanol),മിഥനോൾ,പ്രോപനോൾ,ഇഥേൻ,0,Organic Nomenclature
+Chemistry,Hydrocarbons,ആൽക്കെയ്ൻ (Alkanes) വിഭാഗത്തിന്റെ പൊതുവായ രാസസൂത്രം ഏത്?,CnH2n+2,CnH2n,CnH2n-2,CnHn,0,Hydrocarbons
+Biology,The Living World,സജീവ ലോകത്തിന്റെ വർഗ്ഗീകരണത്തിൽ ഏറ്റവും ഉയർന്ന തലം (Highest Rank) ഏതാണ്?,സ്പീഷിസ്,കിംഗ്ഡം / സൃഷ്ടി (Kingdom),ക്ലാസ്,കുടുംബം,1,Biological Classification
+Biology,Biological Classification,വിറ്റേക്കറുടെ അഞ്ച് സൃഷ്ടി (Five Kingdom) വർഗ്ഗീകരണത്തിൽ ഉൾപ്പെടാത്തത് ഏത്?,വൈറസുകൾ (Viruses),ഫംഗസ്,ബാക്ടീരിയ,സസ്യങ്ങൾ,0,Biological Classification
+Biology,Plant Kingdom,സസ്യലോകത്തിന്റെ ഉഭയചരങ്ങൾ (Amphibians of Plant Kingdom) എന്നറിയപ്പെടുന്ന വിഭാഗം ഏത്?,ബ്രയോഫൈറ്റുകൾ (Bryophytes),ടെറിഡോഫൈറ്റുകൾ,ജിംനോസ്പേമുകൾ,ആൻജിയോസ്പേമുകൾ,0,Plant Kingdom
+Biology,Morphology of Flowering Plants,പുഷ്പങ്ങളിലെ ദളങ്ങൾ ചേർന്ന ഭാഗത്തെ (Corolla) പ്രധാന ഘടകം എന്താണ്?,കേസരം,ദളങ്ങൾ / ഇതളുകൾ (Petals),സ്ത്രീകേസരം,ഞരമ്പുകൾ,1,Plant Morphology
+Biology,Anatomy of Flowering Plants,സസ്യങ്ങളുടെ വേരുകളിലൂടെ ഭക്ഷണവസ്തുക്കൾ സംവഹനം ചെയ്യുന്ന കല ഏത്?,സൈലം,ഫ്ലോയം (Phloem),മൃദूतक,സ്ഥിര കല,1,Plant Anatomy
+Biology,Cell The Unit of Life,സസ്യ-പ്രാണി കോശങ്ങളിലെ റൈബോസോമിന്റെ പ്രധാന ചുമതല എന്ത്?,പ്രോട്ടീൻ നിർമ്മാണം (Protein Synthesis),ഊർജ്ജ ഉത്പാദനം,വിസർജ്ജനം,പ്രകാശസംശ്ലേഷണം,0,Cell Biology
+Biology,Biomolecules,കാർബോഹൈഡ്രേറ്റുകളിൽ പ്രധാനമായും അടങ്ങിയിരിക്കുന്ന മൗലിക ഘടകങ്ങൾ ഏവ?,കാർബൺ, ഹൈഡ്രജൻ, ഓക്സിജൻ (C, H, O),നൈട്രജൻ മാത്രം,ഇരുമ്പ് മാത്രം,ഗന്ധകം,0,Biomolecules
+Biology,Cell Cycle and Cell Division,കോശവിഭജനമായ മൈറ്റോസിസിൽ ക്രോമസോമുകൾ കോശത്തിന്റെ മധ്യഭാഗത്ത് എത്തുന്നത് ഏത് ഘട്ടത്തിലാണ്?,പ്രോഫേസ്,മെറ്റാഫേസ് (Metapase),അനാഫേസ്,ടീലോഫേസ്,1,Cell Division
+Biology,Photosynthesis in Higher Plants,പ്രകാശസംശ്ലേഷണ വേളയിൽ ഓക്സിജൻ വാതകം പുറത്തുവരുന്നത് എന്തിന്റെ വിഘടനം മൂലമാണ്?,കാർബൺ ഡൈഓക്സൈഡ്,ജലത്തിന്റെ പ്രകാശ വിഘടനം (Photolysis of Water),ഗ്ലുക്കോസ്,ക്ലോറോഫിൽ,1,Photosynthesis
+Biology,Respiration in Plants,ഗ്ലുക്കോസിന്റെ ഒരു തന്മാത്ര ഗ്ലൈക്കോളിസിസ് വഴി വിഘടിക്കുമ്പോൾ ഉണ്ടാകുന്ന ശുദ്ധമായ ATP കളുടെ എണ്ണം എത്ര?,1 ATP,2 ATP (Net gain),4 ATP,38 ATP,1,Cellular Respiration
+Mathematics,Sets,സഞ്ചം A ഉം B യും വിവിക്ത സഞ്ചങ്ങൾ (Disjoint Sets) ആയാൽ അവയുടെ ഛേദം (Intersection) എന്തായിരിക്കും?,സഞ്ചം A,സഞ്ചം B,ശൂന്യ സഞ്ചം (Null Set / Empty Set),A union B,2,Sets
+Mathematics,Complex Numbers,3 + 4i എന്ന സമ്മിശ്ര സംഖ്യയുടെ മോഡുലസ് (Modulus) എത്ര?,3,4,5,7,2,Complex Numbers
+Mathematics,Permutations and Combinations,5C2 ന്റെ വില കണക്കാക്കുക.,5,10,20,60,1,Combinations
+Mathematics,Binomial Theorem,(1 + x)^n ന്റെ വിപുലീകരണത്തിൽ മധ്യപദം (Middle term) എപ്പോഴാണ് ഉണ്ടാകുന്നത്?,n ഇരട്ട സംഖ്യയാകുമ്പോൾ,n ഒറ്റ സംഖ്യയാകുമ്പോൾ,എപ്പോഴും,ഒരിക്കലുമില്ല,0,Binomial Theorem
+Mathematics,Sequence and Series,ഒരു ജ്യാമിതീയ ശ്രേണിയുടെ (GP) ആദ്യ പദം 3 ഉം പൊതു അനുപാതം 2 ഉം ആയാൽ നാലാം പദം എത്ര?,12,18,24,48,2,Geometric Progression
+Mathematics,Straight Lines,രണ്ട് സമാന്തര രേഖകളുടെ ചായ്വുകൾ (Slopes) തമ്മിലുള്ള ബന്ധം എന്ത്?,വ്യത്യസ്തമായിരിക്കും,തുല്യമായിരിക്കും (Equal),ലംബമായിരിക്കും,പൂജ്യമായിരിക്കും,1,Straight Lines
+Mathematics,Limits and Derivatives,f(x) = sin x എന്ന ഫങ്ഷന്റെ ഡെറിവേറ്റീവ് (Derivative) എന്ത്?,cos x,-cos x,sin x,-sin x,0,Derivatives
+Mathematics,Statistics,വിചലനങ്ങളുടെ വർഗ്ഗങ്ങളുടെ ശരാശരിയെ അടിസ്ഥാനമാക്കി കണക്കാക്കുന്ന പ്രധാന അളവ് ഏത്?,മധ്യ വ്യചനം,സ്റ്റാൻഡേർഡ് ഡീവിയേഷൻ (Standard Deviation),പ്രസർണം,മുകളിൽ പറഞ്ഞതെല്ലാം,0,Statistics
+Mathematics,Probability,രണ്ട് ഡൈസുകൾ (Dice) എറിയുമ്പോൾ സംഖ്യകളുടെ തുക 7 വരാനുള്ള സാധ്യത എത്ര?,1/6,1/36,1/12,5/36,0,Probability
+Mathematics,Trigonometry,cos(30°) ന്റെ കൃത്യമായ വില എത്ര?,1/2,sqrt(3)/2,1/sqrt(2),1,1,Trigonometric Values
+English,Grammar,'No sooner did I reach the station ___ the train started.' ശരിയായ Conjunction തിരഞ്ഞെടുക്കുക.,than,when,then,before,0,Conjunctions
+English,Vocabulary,'Abundant' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Scarce / Meagre (തുടങ്ങിയത് / അപൂർവ്വമായത്),Plentiful,Ample,Profuse,0,Opposite Words
+English,Grammar,'He speaks as if he ___ everything.' ശരിയായ ക്രിയ തിരഞ്ഞെടുക്കുക.,know,knew (Hypothetical),known,has known,1,Subjunctive Mood
+English,Plurals,'Curriculum' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Curriculums,Curricula,Curricula and Curriculums,Curriculuses,2,Plural Forms
+English,Pronouns,'___ of the students failed the test.' ശരിയായ Determiner തിരഞ്ഞെടുക്കുക.,None,Every,All,Both,0,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Millennium,Milennium,Milenium,Milleniumm,0,Spelling Accuracy
+English,Tenses,'By next week, she will have been working here for 5 years.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Future Perfect Continuous (ഭാവി പൂർണ്ണ തുടർച്ച കാലം),Future Continuous,Present Perfect,Past Perfect,0,Verb Tenses
+English,Action Verbs,'Tear' എന്ന ക്രിയയുടെ Past Participle (V3) രൂപം ഏത്?,Tore,Torn,Tearing,Tears,1,Verb Forms
+English,Question Words,'___ clever she is!' ആശ്ചര്യവാചകങ്ങളിൽ ഏത് പദമാണ് ഉപയോഗിക്കുന്നത്?,What,How,Which,Whose,1,Exclamations
+English,Rhyming Words,'Sight' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Night,Light,Right,All of these (എല്ലാം ശരിയാണ്),3,Rhyming Words
+Physics,Units and Measurements,ലെൻസിന്റെ പവറിന്റെ (Power of Lens) യൂണിറ്റ് എന്താണ്?,മീറ്റർ,ഡയോപ്റ്റർ (Dioptre),വാട്ട്,ജൂൾ,1,Optics Units
+Physics,Motion in a Straight Line,സ്ഥിരാവസ്ഥയിൽ നിന്ന് തുടങ്ങി വേഗത സമയത്തിനനുസരിച്ച് സമമായി വർദ്ധിക്കുന്ന വസ്തുവിന്റെ ത്വരണം എങ്ങനെയുള്ളതാണ്?,പൂജ്യം,ഏകീകൃത ത്വരണം (Uniform acceleration),അസമമായത്,എതിർദിശയിലുള്ളത്,1,Kinematics
+Physics,Laws of Motion,ഘർഷണ ബലം (Friction) എപ്പോഴും ചലനത്തിന് ഏത് ദിശയിലാണ് പ്രവർത്തിക്കുന്നത്?,സെക്കൻഡ് ദിശയിൽ,എതിർദിശയിൽ (Opposite direction),ലംബമായി,ഏത് ദിശയിലും,1,Friction Basics
+Physics,Work Energy and Power,ഒരു വസ്തുവിന്റെ ആക്കം (Momentum) ഇരട്ടിയാക്കിയാൽ അതിന്റെ ഗതികോർജ്ജം (Kinetic Energy) എത്ര മടങ്ങായി മാറും?,രണ്ട് മടങ്ങ്,നാല് മടങ്ങ് (Four times),എട്ട് മടങ്ങ്,മാറ്റമില്ലാതെ,1,Kinetic Energy
+Physics,System of Particles and Rotational Motion,കോണീയ ആക്കത്തിന്റെ (Angular Momentum) സമവാക്യം ഏത്?,I * omega,m * v,F * r,P / t,0,Rotational Mechanics
+Physics,Gravitation,ഭൂമിയെ വലംവെക്കുന്ന ഉപഗ്രഹത്തിന്റെ ആവർത്തന കാലം എന്തിനെ ആശ്രയിച്ചിരിക്കുന്നു?,കക്ഷാ ആരം (Orbital radius),ഉപഗ്രഹത്തിന്റെ പിണ്ഡം,നിറം,ആകൃതി,0,Orbital Mechanics
+Physics,Mechanical Properties of Solids,യങ്സ് മോഡുലസിന്റെ (Young's Modulus) എസ്.ഐ യൂണിറ്റ് (SI Unit) എന്താണ്?,N/m,N/m^2 (Pascal),Joule,Watt,1,Elasticity
+Physics,Thermodynamics,സമതാപിത പ്രക്രിയയിൽ (Isothermal Process) സ്ഥിരമായി നിൽക്കുന്നത് ഏതാണ്?,മർദ്ദം,വ്യാപ്തം,താപനില (Temperature),താപം,2,Thermodynamics
+Physics,Kinetic Theory of Gases,വാതകത്തിന്റെ മർദ്ദം തന്മാത്രകളുടെ എന്തുമായി ബന്ധപ്പെട്ടിരിക്കുന്നു?,തന്മാത്രകളുടെ ഭിത്തിയിലുള്ള ആഘാതം (Molecular Collisions),തന്മാത്രാ ഭാരം,താപനില മാത്രം,മറ്റൊന്ന്,0,Kinetic Theory
+Physics,Oscillations and Waves,ശബ്ദ തരംഗങ്ങൾ എന്ത് തരം തരംഗങ്ങളാണ്?,അനുദൈർഘ്യ തരംഗങ്ങൾ (Longitudinal Waves),അനുപ്രസ്ഥ തരംഗങ്ങൾ,വൈദ്യുത കാന്തിക തരംഗങ്ങൾ,സ്ഥിര തരംഗങ്ങൾ,0,Wave Metrics
+Chemistry,Some Basic Concepts of Chemistry,ലായനിയുടെ സാന്ദ്രത കാണിക്കാൻ ഉപയോഗിക്കുന്ന മോലാരിറ്റിയുടെ (Molarity) നിർവ്വചനം എന്ത്?,ഒരു ലിറ്റർ ലായനിയിലെ ലേയത്തിന്റെ മോലുകളുടെ എണ്ണം (Moles of solute per liter of solution),ഒരു കിലോഗ്രാം ലായനിയിലെ മോലുകൾ,ഗ്രാം per ലിറ്റർ,ശതമാനം,0,Solution Concentration
+Chemistry,Structure of Atom,പ്രധാന ക്വാണ്ടം സംഖ്യ (Principal Quantum Number, n) എന്ത് വിവരിക്കുന്നു?,ഷെല്ലിന്റെ വലിപ്പവും ഊർജ്ജവും (Shell size and energy),കോണീയ ആക്കം,സ്പേഷ്യൽ ഓറിയന്റേഷൻ,സ്പിൻ,0,Quantum Numbers
+Chemistry,Classification of Elements,ആധുനിക ആവർത്തന നിയമം എന്തിനെ അടിസ്ഥാനമാക്കിയുള്ളതാണ്?,ആറ്റോമിക നമ്പറുകൾ / അണുസംഖ്യ (Atomic Number),അണുഭാരം,അണു ആരം,വലൻസ്,0,Periodic Table
+Chemistry,Chemical Bonding,അയണിക് ബോണ്ട് (Ionic Bond) രൂപപ്പെടാൻ പ്രധാന കാരണം എന്ത്?,ഇലക്ട്രോണുകളുടെ കൈമാറ്റം (Transfer of electrons),ഇലക്ട്രോണുകളുടെ പങ്കുവെക്കൽ,ഹൈഡ്രജൻ ബോണ്ട്,ലോഹ ബോണ്ട്,0,Chemical Bonding
+Chemistry,States of Matter,യഥാർത്ഥ വാതകങ്ങൾ ആദർശ വാതക സ്വഭാവത്തിൽ നിന്ന് വ്യതിചലിക്കാൻ പ്രധാന കാരണം എന്ത്?,തന്മാത്രകൾ തമ്മിലുള്ള ആകർഷണ ബലവും വലിപ്പവും (Intermolecular forces),വാതകത്തിന് ഭാരമില്ലാത്തത്,താപനില പൂജ്യമാകുന്നത്,മറ്റൊന്ന്,0,Gaseous State
+Chemistry,Thermodynamics,എൻട്രോപ്പി (Entropy, S) എന്തിന്റെ അളവാണ് സൂചിപ്പിക്കുന്നത്?,ക്രമരഹിത അവസ്ഥയുടെ അളവ് (Randomness / Disorder),ഊർജ്ജ ഉത്പാദനം,മർദ്ദം,താപനില,0,Thermodynamics
+Chemistry,Equilibrium,25 ഡിഗ്രി സെൽഷ്യസിൽ ജലത്തിന്റെ അയണിക് ഗുണഫലം (Kw) എത്രയാണ്?,10^-14,10^-7,10^-10,1,0,Chemical Equilibrium
+Chemistry,Redox Reactions,ഏറ്റവും ശക്തമായ ഓക്സിഡൈസിംഗ് ഏജന്റ് (Strongest Oxidizing Agent) താഴെ പറയുന്നവയിൽ ഏത്?,ഫ്ലൂറിൻ (Fluorine),ക്ലോറിൻ,ബ്രോമിൻ,അയോഡിൻ,0,Redox Reactions
+Chemistry,Organic Chemistry,ഹാലോആൽക്കെനുകളിലും അൽക്കോഹോളുകളിലും കാണപ്പെടുന്ന പ്രധാന ഫങ്ഷണൽ ഗ്രൂപ്പ് ഏത്?,OH,COOH,CHO,CN,0,Organic Functional Groups
+Chemistry,Hydrocarbons,ബെൻസിന്റെ (Benzene, C6H6) രാസപരമായ പ്രധാന പ്രത്യേകത എന്താണ്?,അരോമാറ്റിക് റിംഗ് ഘടന (Aromatic ring structure),നേരെയുള്ള ശൃംഖല,ശാഖകളുള്ള ശൃംഖല,അപൂരിത ആൽക്കെയിൻ,0,Hydrocarbons
+Biology,The Living World,ദ്വിനാമ നാമകരണ സമ്പ്രദായം (Binomial Nomenclature) ആവിഷ്കരിച്ചത് ആര്?,കാർലോസ് ലിനേയസ് (Carolus Linnaeus),ഡാർവിൻ,മെൻഡൽ,ലാമാർക്ക്,0,Taxonomy
+Biology,Biological Classification,വിറ്റേക്കർ സസ്യ-ജന്തു ലോകത്തെ എത്ര സൃഷ്ടികളായി (Kingdoms) തിരിച്ചിരിക്കുന്നു?,3,4,5 (Five Kingdoms),6,2,Biological Classification
+Biology,Plant Kingdom,ആൻജിയോസ്പേം സസ്യങ്ങളിൽ വിത്തുകൾ എവിടെയാണ് രൂപപ്പെടുന്നത്?,പൂവിനുള്ളിലെ അണ്ഡാശയത്തിൽ / ഫലത്തിൽ (Within Fruit / Ovary),ഇലകളിൽ,വേരുകളിൽ,തണ്ടുകളിൽ,0,Plant Reproduction
+Biology,Morphology of Flowering Plants,സസ്യങ്ങളുടെ തണ്ടിൽ ഇലകൾ ക്രമീകരിക്കപ്പെട്ടിരിക്കുന്ന രീതിയെ എന്താണ് വിളിക്കുന്നത്?,ദള വ്യവസ്ഥ,പർണ്ണ വിന്യാസം (Phyllotaxy),പുഷ്പ ഘടന,മൂല ഘടന,1,Plant Morphology
+Biology,Anatomy of Flowering Plants,ദ്വിബീജപത്രിക സസ്യങ്ങളുടെ തണ്ടുകളിൽ രണ്ടാമത്തെ വളർച്ചയ്ക്ക് (Secondary Growth) കാരണമാകുന്ന കല ഏത്?,കാമ്പിയം (Cambium),സൈലം,മൃദूतक,ബാത്ത് വേര്,0,Plant Anatomy
+Biology,Cell The Unit of Life,സസ്യകോശങ്ങളും ജന്തുക്കോശങ്ങളും തമ്മിലുള്ള പ്രധാന വ്യത്യാസം എന്ത്?,സസ്യകോശത്തിലെ കോശഭിത്തി (Cell Wall in Plant cells),കേന്ദ്രകം,റൈബോസോം,മൈറ്റോകോൺട്രിയ,0,Cell Biology
+Biology,Biomolecules,എൻസൈമുകൾ (Enzymes) പ്രധാനമായും എന്തുപയോഗിച്ചാണ് നിർമ്മിക്കപ്പെട്ടിരിക്കുന്നത്?,പ്രോട്ടീനുകൾ (Proteins),കാർബോഹൈഡ്രേറ്റ്,കൊഴുപ്പ്,വിറ്റാമിനുകൾ,0,Biomolecules
+Biology,Cell Cycle and Cell Division,കോശവിഭജന വേളയിൽ ക്രോമസോമുകൾ എതിർ ധ്രൂവങ്ങളിലേക്ക് നീങ്ങുന്നത് ഏത് ഘട്ടത്തിലാണ്?,മെറ്റാഫേസ്,അനാഫേസ് (Anaphase),പ്രോഫേസ്,ടീലോഫേസ്,1,Cell Division
+Biology,Photosynthesis in Higher Plants,C4 സസ്യങ്ങളിൽ കാർബൺ ഡൈഓക്സൈഡ് സ്ഥിരീകരണത്തിന്റെ ആദ്യ ഉൽപ്പന്നം ഏത്?,ഓക്സലോ അസറ്റിക് ആസിഡ് (OAA),ഫോസ്ഫോ ഗ്ലിസറിക് ആസിഡ്,ഗ്ലുക്കോസ്,സ്റ്റാർച്ച്,0,Photosynthesis
+Biology,Respiration in Plants,ക്രെബ്സ് ചക്രം (Krebs Cycle) കോശത്തിൽ എവിടെയാണ് നടക്കുന്നത്?,മൈറ്റോകോൺട്രിയയുടെ മാട്രിക്സ് (Matrix of Mitochondria),സൈറ്റോപ്ലാസം,ക്ലോറോപ്ലാസ്റ്റ്,കേന്ദ്രകം,0,Cellular Respiration
