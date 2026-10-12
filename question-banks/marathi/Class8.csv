@@ -1,0 +1,81 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Rational Numbers,-२/३ आणि ५/६ ची बेरीज किती?,१/६,१/२,-१/६,३/६,0,Rational Operations
+Mathematics,Linear Equations,२x - ३ = ७ तर x ची किंमत किती?,३,४,५,६,2,Linear Equations
+Mathematics,Exponents,२ चा घातांक -२ (2^-2) ची किंमत किती?,४,१/४,-४,-१/४,1,Exponents & Powers
+Mathematics,Geometry,चौकोनाच्या चारही कोनांच्या मापांची बेरीज किती अंश असते?,१८० अंश,२७० अंश,३६० अंश,५४० अंश,2,Quadrilateral Properties
+Mathematics,Mensuration,एका दंडगोलाचे घनफळ (Volume) काढण्याचे सूत्र कोणते?,πr^2h,२πrh,l*b*h,१/३πr^2h,0,Mensuration Formulas
+Mathematics,Square Roots,६२५ चे वर्गमूळ किती?,२५,१५,३५,४५,0,Square Roots
+Mathematics,Algebraic Identities,(a + b)^2 चे विस्तार सूत्र काय?,a^2 - b^2,a^2 + 2ab + b^2,a^2 - 2ab + b^2,a^3 + b^3,1,Algebraic Identities
+Mathematics,Compound Interest,चक्रवाढ व्याजाचे सूत्र काय आहे?,P(1 + R/100)^n,PRT/100,P + I,P(1 - R/100),0,Compound Interest
+Mathematics,Statistics,दिलेल्या सांख्यिकीय वारंवारता वितरणात सर्व प्राप्तांकांची वारंवारता बेरीज काय दर्शवते?,मध्य,एकूण वारंवारता (Total Frequency),परिसर,मध्यक,1,Statistics Basics
+Mathematics,Direct Proportion,जर 5 वस्तूंची किंमत ₹100 आहे, तर अशा 12 वस्तूंची किंमत किती?,₹200,₹220,₹240,₹250,2,Direct Proportion
+English,Grammar,'She wrote a letter.' या वाक्यातील Passive Voice काय होईल?,A letter was written by her.,A letter is written by her.,A letter has been written by her.,She is writing a letter.,0,Active and Passive Voice
+English,Vocabulary,'Confident' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Sure,Diffident / Nervous (आत्मविश्वासाचा अभाव),Bold,Brave,1,Opposite Words
+English,Grammar,'Unless you work hard, you ___ pass.' योग्य Word भरा.,will,will not,would,could,1,Conditional Sentences
+English,Plurals,'Analysis' या शब्दाचे अनेकवचन काय होते?,Analyses,Analysises,Analyzes,Analys,0,Singular Plural
+English,Pronouns,'___ of the students completed the project.' योग्य Determiner भरा.,All,Every,Each,Both,0,Determiners
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Environment,Acheivement,Accomodation,Necessary (आवश्यक),3,Spelling Accuracy
+English,Tenses,'By next month, I will have finished this book.' हा कोणता काळ आहे?,Future Continuous,Future Perfect (भविष्य पूर्ण काळ),Present Perfect,Past Perfect,1,Verb Tenses
+English,Action Verbs,'Drive' या क्रियापदाचे Past Participle (V3) रूप कोणते?,Drove,Driven,Driving,Drives,1,Verb Forms
+English,Question Words,'___ book do you like most?' पसंती विचारण्यासाठी कोणता शब्द वापरतात?,Which,Who,Where,When,0,Wh-Questions
+English,Rhyming Words,'MIND' शी जुळणारा शब्द ओळखा:,Find,Kind,Wind,All of these,3,Rhyming Words
+Science,Crop Production,शेतात पेरणी करताना योग्य अंतरावर बीजे पेरल्यामुळे कशाची फायदा होतो?,हवा व सूर्यप्रकाश पुरेशा प्रमाणात मिळतो,पिकांची नासधूस होते,काहीही फायदा होत नाही,खर्च वाढतो,0,Crop Production
+Science,Microorganisms,दुधाचे दही बनवण्यामागे कोणती जिवाणू (Bacteria) कारणीभूत असतात?,लॅक्टोबॅसिलस (Lactobacillus),रायझोबियम,यीस्ट,अमीबा,0,Microorganisms
+Science,Synthetic Fibers,खालीलपैकी कृत्रिम धागा (Synthetic Fiber) कोणता?,सुती,लोकर,नायलॉन (Nylon),रेशीम,2,Synthetic Fibers
+Science,Metals and Non-metals,खालीलपैकी कोणता धातू सर्वसाधारण तापमानाला द्रव (Liquid) स्थितीत असतो?,लोखंड,तांबे,पारा (Mercury),सोने,2,Metals and Non-metals
+Science,Coal and Petroleum,कोळशाच्या विनाऑक्सिजन भंजक गाळण्याला काय म्हणतात?,भंजन,डिस्टिलेशन,कोळशाचे विनादहन निवळणे (Carbonisation / Destructive Distillation),बाष्पीभवन,2,Fossil Fuels
+Science,Combustion and Flame,ज्वलन क्रियेसाठी (Combustion) कोणता वायू अत्यंत आवश्यक आहे?,ऑक्सिजन (Oxygen),नायट्रोजन,कार्बन डायऑक्साइड,हायड्रोजन,0,Combustion Basics
+Science,Conservation of Plants and Animals,दुर्मिळ व नष्ट होण्याच्या मार्गावर असलेल्या प्राण्यांची नोंद ठेवणाऱ्या पुस्तकाला काय म्हणतात?,ब्लू डेटा बुक,रेड डेटा बुक (Red Data Book),ग्रीन बुक,व्हाइट बुक,1,Biodiversity
+Science,Cell Structure,पेशीमधील 'शक्तीचे घर' (Powerhouse of the Cell) म्हणून कोणाला ओळखले जाते?,कायटोप्लाझम,मायटोकॉन्ड्रिया (Mitochondria),रायबोसोम,केंद्रक,1,Cell Biology
+Science,Reproduction in Animals,फलन क्रियेनंतर तयार झालेल्या युग्मजाला काय म्हणतात?,भ्रूण,झायगोट (Zygote / युग्मज),गर्भ,पेशी,1,Animal Reproduction
+Science,Force and Pressure,एका क्षेत्रफळावर लावले जाणारे लंबरूप बल म्हणजे काय?,दाब (Pressure),वेग,घर्षण,ऊर्जा,0,Physics Pressure
+Social Studies,History,भारतात आधुनिक इतिहासाच्या अभ्यासात कागदपत्रे, पत्रे आणि दस्तऐवजांचे संग्रहण कोठे जपले जाते?,अभिसागार (Archives),ग्रंथालय,संग्रहालय,बँक,0,Historical Sources
+Social Studies,Geography,नैसर्गिक साधनसंपत्तीचे वर्गीकरण प्रामुख्याने कशाच्या आधारे केले जाते?,निसर्ग,उपलब्धता, वितरण व विकास (Availability, Distribution & Development),फक्त किंमत,फक्त रंग,1,Resources Geography
+Social Studies,Civic Sense,भारतीय संविधानानुसार देशातील सर्वोच्च कायदा कोणता मानला जातो?,संसदेचे कायदे,संविधान (Constitution of India),फौजदारी कायदे,दिवाणी कायदे,1,Indian Constitution
+Social Studies,Colonialism,ब्रिटिशांनी भारतात जमीन महसुलाची कोणती पद्धत प्रामुख्याने बंगाल प्रांतात सुरू केली?,रयतवारी,महालगुजार,जमीनदारी / स्थायी बंदोबस्त (Permanent Settlement),म्हातारी,2,Modern History
+Social Studies,Social Reformers,सत्यशोधक समाजाची स्थापना महाराष्ट्रात कोणी केली?,महात्मा ज्योतिराव फुले (Mahatma Phule),डॉ. बाबासाहेब आंबेडकर,राजर्षी शाहू महाराज,लोकमान्य टिळक,0,Social Reformers
+Social Studies,Natural Disasters,भूकंपाची तीव्रता मोजण्यासाठी कोणते एकक किंवा उपकरण वापरले जाते?,सिस्मोग्राफ व रिश्टर स्केल (Richter Scale),बॅरोमीटर,थर्मामीटर,अॅमीटर,0,Disasters Management
+Social Studies,Industry,औद्योगिक क्रांतीची सुरुवात जगामध्ये सर्वप्रथम कोणत्या देशात झाली?,फ्रान्स,इंग्लंड (Britain),जर्मनी,अमेरिका,1,Industrial Revolution
+Social Studies,Human Resources,देशाची खरी संपत्ती कोणाला मानले जाते?,कारखाने,मानवी संसाधन (Human Resource / लोकसंख्या),इमारती,रस्ते,1,Human Resources
+Social Studies,Earth,पृथ्वीच्या अंतर्गत हालचालींमुळे भूरूपे निर्माण होतात, यात प्रामुख्याने कशाचा समावेश होतो?,ज्वालामुखी व भूकंप (Volcanoes and Earthquakes),फक्त वारा,फक्त पाऊस,फक्त पाण्याचे वहन,0,Geomorphology
+Social Studies,Constitution,भारतीय संविधानाच्या सरनाम्यात (Preamble) कशाचा उच्चार केला आहे?,लोकशाही समाजवादी प्रजासत्ताक (Sovereign Socialist Secular Democratic Republic),राजेशाही,हुकूमशाही,साम्राज्यवाद,0,Indian Preamble
+Mathematics,Rational Numbers,-३/५ ची गुणाकार व्यस्त (Reciprocal) संख्या कोणती?,३/५,५/३,-५/३,-३/५,2,Rational Numbers
+Mathematics,Linear Equations,५x + २ = ३x + ८ तर x ची किंमत किती?,१,२,३,४,1,Linear Equations
+Mathematics,Exponents,१० चा घातांक शून्य (10^0) ची किंमत किती?,०,१,१०,१०२४,1,Exponents & Powers
+Mathematics,Geometry,समभुज चौकोनाचे (Rhombus) कर्ण एकमेकांना कसे दुभागतात?,असमान,काटकोनात (At 90 degrees),दुभारत नाहीत,समान लांबीचे असतात,1,Geometry Properties
+Mathematics,Mensuration,एका चौरसाकृती जमिनीचे क्षेत्रफळ १० वर्गमीटर असल्यास तिची परिमिती किती?,४० सेमी,४ वर्गमूळात १० मीटर,अंदाजित बाजूनुसार गणक,गणित अचूक काढा,1,Mensuration
+Mathematics,Square Roots,४०० चे वर्गमूळ किती?,१०,२०,३०,४०,1,Square Roots
+Mathematics,Algebraic Identities,(x + 5)(x + 3) चा विस्तार काय होईल?,x^2 + 8x + 15,x^2 + 15x + 8,x^2 + 5x + 3,x^2 + 2x + 15,0,Algebraic Identities
+Mathematics,Compound Interest,मुद्दल ₹१०००, व्याजाचा दर १०%, काळ २ वर्षे असल्यास सरळ व्याज किती?,₹१००,₹२००,₹३००,₹४००,1,Simple Interest
+Mathematics,Statistics,दिलेल्या वारंवारता वितरणात सर्वात जास्त वेळा आलेला प्राप्तांक काय दर्शवतो?,मध्य,मध्यक,बहूलक (Mode),परिसर,2,Statistics
+Mathematics,Direct Proportion,जर 15 पुस्तकांची वजन 3 किग्रॅ आहे, तर अशा 5 पुस्तकांचे वजन किती?,1 किग्रॅ,1.5 किग्रॅ,2 किग्रॅ,0.5 किग्रॅ,0,Proportions
+English,Grammar,'Open the door.' या वाक्यातील Passive Voice काय होईल?,The door is opened.,Let the door be opened.,Door must be opened.,Opened the door.,1,Passive Voice
+English,Vocabulary,'Ancient' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Modern (आधुनिक),Old,Past,New,0,Opposite Words
+English,Grammar,'Walk carefully lest you ___ fall.' योग्य Modal Verb निवडा.,should,could,might,would,0,Modals
+English,Plurals,'Child' या शब्दाचे अनेकवचन काय होते?,Childs,Children,Childrens,Childes,1,Plural Forms
+English,Pronouns,'___ of the two sisters won the award.' योग्य शब्द भरा.,Either,Every,All,Both,0,Pronouns
+English,Spelling,योग्य स्पेलिंग ओळखा:,Dictionary,Dictionery,Dectionary,Dictionari,0,Spelling Accuracy
+English,Tenses,'He was playing cricket when I saw him.' हा कोणता काळ आहे?,Past Continuous (चालू भूतकाळ),Present Continuous,Future Continuous,Simple Past,0,Verb Tenses
+English,Action Verbs,'Write' या क्रियापदाचे V3 रूप कोणते?,Wrote,Written,Writing,Writes,1,Verb Forms
+English,Question Words,'___ did you meet yesterday?' व्यक्तीबद्दल विचारण्यासाठी काय वापरतात?,What,Where,When,Who,3,Wh-Questions
+English,Rhyming Words,'Night' शी जुळणारा शब्द ओळखा:,Light,Right,Bright,All of these,3,Rhyming Words
+Science,Crop Production,जमिनीत खत मिसळण्याच्या प्रक्रियेला काय म्हणतात?,नांगरणी,पेणी,खत देणे (Manuring),पाणी देणे,2,Crop Management
+Science,Microorganisms,पोलिओ आणि गोवर हे आजार कशामुळे होतात?,जिवाणू (Bacteria),विषाणू (Viruses),बुरशी,प्रोटोजोआ,1,Pathogens
+Science,Synthetic Fibers,पॅराशूट आणि दोरखंड तयार करण्यासाठी कोणत्या धाग्याचा वापर प्रामुख्याने होतो?,सुती,नायलॉन (Nylon),रेशीम,ताग,1,Synthetic Materials
+Science,Metals and Non-metals,अधातूंचे ऑक्साईड्स स्वभावतः कसे असतात?,अम्लधर्मी (Acidic),अम्लारीधर्मी,उदासीन,यापैकी नाही,0,Chemistry of Oxides
+Science,Coal and Petroleum,पेट्रोलियमच्या शुद्धीकरणातून विविध घटक वेगळे करण्याच्या तंत्राला काय म्हणतात?,बाष्पीभवन,घनीभवन,अंशतः ऊर्ध्वपातन (Fractional Distillation),गाळणे,2,Petroleum Refining
+Science,Combustion and Flame,मेणबत्तीच्या ज्योतीचा सर्वात गरम भाग कोणता असतो?,आतील भाग,मध्यम भाग,बाह्यतम भाग (Non-luminous / Outermost zone),कण,2,Flame Structure
+Science,Conservation of Plants and Animals,एकाच विशिष्ट भौगोलिक प्रदेशात आढळणाऱ्या वनस्पती व प्राण्यांना काय म्हणतात?,स्थानिक प्रजाती (Endemic Species),संकटग्रस्त प्रजाती,परदेशी प्रजाती,प्रवासी प्रजाती,0,Biodiversity
+Science,Cell Structure,पेशीमधील सर्व जैविक कृतींवर नियंत्रण ठेवणारे मुख्य अंग कोणते?,केंद्रक (Nucleus),मायटोकॉन्ड्रिया,सायटोप्लाझम,व्हॅक्यूओल,0,Cell Biology
+Science,Reproduction in Animals,अलिंगी प्रजनन पद्धतीत हायड्रा मध्ये कोणत्या पद्धतीने नवीन जीव होतो?,मुकुलायन (Budding),द्विभाजन,बीजाणू निर्मिती,पुनरुद्भवन,0,Reproduction
+Science,Force and Pressure,पाण्यात बुडवलेल्या वस्तूवर पाण्याच्या थरामुळे वरच्या दिशेने लागणाऱ्या बलाला काय म्हणतात?,उत्प्लावक बल (Buoyant Force),गुरुत्वाकर्षण,घर्षण,चुंबकीय बल,0,Physics Buoyancy
+Social Studies,History,इतिहासाच्या आधुनिक कालखंडात भारतात ब्रिटिश सत्तेच्या आगमनामुळे कोणत्या व्यवस्थेत मोठा बदल झाला?,शेती व व्यापार (Economy and Administration),फक्त कला,फक्त संगीत,काहीही नाही,0,Modern History
+Social Studies,Geography,जगातील सर्वाधिक लोकसंख्या असलेला देश कोणता आहे?,भारत किंवा चीन,अमेरिका,रशिया,ब्राझील,0,Demography
+Social Studies,Civic Sense,भारताच्या संविधानात नागरिकांना किती मूलभूत हक्के (Fundamental Rights) प्रदान केले आहेत?,५,६ (Six Fundamental Rights),७,८,1,Fundamental Rights
+Social Studies,Colonialism,1857 चा उठाव प्रामुख्याने कोणत्या शहरातून शिपायांच्या संपाने सुरू झाला?,मेरठ (Meerut),दिल्ली,कानपूर,झाशी,0,Revolt of 1857
+Social Studies,Social Reformers,भारतात सती प्रथेविरुद्ध बंदी आणण्यासाठी कोणत्या ब्रिटिश गव्हर्नर जनरलने कायदा केला?,लॉर्ड विलियम बेंटिंक (Lord William Bentinck),लॉर्ड डलहौसी,लॉर्ड कर्झन,लॉर्ड माउंटबॅटन,0,Social Reforms
+Social Studies,Natural Disasters,जमिनीची धूप (Soil Erosion) रोखण्यासाठी सर्वात प्रभावी उपाय कोणता?,वृक्षारोपण व पट्टेदार शेती (Afforestation),जंगल तोडणे,पाणी साचवणे,डोंगर फोडणे,0,Environmental Protection
+Social Studies,Industry,कच्च्या मालाचे पक्क्या पळव्यात रूपांतर करणाऱ्या उद्योगांना काय म्हणतात?,प्राथमिक उद्योग,द्विदल उद्योग,दुसऱ्या टप्प्यातील किंवा माध्यमिक उद्योग (Manufacturing Industries),तृतीयक उद्योग,2,Manufacturing Industries
+Social Studies,Human Resources,लोकसंख्येची रचना समजण्यासाठी कोणते साधन वापरले जाते?,लोकसंख्या पिरॅमिड (Population Pyramid),नकाशा,वर्तुळाकार आलेख,तक्ता,0,Demography
+Social Studies,Earth,भूस्खलन (Landslide) रोखण्यासाठी मुख्य उपाय काय आहे?,वनीकरण व उतार मजबूत करणे (Afforestation & Retaining Walls),रस्ते बांधणे,पाणी सोडणे,खाणकाम करणे,0,Geological Safety
+Social Studies,Constitution,भारताचे संविधान कधी लागू झाले?,१५ ऑगस्ट १९४७,२६ जानेवारी १९५० (26 January 1950),२६ नोव्हेंबर १९४९,२ ऑक्टोबर १९६०,1,Indian Constitution
