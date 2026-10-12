@@ -1,0 +1,101 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Addition,25 ഉം 14 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,39,41,38,40,0,Double Digit Addition
+Mathematics,Subtraction,48 ൽ നിന്ന് 15 കുറച്ചാൽ എത്ര ബാക്കി വരും?,31,32,33,34,2,Double Digit Subtraction
+Mathematics,Multiplication,3 ഗുണിക്കണം 4 എത്രയാണ്?,10,11,12,14,2,Multiplication Basics
+Mathematics,Division,10 നെ 2 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,3,4,5,6,2,Division Basics
+Mathematics,Number Names,'Twenty-Five' എന്നാൽ ഏത് സംഖ്യയെ ആണ് സൂചിപ്പിക്കുന്നത്?,20,52,25,15,2,Number Names
+Mathematics,Geometry,ചതുരത്തിന് (Square) എത്ര തുല്യ വശങ്ങളുണ്ട്?,3,4,5,6,1,Geometric Properties
+Mathematics,Measurement,1 മീറ്ററിൽ എത്ര സെന്റിമീറ്റർ ഉണ്ട്?,10 സെന്റിമീറ്റർ,50 സെന്റിമീറ്റർ,100 സെന്റിമീറ്റർ,1000 സെന്റിമീറ്റർ,2,Measurement Units
+Mathematics,Time,ക്ലോക്കിലെ വലിയ സൂചി എന്ത് അളക്കുന്നു?,മണിക്കൂർ,മിനിറ്റ്,വർഷം,ദിവസം,1,Time Measurement
+Mathematics,Money,50 പൈസയുടെ രണ്ട് നാണയങ്ങൾ എന്നാൽ എത്ര രൂപ?,1 രൂപ,2 രൂപ,5 രൂപ,10 രൂപ,0,Money Conversion
+Mathematics,Data Handling,ചിത്രത്തിൽ 5 പൂക്കളും 2 ഇലകളും ഉണ്ട്, ആകെ വസ്തുക്കൾ എത്ര?,5,6,7,8,2,Counting & Data
+English,Grammar,'She ___ reading a book.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,is,are,am,be,0,Helping Verbs
+English,Vocabulary,'Sun' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Moon,Rain,Star,Sky,0,Opposite Words
+English,Grammar,'The cat is ___ the table.' (മേശയ്ക്ക് താഴെ) ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,on,in,under,over,2,Prepositions
+English,Plurals,'Apple' എന്ന വാക്കിന്റെ ബഹുവചനം (Plural) എന്താണ്?,Apples,Applees,Appls,Appleses,0,Singular Plural
+English,Pronouns,'Rohan is a boy. ___ likes to play.' ശരിയായ സർവ്വനാമം തിരഞ്ഞെടുക്കുക.,She,He,It,They,1,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,School,Scool,Skool,Schoool,0,Spelling Accuracy
+English,Adjectives,ശീതകാലം (Winter) എങ്ങനെയുള്ളതായിരിക്കും?,Hot,Cold,Warm,Sunny,1,Describing Words
+English,Action Verbs,കുട്ടികൾ മൈതാനത്ത് എന്ത് ചെയ്യുകയാണ്?,കരയുന്നു,കളിക്കുന്നു,ഉറങ്ങുന്നു,ഇരിക്കുന്നു,1,Action Verbs
+English,Question Words,'___ is your name?' ശരിയായ ചോദ്യപദം തിരഞ്ഞെടുക്കുക.,What,Where,When,Who,0,Wh-Questions
+English,Rhyming Words,'Cat' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Sun,Bat,Dog,Pen,1,Rhyming Words
+EVS,Body Parts,നമ്മുടെ ശരീരത്തിൽ ആഹാരം ദഹിപ്പിക്കുന്നത് എവിടെയാണ്?,ആമാശയം (Stomach),കണ്ണ്,ചെവി,മൂക്ക്,0,Human Body Organs
+EVS,Animals,പുല്ല് തിന്നുകയും പാൽ തറുകയും ചെയ്യുന്ന മൃഗം ഏത്?,സിംഹം,കടുവ,പശു,ചെന്നായ്,2,Herbivorous Animals
+EVS,Plants,ചെടികളിൽ പൂക്കൾ വരുന്നതിന് തൊട്ടുമുമ്പ് ഉണ്ടാകുന്നത് എന്താണ്?,ഫലം,ഇല,മൊട്ട് (Bud),വേര്,2,Plant Lifecycle
+EVS,Water,വെള്ളം എന്തിനാണ് ഉപയോഗിക്കാത്തത്?,കുടിക്കാൻ,കുളിക്കാൻ,തീ അണയ്ക്കാൻ,പെട്രോൾ ഒഴിക്കാൻ,3,Uses of Water
+EVS,Shelter,തേനീച്ചകൾ എവിടെയാണ് താമസിക്കുന്നത്?,കൂട്ടിൽ,തേനീച്ചക്കൂടിൽ (Beehive),ഗുഹയിൽ,മാളത്തിൽ,1,Animal Habitats
+EVS,Seasons,വേനൽക്കാലത്ത് നമ്മൾ എങ്ങനെയുള്ള വസ്ത്രങ്ങളാണ് ധരിക്കുന്നത്?,സ്വെറ്റർ,പരുത്തി വസ്ത്രങ്ങൾ (Cotton clothes),റെയിൻകോട്ട്,ലെതർ ജാക്കറ്റ്,1,Clothing & Seasons
+EVS,Community Helpers,വസ്ത്രങ്ങൾ തയ്ക്കുന്നത് ആരാണ്?,മരപ്പണിക്കാരൻ,ടൈലർ / തയ്യൽക്കാരൻ (Tailor),കുശവൻ,കൊല്ലൻ,1,Community Helpers
+EVS,Safety,റോഡ് മുറിച്ചുകടക്കുമ്പോൾ എത്തിലൂടെ നടക്കണം?,റോഡിന്റെ നടുവിലൂടെ,സീബ്രാവോല്സിംഗിലൂടെ (Zebra crossing),ഓടിക്കൊണ്ട്,എങ്ങനെയും,1,Road Safety
+EVS,Food,ആരോഗ്യത്തിന് ഏറ്റവും നല്ല ആഹാരം ഏതാണ്?,ജങ്ക് ഫുഡ്,സമീകൃതാഹാരം (Balanced diet),ചോക്ലേറ്റ് മാത്രം,പഴയ ഭക്ഷണം,1,Healthy Nutrition
+EVS,Transport,വെള്ളത്തിലൂടെ സഞ്ചരിക്കുന്ന വാഹനം ഏത്?,ബസ്,തീവണ്ടി,ബോട്ട് (Boat),വിമാനം,2,Water Transport
+Social Studies,National Symbols,നമ്മുടെ ദേശീയ പുഷ്പം ഏത്?,താമര (Lotus),റോസാപ്പൂവ്,ചെണ്ടുമല്ലി,മുല്ല,0,National Symbols
+Social Studies,Festivals,ദീപാവലിക്ക് നമ്മൾ എന്താണ് കത്തിക്കുന്നത്?,വിളക്കുകളും പടക്കങ്ങളും,പട്ടം,വർണ്ണങ്ങൾ,ഹോളിക,0,Cultural Festivals
+Social Studies,Directions,നമ്മുടെ ഇടത് കൈയ്യുടെ ദിശ കണ്ടെത്താൻ എന്ത് സഹായിക്കുന്നു?,ദിശകളെക്കുറിച്ചുള്ള അറിവ് (Directions knowledge),ക്ലോക്ക്,അളവുകോൽ,1,Directions Basics
+Social Studies,Family,അമ്മാവന്റെ മക്കളെ നാം എന്താണ് വിളിക്കുന്നത്?,സഹോദരി,സഹോദരൻ,കസിൻസ് (Cousins / ചൂട്ട ബന്ധുക്കൾ),സുഹൃത്ത്,2,Family Relationships
+Social Studies,Community Helpers,കർഷകൻ ആർക്കുവേണ്ടിയാണ് കൃഷി ചെയ്യുന്നത്?,സ്വന്തം ആവശ്യത്തിന് മാത്രം,രാജ്യത്തിലെ എല്ലാ ജനങ്ങൾക്കും,മൃഗങ്ങൾക്കായി,ആർക്കുമല്ല,1,Social Roles
+Social Studies,Earth,ഭൂമിയുടെ ആകൃതി എങ്ങനെയുള്ളതാണ്?,ചതുരം,ത്രികോണം,ഗോളാകൃതി (Spherical),നീളമുള്ളത്,2,Earth Shape
+Social Studies,Time,ഒരു ആഴ്ചയിൽ ആകെ എത്ര ദിവസങ്ങളുണ്ട്?,5,6,7,30,2,Days of the Week
+Social Studies,Environment,മരങ്ങൾ നമ്മെ എന്തിൽ നിന്നാണ് സംരക്ഷിക്കുന്നത്?,തണൽ,മലിനീകരണവും ഓക്സിജന്റെ കുറവും,പഴങ്ങൾ,പൂക്കൾ,1,Environmental Awareness
+Social Studies,Civic Sense,മാലിന്യങ്ങൾ എവിടെയാണ് ഇടേണ്ടത്?,ജനലിലൂടെ പുറത്തേക്ക്,റോഡിൽ,ചവറ്റുകുട്ടയിൽ (Dustbin),എവിടെയും ഇടാം,2,Civic Responsibility
+Social Studies,General Awareness,ഇന്ത്യയുടെ രാഷ്ട്രപിതാവ് ആരാണ്?,മഹാത്മാഗാന്ധി (Mahatma Gandhi),ജവഹർലാൽ നെഹ്റു,ലോക്മാന്യ തിലക്,ഡോ. ബി.ആർ. അംബേദ്കർ,0,National Leaders
+Mathematics,Addition,12 ഉം 13 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,23,25,26,27,1,Double Digit Addition
+Mathematics,Subtraction,35 ൽ നിന്ന് 12 കുറച്ചാൽ എത്ര കിട്ടും?,21,22,23,24,2,Double Digit Subtraction
+Mathematics,Multiplication,2 ഗുണിക്കണം 5 എത്രയാണ്?,7,10,15,20,1,Multiplication Basics
+Mathematics,Division,12 നെ 3 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,3,4,5,6,1,Division Basics
+Mathematics,Geometry,ദീർഘചതുരത്തിന്റെ എതിർവശങ്ങൾ എങ്ങനെയുള്ളവയാണ്?,അസമം,തുല്യമായത് (Equal),ചെറുതും വലുതും,വട്ടത്തിലുള്ളത്,1,Geometric Properties
+Mathematics,Measurement,1 കിലോഗ്രാമിൽ എത്ര ഗ്രാം ഉണ്ട്?,100 ഗ്രാം,500 ഗ്രാം,1000 ഗ്രാം,2000 ഗ്രാം,2,Weight Units
+Mathematics,Time,ഒരു മണിക്കൂറിൽ എത്ര മിനിറ്റുകൾ ഉണ്ട്?,30 മിനിറ്റ്,60 മിനിറ്റ്,100 മിനിറ്റ്,24 മിനിറ്റ്,1,Time Measurement
+Mathematics,Money,10 രൂപയുടെ നോട്ടും 5 രൂപയുടെ നാണയവും ചേർന്നാൽ ആകെ എത്രയായി?,10 രൂപ,15 രൂപ,20 രൂപ,25 രൂപ,1,Money Calculation
+Mathematics,Number Names,'Thirty-Two' എന്നാൽ ഏത് സംഖ്യയാണ്?,23,32,30,22,1,Number Names
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 5, 10, 15, 20, ?,22,24,25,30,2,Skip Counting
+English,Grammar,'We ___ going to school.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,is,are,am,be,1,Plural Verbs
+English,Vocabulary,സ്കൂളിൽ പഠിപ്പിക്കുന്ന വ്യക്തിയെ ഇംഗ്ലീഷിൽ എന്താണ് വിളിക്കുന്നത്?,Doctor,Teacher,Driver,Farmer,1,School Vocabulary
+English,Pronouns,'This is my dog. ___ is very cute.' ശരിയായ സർവ്വനാമം തിരഞ്ഞെടുക്കുക.,He,She,It,They,2,Pronouns
+English,Prepositions,'The cat jumped ___ the wall.' (മതിലിന് മുകളിലൂടെ) ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,over,in,under,at,0,Prepositions
+English,Adjectives,ആകാശത്തിന്റെ നിറം എന്താണ്?,Blue,Red,Green,Yellow,0,Describing Words
+English,Vocabulary,പഴങ്ങളെ ഇംഗ്ലീഷിൽ എന്താണ് വിളിക്കുന്നത്?,Fruits,Vegetables,Books,Pens,0,Food Vocabulary
+English,Grammar,'What ___ your father do?' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,do,does,is,are,1,Present Tense Basics
+English,Rhyming Words,'Book' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Look,Cat,Sun,Pen,0,Rhyming Words
+English,Action Verbs,കുട്ടികൾ പുസ്തകങ്ങൾ എന്ത് ചെയ്യുന്നു?,നോക്കുന്നു,വായിക്കുന്നു (Read),കളിക്കുന്നു,ഓടുന്നു,1,Action Verbs
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Elephant,Elefent,Elifant,Elifent,0,Spelling Accuracy
+EVS,Body Parts,ഭക്ഷണത്തിന്റെ രുചി തിരിച്ചറിയാൻ നമ്മെ സഹായിക്കുന്നത് ഏത് അവയവമാണ്?,കണ്ണ്,നാക്ക് (Tongue),ചെവി,ത്വക്ക്,1,Sensory Organs
+EVS,Animals,ഭാരം വഹിക്കുന്നതും മാംസം ആഹാരമാക്കാത്തതുമായ മൃഗം ഏത്?,കഴുത / കാള,സിംഹം,കടുവ,ചെന്നായ്,0,Working Animals
+EVS,Plants,ചെടിയുടെ ഏത് ഭാഗമാണ് വായുവിൽ നിന്ന് കാർബൺ ഡൈഓക്സൈഡ് സ്വീകരിക്കുന്നത്?,വേര്,ഇലകൾ (Leaves),തണ്ട്,ഫലം,1,Plant Respiration
+EVS,Water,വെള്ളം എന്തിനാണ് ഉപയോഗിക്കാത്തത്?,കുടിക്കാൻ,തുണി അലക്കാൻ,കാർ ഓടിക്കാൻ (Drive car),പാചകം ചെയ്യാൻ,2,Uses of Water
+EVS,Shelter,വീടിന്റെ മേൽക്കൂര നമ്മെ എന്തിൽ നിന്നാണ് സംരക്ഷിക്കുന്നത്?,കാറ്റിൽ നിന്ന് മാത്രം,വെയിൽ,കാറ്റ്,മഴ എന്നിവയിൽ നിന്ന്,തണുപ്പിൽ നിന്ന് മാത്രം,പ്രകാശത്തിൽ നിന്ന് മാത്രം,1,Need for Shelter
+EVS,Seasons,മഴക്കാലത്ത് പകർച്ചവ്യാധികൾ തടയാൻ നമ്മൾ എന്ത് മുൻകരുതലാണ് എടുക്കേണ്ടത്?,തിളപ്പിച്ചാറ്റിയ വെള്ളം കുടിക്കുക,പച്ചയായ ഭക്ഷണം കഴിക്കുക,മഴയിൽ നനയുക,ഇരുട്ടിലിരിക്കുക,0,Health & Hygiene
+EVS,Community Helpers,അഗ്നിശമന സേനയുടെ (Fire Brigade) ജോലി എന്താണ്?,തീ അണയ്ക്കാൻ,റോഡ് പണിയാൻ,കത്ത് എത്തിക്കാൻ,മരം നടാൻ,0,Community Helpers
+EVS,Safety,വീട്ടിലിരിക്കുമ്പോൾ താഴെ പറയുന്നവയിൽ എന്തുപയോഗിച്ച് കളിക്കരുത്?,കളിപ്പാട്ടങ്ങൾ,കമ്പ്യൂട്ടർ,കൂർത്ത കത്തി (Sharp knife),പേനയും പെൻസിലും,2,Safety Rules
+EVS,Food,പാൽ കുടിക്കുന്നത് കൊണ്ട് നമ്മുടെ ശരീരം എങ്ങനെയുള്ളതായിത്തീരുന്നു?,ബലഹീനമാകുന്നു,ബലമുള്ളതായിത്തീരുന്നു (Strong),രോഗിയാകുന്നു,ക്ഷീണിക്കുന്നു,1,Nutrition Basics
+EVS,Transport,കരയിലൂടെ ഓടുന്ന ഏറ്റവും വേഗതയേറിയ വാഹനം ഏത്?,സൈക്കിൾ,വണ്ടി,ആധുനിക തീവണ്ടി / ട്രെയിൻ,നടന്നുപോകൽ,2,Land Transport
+Social Studies,National Symbols,നമ്മുടെ ദേശീയ മൃഗം ഏത്?,സിംഹം,കടുവ (Tiger),ആന,പുലി,1,National Symbols
+Social Studies,Festivals,ക്രിസ്മസ് എപ്പോഴാണ് ആഘോഷിക്കുന്നത്?,25 ഡിസംബർ,15 ആഗസ്റ്റ്,26 ജനുവരി,2 ഒക്ടോബർ,0,Cultural Festivals
+Social Studies,Directions,സൂര്യൻ ഉദിക്കുന്ന ദിശയ്ക്ക് എതിരായി വരുന്ന ദിശ ഏത്?,കിഴക്ക്,പടിഞ്ഞാറ് (West),വടക്ക്,തെക്ക്,1,Cardinal Directions
+Social Studies,Family,അമ്മയുടെ അച്ഛനെ നാം എന്താണ് വിളിക്കുന്നത്?,അപ്പൂപ്പൻ (Grandfather),മാമ്മൻ,അമ്മാവൻ,സഹോദരൻ,0,Family Relationships
+Social Studies,Community Helpers,കത്തുകളും പാർസലുകളും വീടുകളിൽ എത്തിക്കുന്നത് ആരാണ്?,പോസ്റ്റ്മാൻ (Postman),പോലീസ്,ഡോക്ടർ,അധ്യാപകൻ,0,Social Roles
+Social Studies,Earth,ഭൂമിയിൽ കൂടുതൽ ഉള്ളത് വെള്ളമാണോ കരയാണോ?,കര,വെള്ളം (Water),രണ്ടും തുല്യം,ഒന്നുമില്ല,1,Planetary Basics
+Social Studies,Time,ഒരു വർഷത്തിൽ ആകെ എത്ര മാസങ്ങളുണ്ട്?,6,10,12,24,2,Months of the Year
+Social Studies,Environment,പ്ലാസ്റ്റിക് ഉപയോഗിക്കുന്നത് കൊണ്ട് പരിസ്ഥിതിക്ക് എന്ത് സംഭവിക്കുന്നു?,മലിനീകരണം കൂടുന്നു,ശുചിത്വം ഉണ്ടാകുന്നു,മരങ്ങൾ വളരുന്നു,വെള്ളം ശുദ്ധമാകുന്നു,0,Environmental Awareness
+Social Studies,Civic Sense,നമ്മുടെ ചുറ്റുപാടുകൾ എങ്ങനെ സൂക്ഷിക്കണം?,അപകർഷതയോടെ,ഉയരത്തിൽ,വൃത്തിയുള്ളതും മനോഹരവുമായി (Clean & Beautiful),മാലിന്യങ്ങൾ നിറഞ്ഞതായി,2,Civic Responsibility
+Social Studies,General Awareness,കേരളത്തിൽ ഏറ്റവുമധികം സംസാരിക്കുന്ന പ്രധാന ഭാഷ ഏത്?,മലയാളം (Malayalam),തമിഴ്,തെലുങ്ക്,ബംഗാളി,0,State Languages
+Mathematics,Addition,14 ഉം 16 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,28,29,30,31,2,Double Digit Addition
+Mathematics,Subtraction,50 ൽ നിന്ന് 25 കുറച്ചാൽ എത്ര കിട്ടും?,20,25,30,35,1,Double Digit Subtraction
+Mathematics,Multiplication,4 ഗുണിക്കണം 5 എത്രയാണ്?,15,18,20,25,2,Multiplication Basics
+Mathematics,Division,15 നെ 3 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,3,4,5,6,2,Division Basics
+Mathematics,Geometry,വൃത്തത്തിന് എത്ര മൂലകളുണ്ട് (Corners)?,1,2,4,ഒന്നുമില്ല (0),3,Geometric Properties
+Mathematics,Measurement,1 ലിറ്ററിൽ എത്ര മില്ലിയിലീറ്റർ ഉണ്ട്?,100 മില്ലി,500 മില്ലി,1000 മില്ലി,2000 മില്ലി,2,Measurement Units
+Mathematics,Time,ഉച്ചയ്ക്ക് 12 മണിക്ക് ശേഷം എന്ത് സമയമാണ് ആരംഭിക്കുന്നത്?,രാവിലെ,ഉച്ച / വൈകുന്നേരം (Afternoon / Evening),രാത്രി,പുലർച്ചെ,1,Time Measurement
+Mathematics,Money,5 രൂപയുടെ 3 നാണയങ്ങൾ എന്നാൽ ആകെ എത്ര രൂപ?,10 രൂപ,12 രൂപ,15 രൂപ,20 രൂപ,2,Money Calculation
+Mathematics,Number Names,'Forty-Five' എന്നാൽ ഏത് സംഖ്യയാണ്?,40,45,54,50,1,Number Names
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 3, 6, 9, 12, ?,13,14,15,18,2,Skip Counting
+English,Grammar,'They ___ playing football.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,is,are,am,be,1,Plural Verbs
+English,Vocabulary,'Teacher' എന്നാൽ മലയാളത്തിൽ എന്താണ്?,ഡോക്ടർ,അധ്യാപകൻ / അധ്യാപിക (Teacher),എൻജിനീയർ,കർഷകൻ,1,School Vocabulary
+English,Pronouns,'This is a pen. ___ is red.' ശരിയായ സർവ്വനാമം തിരഞ്ഞെടുക്കുക.,He,She,It,They,2,Pronouns
+English,Prepositions,'The book is ___ the bag.' (പെട്ടിക്ക് ഉള്ളിൽ) ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,in,on,under,near,0,Prepositions
+English,Adjectives,നാരങ്ങയുടെ രുചി എങ്ങനെയുള്ളതാണ്?,Sweet,Sour (പുളിയുള്ളത്),Salty,Bitter,1,Describing Words
+English,Vocabulary,പഴങ്ങളുടെ രാജാവ് എന്നറിയപ്പെടുന്നത് ഏത്?,ആപ്പിൾ,വാഴപ്പഴം,മാങ്ങ (Mango),പേരയ്ക്ക,2,Food Vocabulary
+English,Grammar,'Where ___ you live?' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,do,does,is,are,0,Present Tense Basics
+English,Rhyming Words,'Day' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Way,Sun,Cat,Pen,0,Rhyming Words
+English,Action Verbs,നദി എന്ത് ചെയ്യുന്നു?,ഒഴുകുന്നു (Flows),ഓടുന്നു,പറക്കുന്നു,ഉറങ്ങുന്നു,0,Action Verbs
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Pencil,Pensil,Pansil,Pensel,0,Spelling Accuracy
