@@ -814,7 +814,10 @@
             }
             if (filtered.length < 2) filtered = [...activeQuestionBank];
 
+            // Shuffle and limit to 25 random questions
             filtered.sort(() => Math.random() - 0.5);
+            filtered = filtered.slice(0, 25);
+            
             currentStudentData.questions = filtered;
 
             document.getElementById('student-login-card').classList.add('hidden');
