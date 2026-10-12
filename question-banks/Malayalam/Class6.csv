@@ -1,0 +1,81 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Integers,സംഖ്യാ രേഖയിൽ (Number Line) പൂജ്യത്തിന്റെ ഇട측 ഭാഗത്തുള്ള സംഖ്യകൾ ഏവ?,ധന സംഖ്യകൾ (Positive),ऋण സംഖ്യകൾ (Negative),പൂജ്യം,പൂർണ്ണ സംഖ്യകളல்ல,1,Integer Concepts
+Mathematics,Fractions,3/5 ഉം 4/5 ഉം കൂട്ടിയാൽ ആകെ എത്ര കിട്ടും?,7/10,7/5,12/25,1/5,1,Fraction Addition
+Mathematics,Algebra,x = 5 എങ്കിൽ, x + 3 ന്റെ വില എത്ര?,5,8,2,15,1,Basic Algebra
+Mathematics,Geometry,ജ്യാമിതിയിൽ 180 ഡിഗ്രി അളവുള്ള കോണിനെ എന്താണ് വിളിക്കുന്നത്?,കാটകോൻ,വിശാലകോൻ,സർവ്വകോൻ / സരേഖാകോൻ (Straight Angle),പ്രവിശാലകോൻ,2,Angle Types
+Mathematics,Ratio,10 ഉം 20 ഉം തമ്മിലുള്ള അംശബന്ധം (Ratio) ലഘുരൂപത്തിൽ എഴുതിയാൽ?,1:2,2:1,1:3,3:1,0,Ratio and Proportion
+Mathematics,Decimals,25.4 ഉം 6.2 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,31.6,31.2,30.6,32.4,0,Decimal Addition
+Mathematics,Mensuration,6 സെ.മീ. വശമുള്ള സമഭുജ ചതുരത്തിന്റെ (Rhombus/Square) ചുറ്റളവ് എത്ര?,12 സെ.മീ.,18 സെ.മീ.,24 സെ.മീ.,36 സെ.മീ.,2,Perimeter Calculations
+Mathematics,Data Handling,വിവരങ്ങളുടെ ആവൃത്തി (Frequency) രേഖപ്പെടുത്താൻ ഉപയോഗിക്കുന്ന അടയാളങ്ങൾ ഏവ?,ടാലി ചിഹ്നങ്ങൾ (Tally Marks),വൃത്തങ്ങൾ,ഗ്രാഫുകൾ,സ്കെയിൽ,0,Data Handling
+Mathematics,Symmetry,ഇംഗ്ലീഷ് അക്ഷരമാലയിലെ 'A' എന്ന അക്ഷരത്തിന് എത്ര സമമിതി അക്ഷങ്ങൾ (Lines of Symmetry) ഉണ്ട്?,0,1,2,3,1,Symmetry Concepts
+Mathematics,Basic Concepts,ഏറ്റവും ചെറിയ അഭാജ്യ സംഖ്യ (Prime Number) ഏത്?,0,1,2,3,2,Prime Numbers
+English,Grammar,'Honesty is the best policy.' എന്ന വാക്യത്തിലെ 'Honesty' എന്ന പദം എന്ത് തരം നാമമാണ്?,Common Noun,Proper Noun,Abstract Noun (ഭാവവാചക നാമം),Pronoun,2,Parts of Speech
+English,Vocabulary,'Courage' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Bravery,Cowardice (ഭീരുത്വം / ഭിത്രേപണ),Fearless,Bold,1,Opposite Words
+English,Grammar,'He has been living here ___ 2020.' ശരിയായ Preposition തിരഞ്ഞെടുക്കുക.,for,since,in,at,1,Prepositions and Tenses
+English,Plurals,'Ox' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Oxes,Oxen,Oxs,Oxies,1,Singular Plural
+English,Pronouns,'This is my book. It is ___.' ശരിയായ Possessive Pronoun തിരഞ്ഞെടുക്കുക.,my,mine,me,your,1,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Necessary,Neccesary,Necessay,Nessessary,0,Spelling Accuracy
+English,Tenses,'By next year, she will have completed her studies.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Future Continuous,Future Perfect (ഭാവി പൂർണ്ണ കാലം),Present Perfect,Past Perfect,1,Verb Tenses
+English,Action Verbs,'Catch' എന്ന ക്രിയയുടെ ഭൂതകാല രൂപം (Past Tense) ഏത്?,Catched,Caught,Catching,Caches,1,Past Tense Verbs
+English,Question Words,'___ did you win the competition?' കാരണം ചോദിക്കാൻ ഏത് ചോദ്യപദം ഉപയോഗിക്കണം?,What,Where,Why,Who,2,Wh-Questions
+English,Rhyming Words,'Brave' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Save,Sun,Cat,Pen,0,Rhyming Words
+Science,Food,നമ്മുടെ ശരീരത്തിന് ഊർജ്ജം നൽകുന്ന പ്രധാന ആഹാര ഘടകങ്ങൾ ഏവ?,ജീവകങ്ങൾ (Vitamins),കാർബോഹൈഡ്രേറ്റുകളും കൊഴുപ്പും (Carbohydrates & Fats),പ്രോട്ടീൻ,ഖനിജങ്ങൾ,1,Components of Food
+Science,Materials,വസ്തുക്കളുടെ ഗുണവിശേഷങ്ങൾ അനുസരിച്ച് പ്രകാശത്തെ കടത്തിവിടുന്ന (Transparent) വസ്തു ഏത്?,മരത്തടി,കണ്ണാടി (Glass),കല്ല്,കടലാസ് പുട്ട്,1,Properties of Materials
+Science,Separation,ഉപ്പുവെള്ളത്തിൽ നിന്ന് ഉപ്പ് വേർതിരിച്ചെടുക്കാൻ ഉപയോഗിക്കുന്ന പ്രധാന മാർഗ്ഗം ഏത്?,അരിച്ചെടുക്കുക,ബാഷ്പീകരണം (Evaporation),തെളിച്ചെടുക്കുക,കാന്തിക വേർതിരിവ്,1,Separation of Substances
+Science,Plants,സസ്യങ്ങളിലെ തണ്ടിന്റെ പ്രധാന ജോലികളിൽ ഉൾപ്പെടാത്തത് / ഉൾപ്പെടുന്നത് ഏത്?,ആഹാരം നിർമ്മിക്കൽ,ജലവും ലവണങ്ങളും വിവിധ ഭാഗങ്ങളിൽ എത്തിക്കൽ (Water & Mineral transport),പൂക്കൾ മാത്രം പിടിക്കൽ,പ്രകാശം ആഗിരണം ചെയ്യൽ,1,Plant Structure
+Science,Body Movements,മനുഷ്യ ശരീരത്തിലെ തോളിന്റെ സന്ധി ഏത് തരത്തിലുള്ളതാണ്?,ഹിഞ്ച് സന്ധി,പന്ത് കുഴി സന്ധി (Ball and Socket Joint),ഫിക്സഡ് സന്ധി,അചല സന്ധി,1,Human Body Movements
+Science,Living Organisms,സസ്യങ്ങളുടെയും ജന്തുക്കളുടെയും ശരീരത്തിലെ അടിസ്ഥാന ഘടകം (Structural Unit) ഏത്?,കോശം (Cell),ടിഷ്യു,അവയവം,രക്തം,0,Cell Biology
+Science,Measurement,നീളത്തിന്റെ അന്താരാഷ്ട്ര അളവുകോൽ (SI Unit) എന്താണ്?,സെന്റിമീറ്റർ,മീറ്റർ (Meter),കിലോമീറ്റർ,മില്ലിമീറ്റർ,1,Measurement Units
+Science,Light,പ്രകാശം സാധാരണയായി എങ്ങനെയുള്ള പാതയിലൂടെയാണ് സഞ്ചരിക്കുന്നത്?,വളഞ്ഞ പാതയിലൂടെ,സർക്കുലാർ പാതയിൽ,നേർരേഖയിൽ (Rectilinear propagation),ഏത് പാതയിലൂടെയും,1,Light and Shadows
+Science,Electricity,ഒരു വൈദ്യുത സർക്യൂട്ടിൽ പ്രവാഹം നിയന്ത്രിക്കാനോ തടയാനോ ഉപയോഗിക്കുന്ന ഉപകരണം ഏത്?,ബൾബ്,സ്വിച്ച് (Electric Switch),വയർ,ബാറ്ററി,1,Electricity Basics
+Science,Magnets,ഒരു കാന്തത്തിന് എപ്പോഴും എത്ര ധ്രൂവങ്ങൾ ഉണ്ടായിരിക്കും?,1,2 (ഉത്തര, ദക്ഷിണ ധ്രൂവങ്ങൾ / North & South Poles),3,4,1,Magnetism
+Social Studies,History,ചരിത്ര പഠനത്തിന് സഹായിക്കുന്ന പഴയകാല കെട്ടിടങ്ങൾ, നാണയങ്ങൾ, രേഖകൾ എന്നിവയെ എന്താണ് വിളിക്കുന്നത്?,ചരിത്രപരമായ തെളിവുകൾ / സ്രോതസ്സുകൾ (Sources of History),കഥകൾ,കെട്ടുകഥകൾ,ചിത്രങ്ങൾ,0,Sources of History
+Social Studies,Geography,ഭൂമിയുടെ അക്ഷം അതിന്റെ ഭ്രമണപഥ തലവുമായി (Orbital Plane) എത്ര ഡിഗ്രി കോൺ ഉണ്ടാക്കുന്നു?,66.5 ഡിഗ്രി,23.5 ഡിഗ്രി,90 ഡിഗ്രി,45 ഡിഗ്രി,0,Earth Geography
+Social Studies,Civic Sense,ഗ്രാമപഞ്ചായത്തിലെ വാർഷിക റിപ്പോർട്ടുകളെയും പദ്ധതികളെയും കുറിച്ച് ചർച്ച ചെയ്യുന്നത് എവിടെ വെച്ചാണ്?,ഗ്രാമസഭ (Gram Sabha),നിയമസഭ,പാർലമെന്റ്,മുൻസിപ്പാലിറ്റി,0,Local Self-Government
+Social Studies,Diversity,ഇന്ത്യയുടെ സംസ്കാരത്തിൽ എന്ത് സവിശേഷതയാണ് കാണാൻ കഴിയുന്നത്?,വിവിധതയിൽ ഏകത്വം (Unity in Diversity),സംഘർഷങ്ങൾ മാത്രം,ഒരേ ഭാഷ,ഒരേ മതം,0,Indian Diversity
+Social Studies,Early Man,ആദിമ മനുഷ്യൻ ആദ്യമായി കണ്ടെത്തിയ പ്രധാന ലോഹം ഏത്?,ഇരുമ്പ്,ചെമ്പ് (Copper),സ്വർണ്ണം,അലുമിനിയം,1,Ancient Civilizations
+Social Studies,Government,യഥാർത്ഥ ജാതിമത ജനാധിപത്യ ഭരണസംവിധാനത്തിൽ അന്തിമ അധികാരം ആരിൽ നിക്ഷിപ്തമാണ്?,രാഷ്ട്രപതി,ജനങ്ങളിൽ (People / Citizens),പ്രധാനമന്ത്രി,ഗവർണ്ണർ,1,Democratic Government
+Social Studies,Maps,ഭൂപടത്തിലെ പ്രധാന അടിസ്ഥാന ദിശകൾ ആകെ എത്രെയാണ്?,2,3,4 (കിഴക്ക്, പടിഞ്ഞാറ്, വടക്ക്, തെക്ക്),6,2,Map Directions
+Social Studies,Earth,ഭൂമിയിലെ മഹാസാഗരങ്ങളുടെ ആകെ എണ്ണം എത്രയാണ്?,3,4,5 (ശാന്തം, അറ്റ്ലാന്റിക്, ഇന്ത്യൻ, തെക്കൻ, ആർട്ടിക്),7,2,Global Geography
+Social Studies,Harappan Civilisation,സിന്ധു നദീതട സംസ്കാരത്തിലെ (Harappan) വീടുകൾ പ്രധാനമായും എന്തുപയോഗിച്ചാണ് നിർമ്മിച്ചിരുന്നത്?,മരത്തടി,ചുട്ട ഇഷ്ടികകൾ (Baked Bricks),ചളി മണ്ണ്,പ്ലാസ്റ്റിക്,1,Harappan Civilization
+Social Studies,Rural Administration,ഗ്രാമങ്ങളിൽ കൃഷിഭൂമിയുടെയും റവന്യൂ രേഖകളുടെയും കണക്കുകൾ സൂക്ഷിക്കുന്നത് ആരാണ്?,സർപഞ്ച്,തലവാരി / വില്ലേജ് ഓഫീസർ / തലാഠി (Talathi),പോലീസ് പാട്ടീൽ,അധ്യാപകൻ,1,Rural Administration
+Mathematics,Integers,-5 ഉം +5 ഉം കൂട്ടിയാൽ ആകെ എത്ര കിട്ടും?,10,-10,0,5,2,Integer Addition
+Mathematics,Fractions,2/3 ന്റെ തുല്യ ഭിന്നസംഖ്യ (Equivalent Fraction) ഏത്?,4/6,3/9,5/6,1/3,0,Equivalent Fractions
+Mathematics,Algebra,y - 4 = 7 എങ്കിൽ y ന്റെ വില എത്ര?,3,10,11,12,2,Linear Equations
+Mathematics,Geometry,വൃത്തത്തിന്റെ വ്യാസം (Diameter) അതിന്റെ ആറത്തിന്റെ എത്ര മടങ്ങാണ്?,പകുതി,ഇരട്ടി (Twice),മൂന്നിരട്ടി,തുല്യം,1,Geometry Properties
+Mathematics,Ratio,30 മിനിറ്റും 1 മണിക്കൂറും തമ്മിലുള്ള അംശബന്ധം എത്ര?,1:2,2:1,1:3,3:1,0,Ratio Concepts
+Mathematics,Decimals,5 രൂപ 50 പൈസ എന്നത് ദശാംശ രൂപത്തിൽ എങ്ങനെ എഴുതാം?,5.50 രൂപ,50.5 രൂപ,0.55 രൂപ,5.05 രൂപ,0,Decimal Notation
+Mathematics,Mensuration,5 സെ.മീ. വശമുള്ള ചതുരത്തിന്റെ (Square) വിസ്തീർണ്ണം എത്ര?,10 ചതുരശ്ര സെ.മീ.,20 ചതുരശ്ര സെ.മീ.,25 ചതുരശ്ര സെ.മീ.,30 ചതുരശ്ര സെ.മീ.,2,Area Calculations
+Mathematics,Data Handling,ടാലി ചിഹ്നങ്ങളിൽ അഞ്ചാമത്തെ വര എങ്ങനെയാണ് അടയാളപ്പെടുത്തുന്നത്?,നേരെ നിൽക്കുന്ന വര,മൂന്നാമത്തെ വര,കുറുകെയുള്ള അല്ലെങ്കിൽ ചരിഞ്ഞ വര (Bundle Slash),വൃത്തം,2,Tally Marks
+Mathematics,Symmetry,ഇംഗ്ലീഷ് അക്ഷരമാലയിലെ 'H' എന്ന അക്ഷരത്തിന് എത്ര സമമിതി അക്ഷങ്ങളുണ്ട്?,0,1,2,3,2,Symmetry
+Mathematics,Basic Concepts,താഴെ പറയുന്നവയിൽ പരസ്പര അഭാജ്യ സംഖ്യകളുടെ (Co-prime) ജോടി ഏത്?,(2, 4),(3, 5),(4, 6),(6, 9),1,Number Theory
+English,Grammar,'The dog chased the cat.' എന്ന വാക്യത്തിലെ കർമ്മം (Object) ഏത്?,The dog,Chased,The cat,None,2,Parts of Speech
+English,Vocabulary,'Ancient' എന്ന വാക്കിന്റെ പര്യായപദം ഏത്?,Modern,Old / Primitive (പഴയ / ആദിമ),New,Recent,1,Synonyms
+English,Grammar,'She sings sweetly.' ഈ വാക്യത്തിലെ Adverb ഏത്?,She,Sings,Sweetly,None,2,Adverbs
+English,Plurals,'Mouse' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Mouses,Mice,Micees,Mouse,1,Singular Plural
+English,Pronouns,'This pen is ___.' ശരിയായ Possessive Pronoun തിരഞ്ഞെടുക്കുക.,my,mine,me,i,1,Possessive Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Knowledge,Nowledge,Knowledje,Noledge,0,Spelling Accuracy
+English,Tenses,'He was reading a book.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Present Continuous,Past Continuous (ഭൂതകാല തുടർച്ച),Future Continuous,Simple Past,1,Verb Tenses
+English,Action Verbs,'Speak' എന്ന ക്രിയയുടെ ഭൂതകാല രൂപം ഏത്?,Speaks,Spoke,Spoken,Speaking,1,Past Tense Verbs
+English,Question Words,'___ book do you prefer?' തിരഞ്ഞെടുപ്പ് ചോദിക്കാൻ ഏത് ചോദ്യപദം ഉപയോഗിക്കണം?,Which,Who,Where,When,0,Wh-Questions
+English,Rhyming Words,'Sun' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Fun,Cat,Dog,Pen,0,Rhyming Words
+Science,Food,സ്കർവി (Scurvy) എന്ന രോഗം ഏത് വിറ്റാമിന്റെ കുറവ് മൂന്നാണ് ഉണ്ടാകുന്നത്?,വിറ്റാമിൻ എ,വിറ്റാമിൻ ബി,വിറ്റാമിൻ സി (Vitamin C),വിറ്റാമിൻ ഡി,2,Deficiency Diseases
+Science,Materials,വെള്ളത്തിൽ ലയിക്കാത്ത (Insoluble) പദാർത്ഥം ഏത്?,പഞ്ചസാര,ഉപ്പ്,മണൽ (Sand),പാൽ,2,Matter Properties
+Science,Separation,धान്യങ്ങളിൽ നിന്ന് പതിരും പൊടിയും മാറ്റാൻ ഉപയോഗിക്കുന്ന രീതി ഏത്?,ഉഫണെ / പുഴുങ്ങി ഉണക്കൽ / പാറ്റുക (Winnowing),അരിച്ചെടുക്കുക,ബാഷ്പീകരണം,കാന്തിക വേർതിരിവ്,0,Separation Techniques
+Science,Plants,സെടിയുടെ പൂവിലെ സ്ത്രീപ്രജനന അവയവത്തെ എന്താണ് വിളിക്കുന്നത്?,സ്റ്റാമിൻ / പുങ്കേസരം,പിസ്റ്റിൽ / സ്ത്രീകേസരം (Pistil),ദളങ്ങൾ,കുസ്കർ,1,Plant Reproduction
+Science,Body Movements,നമ്മുടെ കാതിലെ ദൃഢമല്ലാത്ത ഭാഗം എന്തുതരം ടിഷ്യു കൊണ്ടാണ് നിർമ്മിച്ചിരിക്കുന്നത്?,അസ്ഥി,കാർട്ടിലേജ് / കൂർച്ച (Cartilage),പേശികൾ,രക്തം,1,Skeletal System
+Science,Living Organisms,മരുഭൂമിയിൽ വളരുന്ന സസ്യങ്ങളുടെ ഇലകൾ സാധാരണയായി എങ്ങനെയായിരിക്കും?,വലുതും പരന്നതുമായി,മുള്ളുകളുടെ രൂപത്തിൽ (Spines),മൃദുവായത്,വളരെ വലുത്,1,Plant Adaptations
+Science,Measurement,1 കിലോമീറ്ററിൽ എത്ര മീറ്ററുകൾ ഉണ്ട്?,100 മീറ്റർ,500 മീറ്റർ,1000 മീറ്റർ,10000 മീറ്റർ,2,Metric Conversions
+Science,Light,പ്രകാശത്തെ കടത്തിവിടാത്ത വസ്തുക്കളുടെ പിന്നിൽ ഉണ്ടാകുന്ന ഇരുണ്ട ഭാഗത്തെ എന്താണ് വിളിക്കുന്നത്?,പ്രകാശം,നിഴൽ (Shadow),കിരണം,പ്രതിബിംബം,1,Light and Shadow
+Science,Electricity,വൈദ്യുതാഘാതം ഏൽക്കാതിരിക്കാൻ വയറുകൾക്ക് മുകളിൽ നൽകുന്ന ആവരണത്തിന്റെ പ്രധാന വസ്തു ഏത്?,ലോഹം,പ്ലാസ്റ്റിക് അല്ലെങ്കിൽ റബ്ബർ (Insulator),കണ്ണാടി,ചെമ്പ്,1,Conductors and Insulators
+Science,Magnets,കാന്തം താഴെ പറയുന്നവയിൽ ഏത് വസ്തുക്കളുടെ ജോഡിയെയാണ് ശക്തമായി ആകർഷിക്കുന്നത്?,മരവും കണ്ണാടിയും,ഇരുമ്പും നിക്കലും (Iron & Nickel),പ്ലാസ്റ്റിക്കും കടലാസും,സ്വർണ്ണവും വെള്ളിയും,1,Magnetic Materials
+Social Studies,History,വേദകാലഘട്ടത്തിൽ ഏറ്റവും പഴക്കം ചെന്ന വേദം ഏത്?,സാമവേദം,യജുർവേദം,ഋഗ്വേദം (Rigveda),അഥർവ്വവേദം,2,Ancient History
+Social Studies,Geography,ഭൂമിയെ ഉത്തരാർദ്ധഗോളവും ദക്ഷിണാർദ്ധഗോളവുമായി തുല്യമായി ഭാഗിക്കുന്ന രേഖ ഏത്?,ഭൂമുവൃത്തം / വിഷുവവൃത്തം (Equator),രേഖാംശം,മകരം രേഖ,കർക്കടകം രേഖ,0,Global Grid
+Social Studies,Civic Sense,നഗരസഭയുടെ അധ്യക്ഷനെ അല്ലെങ്കിൽ തലവനെ സാധാരണയായി എന്താണ് വിളിക്കുന്നത്?,സർപഞ്ച്,മേയർ / നഗരാധ്യക്ഷൻ (Mayor / President),കലക്ടർ,മുഖ്യമന്ത്രി,1,Urban Local Government
+Social Studies,Diversity,ഇന്ത്യയിൽ ഏറ്റവുമധികം ആളുകൾ സംസാരിക്കുന്ന പ്രധാന ഭാഷകളിൽ ഒന്ന് ഏത്?,ഇംഗ്ലീഷ്,ഹിന്ദി (Hindi),ലാറ്റിൻ,ഫ്രഞ്ച്,1,Cultural Diversity
+Social Studies,Early Man,ആദിമ മനുഷ്യൻ കൃഷി ചെയ്യാനും സ്ഥിരമായി ജീവിക്കാനും തുടങ്ങിയ കാലഘട്ടം ഏത്?,ശിലായുഘത്തിന്റെ അവസാന കാലഘട്ടം (New Stone Age),ഇടത്തരം കാലഘട്ടം,ആധുനിക കാലഘട്ടം,വ്യവസായ വിപ്ലവ കാലഘട്ടം,0,Human Evolution
+Social Studies,Government,ഇന്ത്യയിൽ നിലവിലുള്ള ഭരണസംവിധാനം എന്ത് തരം ഭരണമാണ്?,രാജഭരണം,ജനാധിപത്യം (Democratic),ഏകാധിപത്യം,കമ്മ്യൂണിസം,1,Government Systems
+Social Studies,Maps,ഭൂപടത്തിലെ വിവിധ ചിഹ്നങ്ങളും അടയാളങ്ങളും മനസ്സിലാക്കാൻ സഹായിക്കുന്ന സംവിധാനം ഏത്?,അളവുകോൽ,സൂചിക അല്ലെങ്കിൽ ചിഹ്നവിവരണം (Key / Legend),തലക്കെട്ട്,ദിശാസൂചിക,1,Map Symbols
+Social Studies,Earth,ഭൂമിയുടെ ഏറ്റവും ആന്തരികമായ കേന്ദ്രഭാഗത്തെ എന്താണ് വിളിക്കുന്നത്?,ഭൂവൽക്കം,പ്രാവരണ,ഗൂഢഭാഗം / കാമ്പ് (Core),പാടുകൾ,2,Earth Structure
+Social Studies,Harappan Civilisation,സിന്ധു നദീതട സംസ്കാരത്തിലെ നഗരങ്ങളുടെ നിർമ്മാണ രീതി എങ്ങനെയുള്ളതായിരുന്നു?,ക്രമരഹിതം,ഗ്രിഡ് സമ്പ്രദായം (Grid System),വൃത്താകൃതിയിലുള്ളത്,മലനിരകളിൽ,1,Urban Planning
+Social Studies,Rural Administration,ഒരു ജില്ലയിലെ കാർഷിക, റവന്യൂ വകുപ്പുകളുടെ ചുമതലയുള്ള പ്രധാന ഉദ്യോഗസ്ഥൻ ആരാണ്?,തഹസിൽദാർ / ജില്ലാ കളക്ടർ (Collector),സർപഞ്ച്,പോലീസ് കമ്മീഷണർ,മേയർ,0,Administrative Systems
