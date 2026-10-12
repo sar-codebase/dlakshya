@@ -1,0 +1,101 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Addition,145 ഉം 232 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,377,367,387,357,0,Three Digit Addition
+Mathematics,Subtraction,584 ൽ നിന്ന് 231 കുറച്ചാൽ എത്ര ബാക്കി വരും?,353,343,363,333,0,Three Digit Subtraction
+Mathematics,Multiplication,12 ഗുണിക്കണം 5 എത്രയാണ്?,50,55,60,65,2,Multiplication Tables
+Mathematics,Division,36 നെ 4 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,7,8,9,6,2,Division Basics
+Mathematics,Fractions,ഒരു പലഹാരം 4 തുല്യ ഭാഗങ്ങളായി മുറിച്ചു, അതിൽ 1 ഭാഗം എന്നാൽ എത്ര?,1/2,1/4,3/4,ഒരു മുഴുവൻ,1,Fraction Basics
+Mathematics,Geometry,ചതുരത്തിന് എത്ര ശീർഷങ്ങൾ (Vertices) ഉണ്ട്?,3,4,5,6,1,Geometric Properties
+Mathematics,Measurement,2 കിലോമീറ്ററിൽ എത്ര മീറ്റർ ഉണ്ട്?,100 മീറ്റർ,500 മീറ്റർ,1000 മീറ്റർ,2000 മീറ്റർ,3,Distance Measurement
+Mathematics,Time,ക്ലോക്കിലെ മിനിറ്റ് സൂചി ഒരു പൂർണ്ണ വട്ടം ചുറ്റിയാൽ എത്ര മിനിറ്റാകും?,30 മിനിറ്റ്,60 മിനിറ്റ്,90 മിനിറ്റ്,12 മിനിറ്റ്,1,Time Measurement
+Mathematics,Money,₹50 ന്റെ ഒരു നോട്ടും ₹20 ന്റെ ഒരു നോട്ടും ചേർന്നാൽ ആകെ എത്ര രൂപയാകും?,₹60,₹70,₹80,₹100,1,Money Calculation
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 12, 15, 18, 21, ?,22,23,24,25,2,Number Patterns
+English,Grammar,'The sun ___ in the east.' ശരിയായ ക്രിയ തിരഞ്ഞെടുക്കുക.,rise,rises,rising,rose,1,Present Simple Tense
+English,Vocabulary,'Honest' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,True,Dishonest,Bad,False,1,Opposite Words
+English,Grammar,'Birds are flying ___ the sky.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,on,in,under,at,1,Prepositions
+English,Plurals,'Child' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Childs,Children,Childrens,Childes,1,Singular Plural
+English,Pronouns,'Geeta is singing. ___ has a sweet voice.' ശരിയായ സർവ്വനാമം തിരഞ്ഞെടുക്കുക.,He,She,It,They,1,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Beautiful,Beutiful,Batiful,Beautyful,0,Spelling Accuracy
+English,Adjectives,ഈ പർവ്വതം വളരെ ഉയരമുള്ളതാണ്. ഈ വാക്യത്തിലെ വിശേഷണം (Adjective) ഏത്?,പർവ്വതം,വളരെ,ഉയരമുള്ള (Tall),ആണ്,2,Describing Words
+English,Action Verbs,കുട്ടികൾ പൂന്തോട്ടത്തിൽ കളിക്കുന്നു. 'Playing' എന്നാൽ എന്താണ്?,ഓടുക,കളിക്കുക (Playing),വായിക്കുക,എഴുതുക,1,Action Verbs
+English,Question Words,'___ old are you?' ശരിയായ ചോദ്യപദം തിരഞ്ഞെടുക്കുക.,What,How,Where,Who,1,Wh-Questions
+English,Rhyming Words,'House' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Mouse,Cat,Sun,Pen,0,Rhyming Words
+EVS,Body Parts,നമ്മുടെ ശരീരത്തെ നേരെ നിവർന്നു നിൽക്കാൻ സഹായിക്കുന്നത് എന്ത്?,കൈകളിലെ വിരലുകൾ,അസ്ഥികൂടം (Skeleton),മുടികൾ,നഖങ്ങൾ,1,Skeletal System
+EVS,Animals,പുല്ല് തിന്നാതെ മാംസം മാത്രം കഴിക്കുന്ന മൃഗങ്ങൾ ഏവ?,പശു,മാൻ,കടുവ (Tiger),മുയൽ,2,Carnivorous Animals
+EVS,Plants,സസ്യങ്ങൾക്ക് ഭക്ഷണം നിർമ്മിക്കാൻ എന്തിന്റെയൊക്കെ സഹായം ആവശ്യമാണ്?,ഇരുട്ട് മാത്രം,സൂര്യപ്രകാശം, വെള്ളം, വായു,മണ്ണ് മാത്രം,കല്ലുകൾ മാത്രം,1,Photosynthesis Basics
+EVS,Water,വെള്ളത്തിന്റെ പ്രധാന നൈസർഗ്ഗിക രൂപം ഏത്?,കടൽ / മഴ,കൃത്രിമ തടാകം,കുഴൽനൽ,കുപ്പി,0,Water Sources
+EVS,Shelter,പക്ഷികൾ തങ്ങളുടെ കൂട് എന്തുപയോഗിച്ചാണ് നിർമ്മിക്കുന്നത്?,സിമന്റ്,ചില്ലകളും പുല്ലും (Twigs & Grass),ഇരുമ്പ്,പ്ലാസ്റ്റിക്,1,Bird Nests
+EVS,Seasons,ശീതകാലത്ത് നമ്മൾ എങ്ങനെയുള്ള വസ്ത്രങ്ങളാണ് ധരിക്കുന്നത്?,പരുത്തി വസ്ത്രങ്ങൾ,ഉപയോഗപ്രദമായ കമ്പിളി വസ്ത്രങ്ങൾ (Woolen),റെയിൻകോട്ട്,മെലിഞ്ഞ വസ്ത്രങ്ങൾ,1,Clothing & Seasons
+EVS,Community Helpers,നഗരത്തിലെ ശുചീകരണം സൂക്ഷിക്കുന്നത് ആരാണ്?,ഡോക്ടർ,ശുചീകരണ തൊഴിലാളി (Safai Kamgar),വकील,എൻജിനീയർ,1,Community Helpers
+EVS,Safety,റോഡിലൂടെ നടക്കുമ്പോൾ എത്തിലൂടെ നടക്കണം?,റോഡിന്റെ നടുവിലൂടെ,ഫുട്ട്പാത്തിലൂടെ (Footpath),ഓടിക്കൊണ്ട്,എതിർദിശയിലൂടെ,1,Pedestrian Safety
+EVS,Food,പുതിയ പഴങ്ങളിൽ നിന്നും പച്ചക്കറികളിൽ നിന്നും നമുക്ക് ലഭിക്കുന്നത് എന്താണ്?,വിറ്റാമിനുകളും ധാതുക്കളും (Vitamins & Minerals),കൊഴുപ്പ് മാത്രം,ഉപ്പ് മാത്രം,ഒന്നുമില്ല,0,Nutrition Basics
+EVS,Transport,വേഗത്തിലുള്ള യാത്രാസൗകര്യത്തിന് ഏറ്റവും വേഗത്തിൽ സഞ്ചരിക്കുന്ന വാഹനം ഏത്?,സൈക്കിൾ,വണ്ടി,വിമാനം (Aeroplane),നടന്നുപോവൽ,2,Air Transport
+Social Studies,National Symbols,നമ്മുടെ ദേശീയ മുദ്ര (National Emblem) എവിടെ നിന്നാണ് എടുത്തത്?,സാരാനാഥിലെ അശോക സ്തംഭം,ചെങ്കോട്ട,താജ്മഹൽ,ഇന്ത്യ ഗേറ്റ്,0,National Symbols
+Social Studies,Festivals,ദീപാവലി ഏത് ഋതുവിലാണ് വരുന്നത്?,വേനൽക്കാലം,മഴക്കാലം,ശീതകാലം (Winter),വസന്തകാലം,2,Seasons & Festivals
+Social Studies,Directions,മാപ്പിൽ മുകളിലത്തെ ഭാഗം ഏത് ദിശയാണ് കാണിക്കുന്നത്?,കിഴക്ക്,പടിഞ്ഞാറ്,വടക്ക് (North),തെക്ക്,2,Map Directions
+Social Studies,Family,അമ്മയുടെ അച്ഛനെ നാം എന്താണ് വിളിക്കുന്നത്?,അപ്പൂപ്പൻ (Grandfather),മാമ്മൻ,അമ്മാവൻ,മുത്തശ്ശി,0,Family Relations
+Social Studies,Community Helpers,ജനങ്ങൾക്ക് നീതി ലഭ്യമാക്കുന്നത് ആരാണ്?,അധ്യാപകൻ,ന്യായാധിപൻ (Judge),വൈദ്യൻ,പോലീസ്,1,Community Roles
+Social Studies,Earth,ഭൂമിയുടെ എത്ര ഭാഗമാണ് വെള്ളത്താൽ ചുറ്റപ്പെട്ടിരിക്കുന്നത്?,കാൽഭാഗം,ഏകദേശം മുക്കാൽ ഭാഗം (71%),പകുതി ഭാഗം മാത്രം,ഒന്നുമില്ല,1,Earth Geography
+Social Studies,Time,ഒരു വർഷത്തിൽ ആകെ എത്ര ദിവസങ്ങളുണ്ട്?,305 ദിവസങ്ങൾ,365 ദിവസങ്ങൾ,366 ദിവസങ്ങൾ,350 ദിവസങ്ങൾ,2,Calendar Basics
+Social Studies,Environment,പരിസ്ഥിതി സംരക്ഷിക്കാൻ നാം എന്ത് അധികമായി വെച്ചുപിടിപ്പിക്കണം?,ഫാക്ടറികൾ,കെട്ടിടങ്ങൾ,മരങ്ങൾ (Trees),റോഡുകൾ,2,Environmental Conservation
+Social Studies,Civic Sense,നമ്മുടെ രാജ്യത്തിന്റെ ദേശീയ ഗാനം ഏത്?,ജന गण মন (Jana Gana Mana),വന്ദേമാതരം,സാരേ ജഹാം സേ അച്ഛാ,ജയ് ഹിന്ദ്,1,National Songs
+Social Studies,General Awareness,ഇന്ത്യയുടെ ആദ്യത്തെ പ്രധാനമന്ത്രി ആരായിരുന്നു?,മഹാത്മാഗാന്ധി,പണ്ഡിറ്റ് ജവഹർലാൽ നെഹ്റു,ഡോ. രാജേന്ദ്ര പ്രസാദ്,സർദാർ പട്ടേൽ,1,Historical Figures
+Mathematics,Addition,234 ഉം 123 ഉം കൂട്ടിയാൽ എത്ര?,357,347,367,377,0,Three Digit Addition
+Mathematics,Subtraction,450 ൽ നിന്ന് 125 കുറച്ചാൽ എത്ര?,315,325,335,345,1,Three Digit Subtraction
+Mathematics,Multiplication,5 ഗുണിക്കണം 8 എത്രയാണ്?,35,40,45,50,1,Multiplication Tables
+Mathematics,Division,45 നെ 5 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,8,9,10,7,1,Division Basics
+Mathematics,Fractions,ഒരു ഓറഞ്ച് 2 തുല്യ ഭാഗങ്ങളായി മുറിച്ചാൽ, ഒരു ഭാഗത്തെ എന്താണ് വിളിക്കുന്നത്?,പകുതി (1/2),മുക്കാൽ (3/4),കാൽ (1/4),മുഴുവൻ,0,Fraction Basics
+Mathematics,Geometry,ത്രികോണത്തിന് എത്ര കോണുകളുണ്ട്?,2,3,4,5,1,Geometric Properties
+Mathematics,Measurement,1 കിലോഗ്രാം എന്നാൽ എത്ര ഗ്രാം?,500 ഗ്രാം,1000 ഗ്രാം,2000 ഗ്രാം,100 ഗ്രാം,1,Weight Units
+Mathematics,Time,ഒരു ദിവസത്തിൽ എത്ര മണിക്കൂറുകൾ ഉണ്ട്?,12 മണിക്കൂർ,24 മണിക്കൂർ,48 മണിക്കൂർ,60 മണിക്കൂർ,1,Time Measurement
+Mathematics,Money,₹100 ന്റെ നോട്ടും ₹50 ന്റെ നോട്ടും ചേർന്നാൽ എത്രയാകും?,₹120,₹140,₹150,₹200,2,Money Calculation
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 5, 10, 15, 20, ?,22,25,30,35,1,Skip Counting
+English,Grammar,'He ___ football every evening.' ശരിയായ ക്രിയ തിരഞ്ഞെടുക്കുക.,play,plays,playing,played,1,Present Simple Tense
+English,Vocabulary,'Cold' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Hot,Warm,Cool,Ice,0,Opposite Words
+English,Grammar,'The cat is sleeping ___ the bed.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,in,on,under,at,1,Prepositions
+English,Plurals,'Leaf' (ഇല) എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Leafs,Leaves,Lefs,Leavs,1,Singular Plural
+English,Pronouns,'This is Riya. ___ is a good dancer.' ശരിയായ സർവ്വനാമം തിരഞ്ഞെടുക്കുക.,He,She,It,They,1,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Elephant,Elefent,Elifant,Elliphant,0,Spelling Accuracy
+English,Adjectives,ഈ മാങ്ങ മധുരമുള്ളതാണ്. ഈ വാക്യത്തിലെ വിശേഷണം ഏത്?,ഈ,മാങ്ങ,മധുരമുള്ള (Sweet),ആണ്,2,Describing Words
+English,Action Verbs,'Writing' എന്നാൽ മലയാളത്തിൽ എന്താണ്?,വായിക്കുക,എഴുതുക (Writing),കാണുക,കേൾക്കുക,1,Action Verbs
+English,Question Words,'___ are you going?' ശരിയായ ചോദ്യപദം തിരഞ്ഞെടുക്കുക.,What,Where,When,Who,1,Wh-Questions
+English,Rhyming Words,'Cat' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Bat,Dog,Sun,Moon,0,Rhyming Words
+EVS,Body Parts,നമ്മുടെ ശരീരത്തിലെ ഏറ്റവും കട്ടിയുള്ള ഭാഗം ഏത്?,പല്ലിലെ ഇനാമൽ (Tooth Enamel),ത്വക്ക്,നഖം,മുടി,0,Human Body Facts
+EVS,Animals,വെള്ളത്തിലും കരയിലും ഒരുപോലെ ജീവിക്കാൻ കഴിയുന്ന ജീവികളെ എന്താണ് വിളിക്കുന്നത്?,ജലജീവികൾ,ഉഭയചരങ്ങൾ (Amphibians),കരയിൽ ജീവിക്കുന്നവ,പറക്കുന്നവ,1,Animal Habitats
+EVS,Plants,സസ്യങ്ങളുടെ ഏത് ഭാഗമാണ് മണ്ണിനടിയിൽ കാണപ്പെടുന്നത്?,ഇല,പൂവ്,വേര് (Root),ഫലം,2,Parts of Plants
+EVS,Water,കുടിവെള്ളം ശുദ്ധീകരിക്കുന്നതിനുള്ള ഏറ്റവും സുരക്ഷിതമായ മാർഗ്ഗം ഏത്?,തടാകത്തിലെ വെള്ളം കുടിക്കുക,തിളപ്പിച്ചാറ്റിയ വെള്ളം കുടിക്കുക,നദിയിലെ കലങ്ങിയ വെള്ളം നേരിട്ട് കുടിക്കുക,മഴവെള്ളം നേരിട്ട് കുടിക്കുക,1,Water Purification
+EVS,Shelter,പട്ടി എവിടെയാണ് താമസിക്കുന്നത്?,കൂട്ടിൽ,മാളത്തിൽ,കെന്നൽ / പട്ടിക്കൂട് (Kennel),പക്ഷിക്കൂട്ടിൽ,2,Animal Homes
+EVS,Seasons,വേനൽക്കാലത്ത് ഏറ്റവും കൂടുതൽ ബുദ്ധിമുട്ട് ഉണ്ടാക്കുന്നത് എന്താണ്?,തണുപ്പ്,കടുത്ത ചൂടും വെയിലും,മഴ,ഹിമപാതം,1,Seasons
+EVS,Community Helpers,രോഗികൾക്ക് മരുന്നും ചികിത്സയും നൽകുന്നത് ആരാണ്?,അധ്യാപകൻ,ഡോക്ടർ (Doctor),ടൈലർ,മരപ്പണിക്കാരൻ,1,Community Helpers
+EVS,Safety,വീട്ടിൽ പാചക വാതക സിലിണ്ടറിന് അടുത്തേക്ക് പോകുമ്പോൾ എന്ത് ചെയ്യരുത്?,കളിക്കുക / തൊടുക,പാചകം കാണുക,അമ്മയെ സഹായിക്കുക,മാറി നിൽക്കുക,0,Safety Rules
+EVS,Food,ഏത് ആഹാരമാണ് നമ്മുടെ പല്ലുകളെ ബലമുള്ളതാക്കുന്നത്?,ചോക്ലേറ്റ്,പാലും പച്ചക്കറികളും (Milk & Vegetables),കോൾഡ്രിങ്ക്സ്,ചിപ്സ്,1,Healthy Food
+EVS,Transport,ഇരുമ്പ് പാളികളിലൂടെ ഓടുന്ന വാഹനം ഏത്?,ബസ്,കാർ,തീവണ്ടി / ട്രെയിൻ,വിമാനം,2,Rail Transport
+Social Studies,National Symbols,നമ്മുടെ ദേശീയ ജലജീവി ഏത്?,ഗംഗാ ഡോൾഫിൻ (Dolphin),മത്സ്യം,മുതല,തിമിംഗലം,0,National Symbols
+Social Studies,Festivals,സ്വാതന്ത്ര്യ ദിനം എപ്പോഴാണ് ആഘോഷിക്കുന്നത്?,26 ജനുവരി,15 ആഗസ്റ്റ് (15th August),2 ഒക്ടോബർ,1 മെയ്,1,National Festivals
+Social Studies,Directions,ഉദിക്കുന്ന സൂര്യന്റെ ദിശയ്ക്ക് അഭിമുഖമായി നിൽക്കുമ്പോൾ ഇടത് കൈയ്യിലെ ദിശ ഏത്?,കിഴക്ക്,പടിഞ്ഞാറ്,വടക്ക് (North),തെക്ക്,2,Cardinal Directions
+Social Studies,Family,അച്ഛന്റെ സഹോദരനെ നാം എന്താണ് വിളിക്കുന്നത്?,മാമ്മൻ,വലിയച്ഛൻ / ചെറിയച്ഛൻ (Uncle),അമ്മായി,അമ്മൂമ്മ,1,Family Relations
+Social Studies,Community Helpers,രാജ്യത്തിന്റെ അതിർത്തികൾ സംരക്ഷിക്കുന്നത് ആരാണ്?,സൈനികർ (Soldier),കർഷകൻ,തൊഴിലാളി,വ്യാപാരി,0,National Security
+Social Studies,Earth,ഭൂമിയിലെ ഏറ്റവും വലിയ മഹാസാഗരം ഏത്?,അറ്റ്ലാന്റിക് സമുദ്രം,ശാന്ത മഹാസാഗരം (Pacific Ocean),ഇന്ത്യൻ മഹാസാഗരം,ആർട്ടിക് സമുദ്രം,1,Geographical Facts
+Social Studies,Time,ഒരു വർഷത്തിൽ ആകെ എത്ര മാസങ്ങളുണ്ട്?,10,12,6,24,1,Months of the Year
+Social Studies,Environment,പേപ്പറുകൾ പരമാവധി ഒഴിവാക്കിക്കൊണ്ട് നമ്മൾ എന്തിനെയാണ് സംരക്ഷിക്കുന്നത്?,വെള്ളം,മരങ്ങൾ / വനങ്ങൾ (Forests),വൈദ്യുതി,മണ്ണ്,1,Environmental Awareness
+Social Studies,Civic Sense,പൊതുസ്ഥലങ്ങളിൽ മാലിന്യങ്ങൾ എവിടെയാണ് ഇടേണ്ടത്?,റോഡിൽ,ചവറ്റുകുട്ടയിൽ (Dustbin),ജനലിലൂടെ,മൂലയിൽ,1,Civic Responsibility
+Social Studies,General Awareness,കേരളത്തിലെ ഏറ്റവും നീളം കൂടിയ നദി ഏത്?,കൃഷ്ണ,പെരിയാർ,നർമ്മദ,താപി,1,Rivers of Kerala
+Mathematics,Addition,321 ഉം 213 ഉം കൂട്ടിയാൽ എത്ര?,524,534,544,514,1,Three Digit Addition
+Mathematics,Subtraction,675 ൽ നിന്ന് 342 കുറച്ചാൽ എത്ര?,323,333,343,353,1,Three Digit Subtraction
+Mathematics,Multiplication,6 ഗുണിക്കണം 7 എത്രയാണ്?,40,42,48,36,1,Multiplication Tables
+Mathematics,Division,56 നെ 8 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,6,7,8,9,1,Division Basics
+Mathematics,Fractions,¾ എന്നാൽ മലയാളത്തിൽ എന്താണ്?,കാൽ,പകുതി,മുക്കാൽ,മുഴുവൻ,2,Fraction Basics
+Mathematics,Geometry,ദീർഘചതുരത്തിനും ചതുരത്തിനും ആകെ എത്ര വശങ്ങളുണ്ട്?,2,3,4,5,2,Geometric Properties
+Mathematics,Measurement,5 മീറ്ററിൽ എത്ര സെന്റിമീറ്റർ ഉണ്ട്?,50 സെന്റിമീറ്റർ,500 സെന്റിമീറ്റർ,5000 സെന്റിമീറ്റർ,5 സെന്റിമീറ്റർ,1,Measurement Units
+Mathematics,Time,ഒരു മണിക്കൂറിൽ എത്ര മിനിറ്റുകൾ ഉണ്ട്?,30 മിനിറ്റ്,60 മിനിറ്റ്,120 മിനിറ്റ്,24 മിനിറ്റ്,1,Time Measurement
+Mathematics,Money,₹20 ന്റെ 3 നോട്ടുകൾ എന്നാൽ ആകെ എത്ര രൂപ?,₹40,₹50,₹60,₹80,2,Money Calculation
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 10, 20, 30, 40, ?,45,50,55,60,1,Skip Counting
+English,Grammar,'They ___ playing in the garden.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,is,are,am,be,1,Plural Verbs
+English,Vocabulary,'Happy' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Sad,Glad,Joy,Smile,0,Opposite Words
+English,Grammar,'The ball is ___ the box.' (പെട്ടിക്ക് ഉള്ളിൽ) ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,in,on,under,near,0,Prepositions
+English,Plurals,'Box' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Boxs,Boxes,Boxes,Bokses,1,Singular Plural
+English,Pronouns,'Rahul and Amit are friends. ___ study together.' ശരിയായ സർവ്വനാമം തിരഞ്ഞെടുക്കുക.,He,She,It,They,3,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Friend,Freind,Frind,Frend,0,Spelling Accuracy
+English,Adjectives,റോസാപ്പൂവ് മനോഹരമായ ഒരു പൂവാണ്. വിശേഷണം ഏത്?,റോസാപ്പൂവ്,മനോഹരമായ (Beautiful),പൂവ്,ആണ്,1,Describing Words
+English,Action Verbs,'Reading' എന്നാൽ മലയാളത്തിൽ എന്താണ്?,എഴുതുക,വായിക്കുക (Reading),കാണുക,കേൾക്കുക,1,Action Verbs
+English,Question Words,'___ is your best friend?' ശരിയായ ചോദ്യപദം തിരഞ്ഞെടുക്കുക.,What,Where,When,Who,3,Wh-Questions
+English,Rhyming Words,'Day' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Way,Sun,Cat,Pen,0,Rhyming Words
