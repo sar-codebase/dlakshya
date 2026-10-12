@@ -1,0 +1,115 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Place Value,What is the place value of 7 in 4,728?,7,70,700,7000,2,4-Digit Place Value
+Mathematics,Place Value,Which is the standard form of 3000 + 400 + 50 + 6?,3456,3546,6543,3045,0,Expanded Notation
+Mathematics,Addition,What is 450 + 230?,670,680,690,650,1,3-Digit Addition
+Mathematics,Addition,What is 125 + 375?,450,500,525,475,1,3-Digit Addition
+Mathematics,Subtraction,What is 850 - 320?,530,520,540,510,0,3-Digit Subtraction
+Mathematics,Subtraction,What is 1000 - 450?,550,650,500,600,0,Subtraction across Zeros
+Mathematics,Multiplication,What is 12 × 4?,44,48,52,40,1,Multiplication Tables
+Mathematics,Multiplication,What is 15 × 5?,65,70,75,80,2,Multiplication Tables
+Mathematics,Multiplication,Any number multiplied by zero equals:,0,1,The number itself,10,0,Multiplication Properties
+Mathematics,Division,What is 20 ÷ 4?,4,5,6,3,1,Basic Division
+Mathematics,Division,What is 36 ÷ 6?,5,6,7,8,1,Basic Division
+Mathematics,Division,What is 45 ÷ 5?,8,9,10,7,1,Basic Division
+Mathematics,Fractions,What fraction of a shape is shaded if 1 out of 4 parts is shaded?,1/2,1/3,1/4,3/4,2,Understanding Fractions
+Mathematics,Fractions,In the fraction 3/5, what is the numerator?,5,3,8,2,1,Fraction Terminology
+Mathematics,Fractions,In the fraction 2/7, what is the denominator?,2,7,5,9,1,Fraction Terminology
+Mathematics,Money,How many 50-paise coins make 5 Rupees?,5,10,15,20,1,Money Conversions
+Mathematics,Time,How many minutes pass when the minute hand moves from 12 to 3?,10,15,20,30,1,Reading Clocks
+Mathematics,Time,How many days are there in a leap year?,365,366,364,360,1,Calendar Concepts
+Mathematics,Measurement,1 kilometer is equal to how many meters?,10,100,1000,10000,2,Length Conversion
+Mathematics,Measurement,1 kilogram is equal to how many grams?,100,500,1000,10000,2,Weight Conversion
+Mathematics,Measurement,Which instrument is used to measure body temperature?,Ruler,Thermometer,Scale,Clock,1,Measurement Tools
+Mathematics,Shapes,How many vertices (corners) does a cube have?,6,8,12,4,1,3D Shapes
+Mathematics,Shapes,How many faces does a cuboid have?,4,6,8,12,1,3D Shapes
+Mathematics,Patterns,Complete the sequence: 100, 200, 300, *?,350,400,450,500,1,Number Patterns
+Mathematics,Patterns,Complete the sequence: 3, 6, 9, 12, *?,14,15,16,18,1,Skip Counting
+Mathematics,Word Problems,A shopkeeper sells 120 apples on Monday and 150 on Tuesday. Total sold?,250,270,280,260,1,Applied Math
+Mathematics,Word Problems,There are 48 students in a class divided equally into 4 groups. How many per group?,10,12,14,16,1,Applied Division
+Science,Living Things,Which living thing can make its own food using sunlight?,Dog,Green Plant,Human,Mushroom,1,Photosynthesis Intro
+Science,Living Things,Which gas do humans inhale for respiration?,Carbon dioxide,Oxygen,Nitrogen,Hydrogen,1,Respiration
+Science,Living Things,Which gas do plants absorb during photosynthesis?,Oxygen,Carbon Dioxide,Nitrogen,Helium,1,Photosynthesis Intro
+Science,Plants,Which plant part absorbs water and nutrients from soil?,Leaf,Stem,Root,Flower,2,Plant Parts
+Science,Plants,Which part of a plant is called its food factory?,Root,Leaf,Stem,Seed,1,Plant Parts
+Science,Plants,Seeds develop inside the:,Root,Fruit,Stem,Leaf,1,Plant Reproduction
+Science,Animals,Animals that eat both plants and flesh are called:,Herbivores,Carnivores,Omnivores,Scavengers,2,Animal Nutrition
+Science,Animals,Which animal breathes through its gills?,Earthworm,Fish,Frog,Bird,1,Animal Respiration
+Science,Animals,Insects breathe air through small holes on their bodies called:,Gills,Spiracles,Lungs,Stomata,1,Animal Respiration
+Science,Animals,Which animal moves by crawling on its stomach?,Dog,Snake,Eagle,Frog,1,Animal Movement
+Science,Human Body,Food travels from our mouth to the stomach through the:,Windpipe,Food pipe (Esophagus),Spine,Veins,1,Digestive System
+Science,Human Body,Which organ pumps blood throughout the human body?,Lungs,Heart,Brain,Liver,1,Circulatory System
+Science,Human Body,How many lungs do humans have?,1,2,3,4,1,Respiratory System
+Science,Human Body,The framework of bones in our body is called the:,Nervous system,Skeleton,Muscle system,Digestive system,1,Skeletal System
+Science,Matter,The three states of matter are solid, liquid, and:,Air,Gas,Vapor,Ice,1,States of Matter
+Science,Matter,Which of these has a fixed shape and volume?,Water,Air,Stone,Milk,2,States of Matter
+Science,Matter,Water changing into ice on cooling is called:,Evaporation,Freezing,Condensation,Melting,1,State Changes
+Science,Matter,Water vapor changing into liquid water on cooling is called:,Evaporation,Condensation,Freezing,Melting,1,State Changes
+Science,Space,The planet on which we live is called:,Mars,Venus,Earth,Jupiter,2,Solar System
+Science,Space,The natural satellite of Earth is the:,Sun,Moon,Mars,Star,1,Solar System
+Science,Space,The center of our solar system is the:,Earth,Moon,Sun,Jupiter,2,Solar System
+Science,Space,How long does it take Earth to complete one rotation on its axis?,12 hours,24 hours,30 days,365 days,1,Earth Rotation
+Science,Space,Earth's revolution around the Sun causes:,Day and Night,Seasons,Eclipses,Tides,1,Earth Revolution
+Science,Environment,The layer of air surrounding the Earth is called the:,Hydrosphere,Atmosphere,Biosphere,Lithosphere,1,Earth Science
+Science,Environment,Contamination of water, air, or soil is known as:,Conservation,Pollution,Recycling,Erosion,1,Environmental Issues
+Science,Soil,Top layer of Earth's surface where plants grow is called:,Rock,Soil,Sand,Clay,1,Soil Science
+Science,Soil,Decayed plant and animal matter in soil is called:,Sand,Humus,Clay,Silt,1,Soil Science
+Science,Safety,First treatment given to an injured person before a doctor arrives is:,Surgery,First Aid,Prescription,Therapy,1,Safety & First Aid
+Science,Force,A push or pull applied on an object is called:,Energy,Force,Work,Speed,1,Physics Intro
+Science,Energy,Main source of energy on Earth is the:,Moon,Sun,Wind,Electricity,1,Energy Sources
+English,Grammar,Select the proper noun: 'Ravi went to Taj Mahal in Agra.',Ravi, Taj Mahal, and Agra,went,to,in,0,Proper Nouns
+English,Grammar,Which of these is an abstract noun?,Chair,Happiness,Apple,Boy,1,Abstract Nouns
+English,Grammar,Choose the correct collective noun: 'A ____ of wolves.',herd,flock,pack,swarm,2,Collective Nouns
+English,Grammar,Choose the correct collective noun: 'A ____ of bees.',pack,swarm,school,herd,1,Collective Nouns
+English,Grammar,Identify the pronoun: 'Rhea lost her pen.',Rhea,her,lost,pen,1,Pronouns
+English,Grammar,Choose the correct pronoun: 'The dog wagged ____ tail.',his,its,her,their,1,Pronouns
+English,Grammar,Identify the adjective: 'The tall man wore a blue shirt.',tall and blue,man,wore,shirt,0,Adjectives
+English,Grammar,Comparative form of 'bright' is:,more bright,brighter,brightest,brightly,1,Degrees of Comparison
+English,Grammar,Superlative form of 'fast' is:,faster,fastly,fastest,more fast,2,Degrees of Comparison
+English,Grammar,Superlative form of 'good' is:,gooder,better,best,goodest,2,Degrees of Comparison
+English,Grammar,Choose the correct verb: 'Dogs ____ loudly at night.',barks,bark,barking,barked,1,Subject-Verb Agreement
+English,Grammar,Choose the correct verb: 'He ____ to school every day.',walk,walks,walking,walked,1,Subject-Verb Agreement
+English,Grammar,Identify the adverb: 'She spoke softly to the baby.',She,spoke,softly,baby,2,Adverbs
+English,Grammar,Identify the adverb: 'The runner ran fast.',runner,ran,fast,The,2,Adverbs
+English,Grammar,Choose the correct past tense of 'write':,writes,writing,wrote,written,2,Irregular Verbs
+English,Grammar,Choose the correct past tense of 'fly':,flew,flies,flying,flied,0,Irregular Verbs
+English,Grammar,Choose the correct past tense of 'catch':,catched,caught,catching,catches,1,Irregular Verbs
+English,Grammar,Choose the correct preposition: 'The cat jumped ____ the fence.',under,over,in,at,1,Prepositions
+English,Grammar,Choose the correct preposition: 'The book is ____ the drawer.',on,in,over,above,1,Prepositions
+English,Grammar,Choose the correct conjunction: 'He failed ____ he did not study.',so,because,but,and,1,Conjunctions
+English,Grammar,Choose the correct conjunction: 'Walk carefully, ____ you will fall.',and,or,but,so,1,Conjunctions
+English,Grammar,Choose the correct article: '**__ honest man',A,An,The,No article,1,Articles
+English,Grammar,Choose the correct article: '____ Amazon river',A,An,The,No article,2,Articles
+English,Vocabulary,Synonym of 'Huge' is:,Tiny,Enormous,Small,Short,1,Synonyms
+English,Vocabulary,Synonym of 'Ancient' is:,Modern,Very Old,New,Recent,1,Synonyms
+English,Vocabulary,Synonym of 'Fast' is:,Rapid,Slow,Sluggish,Late,0,Synonyms
+English,Vocabulary,Antonym of 'Wisdom' is:,Smartness,Foolishness,Knowledge,Intelligence,1,Antonyms
+English,Vocabulary,Antonym of 'Victory' is:,Win,Defeat,Success,Gain,1,Antonyms
+English,Vocabulary,Antonym of 'Friend' is:,Ally,Enemy,Buddy,Neighbor,1,Antonyms
+English,Spelling,Select the correctly spelled word:,Neccessary,Necessary,Neceshary,Necesary,1,Spelling
+English,Spelling,Select the correctly spelled word:,Receive,Recieve,Receve,Recive,0,Spelling
+English,Spelling,Select the correctly spelled word:,Knowledge,Knowlege,Nolege,Knowledge,0,Spelling
+English,Spelling,Select the correctly spelled word:,Environment,Enviroment,Environmint,Enviromint,0,Spelling
+English,Punctuation,Which sentence uses possessive apostrophe correctly?,This is my brothers book.,This is my brother's book.,This is my brothers's book.,This is my brother book.,1,Punctuation Rules
+English,Punctuation,Select the correctly capitalized sentence:,i live in London.,I live in London.,I live in london.,i live in london.,1,Capitalization
+English,Grammar,Identify the subject in: 'The red car stopped at the light.',stopped,The red car,at the light,light,1,Sentence Structure
+English,Grammar,Identify the predicate in: 'The children played in the park.',The children,played in the park,park,children,1,Sentence Structure
+English,Comprehension,What type of sentence asks something and ends with '?'?,Assertive,Imperative,Interrogative,Exclamatory,2,Sentence Types
+English,Comprehension,What type of sentence expresses a command or request?,Assertive,Imperative,Interrogative,Exclamatory,1,Sentence Types
+English,Vocabulary,A collection of maps in a book is called an:,Dictionary,Atlas,Encyclopedia,Globe,1,Word Definitions
+English,Vocabulary,A book that gives meanings of words is a:,Atlas,Dictionary,Novel,Magazine,1,Word Definitions
+English,Vocabulary,A place where astronomical objects are observed is an:,Observatory,Laboratory,Aquarium,Museum,0,Word Definitions
+English,Vocabulary,A place where fish and aquatic animals are kept is an:,Aviary,Aquarium,Sanctuary,Zoo,1,Word Definitions
+Mathematics,Addition,What is 324 + 158?,482,472,492,462,0,Addition with Carrying
+Mathematics,Subtraction,What is 654 - 238?,416,426,406,418,0,Subtraction with Borrowing
+Mathematics,Multiplication,What is 20 × 6?,100,120,140,160,1,Multiplication with 10s
+Mathematics,Division,What is 81 ÷ 9?,7,8,9,10,2,Division Tables
+Mathematics,Fraction,What is 2/5 + 1/5?,3/5,3/10,1/5,4/5,0,Like Fractions
+Science,Plants,Plants breathe in and out through tiny pores called:,Stomata,Roots,Veins,Petals,0,Plant Anatomy
+Science,Animals,Which animal lays eggs?,Cow,Hen,Dog,Cat,1,Animal Classification
+Science,Human Body,Enamel is the outer white covering of our:,Bones,Teeth,Nails,Skin,1,Dental Care
+Science,Environment,Water in gas form is called:,Ice,Steam / Water Vapor,Rain,Dew,1,Water Cycle
+English,Grammar,Plural of 'Story' is:,Storys,Stories,Storyes,Storyies,1,Plural Rules
+English,Grammar,Plural of 'Hero' is:,Heros,Heroes,Heroies,Heroes's,1,Plural Rules
+English,Grammar,Past tense of 'go' is:,goed,going,went,gone,2,Irregular Verbs
+English,Grammar,Opposite of 'Create' is:,Build,Destroy,Make,Form,1,Antonyms
+English,Vocabulary,Sound made by a frog is called a:,Croak,Quack,Mew,Roar,0,Animal Sounds
