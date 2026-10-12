@@ -1,0 +1,81 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Number Systems,खालीलपैकी कोणती संख्या परिमेय संख्या (Rational Number) आहे?,sqrt(2),pi,२२/७,sqrt(3),2,Number Systems
+Mathematics,Polynomials,बहुपद x^2 - 5x + 6 चे अवयव कोणते आहेत?,(x-2)(x-3),(x+2)(x+3),(x-1)(x-6),(x+1)(x+6),0,Polynomial Factorization
+Mathematics,Coordinate Geometry,बिंदू (-3, 4) कोणत्या चरणात (Quadrant) स्थित आहे?,प्रथम चरण,द्वितीय चरण,तृतीय चरण,चतुर्थ चरण,1,Coordinate Geometry
+Mathematics,Linear Equations,रेषीय समीकरण 2x + 3y = 12 ला किती उकल (Solutions) असतात?,फक्त एक,दोन,अनंत (Infinitely many),काहीही नाही,2,Linear Equations in Two Variables
+Mathematics,Lines and Angles,जर एका रेषेवर उभी रेषा तयार होणारे दोन कोन रेषीय जोडीतील असतील आणि एक कोन ६० अंशाचा असेल, तर दुसरा कोन कितीचा?,३० अंश,९० अंश,१२० अंश,१८० अंश,2,Lines and Angles
+Mathematics,Triangles,समभुज त्रिकोणाचा प्रत्येक कोन किती अंशाचा असतो?,४५ अंश,६० अंश,९० अंश,१२८ अंश,1,Triangle Properties
+Mathematics,Quadrilaterals,समान्तर भुज चौकोनाचे कर्ण एकमेकांना काय करतात?,लंब असतात,दुभागतात (Bisect each other),समान नसतात,दुभारत नाहीत,1,Quadrilaterals
+Mathematics,Circles,वर्तुळाच्या एकाच वृत्तखंडातील कोन एकमेकांशी कसे असतात?,पूरक,एककरूप (Equal),कोटिकोनातील,असमान,1,Circle Theorems
+Mathematics,Heron's Formula,बाजू १० सेमी, २४ सेमी आणि २६ सेमी असलेल्या त्रिकोणाचे क्षेत्रफळ किती?,१२० चौसेमी,२४० चौसेमी,६० चौसेमी,१०० चौसेमी,0,Heron's Formula
+Mathematics,Statistics,दिलेल्या सांख्यिकीय माहितीतून सर्वाधिक वारंवारता असलेला घटक काय दर्शवतो?,मध्य,मध्यक,बहूलक (Mode),परिसर,2,Statistics Basics
+English,Grammar,'He said, "I am going to school."' याचे Indirect Speech काय होईल?,He said that he was going to school.,He said that he is going to school.,He told that he was going to school.,He says he is going.,0,Direct and Indirect Speech
+English,Vocabulary,'Transparent' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Clear,Opaque (अपारदर्शक),Bright,Translucent,1,Opposite Words
+English,Grammar,'If you had worked hard, you ___ passed.' योग्य Modal Verb निवडा.,will,would have,could,might,1,Conditional Sentences
+English,Plurals,'Criterion' या शब्दाचे अनेकवचन काय होते?,Criterions,Criteria,Criterias,Criterion,1,Singular Plural
+English,Pronouns,'___ of the two candidates gave a satisfactory reply.' योग्य Determiner भरा.,Neither,Every,All,Both,0,Pronouns & Determiners
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Accommodation,Acomodation,Accomodationn,Acomodationn,0,Spelling Accuracy
+English,Tenses,'By 2027, India will have achieved major milestones.' हा कोणता काळ आहे?,Future Continuous,Future Perfect (भविष्य पूर्ण काळ),Present Perfect,Past Perfect,1,Verb Tenses
+English,Action Verbs,'Seek' या क्रियापदाचे V2 (Past Tense) रूप कोणते?,Seeked,Sought,Seeks,Seeking,1,Verb Forms
+English,Question Words,'___ book is this on the table?' स्वामित्व विचारण्यासाठी कोणता शब्द वापरतात?,What,Which,Whose,Who,2,Wh-Questions
+English,Rhyming Words,'Sight' शी जुळणारा शब्द ओळखा:,Night,Light,Right,All of these,3,Rhyming Words
+Science,Matter,पदार्थाच्या स्थायू, द्रव आणि वायू या अवस्थांमध्ये कशामध्ये कणांमधील आकर्षण सर्वात जास्त असते?,वायू,द्रव,स्थायू (Solid),यापैकी नाही,2,Matter in Our Surroundings
+Science,Atoms and Molecules,पाण्याचा (H2O) अणुभार (Molecular Mass) किती युनिट्स असतो?,१६ यु,१८ यु (18 u),२० यु,२४ यु,1,Atoms and Molecules
+Science,Structure of Atom,अणूच्या केंद्रकात (Nucleus) कोणते कण असतात?,इलेक्ट्रॉन व प्रोटॉन,प्रोटॉन व न्यूट्रॉन (Protons & Neutrons),फक्त इलेक्ट्रॉन,इलेक्ट्रॉन व न्यूट्रॉन,1,Structure of the Atom
+Science,Cell Biology,पेशीमधील 'शक्तीचे घर' (Powerhouse of the Cell) म्हणून कोणाला ओळखले जाते?,लायसोसोम,मायटोकॉन्ड्रिया (Mitochondria),रायबोसोम,हरितकण,1,Fundamental Unit of Life
+Science,Tissues,वनस्पतींमध्ये पाण्याचे वहन करणारी ऊती कोणती आहे?,रसवाहिनी,जलवाहिनी (Xylem),त्वचा,मृदूतक,1,Plant Tissues
+Science,Motion,वेगाच्या कालानुसार (Velocity-Time graph) होणाऱ्या बदलाचा आलेख काय दर्शवतो?,अंतर,त्वरण (Acceleration),बल,विस्थापन,1,Motion and Kinematics
+Science,Force and Laws of Motion,जडत्व (Inertia) प्रामुख्याने कशावर अवलंबून असते?,वस्तूचा वेग,वस्तूचे वस्तुमान (Mass),वस्तूचे आकारमान,बल,1,Laws of Motion
+Science,Gravitation,मुक्त पतन करणाऱ्या वस्तूचे त्वरण कशावर अवलंबून असते?,वस्तूचे वस्तुमान,गुरुत्वीय त्वरण (g / independent of mass),वस्तूचा आकार,वेग,1,Gravitation
+Science,Work and Energy,यांत्रिक ऊर्जेमध्ये कशाचा समावेश होतो?,गतिज ऊर्जा व स्थितिज ऊर्जा (Kinetic & Potential Energy),फक्त उष्णता,फक्त प्रकाश,फक्त रासायनिक ऊर्जा,0,Work and Energy
+Science,Sound,ध्वनीचे प्रसारण निर्वात पोकळीतून (Vacuum) होऊ शकते का?,होय,नाही (No),फक्त रात्री,फक्त उन्हाळ्यात,1,Sound Waves
+Social Studies,History,फ्रेंच राज्यक्रांतीची सुरुवात कोणत्या वर्षी झाली?,१७८९ (1789),१७७६,१८५७,१९४७,0,French Revolution
+Social Studies,Geography,भारताच्या मधोमध जाणारे रेखावृत्त (Standard Meridian) कोणते आहे?,८२.५ अंश पूर्व रेखावृत्त (82.5° E),९० अंश पूर्व,६८.७ अंश पूर्व,९७.२५ अंश पूर्व,0,Geography of India
+Social Studies,Civic Sense,लोकशाहीमध्ये अंतिम सत्ता कोणाकडे असते?,राष्ट्रपती,प्रधानमंत्री,जनता (Citizens / People),संसद,2,Democratic Politics
+Social Studies,Economics,पालघर जिल्ह्यातील पालमपूर गावात उत्पादनाचे मुख्य साधन काय आहे?,शेती (Farming),आयटी उद्योग,पर्यटन,खाणकाम,0,Economics
+Social Studies,History,रशियन राज्यक्रांतीच्या काळात बोल्शेविक पक्षाचे नेतृत्व कोणी केले?,कार्ल मार्क्स,व्लादिमीर लेनिन (Vladimir Lenin),झार निकोलस,स्टॅलिन,1,Socialism in Europe
+Social Studies,Geography,भारतातील सर्वात मोठे डेल्टा क्षेत्र कोणते आहे?,सुंदरबन डेल्टा (Sundarbans),कावेरी डेल्टा,महानदी डेल्टा,गोदावरी डेल्टा,0,Drainage Systems
+Social Studies,Civic Sense,भारतीय संविधानाच्या निर्मितीसाठी कोणती सभा स्थापन केली गेली?,विधानसभा,संविधान सभा (Constituent Assembly),लोकसभा,राज्यसभा,1,Indian Constitution
+Social Studies,Economics,ह्या देशात बेरोजगारीचे प्रमाण मोजण्यासाठी कोणते मुख्य सर्वेक्षण राष्ट्रीय स्तरावर केले जाते?,एनएसएसओ (NSSO / MoSPI),आरबीआय सर्वेक्षण,कृषी विभाग,सेबी,0,Poverty as a Challenge
+Social Studies,History,नाझी जर्मनीचा dictator (हुकूमशाह) कोण होता?,बेनिटो मुसोलिनी,अδόल्फ हिटलर (Adolf Hitler),जोसेफ स्टॅलिन,विन्स्टन चर्चिल,1,Nazism and Rise of Hitler
+Social Studies,Geography,भारतामध्ये मान्सूनच्या आगमनाचे मुख्य कारण काय आहे?,समुद्री वारे व हवामानाचे दाब पट्टे (Monsoon Winds),स्थानिक पाऊस,भूकंप,औद्योगिक प्रदूषण,0,Climate Geography
+Mathematics,Number Systems,sqrt(5) ही संख्या कशी आहे?,परिमेय संख्या,अपरिमेय संख्या (Irrational Number),पूर्णांक संख्या,मूळ संख्या,1,Number Systems
+Mathematics,Polynomials,बहुपद p(x) = x^3 - 3x^2 + 3x - 1 मध्ये x = 1 ठेवली असता किंमत किती येते?,० (Zero),१,-१,२,0,Polynomials
+Mathematics,Coordinate Geometry,मूळ बिंदूचे (Origin) निर्देशक (Coordinates) काय असतात?,(1, 1),(0, 0),(0, 1),(1, 0),1,Coordinate Geometry
+Mathematics,Linear Equations,x = 2 आणि y = 3 हे समीकरण 2x + by = 12 चे समाधान करते, तर b ची किंमत किती?,१,२,३,४,1,Linear Equations
+Mathematics,Lines and Angles,एका त्रिकोणाच्या तिन्ही कोनांच्या मापांचे गुणोत्तर १:२:३ असल्यास सर्वात मोठ्या कोनाचे माप किती?,३० अंश,६० अंश,९० अंश,१८० अंश,2,Triangles
+Mathematics,Triangles,दोन त्रिकोणांमध्ये बाजू समान असल्यास ती कोणती एकरूपतेची कसोटी असते?,SAS,SSS (Side-Side-Side),ASA,RHS,1,Triangle Congruence
+Mathematics,Quadrilaterals,आयताचे कर्ण एकमेकांशी कसे असतात?,असमान,समान (Equal),लंब,दुभारत नाहीत,1,Quadrilaterals
+Mathematics,Circles,अर्धवर्तुळात अंतरित झालेला कोन (Angle in a semicircle) किती अंशाचा असतो?,४५ अंश,९० अंश (Right Angle),१८० अंश,६० अंश,1,Circle Theorems
+Mathematics,Heron's Formula,बाजू ३ सेमी, ४ सेमी आणि ५ सेमी असलेल्या काटकोन त्रिकोणाचे क्षेत्रफळ किती?,६ चौसेमी,१२ चौसेमी,२० चौसेमी,१० चौसेमी,0,Triangle Area
+Mathematics,Statistics,दिलेल्या सांख्यिकीय माहितीतून सर्वात मोठी किंमत व सर्वात लहान किंमत यांच्यातील फरकाला काय म्हणतात?,मध्य,मध्यक,परिसर (Range),बहूलक,2,Statistics
+English,Grammar,'He is too weak to walk.' या वाक्यातील 'too... to' काढल्यास योग्य वाक्य काय होईल?,He is so weak that he cannot walk.,He is very weak so he can walk.,He is too weak so he can walk.,He is weak to walk.,0,Transformations
+English,Vocabulary,'Ancient' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Old,Modern (आधुनिक),Past,New,1,Opposite Words
+English,Grammar,'Hardly had I reached the station ___ the train left.' योग्य Conjunction निवडा.,than,when,then,before,1,Conjunctions
+English,Plurals,'Ox' या शब्दाचे अनेकवचन काय होते?,Oxes,Oxen,Oxs,Oxies,1,Plural Forms
+English,Pronouns,'___ of the students passed the exam.' योग्य शब्द भरा.,All,Every,Each,Both,0,Pronouns
+English,Spelling,योग्य स्पेलिंग ओळखा:,Environment,Envirement,Enviroment,Invironment,0,Spelling Accuracy
+English,Tenses,'She had already cooked food when I came.' हा कोणता काळ आहे?,Past Perfect (भूतकाळ पूर्ण काळ),Present Perfect,Past Continuous,Simple Past,0,Verb Tenses
+English,Action Verbs,'Write' या क्रियापदाचे V3 (Past Participle) रूप कोणते?,Wrote,Written,Writing,Writes,1,Verb Forms
+English,Question Words,'___ did you complete this assignment?' पद्धत विचारण्यासाठी कोणता शब्द वापरतात?,What,How,When,Where,1,Wh-Questions
+English,Rhyming Words,'Day' शी जुळणारा शब्द ओळखा:,Way,Sun,Cat,Pen,0,Rhyming Words
+Science,Matter,कठोरतेच्या आणि संकोचनीयतेच्या आधारे कोणता पदार्थ सर्वाधिक संपीड्य (Compressible) असतो?,स्थायू,द्रव,वायू (Gas),प्लॅटिनम,2,Matter
+Science,Atoms and Molecules,ॲवोगॅड्रो स्थिरांक (Avogadro Constant) चे मूल्य किती असते?,६.०२२ * १०^२३,३.१४ * १०^२२,९.१ * १०^-३१,१.६ * १०^-१९,0,Mole Concept
+Science,Structure_of_Atom,रदरफोर्डच्या अल्फा कण प्रकीर्णन प्रयोगात कोणत्या कणांचा मारा केला गेला?,इलेक्ट्रॉन,अल्फा कण (Helium nuclei / Alpha particles),प्रोटॉन,न्यूट्रॉन,1,Structure of Atom
+Science,Cell_Biology,वनस्पती पेशींना कडकपणा व आकार कशामुळे मिळतो?,पेशीभित्तिका (Cell Wall),हरितकण,लायसोसोम,केंद्रक,0,Cell Biology
+Science,Tissues,रक्त ही शरीरातील कोणत्या प्रकारची ऊती आहे?,स्नायू ऊती,संयुग ऊती / संभार ऊती (Connective Tissue),चेता ऊती,अधिचर्म ऊती,1,Animal Tissues
+Science,Motion,एकसमान वर्तुळाकार गतीत (Uniform Circular Motion) वस्तूचा टिंब बदलतो?,फक्त चाल,फक्त वेग,वेग आणि दिशा (Velocity direction changes continuously),काहीही बदलत नाही,2,Motion
+Science,Force_and_Laws_of_Motion,न्यूटॅनच्या कोणत्या गतीच्या नियमावरून बलाचे परिमाण (F = ma) मोजता येते?,पहिला नियम,दुसरा नियम (Second Law of Motion),तिसरा नियम,यापैकी नाही,1,Laws of Motion
+Science,Gravitation,दोन वस्तूंमधील अंतर दुप्पट केल्यास त्यांच्यामधील गुरुत्वाकर्षण बल किती पटीने बदलते?,दोन पटीने,चार पटीने कमी होते (Becomes 1/4th),दोन पटीने वाढते,अपरीवर्तित राहते,1,Gravitation
+Science,Work_and_Energy,एका वस्तूला ५ एन बल लावून १० मीटर विस्थापन केल्यास किती कार्य (Work Done) होईल?,५० जुल (Joules),५ जुल,५०० जुल,० जुल,0,Work and Energy
+Science,Sound,मानवी कानाला ऐकू येणाऱ्या ध्वनीची वारंवारता कक्षा (Audible Range) किती असते?,२० हर्ट्झ ते २०,००० हर्ट्झ,० ते १० हर्ट्झ,२०,००० हर्ट्झ पेक्षा जास्त,फक्त १००० हर्ट्झ,0,Sound Waves
+Social Studies,History,हिटलरने पोलंडवर कधी आक्रमण केले?,१ सप्टेंबर १९३९ (1 September 1939),१९४१,१९४५,१९१८,0,World War II
+Social Studies,Geography,भारत देशाचे एकूण भौगोलिक क्षेत्रफळ किती आहे?,३.२८ दशलक्ष चौरस किलोमीटर (3.28 million sq. km),२.४ लाख चौकिमी,५.१ दशलक्ष चौकिमी,१.२ दशलक्ष चौकिमी,0,Geography
+Social Studies,Civic Sense,दक्षिण आफ्रिकेत वर्णद्वेषी राजवटीविरुद्ध प्रदीर्घ लढा कोणी दिला?,महात्मा गांधी,नेल्सन मंडेला (Nelson Mandela),अब्राहम लिंकन,मार्टिन ल्युथर किंग,1,Democratic Politics
+Social Studies,Economics,भारतामध्ये हरित क्रांतीची सुरुवात प्रामुख्याने कोणत्या दशकात झाली?,१९५० चे दशक,१९६० चे दशक (1960s),१९८० चे दशक,२००० चे दशक,1,Indian Economy
+Social Studies,History,फ्रेन्च राज्यक्रांतीत 'लिबर्टी, समानता आणि बंधुता' हा नारा कोणत्या तत्त्वज्ञांनी दिला?,रूसो, व्होल्तेयर व मॉंतेस्क्यू,कार्ल मार्क्स,लेनिन,नेपोलियन,0,French Revolution
+Social Studies,Geography,हिमालय पर्वतरांगेतील सर्वात उत्तरेकडील थराला काय म्हणतात?,शिवालिक,हिमाद्री किंवा बृहद् हिमालय (Himadri / Greater Himalayas),लघु हिमालय,यापैकी नाही,1,Geography
+Social Studies,Civic Sense,संसदेच्या दोन अधिवेशनांमधील कमाल अंतर किती महिन्यांपेक्षा जास्त असू नये?,३ महिने,सहा महिने (6 Months),९ महिने,१२ महिने,1,Indian Parliament
+Social Studies,Economics,भारतातील ग्रामीण भागात कोणती बेरोजगारी प्रामुख्याने आढळते?,हंगामी व छुपी बेरोजगारी (Seasonal and Disguised Unemployment),औद्योगिक बेरोजगारी,शैक्षणिक बेरोजगारी,यापैकी नाही,0,Poverty & Employment
+Social Studies,History,पहिल्या महायुद्धात जर्मनीच्या पराभवानंतर कोणता करार झाला?,व्हर्सायचा करार (Treaty of Versailles),पॅरिस करार,जिनिव्हा करार,व्हिएन्ना करार,0,History
+Social Studies,Geography,भारताच्या दक्षिण टोकाला काय म्हणतात?,कन्याकुमारी (किंवा इंदिरा पॉइंट - मुख्य भूमीचे दक्षिण टोक),मुंबई,कोची,चेन्नई,0,Geography Basics
