@@ -1,0 +1,101 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Addition,1456 ഉം 2341 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,3797,3897,3697,3597,0,Four Digit Addition
+Mathematics,Subtraction,8954 ൽ നിന്ന് 3421 കുറച്ചാൽ എത്ര ബാക്കി വരും?,5433,5533,5633,5733,1,Four Digit Subtraction
+Mathematics,Multiplication,15 ഗുണിക്കണം 12 എത്രയാണ്?,160,170,180,190,2,Multiplication Mastery
+Mathematics,Division,84 നെ 4 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,19,20,21,22,2,Long Division Basics
+Mathematics,Fractions,¾ ന്റെ അർത്ഥം എന്താണ്?,നാലിലൊന്ന്,പകുതി,നാലിൽ മൂന്ന് ഭാഗം,മുഴുവൻ,2,Fraction Concepts
+Mathematics,Geometry,ചതുരത്തിന് ആകെ എത്ര മൂലകൾ (Corners) ഉണ്ട്?,2,3,4,6,2,Geometric Properties
+Mathematics,Measurement,5 കിലോമീറ്ററിൽ എത്ര മീറ്റർ ഉണ്ട്?,500 മീറ്റർ,1000 മീറ്റർ,5000 മീറ്റർ,500 മീറ്റർ,2,Distance Conversion
+Mathematics,Time,ഒരു മണിക്കൂറിൽ ആകെ എത്ര സെക്കൻഡുകൾ ഉണ്ട്?,60 സെക്കൻഡ്,3600 സെക്കൻഡ്,1000 സെക്കൻഡ്,24 സെക്കൻഡ്,1,Time Measurement
+Mathematics,Money,₹500 ന്റെ ഒരു നോട്ടും ₹100 ന്റെ രണ്ട് നോട്ടുകളും ചേർന്നാൽ എത്ര രൂപ?,₹600,₹700,₹800,₹1000,1,Money Calculations
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 25, 50, 75, 100, ?,115,120,125,150,2,Number Patterns
+English,Grammar,'She ___ to school every day.' ശരിയായ ക്രിയ തിരഞ്ഞെടുക്കുക.,go,goes,going,gone,1,Present Simple Tense
+English,Vocabulary,'Brave' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Coward / Timid,Strong,Bold,Fearless,0,Opposite Words
+English,Grammar,'The book is kept ___ the table.' ശരിയായ Preposition തിരഞ്ഞെടുക്കുക.,in,on,under,behind,1,Prepositions
+English,Plurals,'Tooth' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Tooths,Teeth,Teeths,Tooth,1,Irregular Plurals
+English,Pronouns,'Rahul and I are going. ___ will play cricket.' ശരിയായ സർവ്വനാമം തിരഞ്ഞെടുക്കുക.,He,She,They,We,3,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Necessary,Neccesary,Necessay,Nessessary,0,Spelling Accuracy
+English,Adjectives,ഈ പൂവ് വളരെ സുന്ദരമാണ്. ഈ വാക്യത്തിലെ വിശേഷണം ഏത്?,ഈ,പൂവ്,സുന്ദരമായ (Beautiful),ആണ്,2,Adjectives
+English,Action Verbs,'Running' എന്നാൽ മലയാളത്തിൽ എന്താണ്?,നടക്കുക,ഓടുക (Running),ചാടുക,ഇരിക്കുക,1,Action Verbs
+English,Question Words,'___ did you arrive yesterday?' ശരിയായ ചോദ്യപദം തിരഞ്ഞെടുക്കുക.,What,Where,When,Who,2,Wh-Questions
+English,Rhyming Words,'Light' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Night,Sun,Cat,Pen,0,Rhyming Words
+EVS,Body Parts,നമ്മുടെ ശരീരത്തിലെ രക്തം പമ്പ് ചെയ്യുന്നത് ഏത് അവയവമാണ്?,ശ്വാസകോശം,ഹൃദയം (Heart),വൃപ്പിണ്ട്,ആമാശയം,1,Circulatory System
+EVS,Animals,പൂമ്പാറ്റയുടെ ജീവിതചക്രത്തിലെ ആദ്യ ഘട്ടം ഏത്?,മുട്ട (Egg),ലാർവ,പ്യൂപ്പ,ശലഭം,0,Animal Life Cycle
+EVS,Plants,സസ്യങ്ങൾ പ്രകാശസംശ്ലേഷണത്തിലൂടെ പുറത്തുവിടുന്ന പ്രധാന വായു ഏത്?,कार्बन डायऑक्साइड,ഓക്സിജൻ (Oxygen),നൈട്രജൻ,ഹൈഡ്രജൻ,1,Plant Photosynthesis
+EVS,Water,മഴവെള്ള ശേഖരണം (Rainwater Harvesting) എന്തിനാണ് സഹായിക്കുന്നത്?,വെള്ളം പാഴാക്കാൻ,ഭൂഗർഭ ജലനിരപ്പ് കൂട്ടാൻ (Conserve groundwater),വെള്ളം മലിനമാക്കാൻ,ഒന്നുമില്ല,1,Water Conservation
+EVS,Shelter,ഈറ്റയും മണ്ണും ഉപയോഗിച്ച് വീടുകൾ നിർമ്മിക്കുന്നത് സാധാരണയായി എവിടെയാണ്?,മഞ്ഞുകാല പ്രദേശങ്ങളിൽ,മഴ കൂടുതലുള്ള ഗ്രാമീണ മേഖലകളിൽ (Traditional Houses),നഗരങ്ങളിൽ,മരുഭൂമിയിൽ,1,Types of Houses
+EVS,Seasons,കേരളത്തിൽ പ്രധാനമായും അനുഭവപ്പെടുന്ന കാലാവസ്ഥാ ഘട്ടങ്ങൾ ഏതൊക്കെ?,ശീതകാലം മാത്രം,വേനൽക്കാലം, മഴക്കാലം, തുലാവർഷം,ഹിമപാതം മാത്രം,ഒന്നുമില്ല,1,Seasons & Weather
+EVS,Community Helpers,നമ്മുടെ ഗ്രാമത്തിലും നഗരങ്ങളിലും സമാധാനവും നിയമവും പാലിക്കുന്നത് ആരാണ്?,ഡോക്ടർ,പോലീസ് (Police),അധ്യാപകൻ,കർഷകൻ,1,Community Safety
+EVS,Safety,തീ പൊള്ളലേറ്റാൽ പ്രഥമ ശുശ്രൂഷയായി ആദ്യം എന്താണ് ചെയ്യേണ്ടത്?,എണ്ണ പുരട്ടുക,തണുത്ത വെള്ളം ഒഴിക്കുക (Cool running water),ഉപ്പ് ഇടുക,മണ്ണുവെക്കുക,1,First Aid Basics
+EVS,Food,നമ്മുടെ ശരീരത്തിന് ഊർജ്ജം തരുന്ന മുഖ്യ ആഹാര ഘടകങ്ങൾ ഏവ?,കാർബോഹൈഡ്രേറ്റുകളും കൊഴുപ്പും (Carbohydrates & Fats),വെള്ളം മാത്രം,നഖങ്ങൾ,മുടി,0,Food Nutrients
+EVS,Transport,ഏറ്റവും വേഗതയേറിയ അന്താരാഷ്ട്ര യാത്രാസൗകര്യം ഏത്?,തീവണ്ടി,കപ്പൽ,വിമാനം (Aeroplane),ബസ്,2,Modes of Transport
+Social Studies,National Symbols,നമ്മുടെ ദേശീയ പക്ഷിയായ മയിലിന്റെ പ്രത്യേകത എന്താണ്?,വേഗത്തിൽ പറക്കൽ,മഴക്കാലത്ത് നൃത്തം ചെയ്യൽ (National Bird),രാത്രിയിൽ ശബ്ദമുണ്ടാക്കൽ,ഒന്നുമില്ല,1,National Symbols
+Social Studies,Festivals,ഓണം ഏത് വിളവെടുപ്പ് കാലത്തുമായി ബന്ധപ്പെട്ട ആഘോഷമാണ്?,വിഷു,ചിങ്ങമാസത്തെ വിളവെടുപ്പ് (Harvest Festival),ക്രിസ്മസ്,ദീപാവലി,1,Cultural Festivals
+Social Studies,Directions,ഭൂപടങ്ങളിൽ സാധാരണയായി മുകൾ ഭാഗം കാണിക്കുന്നത് ഏത് ദിശയാണ്?,തെക്ക്,വടക്ക് (North),കിഴക്ക്,പടിഞ്ഞാറ്,1,Map Directions
+Social Studies,Family,നമ്മുടെ കുടുംബത്തിലെ മുതിർന്നവരോടുള്ള കടമ എന്താണ്?,അനുസരണയും ബഹുമാനവും നൽകുക (Respect elders),ശല്യപ്പെടുത്തുക,വഴക്കുണ്ടാക്കുക,ഒന്നുമില്ല,0,Family Values
+Social Studies,Community Helpers,പഞ്ചായത്ത് തലത്തിൽ ഭരണകാര്യങ്ങൾക്ക് നേതൃത്വം നൽകുന്നത് ആരാണ്?,സർപഞ്ച് / പഞ്ചായത്ത് പ്രസിഡന്റ് (President),മുഖ്യമന്ത്രി,പ്രധാനമന്ത്രി,ഗവർണ്ണർ,0,Local Administration
+Social Studies,Earth,ഭൂമിയുടെ ഉപരിതലത്തിൽ കരഭാഗത്തേക്കാൾ കൂടുതലുള്ളത് എന്താണ്?,മരുഭൂമി,ജലഭാഗം / സമുദ്രങ്ങൾ (Water Bodies),മലനിരകൾ,കാടുകൾ,1,Earth Geography
+Social Studies,Time,ഒരു നൂറ്റാണ്ടിൽ (Century) ആകെ എത്ര വർഷങ്ങളുണ്ട്?,10 വർഷങ്ങൾ,50 വർഷങ്ങൾ,100 വർഷങ്ങൾ (100 Years),1000 വർഷങ്ങൾ,2,Time Units
+Social Studies,Environment,പ്ലാസ്റ്റിക് മാലിന്യങ്ങൾ ഒഴിവാക്കാൻ നാം എന്ത് ഉപയോഗിക്കണം?,തുണിസഞ്ചികൾ (Cloth bags),പ്ലാസ്റ്റിക് കവറുകൾ,ഗ്ലാസ് കുപ്പികൾ മാത്രം,കടലാസ് മാത്രം,0,Environmental Protection
+Social Studies,Civic Sense,ദേശീയഗാനം പാടുമ്പോൾ നാം പാലിക്കേണ്ട മര്യാദ എന്ത്?,സംസാരിക്കുക,ശ്രദ്ധയോടെ നിവർന്നു നിൽക്കുക (Stand in attention),നടക്കുക,ഓടുക,1,National Etiquette
+Social Studies,General Awareness,കേരളത്തിന്റെ 'ദൈവത്തിന്റെ സ്വന്തം നാട്' എന്നറിയപ്പെടാൻ കാരണം എന്താണ്?,വളരെ വലിയ കെട്ടിടങ്ങൾ,മനോഹരമായ പ്രകൃതി സൗന്ദര്യം (Natural Beauty),വലിയ ഫാക്ടറികൾ,മരുഭൂമി,1,State Identity
+Mathematics,Addition,2450 ഉം 3520 ഉം കൂട്ടിയാൽ എത്ര?,5970,5870,6070,5670,0,Four Digit Addition
+Mathematics,Subtraction,7500 ൽ നിന്ന് 2400 കുറച്ചാൽ എത്ര?,5000,5100,5200,5300,1,Four Digit Subtraction
+Mathematics,Multiplication,18 ഗുണിക്കണം 5 എത്രയാണ്?,80,85,90,95,2,Multiplication Tables
+Mathematics,Division,72 നെ 9 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,7,8,9,6,1,Division Basics
+Mathematics,Fractions,ഒരു ചോക്ലേറ്റ് 4 തുല്യ ഭാഗമാക്കി 3 ഭാഗം കഴിച്ചാൽ ബാക്കി എത്ര ഭാഗമുണ്ട്?,3/4,1/4,2/4,ഒരു മുഴുവൻ,1,Fraction Concepts
+Mathematics,Geometry,ചതുരത്തിന്റെ എല്ലാ വശങ്ങളും എങ്ങനെയുള്ളവയാണ്?,വ്യത്യസ്തം,തുല്യമായത് (Equal),ചെറുത്,വലുത്,1,Geometric Properties
+Mathematics,Measurement,2 കിലോഗ്രാമിൽ എത്ര ഗ്രാം ഉണ്ട്?,200 ഗ്രാം,1000 ഗ്രാം,2000 ഗ്രാം (2000g),500 ഗ്രാം,2,Weight Conversion
+Mathematics,Time,ഒരു വർഷത്തിൽ ആകെ എത്ര ആഴ്ചകളുണ്ട്?,52 ആഴ്ചകൾ (52 Weeks),40 ആഴ്ചകൾ,60 ആഴ്ചകൾ,30 ആഴ്ചകൾ,0,Time Units
+Mathematics,Money,₹50 ന്റെ 4 നോട്ടുകൾ എന്നാൽ ആകെ എത്ര രൂപ?,₹100,₹150,₹200 (₹200),₹250,2,Money Calculations
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 10, 20, 40, 80, ?,120,140,160,180,2,Number Patterns
+English,Grammar,'They ___ playing football in the field.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,is,are,am,be,1,Plural Verbs
+English,Vocabulary,'Clever' എന്ന വാക്കിന്റെ സമർത്ഥമായ പദം (Synonym) ഏത്?,Intelligent (ബുദ്ധിശൂന്യത ഇല്ലാത്തത്),Foolish,Dull,Slow,0,Synonyms
+English,Grammar,'The cat jumped ___ the wall.' ശരിയായ Preposition തിരഞ്ഞെടുക്കുക.,over,in,at,under,0,Prepositions
+English,Plurals,'Child' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Childs,Children (കുട്ടികൾ),Childs,Childrens,1,Irregular Plurals
+English,Pronouns,'This is my book. Give it to ___.' ശരിയായ സർവ്വനാമം തിരഞ്ഞെടുക്കുക.,me,I,my,mine,0,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Environment,Envirement,Enviroment,Invironment,0,Spelling Accuracy
+English,Adjectives,ഈ പർവ്വതം വളരെ വലുതാണ്. ഈ വാക്യത്തിലെ Adjective ഏത്?,ഈ,പർവ്വതം,വളരെ,വലുത് (Big),3,Adjectives
+English,Action Verbs,'Sleeping' എന്നാൽ മലയാളത്തിൽ എന്താണ്?,ഉറങ്ങുക (Sleeping),ഓടുക,വായിക്കുക,എഴുതുക,0,Action Verbs
+English,Question Words,'___ color do you like most?' ശരിയായ ചോദ്യപദം തിരഞ്ഞെടുക്കുക.,What,Which,Who,Where,0,Wh-Questions
+English,Rhyming Words,'Tree' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Free,Sun,Cat,Pen,0,Rhyming Words
+EVS,Body Parts,നമ്മുടെ ശരീരത്തിലെ ഏറ്റവും വലിയ അവയവം ഏത്?,കണ്ണ്,ത്വക്ക് (Skin / ത്വക്ക്),ഹൃദയം,കരൾ,1,Human Body Organs
+EVS,Animals,പകൽ ഉറങ്ങുകയും രാത്രിയിൽ മാത്രം ഇര തേടുകയും ചെയ്യുന്ന പക്ഷി ഏത്?,കാക്ക,ആന്തൽ / മൂങ്ങ (Owl),പ്രാവ്,മയിൽ,1,Animal Behavior
+EVS,Plants,വേരുകൾ മണ്ണിൽ നിന്ന് പ്രധാനമായും എന്തൊക്കെയാണ് വലിച്ചെടുക്കുന്നത്?,വെള്ളവും ലവണങ്ങളും (Water & Minerals),വായു മാത്രം,വെളിച്ചം മാത്രം,ഒന്നുമില്ല,0,Plant Nutrition
+EVS,Water,ഭൂമിയിലെ കുടിവെള്ള സ്രോതസ്സുകളിൽ ഏറ്റവും പ്രധാനപ്പെട്ടത് ഏത്?,കടൽവെള്ളം,മഴവെള്ളവും നദികളും (Rainwater & Rivers),ചതുപ്പ് നിലങ്ങൾ,ഐസ് മലകൾ,1,Water Resources
+EVS,Shelter,പണ്ട് കാലത്ത് ആളുകൾ താമസിക്കാൻ പ്രധാനമായും എവിടെയായിരുന്നു ആശ്രയിച്ചിരുന്നത്?,ഗുഹകളിലും മരച്ചുവട്ടിലും (Caves),ഉയർന്ന കെട്ടിടങ്ങളിൽ,ഹോട്ടലുകളിൽ,വിമാനങ്ങളിൽ,0,History of Shelter
+EVS,Seasons,മഴക്കാലത്ത് പെയ്യുന്ന മഴയ്ക്ക് പ്രധാന കാരണം ഏത് കാറ്റാണ്?,മൺസൂൺ വ的风 / മാനസൂൺ കാറ്റുകൾ (Monsoon Winds),ഭൂകമ്പം,ചൂട് കാറ്റ്,ഒന്നുമില്ല,0,Monsoon Climate
+EVS,Community Helpers,തപാൽ ഓഫീസിലെ പ്രധാന ജോലികൾ നിർവഹിക്കുന്ന വ്യക്തി ആരാണ്?,പോസ്റ്റ്മാൻ (Postman),പോലീസ്,ഡോക്ടർ,കർഷകൻ,0,Community Roles
+EVS,Safety,തീപിടുത്തം ഉണ്ടായാൽ ഉടൻ വിവരമറിയിക്കേണ്ട അടിയന്തര ന നമ്പർ ഏത്?,100,101 (Fire Service),108,102,1,Emergency Services
+EVS,Food,നമ്മുടെ ശരീരത്തിന്റെ വളർച്ചയ്ക്കും കോശങ്ങളുടെ നന്നാക്കലിനും ഏറ്റവും അത്യാവശ്യമായ ആഹാര ഘടകം ഏത്?,പ്രോട്ടീൻ (Proteins),കാർബോഹൈഡ്രേറ്റ്,കൊഴുപ്പ്,വെള്ളം,0,Nutrition Basics
+EVS,Transport,മെട്രോ റെയിൽ സർവീസ് പ്രമുഖമായും എവിടെയാണ് കാണപ്പെടുന്നത്?,ഗ്രാമങ്ങളിൽ,വലിയ നഗരങ്ങളിൽ (Major Cities),കാടുകളിൽ,മലനിരകളിൽ,1,Urban Transport
+Social Studies,National Symbols,നമ്മുടെ ദേശീയ ഫലം ഏത്?,ആപ്പിൾ,മാമ്പഴം (Mango),വാഴപ്പഴം,ഓറഞ്ച്,1,National Symbols
+Social Studies,Festivals,കേരളത്തിന്റെ ദേശീയോത്സവം ഏത്?,വിഷു,ഓണം (Onam),ക്രിസ്മസ്,ദീപാവലി,1,State Festivals
+Social Studies,Directions,ഭൂപടങ്ങളിൽ താഴെ കാണിക്കുന്ന ഭാഗം ഏത് ദിശയെ സൂചിപ്പിക്കുന്നു?,വടക്ക്,തെക്ക് (South),കിഴക്ക്,പടിഞ്ഞാറ്,1,Map Directions
+Social Studies,Family,കൂട്ടുകുടുംബ സമ്പ്രദായത്തിന്റെ (Joint Family) പ്രധാന മേന്മ എന്ത സ്നേഹം?,പരസ്പര സ്നേഹവും സഹായവും (Mutual support),തർക്കങ്ങൾ മാത്രം,പണം മാത്രം,ഒന്നുമില്ല,0,Family Values
+Social Studies,Community Helpers,നമ്മുടെ നാട്ടിൽ റോഡുകളും പാലങ്ങളും നിർമ്മിക്കുന്നത് ആരാണ്?,പൊതുമരാമത്ത് വകുപ്പ് / സർക്കാറും തൊഴിലാളികളും (Public Works),ഡോക്ടർമാർ,അധ്യാപകർ,വ്യാപാരികൾ,0,Infrastructure
+Social Studies,Earth,ഭൂമിയുടെ അന്തർഭാഗത്തെ പ്രധാന താപനിലയും ഘടനയും എങ്ങനെയുള്ളതാണ്?,വളരെ തണുത്തത്,അത്യധികം ചൂടുള്ള അവസ്ഥ (Very hot core),പൂർണ്ണമായും ഐസ് നിറഞ്ഞത്,വെള്ളം നിറഞ്ഞത്,1,Earth Science
+Social Studies,Time,ഒരു വർഷത്തിൽ ആകെ എത്ര ആഴ്ചകളുണ്ട്?,52 ആഴ്ചകൾ (52 Weeks),48 ആഴ്ചകൾ,60 ആഴ്ചകൾ,30 ആഴ്ചകൾ,0,Calendar Facts
+Social Studies,Environment,മരങ്ങൾ വെട്ടിമാറ്റുന്നത് വഴി ഉണ്ടാകുന്ന പ്രധാന പാരിസ്ഥിതിക പ്രശ്നം ഏത്?,മഴ കൂടുന്നു,മണ്ണൊലിപ്പും ഹരിതഗൃഹ പ്രഭാവവും (Soil erosion & Climate change),ശുദ്ധവായു കൂടുന്നു,കടൽ വറ്റുന്നു,1,Environmental Issues
+Social Studies,Civic Sense,നമ്മുടെ രാജ്യത്തോടുള്ള കൂറും ആദരവും എന്തിലൂടെയാണ് പ്രകടമാകുന്നത്?,ദേശീയ ചിഹ്നങ്ങളെ ബഹുമാനിക്കുന്നതിലൂടെ (Respecting National Symbols),നിയമങ്ങൾ ലംഘിക്കുന്നതിലൂടെ,മാലിന്യങ്ങൾ ഇടുന്നതിലൂടെ,ഒന്നുമില്ല,0,Civic Responsibility
+Social Studies,General Awareness,കേരളത്തിൽ ഏറ്റവും കൂടുതൽ കാണപ്പെടുന്ന കൃഷി ഏത്?,ആപ്പിൾ കൃഷി,തെങ്ങ് / റബ്ബർ / നെല്ലു കൃഷി (Coconut, Rubber, Paddy),ഗോതമ്പ് കൃഷി,മുന്തിരി കൃഷി,1,Agriculture in Kerala
+Mathematics,Addition,5432 ഉം 2145 ഉം കൂട്ടിയാൽ എത്ര?,7577,7477,7677,7377,0,Addition Practice
+Mathematics,Subtraction,9876 ല്ലാതെ 4321 കുറച്ചാൽ എത്ര?,5555,5455,5655,5755,0,Subtraction Practice
+Mathematics,Multiplication,25 ഗുണിക്കണം 4 എത്രയാണ്?,80,90,100 (100),110,2,Multiplication Practice
+Mathematics,Division,100 നെ 5 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,15,20 (20),25,30,1,Division Practice
+Mathematics,Fractions,അരഭാഗം (1/2) എന്നാൽ ശതമാനത്തിൽ എത്രയാണ്?,25%,50% (50%),75%,100%,1,Fraction to Percentage
+Mathematics,Geometry,ഒരു ത്രികോണത്തിന്റെ കോണുകളുടെ ആകെ തുക എത്ര ഡിഗ്രിയാണ്?,90°,180° (180 Degrees),360°,270°,1,Triangle Angles
+Mathematics,Measurement,3 ലിറ്ററിൽ എത്ര മില്ലിയിലീറ്റർ ഉണ്ട്?,300 മില്ലി,3000 മില്ലി (3000 ml),30000 മില്ലി,30 മില്ലി,1,Capacity Conversion
+Mathematics,Time,ഉച്ചയ്ക്ക് ശേഷം 3 മണി എന്ന് ഇംഗ്ലീഷിൽ എങ്ങനെ എഴുതാം?,3 AM,3 PM (3 PM),12 PM,12 AM,1,Time Formats
+Mathematics,Money,₹1000 ന്റെ ഒരു നോട്ട് മാറിക്കிட்டാൽ ₹100 ന്റെ എത്ര നോട്ടുകൾ കിട്ടും?,5 നോട്ടുകൾ,10 നോട്ടുകൾ (10 Notes),20 നോട്ടുകൾ,50 നോട്ടുകൾ,1,Money Exchange
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 3, 6, 9, 12, ?,14,15 (15),16,18,1,Multiplication Patterns
+English,Grammar,'She ___ a beautiful song yesterday.' ശരിയായ Past Tense ക്രിയ തിരഞ്ഞെടുക്കുക.,sing,sang (Sang),sung,singing,1,Past Tense
+English,Vocabulary,'Happy' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Sad (സങ്കടം),Glad,Joyful,Cheerful,0,Opposite Words
+English,Grammar,'The book is ___ the table and the chair.' ശരിയായ Preposition തിരഞ്ഞെടുക്കുക.,between,on,under,in,0,Prepositions
+English,Plurals,'Box' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Boxs,Boxes (Boxes),Boxies,Box,1,Plural Rules
+English,Pronouns,'This is my pen. It is ___.' ശരിയായ Possessive Pronoun തിരഞ്ഞെടുക്കുക.,mine,my,me,I,0,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Beautiful,Beutiful,Batiful,Beautyful,0,Spelling Accuracy
+English,Adjectives,നമ്മുടെ ദേശീയ പതാകയ്ക്ക് മൂന്ന് നിറങ്ങളുണ്ട്. 'Three' എന്നത് എന്താണ്?,Noun,Adjective (عدد / Adjective of Number),Verb,Pronoun,1,Adjectives
+English,Action Verbs,'Writing' എന്നതിന്റെ Base Verb (Root form) ഏത്?,Write (Write),Wrote,Written,Writes,0,Root Verbs
+English,Question Words,'___ old is your grandfather?' ശരിയായ ചോദ്യപദം തിരഞ്ഞെടുക്കുക.,What,How (How),Where,Who,1,Wh-Questions
+English,Rhyming Words,'Cat' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Bat (Bat),Sun,Pen,Dog,0,Rhyming Words
