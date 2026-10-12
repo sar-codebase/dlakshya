@@ -1,0 +1,81 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Rational Numbers,-2/3 ഉം 5/6 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,1/6,1/2,-1/6,3/6,0,Rational Operations
+Mathematics,Linear Equations,2x - 3 = 7 എങ്കിൽ x ന്റെ വില എത്ര?,3,4,5,6,2,Linear Equations
+Mathematics,Exponents,2 ന്റെ ഘടകം -2 (2^-2) ന്റെ വില എത്ര?,4,1/4,-4,-1/4,1,Exponents & Powers
+Mathematics,Geometry,ഒരു ചതുർഭുജത്തിന്റെ (Quadrilateral) നാല് കോണുകളുടെ ആകെ തുക എത്ര ഡിഗ്രിയാണ്?,180 ഡിഗ്രി,270 ഡിഗ്രി,360 ഡിഗ്രി,540 ഡിഗ്രി,2,Quadrilateral Properties
+Mathematics,Mensuration,ഒരു സിലിണ്ടറിന്റെ (Cylinder) വ്യാപ്തം (Volume) കാണാനുള്ള സൂത്രവാക്യം ഏത്?,pi*r^2*h,2*pi*r*h,l*b*h,(1/3)*pi*r^2*h,0,Mensuration Formulas
+Mathematics,Square Roots,625 ന്റെ വർഗ്ഗമൂലം (Square Root) എത്ര?,25,15,35,45,0,Square Roots
+Mathematics,Algebraic Identities,(a + b)^2 ന്റെ വിപുലീകരണ രൂപം ഏത്?,a^2 - b^2,a^2 + 2ab + b^2,a^2 - 2ab + b^2,a^3 + b^3,1,Algebraic Identities
+Mathematics,Compound Interest,കൂട്ടുപലിശ (Compound Interest) കാണാനുള്ള സൂത്രവാക്യം ഏത്?,P(1 + R/100)^n,PRT/100,P + I,P(1 - R/100),0,Compound Interest
+Mathematics,Statistics,തന്നിരിക്കുന്ന ആവൃത്തി വിതരണത്തിൽ (Frequency Distribution) എല്ലാ ആവൃത്തികളുടെയും ആകെത്തുക എന്ത് കാണിക്കുന്നു?,മധ്യമാനം,ആകെ ആവൃത്തി (Total Frequency),പാരിസര്യം,മധ്യകം,1,Statistics Basics
+Mathematics,Direct Proportion,5 വസ്തുക്കളുടെ വില 100 രൂപ എങ്കിൽ, 12 വസ്തുക്കളുടെ വില എത്ര?,200 രൂപ,220 രൂപ,240 രൂപ,250 രൂപ,2,Direct Proportion
+English,Grammar,'She wrote a letter.' എന്ന വാക്യത്തിന്റെ Passive Voice എന്താകും?,A letter was written by her.,A letter is written by her.,A letter has been written by her.,She is writing a letter.,0,Active and Passive Voice
+English,Vocabulary,'Confident' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Sure,Diffident / Nervous (ആത്മവിശ്വാസമില്ലാത്ത),Bold,Brave,1,Opposite Words
+English,Grammar,'Unless you work hard, you ___ pass.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,will,will not,would,could,1,Conditional Sentences
+English,Plurals,'Analysis' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Analyses,Analysises,Analyzes,Analys,0,Singular Plural
+English,Pronouns,'___ of the students completed the project.' ശരിയായ Determiner തിരഞ്ഞെടുക്കുക.,All,Every,Each,Both,0,Determiners
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Environment,Acheivement,Accomodation,Necessary (ആവശ്യമായ),3,Spelling Accuracy
+English,Tenses,'By next month, I will have finished this book.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Future Continuous,Future Perfect (ഭാവി പൂർണ്ണ കാലം),Present Perfect,Past Perfect,1,Verb Tenses
+English,Action Verbs,'Drive' എന്ന ക്രിയയുടെ Past Participle (V3) രൂപം ഏത്?,Drove,Driven,Driving,Drives,1,Verb Forms
+English,Question Words,'___ book do you like most?' ഏറ്റവും ഇഷ്ടപ്പെട്ടത് ചോദിക്കാൻ ഏത് ചോദ്യപദം ഉപയോഗിക്കണം?,Which,Who,Where,When,0,Wh-Questions
+English,Rhyming Words,'MIND' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Find,Kind,Wind,All of these (എല്ലാം ശരിയാണ്),3,Rhyming Words
+Science,Crop Production,വയലിൽ കൃഷി ചെയ്യുമ്പോൾ വിത്തുകൾ കൃത്യമായ അകലത്തിൽ നടുന്നതുകൊണ്ടുള്ള പ്രധാന പ്രയോജനം എന്ത്?,വായുവെളിച്ചങ്ങൾ കൃത്യമായി ലഭിക്കുന്നു,പഴയ വിത്തുകൾ നശിക്കുന്നു,പ്രയോജനമില്ല,ചെലവ് വർദ്ധിക്കുന്നു,0,Crop Production
+Science,Microorganisms,പാല് തൈരായി മാറാൻ സഹായിക്കുന്ന ബാക്ടീരിയ ഏത്?,ലാക്ടോബാസിലസ് (Lactobacillus),റൈസോബിയം,ഈസ്റ്റ്,അമീബ,0,Microorganisms
+Science,Synthetic Fibers,താഴെ പറയുന്നവയിൽ കൃത്രിമ നാര് (Synthetic Fiber) ഏത്?,പരുത്തി,ഉടൽ,നൈലോൺ (Nylon),പട്ട്,2,Synthetic Fibers
+Science,Metals and Non-metals,സാധാരണ താപനിലയിൽ ദ്രാവകാവസ്ഥയിൽ കാണപ്പെടുന്ന ലോഹം ഏത്?,ഇരുമ്പ്,ചെമ്പ്,പാർവ്വതം / പാട (Mercury / पारा),സ്വർണ്ണം,2,Metals and Non-metals
+Science,Coal and Petroleum,വായുവിന്റെ അസാന്നിധ്യത്തിൽ കൽക്കരി ചൂടാക്കി വിഘടിപ്പിക്കുന്ന പ്രക്രിയയെ എന്താണ് വിളിക്കുന്നത്?,ഭഞ്ജനം,ഡിസ്റ്റിലേഷൻ,കൽക്കരിയുടെ കാർബണീകരണം (Carbonisation / Destructive Distillation),ബാഷ്പീകരണം,2,Fossil Fuels
+Science,Combustion and Flame,കത്തൽ പ്രക്രിയയ്ക്ക് (Combustion) ഏറ്റവും അത്യാവശ്യമായ വാതകം ഏത്?,ഓക്സിജൻ (Oxygen),നൈട്രജൻ,കാർബൺ ഡൈഓക്സൈഡ്,ഹൈഡ്രജൻ,0,Combustion Basics
+Science,Conservation of Plants and Animals,വംശനാശഭീഷണി നേരിടുന്ന സസ്യങ്ങളുടെയും ജന്തുക്കളുടെയും വിവരങ്ങൾ സൂക്ഷിക്കുന്ന ഔദ്യോഗിക പുസ്തകത്തിന് എന്ത് പേര് നൽകിയിരിക്കുന്നു?,ബ്ലൂ ഡാറ്റാ ബുക്ക്,റെഡ് ഡാറ്റാ ബുക്ക് (Red Data Book),ഗ്രീൻ ബുക്ക്,വൈറ്റ് ബുക്ക്,1,Biodiversity
+Science,Cell Structure,കോസിലെ 'ശക്തിയുടെ കേന്ദ്രം' (Powerhouse of the Cell) എന്നറിയപ്പെടുന്ന അവയവം ഏത്?,സൈറ്റോപ്ലാസം,മൈറ്റോകോൺട്രിയ (Mitochondria),റൈബോസോം,കേന്ദ്രകം,1,Cell Biology
+Science,Reproduction in Animals,ഫലീകരണ പ്രക്രിയയ്ക്ക് ശേഷം രൂപംകൊള്ളുന്ന കോശത്തെ (Zygote) എന്താണ് വിളിക്കുന്നത്?,ഭ്രൂണം,സൈഗോട്ട് / യുഗ്മജം (Zygote),ഗർഭം,കോശം,1,Animal Reproduction
+Science,Force and Pressure,ഒരു പ്രത്യേക വിസ്തീർണ്ണത്തിൽ ലംബമായി പ്രയോഗിക്കപ്പെടുന്ന ബലത്തെ എന്താണ് വിളിക്കുന്നത്?,മർദ്ദം (Pressure),വേഗത,ഘർഷണം,ഊർജ്ജം,0,Physics Pressure
+Social Studies,History,ആധുനിക ഇന്ത്യയുടെ ചരിത്ര പഠനത്തിൽ രേഖകളും കത്തുകളും ഔദ്യോഗിക രേഖകളും സൂക്ഷിക്കുന്ന പ്രധാന സ്ഥലം ഏത്?,അഭിശേഖരങ്ങൾ / ആർക്കൈവ്സ് (Archives),ഗ്രന്ഥാലയം,മ്യൂസിയം,ബാങ്ക്,0,Historical Sources
+Social Studies,Geography,സ്വാഭാവിക വിഭവങ്ങളെ പ്രധാനമായും എന്തിന്റെ അടിസ്ഥാനത്തിലാണ് വർഗ്ഗീകരിക്കുന്നത്?,ലഭ്യത, വിതരണം, വികസനം (Availability, Distribution & Development),വില മാത്രം,നിറം മാത്രം,1,Resources Geography
+Social Studies,Civic Sense,ഇന്ത്യൻ ഭരണഘടന അനുസരിച്ച് രാജ്യത്തെ സർവ്വപ്രധാനമായ നിയമം ഏത്?,പാർലമെന്റ് പാസാക്കുന്ന നിയമങ്ങൾ,ഭരണഘടന (Constitution of India),ക്രിമിനൽ നിയമങ്ങൾ,സിവിൽ നിയമങ്ങൾ,1,Indian Constitution
+Social Studies,Colonialism,ബ്രിട്ടീഷുകാർ ഇന്ത്യയിൽ ഗ്രാമീണ മേഖലകളിൽ നടപ്പിലാക്കിയ പ്രധാന ഭൂനികുതി വ്യവസ്ഥ ഏത്?,റയത്വാരി,മഹൽവാരി,സ്ഥായിയായ ഭൂമിദാന സമ്പ്രദായം / ജമീന്ദാരി (Permanent Settlement),മറ്റൊന്ന്,2,Modern History
+Social Studies,Social Reformers,മഹാരാഷ്ട്രയിൽ സത്യശോധക സമാജം സ്ഥാപിച്ച സാമൂഹിക പരിഷ്കർത്താവ് ആരാണ്?,മഹാത്മാ ജ്യോതിറാവു ഫുലെ (Mahatma Phule),ഡോ. ബി.ആർ. അംബേദ്കർ,രാജർഷി ഷാഹു മഹാരാജ്,ലോകമാന്യ തിലക്,0,Social Reformers
+Social Studies,Natural Disasters,ഭൂകമ്പത്തിന്റെ തീവ്രത അളക്കാൻ ഉപയോഗിക്കുന്ന പ്രധാന ഉപകരണം അല്ലെങ്കിൽ സ്കെയിൽ ഏത്?,സിസ്മോഗ്രാഫും റിച്ചർ സ്കെയിലും (Richter Scale),ബാരോമീറ്റർ,തെർമോമീറ്റർ,അമ്മീറ്റർ,0,Disasters Management
+Social Studies,Industry,വ്യാവസായിക വിപ്ലവത്തിന് ലോകത്തിൽ ആദ്യമായി തുടക്കം കുറിച്ച രാജ്യം ഏത്?,ഫ്രാൻസ്,ഇംഗ്ലണ്ട് (Britain),ജർമ്മനി,അമേരിക്ക,1,Industrial Revolution
+Social Studies,Human Resources,ഒരു രാജ്യത്തിന്റെ ഏറ്റവും വലിയ യഥാർത്ഥ സമ്പത്ത് ആരെയാണ് കണക്കാക്കുന്നത്?,ഫാക്ടറികൾ,മാനവ വിഭവശേശേഷി / ജനസംഖ്യ (Human Resource),കെട്ടിടങ്ങൾ,റോഡുകൾ,1,Human Resources
+Social Studies,Earth,ഭൂമിയുടെ അന്തർഭാഗത്തെ ചലനങ്ങൾ മൂലം ഉണ്ടാകുന്ന പ്രധാന പ്രകൃതി പ്രതിഭാസങ്ങൾ ഏവ?,അഗ്നിപർവ്വത സ്ഫോടനവും ഭൂകമ്പവും (Volcanoes and Earthquakes),മാത്രമായി കാറ്റ്,മാത്രമായി മഴ,മാത്രമായി ജലമൊഴുക്ക്,0,Geomorphology
+Social Studies,Constitution,ഇന്ത്യൻ ഭരണഘടനയുടെ ആമുഖത്തിൽ (Preamble) രാജ്യത്തെ എങ്ങനെയാണ് വിശേഷിപ്പിച്ചിരിക്കുന്നത്?,പരമാധികാര സോഷ്യലിസ്റ്റ് സെക്കുലർ ജനാധിപത്യ റിപ്പബ്ലിക് (Sovereign Socialist Secular Democratic Republic),രാജഭരണം,ഏകാധിപത്യം,സാമ്രാജ്യത്വം,0,Indian Preamble
+Mathematics,Rational Numbers,-3/5 ന്റെ വ്യുൽക്രമ സംഖ്യ (Reciprocal) ഏത്?,3/5,5/3,-5/3,-3/5,2,Rational Numbers
+Mathematics,Linear Equations,5x + 2 = 3x + 8 എങ്കിൽ x ന്റെ വില എത്ര?,1,2,3,4,1,Linear Equations
+Mathematics,Exponents,10 ന്റെ ഘടകം പൂജ്യം (10^0) ന്റെ വില എത്ര?,0,1,10,1024,1,Exponents & Powers
+Mathematics,Geometry,സമചതുരക്കട്ടയുടെ അല്ലെങ്കിൽ റോംബസിന്റെ (Rhombus) ഡയഗണലുകൾ പരസ്പരം ഏത് കോണിലാണ് ഛേദിക്കുന്നത്?,അസമം,മട്ടകോണിൽ / 90 ഡിഗ്രിയിൽ (At 90 degrees),ഛേദിക്കുന്നില്ല,തുല്യ നീളമുള്ളത്,1,Geometry Properties
+Mathematics,Mensuration,ഒരു ചതുര ഭൂമിയുടെ വിസ്തീർണ്ണം 10 ചതുരശ്ര മീറ്റർ എങ്കിൽ അതിന്റെ ചുറ്റളവ് കണക്കാക്കാൻ എന്ത് വേണം?,സെന്റിമീറ്റർ അളവുകൾ,കൃത്യമായ വശങ്ങളുടെ അളവുകൾ ആവശ്യമാണ്,സ്റ്റാൻഡേർഡ് സൂത്രവാക്യം,മറ്റ് കണക്കുകൾ,1,Mensuration
+Mathematics,Square Roots,400 ന്റെ വർഗ്ഗമൂലം എത്ര?,10,20,30,40,1,Square Roots
+Mathematics,Algebraic Identities,(x + 5)(x + 3) വിപുലീകരിച്ചാൽ എന്ത് കിട്ടും?,x^2 + 8x + 15,x^2 + 15x + 8,x^2 + 5x + 3,x^2 + 2x + 15,0,Algebraic Identities
+Mathematics,Compound Interest,അസ്സൽ ₹1000, പലിശ നിരക്ക് 10%, കാലാവധി 2 വർഷം എങ്കിൽ ലളിത പലിശ (Simple Interest) എത്ര?,₹100,₹200,₹300,₹400,1,Simple Interest
+Mathematics,Statistics,തന്നിരിക്കുന്ന ആവൃത്തി വിതരണത്തിൽ ഏറ്റവും കൂടുതൽ തവണ ആവർത്തിച്ചു വന്ന ഘടകത്തെ എന്താണ് വിളിക്കുന്നത്?,മധ്യമാനം,മധ്യകം,ബഹുലകം (Mode),പാരിസര്യം,2,Statistics
+Mathematics,Direct Proportion,15 പുസ്തകങ്ങളുടെ ഭാരം 3 കിലോഗ്രാം എങ്കിൽ 5 പുസ്തകങ്ങളുടെ ഭാരം എത്ര?,1 കിലോഗ്രാം,1.5 കിലോഗ്രാം,2 കിലോഗ്രാം,0.5 കിലോഗ്രാം,0,Proportions
+English,Grammar,'Open the door.' എന്ന വാക്യത്തിന്റെ Passive Voice എന്താകും?,The door is opened.,Let the door be opened.,Door must be opened.,Opened the door.,1,Passive Voice
+English,Vocabulary,'Ancient' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Modern (ആധുനിക),Old,Past,New,0,Opposite Words
+English,Grammar,'Walk carefully lest you ___ fall.' ശരിയായ Modal Verb തിരഞ്ഞെടുക്കുക.,should,could,might,would,0,Modals
+English,Plurals,'Child' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Childs,Children,Childrens,Childes,1,Plural Forms
+English,Pronouns,'___ of the two sisters won the award.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,Either,Every,All,Both,0,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Dictionary,Dictionery,Dectionary,Dictionari,0,Spelling Accuracy
+English,Tenses,'He was playing cricket when I saw him.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Past Continuous (ഭൂതകാല തുടർച്ച),Present Continuous,Future Continuous,Simple Past,0,Verb Tenses
+English,Action Verbs,'Write' എന്ന ക്രിയയുടെ V3 രൂപം ഏത്?,Wrote,Written,Writing,Writes,1,Verb Forms
+English,Question Words,'___ did you meet yesterday?' വ്യക്തിയെക്കുറിച്ച് ചോദിക്കാൻ ഏത് ചോദ്യപദം ഉപയോഗിക്കണം?,What,Where,When,Who,3,Wh-Questions
+English,Rhyming Words,'Night' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Light,Right,Bright,All of these (എല്ലാം ശരിയാണ്),3,Rhyming Words
+Science,Crop Production,മണ്ണിൽ വളക്കൂറുള്ള വളങ്ങൾ ചേർക്കുന്ന പ്രക്രിയയെ എന്താണ് വിളിക്കുന്നത്?,ഉഴുതുമറിക്കൽ,വിതയ്ക്കൽ,വളപ്രയോഗം (Manuring),നനയ്ക്കൽ,2,Crop Management
+Science,Microorganisms,പോലിയോ, ചിക്കൻപോക്സ് തുടങ്ങിയ രോഗങ്ങൾക്ക് കാരണമാകുന്ന ഘടകങ്ങൾ ഏവ?,ബാക്ടീരിയ,വൈറസുകൾ / വിഷാണുക്കൾ (Viruses),ഫംഗസ്,പ്രൊട്ടോസോവ,1,Pathogens
+Science,Synthetic Fibers,പാരച്യൂട്ടുകളും കട്ടിയുള്ള കയറുകളും നിർമ്മിക്കാൻ പ്രധാനമായും ഉപയോഗിക്കുന്ന നാര് ഏത്?,പരുത്തി,നൈലോൺ (Nylon),പട്ട്,ചണം,1,Synthetic Materials
+Science,Metals and Non-metals,അലോഹങ്ങളുടെ ഓക്സൈഡുകൾ സ്വഭാവത്തിൽ സാധാരണയായി എങ്ങനെയുള്ളവയാണ്?,അമ്ല സ്വഭാവമുള്ളവ (Acidic),ആൽക്കലൈൻ,ഉദാസീനമായത്,മറ്റ് രൂപത്തിലുള്ളവ,0,Chemistry of Oxides
+Science,Coal and Petroleum,പെട്രോളിയം ശുദ്ധീകരിച്ച് വിവിധ ഘടകങ്ങളായി വേർതിരിക്കുന്ന ശാസ്ത്രീയ രീതി ഏത്?,ബാഷ്പീകരണം,ഘനീഭവനം,ഫ്രാക്ഷണൽ ഡിസ്റ്റിലേഷൻ (Fractional Distillation),അരിച്ചെടുക്കൽ,2,Petroleum Refining
+Science,Combustion and Flame,മെഴുകുതിരി നാളത്തിലെ ഏറ്റവും ചൂടുകൂടിയ ഭാഗം ഏത്?,ഉള്ളിലെ ഭാഗം,ഇടത്തരം ഭാഗം,বাইറത്തെ ഭാഗം (Non-luminous / Outermost zone),മധ്യഭാഗം,2,Flame Structure
+Science,Conservation of Plants and Animals,പ്രത്യേകമായ ഏതെങ്കിലും ഭൂപ്രദേശത്ത് മാത്രം കാണപ്പെടുന്ന സസ്യങ്ങളെയും ജന്തുക്കളെയും എന്താണ് വിളിക്കുന്നത്?,തദ്ദേശീയ സ്പീഷിസുകൾ (Endemic Species),വംശനാശഭീഷണി നേരിടുന്നവ,വിദേശ സ്പീഷിസുകൾ,യാത്രാ സ്പീഷിസുകൾ,0,Biodiversity
+Science,Cell Structure,കോസിലെ എല്ലാ പ്രവർത്തനങ്ങളും നിയന്ത്രിക്കുന്ന പ്രധാന ഭാഗം ഏത്?,കേന്ദ്രകം (Nucleus),മൈറ്റോകോൺട്രിയ,സൈറ്റോപ്ലാസം,വാക്യൂവോൾ,0,Cell Biology
+Science,Reproduction in Animals,ഹൈഡ്രയിൽ പുതിയ ജീവികൾ രൂപംകൊള്ളുന്ന അലൈംഗിക പ്രജനന രീതി ഏത്?,മുകുളനം (Budding),വിഭജനം,ബീജോത്പാദനം,പുനരുദ്ഭവനം,0,Reproduction
+Science,Force and Pressure,ജലത്തിൽ മുങ്ങിക്കിടക്കുന്ന വസ്തുവിന് മുകളിലേക്ക് ജലം ചെലുത്തുന്ന ഉത്പ്ലാവക ബലത്തെ (Buoyant Force) എന്താണ് വിളിക്കുന്നത്?,ഉത്പ്ലാവക ബലം (Buoyant Force),ഗുരുത്വാകർഷണം,ഘർഷണം,കാന്തിക ബലം,0,Physics Buoyancy
+Social Studies,History,ആധുനിക കാലഘട്ടത്തിൽ ഇന്ത്യയിൽ ബ്രിട്ടീഷ് ഭരണം വന്നതോടുകൂടി വലിയ മാറ്റം ഉണ്ടായ പ്രധാന മേഖല ഏത്?,കൃഷിയും വാണിജ്യവും (Economy and Administration),സംഗീതം മാത്രം,കല മാത്രം,ഒന്നുമില്ല,0,Modern History
+Social Studies,Geography,ലോകത്തിൽ ഏറ്റവും കൂടുതൽ ജനസംഖ്യയുള്ള രാജ്യം ഏത്?,ഇന്ത്യ അല്ലെങ്കിൽ ചൈന,അമേരിക്ക,റഷ്യ,ബ്രസീൽ,0,Demography
+Social Studies,Civic Sense,ഇന്ത്യൻ ഭരണഘടന പൗരന്മാർക്ക് ആകെ എത്ര മൗലികാവകാശങ്ങൾ (Fundamental Rights) നൽകിയിരിക്കുന്നു?,5,6 (ആറ് മൗലികാവകാശങ്ങൾ),7,8,1,Fundamental Rights
+Social Studies,Colonialism,1857-ലെ ഒന്നാം ഇന്ത്യൻ സ്വാതന്ത്ര്യ സമരം പ്രധാനമായും ഏത് സ്ഥലത്തുനിന്നാണ് പൊട്ടിപ്പുറപ്പെട്ടത്?,മീററ്റ് (Meerut),ഡെൽഹി,കാൺപൂർ,ഝാൻസി,0,Revolt of 1857
+Social Studies,Social Reformers,ഇന്ത്യയിൽ സതീശ സമ്പ്രദായം നിരോധിച്ചുകൊണ്ട് നിയമം നിർമ്മിച്ച ബ്രിട്ടീഷ് ഗവർണ്ണർ ജനറൽ ആരാണ്?,ലോർഡ് വില്യം ബെന്റിക് (Lord William Bentinck),ലോർഡ് ഡൽഹൗസി,ലോർഡ് കർസൻ,ലോർഡ് മൗണ്ട്ബാറ്റൺ,0,Social Reforms
+Social Studies,Natural Disasters,മണ്ണൊലിപ്പ് തടയാൻ ഏറ്റവും ഫലപ്രദമായ മാർഗ്ഗം ഏത്?,വൃക്ഷത്തൈകൾ നടലും തടയണ നിർമ്മാണവും (Afforestation),മരങ്ങൾ വെട്ടിക്കളയുക,വെള്ളം കെട്ടിവെക്കുക,മലകൾ തകർക്കുക,0,Environmental Protection
+Social Studies,Industry,സംസ്കരിക്കാത്ത അസംസ്കൃത വസ്തുക്കളെ ഉൽപ്പന്നങ്ങളാക്കി മാറ്റുന്ന വ്യവസായങ്ങളെ എന്താണ് വിളിക്കുന്നത്?,പ്രാഥമിക വ്യവസായം,മാധ്യമ വ്യവസായങ്ങൾ / നിർമ്മാണ വ്യവസായങ്ങൾ (Manufacturing Industries),ത്രിതല വ്യവസായം,മറ്റ് വ്യവസായങ്ങൾ,2,Manufacturing Industries
+Social Studies,Human Resources,ഒരു രാജ്യത്തിന്റെ ജനസംഖ്യയുടെ ഘടനയും പ്രായവും മനസ്സിലാക്കാൻ സഹായിക്കുന്ന ഗ്രാഫ് ഏത്?,ജനസംഖ്യാ പിരമിഡ് (Population Pyramid),ഭൂപടം,വൃത്താകൃതിയിലുള്ള ഗ്രാഫ്,പട്ടിക,0,Demography
+Social Studies,Earth,ഭൂമിയിലെ മണ്ണിടിച്ചിൽ (Landslide) തടയാൻ പ്രധാനമായും എന്താണ് ചെയ്യേണ്ടത്?,മരങ്ങൾ വെച്ചുപിടിപ്പിക്കലും സംരക്ഷണ ഭിത്തികളും (Afforestation & Retaining Walls),റോഡുകൾ നിർമ്മിക്കുക,വെള്ളം തുറന്നുവിടുക,ഖനനം നടത്തുക,0,Geological Safety
+Social Studies,Constitution,ഇന്ത്യയുടെ ഭരണഘടന നിലവിൽ വന്ന തീയതി ഏത്?,15 ആഗസ്റ്റ് 1947,26 ജനുവരി 1950 (26 January 1950),26 നവംബർ 1949,2 ഒക്ടോബർ 1960,1,Indian Constitution
