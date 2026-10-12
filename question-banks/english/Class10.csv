@@ -1,0 +1,38 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Real Numbers,The HCF of two numbers is 9 and their LCM is 2016. If one number is 54, the other number is:,336,216,432,324,0,Real Numbers & LCM/HCF
+Mathematics,Polynomials,If one zero of the quadratic polynomial x^2 + 3x + k is 2, then the value of k is:,-10,10,-7,-2,0,Polynomials & Zeros
+Mathematics,Pair of Linear Equations,The pair of equations x + 2y + 5 = 0 and -3x - 6y + 1 = 0 has:,Unique solution,Exactly two solutions,Infinitely many solutions,No solution,3,Linear Systems
+Mathematics,Quadratic Equations,The roots of the quadratic equation 2x^2 - 4x + 3 = 0 are:,Real and equal,Real and unequal,Not real (Complex),Zero,2,Discriminant & Nature of Roots
+Mathematics,Arithmetic Progressions,The 11th term of the AP -3, -1/2, 2, ... is:,28,22,-38,-46.5,1,AP Term Calculation
+Mathematics,Triangles,If in two triangles ABC and DEF, AB/DE = BC/FD, then they will be similar when:,angle B = angle E,angle A = angle D,angle B = angle D,angle A = angle F,2,Similarity Criteria
+Mathematics,Coordinate Geometry,The distance of the point P(-6, 8) from the origin is:,8,2 sqrt(7),10,6,2,Distance Formula
+Mathematics,Introduction to Trigonometry,If sin A = 3/4, then cos A is equal to:,4/3,sqrt(7)/4,3/sqrt(7),1/4,1,Trigonometric Ratios
+Mathematics,Circles,The length of a tangent drawn from an external point to a circle is always:,Greater than the radius,Equal to the radius,Perpendicular to the radius at contact,Parallel to the secant,2,Circle Tangents
+Mathematics,Areas Related to Circles,If the perimeter and area of a circle are numerically equal, the radius of the circle is:,2 units,pi units,4 units,7 units,0,Circle Area & Perimeter
+Mathematics,Surface Areas and Volumes,A solid metallic sphere of radius 3 cm is melted and recast into a cone of height 9 cm. Radius of base of cone is:,3 cm,4 cm,5 cm,6 cm,0,Volume & Recasting
+Mathematics,Statistics,If the mean of observations x, x+3, x+5, x+7, and x+10 is 9, then the mean of last three observations is:,10.33,11.33,11,12.5,1,Mean & Data Analysis
+Mathematics,Probability,Which of the following cannot be the probability of an event?,-1.5,0.15,25%,2/3,0,Probability Rules
+Science,Chemical Reactions,The reaction between iron oxide and aluminum to form iron and aluminum oxide is an example of a:,Combination reaction,Double displacement reaction,Decomposition reaction,Displacement reaction,3,Chemical Reactions
+Science,Acids, Bases and Salts,Which salt is used as a disinfectant for water and for bleaching cotton in factories?,Sodium bicarbonate,Calcium oxychloride (Bleaching powder),Plaster of Paris,Washing soda,1,Chemical Compounds
+Science,Metals and Non-metals,Which of the following non-metals is liquid at room temperature?,Mercury,Bromine,Iodine,Phosphorus,1,Properties of Elements
+Science,Carbon and Its Compounds,The functional group present in aldehydes is:,-OH,-CHO,-COOH,-CO-,1,Functional Groups
+Science,Periodic Classification,According to Modern Periodic Law, properties of elements are a periodic function of their:,Atomic mass,Atomic number,Mass number,Density,1,Periodic Table
+Science,Life Processes,The breakdown of pyruvate to give carbon dioxide, water, and energy takes place in:,Cytoplasm,Mitochondria,Chloroplast,Nucleus,1,Cellular Respiration
+Science,Control and Coordination,Which hormone regulates carbohydrate, protein, and fat metabolism in the body?,Insulin,Thyroxin,Adrenaline,Growth hormone,1,Endocrine System
+Science,How do Organisms Reproduce?,The anther contains:,Sepals,Ovules,Carpel,Pollen grains,3,Plant Reproduction
+Science,Heredity and Evolution,A cross between a tall plant (TT) and short plant (tt) resulted in progeny that were all tall because:,Tallness is dominant,Shortness is dominant,Tallness is recessive,Height is co-dominant,0,Mendelian Inheritance
+Science,Light Reflection & Refraction,The focal length of a spherical mirror of radius of curvature 30 cm is:,15 cm,30 cm,60 cm,-30 cm,0,Optics & Mirrors
+Science,Human Eye and Colorful World,The defect of vision in which a person cannot see nearby objects clearly is called:,Myopia,Hypermetropia,Presbyopia,Astigmatism,1,Human Eye Defects
+Science,Electricity,The unit of electrical resistivity is:,Ohm,Ohm-meter,Ampere,Volt,1,Resistivity & Resistance
+Science,Magnetic Effects of Current,The direction of induced current is given by:,Fleming's Left-Hand Rule,Fleming's Right-Hand Rule,Right-Hand Thumb Rule,Ampere's Swimming Rule,1,Electromagnetism
+Science,Our Environment,Which of the following constitutes a food chain?,Grass, wheat, and mango,Grass, goat, and human,Goat, cow, and elephant,Grass, fish, and goat,1,Food Chains & Ecosystems
+English,Grammar,Identify the correct option to fill the blank: 'Neither of the options ____ convincing.',are,is,were,have been,1,Subject-Verb Agreement
+English,Grammar,Choose the correct active voice: 'The work will be finished by tomorrow by him.',He will finish the work by tomorrow.,He finishes the work by tomorrow.,He will have finished the work by tomorrow.,He is finishing the work by tomorrow.,0,Active and Passive Voice
+English,Grammar,Choose the correct reported speech: 'She said, "I have been waiting for an hour."',She said that she had been waiting for an hour.,She said that she has been waiting for an hour.,She said she was waiting for an hour.,She told that she had waited for an hour.,0,Direct and Indirect Speech
+English,Grammar,Choose the correct modal: 'We ____ respect our elders.',can,may,ought to,might,2,Modal Auxiliaries
+English,Grammar,Identify the non-finite verb (infinitive) in: 'He wants to study medicine.',wants,to study,study,medicine,1,Non-Finite Verbs
+English,Grammar,Choose the correct preposition: 'He is confident ____ winning the match.',for,of,in,at,1,Prepositional Usage
+English,Vocabulary,Synonym of 'Prudent' is:,Careless,Wise,Foolish,Rash,1,Synonyms
+English,Vocabulary,Antonym of 'Authentic' is:,Genuine,Spurious,Real,Original,1,Antonyms
+English,Vocabulary,One-word substitution: 'A person who collects or studies stamps':,Philatelist,Numismatist,Anthropologist,Archaeologist,0,Vocabulary Expansion
+English,Spelling,Select the correctly spelled word:,Entrepreneur,Entreprenur,Anterprenuer,Entreprenuer,0,Spelling Skills
