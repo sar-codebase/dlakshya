@@ -1,0 +1,201 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Addition,What is 2 + 3?,4,5,6,7,1,Basic Addition
+Mathematics,Addition,What is 4 + 1?,5,3,6,2,0,Basic Addition
+Mathematics,Addition,What is 5 + 5?,8,9,10,11,2,Basic Addition
+Mathematics,Addition,What is 1 + 6?,7,6,8,5,0,Basic Addition
+Mathematics,Addition,What is 3 + 3?,5,6,7,4,1,Basic Addition
+Mathematics,Addition,What is 7 + 2?,9,8,10,6,0,Basic Addition
+Mathematics,Addition,What is 4 + 4?,7,8,9,6,1,Basic Addition
+Mathematics,Addition,What is 6 + 3?,8,9,10,7,1,Basic Addition
+Mathematics,Addition,What is 2 + 8?,10,9,11,8,0,Basic Addition
+Mathematics,Addition,What is 5 + 4?,8,9,10,7,1,Basic Addition
+Mathematics,Addition,What is 0 + 7?,7,0,8,6,0,Basic Addition
+Mathematics,Addition,What is 8 + 1?,9,10,8,7,0,Basic Addition
+Mathematics,Addition,What is 3 + 5?,7,8,9,6,1,Basic Addition
+Mathematics,Addition,What is 2 + 2?,3,4,5,2,1,Basic Addition
+Mathematics,Addition,What is 6 + 4?,10,9,11,8,0,Basic Addition
+Mathematics,Subtraction,What is 5 - 2?,2,3,4,1,1,Basic Subtraction
+Mathematics,Subtraction,What is 4 - 1?,3,2,4,1,0,Basic Subtraction
+Mathematics,Subtraction,What is 6 - 3?,2,3,4,5,1,Basic Subtraction
+Mathematics,Subtraction,What is 8 - 4?,3,4,5,2,1,Basic Subtraction
+Mathematics,Subtraction,What is 7 - 2?,5,4,6,3,0,Basic Subtraction
+Mathematics,Subtraction,What is 9 - 3?,5,6,7,4,1,Basic Subtraction
+Mathematics,Subtraction,What is 3 - 3?,1,0,2,3,1,Basic Subtraction
+Mathematics,Subtraction,What is 10 - 5?,4,5,6,3,1,Basic Subtraction
+Mathematics,Subtraction,What is 6 - 2?,4,3,5,2,0,Basic Subtraction
+Mathematics,Subtraction,What is 7 - 5?,1,2,3,4,1,Basic Subtraction
+Mathematics,Subtraction,What is 8 - 2?,6,5,7,4,0,Basic Subtraction
+Mathematics,Subtraction,What is 9 - 5?,3,4,5,2,1,Basic Subtraction
+Mathematics,Subtraction,What is 5 - 4?,1,2,0,3,0,Basic Subtraction
+Mathematics,Subtraction,What is 10 - 2?,7,8,9,6,1,Basic Subtraction
+Mathematics,Subtraction,What is 4 - 3?,1,2,0,3,0,Basic Subtraction
+Mathematics,Counting,How many fingers do you have on one hand?,4,5,6,10,1,Number Sense
+Mathematics,Counting,Which number comes after 7?,6,8,9,10,1,Counting Sequences
+Mathematics,Counting,Which number comes before 5?,4,6,3,5,0,Counting Sequences
+Mathematics,Counting,Which number comes between 3 and 5?,2,4,6,5,1,Number Ordering
+Mathematics,Counting,How many sides does a triangle have?,2,3,4,5,1,Shape Recognition
+Mathematics,Counting,How many sides does a square have?,3,4,5,6,1,Shape Recognition
+Mathematics,Counting,Which number is greater: 8 or 5?,8,5,Equal,None,0,Number Comparison
+Mathematics,Counting,Which number is smaller: 2 or 6?,6,2,Equal,None,1,Number Comparison
+Mathematics,Shapes,What shape is a full moon?,Square,Circle,Triangle,Rectangle,1,Shape Identification
+Mathematics,Shapes,What shape is a slice of pizza?,Circle,Triangle,Square,Star,1,Shape Identification
+Mathematics,Patterns,What comes next: 2, 4, 6, _?,7,8,9,10,1,Pattern Recognition
+Mathematics,Patterns,What comes next: 1, 3, 5, _?,6,7,8,9,1,Pattern Recognition
+Mathematics,Patterns,What comes next: 10, 20, 30, _?,35,40,45,50,1,Skip Counting
+Mathematics,Patterns,What comes next: 5, 10, 15, _?,20,25,30,18,0,Skip Counting
+Mathematics,Word Problems,Ananya has 3 apples. She gets 2 more. How many apples now?,4,5,6,3,1,Problem Solving
+Mathematics,Word Problems,Rahul has 6 pencils. He loses 2. How many are left?,3,4,5,2,1,Problem Solving
+Mathematics,Word Problems,There are 4 birds on a tree. 3 more fly in. How many in total?,6,7,8,5,1,Problem Solving
+Mathematics,Word Problems,Mia has 5 cookies. She eats 1. How many cookies remain?,3,4,5,2,1,Problem Solving
+Mathematics,Word Problems,Tom has 2 toy cars. Sam gives him 4 more. How many cars does Tom have?,5,6,7,4,1,Problem Solving
+Mathematics,Word Problems,There are 8 frogs in a pond. 3 jump out. How many frogs stay?,4,5,6,3,1,Problem Solving
+Mathematics,Word Problems,Sara sees 5 butterflies. 2 fly away. How many stay?,3,2,4,5,0,Problem Solving
+Mathematics,Word Problems,A basket has 7 oranges. 4 are eaten. How many are left?,2,3,4,5,1,Problem Solving
+Mathematics,Word Problems,Rohan has 1 ball. His dad gives him 3 more. Total balls?,3,4,5,2,1,Problem Solving
+Mathematics,Word Problems,There are 9 ducks. 5 swim away. How many stay?,3,4,5,2,1,Problem Solving
+Mathematics,Money,Which coin or note is used in India?,Dollar,Rupee,Yen,Euro,1,Currency Knowledge
+Mathematics,Time,What tells us the time?,Ruler,Clock,Scale,Book,1,Time Measurement
+Mathematics,Time,How many days are there in a week?,5,6,7,8,2,Time Concepts
+Mathematics,Measurement,Which object is longer: a pencil or an eraser?,Eraser,Pencil,Both same,None,1,Measurement Comparison
+Mathematics,Measurement,Which animal is heavier: an elephant or a mouse?,Mouse,Elephant,Both same,None,1,Weight Comparison
+Mathematics,Measurement,Which container holds more water: a cup or a bucket?,Cup,Bucket,Both same,None,1,Capacity Understanding
+Science,Living Things,Which of these is a living thing?,Rock,Tree,Toy car,Chair,1,Living vs Non-Living
+Science,Living Things,Which of these is a non-living thing?,Dog,Doll,Cat,Plant,1,Living vs Non-Living
+Science,Plants,Which part of the plant is under the ground?,Leaf,Flower,Root,Fruit,2,Plant Structure
+Science,Plants,Which part of the plant makes seeds?,Root,Flower,Stem,Bark,1,Plant Structure
+Science,Plants,What do plants need to grow?,Milk,Sunlight and Water,Juice,Soda,1,Plant Care
+Science,Plants,Which part of the plant is green and catches sunlight?,Root,Leaf,Stem,Flower,1,Plant Parts
+Science,Plants,Apples grow on a:,Plant pot,Tree,Underground rock,Grass blade,1,Plant Classification
+Science,Animals,Which animal gives us milk?,Dog,Cow,Cat,Lion,1,Domestic Animals
+Science,Animals,Which animal is known as the King of the Jungle?,Tiger,Elephant,Lion,Bear,2,Wild Animals
+Science,Animals,Which animal bark?,Dog,Cat,Cow,Duck,0,Animal Sounds
+Science,Animals,Which animal quacks?,Hen,Duck,Crow,Parrot,1,Animal Sounds
+Science,Animals,Where does a fish live?,Land,Water,Tree,Air,1,Animal Habitats
+Science,Animals,Which of these animals can fly?,Frog,Bird,Dog,Fish,1,Animal Traits
+Science,Animals,Which animal has a long trunk?,Tiger,Giraffe,Elephant,Zebra,2,Animal Features
+Science,Human Body,Which organ helps us to see?,Ears,Eyes,Nose,Tongue,1,Sense Organs
+Science,Human Body,Which organ helps us to hear sounds?,Eyes,Ears,Nose,Skin,1,Sense Organs
+Science,Human Body,Which organ helps us to smell flowers?,Nose,Eyes,Tongue,Ears,0,Sense Organs
+Science,Human Body,Which organ helps us to taste food?,Nose,Tongue,Ears,Skin,1,Sense Organs
+Science,Human Body,Which sense organ covers our whole body?,Eyes,Skin,Hair,Nails,1,Sense Organs
+Science,Human Body,How many legs do humans have?,1,2,3,4,1,Human Anatomy
+Science,Human Body,We use our teeth to:,Hear,Bite and chew food,Smell,See,1,Human Anatomy
+Science,Food,Which of these is a fruit?,Carrot,Apple,Potato,Onion,1,Food Classification
+Science,Food,Which of these is a vegetable?,Banana,Potato,Mango,Grapes,1,Food Classification
+Science,Food,Drinking what makes our bones and teeth strong?,Soda,Milk,Cold drink,Oil,1,Healthy Habits
+Science,Environment,What appears in the sky after rain with 7 colors?,Sun,Moon,Rainbow,Star,2,Weather Phenomena
+Science,Environment,We wear woollen clothes in which season?,Summer,Winter,Monsoon,Spring,1,Seasons
+Science,Environment,We use an umbrella in which season?,Winter,Rainy,Summer,Autumn,1,Seasons
+Science,Environment,The Sun gives us light and:,Cold,Heat,Rain,Wind,1,Natural Resources
+Science,Environment,What shines in the night sky?,Sun,Moon and Stars,Rainbow,Clouds,1,Sky Observations
+Science,Environment,What do we breathe in to stay alive?,Water,Air,Food,Milk,1,Basic Needs
+Science,Hygiene,We should wash our hands before:,Sleeping,Eating food,Playing,Reading,1,Personal Hygiene
+Science,Hygiene,We brush our teeth how many times a day?,Once,Twice,Never,Five times,1,Personal Hygiene
+Science,Day and Night,When do we see the Sun in the sky?,At night,During the day,In deep caves,Never,1,Day and Night Cycles
+Science,Day and Night,When do we go to sleep at night?,Daytime,Nighttime,Noon,Morning,1,Day and Night Cycles
+Science,Materials,What is a plastic bottle made of?,Wood,Plastic,Glass,Paper,1,Material Awareness
+Science,Materials,Furniture like tables and chairs are often made from trees using:,Plastic,Wood,Glass,Cotton,1,Material Awareness
+Science,Water,Which of these needs water to live?,Stone,Plant,Plastic toy,Book,1,Importance of Water
+Science,Water,Water has no:,Color,Shape,Smell,All of these,3,Properties of Water
+Science,Animals,A baby dog is called a:,Kitten,Puppy,Calf,Cub,1,Animal Young Ones
+Science,Animals,A baby cat is called a:,Puppy,Kitten,Cub,Duckling,1,Animal Young Ones
+Science,Animals,A baby cow is called a:,Cub,Calf,Puppy,Piglet,1,Animal Young Ones
+Science,Animals,Which bird can copy human speech?,Crow,Parrot,Peacock,Pigeon,1,Bird Characteristics
+Science,Animals,Which is the national bird of India?,Crow,Peacock,Parrot,Pigeon,1,General Awareness
+Science,Environment,Where do we dump trash to keep surroundings clean?,Floor,Dustbin,Road,Bed,1,Cleanliness
+English,Grammar,Select the correct capital letter for 'a':,A,B,C,D,0,Alphabet Recognition
+English,Grammar,Which letter comes after 'M' in the alphabet?,L,N,O,P,1,Alphabet Sequence
+English,Grammar,Which letter comes before 'G'?,F,H,E,I,0,Alphabet Sequence
+English,Grammar,How many vowels are there in English?,3,4,5,6,2,Vowel Recognition
+English,Grammar,Which of these is a vowel?,B,E,C,D,1,Vowel Recognition
+English,Grammar,Which of these is NOT a vowel?,A,I,O,M,3,Vowel Recognition
+English,Grammar,Identify the noun (naming word): 'The cat sleeps.',The,cat,sleeps,on,1,Noun Identification
+English,Grammar,Identify the noun: 'Rohan plays football.',plays,Rohan,fast,with,1,Noun Identification
+English,Grammar,Identify the noun: 'This is a big house.',is,big,house,this,2,Noun Identification
+English,Grammar,Fill in the blank: 'An ____',apple,banana,cat,dog,0,Articles (A/An)
+English,Grammar,Fill in the blank: 'A __',elephant,umbrella,dog,apple,2,Articles (A/An)
+English,Grammar,Fill in the blank: 'An ',owl,ball,car,tree,0,Articles (A/An)
+English,Grammar,Fill in the blank: 'A ',ant,egg,book,ice,2,Articles (A/An)
+English,Grammar,Which pronoun replaces a boy's name?,She,He,It,They,1,Pronouns
+English,Grammar,Which pronoun replaces a girl's name?,He,She,It,They,1,Pronouns
+English,Grammar,Which pronoun replaces an object or animal?,He,She,It,They,2,Pronouns
+English,Opposites,What is the opposite of 'Big'?,Large,Small,Huge,Tall,1,Antonyms
+English,Opposites,What is the opposite of 'Hot'?,Warm,Cold,Fire,Dry,1,Antonyms
+English,Opposites,What is the opposite of 'Happy'?,Glad,Sad,Joy,Fun,1,Antonyms
+English,Opposites,What is the opposite of 'Up'?,Over,Down,High,Top,1,Antonyms
+English,Opposites,What is the opposite of 'Day'?,Sun,Night,Light,Morning,1,Antonyms
+English,Opposites,What is the opposite of 'Fast'?,Quick,Slow,Run,Rapid,1,Antonyms
+English,Opposites,What is the opposite of 'In'?,On,Out,Under,Over,1,Antonyms
+English,Opposites,What is the opposite of 'Tall'?,High,Short,Long,Big,1,Antonyms
+English,Opposites,What is the opposite of 'Clean'?,Neat,Dirty,Fresh,Pure,1,Antonyms
+English,Opposites,What is the opposite of 'Hard'?,Solid,Soft,Rough,Strong,1,Antonyms
+English,Plurals,What is the plural of 'Cat'?,Cats,Cates,Caties,Cat,0,Plurals
+English,Plurals,What is the plural of 'Dog'?,Doges,Dogs,Doggs,Dog,1,Plurals
+English,Plurals,What is the plural of 'Box'?,Boxs,Boxes,Boxies,Box,1,Plurals
+English,Plurals,What is the plural of 'Bus'?,Buss,Buses,Busies,Bus,1,Plurals
+English,Plurals,What is the plural of 'Boy'?,Boys,Boyes,Boies,Boy,0,Plurals
+English,Spelling,Select the correct spelling:,Dog,Dogg,Doog,Dg,0,Spelling Accuracy
+English,Spelling,Select the correct spelling:,Sun,Sunn,Suun,Sn,0,Spelling Accuracy
+English,Spelling,Select the correct spelling:,Boll,Ball,Bal,Baal,1,Spelling Accuracy
+English,Spelling,Select the correct spelling:,Tree,Tre,Treee,Trii,0,Spelling Accuracy
+English,Spelling,Select the correct spelling:,Book,Bok,Booke,Buuk,0,Spelling Accuracy
+English,Spelling,Select the correct spelling:,Fish,Fsh,Fiish,Phish,0,Spelling Accuracy
+English,Spelling,Select the correct spelling:,Milk,Mlk,Milck,Milke,0,Spelling Accuracy
+English,Spelling,Select the correct spelling:,Bird,Brd,Biird,Berad,0,Spelling Accuracy
+English,Spelling,Select the correct spelling:,Duck,Duk,Ducke,Dukc,0,Spelling Accuracy
+English,Spelling,Select the correct spelling:,Frog,Frogg,Froog,Frg,0,Spelling Accuracy
+English,Vocabulary,Which of these is a color word?,Red,Run,Sit,Cat,0,Vocabulary Categories
+English,Vocabulary,Which of these is an action word (verb)?,Blue,Jump,Ball,Table,1,Verb Identification
+English,Vocabulary,Which of these is an action word (verb)?,Sing,Chair,Red,Apple,0,Verb Identification
+English,Vocabulary,Which of these is an action word (verb)?,Pen,Dance,Sky,Green,1,Verb Identification
+English,Vocabulary,Which of these is a color word?,Yellow,Walk,Dog,Paper,0,Vocabulary Categories
+English,Vocabulary,Where do fish swim?,Sky,Tree,Water,Grass,2,Word Meaning
+English,Vocabulary,We use a pen or pencil to:,Eat,Write,Sleep,Run,1,Word Meaning
+English,Punctuation,Every sentence should start with a:,Small letter,Capital letter,Number,Comma,1,Punctuation Rules
+English,Punctuation,What sign goes at the end of a telling sentence?,Full stop (.),Question mark (?),Comma (,),Exclamation (!),0,Punctuation Rules
+English,Punctuation,What sign goes at the end of a question sentence?,Full stop (.),Question mark (?),Comma (,),Hyphen (-),1,Punctuation Rules
+English,Grammar,Complete the sentence: 'They ____ playing.',is,are,am,was,1,Subject-Verb Agreement
+English,Grammar,Complete the sentence: 'I ____ a student.',is,am,are,were,1,Subject-Verb Agreement
+English,Grammar,Complete the sentence: 'She ____ reading a book.',is,are,am,were,0,Subject-Verb Agreement
+English,Grammar,Complete the sentence: 'He ____ a red car.',have,has,are,am,1,Subject-Verb Agreement
+English,Grammar,Complete the sentence: 'I ____ two hands.',has,have,is,am,1,Subject-Verb Agreement
+English,Comprehension,A cow eats grass. What does a cow eat?,Meat,Grass,Insects,Fish,1,Text Comprehension
+English,Comprehension,The sky is blue. What color is the sky?,Red,Green,Blue,Yellow,2,Text Comprehension
+English,Comprehension,Mina loves to draw. What does Mina love to do?,Sing,Draw,Dance,Cook,1,Text Comprehension
+English,Comprehension,The sun rises in the morning. When does the sun rise?,Night,Evening,Morning,Noon,2,Text Comprehension
+English,Vocabulary,A place where we go to learn is a:,Park,Hospital,School,Market,2,Word Associations
+English,Vocabulary,A person who cures sick people is a:,Teacher,Doctor,Driver,Baker,1,Word Associations
+English,Vocabulary,A person who teaches students in school is a:,Doctor,Teacher,Police,Pilot,1,Word Associations
+English,Prepositions,The cat is sitting ____ the table.,under,fly,run,sing,0,Prepositions
+English,Prepositions,The bird flies ____ the sky.,in,on,under,behind,0,Prepositions
+English,Prepositions,Put the book ____ the table.,on,under,in,behind,0,Prepositions
+Mathematics,Addition,What is 7 + 3?,9,10,11,8,1,Basic Addition
+Mathematics,Addition,What is 9 + 1?,10,8,11,9,0,Basic Addition
+Mathematics,Addition,What is 4 + 6?,9,10,11,8,1,Basic Addition
+Mathematics,Subtraction,What is 10 - 4?,5,6,7,4,1,Basic Subtraction
+Mathematics,Subtraction,What is 9 - 6?,2,3,4,5,1,Basic Subtraction
+Mathematics,Subtraction,What is 8 - 3?,4,5,6,3,1,Basic Subtraction
+Mathematics,Counting,Count the letters in the word 'APPLE':,4,5,6,3,1,Counting Practice
+Mathematics,Counting,Count the letters in the word 'CAT':,2,3,4,5,1,Counting Practice
+Mathematics,Counting,Count the letters in the word 'BANANA':,5,6,7,4,1,Counting Practice
+Mathematics,Shapes,Which object has a square shape?,Coin,Clock face,Chessboard,Egg,2,Real-world Shapes
+Mathematics,Shapes,Which object has a circular shape?,Book,Coin,Door,Box,1,Real-world Shapes
+Mathematics,Patterns,What comes next: A, B, C, ?,D,E,F,G,0,Alphabet Patterns
+Mathematics,Patterns,What comes next: △, ○, △, ○, ?,○,△,□,☆,1,Visual Patterns
+Mathematics,Word Problems,Sia has 2 dolls. Her mother gives her 2 more. Total dolls?,3,4,5,2,1,Problem Solving
+Mathematics,Word Problems,Anil has 10 balloons. 3 pop. How many balloons remain?,6,7,8,5,1,Problem Solving
+Science,Animals,Which animal gives us wool?,Cow,Sheep,Goat,Horse,1,Animal Products
+Science,Animals,Where do birds lay their eggs?,In water,In nests,Underground,In caves,1,Bird Habitats
+Science,Plants,Which of these is a sweet fruit?,Lemon,Mango,Neem leaf,Bitter gourd,1,Plant Products
+Science,Human Body,Which part of our body helps us walk?,Arms,Legs,Ears,Nose,1,Human Anatomy
+Science,Environment,During which festival do we light lamps in India?,Holi,Diwali,Eid,Christmas,1,Cultural Awareness
+English,Grammar,Choose the correct article: ' elephant',a,an,the,no article,1,Articles (A/An)
+English,Grammar,Choose the correct article: ' sun',a,an,the,no article,2,Articles (A/An)
+English,Grammar,Choose the correct article: ' house',a,an,the,no article,0,Articles (A/An)
+English,Grammar,Opposite of 'Dry' is:,Cold,Wet,Soft,Hard,1,Antonyms
+English,Grammar,Opposite of 'Heavy' is:,Big,Light,Small,Thin,1,Antonyms
+English,Grammar,Plural of 'Man' is:,Mans,Men,Menses,Manes,1,Irregular Plurals
+English,Grammar,Plural of 'Tooth' is:,Tooths,Teeth,Teeths,Tootches,1,Irregular Plurals
+English,Spelling,Select the correct spelling:,Friend,Frend,Freind,Frind,0,Spelling Accuracy
+English,Spelling,Select the correct spelling:,School,Skool,Schol,Schoool,0,Spelling Accuracy
+English,Spelling,Select the correct spelling:,Mother,Muther,Mather,Mothar,0,Spelling Accuracy
