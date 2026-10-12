@@ -1,0 +1,97 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Addition,5 आणि 3 किती होतात?,7,8,9,6,1,Basic Addition
+Mathematics,Numbers,कोणती संख्या 19 च्या लगेच नंतर येते?,18,20,21,22,1,Counting & Numbers
+Mathematics,Subtraction,7 मधून 2 वजा केल्यावर किती उरतात?,4,5,6,3,1,Basic Subtraction
+Mathematics,Shapes,त्रिकोणाला किती बाजू असतात?,2,3,4,5,1,Geometric Shapes
+Mathematics,Comparison,खालीलपैकी कोणती वस्तू सर्वात मोठी आहे?,पेन,वही,फळा (Blackboard),पेन्सिल,2,Size Comparison
+Mathematics,Counting,चित्रामध्ये 4 सफरचंद आहेत, अजून 2 जोडले तर एकूण किती झाले?,5,6,7,8,1,Addition Word Problems
+Mathematics,Shapes,वर्तुळाचा आकार कसा असतो?,चौकोनी,गोल,त्रिकोणी,लांबट,1,Shapes Identification
+Mathematics,Numbers,दहा आणि शून्य मिळून किती होतात?,9,10,11,12,1,Place Value Basics
+Mathematics,Measurement,कोणती वस्तू लांबी मोजण्यासाठी वापरली जाते?,बाटली,पट्टी (Ruler),चमचा,दप्तर,1,Measurement Units
+Mathematics,Patterns,क्रम पूर्ण करा: 2, 4, 6, ?,7,8,9,10,1,Number Patterns
+English,Vowels,इंग्रजी वर्णमालेत एकूण किती स्वर (Vowels) असतात?,3,5,7,10,1,English Vowels
+English,Alphabet,A नंतर कोणता वर्ण येतो?,B,C,D,E,0,Alphabetical Order
+English,Vocabulary,Apple चा मराठी अर्थ काय आहे?,केळी,सफरचंद,आंबा,पेरू,1,Fruit Vocabulary
+English,Animals,कुत्र्याच्या पिल्लाला काय म्हणतात?,Puppy,Kitten,Cub,Calf,0,Young Animals Names
+English,Phonics,'Cat' हा शब्द कोणत्या अक्षराने सुरू होतो?,C,B,A,D,0,Phonics & Sounds
+English,Grammar,'This is ___ book.' योग्य शब्द भरा.,a,an,the,in,0,Articles Basics
+English,Rhyming words,'Sun' शी जुळणारा शब्द कोणता?,Moon,Fun,Star,Sky,1,Rhyming Words
+English,Colors,पाने कोणत्या रंगाची असतात?,लाल,हिरवी,पिवळी,निळी,1,Color Identification
+English,Action Words,चित्रात मुलगा पुस्तक वाचत आहे, या कृतीला काय म्हणतात?,Eating,Reading,Sleeping,Running,1,Action Verbs
+English,Opposites,'Big' चा विरुद्ध शब्द कोणता?,Small,Tall,Short,Fat,0,Opposite Words
+EVS,Animals,कोणता प्राणी आपल्याला दूध देतो?,कुत्रा,गाय,मांजर,सिंह,1,Animal Products
+EVS,Body Parts,आपण कशाने ऐकतो?,डोळे,कान,नाक,हात,1,Sensory Organs
+EVS,Plants,झाडाचे मूळ भाग जमिनीत कोणता असतो?,पाने,फूल,मूळ (Root),फळ,2,Parts of Plants
+EVS,Seasons,पावसाळ्यात आपण कशाचा वापर करतो?,स्वेटर,छत्री,पंखा,टोपी,1,Seasons & Weather
+EVS,Family,आईच्या आईला आपण काय म्हणतो?,आजी,आत्या,मावशी,पंजोजी,0,Family Relations
+EVS,Food,आपल्याला ऊर्जा कशापासून मिळते?,माती,अन्न,पाणी,दप्तर,1,Healthy Food
+EVS,Transport,रेल्वेगाडी कुठे चालते?,रस्त्यावर,पाण्यात,रुळांवर (Tracks),आकाशात,2,Modes of Transport
+EVS,Shelter,पक्षी कुठे राहतात?,बिळात,घोट्यात,घरट्यात (Nest),गुहेत,2,Animal Homes
+EVS,Community Helpers,शाळेत आपल्याला कोण शिकवतात?,डॉक्टर,शिक्षक,पोलीस,शेतकरी,1,Community Helpers
+EVS,Environment,सकाळी आपल्याला प्रकाश कोण देतो?,चंद्र,सूर्य,तारे,दिवा,1,Natural Sources
+Social Studies,National Symbols,आपला राष्ट्रीय ध्वज कोणता आहे?,तिरंगा,एकच रंगाचा,पांढरा,काळा,0,National Symbols
+Social Studies,National Anthem,आपले राष्ट्रगीत कोणते आहे?,वंदे मातरम्,जन गण मन,सारे जहाँ से अच्छा,जय हिंद,1,National Anthem
+Social Studies,Directions,सूर्य कोणत्या दिशೆಯಿಂದ उगवतो?,पश्चिम,उत्तर,पूर्व,दक्षिण,2,Cardinal Directions
+Social Studies,Festivals,दिवाळी हा कोणत्या सणाचा उत्सव आहे?,प्रकाशाचा,पावसाचा,थंडीचा,फुलांचा,0,Cultural Festivals
+Social Studies,Days of Week,वडिलांनंतर येणारा वार कोणता?,सोमवार,मंगळवार,बुधवार,रविवार,0,Days of the Week
+Social Studies,Country,आपल्या देशाचे नाव काय आहे?,भारत,अमेरिका,चीन,जपान,0,General Awareness
+Social Studies,Water Sources,पिण्याच्या पाण्याचा मुख्य नैसर्गिक स्त्रोत कोणता?,समुद्र,पाऊस / नदी,तलाव,विहीर,1,Water Sources
+Social Studies,Earth,आपण कोणत्या ग्रहावर राहतो?,मंगळ,पृथ्वी,शनी,शुक्र,1,Planetary Basics
+Social Studies,Time,घड्याळाचा लहान काटा काय दर्शवतो?,मिनिटे,तास,सेकंद,वर्ष,1,Telling Time
+Social Studies,Civic Sense,कचरा नेहमी कुठे टाकावा?,रस्त्यावर,खिडकीतून,कचराकुंडीत (Dustbin),पाण्यात,2,Civic Sense
+Mathematics,Addition,3 + 4 = ?,6,7,8,9,1,Basic Addition
+Mathematics,Addition,2 + 2 = ?,3,4,5,6,1,Basic Addition
+Mathematics,Addition,6 + 1 = ?,5,6,7,8,2,Basic Addition
+Mathematics,Subtraction,5 - 3 = ?,1,2,3,4,1,Basic Subtraction
+Mathematics,Subtraction,9 - 4 = ?,4,5,6,7,1,Basic Subtraction
+Mathematics,Shapes,चौकोनाला किती बाजू असतात?,3,4,5,6,1,Geometric Shapes
+Mathematics,Numbers,11 च्या आधी कोणती संख्या येते?,10,12,13,9,0,Counting & Numbers
+Mathematics,Numbers,सर्वात लहान एक अंकी संख्या कोणती?,0,1,9,2,1,Number Systems
+Mathematics,Comparison,कोणती वस्तू वजनाने सर्वात जड आहे?,पिस,दप्तर (School Bag),कापूस,रबर,1,Weight Comparison
+Mathematics,Patterns,क्रम पूर्ण करा: 10, 20, 30, ?,35,40,45,50,1,Counting by Tens
+English,Vocabulary,कॅट (Cat) चा अर्थ काय?,कुत्रा,मांजर,गाय,सिंह,1,Animal Names English
+English,Vocabulary,बॉल (Ball) म्हणजे काय?,चेंडू,भ्रमर,बॅट,पुस्तक,0,Object Identification
+English,Grammar,'This is ___ apple.' योग्य पर्याय निवडा.,a,an,the,in,1,Articles Basics
+English,Phonics,स्वरांमध्ये कोणता अक्षर येत नाही?,A,E,B,O,2,Vowels and Consonants
+English,Colors,आकाश कोणत्या रंगाचे असते?,लाल,निळे,हिरवे,पांढरे,1,Color Identification
+English,Family,'Father' म्हणजे कोण?,आई,वडील,भाऊ,बहिण,1,Family Vocabulary
+English,Opposites,'Hot' चा विरुद्ध शब्द काय?,Cold,Warm,Cool,Ice,0,Opposite Words
+English,Action Words,पक्षी काय करतात?,उंच उडतात,पाहतात,चालतात,पळतात,0,Action Verbs
+English,Rhyming words,'Cat' शी मिळताजुळता शब्द कोणता?,Dog,Hat,Sun,Pen,1,Rhyming Words
+English,Vocabulary,दप्तराला इंग्रजीत काय म्हणतात?,Book,Bag,Pen,Pencil,1,School Vocabulary
+EVS,Body Parts,आपण कशाने पाहतो?,डोळे,कान,नाक,त्वचा,0,Sensory Organs
+EVS,Body Parts,आपण कशाने चालतो?,हात,पाय,तोंड,दात,1,Body Movements
+EVS,Animals,जंगलचा राजा कोणाला म्हणतात?,वाघ,सिंह,हत्ती,चित्ता,1,Wild Animals
+EVS,Animals,पाळीव प्राणी कोणता?,सिंह,वाघ,गाय,कोल्हा,2,Domestic Animals
+EVS,Food,आपल्या शरीराला स्वास्थ्यासाठी काय आवश्यक आहे?,जंक फूड,फळे व भाजीपाला,प्लास्टिक,चॉकलेट,1,Nutrition Basics
+EVS,Home,आपण राहतो त्या जागेला काय म्हणतात?,शाळा,घर,कारखाना,बाग,1,Shelter Identification
+EVS,Water,पाण्याचा रंग कसा असतो?,पांढरा,निळा,रंगहीन (Transparent),काळा,2,Water Properties
+EVS,Plants,झाडांना जगण्यासाठी कशाची गरज असते?,पाणी व सूर्यप्रकाश,दूध,तेल,चहा,0,Plant Growth
+EVS,Community Helpers,रुग्णांवर उपचार कोण करतात?,शिक्षक,डॉक्टर,पोलीस,टपाल्या,1,Medical Helpers
+EVS,Environment,स्वच्छतेसाठी काय आवश्यक आहे?,कचरा पसरवणे,हात धुणे,अंधार करणे,धावणे,1,Hygiene Basics
+Social Studies,Transport,आकाशात काय उडते?,बस,विमान,सायकल,मोटार,1,Air Transport
+Social Studies,Festivals,सणांचा राजा कोणाला म्हणतात?,दिवाळी,होळी,नाताळ,स्वातंत्र्य दिन,0,Cultural Festivals
+Social Studies,Directions,सूर्य मावळतो त्या दिशेला काय म्हणतात?,पूर्व,पश्चिम,उत्तर,दक्षिण,1,Cardinal Directions
+Social Studies,Time,एका दिवसात किती तास असतात?,12,24,48,7,1,Time Basics
+Social Studies,Community Helpers,देशाचे रक्षण कोण करतात?,सैनिक (Soldier),शेतकरी,सुतार,कुंभार,0,National Security
+Social Studies,National Symbols,राष्ट्रध्वजात किती रंग असतात?,2,3,4,5,1,National Symbols
+Social Studies,General Awareness,भारताची राजधानी कोणती आहे?,मुंबई,दिल्ली,पुणे,कोलकाता,1,Capital Cities
+Social Studies,School,शाळेत विद्यार्थी कशासाठी येतात?,खेळायला,शिकण्यासाठी,झोपायला,झगडा करायला,1,School Activities
+Social Studies,Civic Sense,सार्वजनिक संपत्तीचे काय करावे?,नष्ट करावे,संरक्षण करावे,फेकून द्यावे,तोडावे,1,Civic Responsibility
+Social Studies,Good Habits,सकाळी उठल्यावर काय करावे?,दात घासणे,रडणे,झोपून राहणे,भांडणे,0,Good Habits
+Mathematics,Addition,4 + 4 = ?,6,7,8,9,2,Basic Addition
+Mathematics,Addition,7 + 2 = ?,8,9,10,11,1,Basic Addition
+Mathematics,Subtraction,8 - 3 = ?,4,5,6,7,1,Basic Subtraction
+Mathematics,Subtraction,10 - 5 = ?,3,4,5,6,2,Basic Subtraction
+Mathematics,Shapes,आयत (Rectangle) ला किती बाजू असतात?,3,4,5,6,1,Geometric Shapes
+Mathematics,Numbers,5 नंतर कोणती संख्या येते?,4,5,6,7,2,Counting & Numbers
+Mathematics,Numbers,सर्वात मोठी एक अंकी संख्या कोणती?,8,9,10,7,1,Number Systems
+English,Vocabulary,आपल्याला लिहायला काय लागते?,पेन्सिल,दप्तर,बॅट,बॉल,0,School Supplies
+English,Vocabulary,डोक्यावर आपण काय घालतो?,टोपी (Cap),जुते,ग्लव्स,मोजे,0,Clothing Vocabulary
+English,Grammar,'He is ___ boy.' योग्य पर्याय निवडा.,a,an,the,in,0,Articles Basics
+EVS,Animals,मासा कुठे राहतो?,जमिनीवर,पाण्यात (Water),झाडावर, हवेत,1,Aquatic Animals
+EVS,Body Parts,आपण कशाने वास घेतो?,डोळे,नाक,कान,जीभ,1,Sensory Organs
+EVS,Environment,झाडे आपल्याला काय देतात?,धूर,ऑक्सिजन / सावली,प्लास्टिक,काच,1,Environmental Benefits
+Social Studies,National Symbols,राष्ट्रगीताचा मान राखताना काय करावे?,बसून राहावे,सावध स्थितीत उभे राहावे,धावावे,गाणे म्हणावे,1,National Etiquette
+Social Studies,Family,आईच्या भावाला काय म्हणतात?,काका,मामा,आत्या,मावशी,1,Family Relations
+Social Studies,General Awareness,महाराष्ट्राची राजधानी कोणती?,मुंबई,नागपूर,पुणे,नाशिक,0,State Capitals
