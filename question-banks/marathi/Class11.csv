@@ -1,0 +1,101 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Sets,जर संच A = {1, 2, 3} आणि B = {3, 4, 5} असेल, तर A union B काय असेल?,{1, 2, 3},{3},{1, 2, 3, 4, 5},{2, 4},2,Sets Theory
+Mathematics,Complex Numbers,सम्मीत संख्या i^2 चे मूल्य किती असते?,1,-1,0,i,1,Complex Numbers
+Mathematics,Permutations and Combinations,6P2 ची किंमत किती?,15,30,12,6,1,Permutations
+Mathematics,Binomial Theorem,(x + y)^4 च्या विस्तारामध्ये पदांची एकूण संख्या किती असते?,3,4,5,6,2,Binomial Theorem
+Mathematics,Sequence and Series,अंकगणिती श्रेणीचे (AP) पहिले पद 2 आणि सामान्य फरक 3 असल्यास 10 वे पद किती?,27,29,31,33,1,Progressions
+Mathematics,Straight Lines,रेषा 2x - 3y + 5 = 0 चा 기울 (Slope) किती?,2/3,-2/3,3/2,-3/2,0,Straight Lines
+Mathematics,Limits and Derivatives,lim (x->0) (sin x)/x चे मूल्य किती असते?,0,1,-1,अव्याख्य,1,Limits
+Mathematics,Statistics,दिलेल्या प्राप्तांकांसाठी प्रमाण विचलन (Standard Deviation) काढण्याचे सूत्र काय?,sum(x-mean)^2 / n,sqrt(sum(x-mean)^2 / n),sum(x)/n,यापैकी नाही,1,Statistics
+Mathematics,Probability,एक नाणे दोनदा फेकले असता कमीत कम एक छाट (Head) मिळण्याची संभाव्यता किती?,1/4,1/2,3/4,1,2,Probability
+Mathematics,Trigonometry,sin(2A) चे सूत्र काय असते?,2sin A cos A,cos^2 A - sin^2 A,2tan A / (1 + tan^2 A),वरील सर्व,3,Trigonometric Formulas
+English,Grammar,'Had I known you were coming, I would have received you.' हे वाक्य कोणत्या रचनेचे आहे?,First Conditional,Second Conditional,Third Conditional (Inverted),Zero Conditional,2,Conditionals
+English,Vocabulary,'Meticulous' (अतिदक्ष / कसून) या शब्दाचा समानार्थी शब्द कोणता?,Careless,Careful / Thorough,Slow,Dull,1,Synonyms
+English,Grammar,'She insisted ___ going there.' योग्य Preposition निवडा.,on,in,at,for,0,Prepositions
+English,Plurals,'Hypothesis' या शब्दाचे अनेकवचन काय होते?,Hypotheses,Hypothesises,Hypotheses,Hypothese,0,Plural Forms
+English,Pronouns,'___ of the two plans is acceptable.' योग्य Determiner भरा.,Neither,Every,All,Both,0,Determiners
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Lieutenant,Leutinant,Lietenant,Lieutanent,0,Spelling Accuracy
+English,Tenses,'By the time he arrives, we will have finished our work.' हा कोणता काळ आहे?,Future Continuous,Future Perfect (भविष्य पूर्ण काळ),Present Perfect,Past Perfect,1,Verb Tenses
+English,Action Verbs,'Strive' या क्रियापदाचे V3 (Past Participle) रूप कोणते?,Strived,Striven,Striving,Strives,1,Verb Forms
+English,Question Words,'___ clever the boy is!' उद्गारवाचक वाक्यात कोणता शब्द वापरतात?,What,How,Which,Whose,1,Exclamatory Sentences
+English,Rhyming Words,'MIND' शी जुळणारा शब्द ओळखा:,Find,Kind,Wind,All of these,3,Rhyming Words
+Physics,Units and Measurements,पारदर्शक भिंगाच्या अपवर्तनांक (Refractive Index) मोजताना मोजमापाचे परिमाण काय असते?,मीटर,किलोग्राम,परिमाणहीन (Dimensionless),सेकंद,2,Units and Dimensions
+Physics,Motion in a Straight Line,वेगाच्या कालानुसार (Velocity-Time graph) आलेखाखालील क्षेत्रफळ काय दर्शवते?,त्वरण,विस्थापन (Displacement),चाल,बल,1,Kinematics
+Physics,Laws of Motion,न्यूटॅनचा कोणता गतिविषयक नियम 'जडत्वाचा नियम' म्हणून ओळखला जातो?,पहिला नियम (First Law of Motion),दुसरा नियम,तिसरा नियम,यापैकी नाही,0,Laws of Motion
+Physics,Work Energy and Power,कार्य (Work) हे सदिश राशी आहे की अदिश राशी?,सदिश (Vector),अदिश (Scalar),दोन्ही,काहीही नाही,1,Work and Energy
+Physics,System of Particles and Rotational Motion,जडत्व भ्रामक (Moment of Inertia) कशावर अवलंबून असते?,फक्त वस्तुमान,अक्षाचे स्थान आणि वस्तुमानाचे वितरण,फक्त वेग,फक्त त्रिज्या,1,Rotational Mechanics
+Physics,Gravitation,पृथ्वीच्या पृष्ठभागापासून वर जाताना गुरुत्वीय त्वरण (g) च्या मूल्यात काय बदल होतो?,वाढते,कमी होते (Decreases),स्थिर राहते,शून्य होते,1,Gravitation
+Physics,Mechanical Properties of Solids,हुकचा नियम (Hooke's Law) कशाशी संबंधित आहे?,तान आणि विकृती (Stress and Strain),उष्णता,दाब,पृष्ठ ताण,0,Properties of Solids
+Physics,Thermodynamics,उष्णगतिकीचा पहिला नियम (First Law of Thermodynamics) कशावर आधारित आहे?,ऊर्जा संवर्धनाचा नियम (Conservation of Energy),वस्तुमान संवर्धन,हवेचा दाब,उष्णता वहन,0,Thermodynamics
+Physics,Kinetic Theory of Gases,आदर्श वायूच्या रेणूंची सरासरी गतिज ऊर्जा कशाच्या समप्रमाणात असते?,दाब,तापमान (Absolute Temperature),घनता,आताची स्थिती,1,Kinetic Theory
+Physics,Oscillations and Waves,साध्या लोलकाचा (Simple Pendulum) आवर्तकाळ कशावर अवलंबून नसतो?,लोलकाची लांबी,गुरुत्वीय त्वरण,लोलकाचे वस्तुमान (Mass of Bob),यापैकी नाही,2,Oscillations
+Chemistry,Some Basic Concepts of Chemistry,1 मोल पदार्थामध्ये मूलकणांची संख्या किती असते?,6.022 * 10^23 (Avogadro Number),3.14 * 10^22,1.6 * 10^-19,9.1 * 10^-31,0,Mole Concept
+Chemistry,Structure of Atom,हायड्रोजन वर्णपटातील (Hydrogen Spectrum) बामर मालिका (Balmer series) कोणत्या क्षेत्रात येते?,दृश्य विभाग (Visible Region),अतिनील,अवरक्त,क्ष-किरण,0,Atomic Structure
+Chemistry,Classification of Elements,आवर्त सारणीत डावीकडून उजवीकडे जाताना अणूची त्रिज्या (Atomic Radius) कशी बदलते?,वाढते,कमी होते (Decreases),स्थिर राहते,प्रथम वाढते नंतर कमी होते,1,Periodic Table Trends
+Chemistry,Chemical Bonding,पाण्याच्या रेणूमध्ये (H2O) मध्यवर्ती ऑक्सिजन अणूवर किती लोन पेअर्स (Lone pairs) असतात?,0,1,2 (Two lone pairs),3,2,Chemical Bonding VSEPR
+Chemistry,States of Matter,बॉयलच्या नियमानुसार (Boyle's Law) स्थिर तापमानादाबीत वायूचे दाब आणि आकारमान कसा संबंध असतो?,P गुणिला V स्थीर (Inverse proportional),P थेट V च्या प्रमाणात,P = V,P + V = स्थीर,0,States of Matter
+Chemistry,Thermodynamics,एंथाल्पी (Enthalpy, H) मोजण्याचे सूत्र काय आहे?,H = U + PV,H = U - PV,H = P/V,H = PV,0,Thermodynamics
+Chemistry,Equilibrium,रासायनिक समतेवर (Chemical Equilibrium) तापमानाचा परिणाम कोणता नियम स्पष्ट करतो?,ले शातेलिएचे तत्व (Le Chatelier's Principle),बॉयलचा नियम,चार्ल्सचा नियम,हेसचा नियम,0,Chemical Equilibrium
+Chemistry,Redox Reactions,ऑक्सिडीभवन (Oxidation) क्रियेमध्ये काय घडते?,इलेक्ट्रॉनची भर पडणे,इलेक्ट्रॉनचे नुकसान (Loss of electrons),प्रोटॉन जाणे,हायड्रोजन वाढणे,1,Redox Reactions
+Chemistry,Organic Chemistry,आययुपीएसी (IUPAC) पद्धतीनुसार CH3-CH2-OH चे नाव काय आहे?,इथेनॉल (Ethanol),मिथेनॉल,प्रोपेनॉल,इथेन,0,Organic Nomenclature
+Chemistry,Hydrocarbons,अल्केन श्रेणीतील (Alkanes) सामान्य सूत्र काय आहे?,CnH2n+2,CnH2n,CnH2n-2,CnHn,0,Hydrocarbons
+Biology,The Living World,सजीवांच्या वर्गीकरणात सर्वोच्च वर्ग काय मानला जातो?,प्रजाती,सृष्टी (Kingdom - Kingdom),वर्ग,कुल,1,Biological Classification
+Biology,Biological Classification,विटाकेर यांच्या पाच सृष्टी वर्गीकरणात कोणाचा समावेश नाही?,व्हायरस (Viruses),बुरशी,जिवाणू,वनस्पती,0,Biological Classification
+Biology,Plant Kingdom,अॅम्फिबियन ऑफ प्लँट किंगडम (उभयचर वनस्पती) म्हणून कोणाला ओळखले जाते?,ब्रिओफायटा (Bryophytes - शेवाळ),टेरिडोफायटा,जिम्नोस्पर्म,अँजिओस्पर्म,0,Plant Kingdom
+Biology,Morphology of Flowering Plants,फुलामध्ये दलपुंज (Corolla) कशाचे बनलेले असते?,पुंकेसर,पाकळ्या (Petals),स्त्रीकेसर,शिरा,1,Plant Morphology
+Biology,Anatomy of Flowering Plants,वनस्पतींमध्ये मुळांमध्ये अन्नाचे वहन कोणती ऊती करते?,जलवाहिनी,रसवाहिनी (Phloem),मृदूतक,दृढूतक,1,Plant Anatomy
+Biology,Cell The Unit of Life,पेशीमधील रायबोसोमचे मुख्य कार्य काय असते?,प्रथिनांची निर्मिती (Protein Synthesis),ऊर्जा तयार करणे,उत्सर्जन,प्रकाशन,0,Cell Biology
+Biology,Biomolecules,कर्बोदकांमधील मुख्य घटक कोणते असतात?,कार्बन, हायड्रोजन व ऑक्सिजन (C, H, O),फक्त नायट्रोजन,फक्त लोखंड,गन्धक,0,Biomolecules
+Biology,Cell Cycle and Cell Division,सूत्राविभाजन (Mitosis) प्रक्रियेत गुणसूत्रे मध्यभागी कोणत्या अवस्थेत येतात?,पूर्वावस्था,मध्यावस्था (Metaphase),पश्चावस्था,अन्त्यावस्था,1,Cell Division
+Biology,Photosynthesis in Higher Plants,प्रकाशसंश्लेषणात ऑक्सिजन वायू कोणापासून मुक्त होतो?,कार्बन डायऑक्साइड,पाण्याचे प्रकाशीय अपघटन (Photolysis of Water),ग्लुकोज,हरितद्रव्य,1,Photosynthesis
+Biology,Respiration in Plants,ग्लुकोजच्या एका रेणूपासून ग्लायकोलिसिस प्रक्रियेत किती ATP चे शुद्ध उत्पादन होते?,1 ATP,2 ATP (Net gain),4 ATP,38 ATP,1,Cellular Respiration
+Mathematics,Sets,जर A आणि B विसंगत संच (Disjoint Sets) असतील, तर त्यांचे छेदसंच (Intersection) काय असते?,A,B,रिक्त संच (Null Set / Empty Set),A union B,2,Sets
+Mathematics,Complex Numbers,सम्मीत संख्या 3 + 4i चा मापदंड (Modulus) किती?,3,4,5,7,2,Complex Numbers
+Mathematics,Permutations and Combinations,5C2 ची किंमत किती?,5,10,20,60,1,Combinations
+Mathematics,Binomial Theorem,(1 + x)^n च्या विस्तारामध्ये मध्यपद (Middle term) कधी असते?,n सम असताना,n विषम असताना,नेहमी,कधीच नाही,0,Binomial Theorem
+Mathematics,Sequence and Series,गुणोत्तर श्रेणीचे (GP) पहिले पद 3 आणि सामान्य गुणोत्तर 2 असल्यास 4 थे पद किती?,12,18,24,48,2,Geometric Progression
+Mathematics,Straight Lines,दोन समांतर रेषांचे ढाल (Slopes) एकमेकांशी कसे असतात?,विरुद्ध असतात,समान असतात (Equal),लंब असतात,शून्य असतात,1,Straight Lines
+Mathematics,Limits and Derivatives,फंक्शन f(x) = sin x चे विकलज (Derivative) काय होते?,cos x,-cos x,sin x,-sin x,0,Derivatives
+Mathematics,Statistics,विचलनांच्या बेरजेची वर्गवारी करून मध्य काढण्याच्या पद्धतीत सर्वात महत्त्वाची राशी कोणती?,मध्य विचलन (Mean Deviation),प्रमाण विचलन,प्रसरण,वरील सर्व,0,Statistics
+Mathematics,Probability,दोन फासे फेकला असता बेरजेची संख्या 7 येण्याची संभाव्यता किती?,1/6,1/36,1/12,5/36,0,Probability
+Mathematics,Trigonometry,cos(30) चे मूल्य किती असते?,1/2,sqrt(3)/2,1/sqrt(2),1,1,Trigonometric Values
+English,Grammar,'No sooner did I reach the station ___ the train started.' योग्य Conjunction निवडा.,than,when,then,before,0,Conjunctions
+English,Vocabulary,'Abundant' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Scarce / Meagre (तुटपुंजे / अपुरे),Plentiful,Ample,Profuse,0,Opposite Words
+English,Grammar,'He speaks as if he ___ everything.' योग्य Verb निवडा.,know,knew (Hypothetical),known,has known,1,Subjunctive Mood
+English,Plurals,'Curriculum' या शब्दाचे अनेकवचन काय होते?,Curriculums,Curricula,Curricula and Curriculums,Curriculuses,2,Plural Forms
+English,Pronouns,'___ of the students failed the test.' योग्य Determiner भरा.,None,Every,All,Both,0,Pronouns
+English,Spelling,योग्य स्पेलिंग ओळखा:,Millennium,Milennium,Milenium,Milleniumm,0,Spelling Accuracy
+English,Tenses,'By next week, she will have been working here for 5 years.' हा कोणता काळ आहे?,Future Perfect Continuous (भविष्य चालू पूर्ण काळ),Future Continuous,Present Perfect,Past Perfect,0,Verb Tenses
+English,Action Verbs,'Tear' या क्रियापदाचे V3 (Past Participle) रूप कोणते?,Tore,Torn,Tearing,Tears,1,Verb Forms
+English,Question Words,'___ clever she is!' उद्गारवाचक वाक्यात काय वापरतात?,What,How,Which,Whose,1,Exclamations
+English,Rhyming Words,'Sight' शी जुळणारा शब्द ओळखा:,Night,Light,Right,All of these,3,Rhyming Words
+Physics,Units and Measurements,पारदर्शक भिंगाच्या शक्तीचे (Power of Lens) एकक काय असते?,मीटर,डायोप्टर (Dioptre),वाट्स,ज्युल,1,Optics Units
+Physics,Motion in a Straight Line,स्थिर अवस्थेपासून सुरू होणाऱ्या वस्तूचा वेग वेळेच्या समप्रमाणात वाढत असल्यास तोरण कसे असते?,शून्य,एकसमान (Uniform acceleration),असम,ऋण,1,Kinematics
+Physics,Laws of Motion,घर्षण बल (Friction) नेहमी गतीच्या कोणत्या दिशेत कार्य करते?,समान दिशेत,विरुद्ध दिशेत (Opposite direction),लंबरूप,कोणत्याही दिशेत नाही,1,Friction Basics
+Physics,Work Energy and Power,संवेग (Momentum) दुप्पट केल्यास वस्तूची गतिज ऊर्जा (Kinetic Energy) किती पटीने वाढते?,दोन पटीने,चार पटीने (Four times),आठ पटीने,अपरिवर्तित,1,Kinetic Energy
+Physics,System of Particles and Rotational Motion,कोनीय संवेगाचे (Angular Momentum) सूत्र काय आहे?,I * omega,m * v,F * r,P / t,0,Rotational Mechanics
+Physics,Gravitation,पृथ्वीच्या उपग्रहाचा आवर्तकाळ (Time Period) कशावर अवलंबून असतो?,उपग्रहाची कक्षा व पृथ्वीचे वस्तुमान (Orbital radius),उपग्रहाचे वस्तुमान,रंग,आकार,0,Orbital Mechanics
+Physics,Mechanical Properties of Solids,यंगच्या मापांकाचे (Young's Modulus) आंतरराष्ट्रीय एकक (SI Unit) काय आहे?,N/m,N/m^2 (Pascal),Joule,Watt,1,Elasticity
+Physics,Thermodynamics,समतापी प्रक्रियेत (Isothermal Process) काय स्थिर राहते?,दाब,आकारमान,तापमान (Temperature),उष्णता,2,Thermodynamics
+Physics,Kinetic Theory of Gases,वायूचे दाब रेणूंच्या कशाशी संबंधित असते?,रेणूंच्या आदळण्यामुळे भिंतींवर लागणारे बल (Molecular Collisions),वायूच्या वजनामुळे,तापमानामुळे,यापैकी नाही,0,Kinetic Theory
+Physics,Oscillations and Waves,नाद लहरी (Sound Waves) कोणत्या प्रकारच्या लहरी असतात?,अनुदैर्ध्य लहरी (Longitudinal Waves),अनुप्रस्थ लहरी,विद्युत चुंबकीय लहरी,स्थिर लहरी,0,Wave Mechanics
+Chemistry,Some Basic Concepts of Chemistry,मिश्रणातील घटकांची प्रमाणे दर्शवण्यासाठी 'मोलारिटी' (Molarity) चे सूत्र काय असते?,मोल / लिटर द्रावण (Moles of solute per liter of solution),मोल / किलोग्रॅम द्रावण,ग्राम / लिटर,टक्केवारी,0,Solution Concentration
+Chemistry,Structure of Atom,मुख्य क्वांटम संख्या (Principal Quantum Number, n) काय दर्शवते?,कक्षेचा आकार व ऊर्जा (Shell size and energy),कक्षेचा कोनीय संवेग,स्पेशियल ओरिएंटेशन,स्पिन,0,Quantum Numbers
+Chemistry,Classification of Elements,आधुनिक आवर्त सारणीचे नियम कशावर आधारित आहेत?,अंकसंख्या / अणुक्रमांक (Atomic Number),अणुभार,अणुत्रिज्या,संयुजा,0,Periodic Table
+Chemistry,Chemical Bonding,आयनी बंध (Ionic Bond) तयार होण्यासाठी कशाची गरज असते?,इलेक्ट्रॉनची देवाणघेवाण (Transfer of electrons),इलेक्ट्रॉनची भागीदारी,हायड्रोजन बंध,धात्विक बंध,0,Chemical Bonding
+Chemistry,States of Matter,वायूचा वास्तविक व्यवहार आदर्श वागणुकीपासून विचलन का दाखवतो?,रेणूंमधील आंतररेण्वीय आकर्षण बल आणि आकार (Intermolecular forces),वायूचे वजन नसणे,तापमान शून्य असणे,यापैकी नाही,0,Gaseous State
+Chemistry,Thermodynamics,उष्णगतिकीनुसार 'एनट्रोपी' (Entropy, S) कशाचे मापन असते?,अव्युत्क्रमणीयता व अस्वस्थता / रँडमनीस (Randomness / Disorder),ऊर्जेची निर्मिती,दाब,तापमान,0,Thermodynamics
+Chemistry,Equilibrium,पाण्याचा आयनिक गुणाकार (Ionic product of water, Kw) 25 अंश सेल्सिअस तापमानाला किती असतो?,10^-14,10^-7,10^-10,1,0,Chemical Equilibrium
+Chemistry,Redox Reactions,सर्वात प्रबळ ऑक्सिडाइझिंग एजंट (Strongest Oxidizing Agent) खालीलपैकी कोणता आहे?,फ्लुओरिन (Fluorine),क्लोरिन,ब्रोमीन,आयोडिन,0,Redox Reactions
+Chemistry,Organic Chemistry,हॅलोअल्केन आणि अल्कोहोलमधील क्रियात्मक समूह (Functional Group) कोणता असतो?,OH,COOH,CHO,CN,0,Organic Functional Groups
+Chemistry,Hydrocarbons,बेंझिनचे (Benzene, C6H6) रासायनिक व संरचनात्मक वैशिष्ट्य काय असते?,वलयाकार संयुक्ती व एरोमॅटिक (Aromatic ring structure),सरळ साखळी,शाखीय साखळी,असंतृप्त अल्केन,0,Hydrocarbons
+Biology,The Living World,द्विनामी नामकरण पद्धती (Binomial Nomenclature) कोणी सुरू केली?,कॅरोलस लिनियस (Carolus Linnaeus),डार्विन,मेंडेल,लॅमार्क,0,Taxonomy
+Biology,Biological Classification,विटाकेर यांनी किती सृष्टीमध्ये सजीवांचे वर्गीकरण केले आहे?,3,4,5 (Five Kingdoms),6,2,Biological Classification
+Biology,Plant Kingdom,अँजिओस्पर्म वनस्पतींमध्ये बीजाची निर्मिती कोणात होते?,फळांच्या आत (Within Fruit / Ovary),पानात,मुळात,खोडावर,0,Plant Reproduction
+Biology,Morphology of Flowering Plants,खोडावर पानांचे उगवण्याच्या पद्धतीला (Phyllotaxy) काय म्हणतात?,दलव्यवस्था,पर्णविन्यास (Phyllotaxy),पुष्परचना,मूलरचना,1,Plant Morphology
+Biology,Anatomy of Flowering Plants,द्विबीजपत्री वनस्पतींच्या खोडात दुय्यम वाढ (Secondary Growth) कशामुळे होते?,कॅम्बियम (Cambium),जलवाहिनी,मृदूतक,बातमूळ,0,Plant Anatomy
+Biology,Cell The Unit of Life,वनस्पती पेशी आणि प्राणी पेशींमधील मुख्य फरक कोणता?,पेशीभित्तिका (Cell Wall in Plant cells),केंद्रक,रायबोसोम,मायटोकॉन्ड्रिया,0,Cell Biology
+Biology,Biomolecules,एंझाईम्स (Enzymes) प्रामुख्याने कशापासून बनलेले असतात?,प्रथिने (Proteins),कर्बोदके,स्निग्ध पदार्थ,जीवनसत्त्वे,0,Biomolecules
+Biology,Cell Cycle and Cell Division,पेशी विभाजनाच्या कोणत्या टप्प्यात गुणसूत्रे दोन ध्रुवांकडे जातात?,मध्यावस्था,पश्चावस्था (Anaphase),पूर्वावस्था,अन्त्यावस्था,1,Cell Division
+Biology,Photosynthesis in Higher Plants,C4 वनस्पतींमध्ये CO2 स्थिरीकरणाची पहिली स्थायी उत्पादकता कोणती असते?,ऑक्सॅलोएसेटिक ॲसिड (OAA),फॉस्फोग्लिस्रिक ॲसिड,ग्लुकोज,स्टार्च,0,Photosynthesis
+Biology,Respiration in Plants,क्रॅब्ज चक्र (Krebs Cycle) पेशीमधील कोणत्या भागात घडते?,मायटोकॉन्ड्रियाचे मॅट्रिक्स (Matrix of Mitochondria),सायटोप्लाझम,हरितकण,केंद्रक,0,Cellular Respiration
