@@ -1,0 +1,31 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Physics,Units and Measurements,Which of the following is a fundamental physical quantity in SI units?,Velocity,Force,Luminous intensity,Work,2,SI Units & Dimensions
+Physics,Kinematics,The slope of a Velocity-Time graph represents:,Displacement,Acceleration,Speed,Force,1,Kinematics Graphs
+Physics,Laws of Motion,An object of mass 2 kg moves with constant velocity 5 m/s. What is the net force acting on it?,10 N,0 N,2.5 N,5 N,1,Newton's Laws
+Physics,Work Energy and Power,Work done by a conservative force along a closed path is:,Positive,Negative,Zero,Infinite,2,Work & Energy
+Physics,Gravitation,How does the acceleration due to gravity (g) change as we move above Earth's surface?,Increases,Decreases,Remains constant,Becomes infinite,1,Gravitational Potential
+Physics,Properties of Matter,Which law states that stress is directly proportional to strain within elastic limit?,Pascal's Law,Hooke's Law,Bernoulli's Principle,Archimedes' Principle,1,Elasticity & Fluids
+Physics,Thermodynamics,In an isothermal process, which quantity remains constant?,Pressure,Volume,Temperature,Entropy,2,Thermodynamics
+Chemistry,Basic Concepts of Chemistry,What is the empirical formula of benzene (C6H6)?,CH,C2H2,C3H3,C6H6,0,Stoichiometry
+Chemistry,Structure of Atom,Which quantum number determines the spatial orientation of an orbital?,Principal quantum number,Azimuthal quantum number,Magnetic quantum number,Spin quantum number,2,Quantum Numbers
+Chemistry,Periodic Classification,Which element has the highest electronegativity in the periodic table?,Oxygen,Fluorine,Chlorine,Franciium,1,Periodic Trends
+Chemistry,Chemical Bonding,Which molecule has a linear shape according to VSEPR theory?,H2O,CO2,NH3,CH4,1,Chemical Bonding
+Chemistry,States of Matter,According to Boyle's law, at constant temperature, pressure is inversely proportional to:,Mass,Volume,Density,Temperature,1,Gas Laws
+Chemistry,Chemical Equilibrium,If a stress is applied to a system at equilibrium, the system shifts to relieve stress. This is:,Hess's Law,Le Chatelier's Principle,Law of Mass Action,Henry's Law,1,Chemical Equilibrium
+Chemistry,Organic Chemistry,What is the IUPAC name of CH3-CH2-CHO?,Propanal,Propanone,Propanol,Propanoic acid,0,IUPAC Nomenclature
+Mathematics,Sets,If set A has 3 elements, how many subsets does power set P(A) have?,3,6,8,9,2,Set Theory
+Mathematics,Relations and Functions,The domain of the real-valued function f(x) = sqrt(x - 3) is:,(3, infinity),[3, infinity),(minus infinity, 3],[0, infinity),1,Functions & Domain
+Mathematics,Trigonometry,What is the principal value of sin(x) = 1/2 in the first quadrant?,pi/6,pi/3,pi/4,pi/2,0,Trigonometric Equations
+Mathematics,Complex Numbers,What is the value of i^4 (where i = sqrt(-1))?,1,-1,i,-i,0,Complex Number Properties
+Mathematics,Linear Inequalities,If -3x > 12, then x satisfies: x > -4,x < -4,x > 4,x < 4,1,Inequalities
+Mathematics,Permutations and Combinations,What is the value of 5P2?,10,20,60,120,1,Combinatorics
+Mathematics,Binomial Theorem,The total number of terms in the expansion of (x + y)^n is:,n,n - 1,n + 1,2n,2,Binomial Expansion
+Mathematics,Sequence and Series,The nth term of an Arithmetic Progression is 3n + 1. The 5th term is:,15,16,17,14,1,Progressions
+Mathematics,Straight Lines,What is the slope of the line 2x + 3y = 6?,-2/3,2/3,-3/2,3/2,0,Coordinate Geometry
+Mathematics,Limits and Derivatives,What is the limit of (sin x)/x as x approaches 0?,0,1,Infinite,Undefined,1,Limits
+Biology,Living World,The system of naming organisms using two words (Genus + species) is called:,Taxonomy,Binomial nomenclature,Classification,Systematics,1,Taxonomy
+Biology,Biological Classification,Kingdom Monera consists entirely of which type of organisms?,Eukaryotes,Prokaryotes,Fungi,Viruses,1,Biological Systems
+Biology,Plant Kingdom,Which group of plants is known as the 'amphibians of the plant kingdom'?,Algae,Bryophytes,Pteridophytes,Gymnosperms,1,Plant Classification
+Biology,Cell Biology,Which cell organelle is responsible for ATP generation through cellular respiration?,Golgi body,Lysosome,Mitochondria,Endoplasmic reticulum,2,Cell Structure
+Biology,Plant Physiology,The primary light-absorbing pigment in photosynthesis is:,Chlorophyll b,Chlorophyll a,Carotenoid,Xanthophyll,1,Photosynthesis
+Biology,Human Physiology,Which valve is present between the left atrium and left ventricle in the human heart?,Tricuspid valve,Bicuspid (Mitral) valve,Semilunar valve,Eustachian valve,1,Circulatory System
