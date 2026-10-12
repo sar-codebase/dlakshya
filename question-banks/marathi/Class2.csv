@@ -1,0 +1,101 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Addition,25 + 14 ची बेरीज किती येते?,39,41,38,40,0,Double Digit Addition
+Mathematics,Subtraction,48 मधून 15 वजा केल्यास किती उरतात?,31,32,33,34,2,Double Digit Subtraction
+Mathematics,Multiplication,3 गुणिले 4 किती होतात?,10,11,12,14,2,Multiplication Basics
+Mathematics,Division,10 ला 2 ने भागल्यास उत्तर किती येते?,3,4,5,6,2,Division Basics
+Mathematics,Number Names,इंग्रजीत 'Twenty-Five' म्हणजे कोणती संख्या?,20,52,25,15,2,Number Names
+Mathematics,Geometry,चौकोनाला (Square) किती समान बाजू असतात?,3,4,5,6,1,Geometric Properties
+Mathematics,Measurement,1 मीटर मध्ये किती सेंटीमीटर असतात?,10 सेंटीमीटर,50 सेंटीमीटर,100 सेंटीमीटर,1000 सेंटीमीटर,2,Measurement Units
+Mathematics,Time,घड्याळात मोठा काटा काय मोजतो?,तास,मिनिटे,वर्ष,दिवस,1,Time Measurement
+Mathematics,Money,50 पैशांची दोन नाणी म्हणजे किती रुपये होतात?,1 रु,2 रु,5 रु,10 रु,0,Money Conversion
+Mathematics,Data Handling,चितراत 5 फुले व 2 पाने आहेत, एकूण वस्तू किती?,5,6,7,8,2,Counting & Data
+English,Grammar,'She ___ reading a book.' योग्य रूप भरा.,is,are,am,be,0,Helping Verbs
+English,Vocabulary,'Sun' चा विरुद्धार्थी शब्द कोणता?,Moon,Rain,Star,Sky,0,Opposite Words
+English,Grammar,'The cat is ___ the table.' (टेबलच्या खाली) योग्य शब्द निवडा.,on,in,under,over,2,Prepositions
+English,Plurals,'Apple' या शब्दाचे अनेकवचन (Plural) काय होईल?,Apples,Applees,Appls,Appleses,0,Singular Plural
+English,Pronouns,'Rohan is a boy. ___ likes to play.' योग्य सर्वनाम भरा.,She,He,It,They,1,Pronouns
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा: School,Scool,Skool,Schoool,0,Spelling Accuracy
+English,Adjectives,हिवाळा कसा असतो?,Hot,Cold,Warm,Sunny,1,Describing Words
+English,Action Verbs,मुले मैदानात काय करत आहेत?,रडत आहेत,खेळत आहेत,झोपली आहेत,बसली आहेत,1,Action Verbs
+English,Question Words,'___ is your name?' योग्य शब्द निवडा.,What,Where,When,Who,0,Wh-Questions
+English,Rhyming Words,'Cat' या शब्दाशी जुळणारा शब्द ओळखा:,Sun,Bat,Dog,Pen,1,Rhyming Words
+EVS,Body Parts,आपल्या शरीरात अन्नाचे पचन कोठे होते?,जठर (Stomach),डोळा,कान,नाक,0,Human Body Organs
+EVS,Animals,गवतावर जगणारा व दूध देणारा प्राणी कोणता?,सिंह,वाघ,गाय,कोल्हा,2,Herbivorous Animals
+EVS,Plants,झाडांना फुले येण्यापूर्वी काय येते?,फळे,पाने,कळी (Bud),मुळे,2,Plant Lifecycle
+EVS,Water,पाण्याचा वापर कशासाठी होत नाही?,पिण्यासाठी,न्हाण्यासाठी,आग विझवण्यासाठी,पेट्रोल टाकण्यासाठी,3,Uses of Water
+EVS,Shelter,मधमाशा कुठे राहतात?,घरट्यात,पोळ्यात (Beehive),गुहेत,बिळात,1,Animal Habitats
+EVS,Seasons,उन्हाळ्यात आपण कोणत्या रंगाचे किंवा सुती कपडे वापरतो?,स्वेटर,सुती कपडे,रेनकोट,लेदर जॅकेट,1,Clothing & Seasons
+EVS,Community Helpers,कपडे कोण शिवतात?,सुतार,शिंपी (Tailor),कुंभार,लोहार,1,Community Helpers
+EVS,Safety,रस्ता ओलांडताना कुठे चालावे?,रस्त्याच्या मधोमध,झेब्रा क्रॉसिंगवर,धावत,कसेही,1,Road Safety
+EVS,Food,आरोग्यासाठी कोणता आहार चांगला आहे?,जंक फूड,संतुलित आहार,फक्त चॉकलेट,शिळे अन्न,1,Healthy Nutrition
+EVS,Transport,पाण्यावरून चालणारे वाहन कोणते?,बस,रेल्वे,बोटी (Boat),विमान,2,Water Transport
+Social Studies,National Symbols,आपले राष्ट्रीय फुल कोणते आहे?,कमळ,गुलाब,झेंडू,मोगरा,0,National Symbols
+Social Studies,Festivals,दिवाळीत आपण काय उजळतो?,दिवे व फटाके,पतंग,रंग,होलिका,0,Cultural Festivals
+Social Studies,Directions,आपल्या डाव्या हाताची दिशा कोणती हे ठरवण्यासाठी कशाचा वापर होतो?,दिग्दर्शक,दिशांचे ज्ञान,घड्याळ,मोजपट्टी,1,Directions Basics
+Social Studies,Family,काका-काकूंच्या मुलांना काय म्हणतात?,बहीण,भाऊ,चुलत भावंडे (Cousins),मित्र,2,Family Relationships
+Social Studies,Community Helpers,शेतकरी कोणासाठी अन्न उगवतो?,फक्त स्वतःसाठी,देशातील सर्व लोकांसाठी,प्राण्यांसाठी,कोणासाठीही नाही,1,Social Roles
+Social Studies,Earth,पृथ्वीचा आकार कसा आहे?,चौरस,त्रिकोणी,गोल (Spherical),लांबट,2,Earth Shape
+Social Studies,Time,एका आठवड्यात किती दिवस असतात?,5,6,7,30,2,Days of the Week
+Social Studies,Environment,झाडे आपल्याला कशापासून वाचवतात?,सावली,प्रदूषण व ऑक्सिजनची कमतरता,फळे,फुले,1,Environmental Awareness
+Social Studies,Civic Sense,सार्वaganda कचरा कुठे टाकावा?,खिडकीतून बाहेर,रस्त्यावर,कचराकुंडीत,कोठेही नाही,2,Civic Responsibility
+Social Studies,General Awareness,भारताचे राष्ट्रपिता कोण आहेत?,महात्मा गांधी,जवाहरलाल नेहरू,लोकमान्य टिळक,डॉ. बाबासाहेब आंबेडकर,0,National Leaders
+Mathematics,Addition,12 + 13 किती होतात?,23,25,26,27,1,Double Digit Addition
+Mathematics,Subtraction,35 - 12 किती होतात?,21,22,23,24,2,Double Digit Subtraction
+Mathematics,Multiplication,2 गुणिले 5 किती होतात?,7,10,15,20,1,Multiplication Basics
+Mathematics,Division,12 ला 3 ने भागल्यास उत्तर किती येते?,3,4,5,6,1,Division Basics
+Mathematics,Shapes,आयताच्या समोरासमोरील बाजू कशा असतात?,असमान,समान,लहान-मोठ्या,गोल,1,Geometric Properties
+Mathematics,Measurement,1 किलो म्हणजे किती ग्रॅम?,100 ग्रॅम,500 ग्रॅम,1000 ग्रॅम,2000 ग्रॅम,2,Weight Units
+Mathematics,Time,एका तासात किती मिनिटे असतात?,30 मिनिटे,60 मिनिटे,100 मिनिटे,24 मिनिटे,1,Time Measurement
+Mathematics,Money,10 रुपयांची नोट आणि 5 रुपयांची नाणी मिळून किती झाले?,10 रु,15 रु,20 रु,25 रु,1,Money Calculation
+Mathematics,Number Names,संख्या ओळखा: 'Thirty-Two',23,32,30,22,1,Number Names
+Mathematics,Patterns,क्रम पूर्ण करा: 5, 10, 15, 20, ?,22,24,25,30,2,Skip Counting
+English,Grammar,'We ___ going to school.' योग्य शब्द निवडा.,is,are,am,be,1,Plural Verbs
+English,Vocabulary,शाळेत शिकवणाऱ्या व्यक्तीला इंग्रजीत काय म्हणतात?,Doctor,Teacher,Driver,Farmer,1,School Vocabulary
+English,Pronouns,'This is my dog. ___ is very cute.' योग्य सर्वनाम निवडा.,He,She,It,They,2,Pronouns
+English,Prepositions,'The cat jumped ___ the wall.' योग्य शब्द निवडा.,over,in,under,at,0,Prepositions
+English,Adjectives,आकाशाचा रंग कसा असतो?,Blue,Red,Green,Yellow,0,Describing Words
+English,Vocabulary,फळांना इंग्रजीत काय म्हणतात?,Fruits,Vegetables,Books,Pens,0,Food Vocabulary
+English,Grammar,'What ___ your father do?' योग्य शब्द निवडा.,do,does,is,are,1,Present Tense Basics
+English,Rhyming Words,'Book' शी जुळणारा शब्द ओळखा:,Look,Cat,Sun,Pen,0,Rhyming Words
+English,Action Words,मुले पुस्तकात काय करतात?,पाहतात,वाचतात,खेळतात,पळतात,1,Action Verbs
+English,Spelling,योग्य स्पेलिंग ओळखा: Elephant,Elefent,Elifant,Elifent,0,Spelling Accuracy
+EVS,Body Parts,आपण अन्नाचा स्वाद कशाने ओळखतो?,डोळे,जीभ (Tongue),कान,त्वचा,1,Sensory Organs
+EVS,Animals,ज्या प्राण्यांचे मांस आपण खात नाही पण जे ओझे वाहतात, असा प्राणी कोणता?,गाढव / बैल,सिंह,वाघ,लांडगा,0,Working Animals
+EVS,Plants,झाडाचा कोणता भाग हवेतून कार्बन डायऑक्साइड घेतो?,मुळे,पाने (Leaves),खोड,फळे,1,Plant Respiration
+EVS,Water,पाण्याचा वापर कोणत्या कामासाठी केला जात नाही?,पिण्यासाठी,कपडे धुण्यासाठी,कार चालवण्यासाठी,स्वयंपाक करण्यासाठी,2,Uses of Water
+EVS,Shelter,घराचे छत आपल्याला कशापासून वाचवते?,फक्त हवेपासून,ऊन,वारा व पावसापासून,फक्त थंडीपासून,फक्त प्रकाशापासून,1,Need for Shelter
+EVS,Seasons,पावसाळ्यात कोणता महापूर किंवा रोग टाळण्यासाठी काय काळजी घ्यावी?,उकळलेले पाणी पिणे,कच्चे अन्न खाणे,पाण्यात भिजणे,अंधारात राहणे,0,Health & Hygiene
+EVS,Community Helpers,अग्निशामक दलाचे (Fire Brigade) काम काय असते?,आग विझवणे,रस्ते बांधणे,पत्र पोहोचवणे,झाडे लावणे,0,Community Helpers
+EVS,Safety,घरी असताना कोणत्या वस्तूशी खेळू नये?,खेळणी,कम्प्यूटर,धारदार चाकू,वही-पेन,2,Safety Rules
+EVS,Food,दूध पिण्यामुळे आपले शरीर काय होते?,कमकुवत,बळकट (Strong),आजारी,सुस्त,1,Nutrition Basics
+EVS,Transport,जमिनीवरून चालणारे सर्वात जलद वाहन कोणते?,सायकल,बैलगाडी,आधुनिक रेल्वे / ट्रेन,चालणे,2,Land Transport
+Social Studies,National Symbols,आपले राष्ट्रीय प्राणि कौन आहे?,सिंह,वाघ (Tiger),हत्ती,चित्ता,1,National Symbols
+Social Studies,Festivals,नाताळ (Christmas) हा सण कधी साजरा केला जातो?,25 डिसेंबर,15 ऑगस्ट,26 जानेवारी,2 ऑक्टोबर,0,Cultural Festivals
+Social Studies,Directions,सूर्याच्या विरुद्ध दिशेला कोणती दिशा असते?,पूर्व,पश्चिम,उत्तर,दक्षिण,1,Cardinal Directions
+Social Studies,Family,आईच्या वडिलांना काय म्हणतात?,आजोबा,मामा,काका,भाऊ,0,Family Relationships
+Social Studies,Community Helpers,पत्रे व पार्सल घरपोच कोण पोहोचवतो?,टपाल्या (Postman),पोलीस,डॉक्टर,शिक्षक,0,Social Roles
+Social Studies,Earth,पृथ्वीवर पाण्याचे प्रमाण जास्त आहे की जमिनीचे?,जमीन,पाणी (Water),दोन्ही समान,काहीच नाही,1,Planetary Basics
+Social Studies,Time,एका वर्षात किती महिने असतात?,6,10,12,24,2,Months of the Year
+Social Studies,Environment,प्लास्टिकच्या वापरामुळे पर्यावरणावर काय परिणाम होतो?,प्रदूषण वाढते,स्वच्छता होते,झाडे वाढतात,पाणी शुद्ध होते,0,Environmental Awareness
+Social Studies,Civic Sense,आपला परिसर कसा ठेवला पाहिजे?,अस्वच्छ,उंच,स्वच्छ व सुंदर,कचऱ्याने भरलेला,2,Civic Responsibility
+Social Studies,General Awareness,महाराष्ट्र राज्यातील सर्वात महत्त्वाची भाषा कोणती?,मराठी,तमिळ,तेलगू,बंगाली,0,State Languages
+Mathematics,Addition,14 + 16 किती होतात?,28,29,30,31,2,Double Digit Addition
+Mathematics,Subtraction,50 - 25 किती होतात?,20,25,30,35,1,Double Digit Subtraction
+Mathematics,Multiplication,4 गुणिले 5 किती होतात?,15,18,20,25,2,Multiplication Basics
+Mathematics,Division,15 ला 3 ने भागल्यास उत्तर किती येते?,3,4,5,6,2,Division Basics
+Mathematics,Geometry,वर्तुळाला किती कडा (Corners) असतात?,1,2,4,एकही नाही (0),3,Geometric Properties
+Mathematics,Measurement,1 लीटर म्हणजे किती मिलिलीटर?,100 मिली,500 मिली,1000 मिली,2000 मिली,2,Measurement Units
+Mathematics,Time,दुपारच्या १२ नंतर काय सुरू होते?,सकाळ,दुपार / संध्याकाळ,रात्र,पहाट,1,Time Measurement
+Mathematics,Money,5 रुपयांची 3 नाणी म्हणजे एकूण किती रुपये?,10 रु,12 रु,15 रु,20 रु,2,Money Calculation
+Mathematics,Number Names,संख्या ओळखा: 'Forty-Five',40,45,54,50,1,Number Names
+Mathematics,Patterns,क्रम पूर्ण करा: 3, 6, 9, 12, ?,13,14,15,18,2,Skip Counting
+English,Grammar,'They ___ playing football.' योग्य शब्द निवडा.,is,are,am,be,1,Plural Verbs
+English,Vocabulary,'Teacher' ला मराठीत काय म्हणतात?,डॉक्टर,शिक्षक,इंजीनियर,शेतकरी,1,School Vocabulary
+English,Pronouns,'This is a pen. ___ is red.' योग्य सर्वनाम निवडा.,He,She,It,They,2,Pronouns
+English,Prepositions,'The book is ___ the bag.' (बॅटच्या आत) योग्य शब्द निवडा.,in,on,under,near,0,Prepositions
+English,Adjectives,लिंबू चवीने कसे असते?,Sweet,Sour (आंबट),Salty,Bitter,1,Describing Words
+English,Vocabulary,फळांचा राजा कोणाला म्हणतात?,सफरचंद,केळी,आंबा (Mango),पेरू,2,Food Vocabulary
+English,Grammar,'Where ___ you live?' योग्य शब्द निवडा.,do,does,is,are,0,Present Tense Basics
+English,Rhyming Words,'Day' शी जुळणारा शब्द ओळखा:,Way,Sun,Cat,Pen,0,Rhyming Words
+English,Action Words,नदी काय करते?,वाहते (Flows),पळते,उंच उडते,झोपते,0,Action Verbs
+English,Spelling,योग्य स्पेलिंग ओळखा: Pencil,Pensil,Pansil,Pensel,0,Spelling Accuracy
