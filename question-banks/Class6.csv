@@ -1,0 +1,46 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Number Systems,What is the place value of 5 in 75,43,210?,50000,500000,5000,50,1,Indian Number System
+Mathematics,Number Systems,Which is the smallest natural number?,0,1,-1,10,1,Natural Numbers
+Mathematics,Whole Numbers,Which property states that a + b = b + a?,Associative,Commutative,Distributive,Closure,1,Properties of Whole Numbers
+Mathematics,Integers,What is the value of (-15) + (-10)?,25,-25,5,-5,1,Integer Addition
+Mathematics,Integers,The predecessor of -10 is:,-9,-11,11,9,1,Integer Properties
+Mathematics,Fractions,Which of the following is a proper fraction?,5/3,7/4,3/5,8/2,2,Types of Fractions
+Mathematics,Decimals,Convert 3/4 into a decimal:,0.5,0.75,0.25,0.8,1,Fraction to Decimal
+Mathematics,Decimals,What is 2.5 + 3.05?,5.55,5.10,5.50,6.05,0,Decimal Addition
+Mathematics,Algebra,Write an algebraic expression for '5 added to twice a number x':,2x + 5,5x + 2,2(x + 5),x/2 + 5,0,Algebraic Expressions
+Mathematics,Algebra,If 3x - 5 = 10, then x is equal to:,3,4,5,6,2,Solving Equations
+Mathematics,Ratio and Proportion,What is the simplest form of the ratio 15:25?,3:5,5:3,1:2,3:4,0,Ratio Simplification
+Mathematics,Ratio and Proportion,Are the numbers 2, 4, 6, 12 in proportion?,Yes,No,Cannot be determined,Only if multiplied,0,Proportion Check
+Mathematics,Geometry,An angle whose measure is greater than 90° but less than 180° is:,Acute,Obtuse,Reflex,Right,1,Angle Types
+Mathematics,Geometry,How many lines of symmetry does an equilateral triangle have?,1,2,3,Infinite,2,Symmetry
+Mathematics,Perimeter and Area,What is the perimeter of a regular hexagon of side 5 cm?,25 cm,30 cm,35 cm,20 cm,1,Perimeter Calculation
+Mathematics,Perimeter and Area,What is the area of a square with side 8 cm?,32 sq cm,64 sq cm,16 sq cm,48 sq cm,1,Area Calculation
+Science,Food & Nutrition,Which nutrient is primarily responsible for body growth and repair?,Carbohydrates,Fats,Proteins,Vitamins,2,Nutrients & Diet
+Science,Food & Nutrition,Deficiency of Vitamin A causes:,Scurvy,Rickets,Night Blindness,Beriberi,2,Deficiency Diseases
+Science,Components of Food,Which test is used to detect the presence of starch in food?,Iodine test,Biuret test,Ethanol test,Litmus test,0,Food Testing
+Science,Fibre to Fabric,Which of the following is a natural plant fiber?,Nylon,Jute,Wool,Silk,1,Fiber Classification
+Science,Fibre to Fabric,The process of separating fibers from cotton seeds is called:,Spinning,Weaving,Ginning,Knitting,2,Fabric Production
+Science,Sorting Materials,Which of the following materials is soluble in water?,Sand,Chalk powder,Sugar,Sawdust,2,Properties of Materials
+Science,Separation of Substances,The process of separating heavier and lighter components of a mixture by wind is:,Sieving,Winnowing,Decantation,Filtration,1,Separation Methods
+Science,Changes Around Us,Which of the following is a reversible change?,Burning of paper,Melting of ice,Rusting of iron,Cooking of food,1,Physical & Chemical Changes
+Science,Getting to Know Plants,Which part of a plant is involved in transpiration?,Root,Stem,Leaf,Flower,2,Plant Physiology
+Science,Getting to Know Plants,Plants with weak stems that spread on the ground are called:,Climbers,Creepers,Herbs,Shrubs,1,Plant Classification
+Science,Body Movements,Which type of joint is present in our shoulder and hip?,Hinge joint,Ball and socket joint,Pivot joint,Fixed joint,1,Skeletal System
+Science,Body Movements,How many total bones are present in an adult human body?,206,300,212,180,0,Human Skeleton
+Science,Living Organisms,Which organ helps fish to breathe in water?,Lungs,Gills,Skin,Spiracles,1,Animal Adaptation
+Science,Light & Shadows,An object through which light cannot pass at all is called:,Transparent,Translucent,Opaque,Reflective,2,Light Properties
+Science,Electricity,Which component in a circuit is used to open or close the circuit?,Battery,Bulb,Switch,Wire,2,Electric Circuits
+Science,Magnetism,Where is the magnetic strength maximum in a bar magnet?,At the center,At the poles,Equally everywhere,On the surface only,1,Magnetic Properties
+English,Grammar,Identify the collective noun: 'A ____ of cattle was grazing in the field.',pack,herd,flock,fleet,1,Collective Nouns
+English,Grammar,Choose the correct pronoun: 'Each of the boys received ____ award.',their,his,them,they,1,Pronouns
+English,Grammar,Identify the adjective of quantity in: 'There is little milk in the jug.',little,milk,in,jug,0,Adjectives
+English,Grammar,Select the correct form of verb: 'Neither John nor his friends ____ present.',was,were,is,has,1,Subject-Verb Agreement
+English,Grammar,Identify the adverb: 'The bell rang loudly.',bell,rang,loudly,The,2,Adverbs
+English,Grammar,Choose the correct preposition: 'He is fond ____ playing chess.',of,with,at,for,0,Prepositions
+English,Grammar,Choose the correct conjunction: 'He was poor, ____ he was honest.',so,because,yet,unless,2,Conjunctions
+English,Grammar,Convert to passive voice: 'She writes a letter.',A letter is written by her.,A letter was written by her.,A letter is being written by her.,A letter written by her.,0,Voice
+English,Grammar,Convert to reported speech: 'He said, "I am reading a book."',He said that he was reading a book.,He said that I am reading a book.,He says he is reading a book.,He said he is reading a book.,0,Direct & Indirect Speech
+English,Vocabulary,Synonym of 'Abundant' is:,Scarce,Plentiful,Meager,Rare,1,Synonyms
+English,Vocabulary,Antonym of 'Artificial' is:,Synthetic,Natural,False,Man-made,1,Antonyms
+English,Vocabulary,One-word substitution: 'A person who studies plants':,Zoologist,Botanist,Geologist,Pathologist,1,Vocabulary Expansion
+English,Spelling,Select the correctly spelled word:,Accommodate,Acommodate,Accomodate,Acomodate,0,Spelling Skills
