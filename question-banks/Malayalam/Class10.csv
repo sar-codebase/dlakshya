@@ -1,0 +1,81 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Real Numbers,26 ഉം 91 ഉം തമ്മിലുള്ള ഉസാഘ (HCF) എത്ര?,7,13,26,91,1,Real Numbers & HCF
+Mathematics,Polynomials,x^2 - 2x - 8 എന്ന ഇരുപതടിയുടെ (Quadratic Polynomial) ശൂന്യതകൾ (Zeros) ഏതൊക്കെ?,4 ഉം -2,-4 ഉം 2,4 ഉം 2,-4 ഉം -2,0,Polynomial Roots
+Mathematics,Pair of Linear Equations,2x + 3y = 5 ഉം 4x + 6y = 10 ഉം ആയ രേഖകളുടെ ജ്യാമിതീയ അവസ്ഥ എന്ത്?,സമാന്തര വരകൾ,ഛേദിക്കുന്ന വരകൾ,ഒന്നിച്ചുവരുന്ന വരകൾ (Coincident Lines),രേഖകളല്ല,2,Linear Equations
+Mathematics,Quadratic Equations,3x^2 - 5x + 2 = 0 എന്ന സമവാക്യത്തിന്റെ വിവേചകം (Discriminant, D) എത്ര?,1,2,3,4,0,Quadratic Discriminant
+Mathematics,Arithmetic Progressions,അങ്കगणिती શ્રેણીയുടെ (AP) ആദ്യ പദം a ഉം പൊതുവ്യത്യാസം d ഉം ആയാൽ n-ആം പദം കാണാനുള്ള സൂത്രവാക്യം ഏത്?,a + (n-1)d,a + nd,a + (n+1)d,a - (n-1)d,0,Arithmetic Progressions
+Mathematics,Coordinate Geometry,(2, 3) ഉം (4, 1) ഉം തമ്മിലുള്ള അകലം (Distance) എത്ര?,sqrt(2),2*sqrt(2),4,8,1,Coordinate Distance
+Mathematics,Trigonometry,sin^2(30°) + cos^2(30°) ന്റെ വില എത്ര?,0,1,1/2,2,1,Trigonometric Identities
+Mathematics,Circles,ഒരു വൃത്തത്തിന്റെ ബാഹ്യബിന്ദുവിൽ നിന്ന് ആ വൃത്തത്തിലേക്ക് വരയ്ക്കുന്ന സ്പർശേഖകളുടെ (Tangents) നീളങ്ങൾ എങ്ങനെയുള്ളവയാണ്?,അസമം,തുല്യമായത് (Equal),ഇരട്ടി,പകുതി,1,Tangent Theorems
+Mathematics,Areas Related to Circles,ആരം 'r' ആയ ഒരു വൃത്തത്തിന്റെ വിസ്തീർണ്ണം (Area) കാണാനുള്ള സൂത്രവാക്യം ഏത്?,2*pi*r,pi*r^2,pi*r,4*pi*r^2,1,Circle Area
+Mathematics,Statistics,തന്നിരിക്കുന്ന വിവരങ്ങളുടെ മധ്യമാനം (Mean), മധ്യകം (Median), ബഹുലകം (Mode) എന്നിവ തമ്മിലുള്ള കൃത്യമായ ബന്ധം ഏത്?,Mode = 3*Median - 2*Mean,Mode = 2*Median - 3*Mean,Mode = Median - Mean,Mode = Mean + Median,0,Empirical Relationship
+English,Grammar,'He said, "I am going to school."' എന്ന വാക്യത്തിന്റെ Indirect Speech എന്താകും?,He said that he was going to school.,He said that he is going to school.,He told that he is going,He asks if he was going,0,Direct and Indirect Speech
+English,Vocabulary,'Industrious' എന്ന വാക്കിന്റെ സമർത്ഥമായ പദം (Synonym) ഏത്?,Lazy,Hardworking (കഠിനാധ്വാനി),Dull,Slow,1,Synonyms
+English,Grammar,'Neither he nor his friends ___ present.' ശരിയായ Verb തിരഞ്ഞെടുക്കുക.,is,are (Are),was,has,1,Subject-Verb Agreement
+English,Plurals,'Crisis' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Crisises,Crises (Crises),Crisiss,Crisi,1,Plural Forms
+English,Pronouns,'___ of the students passed the exam.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,All,Every,Each,Both,0,Pronouns & Determiners
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Accomodation,Acommodation,Accommodation (താമസസൗകര്യം),Acomodation,2,Spelling Accuracy
+English,Tenses,'By next month, she will have completed her project.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Future Perfect (ഭാവി പൂർണ്ണ കാലം),Future Continuous,Present Perfect,Past Perfect,0,Verb Tenses
+English,Action Verbs,'Choose' എന്ന ക്രിയയുടെ Past Participle (V3) രൂപം ഏത്?,Choosed,Chosen (Chosen),Chose,Choosing,1,Verb Forms
+English,Question Wordsራትരാത്രി എവിടെ പോകുന്നു എന്ന് ചോദിക്കാൻ ഏത് ചോദ്യപദം ഉപയോഗിക്കണം?,Where (Where),What,Who,When,0,Wh-Questions
+English,Rhyming Words,'Right' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Light,Night,Bright,All of these (എല്ലാം ശരിയാണ്),3,Rhyming Words
+Science,Chemical Reactions,കാൽസ്യം ഓക്സൈഡ് വെള്ളവുമായി പ്രവർത്തിച്ച് കാൽസ്യം ഹൈഡ്രോക്സൈഡ് ഉണ്ടാകുന്ന പ്രവർത്തനം എന്ത് തരം പ്രവർത്തനമാണ്?,വിഘടനം,സംയോജന പ്രവർത്തനം (Combination Reaction),ഇടപെടൽ,ഓക്സിഡേഷൻ,1,Chemical Reactions
+Science,Acids Bases and Salts,സാധാരണ ഉപ്പിന്റെ (Sodium Chloride) രാസനാമം എന്താണ്?,Sodium Carbonate,Sodium Chloride (NaCl),Sodium Hydroxide,Sodium Sulphate,1,Chemical Salts
+Science,Metals and Non-metals,സാധാരണ താപനിലയിൽ ദ്രാവകാവസ്ഥയിൽ കാണപ്പെടുന്ന അലോഹം (Non-metal) ഏത്?,പാർവ്വതം (Mercury),ബ്രോമിൻ (Bromine),കാർബൺ,ഗന്ധകം,1,Metals and Non-metals
+Science,Carbon Compounds,അസറ്റിക് ആസിഡിന്റെ (Acetic Acid) രാസസൂത്രം എന്താണ്?,CH3COOH,CH3OH,HCHO,C2H5OH,0,Carbon Compounds
+Science,Life Processes,മനുഷ്യ ശരീരത്തിൽ ഭക്ഷണവും പോഷകങ്ങളും ആഗിരണം ചെയ്യപ്പെടുന്നത് പ്രധാനമായും എവിടെ വെച്ചാണ്?,ആമാശയം,ചെറുകുടൽ (Small Intestine),വറുകുടൽ,കരൾ,1,Human Life Processes
+Science,Control and Coordination,മനുഷ്യ ശരീരത്തിലെ പ്രധാന അന്തഃസ്രാവി ഗ്രന്ഥിയായ (Master Gland) പിറ്റ്യൂട്ടറി ഗ്രന്ഥി സ്ഥിതി ചെയ്യുന്നത് എവിടെയാണ്?,കഴുത്തിൽ,തലച്ചോറിന് അടിഭാഗത്ത് (Base of Brain),വയറ്റിൽ,വൃക്കയ്ക്ക് മുകളിൽ,1,Endocrine System
+Science,Reproduction,അമീബയിൽ കാണപ്പെടുന്ന പ്രധാന അലൈംഗിക പ്രജനന രീതി ഏത്?,മുകുളനം,ദ്വിവിഭജനം (Binary Fission),ബീജോത്പാദനം,പുനരുദ്ഭവനം,1,Reproduction Systems
+Science,Heredity and Evolution,പാരസ്ഥിതിക പാരമ്പര്യ നിയമങ്ങൾ ആദ്യമായി ആവിഷ്കരിച്ചത് ആരാണ്?,ചാർ്സ് ഡാർവിൻ,ഗ്രെഗോർ മെൻഡൽ (Gregor Mendel),ജീൻ ബാപ്റ്റിസ്റ്റ് ലാമർക്,റോബർട്ട് ഹുക്ക്,1,Genetics
+Science,Light Reflection and Refraction,അന്തർഗോള ദർപ്പണത്തിന്റെ (Concave Mirror) മുഖ്യ ഫോക്കസും വക്രതാ കേന്ദ്രവും തമ്മിലുള്ള അകലം ഫോക്കസ് ദൂരത്തിന്റെ എത്ര മടങ്ങാണ്?,തുല്യം,ഇരട്ടി (Radius of Curvature = 2*f),പകുതി,മൂന്നിരട്ടി,1,Light Optics
+Science,Human Eye and Colourful World,ആകാശത്തിന്റെ നിറം നീലയായി കാണപ്പെടാൻ കാരണം പ്രകാശത്തിന്റെ ഏത് പ്രതിഭാസമാണ്?,പ്രകാശത്തിന്റെ അപവർത്തനം,പ്രകാശത്തിന്റെ വിസരണം (Scattering of Light),പ്രകാശത്തിന്റെ പ്രതിഫലനം,പ്രകാശത്തിന്റെ പൂർണ്ണ ആന്തരീക परावर्तन,1,Atmospheric Optics
+Social Studies,History,മഹാത്മാഗാന്ധി ഇന്ത്യയിൽ ആദ്യമായി സത്യാഗ്രഹം പരീക്ഷിച്ച സ്ഥലങ്ങളിൽ പ്രധാനപ്പെട്ടത് ഏത്?,ചമ്പാരൻ / ഖേഡ / അഹമ്മദാബാദ് (Champaran, Kheda, Ahmedabad),ഡെൽഹി,മുംബൈ,കളക്കട്ട,0,Indian Nationalism
+Social Studies,Geography,ഇന്ത്യയിൽ ഏറ്റവുമധികം കാണപ്പെടുന്ന പ്രധാന മണ്ണ് ഏത്?,കറുത്ത മണ്ണ്,എക്കൽ മണ്ണ് (Alluvial Soil),ചെഞ്ചുവപ്പ് മണ്ണ്,ലാറ്ററൈറ്റ് മണ്ണ്,1,Indian Soils
+Social Studies,Civic Sense,ഇന്ത്യയിലെ രാഷ്ട്രീയ പാർട്ടി സംവിധാനം ഏത് സമ്പ്രദായത്തിലാണ് പ്രവർത്തിക്കുന്നത്?,ഏകകക്ഷി സമ്പ്രദായം,ദ്വികക്ഷി സമ്പ്രദായം,ബഹുകക്ഷി സമ്പ്രദായം (Multi-party System),പാർട്ടി ഇല്ലാത്തത്,2,Political Parties
+Social Studies,Economics,ഇന്ത്യയിൽ പണമിടപാടുകളുടെ മേൽനോട്ടം വഹിക്കുന്ന രാജ്യത്തെ പരമോന്നത ബാങ്ക് ഏത്?,സ്റ്റേറ്റ് ബാങ്ക് ഓഫ് ഇന്ത്യ,റിസർവ് ബാങ്ക് ഓഫ് ഇന്ത്യ (Reserve Bank of India),കാനറാ ബാങ്ക്,പഞ്ചാബ് നാഷണൽ ബാങ്ക്,1,Money and Credit
+Social Studies,History,യൂറോപ്പിൽ ദേശീയതാ പ്രസ്ഥാനങ്ങളുടെ ഉദയത്തിന് കാരണമായ പ്രധാന സംഭവം ഏത്?,ഫ്രഞ്ച് വിപ്ലവം 1789 (French Revolution of 1789),ഒന്നാം ലോകമഹായുദ്ധം,വ്യവസായ വിപ്ലവം,റഷ്യൻ വിപ്ലവം,0,Rise of Nationalism in Europe
+Social Studies,Geography,ഇന്ത്യയിലെ പ്രധാന അയിരു ഖനനങ്ങളിൽ ഇരുമ്പ് അയിര് ഏറ്റവും കൂടുതൽ കയറ്റി അയക്കുന്ന പ്രധാന തുറമുഖം ഏത്?,മർമ്മഗോവ / വിശാഖപട്ടണം (Visakhapatnam / Marmagao),മുംബൈ,കൊൽക്കത്ത,ചെന്നായ്,0,Minerals and Energy Resources
+Social Studies,Civic Sense,ജനാധിപത്യ ഭരണസംവിധാനത്തിന്റെ ഏറ്റവും പ്രധാനപ്പെട്ട വിജയ മാനദണ്ഡം എന്താണ്?,ഉത്തരവാദിത്തമുള്ളതും സുതാര്യവുമായ സർക്കാർ (Accountable and Legitimate Government),വലിയ സൈന്യം,വലിയ ഫാക്ടറികൾ,ഉയർന്ന നികുതി,0,Outcomes of Democracy
+Social Studies,Economics,ലോകവ്യാപാര സംഘടനയുടെ (WTO) പ്രധാന ലക്ഷ്യം എന്താണ്?,പ്രാദേശിക വ്യാപാരം നിരോധിക്കൽ,അന്താരാഷ്ട്ര സ്വതന്ത്ര വ്യാപാരം പ്രോത്സാഹിപ്പിക്കൽ (Promote International Free Trade),നികുതി വർദ്ധിപ്പിക്കൽ,ഒന്നുമില്ല,1,Globalisation and Indian Economy
+Social Studies,History,വിയറ്റ്‌നാമിലെ ഫ്രഞ്ച് കൊളonial ഭരണത്തിനെതിരെ പ്രതിരോധം തീർത്ത പ്രധാന ദേശീയ പ്രസ്ഥാനം ഏത്?,വിയറ്റ് മിൻ (Viet Minh),ഖെമർ റൂജ്,കുോമിന്താം,ഒന്നുമില്ല,0,Nationalism in Indo-China
+Social Studies,Geography,ഇന്ത്യയിൽ ആധുനിക വ്യവസായങ്ങൾക്ക് അടിത്തറ പാകിയ പ്രധാന ഊർജ്ജ സ്രോതസ്സ് ഏത്?,കൽക്കരിയും പെട്രോളിയവും (Coal and Petroleum),സൗരോർജ്ജം മാത്രം,ജലവൈദ്യുതി മാത്രം,കാറ്റാടി ഊർജ്ജം,0,Manufacturing Industries
+Mathematics,Real Numbers,2 ഉം 3 ഉം ആയ സംഖ്യകളുടെ ല.സാ.പ (LCM) എത്ര?,3,6 (6),1,5,1,LCM Concepts
+Mathematics,Polynomials,p(x) = 3x^2 - x - 4 എങ്കിൽ അതിന്റെ ശൂന്യതകളുടെ തുക എത്ര?,1/3, -1/3, -4/3, 4/3,0,Polynomial Sum of Zeros
+Mathematics,Pair of Linear Equations,k ന്റെ ഏത് വിലയ്ക്കാണ് kx + 3y = k-3 ഉം 12x + ky = k ഉം ആയ സമവാക്യങ്ങൾക്ക് അനന്തമായ പരിഹാരങ്ങൾ ഉള്ളത്?,6 (-6),6 (6),12, -12,1,Consistent Equations
+Mathematics,Quadratic Equations,x^2 - 9 = 0 എന്ന സമവാക്യത്തിന്റെ മൂലങ്ങൾ ഏതൊക്കെ?,+3 ഉം -3 (+3 and -3),3 ഉം 3,-3 ഉം -3,0 ഉം 9,0,Quadratic Roots
+Mathematics,Arithmetic Progressions,AP: 10, 7, 4, ... എന്ന ശ്രേണിയുടെ 30-ആം പദം എത്ര?,97,77, -77 (-77), -87,2,AP Terms
+Mathematics,Coordinate Geometry,(0, 0) ഉം (3, 4) ഉം തമ്മിലുള്ള അകലം എത്ര?,3,4,5 (5),7,2,Distance Formula
+Mathematics,Trigonometry,sin(90° - A) എന്നത് എന്തിന് തുല്യമാണ്?,cos A (cos A),tan A,sec A,cot A,0,Trigonometric Ratios
+Mathematics,Circles,വൃത്തത്തിന്റെ ഒരു ബിന്ദുവിൽ വരയ്ക്കുന്ന സ്പർശരേഖയും ആ ബിന്ദുലഭിക്കുന്ന ആരവും തമ്മിലുള്ള കോൺ എത്ര ഡിഗ്രിയാണ്?,0°,45°,90° (90 Degrees),180°,2,Circle Tangents
+Mathematics,Areas Related to Circles,ആരം 7 സെ.മീ. ആയ ഒരു വൃത്തത്തിന്റെ ചുറ്റളവ് എത്ര? (pi = 22/7),22 സെ.മീ.,44 സെ.മീ. (44 cm),88 സെ.മീ.,154 സെ.മീ.,1,Circle Perimeter
+Mathematics,Statistics,തന്നിരിക്കുന്ന വിവരങ്ങളുടെ മധ്യകം (Median) കാണുന്നതിനുള്ള സൂത്രവാക്യം ഏത്?,l + [(n/2 - cf)/f] * h,l + [(f1 - f0)/(2f1 - f0 - f2)] * h,sum(fx)/sum(f),sum(x)/n,0,Median Formula
+English,Grammar,'The teacher said to the boy, "Work hard."' എന്ന വാക്യത്തിന്റെ Indirect Speech എന്താകും?,The teacher advised the boy to work hard.,The teacher told that work hard.,The teacher asked if he works hard.,The teacher said to work hard.,0,Direct & Indirect Speech
+English,Vocabulary,'Transparent' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Opaque (അപारदर्शक),Clear,Bright,Clean,0,Opposite Words
+English,Grammar,'Had I known you were coming, I would have received you.' ഇത് ഏത് തരം Conditional ആണ്?,First Conditional,Second Conditional,Third Conditional (Inverted),Zero Conditional,2,Conditionals
+English,Plurals,'Ox' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Oxes,Oxen (Oxen),Oxs,Oxies,1,Irregular Plurals
+English,Pronouns,'This is my book. It is ___.' ശരിയായ Possessive Pronoun തിരഞ്ഞെടുക്കുക.,mine (mine),my,me,i,0,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Beginning,Begining,Begening,Beginnning,0,Spelling Accuracy
+English,Tenses,'She has been reading this book for two hours.' ഇത് ഏത് കാലത്തിലാണ്?,Present Perfect Continuous (പൂർണ്ണ വർത്തമാനകാല തുടർച്ച),Past Continuous,Future Perfect,Simple Present,0,Verb Tenses
+English,Action Verbs,'Speak' എന്ന ക്രിയയുടെ Past Participle രൂപം ഏത്?,Spoke,Spoken (Spoken),Speaking,Speaks,1,Verb Forms
+English,Question Words,'___ book do you prefer?' തിരഞ്ഞെടുപ്പ് ചോദിക്കാൻ ഏത് ചോദ്യപദം ഉപയോഗിക്കണം?,Which (Which),Who,Where,When,0,Wh-Questions
+English,Rhyming Words,'Day' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Way (Way),Sun,Cat,Pen,0,Rhyming Words
+Science,Chemical Reactions,ഇരുമ്പ് വസ്തുക്കൾ തുരുമ്പെടുക്കുന്ന പ്രക്രിയ ഏത് തരം രാസപ്രവർത്തനമാണ്?,ഓക്സിഡേഷൻ (Oxidation),വിഘടനം,സംയോജനം,അമ്ലീകരണം,0,Chemical Oxidation
+Science,Acids Bases and Salts,ബേക്കിംഗ് സോഡായുടെ രാസനാമം എന്താണ്?,Sodium Carbonate,Sodium Hydrogen Carbonate / Sodium Bicarbonate (NaHCO3),Sodium Chloride,Sodium Hydroxide,1,Chemical Compounds
+Science,Metals and Non-metals,ഏറ്റവും കൂടുതൽ ഡക്റ്റൈൽ (വലിച്ചുനീട്ടാൻ കഴിയുന്ന) ലോഹം ഏത്?,സ്വർണ്ണം (Gold),വെള്ളി,ഇരുമ്പ്,ചെമ്പ്,0,Metals Properties
+Science,Carbon Compounds,ആൽക്കെയ്ൻ വിഭാഗത്തിലെ (Alkanes) പൊതുവായ രാസസൂത്രം ഏത്?,CnH2n+2 (CnH2n+2),CnH2n,CnH2n-2,CnHn,0,Carbon Hydrocarbons
+Science,Life Processes,സസ്യങ്ങളിൽ ജലവും ലവണങ്ങളും കൊണ്ടുപോകുന്ന കല ഏത്?,സൈലം (Xylem),ഫ്ലോയം,മൃദूतक,സ്ഥിര കല,0,Plant Transport
+Science,Control and Coordination,മനുഷ്യ ശരീരത്തിലെ ചിന്തയ്ക്കും നിയന്ത്രണത്തിനും മുഖ്യ പങ്ക് വഹിക്കുന്ന പ്രധാന അവയവം ഏത്?,ഹൃദയം,തലച്ചോറ് (Brain),കണ്ണ്,കരൾ,1,Human Nervous System
+Science,Reproduction,പൂക്കളിൽ പരാഗണം നടന്നതിനുശേഷം വിത്തായി മാറുന്ന ഭാഗം ഏത്?,അണ്ഡാശയം (Ovule / Seeds),ദളങ്ങൾ,കേസരം,പൂഞെട്ട്,0,Plant Reproduction
+Science,Heredity and Evolution,മനുഷ്യനിൽ ലിംഗനിർണ്ണയം നടത്തുന്നതിൽ പ്രധാന പങ്ക് വഹിക്കുന്ന ക്രോമസോമുകൾ ഏവ?,XX ഉം XY ഉം (XX and XY Chromosomes),XX മാത്രം,YY മാത്രം,ഒന്നുമില്ല,0,Genetics & Heredity
+Science,Light Reflection and Refraction,വെള്ളത്തിൽ മുക്കി വെച്ച പെൻസിൽ വളഞ്ഞു കാണപ്പെടാൻ കാരണം പ്രകാശത്തിന്റെ ഏത് പ്രതിഭാസമാണ്?,പ്രകാശത്തിന്റെ അപവർത്തനം (Refraction of Light),പ്രകാശത്തിന്റെ പ്രതിഫലനം,പ്രകാശത്തിന്റെ വിസരണം,പ്രകാശത്തിന്റെ പൂർണ്ണ ആന്തരീക പ്രതിഫലനം,0,Light Refraction
+Science,Human Eye and Colourful World,മനുഷ്യന്റെ കണ്ണിൽ വസ്തുക്കളുടെ പ്രതിബിംബം പതിക്കുന്ന പ്രധാന ഭാഗം ഏത്?,കോർണ്ണിയ,റെറ്റിന / ദൃഷ്ടിപടലം (Retina),ഐറിസ്,ലെൻസ്,1,Human Eye Anatomy
+Social Studies,History,ഖിലാഫത്ത് പ്രസ്ഥാനത്തിന് നേതൃത്വം നൽകിയ പ്രധാന വ്യക്തികൾ ആരെല്ലാം?,മൗലാന മുഹമ്മദ് അലിയும் ശൗകത് അലിയും (Ali Brothers),മഹാത്മാഗാന്ധി,സുഭാഷ് ചന്ദ്രബോസ്,ഭഗത് സിംഗ്,0,Indian National Movement
+Social Studies,Geography,ഇന്ത്യയിലെ കൽക്കരി നിക്ഷേപങ്ങളിൽ ഏറ്റവും കൂടുതൽ കൽക്കരി ഉത്പാദിപ്പിക്കുന്ന പ്രധാന മേഖല ഏത്?,ഗോണ്ട്വാന കൽക്കരി മേഖല (Gondwana Coalfields),പഞ്ചാബ്,കേരളം,രാജസ്ഥാൻ,0,Mineral Resources
+Social Studies,Civic Sense,ഇന്ത്യയിൽ ജാതിയും രാഷ്ട്രീയവും തമ്മിലുള്ള ബന്ധത്തിൽ ജാതിരാഷ്ട്രീയം എന്ത് സ്വാധീനമാണ് ചെലുത്തുന്നത്?,ജനാധിപത്യത്തെ ശക്തിപ്പെടുത്തുകയും ഒപ്പം വെല്ലുവിളികൾ ഉയർത്തുകയും ചെയ്യുന്നു,യാതൊരു സ്വാധീനവുമില്ല,പൂർണ്ണമായി നിരോധിച്ചിരിക്കുന്നു,ഒന്നുമില്ല,0,Democracy and Diversity
+Social Studies,Economics,ഇന്ത്യയിൽ ഉപഭോക്താക്കളുടെ അവകാശങ്ങൾ സംരക്ഷിക്കാൻ നടപ്പിലാക്കിയ പ്രധാന നിയമം ഏത്?,ഉപഭോക്തൃ സംരക്ഷണ നിയമം 1986 (Consumer Protection Act),തൊഴിൽ നിയമം,വ്യവസായ നിയമം,ആദായ നികുതി നിയമം,0,Consumer Rights
+Social Studies,History,1920-ൽ മഹാത്മാഗാന്ധി ആരംഭിച്ച പ്രധാന ദേശീയ പ്രസ്ഥാനം ഏത്?,സഹകരണ നിസ്സകരണ പ്രസ്ഥാനം (Non-Cooperation Movement),ഉപ്പ് സത്യാഗ്രഹം,ക്വിറ്റ് ഇന്ത്യ സമരം,സിവിൽ നിയമലംഘനം,0,National Movements
+Social Studies,Geography,ഇന്ത്യയിൽ ഹരിതവിപ്ലവത്തിന് തുടക്കം കുറിച്ചതും ധാന്യ ഉത്പാദനത്തിൽ മുന്നിൽ നിൽക്കുന്നതുമായ പ്രധാന സംസ്ഥാനങ്ങൾ ഏതൊക്കെ?,പഞ്ചാബും ഹരിയാനയും (Punjab and Haryana),കേരളം,അസ്സാം,ബംഗാൾ,0,Agriculture in India
+Social Studies,Civic Sense,തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങളിൽ സ്ത്രീകളുടെ പങ്കാളിത്തം ഉറപ്പാക്കാൻ ഭരണഘടന നൽകുന്ന പ്രധാന സംവരണം എത്ര ശതമാനമാണ്?,33% അല്ലെങ്കിൽ മൂന്നിലൊന്ന് (At least 33%),50%,10%,25%,0,Local Self Government
+Social Studies,Economics,ആഗോളവൽക്കരണ പ്രക്രിയ വേഗത്തിലാക്കാൻ സഹായിച്ച പ്രധാന ഘടകം ഏത്?,വിവര സാങ്കേതിക വിദ്യയും ഇന്റർനെറ്റും (Information Technology and Communication),യാത്രാ വിലക്ക്,നികുതി വർദ്ധനവ്,ഒന്നുമില്ല,0,Globalisation
+Social Studies,History,യൂറോപ്പിൽ മുദ്രണ വിദ്യയ്ക്കും പുസ്തക നിർമ്മാണത്തിനും ആദ്യമായി തുടക്കം കുറിച്ച വ്യക്തി ആരാണ്?,യൊഹാൻ ഗുട്ടൻബർഗ് (Johann Gutenberg),തോമസ് ആൽവ എഡിസൺ,അലക്സാണ്ടർ ഫ്ലെമിംഗ്,മാർക്കോ പോളো,0,Print Culture
+Social Studies,Geography,ഇന്ത്യയുടെ സാമ്പത്തിക വളർച്ചയ്ക്ക് അടിത്തറ പാകുന്ന പ്രധാന ഗതാഗത മാർഗ്ഗം ഏത്?,ഇന്ത്യൻ റെയിൽവേ (Indian Railways),നടപ്പ് ഗതാഗതം,സൈക്കിൾ യാത്ര,ഒന്നുമില്ല,0,Transport Lifelines
