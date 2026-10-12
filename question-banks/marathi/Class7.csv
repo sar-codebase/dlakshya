@@ -1,0 +1,63 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Integers,-१५ आणि +८ ची बेरीज किती येते?,+७,-७,-२३,+२३,1,Integer Operations
+Mathematics,Fractions,२/३ गुणिले ३/४ चे अतिसंक्षिप्त रूप किती?,१/२,३/४,२/४,१/३,0,Fraction Multiplication
+Mathematics,Algebra,(२x + ३) = ११ तर x ची किंमत किती?,२,३,४,५,2,Linear Equations
+Mathematics,Geometry,दोन कोटिकोनांच्या मापांची बेरीज किती अंश असते?,९० अंश,१८० अंश,३६० अंश,४५ अंश,0,Geometry Angles
+Mathematics,Ratio,एका वर्गात ६० विद्यार्थी आहेत, त्यात मुले व मुली यांचे गुणोत्तर २:३ असल्यास मुली किती?,२४,३०,३६,४०,2,Ratio Applications
+Mathematics,Rational Numbers,-३/४ आणि ५/४ ची बेरीज किती?,२/४ किंवा १/२,८/४,-२/४,१/४,0,Rational Numbers
+Mathematics,Perimeter,वर्तुळाचा परिघ (Circumference) काढण्याचे सूत्र कोणते?,२πr,πr^2,४s,२(l+b),0,Mensuration Formulas
+Mathematics,Data Handling,दिलेल्या माहितीतील मध्य (Mean) काढण्यासाठी सर्व संख्यांची बेरीज करून कशाने भागावे?,संख्यांच्या एकूण प्रमाणाने (Total Count),सर्वात मोठ्या संख्येने,सर्वात लहान संख्येने,२ ने,0,Statistics Basics
+Mathematics,Exponents,२ चा घातांक ३ (2^3) ची किंमत किती?,६,८,९,१२,1,Exponents & Powers
+Mathematics,Lines and Angles,दोन समांतर रेषांना एका छेदिकेने छेदले असता तयार होणारे व्युत्क्रम कोन कसे असतात?,असमान,एककरूप (Equal),काटकोन,विशालकोन,1,Parallel Lines
+English,Grammar,'She sings a sweet song.' या वाक्यातील Passive Voice काय होईल?,A sweet song is sung by her.,A sweet song was sung by her.,She sings a song.,A song is being sung.,0,Active and Passive Voice
+English,Vocabulary,'Transparent' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Clear,Opaque (अपारदर्शक),Translucent,Bright,1,Opposite Words
+English,Grammar,'If you work hard, you ___ pass.' योग्य Modal Verb निवडा.,will,would,could,might,0,Conditional Sentences
+English,Plurals,'Deer' या शब्दाचे अनेकवचन काय होते?,Deers,Deer,Deeres,Deeries,1,Singular Plural
+English,Pronouns,'___ of the two boys won the prize.' योग्य Determiner भरा.,Each,Every,All,Both,0,Pronouns & Determiners
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Environment,Achievemet,Government (शासन),Definite,2,Spelling Accuracy
+English,Tenses,'He had left before I arrived.' हे वाक्य कोणत्या काळातील आहे?,Past Perfect (भूतकाळ पूर्ण काळ),Past Continuous,Simple Past,Present Perfect,0,Verb Tenses
+English,Action Verbs,'Choose' या क्रियापदाचे भूतकाळातील रूप कोणते?,Choosed,Chosen,Chose,Choosing,2,Past Tense Verbs
+English,Question Words,'___ coat is this?' स्वामित्व विचारण्यासाठी कोणता शब्द वापरतात?,What,Which,Whose,Who,2,Wh-Questions
+English,Rhyming Words,'Bright' शी जुळणारा शब्द ओळखा:,Light,Night,Right,All of these,3,Rhyming Words
+Science,Nutrition in Plants,वनस्पतींमध्ये प्रकाशसंश्लेषणासाठी कोणता वायू आवश्यक असतो?,ऑक्सिजन,कार्बन डायऑक्साइड (Carbon Dioxide),नायट्रोजन,हायड्रोजन,1,Plant Nutrition
+Science,Heat,उष्णतेचे संक्रमण एका ठिकाणाहून दुसऱ्या ठिकाणी होण्याच्या प्रक्रियेला काय म्हणतात?,प्रकाशन,उष्णता संक्रमण (Conduction/Convection/Radiation),बाष्पीभवन,घनीभवन,1,Heat Transfer
+Science,Acids and Bases,अम्ल (Acids) चवीने कसे असतात?,गोड,आंबट (Sour),तुरट,कडू,1,Chemistry Basics
+Science,Respiration,सजीवांच्या श्वासोच्छवासात ग्लुकोजचे विघटन होऊन कोणती ऊर्जा मुक्त होते?,उष्णता व ऊर्जा (ATP),फक्त पाणी,फक्त प्रकाश,काहीही नाही,0,Cellular Respiration
+Science,Transportation,मानवी रक्ताभिसरण संस्थेत मुख्य पंपिंग अंग कोणते?,फुफ्फुस,हृदय (Heart),यकृत,मदू,1,Human Circulatory System
+Science,Reproduction in Plants,फुलामध्ये पुंकेसर (Stamen) हा कोणता भाग आहे?,स्त्री प्रजनन अंग,नर प्रजनन अंग (Male Reproductive Part),दलपुंज,मुळाचा भाग,1,Plant Reproduction
+Science,Motion and Time,एका सेकंदात पार केलेले अंतर म्हणजे त्या वस्तूची काय दर्शवते?,वेग (Speed),त्वरण,बल,कार्य,0,Physics Kinematics
+Science,Electric Current,विद्युत धारेच्या औष्णिक परिणामावर (Heating Effect) आधारित उपकरण कोणते?,विद्युत पंखा,विद्युत इस्त्री (Electric Iron),बल्ब,रेडिओ,1,Electric Current Effects
+Science,Light,अंतर्गोल व बहिर्गोल भिंग कशाचे प्रकार आहेत?,आरसा,लेन्स (Lenses),चुंबक,काच,1,Optics & Light
+Science,Forests,वनांना 'पृथ्वीचे काय' म्हटले जाते?,फुफ्फुस (Lungs of Earth),हृदय,मदू,डोळे,0,Forest Conservation
+Social Studies,History,दिल्ली सल्तनत काळात रझिया सुलताना कोणत्या वंशाची शासक होती?,गुलाम वंश (Slave Dynasty),खिलजी वंश,तुघलक वंश,लोधी वंश,0,Medieval Indian History
+Social Studies,Geography,पृथ्वीच्या सर्वात आतील थराला काय म्हणतात?,प्रावरण,गाभा (Core),भूवर्चस,शिलावरण,1,Earth Layers
+Social Studies,Civic Sense,बाजारपेठेत ग्राहकांच्या हक्कांचे रक्षण करण्यासाठी कोणता कायदा केला गेला?,उपभोक्ता संरक्षण कायदा (Consumer Protection Act),कामगार कायदा,कर कायदा,शिक्षण कायदा,0,Consumer Rights
+Social Studies,Environment,पर्यावरणातील समतोल राखण्यासाठी जंगलांचे प्रमाण कमीत कमी किती टक्के असावे?,१०%,२०%,३३% (33%),५०%,2,Environmental Balance
+Social Studies,Mughal Empire,अकबर बादशहाचा महसूल मंत्री कोण होता?,राजा तोडरमल (Todar Mal),तानसेन,बीरबल,मानसिंह,0,Mughal Administration
+Social Studies,Water,सागरी पाण्याच्या हालचालींमध्ये प्रामुख्याने कशाचा समावेश होतो?,लाटा,भरती-ओहोटी व प्रवाह (Tides, Waves & Currents),फक्त पाऊस,फक्त बाष्पीभवन,1,Oceanography
+Social Studies,Architecture,शहाजहानने आपल्या पत्नीच्या स्मरणार्थ कोणती वास्तू बांधली?,ताजमहल (Taj Mahal),लाल किल्ला,कुतुबमीनार,जामा मशीद,0,Medieval Architecture
+Social Studies,Tribal Communities,गोंड जमातीचे लोक प्रामुख्याने कोणत्या राज्यात आढळतात?,मध्य प्रदेश व छत्तीसगड,पंजाब,केरळ,आसाम,0,Tribal History
+Social Studies,Air,वातावरणात सर्वात जास्त प्रमाणात आढळणारा वायू कोणता?,ऑक्सिजन,नायट्रोजन (Nitrogen),कार्बन डायऑक्साइड,आर्गाम,1,Atmosphere Composition
+Social Studies,Human Environment,वाहतुकीचे सर्वात स्वस्त माध्यम कोणते?,रस्ते वाहतूक,जलमार्ग (Waterways),रेल्वे,हवाई वाहतूक,1,Transport Economics
+Mathematics,Integers,-२५ ला -५ ने भागल्यास भागाकार किती येतो?,+५,-५,+२५,-२५,0,Integer Division
+Mathematics,Fractions,११/४ या अपूर्णांकाचे पूर्णांकयुक्त अपूर्णांकात (Mixed Fraction) रूप काय?,२ उरले ३/४ (२ ३/४),३ १/४,१ २/४,४ ३/२,0,Fraction Conversion
+Mathematics,Algebra,३x - ५ = १० तर x ची किंमत किती?,३,४,५,६,2,Algebraic Equations
+Mathematics,Geometry,ज्या त्रिकोणाच्या तिन्ही बाजू वेगवेगळ्या लांबीच्या असतात, त्याला काय म्हणतात?,समभुज त्रिकोण,समद्विभुज त्रिकोण,विषमभुज त्रिकोण (Scalene Triangle),काटकोन त्रिकोण,2,Triangle Types
+Mathematics,Ratio,१ तास आणि ३० मिनिटे यांचे गुणोत्तर किती?,१:२,२:१,१:३,३:१,1,Ratio Concepts
+Mathematics,Rational Numbers,-५/७ आणि -२/७ ची बेरीज किती?,+७/७,-७/७ किंवा -१,-३/७,+३/७,1,Rational Operations
+Mathematics,Perimeter,लांबी १० सेमी आणि रुंदी ५ सेमी असलेल्या आयताची परिमिती किती?,१५ सेमी,३० सेमी,५० सेमी,२० सेमी,1,Perimeter Calculations
+Mathematics,Data Handling,दिलेल्या सांख्यिकीय माहितीत वारंवार येणारे प्राप्तांक काय दर्शवतो?,मध्य (Mean),मध्यक (Median),बहूलक (Mode),परिसर,2,Statistics
+Mathematics,Exponents,३ चा घातांक २ (3^2) गुणिले ३ चा घातांक ३ (3^3) बरोबर किती?,३ चा घातांक ५ (3^5),३ चा घातांक ६,९ चा घातांक ५,३ चा घातांक १,0,Exponent Laws
+Mathematics,Lines and Angles,दोन रेषा एकमेकींना छेदल्यास तयार होणारे परस्पर विरुद्ध कोन कसे असतात?,असमान,एककरूप (Congruent / Equal),कोटिकोण,पूरककोन,1,Intersecting Lines
+English,Grammar,'Who wrote this book?' या वाक्यातील Passive Voice काय होईल?,By whom was this book written?,Who was wrote this book?,This book was written by who?,Written by whom?,0,Passive Voice
+English,Vocabulary,'Accept' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Except,Refuse / Reject (नाकारणे),Agree,Take,1,Opposite Words
+English,Grammar,'He runs fast so that he ___ catch the train.' योग्य Modal Verb निवडा.,may,can,might,could,3,Modals
+English,Plurals,'Child' या शब्दाचे अनेकवचन काय?,Childs,Children,Childrens,Childes,1,Plural Forms
+English,Pronouns,'___ of the students passed the exam.' योग्य शब्द भरा.,All,Every,Each,Both,0,Pronouns
+English,Spelling,योग्य स्पेलिंग ओळखा:,Dictionary,Dictionery,Dictionari,Dectionary,0,Spelling
+English,Tenses,'She has been studying for two hours.' हा कोणता काळ आहे?,Present Perfect Continuous (चालू पूर्ण वर्तमानकाळ),Past Continuous,Future Perfect,Simple Present,0,Verb Tenses
+English,Action Verbs,'Speak' या क्रियापदाचे Past Participle (V3) रूप कोणते?,Spoke,Spoken,Speaking,Speaks,1,Verb Forms
+English,Question Words,'___ long will it take?' कालावधी विचारण्यासाठी कोणता शब्द वापरतात?,What,How,When,Where,1,Wh-Questions
+English,Rhyming Words,'Day' शी जुळणारा शब्द ओळखा:,Way,Play,Say,All of these,3,Rhyming Words
+Science,Nutrition in Animals,अमीबा आपल्या अन्नाचे ग्रहण कशाच्या सहाय्याने करतो?,पादाभ (Pseudopodia / खोटा पाय),मुख,डोळे,अन्ननलिका,0,Animal Nutrition
+Science,Heat,
