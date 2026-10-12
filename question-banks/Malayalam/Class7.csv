@@ -1,0 +1,81 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Integers,-15 ഉം +8 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,+7,-7,-23,+23,1,Integer Operations
+Mathematics,Fractions,2/3 ഉം 3/4 ഉം ഗുണിച്ചാൽ ലഘുരൂപം എത്ര?,1/2,3/4,2/4,1/3,0,Fraction Multiplication
+Mathematics,Algebra,(2x + 3) = 11 എങ്കിൽ x ന്റെ വില എത്ര?,2,3,4,5,2,Linear Equations
+Mathematics,Geometry,രണ്ട് കോടികോണുകളുടെ (Complementary Angles) അളവുകളുടെ ആകെ തുക എത്ര ഡിഗ്രിയാണ്?,90 ഡിഗ്രി,180 ഡിഗ്രി,360 ഡിഗ്രി,45 ഡിഗ്രി,0,Geometry Angles
+Mathematics,Ratio,ഒരു ക്ലാസ്സിൽ 60 കുട്ടികളുണ്ട്, അതിൽ ആൺകുട്ടികളും പെൺകുട്ടികളും തമ്മിലുള്ള അംശബന്ധം 2:3 എങ്കിൽ പെൺകുട്ടികൾ എത്ര?,24,30,36,40,2,Ratio Applications
+Mathematics,Rational Numbers,-3/4 ഉം 5/4 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,2/4 അല്ലെങ്കിൽ 1/2,8/4,-2/4,1/4,0,Rational Numbers
+Mathematics,Perimeter,വൃത്തത്തിന്റെ ചുറ്റളവ് (Circumference) കാണാനുള്ള സൂത്രവാക്യം ഏത്?,2*pi*r,pi*r^2,4*s,2*(l+b),0,Mensuration Formulas
+Mathematics,Data Handling,തന്നിരിക്കുന്ന വിവരങ്ങളുടെ മധ്യമാനകം (Mean) കാണാൻ എല്ലാ സംഖ്യകളുടെയും തുകയെ എണ്ണം കൊണ്ട് എന്ത് ചെയ്യണം?,ഹരിക്കണം (Divide by Total Count),ഗുണിക്കണം,കൂട്ടണം,കുറയ്ക്കണം,0,Statistics Basics
+Mathematics,Exponents,2 ന്റെ ഘടകം 3 (2^3) ന്റെ വില എത്ര?,6,8,9,12,1,Exponents & Powers
+Mathematics,Parallel Lines,രണ്ട് സമാന്തര വരകളെ ഒരു ছেദകം (Transversal) छेदിച്ചാൽ ഉണ്ടാകുന്ന ഏകാന്തര കോണുകൾ (Alternate Angles) എങ്ങനെയായിരിക്കും?,അസമം,തുല്യമായത് (Equal / Congruent),കാטകോണുകൾ,വിശാലകോണുകൾ,1,Parallel Lines
+English,Grammar,'She sings a sweet song.' എന്ന വാക്യത്തിന്റെ Passive Voice എന്താകും?,A sweet song is sung by her.,A sweet song was sung by her.,She sings a song.,A song is being sung.,0,Active and Passive Voice
+English,Vocabulary,'Transparent' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Clear,Opaque (അപारदर्शक),Translucent,Bright,1,Opposite Words
+English,Grammar,'If you work hard, you ___ pass.' ശരിയായ Modal Verb തിരഞ്ഞെടുക്കുക.,will,would,could,might,0,Conditional Sentences
+English,Plurals,'Deer' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Deers,Deer,Deeres,Deeries,1,Singular Plural
+English,Pronouns,'___ of the two boys won the prize.' ശരിയായ Determiner തിരഞ്ഞെടുക്കുക.,Each,Every,All,Both,0,Pronouns & Determiners
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Environment,Achievemet,Government (ഭരണം),Definite,2,Spelling Accuracy
+English,Tenses,'He had left before I arrived.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Past Perfect (പൂർണ്ണ ഭൂതകാലം),Past Continuous,Simple Past,Present Perfect,0,Verb Tenses
+English,Action Verbs,'Choose' എന്ന ക്രിയയുടെ ഭൂതകാല രൂപം ഏത്?,Choosed,Chosen,Chose,Choosing,2,Past Tense Verbs
+English,Question Words,'___ coat is this?' ഉടമസ്ഥത ചോദിക്കാൻ ഏത് ചോദ്യപദം ഉപയോഗിക്കണം?,What,Which,Whose,Who,2,Wh-Questions
+English,Rhyming Words,'Bright' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Light,Night,Right,All of these (എല്ലാം ശരിയാണ്),3,Rhyming Words
+Science,Nutrition in Plants,സസ്യങ്ങളിലെ പ്രകാശസംശ്ലേഷണത്തിന് ആവശ്യമായ പ്രധാന വാതകം ഏത്?,ഓക്സിജൻ,കാർബൺ ഡൈഓക്സൈഡ് (Carbon Dioxide),നൈട്രജൻ,ഹൈഡ്രജൻ,1,Plant Nutrition
+Science,Heat,ഉष्णത ഒരു സ്ഥലത്തുനിന്ന് മറ്റൊരു സ്ഥലത്തേക്ക് സംക്രമിക്കുന്ന പ്രക്രിയയെ എന്താണ് വിളിക്കുന്നത്?,പ്രകാശനം,താപ സംക്രമണം (Conduction/Convection/Radiation),ബാഷ്പീകരണം,ഘനീഭവനം,1,Heat Transfer
+Science,Acids and Bases,ആസിഡുകൾ രുചിയിൽ എങ്ങനെയുള്ളവയാണ്?,ഗോഡ്,പുളി (Sour),തുരട്ട്,കയ്പ്പ്,1,Chemistry Basics
+Science,Respiration,സസ്യങ്ങളുടെയും ജന്തുക്കളുടെയും കോശങ്ങളിൽ ഗ്ലുക്കോസ് വിഘടിച്ചുണ്ടാകുന്ന ഊർജ്ജ രൂപം ഏത്?,ഉष्णതയും ഊർജ്ജവും (ATP),വെള്ളം മാത്രം,പ്രകാശം മാത്രം,ഒന്നുമില്ല,0,Cellular Respiration
+Science,Transportation,മനുഷ്യ ശരീരത്തിലെ രക്തചംക്രമണ വ്യവസ്ഥയിലെ പ്രധാന പമ്പിംഗ് അവയവം ഏത്?,ശ്വാസകോശം,ഹൃദയം (Heart),കരൾ,തലച്ചോറ്,1,Human Circulatory System
+Science,Reproduction in Plants,സസ്യങ്ങളിലെ പുഷ്പത്തിലെ പുങ്കേസരം (Stamen) ഏത് വിഭാഗത്തിൽ പെടുന്നു?,സ്ത്രീ പ്രജനന അവയവം,ആൺ പ്രജനന അവയവം (Male Reproductive Part),ദളങ്ങൾ,വേരിന്റെ ഭാഗം,1,Plant Reproduction
+Science,Motion and Time,ഒരു സെക്കൻഡിൽ സഞ്ചരിക്കുന്ന ദൂരം ആ വസ്തുവിന്റെ എന്ത് കാണിക്കുന്നു?,വേഗത / ചാല് (Speed),ത്വരണം,ബലം,പ്രവൃത്തി,0,Physics Kinematics
+Science,Electric Current,വൈദ്യുത പ്രവാഹത്തിന്റെ താപഫലത്തെ (Heating Effect) അടിസ്ഥാനമാക്കി പ്രവർത്തിക്കുന്ന ഉപകരണം ഏത്?,വൈദ്യുത ഫാൻ,ഇസ്തിരിപ്പെട്ടി (Electric Iron),ബൾബ്,റേഡിയോ,1,Electric Current Effects
+Science,Light,അന്തർഗോള (Concave), ബഹിർഗോള (Convex) ലെൻസുകൾ എന്തിന്റെ ഉദാഹരണങ്ങളാണ്?,കണ്ണാടി,ലെൻസുകൾ (Lenses),കാന്തങ്ങൾ,സ്ഫടികം,1,Optics & Light
+Science,Forests,കാടുകളെ ഭൂമിയുടെ എന്ത് വിശേഷണത്തോടെയാണ് കണക്കാക്കുന്നത്?,ശ്വാസകോശം (Lungs of Earth),ഹൃദയം,തലച്ചോറ്,കണ്ണുകൾ,0,Forest Conservation
+Social Studies,History,ഡൽഹി സൽത്താനത്ത് കാലഘട്ടത്തിൽ രസിയ സുൽത്താൻ ഏത് വംശത്തിലെ ഭരണാധികാരിയായിരുന്നു?,അടിമ വംശം (Slave Dynasty),खिलਜੀ വംശം,तुघलक വംശം,लोधी വംശം,0,Medieval Indian History
+Social Studies,Geography,ഭൂമിയുടെ ഏറ്റവും ആന്തരികമായ പാളിയെ എന്താണ് വിളിക്കുന്നത്?,ആവരണം,കേന്ദ്രഭാഗം / കാമ്പ് (Core),ഭൂവൽക്കം,ശിലാമണ്ഡലം,1,Earth Layers
+Social Studies,Civic Sense,വിപണിയിൽ ഉപഭോക്താക്കളുടെ താൽപ്പര്യങ്ങളും അവകാശങ്ങളും സംരക്ഷിക്കാൻ കൊണ്ടുവന്ന നിയമം ഏത്?,ഉപഭോക്തൃ സംരക്ഷണ നിയമം (Consumer Protection Act),തൊഴിൽ നിയമം,നികുതി നിയമം,വിദ്യാഭ്യാസ നിയമം,0,Consumer Rights
+Social Studies,Environment,പരിസ്ഥിതി സന്തുലിതാവസ്ഥ നിലനിർത്താൻ വനങ്ങളുടെ വിസ്തീർണ്ണം കുറഞ്ഞത് എത്ര ശതമാനം ഉണ്ടായിരിക്കണം?,10%,20%,33% (33%),50%,2,Environmental Balance
+Social Studies,Mughal Empire,അക്ബർ ചക്രവർത്തിയുടെ കാലത്തെ പ്രശസ്തനായ റവന്യൂ മന്ത്രി ആരായിരുന്നു?,രാജാ തൊടർമാൽ (Todar Mal),താണ്സെൻ,ബീർബൽ,മാൻസിംഗ്,0,Mughal Administration
+Social Studies,Water,സമുദ്രജലത്തിന്റെ പ്രധാന ചലനങ്ങളിൽ ഉൾപ്പെടാത്തത് / ഉൾപ്പെടുന്നത് ഏത്?,മാത്രമായി പെയ്യുന്ന മഴ,തിരമാലകൾ, വേലിയേറ്റം, അടിയൊഴുക്കുകൾ (Tides, Waves & Currents),മാത്രമായി ബാഷ്പീകരണം,ഒന്നുമില്ല,1,Oceanography
+Social Studies,Architecture,ഷാജഹാൻ തന്റെ ഭാര്യയുടെ സ്മരണയ്ക്കായി നിർമ്മിച്ച വിശ്വപ്രസിദ്ധമായ സ്മാരകം ഏത്?,താജ്മഹൽ (Taj Mahal),ചെങ്കോട്ട,കുതുബ്മിനാർ,ജുമാ മസ്ജിദ്,0,Medieval Architecture
+Social Studies,Tribal Communities,ഗോണ്ട് (Gond) വർഗ്ഗക്കാർ പ്രധാനമായും ഏെതല്ലാം സംസ്ഥാനങ്ങളിലാണ് കണ്ടുവരുന്നത്?,മധ്യപ്രദേശും ഛത്തീസ്ഗഡും,പഞ്ചാബ്,കേരളം,അസ്സാം,0,Tribal History
+Social Studies,Air,അന്തരീക്ഷത്തിൽ ഏറ്റവും ഉയർന്ന അളവിൽ അടങ്ങിയിരിക്കുന്ന വാതകം ഏത്?,ഓക്സിജൻ,നൈട്രജൻ (Nitrogen),കാർബൺ ഡൈഓക്സൈഡ്,ആർഗോൺ,1,Atmosphere Composition
+Social Studies,Human Environment,ചരക്കുകൾ കയറ്റി അയക്കാൻ ഏറ്റവും ചെലവ് കുറഞ്ഞ യാത്രാ മാർഗ്ഗം ഏത്?,റോഡ് ഗതാഗതം,ജലമാർഗ്ഗം (Waterways),റെയിൽവേ,വ്യോമ ഗതാഗതം,1,Transport Economics
+Mathematics,Integers,-25 നെ -5 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,+5,-5,+25,-25,0,Integer Division
+Mathematics,Fractions,11/4 എന്ന ഭിന്നസംഖ്യയെ മിശ്രഭിന്നസംഖ്യയായി (Mixed Fraction) മാറ്റിയാൽ എന്ത് കിട്ടും?,2 3/4 (2 3/4),3 1/4,1 2/4,4 3/2,0,Fraction Conversion
+Mathematics,Algebra,3x - 5 = 10 എങ്കിൽ x ന്റെ വില എത്ര?,3,4,5,6,2,Algebraic Equations
+Mathematics,Geometry,മൂന്ന് വശങ്ങളും വ്യത്യസ്ത നീളമുള്ള ത്രികോണത്തെ എന്താണ് വിളിക്കുന്നത്?,സമഭുജ ത്രികോണം,സമദ്വിഭുജ ത്രികോണം,വിഷമഭുജ ത്രികോണം (Scalene Triangle),മട്ടത്രികോണം,2,Triangle Types
+Mathematics,Ratio,1 മണിക്കൂറും 30 മിനിറ്റും തമ്മിലുള്ള അംശബന്ധം എത്ര?,1:2,2:1,1:3,3:1,1,Ratio Concepts
+Mathematics,Rational Numbers,-5/7 ഉം -2/7 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,+7/7,-7/7 അല്ലെങ്കിൽ -1,-3/7,+3/7,1,Rational Operations
+Mathematics,Perimeter,നീളം 10 സെ.മീ., വീതി 5 സെ.മീ. ആയ ഒരു ചതുരത്തിന്റെ ചുറ്റളവ് എത്ര?,15 സെ.മീ.,30 സെ.മീ.,50 സെ.മീ.,20 സെ.മീ.,1,Perimeter Calculations
+Mathematics,Data Handling,വിവര ശേഖരണത്തിൽ ഏറ്റവും കൂടുതൽ തവണ ആവർത്തിച്ചു വരുന്ന ഘടകത്തെ എന്താണ് വിളിക്കുന്നത്?,മധ്യമാനം,മധ്യകം,മുഖ്യകം / ബഹുലകം (Mode),പാരിസര്യം,2,Statistics
+Mathematics,Exponents,3 ന്റെ ഘടകം 2 ഉം 3 ന്റെ ഘടകം 3 ഉം ഗുണിച്ചാൽ എത്ര കിട്ടും?,3 ന്റെ ഘടകം 5 (3^5),3 ന്റെ ഘടകം 6,9 ന്റെ ഘടകം 5,3 ന്റെ ഘടകം 1,0,Exponent Laws
+Mathematics,Lines and Angles,രണ്ട് രേഖകൾ പരസ്പരം ഛേദിക്കുമ്പോൾ ഉണ്ടാകുന്ന എതിർ കോണുകൾ (Vertically Opposite Angles) എങ്ങനെയായിരിക്കും?,അസമം,തുല്യമായത് (Congruent / Equal),കോടികോണുകൾ,പൂരകകോണുകൾ,1,Intersecting Lines
+English,Grammar,'Who wrote this book?' എന്ന വാക്യത്തിന്റെ Passive Voice എന്താകും?,By whom was this book written?,Who was wrote this book?,This book was written by who?,Written by whom?,0,Passive Voice
+English,Vocabulary,'Accept' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Except,Refuse / Reject (നിരസിക്കുക / ഒഴിവാക്കുക),Agree,Take,1,Opposite Words
+English,Grammar,'He runs fast so that he ___ catch the train.' ശരിയായ Modal Verb തിരഞ്ഞെടുക്കുക.,may,can,might,could,3,Modals
+English,Plurals,'Child' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Childs,Children,Childrens,Childes,1,Plural Forms
+English,Pronouns,'___ of the students passed the exam.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,All,Every,Each,Both,0,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Dictionary,Dictionery,Dictionari,Dectionary,0,Spelling
+English,Tenses,'She has been studying for two hours.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Present Perfect Continuous (പൂർണ്ണ വർത്തമാനകാല തുടർച്ച),Past Continuous,Future Perfect,Simple Present,0,Verb Tenses
+English,Action Verbs,'Speak' എന്ന ക്രിയയുടെ Past Participle (V3) രൂപം ഏത്?,Spoke,Spoken,Speaking,Speaks,1,Verb Forms
+English,Question Words,'___ long will it take?' സമയം അല്ലെങ്കിൽ കാഴ്പാട് ചോദിക്കാൻ ഏത് ചോദ്യപദം ഉപയോഗിക്കണം?,What,How,When,Where,1,Wh-Questions
+English,Rhyming Words,'Day' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Way,Play,Say,All of these (എല്ലാം ശരിയാണ്),3,Rhyming Words
+Science,Nutrition in Animals,അമീബ തനിക്കുള്ള ആഹാരം ഏത് അവയവത്തിലൂടെയാണ് വിഴുങ്ങുന്നത്?,പാദാഭങ്ങൾ (Pseudopodia / കപടപാദങ്ങൾ),വായിൽ നിന്ന്,കണ്ണുകൾ,അന്നനാളം,0,Animal Nutrition
+Science,Heat,താപനില അളക്കാൻ ഉപയോഗിക്കുന്ന പ്രധാന അളവുകോൽ / യൂണിറ്റ് ഏത്?,ഡിഗ്രി സെൽഷ്യസ് (Celsius),ജൂൾ,വാട്ട്,കലോറി,0,Temperature Units
+Science,Acids Bases and Salts,ചുവന്ന ലിട്മസ് പേപ്പർ നീലയായി മാറ്റുന്ന പദാർത്ഥം ഏതാണ്?,ആസിഡ്,ആൽക്കലി / ബേസ് (Base / Alkali),ഉപ്പ്,വെള്ളം,1,Chemical Indicators
+Science,Respiration,ശ്വസന പ്രക്രിയയിൽ നമ്മൾ ശരീരത്തിന് പുറത്തേക്ക് വിടുന്ന പ്രധാന വാതകം ഏത്?,ഓക്സിജൻ,കാർബൺ ഡൈഓക്സൈഡ് (Carbon Dioxide),നൈട്രജൻ,ഹൈഡ്രജൻ,1,Human Respiration
+Science,Transportation,സസ്യങ്ങളിൽ ജലം വ്യാപിപ്പിക്കുന്ന പ്രധാന ടിഷ്യു ഏത്?,സൈലം / ജലവാഹിനി (Xylem),ഫ്ലോയം,വേര്,ഇലകൾ,0,Plant Transport
+Science,Reproduction in Plants,സസ്യങ്ങളിലെ പരാഗണം (Pollination) പ്രധാനമായും എന്തിലൂടെയാണ് നടക്കുന്നത്?,കാറ്റ്, കീടങ്ങൾ, ജലം,മാത്രമായി കല്ലുകൾ,മാത്രമായി മണ്ണ്,മാത്രമായി ഇരുട്ട്,0,Pollination
+Science,Motion and Time,ഒരു പെൻഡുലത്തിന്റെ (Simple Pendulum) ഒരു പൂർണ്ണ ദോലനത്തിന് എടുക്കുന്ന സമയത്തെ എന്താണ് വിളിക്കുന്നത്?,ആവർത്തന കാലം (Time Period),വേഗത,ദൂരം,ആവൃത്തി,0,Physics Concepts
+Science,Electric Current,വൈദ്യുത പ്രവാഹത്തിന്റെ അന്താരാഷ്ട്ര അളവുകോൽ (SI Unit) എന്താണ്?,വോൾട്ട്,ആമ്പിയർ (Ampere),ഓohm,വാട്ട്,1,Electrical Units
+Science,Light,ഉള്ളിലേക്ക് കുழிഞ്ഞിരിക്കുന്ന മിററിനെ (Mirror) എന്താണ് വിളിക്കുന്നത്?,ബഹിർഗോള ദർപ്പണം,അന്തർഗോള ദർപ്പണം (Concave Mirror),സമതല ദർപ്പണം,വൃത്താകാര ദർപ്പണം,1,Spherical Mirrors
+Science,Forests,വനത്തിലെ ആഹാര ശൃംഖലയിൽ (Food Chain) ഏറ്റവും ഉയർന്ന സ്ഥാനത്തുള്ള ഉന്നത ഭുക്താവ് (Apex predator) ആര്?,മാൻ,കടുവ അല്ലെങ്കിൽ സിംഹം (Carnivores),പുല്ല്,പ്രാണികൾ,1,Ecology
+Social Studies,History,ഇന്ത്യയിൽ മുഘൽ സാമ്രാജ്യത്തിന് അടിത്തറ പാകിയ ഭരണാധികാരി ആരാണ്?,ബാബർ (Babur),അക്ബർ,ഹുമായാണ്,ഔറംഗസേബ്,0,Mughal History
+Social Studies,Geography,സൂര്യന് ഏറ്റവും അടുത്തുള്ള ഗ്രഹം ഏതാണ്?,ബുധൻ (Mercury),വെള്ളി,ഭൂമി,ചൊവ്വ,0,Solar System
+Social Studies,Civic Sense,ഇന്ത്യൻ ഭരണഘടനയുടെ ശില്പി എന്ന് ആരെയാണ് അറിയപ്പെടുന്നത്?,ഡോ. ബി.ആർ. അംബേദ്കർ (Dr. B. R. Ambedkar),മഹാത്മാഗാന്ധി,പണ്ഡിറ്റ് നെഹ്റു,രാജേന്ദ്ര പ്രസാദ്,0,Indian Constitution
+Social Studies,Environment,അന്തരീക്ഷത്തിലെ ഓസോൺ പാളി നമ്മെ പ്രധാനമായും എന്തിൽ നിന്നാണ് സംരക്ഷിക്കുന്നത്?,അതിനീൽ കിരണങ്ങൾ (Ultraviolet Rays),പുക,മഴ,കാറ്റ്,0,Environmental Protection
+Social Studies,Mughal Empire,ആഗ്ര കോട്ടയിൽ നിന്ന് രക്ഷപെടുന്ന വേളയിൽ ഛത്രപതി शिवाजी മഹാരാജ് ഏത് മുഘൽ ചക്രവർത്തിയെയാണ് കബളിപ്പിച്ചത്?,ഔറംഗസേബ് (Aurangzeb),അക്ബർ,ഷാജഹാൻ,ജഹാംഗീർ,0,Maratha History
+Social Studies,Water,നദികളുടെ ഒഴുക്ക് മൂലം രൂപപ്പെടുന്ന പ്രധാന ഭൂരൂപങ്ങൾ ഏവ?,നഗരങ്ങൾ,പ്രളയ സമതലങ്ങളും മലയിടുക്കുകളും (Gorge/Floodplain),മരുഭൂമി,മലനിരകൾ,1,Geomorphology
+Social Studies,Architecture,മഹാരാഷ്ട്രയിലെ എല്ലോറയിലെ പ്രശസ്തമായ കൈലാസ ക്ഷേത്രം പണി കഴിപ്പിച്ച രാജവംശം ഏത്?,രാഷ്ട്രകൂട രാജവംശം (Rashtrakuta Dynasty),യാദവർ,മൗര്യന്മാർ,സാതവാഹനന്മാർ,0,Ancient Architecture
+Social Studies,Tribal Communities,ആദിവാസി സമൂഹങ്ങളുടെ ജീവിതത്തിലും സംസ്കാരത്തിലും ഏറ്റവും കൂടുതൽ സ്വാധീനം ചെലുത്തുന്ന ഘടകം ഏത്?,കാടും പ്രകൃതിയും (Nature & Forests),വലിയ ഫാക്ടറികൾ,നഗരങ്ങൾ,കംപ്യൂട്ടറുകൾ,0,Tribal Heritage
+Social Studies,Air,ഭൂമിയുടെ അന്തരീക്ഷത്തിലെ ഏറ്റവും താഴെയുള്ള പാളി ഏത്?,ക്ഷോഭമണ്ഡലം (Troposphere),താപമണ്ഡലം,അയോണോസ്ഫിയർ,സ്ട്രാറ്റോസ്ഫിയർ,0,Atmospheric Layers
+Social Studies,Human Environment,മനുഷ്യൻ തന്റെ ആവശ്യങ്ങൾക്കായി പരിസ്ഥിതിയിൽ എന്ത് മാറ്റമാണ് വരുത്തുന്നത്?,മാറ്റങ്ങളും തിരുത്തലുകളും വരുത്തുന്നു (Modification),നശിപ്പിക്കുന്നു മാത്രം,ഒന്നും ചെയ്യുന്നില്ല,കാണുന്നു മാത്രം,0,Human Geography
