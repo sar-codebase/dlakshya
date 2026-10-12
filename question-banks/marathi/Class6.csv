@@ -1,0 +1,81 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Integers,संख्यारेषेवर शून्याच्या डावीकडील संख्या कोणत्या असतात?,धन संख्या (Positive),ऋण संख्या (Negative),शून्य,पूर्णांक नाहीत,1,Integer Concepts
+Mathematics,Fractions,३/५ आणि ४/५ ची बेरीज किती?,७/१०,७/५,१२/२५,१/५,1,Fraction Addition
+Mathematics,Algebra,जर x = ५ असेल, तर x + ३ ची किंमत किती?,५,८,२,१५,1,Basic Algebra
+Mathematics,Geometry,ज्या कोनाचे माप १८० अंश असते, त्याला काय म्हणतात?,काटकोन,विशालकोन,सरळकोन (Straight Angle),प्रविशालकोन,2,Angle Types
+Mathematics,Ratio,१० आणि २० चे गुणोत्तर (Ratio) अतिसंक्षिप्त रूपात किती?,१:२,२:१,१:३,३:१,0,Ratio and Proportion
+Mathematics,Decimals,२५.४ आणि ६.२ ची बेरीज किती?,३१.६,३१.२,३०.६,३२.४,0,Decimal Addition
+Mathematics,Mensuration,६ सेमी बाजू असलेल्या समभुज चौकोनाची परिमिती किती?,१२ सेमी,१८ सेमी,२४ सेमी,३६ सेमी,2,Perimeter Calculations
+Mathematics,Data Handling,संख्यांची वारंवारता (Frequency) मोजण्यासाठी काय वापरले जाते?,ताळ्याच्या खुणा (Tally Marks),वर्तुळ,आलेख,मोजपट्टी,0,Data Handling
+Mathematics,Symmetry,इंग्रजी 'A' या अक्षराला किती सममिती अक्ष (Lines of Symmetry) असतात?,०,१,२,३,1,Symmetry Concepts
+Mathematics,Basic Concepts,सर्वत लहान मूळ संख्या (Prime Number) कोणती?,०,१,२,३,2,Prime Numbers
+English,Grammar,'Honesty is the best policy.' या वाक्यातील 'Honesty' हा शब्द काय आहे?,Common Noun,Proper Noun,Abstract Noun (भाववाचक नाम),Pronoun,2,Parts of Speech
+English,Vocabulary,'Courage' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Bravery,Cowardice (भित्रेपणा),Fearless,Bold,1,Opposite Words
+English,Grammar,'He has been living here ___ 2020.' योग्य Preposition निवडा.,for,since,in,at,1,Prepositions and Tenses
+English,Plurals,'Ox' या शब्दाचे अनेकवचन काय होते?,Oxes,Oxen,Oxs,Oxies,1,Singular Plural
+English,Pronouns,'This is my book. It is ___.' योग्य Possessive Pronoun भरा.,my,mine,me,your,1,Pronouns
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Necessary,Neccesary,Necessay,Nessessary,0,Spelling Accuracy
+English,Tenses,'By next year, she will have completed her studies.' हे वाक्य कोणत्या काळातील आहे?,Future Continuous,Future Perfect (भविष्य पूर्ण काळ),Present Perfect,Past Perfect,1,Verb Tenses
+English,Action Verbs,'Catch' या क्रियापदाचे भूतकाळातील रूप कोणते?,Catched,Caught,Catching,Caches,1,Past Tense Verbs
+English,Question Words,'___ did you win the competition?' कारण विचारण्यासाठी काय वापरतात?,What,Where,Why,Who,2,Wh-Questions
+English,Rhyming Words,'Brave' शी जुळणारा शब्द ओळखा:,Save,Sun,Cat,Pen,0,Rhyming Words
+Science,Food,अन्नातील कोणत्या घटकांमुळे आपल्या शरीराला ऊर्जा मिळते?,जीवनसत्त्वे,कर्बोदके आणि चरबी (Carbohydrates & Fats),प्रथिना,खनिजे,1,Components of Food
+Science,Materials,पदार्थांचे वर्गीकरण करताना पारदर्शक (Transparent) पदार्थांचे उदाहरण कोणते?,लाकूड,काच (Glass),दगड,पुठ्ठा,1,Properties of Materials
+Science,Separation,मिठाच्या द्रावणातून मीठ वेगळे करण्यासाठी कोणती पद्धत वापरली जाते?,गाळणे,बाष्पीभवन (Evaporation),निवळणे,चुंबकीय वेगळेपण,1,Separation of Substances
+Science,Plants,वनस्पतींच्या खोडाचे मुख्य कार्य काय असते?,अन्न तयार करणे,पाणी व खनिजे सर्व भागांपर्यंत पोहोचवणे,फक्त फुले धरणे,प्रकाश शोषणे,1,Plant Structure
+Science,Body Movements,मानवी शरीरात खांद्याचे सांधे कोणत्या प्रकारचे असतात?,खिळकिळीचे सांधे,उखळीचे सांधे (Ball and Socket Joint),मिठाचा सांधे,अचल सांधे,1,Human Body Movements
+Science,Living Organisms,सजीवांच्या शरीरातील मूलभूत व संरचनात्मक एकक कोणते?,पेशी (Cell),ऊती,अवयव,रक्त,0,Cell Biology
+Science,Measurement,लांबीचे आंतरराष्ट्रीय मानक (SI Unit) काय आहे?,सेमी,मीटर (Meter),किलोमीटर,मिलीमीटर,1,Measurement Units
+Science,Light,प्रकाश नेहमी कशात प्रवास करतो?,वाकड्या मार्गाने,सरळ रेषाेत (Rectilinear propagation),वर्तुळाकार,कोणत्याही मार्गाने,1,Light and Shadows
+Science,Electricity,विद्युत परिपथात (Electric Circuit) विजेचा प्रवाह खंडित करण्यासाठी कशाचा वापर होतो?,बल्ब,विद्युत कुंजी (Switch),तार,बॅटरी,1,Electricity Basics
+Science,Magnets,चुंबकाचे नेहमी किती ध्रुव असतात?,१,२ (उत्तर व दक्षिण ध्रुव),३,४,1,Magnetism
+Social Studies,History,इतिहास अभ्यासासाठी जुन्या वास्तू, नाणी व कागदपत्रांना काय म्हणतात?,साधने (Historical Sources),कथा,काल्पनिक गोष्टी,चित्रे,0,Sources of History
+Social Studies,Geography,पृथ्वीचा अक्ष किती अंशाचा कोन त्याच्या कक्षेच्या प्रतलाशी करतो?,६६.५ अंश,२३.५ अंश,९० अंश,४५ अंश,0,Earth Geography
+Social Studies,Civic Sense,ग्रामपंचायतीच्या वार्षिक अहवालावर चर्चा कोठे होते?,ग्रामसभा (Gram Sabha),विधानसभा,संसद,नगरपालिका,0,Local Self-Government
+Social Studies,Diversity,भारताच्या विविधतेमध्ये काय दिसून येते?,एकता (Unity in Diversity),फक्त संघर्ष,समान भाषा,एकच धर्म,0,Indian Diversity
+Social Studies,Early Man,आदिमानवाने सर्वप्रथम कोणत्या धातूचा शोध लावला होता?,लोखंड,तांबे (Copper),सोने,ॲल्युमिनियम,1,Ancient Civilizations
+Social Studies,Government,लोकशाही शासन प्रणालीत अंतिम सत्ता कोणाकडे असते?,राष्ट्रपती,जनता (People / Citizens),प्रधानमंत्री,राज्यपाल,1,Democratic Government
+Social Studies,Maps,नकाशातील मुख्य दिशा किती आहेत?,२,३,४ (पूर्व, पश्चिम, उत्तर, दक्षिण),६,2,Map Directions
+Social Studies,Earth,पृथ्वीवरील महासागरांची एकूण संख्या किती आहे?,३,४,५ (Pacific, Atlantic, Indian, Southern, Arctic),७,2,Global Geography
+Social Studies,Harappan Civilisation,सिंधू संस्कृतीतील (Harappan) घरे प्रामुख्याने कशापासून बनवलेली असत?,लाकूड,भाजलेल्या विटा (Baked Bricks),माती,प्लास्टिक,1,Harappan Civilization
+Social Studies,Rural Administration,गावात शेतीसंबंधी नोंदी ठेवण्याचे काम कोण करतो?,सरपंच,तलाठी (Talathi),पोलीस पाटील,शिक्षक,1,Rural Administration
+Mathematics,Integers,-५ आणि +५ ची बेरीज किती येते?,१०,-१०,०,५,2,Integer Addition
+Mathematics,Fractions,२/३ ला सममूल्य (Equivalent) असलेला अपूर्णांक कोणता?,४/६,३/९,५/६,१/३,0,Equivalent Fractions
+Mathematics,Algebra,y - ४ = ७ तर y ची किंमत किती?,३,१०,११,१२,2,Linear Equations
+Mathematics,Geometry,वर्तुळाचा व्यास (Diameter) हा त्याच्या त्रिज्येच्या किती पट असतो?,अर्धीपट,दुप्पट (Twice),तिप्पट,समान,1,Geometry Properties
+Mathematics,Ratio,३० मिनिटे आणि १ तास यांचे गुणोत्तर किती?,१:२,२:१,१:३,३:१,0,Ratio Concepts
+Mathematics,Decimals,५ रु. ५० पैसे दशांश चिन्हात कसे लिहाल?,५.५० रु,५०.५ रु,०.५५ रु,५.०५ रु,0,Decimal Notation
+Mathematics,Mensuration,५ सेमी बाजू असलेल्या चौरसाचे क्षेत्रफळ किती?,१० चौसेमी,२० चौसेमी,२५ चौसेमी,३० चौसेमी,2,Area Calculations
+Mathematics,Data Handling,ताळ्याच्या खुणेमध्ये ५ वी खूण कशी दर्शवली जाते?,उभी रेषा,तिसरी रेषा,आडवी किंवा तिरकस रेषा (Bundle Slash),वर्तुळ,2,Tally Marks
+Mathematics,Symmetry,इंग्रजी 'H' या अक्षराला किती सममिती अक्ष असतात?,०,१,२,३,2,Symmetry
+Mathematics,Basic Concepts,खालीलपैकी कोणती संख्या सहमूळ (Co-prime) जोडी आहे?,(२, ४),(३, ५),(४, ६),(६, ९),1,Number Theory
+English,Grammar,'The dog chased the cat.' या वाक्यातील कर्म (Object) कोणते?,The dog,Chased,The cat,None,2,Parts of Speech
+English,Vocabulary,'Ancient' या शब्दाचा समानार्थी शब्द कोणता?,Modern,Old / Primitive,New,Recent,1,Synonyms
+English,Grammar,'She sings sweetly.' या वाक्यातील Adverb कोणते?,She,Sings,Sweetly,None,2,Adverbs
+English,Plurals,'Mouse' या शब्दाचे अनेकवचन काय होते?,Mouses,Mice,Micees,Mouse,1,Singular Plural
+English,Pronouns,'This pen is ___.' योग्य pronoun भरा.,my,mine,me,i,1,Possessive Pronouns
+English,Spelling,योग्य स्पेलिंग ओळखा:,Knowledge,Nowledge,Knowledje,Noledge,0,Spelling Accuracy
+English,Tenses,'He was reading a book.' हा कोणता काळ आहे?,Present Continuous,Past Continuous (भूतकाळ चालू),Future Continuous,Simple Past,1,Verb Tenses
+English,Action Verbs,'Speak' चे भूतकाळातील रूप कोणते?,Speaks,Spoke,Spoken,Speaking,1,Past Tense Verbs
+English,Question Words,'___ book do you prefer?' विकल्प विचारण्यासाठी कोणता शब्द वापरतात?,Which,Who,Where,When,0,Wh-Questions
+English,Rhyming Words,'Sun' शी जुळणारा शब्द ओळखा:,Fun,Cat,Dog,Pen,0,Rhyming Words
+Science,Food,स्नर्वी (Scurvy) हा आजार कोणत्या जीवनसत्त्वाच्या अभावामुळे होतो?,विटामिन अ,विटामिन ब,विटामिन क (Vitamin C),विटामिन डी,2,Deficiency Diseases
+Science,Materials,पाण्यात न विरघळणाऱ्या (Insoluble) पदार्थाचे उदाहरण कोणते?,साखर,मीट,रेهو (Sand),दुग्ध,2,Matter Properties
+Science,Separation,धान्यातील टरफल किंवा कचरा वेगळा करण्यासाठी कोणती पद्धत वापरली जाते?,उफणणे (Winnowing),गाळणे,बाष्पीभवन,चुंबक वापरणे,0,Separation Techniques
+Science,Plants,वनस्पतींच्या फुलातील स्त्रीयाची मुख्य भागाला काय म्हणतात?,पुंकेसर,स्त्रीकेसर (Pistil),दळ,कुस्कर,1,Plant Reproduction
+Science,Body Movements,आपल्या कानाची पाळी कोणत्या ऊतीपासून बनलेली असते?,हाडे,कूर्चा (Cartilage),स्नायू,रक्त,1,Skeletal System
+Science,Living Organisms,वाळवंटात राहणाऱ्या वनस्पतींची पाने कशी असतात?,रुंद,काट्यांच्या स्वरूपात रूपांतरित (Spines),मऊ,खूप मोठी,1,Plant Adaptations
+Science,Measurement,१ किलोमीटरमध्ये किती मीटर असतात?,१०० मीटर,५०० मीटर,१००० मीटर,१०००० मीटर,2,Metric Conversions
+Science,Light,अपारदर्शक वस्तूंच्या मागे पडणाऱ्या काळ्या सावलीला काय म्हणतात?,प्रकाश,छाया (Shadow),किरण,प्रतिबिंब,1,Light and Shadow
+Science,Electricity,विजेचा झटका बसू नये म्हणून विजेच्या तारांवर कशाचे आवरण असते?,लोखंड,प्लास्टिक किंवा रबर (Insulator),काच,तांबे,1,Conductors and Insulators
+Science,Magnets,चुंबक कोणत्या वस्तूची जोडी आकर्षित करतो?,लाकूड व काच,लोखंड व निकेल (Iron & Nickel),प्लास्टिक व कागद,सोने व चांदी,1,Magnetic Materials
+Social Studies,History,वेदकाळात सर्वात प्राचीन वेद कोणता मानला जातो?,सामवेद,यजुर्वेद्,ऋग्वेद (Rigveda),अथर्ववेद,2,Ancient History
+Social Studies,Geography,विषुववृत्त पृथ्वीला किती भागांत विभाजित करते?,दोन समान भाग (उत्तर व दक्षिण गोलार्ध),तीन भाग,चार भाग,कोणताही भाग नाही,0,Global Grid
+Social Studies,Civic Sense,नगरपालिकेच्या प्रमुखाला काय म्हणतात?,सरपंच,महापौर / नगराध्यक्ष (Mayor / President),जिल्हाधिकारी,मुख्यमंत्री,1,Urban Local Government
+Social Studies,Diversity,भारतात सर्वाधिक बोलल्या जाणाऱ्या भाषांपैकी एक कोणती?,इंग्रजी,हिंदी (Hindi),लॅटिन,फ्रेंच,1,Cultural Diversity
+Social Studies,Early Man,आदिमानवाने शेती करण्यास आणि स्थिरावण्यास केव्हा सुरुवात केली?,अश्मयुगाच्या उत्तर काळात,मध्ययुगात,आधुनिक काळात,औद्योगिक क्रांतीत,0,Human Evolution
+Social Studies,Government,भारतातील शासन प्रणाली कशी आहे?,राजेशाही,लोकशाही (Democratic),हुकूमशाही,साम्यवादी,1,Government Systems
+Social Studies,Maps,नकाशावरील चिन्हे व खुणा समजण्यासाठी काय दिले जाते?,प्रमाण,सूची किंवा संकेत (Key / Legend),शीर्षक,दिग्दर्शक,1,Map Symbols
+Social Studies,Earth,पृथ्वीचा सर्वात आतील थर कोणता आहे?,भूवर्चस,प्रावरण,गाभा (Core),पापडी,2,Earth Structure
+Social Studies,Harappan Civilisation,सिंधू संस्कृतीतील नगरांची रचना कशी होती?,विस्कळीत,जाळीसारखी पद्धतशीर (Grid System),वर्तुळाकार,डोंगराळ,1,Urban Planning
+Social Studies,Rural Administration,जिल्ह्यातील शेती व महसूल विभागाचा मुख्य अधिकारी कोण असतो?,तहसीलदार / जिल्हाधिकारी (Collector),सरपंच,पोलीस आयुक्त,महापौर,0,Administrative Systems
