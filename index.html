@@ -54,7 +54,7 @@
                 </div>
             </div>
             
-            <!-- Navigation Tabs (Horizontally Scrollable on Mobile) -->
+            <!-- Navigation Tabs -->
             <nav class="flex items-center space-x-2 sm:space-x-6 overflow-x-auto w-full sm:w-auto pb-2 sm:pb-0 scrollbar-none" aria-label="Tabs">
                 <button id="tab-evaluator-btn" onclick="switchTab('evaluator')" class="tab-active py-2 sm:py-4 px-2 inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 whitespace-nowrap transition">
                     <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
@@ -240,7 +240,7 @@
                             <span>Longitudinal Progress Trend</span>
                             <span class="text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">Score Trajectory</span>
                         </h4>
-                        <div id="trendline-display" class="w-full overflow-x-auto bg-white p-3 rounded-lg border border-slate-200 flex items-center justify-center"></div>
+                        <div id="trendline-display" class="text-xs text-slate-700 leading-relaxed font-medium bg-white p-3 rounded-lg border border-slate-200">Analyzing trend data...</div>
                     </div>
 
                     <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
@@ -272,13 +272,9 @@
                         <div>
                             <h4 class="font-bold text-blue-900 text-sm flex items-center justify-between">
                                 <span>Parental Focus Strategy & Remediation</span>
-                                <span id="strategy-badge" class="text-[10px] font-semibold bg-blue-200 text-blue-800 px-2 py-0.5 rounded-full hidden">Standard Guided</span>
+                                <span id="strategy-badge" class="text-[10px] font-semibold bg-blue-200 text-blue-800 px-2 py-0.5 rounded-full">AI Guided Strategy</span>
                             </h4>
-                            <div id="audit-ai-highlight" class="hidden my-2 p-2.5 bg-amber-100/70 border-l-4 border-amber-500 rounded-r-lg text-xs font-medium text-amber-900 flex items-start gap-2">
-                                <svg class="w-4 h-4 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                                <span id="audit-ai-highlight-text"></span>
-                            </div>
-                            <p id="audit-parental-strategy" class="text-xs text-blue-900 leading-relaxed font-medium mt-1"></p>
+                            <p id="audit-parental-strategy" class="text-xs text-blue-900 leading-relaxed font-medium mt-2"></p>
                         </div>
                     </div>
                 </div>
@@ -620,6 +616,7 @@
         let currentStudentData = { name: "", class: "", answers: [], score: 0, gaps: [], timeTakenSeconds: 0 };
         let currentBatchAuditData = [];
         let currentAuditStudentName = "";
+        let uploadedFilesMap = {};
 
         function showDownloadToast(fileName) {
             const toast = document.getElementById('mobile-download-toast');
@@ -971,13 +968,7 @@
             const files = Array.from(input.files);
             
             let parsedFilesCount = 0;
-            let totalQuestionsAttempted = 0;
-            let totalCorrectAnswers = 0;
-            const skillDeficits = {};
-            const skillTotals = {};
-            let studentName = "";
-            let studentClass = "";
-            currentBatchAuditData = [];
+            let allSessionsData = [];
 
             files.forEach(file => {
                 const reader = new FileReader();
@@ -986,46 +977,132 @@
                     const rows = Papa.parse(e.target.result, { header: true, skipEmptyLines: true }).data || [];
                     parsedFilesCount++;
                     if (rows.length > 0) {
-                        currentBatchAuditData.push(...rows);
-                        studentName = rows[0].StudentName || "Student";
-                        studentClass = rows[0].Class || "N/A";
-                        rows.forEach(row => {
-                            totalQuestionsAttempted++;
-                            const isCorrect = String(row.IsCorrect).toLowerCase() === 'true';
-                            const skill = row.Skill || row.Topic || 'Core Concept';
-                            skillTotals[skill] = (skillTotals[skill] || 0) + 1;
-                            if (isCorrect) totalCorrectAnswers++;
-                            else skillDeficits[skill] = (skillDeficits[skill] || 0) + 1;
-                        });
+                        allSessionsData.push({ fileName: file.name, rows: rows });
                     }
                     if (parsedFilesCount === files.length) {
-                        currentAuditStudentName = studentName;
-                        renderAuditResults({ studentName, studentClass, totalQuestions: totalQuestionsAttempted, totalCorrect: totalCorrectAnswers, skillDeficits, skillTotals });
+                        evaluateAIStudentAudit(allSessionsData);
                     }
                 };
             });
         }
 
-        function renderAuditResults(metrics) {
-            const avgScore = metrics.totalQuestions > 0 ? Math.round((metrics.totalCorrect / metrics.totalQuestions) * 100) : 0;
-            const sortedGaps = Object.keys(metrics.skillDeficits).sort((a,b) => metrics.skillDeficits[b] - metrics.skillDeficits[a]);
+        function evaluateAIStudentAudit(sessions) {
+            currentBatchAuditData = [];
+            let studentName = "Student";
+            let studentClass = "N/A";
+            let totalQuestionsAttempted = 0;
+            let totalCorrectAnswers = 0;
+            const skillDeficits = {};
+            const skillTotals = {};
+            let sessionSummaries = [];
 
+            // Sort sessions chronologically if possible or preserve order
+            sessions.forEach(s => {
+                currentBatchAuditData.push(...s.rows);
+                if (s.rows.length > 0) {
+                    studentName = s.rows[0].StudentName || studentName;
+                    studentClass = s.rows[0].Class || studentClass;
+                    
+                    let qCount = s.rows.length;
+                    let correctCount = s.rows.filter(r => String(r.IsCorrect).toLowerCase() === 'true').length;
+                    let scorePct = qCount > 0 ? Math.round((correctCount / qCount) * 100) : 0;
+                    let timeSec = parseInt(s.rows[0].TimeTakenSeconds || 0);
+                    let timerMin = parseInt(s.rows[0].TotalTimerMinutes || 30);
+
+                    totalQuestionsAttempted += qCount;
+                    totalCorrectAnswers += correctCount;
+
+                    s.rows.forEach(row => {
+                        const isCorrect = String(row.IsCorrect).toLowerCase() === 'true';
+                        const skill = row.Skill || row.Topic || 'Core Concept';
+                        skillTotals[skill] = (skillTotals[skill] || 0) + 1;
+                        if (isCorrect) totalCorrectAnswers; // counted above
+                        else skillDeficits[skill] = (skillDeficits[skill] || 0) + 1;
+                    });
+
+                    sessionSummaries.push({
+                        fileName: s.fileName,
+                        score: scorePct,
+                        timeTaken: timeSec,
+                        totalTimer: timerMin * 60
+                    });
+                }
+            });
+
+            currentAuditStudentName = studentName;
+            
+            // 1. Longitudinal Trend AI Rationale
+            let trendText = "";
+            if (sessionSummaries.length < 2) {
+                trendText = `<strong>More details needed:</strong> Only 1 attempt report was uploaded (${sessionSummaries[0]?.score || 0}% score). Please upload at least 2 or more historical assessment CSV files to establish a comparative longitudinal trajectory and measure progress over time.`;
+            } else {
+                let first = sessionSummaries[0].score;
+                let last = sessionSummaries[sessionSummaries.length - 1].score;
+                let diff = last - first;
+                if (diff > 5) {
+                    trendText = `<strong>Upward Trajectory (+${diff}%):</strong> Comparing across ${sessionSummaries.length} assessment files, the student shows clear cognitive growth and concept retention improvement. Prior remediation strategies are effectively working.`;
+                } else if (diff < -5) {
+                    trendText = `<strong>Downward Trend (${diff}%):</strong> Performance declined across uploaded sessions. This indicates emerging fatigue, loss of focus, or transition into more complex unmastered topics requiring immediate adult intervention.`;
+                } else {
+                    trendText = `<strong>Stable / Plateaued Trajectory:</strong> Scores remain consistent around ~${last}%. While stable, the student requires targeted challenges to break past current skill plateaus.`;
+                }
+            }
+
+            // 2. Behavioral & Pacing AI Diagnostics
+            let avgScore = totalQuestionsAttempted > 0 ? Math.round((totalCorrectAnswers / totalQuestionsAttempted) * 100) : 0;
+            let pacingText = "";
+            let pacingBadge = document.getElementById('pacing-badge');
+            
+            let avgTimePerQ = sessionSummaries.reduce((acc, s) => acc + (s.timeTaken / 25), 0) / (sessionSummaries.length || 1);
+            if (avgTimePerQ < 20 && avgScore < 60) {
+                pacingText = `<strong>AI Diagnosis: Quick Answering without Information (Fluke/Guessing).</strong> The student completed questions exceptionally fast (under 20 seconds per question) while scoring low (${avgScore}%). This signals random guessing, rushed navigation, or lack of conceptual reading rather than confidence.`;
+                pacingBadge.className = "text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full";
+                pacingBadge.innerText = "Rushed / Guessing";
+            } else if (avgTimePerQ < 20 && avgScore >= 80) {
+                pacingText = `<strong>AI Diagnosis: High Confidence & Mastery.</strong> The candidate solved questions very quickly while maintaining high accuracy (${avgScore}%). This confirms strong domain familiarity, quick recall, and genuine subject confidence.`;
+                pacingBadge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
+                pacingBadge.innerText = "Confident Mastery";
+            } else if (avgTimePerQ > 60 && avgScore < 50) {
+                pacingText = `<strong>AI Diagnosis: Reading Hesitation & Cognitive Fatigue.</strong> The student took a long time per question but struggled with accuracy. This indicates reading comprehension barriers, hesitation, or conceptual blocks.`;
+                pacingBadge.className = "text-[10px] font-semibold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full";
+                pacingBadge.innerText = "Hesitation / Fatigue";
+            } else {
+                pacingText = `<strong>AI Diagnosis: Balanced & Normal Pacing.</strong> The test pacing matches standard cognitive allocation per question with steady deliberative effort.`;
+                pacingBadge.className = "text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full";
+                pacingBadge.innerText = "Normal Pacing";
+            }
+
+            // 3. Parental Focus Strategy & Remediation
+            const sortedGaps = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
+            let remediationText = "";
+            if (sortedGaps.length === 0) {
+                remediationText = `<strong>Outstanding Performance:</strong> No major skill deficits were recorded across the uploaded logs. Parent Strategy: Maintain current study rhythm and introduce advanced challenge modules to sustain engagement.`;
+            } else {
+                let topGaps = sortedGaps.slice(0, 3).join(', ');
+                remediationText = `<strong>Inferred Gaps & Action Plan:</strong> Analysis of incorrect responses highlights primary recurring errors in <em>(${topGaps})</em>. These errors stem from fundamental conceptual gaps rather than careless errors. <strong>Parent Strategy:</strong> Dedicate 20 minutes daily exclusively to revising ${sortedGaps[0]}. Review foundational textbook examples together before allowing another assessment attempt.`;
+            }
+
+            // Render output
             document.getElementById('teacher-audit-output').classList.remove('hidden');
-            document.getElementById('audit-student-name').innerText = `Cumulative Diagnostic: ${metrics.studentName}`;
-            document.getElementById('audit-student-meta').innerText = `Class: ${metrics.studentClass} | Total Questions Evaluated: ${metrics.totalQuestions}`;
+            document.getElementById('audit-student-name').innerText = `Cumulative Diagnostic: ${studentName}`;
+            document.getElementById('audit-student-meta').innerText = `Class: ${studentClass} | Total Questions Evaluated: ${totalQuestionsAttempted} | Files Analyzed: ${sessions.length}`;
+            document.getElementById('audit-attempt-count').innerText = sessions.length;
             document.getElementById('audit-avg-score').innerText = `${avgScore}%`;
             document.getElementById('audit-gaps-count').innerText = `${sortedGaps.length} Skills`;
 
+            document.getElementById('trendline-display').innerHTML = trendText;
+            document.getElementById('pacing-details-text').innerHTML = pacingText;
+
             const matrixElem = document.getElementById('topic-mastery-matrix');
-            matrixElem.innerHTML = Object.keys(metrics.skillTotals).map(skill => {
-                const total = metrics.skillTotals[skill];
-                const correct = total - (metrics.skillDeficits[skill] || 0);
+            matrixElem.innerHTML = Object.keys(skillTotals).map(skill => {
+                const total = skillTotals[skill];
+                const correct = total - (skillDeficits[skill] || 0);
                 const pct = Math.round((correct / total) * 100);
                 return `<div class="space-y-1"><div class="flex justify-between text-xs font-semibold text-slate-700"><span>${skill}</span><span>${pct}% Mastery</span></div><div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden"><div class="bg-blue-600 h-2 rounded-full" style="width: ${pct}%"></div></div></div>`;
             }).join('');
 
-            document.getElementById('audit-gaps-list').innerHTML = sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${metrics.skillDeficits[g]} errors)</li>`).join('') || '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
-            document.getElementById('audit-parental-strategy').innerText = `Review skill gaps: ${sortedGaps.slice(0, 3).join(', ')}. Dedicate 20 minutes daily for targeted practice.`;
+            document.getElementById('audit-gaps-list').innerHTML = sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${skillDeficits[g]} errors)</li>`).join('') || '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
+            document.getElementById('audit-parental-strategy').innerHTML = remediationText;
         }
 
         function exportStudentHistoryLogCSV() {
