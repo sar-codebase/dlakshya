@@ -1,0 +1,81 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Large Numbers,'एक लाख' या संख्यात किती शून्ये असतात?,४,५,६,७,1,Place Value
+Mathematics,Decimals,३.५ आणि १.२ ची बेरीज किती येते?,४.५,४.७,५.७,३.७,1,Decimal Addition
+Mathematics,Factors,१२ चे अवयव (Factors) खालीलपैकी कोणते नाहीत?,२,३,४,५,3,Factors & Multiples
+Mathematics,Perimeter,५ सेमी बाजू असलेल्या चौरसाची परिमिती (Perimeter) किती?,१० सेमी,१५ सेमी,२० सेमी,२५ सेमी,2,Perimeter Calculation
+Mathematics,Fractions,२/३ आणि १/३ ची बेरीज किती?,३/६,३/३ किंवा १,५/३,१/६,1,Fraction Operations
+Mathematics,Geometry,ज्या कोनाचे माप ९० अंशापेक्षा जास्त असते, त्याला काय म्हणतात?,लघुकोन,काटकोन,विशालकोन (Obtuse),सरळकोन,2,Angle Types
+Mathematics,Measurement,२ किलोग्राम आणि ५०० ग्रॅम म्हणजे किती ग्रॅम?,२५० ग्रॅम,२५०० ग्रॅम,२५००० ग्रॅम,२५ ग्रॅम,1,Weight Conversion
+Mathematics,Area,लांबी ५ सेमी आणि रुंदी ३ सेमी असलेल्या आयताचे क्षेत्रफळ किती?,८ चौसेमी,१५ चौसेमी,१६ चौसेमी,१० चौसेमी,1,Area Calculation
+Mathematics,Time,सकाळी १०:३० वाजल्यापासून दुपारी २:३० वाजेपर्यंत किती तास होतात?,२ तास,३ तास,४ तास,५ तास,2,Elapsed Time
+Mathematics,Profit & Loss,₹१०० ची वस्तु ₹१२० ला विकल्यास किती नफा होतो?,₹१०,₹२०,₹३०,₹५०,1,Profit and Loss
+English,Grammar,'The sun shines brightly.' या वाक्यातील Adverb (क्रियाविशेषण) कोणते?,Sun,Shines,Brightly,The,2,Adverbs Identification
+English,Vocabulary,'Ancient' (प्राचीन) या शब्दाचा विरुद्धार्थी शब्द कोणता?,Old,Modern (आधुनिक),New,Past,1,Opposite Words
+English,Grammar,'The cat jumped ___ the wall.' योग्य Preposition निवडा.,on,in,over,at,2,Prepositions
+English,Plurals,'Child' या शब्दाचे अनेकवचन काय होते?,Childs,Children,Childrens,Childes,1,Singular Plural
+English,Pronouns,'Rahul is hardworking. ___ always wins prizes.' योग्य Pronoun भरा.,He,She,It,They,0,Pronouns
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Environment,Envirement,Enviroment,Invironment,0,Spelling Accuracy
+English,Tenses,'She will go to Pune tomorrow.' हे वाक्य कोणत्या काळातील आहे?,Present Tense,Past Tense,Future Tense (भविष्यकाळ),Continuous Tense,2,Verb Tenses
+English,Action Verbs,'Write' चे भूतकाळातील (Past Tense) रूप काय?,Writes,Written,Wrote,Writing,2,Past Tense Verbs
+English,Question Words,'___ book is this?' स्वामित्व विचारण्यासाठी कोणता शब्द वापरतात?,What,Where,Whose,Who,2,Wh-Questions
+English,Rhyming Words,'Light' शी जुळणारा शब्द ओळखा:,Night,Day,Sun,Pen,0,Rhyming Words
+Science,Environment,पर्यावरणातील सजीव व निर्जीव घटकांमधील परस्परसंबंधांच्या अभ्यासाला काय म्हणतात?,पारिस्थितिकी (Ecology),भूगोल,इतिहास,खगोलशास्त्र,0,Environmental Science
+Science,Space,सूर्याची मालिका किंवा सूर्यमालेतील सर्वात मोठा ग्रह कोणता?,पृथ्वी,शनी,गुरु (Jupiter),मंगळ,2,Solar System
+Science,Health,संतुलित आहारामध्ये प्रामुख्याने कशाचा समावेश असतो?,फक्त चरबी,सर्व पौष्टिक घटकांचे योग्य प्रमाण,फक्त साखर,फास्ट फूड,1,Nutrition & Health
+Science,Force & Work,कोणत्या बलामुळे वस्तू जमिनीवर पडतात?,चुंबकीय बल,गुरुत्वाकर्षण बल (Gravity),घर्षण बल,स्नायू बल,1,Physics Basics
+Science,Water,पाण्याच्या शुद्धीकरणासाठी कोणत्या वायूचा वापर केला जातो?,ऑक्सिजन,क्लोरीन (Chlorine),कार्बन डायऑक्साइड,नायट्रोजन,1,Water Purification
+Science,Matter,पाण्याचे स्थायू रूप (Solid form) कोणते?,पावसाचे पाणी,बाष्प,बर्फ (Ice),वाफ,2,States of Matter
+Science,Agriculture,शेतीसाठी उपयुक्त मातीची धूप (Soil Erosion) थांबवण्यासाठी काय करावे?,झाडे लावणे (वृक्षारोपण),जंगल तोडणे,पाणी साचवणे,रस्ते बांधणे,0,Soil Conservation
+Science,Human Body,आपल्या शरीरातील रस्ता रक्तशुद्ध करण्याचे काम कोणते अंग करते?,जठर,मूत्रपिंड (Kidneys),फुफ्फुस,यकृत,1,Human Organs
+Science,Energy,निसर्गातील ऊर्जेचा मुख्य आणि अक्षय स्त्रोत कोणता?,कोळसा,पेट्रोल,सूर्य (Sun),वीज,2,Energy Sources
+Science,Inventions,दिशा शोधण्यासाठी जुन्या काळात कशाचा वापर केला जात असे?,घड्याळ,होकायंत्र (Compass),दुर्बिळ,मापे,1,Scientific Tools
+Social Studies,Maps,नकाशात प्रमाण (Scale) कशासाठी दिले जाते?,रंग दाखवण्यासाठी,वास्तविक अंतर समजण्यासाठी,चित्रे काढण्यासाठी,दिशा सांगण्यासाठी,1,Map Scale
+Social Studies,History,शिवरायांनी स्वराज्याची पहिली राजधानी कोणती ठरवली?,रायगड,राजगड,प्रतापगड,शिवनेरी,1,Shivaji Maharaj History
+Social Studies,Geography,भारताच्या उत्तर सीमेवर कोणती पर्वतरांग आहे?,विंध्य,सातपुडा,हिमालय (Himalayas),अरावली,2,Indian Geography
+Social Studies,Civic Sense,आपल्या देशात लोकशाहीत मतदानाचा अधिकार मिळण्यासाठी किमान वय किती असावे?,१६ वर्षे,१८ वर्षे (18 Years),२१ वर्षे,२५ वर्षे,1,Civic Rights
+Social Studies,Festivals,संविधान दिन भारतात कधी साजरा केला जातो?,२६ जानेवारी,१५ ऑगस्ट,२६ नोव्हेंबर,२ ऑक्टोबर,2,National Days
+Social Studies,Earth,पृथ्वी स्वतःभोवती फिरते तेव्हा काय निर्माण होते?,ऋतू बदल,दिवस व रात्र (Day and Night),वारे वाहणे,भूकंप,1,Earth Rotation
+Social Studies,Economy,बँकेत पैसे सुरक्षित ठेवण्यासाठी आपण काय उघडतो?,कर्ज खाते,बचत खाते (Savings Account),खर्च खाते,व्यवसाय खाते,1,Banking Basics
+Social Studies,General Awareness,भारताचे लोहपुरुष म्हणून कोणाला ओळखले जाते?,महात्मा गांधी,सरदार वल्लभभाई पटेल,लोकमान्य टिळक,सुभाष चंद्र बोस,1,National Leaders
+Social Studies,Environment,वन्यजीवांचे संरक्षण करण्यासाठी काय स्थापन केले जातात?,कारखाने,अभयारण्य व राष्ट्रीय उद्याने (Sanctuaries),शहरे,खेळची मैदाने,1,Wildlife Conservation
+Social Studies,Transport,वाहतुकीचे सर्वात महाग आणि जलद साधन कोणते?,रेल्वे,जलमार्ग,विमान (Airways),बस,2,Transport Systems
+Mathematics,Large Numbers,'दहा लाख' या संख्येत किती शून्ये असतात?,५,६,७,८,2,Place Value
+Mathematics,Decimals,१०.५ मधून ४.२ वजा केल्यास किती उरतात?,६.१,६.३,६.५,७.३,1,Decimal Subtraction
+Mathematics,Factors,२४ चे अवयव कोणते नाहीत?,२,३,५,६,2,Factors & Multiples
+Mathematics,Perimeter,लांबी ८ सेमी आणि रुंदी ५ सेमी असलेल्या आयताची परिमिती किती?,२६ सेमी,१३ सेमी,४० सेमी,१८ सेमी,0,Perimeter Calculation
+Mathematics,Fractions,३/४ मधून १/४ वजा केल्यास उत्तर किती येते?,१/४,२/४ किंवा १/२,३/४,४/४,1,Fraction Operations
+Mathematics,Geometry,ज्या कोनाचे माप बरोबर ९० अंश असते, त्याला काय म्हणतात?,लघुकोन,काटकोन (Right Angle),विशालकोन,सरळकोन,1,Angle Types
+Mathematics,Measurement,५ लीटर म्हणजे किती मिलिलिटर?,५०० मिली,५००० मिलिलिटर,५० मिली,५०००० मिली,1,Capacity Conversion
+Mathematics,Area,४ सेमी बाजू असलेल्या चौरसाचे क्षेत्रफळ किती?,१६ चौसेमी,१२ चौसेमी,८ चौसेमी,२० चौसेमी,0,Area Calculation
+Mathematics,Time,एका तासात किती सेकंद असतात?,६० सेकंद,३६०० सेकंद,२४०० सेकंद,१२०० सेकंद,1,Time Measurement
+Mathematics,Profit & Loss,₹५०० ची वस्तू ₹४५० ला विकल्यास किती तूट (Loss) होते?,₹१०,₹५०,₹१००,₹४०,1,Profit and Loss
+English,Grammar,'He runs fast.' या वाक्यातील Fast हा शब्द काय आहे?,Noun,Verb,Adverb (क्रियाविशेषण),Pronoun,2,Adverbs
+English,Vocabulary,'Brave' (शूर) या शब्दाचा विरुद्धार्थी शब्द कोणता?,Coward (भितरा),Bold,Strong,Fearless,0,Opposite Words
+English,Grammar,'The book is ___ the table.' योग्य Preposition निवडा.,in,on,under,at,1,Prepositions
+English,Plurals,'Leaf' या शब्दाचे अनेकवचन काय होते?,Leafs,Leaves,Lefs,Leavs,1,Singular Plural
+English,Pronouns,'Seema and Geeta are singing. ___ have good voices.' योग्य Pronoun भरा.,He,She,It,They,3,Pronouns
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Beautiful,Beutiful,Batiful,Beautyful,0,Spelling Accuracy
+English,Tenses,'They played cricket yesterday.' हे वाक्य कोणत्या काळातील आहे?,Present,Past Tense (भूतकाळ),Future,Continuous,1,Verb Tenses
+English,Action Verbs,'Eat' या क्रियापदाचे भूतकाळातील रूप कोणते?,Eats,Eating,Ate,Eaten,2,Past Tense Verbs
+English,Question Words,'___ did you arrive?' वेळ विचारण्यासाठी कोणता शब्द वापरतात?,What,Where,When,Who,2,Wh-Questions
+English,Rhyming Words,'Day' शी जुळणारा शब्द ओळखा:,Way,Sun,Cat,Pen,0,Rhyming Words
+Science,Environment,नायट्रोजन वायूचे प्रमाण हवेत किती टक्के असते?,२१%,७८%,१%,०.०३%,1,Atmosphere Composition
+Science,Space,पृथ्वीचा उपग्रह कोणता आहे?,सूर्य,चंद्र (Moon),मंगळ,तारा,1,Solar System
+Science,Health,डासांच्या प्रादुर्भावामुळे कोणता आजार पसरतो?,सर्दी,मलेरिया व डेंग्यू (Malaria & Dengue),मधुमेह,क्षयरोग,1,Disease Prevention
+Science,Force & Work,दोन पृष्ठभाग घासल्यामुळे कोणते बल निर्माण होते?,चुंबकीय बल,घर्षण बल (Friction),गुरुत्वाकर्षण,स्नायू बल,1,Physics Basics
+Science,Water,पाण्याचे मुख्य स्त्रोत कोणते आहेत?,फक्त नळ,पाऊस, नद्या व तलाव,फक्त विहिरी,फक्त टँकर,1,Water Resources
+Science,Matter,कठोर व ठिसूळ पदार्थांचे उदाहरण कोणते?,लाकूड,काच (Glass),पाणी,हवा,1,Material Science
+Science,Agriculture,पिकांवर कीटकनाशक फवारणी करताना कशाची काळजी घ्यावी?,हात न धुणे,तोंडाला मास्क लावणे व सुरक्षितता बाळगणे,अन्नाची नासधूस करणे,काहीही न करणे,1,Agricultural Safety
+Science,Human Body,आपल्या शरीराला आकार व बळकटी कोण देते?,रक्त,हाडे व स्नायू (Bones and Muscles),केस,नखे,1,Human Body Anatomy
+Science,Energy,सौर ऊर्जेचा वापर कशासाठी केला जातो?,सौर ऊर्जा संच व सोळा कुकर चालवण्यासाठी,फक्त अंधार करण्यासाठी,पाणी गळतीसाठी,काहीही नाही,0,Renewable Energy
+Science,Inventions,ताप मोजण्यासाठी कोणते उपकरण वापरले जाते?,बॅरोमीटर,थर्मामीटर (Thermometer),स्टेथॉस्कोप,अॅमीटर,1,Scientific Instruments
+Social Studies,Maps,महाराष्ट्राच्या पश्चिमेला कोणता समुद्र आहे?,हिंदी महासागर,अरबी समुद्र (Arabian Sea),बंगालचा उपसागर,लाल समुद्र,1,Geography
+Social Studies,History,स्वराज्याची स्थापना कोणत्या शतकात झाली?,१५ वे शतक,१७ वे शतक (17th Century),१९ वे शतक,२० वे शतक,1,History
+Social Studies,Geography,भारतातील सर्वात लांब नदी कोणती?,गोदावरी,गंगा (Ganga),यमुना,नर्मदा,1,Indian Rivers
+Social Studies,Civic Sense,स्थानिक स्वराज्य संस्थेच्या ग्रामीण भागातील पातळीवर काय असते?,महानगरपालिका,ग्रामपंचायत (Gram Panchayat),संविधान मंडळ,लोकसभा,1,Local Governance
+Social Studies,Festivals,स्वातंत्र्य दिन कधी साजरा केला जातो?,२६ जानेवारी,१५ ऑगस्ट (15th August),२ ऑक्टोबर,१ मे,1,National Days
+Social Studies,Earth,पृथ्वीला सूर्याभोवती एक फेरी पूर्ण करण्यास किती दिवस लागतात?,२४ तास,३६५ दिवस (One Year),३० दिवस,७ दिवस,1,Earth Revolution
+Social Studies,Economy,बँकेतून पैसे काढण्यासाठी कशाचा वापर केला जातो?,एटीएम कार्ड किंवा चेक (ATM/Cheque),पुस्तिका,चावी,कागद,0,Banking Basics
+Social Studies,General Awareness,महाराष्ट्राचे राज्यप्राणी काय आहे?,शेकरू (Giant Squirrel),वाघ,सिंह,हत्ती,0,State Symbols
+Social Studies,Environment,प्लास्टिकच्या थैल्यांऐवजी कोणत्या वस्तू वापरणे पर्यावरणपूरक ठरते?,प्लास्टिक डबे,कापडी पिशव्या (Cloth Bags),काचेच्या नळ्या,रबर,1,Eco-Friendly Practices
+Social Studies,Transport,मेट्रो रेल्वे प्रामुख्याने कुठे धावते?,ग्रामीण भागात,शहरी भागात जलद वाहतुकीसाठी (Urban areas),जंगलात,समुद्रात,1,Modern Transport
