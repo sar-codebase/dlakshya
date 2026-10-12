@@ -1,0 +1,36 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Number Systems,Which of the following is an irrational number?,sqrt(4),0.141414...,sqrt(7),22/7,2,Irrational Numbers
+Mathematics,Number Systems,What is the simplified value of (3 + sqrt(3))(3 - sqrt(3))?,6,3,9,0,0,Algebraic Identities
+Mathematics,Polynomials,What is the degree of the zero polynomial?,0,1,Undefined,Any real number,2,Polynomial Degree
+Mathematics,Polynomials,If x + 1 is a factor of x^3 + x^2 + x + k, then k is equal to:,-1,1,0,2,1,Factor Theorem
+Mathematics,Coordinate Geometry,The point (-3, -5) lies in which quadrant?,First,Second,Third,Fourth,2,Cartesian Plane
+Mathematics,Linear Equations,How many solutions does the linear equation 2x + 3y = 6 have?,One,Two,Infinitely many,No solution,2,Linear Equations in Two Variables
+Mathematics,Geometry,If two parallel lines are cut by a transversal, the interior angles on the same side are:,Equal,Complementary,Supplementary,Reflex,2,Lines and Angles
+Mathematics,Triangles,In a triangle ABC, if AB = AC and angle B = 50°, then angle A is:,50°,80°,100°,60°,1,Isosceles Triangle Properties
+Mathematics,Quadrilaterals,The diagonals of a rhombus intersect each other at what angle?,40°,60°,90°,120°,2,Properties of Quadrilaterals
+Mathematics,Heron's Formula,What is the area of an equilateral triangle with side 'a'?,(sqrt(3)/4)a^2,(sqrt(3)/2)a^2,(1/2)a^2,sqrt(3)a^2,0,Heron's Formula
+Mathematics,Surface Areas and Volumes,What is the total surface area of a solid hemisphere of radius 'r'?,2 pi r^2,3 pi r^2,4 pi r^2,(2/3) pi r^2,1,Surface Area of Solids
+Mathematics,Statistics,The mean of the first five prime numbers is:,5,5.6,5.2,5.4,1,Measures of Central Tendency
+Science,Matter in Our Surroundings,Which of the following processes involves conversion of solid directly into gas?,Evaporation,Condensation,Sublimation,Fusion,2,States of Matter
+Science,Matter in Our Surroundings,At what temperature does ice melt at normal atmospheric pressure?,273.15 K,373.15 K,0 K,100 K,0,Temperature Scale Conversion
+Science,Is Matter Around Us Pure,A heterogeneous mixture of a solute in a solvent where particles settle down is a:,Solution,Colloid,Suspension,Emulsion,2,Mixtures & Solutions
+Science,Is Matter Around Us Pure,Which technique is best used to separate two miscible liquids with boiling points differing by 15°C?,Simple Distillation,Fractional Distillation,Crystallization,Centrifugation,1,Separation Techniques
+Science,Atoms and Molecules,What is the molar mass of water (H2O)?,16 g/mol,18 g/mol,20 g/mol,32 g/mol,1,Molar Mass
+Science,Structure of the Atom,Who discovered the neutron in an atom?,J.J. Thomson,E. Rutherford,James Chadwick,Niels Bohr,2,Atomic Structure
+Science,Cell - The Unit of Life,Which organelle is known as the 'suicide bag' of a cell?,Mitochondria,Golgi apparatus,Lysosome,Ribosome,2,Cell Biology
+Science,Tissues,Which plant tissue is responsible for the transport of water and minerals?,Phloem,Xylem,Parenchyma,Collenchyma,1,Plant Tissues
+Science,Motion,The slope of a Distance-Time graph represents:,Acceleration,Speed,Displacement,Force,1,Kinematics
+Science,Force and Laws of Motion,The inertia of an object depends directly on its:,Velocity,Shape,Mass,Volume,2,Newton's Laws of Motion
+Science,Gravitation,The acceleration due to gravity (g) at the center of the Earth is:,9.8 m/s^2,Infinite,Zero,4.9 m/s^2,2,Gravitation
+Science,Work and Energy,When a body falls freely towards the Earth, its total mechanical energy:,Increases,Decreases,Remains constant,First increases then decreases,2,Conservation of Energy
+Science,Sound,The speed of sound in air at 0°C is approximately:,300 m/s,331 m/s,340 m/s,1500 m/s,1,Acoustics
+English,Grammar,Choose the correct option: 'Neither the teacher nor the students ____ present.',was,were,is,has been,1,Subject-Verb Agreement
+English,Grammar,Identify the passive form: 'They are building a new house.',A new house is built by them.,A new house was built by them.,A new house is being built by them.,A new house has been built by them.,2,Active and Passive Voice
+English,Grammar,Choose the correct indirect speech: 'He said, "I have been working hard."',He said that he had been working hard.,He said that he has been working hard.,He told he was working hard.,He says he had been working hard.,0,Direct and Indirect Speech
+English,Grammar,Choose the correct modal verb: 'You ____ follow the traffic rules strictly.',may,must,might,could,1,Modal Auxiliaries
+English,Grammar,Identify the non-finite verb (gerund) in: 'Swimming is a great exercise.',Swimming,is,great,exercise,0,Non-Finite Verbs
+English,Grammar,Choose the correct preposition: 'He is proficient ____ mathematics.',at,in,with,for,1,Prepositional Usage
+English,Vocabulary,Synonym of 'Ephemeral' is:,Permanent,Transient,Eternal,Stable,1,Synonyms
+English,Vocabulary,Antonym of 'Meticulous' is:,Careful,Thorough,Careless,Precise,2,Antonyms
+English,Vocabulary,One-word substitution: 'A person who looks at the bright side of things':,Pessimist,Optimist,Atheist,Philanthropist,1,Vocabulary Expansion
+English,Spelling,Select the correctly spelled word:,Maintenance,Maintainance,Maintenence,Mentenance,0,Spelling Skills
