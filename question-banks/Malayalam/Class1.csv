@@ -1,0 +1,97 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Addition,5 ഉം 3 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,7,8,9,6,1,Basic Addition
+Mathematics,Numbers,19 ന് ശേഷം വരുന്ന സംഖ്യ ഏത്?,18,20,21,22,1,Counting & Numbers
+Mathematics,Subtraction,7 ൽ നിന്ന് 2 കുറച്ചാൽ എത്ര കിട്ടും?,4,5,6,3,1,Basic Subtraction
+Mathematics,Shapes,ത്രികോണത്തിന് എത്ര വശങ്ങളുണ്ട്?,2,3,4,5,1,Geometric Shapes
+Mathematics,Comparison,താഴെ പറയുന്നവയിൽ ഏറ്റവും വലുത് ഏത്?,പേന,നോട്ട്ബുക്ക്,കറുത്ത ബോർഡ്,പെൻസിൽ,2,Size Comparison
+Mathematics,Counting,4 ആപ്പിളുകൾ ഉണ്ട്, അതിലേക്ക് 2 എണ്ണം കൂടി ചേർത്താൽ ആകെ എത്രയാകും?,5,6,7,8,1,Addition Word Problems
+Mathematics,Shapes,വട്ടത്തിന്റെ (Circle) ആകൃതി എങ്ങനെയുള്ളതാണ്?,ചതുരാകൃതി,വൃത്താകൃതി,ത്രികോണാകൃതി,നീളമുള്ളത്,1,Shapes Identification
+Mathematics,Numbers,പത്തും പൂജ്യവും കൂട്ടിയാൽ എത്ര കിട്ടും?,9,10,11,12,1,Place Value Basics
+Mathematics,Measurement,നീളം അളക്കാൻ താഴെ പറയുന്നവയിൽ ഏതാണ് ഉപയോഗിക്കുന്നത്?,കുപ്പി,സ്കെയിൽ (Ruler),സ്പൂൺ,ബാഗ്,1,Measurement Units
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 2, 4, 6, ?,7,8,9,10,1,Number Patterns
+English,Vowels,ഇംഗ്ലീഷ് বর্ণമാലയില്‍ ആകെ എത്ര സ്വരാക്ഷരങ്ങൾ (Vowels) ഉണ്ട്?,3,5,7,10,1,English Vowels
+English,Alphabet,A കഴിഞ്ഞാൽ അടുത്ത അക്ഷരം ഏത്?,B,C,D,E,0,Alphabetical Order
+English,Vocabulary,'Apple' എന്നാൽ മലയാളത്തിൽ എന്താണ്?,വാഴപ്പഴം,ആപ്പിൾ,മാങ്ങ,പേരയ്ക്ക,1,Fruit Vocabulary
+English,Animals,പട്ടിയുടെ കുഞ്ഞിനെ ഇംഗ്ലീഷിൽ എന്താണ് വിളിക്കുന്നത്?,Puppy,Kitten,Cub,Calf,0,Young Animals Names
+English,Phonics,'Cat' എന്ന വാക്ക് ഏത് അക്ഷരത്തിലാണ് ആരംഭിക്കുന്നത്?,C,B,A,D,0,Phonics & Sounds
+English,Grammar,'This is ___ book.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,a,an,the,in,0,Articles Basics
+English,Rhyming words,'Sun' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Moon,Fun,Star,Sky,1,Rhyming Words
+English,Colors,ഇലകളുടെ നിറം എന്താണ്?,ചുവപ്പ്,പച്ച,മഞ്ഞ,നീല,1,Color Identification
+English,Action Verbs,ചിത്രത്തിലെ കുട്ടി പുസ്തകം വായിക്കുന്നു, ഈ പ്രവൃത്തിയെ എന്താണ് വിളിക്കുന്നത്?,Eating,Reading,Sleeping,Running,1,Action Verbs
+English,Opposites,'Big' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Small,Tall,Short,Fat,0,Opposite Words
+EVS,Animals,നಮಗೆ പാൽ തരുന്ന മൃഗം ഏത്?,പട്ടി,പശു,പൂച്ച,സിംഹം,1,Animal Products
+EVS,Body Parts,നാം എന്തുപയോഗിച്ചാണ് കേൾക്കുന്നത്?,കണ്ണുകൾ,ചെവികൾ,മൂക്ക്,കൈകൾ,1,Sensory Organs
+EVS,Plants,മണ്ണிற்கு അടിയിലുള്ള മരത്തിന്റെ ഭാഗം ഏത്?,ഇല,പൂവ്,വേര് (Root),ഫലം,2,Parts of Plants
+EVS,Seasons,മഴക്കാലത്ത് നാം എന്താണ് ഉപയോഗിക്കുന്നത്?,സ്வெட்டர்,കുട (Umbrella),ഫാൻ,തൊപ്പി,1,Seasons & Weather
+EVS,Family,അമ്മയുടെ അമ്മയെ നാം എന്താണ് വിളിക്കുന്നത്?,മുത്തശ്ശി,അമ്മായി,വലിയമ്മ,അമ്മൂമ്മ,0,Family Relations
+EVS,Food,നಮಗೆ ഊർജ്ജം ലഭിക്കുന്നത് എന്തിൽ നിന്നാണ്?,മണ്ണ്,ആഹാരം (Food),വെള്ളം,ബാഗ്,1,Healthy Food
+EVS,Transport,തീവണ്ടി എന്തിലൂടെയാണ് ഓടുന്നത്?,റോഡിലൂടെ,വെള്ളത്തിലൂടെ,പാളത്തിലൂടെ (Tracks),ആകാശത്തിലൂടെ,2,Modes of Transport
+EVS,Shelter,പക്ഷികൾ എവിടെയാണ് താമസിക്കുന്നത്?,മാളത്തിൽ,കൂട്ടിൽ (Nest),ഗുഹയിൽ,മരത്തിൽ,2,Animal Homes
+EVS,Community Helpers,സ്കൂളിൽ നമ്മെ പഠിപ്പിക്കുന്നത് ആരാണ്?,ഡോക്ടർ,അധ്യാപകൻ (Teacher),പോലീസ്,കർഷകൻ,1,Community Helpers
+EVS,Environment,രാവിലെ നമുക്ക് വെളിച്ചം തരുന്നത് ആരാണ്?,ചന്ദ്രൻ,സൂര്യൻ (Sun),നക്ഷത്രങ്ങൾ,വിളക്ക്,1,Natural Sources
+Social Studies,National Symbols,നമ്മുടെ ദേശീയ പതാക ഏതാണ്?,ത്രിവർണ്ണ പതാക (Tiranga),വെള്ള പതാക,കറുത്ത പതാക,ഒരൊറ്റ നിറമുള്ളത്,0,National Symbols
+Social Studies,National Anthem,നമ്മുടെ ദേശീയ ഗാനം ഏതാണ്?,വന്ദേമാതരം,ജന गण मन (Jana Gana Mana),സാരേ ജഹാം സേ അച്ഛാ,ജയ് ഹിന്ദ്,1,National Anthem
+Social Studies,Directions,സൂര്യൻ ഏത് ദിശയിൽ നിന്നാണ് ഉദിക്കുന്നത്?,പടിഞ്ഞാറ്,വടക്ക്,കിഴക്ക് (East),തെക്ക്,2,Cardinal Directions
+Social Studies,Festivals,ദീപാവലി ഏത് ആഘോഷവുമായി ബന്ധപ്പെട്ടിരിക്കുന്നു?,വെളിച്ചത്തിന്റെ ഉത്സവം,മഴയുടെ ഉത്സവം,തണുപ്പിന്റെ ഉത്സവം,പൂക്കളുടെ ഉത്സവം,0,Cultural Festivals
+Social Studies,Days of Week,ഞായറാഴ്ചയ്ക്ക് ശേഷം വരുന്ന ദിവസം ഏത്?,തിങ്കളാഴ്ച (Monday),ചൊവ്വാഴ്ച,ബുധനാഴ്ച,ശനിയാഴ്ച,0,Days of the Week
+Social Studies,Country,നമ്മുടെ രാജ്യത്തിന്റെ പേര് എന്താണ്?,ഇന്ത്യ,അമേരിക്ക,ചൈന,ജപ്പാൻ,0,General Awareness
+Social Studies,Water Sources,കുടിവെള്ളത്തിന്റെ പ്രധാന നൈസർഗ്ഗിക സ്രോതസ്സ് ഏത്?,കടൽ,മഴ / നദി,തടാകം,കിണർ,1,Water Sources
+Social Studies,Earth,നാം ജീവിക്കുന്ന ഗ്രഹം ഏതാണ്?,ചൊവ്വ,ഭൂമി (Earth),ശനി,ശുക്രൻ,1,Planetary Basics
+Social Studies,Time,ക്ലോക്കിലെ ചെറിയ സൂചി എന്ത് കാണിക്കുന്നു?,മിനിറ്റ്,മണിക്കൂർ (Hour),സെക്കൻഡ്,വർഷം,1,Telling Time
+Social Studies,Civic Sense,മാലിന്യങ്ങൾ എവിടെയാണ് ഇടേണ്ടത്?,റോഡിൽ,ജനലിലൂടെ,ചവറ്റുകുട്ടയിൽ (Dustbin),വെള്ളത്തിൽ,2,Civic Sense
+Mathematics,Addition,3 + 4 എത്രയാണ്?,6,7,8,9,1,Basic Addition
+Mathematics,Addition,2 + 2 എത്രയാണ്?,3,4,5,6,1,Basic Addition
+Mathematics,Addition,6 + 1 എത്രയാണ്?,5,6,7,8,2,Basic Addition
+Mathematics,Subtraction,5 - 3 എത്രയാണ്?,1,2,3,4,1,Basic Subtraction
+Mathematics,Subtraction,9 - 4 എത്രയാണ്?,4,5,6,7,1,Basic Subtraction
+Mathematics,Shapes,ചതുരത്തിന് എത്ര വശങ്ങളുണ്ട്?,3,4,5,6,1,Geometric Shapes
+Mathematics,Numbers,11 ന് തൊട്ടുമുമ്പ് വരുന്ന സംഖ്യ ഏത്?,10,12,13,9,0,Counting & Numbers
+Mathematics,Numbers,ഏറ്റവും ചെറിയ ഒരക്ക സംഖ്യ ഏത്?,0,1,9,2,1,Number Systems
+Mathematics,Comparison,താഴെ പറയുന്നവയിൽ ഏറ്റവും ഭാരമുള്ള വസ്തു ഏത്?,തൂവൽ,സ്കൂൾ ബാഗ് (Bag),പരുത്തി,റബ്ബർ,1,Weight Comparison
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 10, 20, 30, ?,35,40,45,50,1,Counting by Tens
+English,Vocabulary,'Cat' എന്നാൽ എന്താണ്?,പട്ടി,പൂച്ച (Cat),പശു,സിംഹം,1,Animal Names English
+English,Vocabulary,'Ball' എന്നാൽ എന്താണ്?,പന്ത് (Ball),മരം,ബാറ്റ്,പുസ്തകം,0,Object Identification
+English,Grammar,'This is ___ apple.' ശരിയായത് തിരഞ്ഞെടുക്കുക.,a,an,the,in,1,Articles Basics
+English,Phonics,സ്വരാക്ഷരങ്ങളിൽ ഉൾപ്പെടാത്ത അക്ഷരം ഏത്?,A,E,B,O,2,Vowels and Consonants
+English,Colors,ആകാശത്തിന്റെ നിറം എന്താണ്?,ചുവപ്പ്,നീല (Blue),പച്ച,വെള്ള,1,Color Identification
+English,Family,'Father' എന്നാൽ ആരെയാണ് குறிക്കുന്നത്?,അമ്മ,അച്ഛൻ (Father),ചേട്ടൻ,സഹോദരി,1,Family Vocabulary
+English,Opposites,'Hot' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Cold,Warm,Cool,Ice,0,Opposite Words
+English,Action Verbs,പക്ഷികൾ എന്ത് ചെയ്യുന്നു?,പറക്കുന്നു (Fly),കാണുന്നു,നടക്കുന്നു,ഓടുന്നു,0,Action Verbs
+English,Rhyming words,'Cat' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Dog,Hat,Sun,Pen,1,Rhyming Words
+English,Vocabulary,സ്കൂൾ ബാഗിനെ ഇംഗ്ലീഷിൽ എന്താണ് പറയുന്നത്?,Book,Bag,Pen,Pencil,1,School Vocabulary
+EVS,Body Parts,നാം എന്തുപygോഗിച്ചാണ് കാണുന്നത്?,കണ്ണുകൾ (Eyes),ചെവികൾ,മൂക്ക്,ത്വക്ക്,0,Sensory Organs
+EVS,Body Parts,നാം എന്തുപയോഗിച്ചാണ് നടക്കുന്നത്?,കൈകൾ,കാലുകൾ (Legs),വായിൽ,പല്ല്,1,Body Movements
+EVS,Animals,കാട്ടിലെ രാജാവ് എന്നറിയപ്പെടുന്ന മൃഗം ഏത്?,കടുവ,സിംഹം (Lion),ആന,പുലി,1,Wild Animals
+EVS,Animals,ഒരു വളർത്തു മൃഗം ഏത്?,സിംഹം,കടുവ,പശു (Cow),ചെന്നായ്,2,Domestic Animals
+EVS,Food,നമ്മുടെ ശരീരത്തിന്റെ ആരോഗ്യത്തിന് എന്താണ് ആവശ്യം?,ജങ്ക് ഫുഡ്,പഴങ്ങളും പച്ചക്കറികളും (Fruits & Vegetables),പ്ലാസ്റ്റിക്,ചോക്ലേറ്റ്,1,Nutrition Basics
+EVS,Home,നാം താമസിക്കുന്ന സ്ഥലത്തെ എന്താണ് വിളിക്കുന്നത്?,സ്കൂൾ,വീട് (Home),ഫാക്ടറി,തോട്ടം,1,Shelter Identification
+EVS,Water,ശുദ്ധമായ വെള്ളത്തിന്റെ നിറം എന്താണ്?,വെള്ള,നീല,നിറമില്ലാത്തത് (Transparent),കറുത്തത്,2,Water Properties
+EVS,Plants,ചെടികൾക്ക് വളരാൻ എവയാണ് ആവശ്യം?,വെള്ളവും സൂര്യപ്രകാശവും,പാൽ,എണ്ണ,ചായ,0,Plant Growth
+EVS,Community Helpers,രോഗികളെ പരിശോധിക്കുന്നത് ആരാണ്?,അധ്യാപകൻ,ഡോക്ടർ (Doctor),പോലീസ്,പോസ്റ്റ്മാൻ,1,Medical Helpers
+EVS,Environment,ശുചിത്വത്തിനായി നാം എന്താണ് ചെയ്യേണ്ടത്?,മാലിന്യങ്ങൾ ഇടുക,കൈകൾ കഴുകുക (Wash Hands),ഇരുട്ടിലാക്കുക,ഓടുക,1,Hygiene Basics
+Social Studies,Transport,ആകാശത്തിലൂടെ പറക്കുന്ന വാഹനം ഏത്?,ബസ്,വിമാനങ്ങൾ (Aeroplane),സൈക്കിൾ,മോட்டார்,1,Air Transport
+Social Studies,Festivals,ആഘോഷങ്ങളുടെ രാജാവ് എന്നറിയപ്പെടുന്നത് ഏത്?,ദീപാവലി,ഹോളി,ക്രിസ്മസ്,സ്വാതന്ത്ര്യ ദിനം,0,Cultural Festivals
+Social Studies,Directions,സൂര്യൻ അസ്തമിക്കുന്ന ദിശയെ എന്താണ് വിളിക്കുന്നത്?,കിഴക്ക്,പടിഞ്ഞാറ് (West),വടക്ക്,തെക്ക്,1,Cardinal Directions
+Social Studies,Time,ഒരു ദിവസത്തിൽ ആകെ എത്ര മണിക്കൂറുകൾ ഉണ്ട്?,12,24,48,7,1,Time Basics
+Social Studies,Community Helpers,രാജ്യത്തെ സംരക്ഷിക്കുന്നത് ആരാണ്?,സൈനികർ (Soldiers),കർഷകർ,ជាងതളർ,വ്യാപാരികൾ,0,National Security
+Social Studies,National Symbols,ദേശീയ പതാകയിൽ ആകെ എത്ര നിറങ്ങളുണ്ട്?,2,3,4,5,1,National Symbols
+Social Studies,General Awareness,ഇന്ത്യയുടെ തലസ്ഥാനം ഏത്?,മുംബൈ,ഡൽഹി (Delhi),പുണെ,കൊൽക്കത്ത,1,Capital Cities
+Social Studies,School,विद्यार्थികൾ സ്കൂളിൽ വരുന്നത് എന്തിനാണ്?,കളിക്കാൻ,പഠിക്കാൻ (To Study),ഉറങ്ങാൻ,جھگড়া ചെയ്യാൻ,1,School Activities
+Social Studies,Civic Sense,പൊതുമുതൽ എന്തുചെയ്യണം?,നശിപ്പിക്കണം,സംരക്ഷിക്കണം (Protect),വലിച്ചെറിയണം,തകർക്കണം,1,Civic Responsibility
+Social Studies,Good Habits,രാവിലെ ഉണർന്ന ഉടൻ എന്താണ് ചെയ്യേണ്ടത്?,പല്ല് തേക്കുക (Brush Teeth),കരയുക,കിടന്നുറങ്ങുക, വഴക്കുണ്ടാക്കുക,0,Good Habits
+Mathematics,Addition,4 + 4 എത്രയാണ്?,6,7,8,9,2,Basic Addition
+Mathematics,Addition,7 + 2 എത്രയാണ്?,8,9,10,11,1,Basic Addition
+Mathematics,Subtraction,8 - 3 എത്രയാണ്?,4,5,6,7,1,Basic Subtraction
+Mathematics,Subtraction,10 - 5 എത്രയാണ്?,3,4,5,6,2,Basic Subtraction
+Mathematics,Shapes,ദീർഘചതുരത്തിന് (Rectangle) എത്ര വശങ്ങളുണ്ട്?,3,4,5,6,1,Geometric Shapes
+Mathematics,Numbers,5 ന് ശേഷം വരുന്ന സംഖ്യ ഏത്?,4,5,6,7,2,Counting & Numbers
+Mathematics,Numbers,ഏറ്റവും വലിയ ഒരക്ക സംഖ്യ ഏത്?,8,9,10,7,1,Number Systems
+English,Vocabulary,എഴുതാൻ നമുക്ക് എന്ത് വേണം?,പെൻസിൽ (Pencil),ബാഗ്,ബാറ്റ്,പന്ത്,0,School Supplies
+English,Vocabulary,തലയിൽ നാം എന്താണ് ധരിക്കുന്നത്?,തൊപ്പി (Cap),ഷൂസ്,ഗ്ലൗസ്,സോക്സ്,0,Clothing Vocabulary
+English,Grammar,'He is ___ boy.' ശരിയായത് തിരഞ്ഞെടുക്കുക.,a,an,the,in,0,Articles Basics
+EVS,Animals,മത്സ്യം എവിടെയാണ് ജീവിക്കുന്നത്?,കരയിൽ,വെള്ളത്തിൽ (Water),മരത്തിൽ,ആകാശത്ത്,1,Aquatic Animals
+EVS,Body Parts,നാം മണം പിടിക്കുന്നത് എന്തുപയോഗിച്ചാണ്?,കണ്ണുകൾ,മൂക്ക് (Nose),ചെവികൾ,നാക്ക്,1,Sensory Organs
+EVS,Environment,മരങ്ങൾ നമുക്ക് എന്താണ് തരുന്നത്?,പുക,ഓക്സിജൻ / തണൽ (Oxygen / Shade),പ്ലാസ്റ്റിക്,കണ്ണാടി,1,Environmental Benefits
+Social Studies,National Symbols,ദേശീയഗാനം ആലപിക്കുമ്പോൾ നാം എങ്ങനെ നിൽക്കണം?,ഇരുന്നുറങ്ങണം,നേരെ നിന്ന് ആദരവ് പ്രകടിപ്പിക്കണം (Stand Attention),ഓടണം,പാട്ട് പാടണം,1,National Etiquette
+Social Studies,Family,അമ്മയുടെ സഹോദരനെ നാം എന്താണ് വിളിക്കുന്നത്?,കകാരൻ,മാമ്മൻ (Uncle),അമ്മാവൻ,പെരിയോൻ,1,Family Relations
+Social Studies,General Awareness,കേരളത്തിന്റെ തലസ്ഥാനം ഏത്?,തിരുവനന്തപുരം (Thiruvananthapuram),കൊച്ചി,കോഴിക്കോട്,തൃശ്ശൂർ,0,State Capitals
