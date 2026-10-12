@@ -1,0 +1,81 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Number Systems,താഴെ പറയുന്നവയിൽ ഒരു അപരിമേയ സംഖ്യ (Irrational Number) ഏത്?,sqrt(4),0.333...,sqrt(7),22/7,2,Number Systems
+Mathematics,Polynomials,p(x) = x^2 - 3x + 2 എങ്കിൽ p(2) ന്റെ വില എത്ര?,0,1,2,4,0,Polynomial Values
+Mathematics,Coordinate Geometry,കാർട്ടീഷ്യൻ തലത്തിൽ (Cartesian plane) (-3, 4) എന്ന ബിന്ദു ഏത് ചതുർത്ഥകത്തിലാണ് (Quadrant) സ്ഥിതി ചെയ്യുന്നത്?,ഒന്നാം ചതുർത്ഥകം,രണ്ടാം ചതുർത്ഥകം (Second Quadrant),മൂന്നാം ചതുർത്ഥകം,നാലാം ചതുർത്ഥകം,1,Coordinate Geometry
+Mathematics,Linear Equations,2x + 3y = 12 എന്ന സമവാക്യത്തിന് ആകെ എത്ര പരിഹാരങ്ങൾ ഉണ്ട്?,ഒരു പരിഹാരം മാത്രം,രണ്ട് പരിഹാരങ്ങൾ,അനന്തമായ പരിഹാരങ്ങൾ (Infinitely Many Solutions),പരിഹാരമില്ല,2,Linear Equations in Two Variables
+Mathematics,Lines and Angles,രണ്ട് രേഖകൾ പരസ്പരം ഛേദിക്കുമ്പോൾ ഉണ്ടാകുന്ന എതിർ കോണുകൾ (Vertically Opposite Angles) എങ്ങനെയുള്ളവയാണ്?,അസമം,തുല്യമായത് (Equal),മട്ടകോണുകൾ,പൂരകകോണുകൾ,1,Lines and Angles
+Mathematics,Triangles,ഒരു ത്രികോണത്തിന്റെ കോണുകളുടെ ആകെ തുക എത്ര ഡിഗ്രിയാണ്?,90°,180° (180 Degrees),270°,360°,1,Triangle Properties
+Mathematics,Quadrilaterals,ഒരു സമാന്തര ചതുർഭുജത്തിന്റെ വിപരീത കോണുകൾ (Opposite Angles) എങ്ങനെയുള്ളവയാണ്?,അസമം,തുല്യമായത് (Equal),മട്ടകോണുകൾ,പൂരകകോണുകൾ,1,Quadrilateral Properties
+Mathematics,Circles,വൃത്തത്തിന്റെ ഒരു ചാപം (Arc) കേന്ദ്രത്തിൽ ഉണ്ടാക്കുന്ന കോൺ, അതേ ചാപം വൃത്തപരിധിയിൽ ഉണ്ടാക്കുന്ന കോണിന്റെ എത്ര മടങ്ങാണ്?,പകുതി,തുല്യം,ഇരട്ടി (Twice),മൂന്നിരട്ടി,2,Circle Theorems
+Mathematics,Herons Formula,വശങ്ങൾ 3 സെ.മീ., 4 സെ.മീ., 5 സെ.മീ. ആയ ത്രികോണത്തിന്റെ വിസ്തീർണ്ണം എത്ര?,6 ചതുരശ്ര സെ.മീ. (6 sq cm),12 ചതുരശ്ര സെ.മീ.,10 ചതുരശ്ര സെ.മീ.,15 ചതുരശ്ര സെ.മീ.,0,Heron's Formula
+Mathematics,Surface Areas and Volumes,ആരം r ആയ ഒരു ഗോളിന്റെ (Sphere) വ്യാപ്തം കാണാനുള്ള സൂത്രവാക്യം ഏത്?,(4/3)*pi*r^3,4*pi*r^2,(2/3)*pi*r^3,pi*r^2*h,0,Surface Areas and Volumes
+English,Grammar,'Honesty is the best policy.' എന്ന വാക്യത്തിലെ 'Honesty' എന്ന പദം എന്ത് തരം നാമമാണ്?,Common Noun,Proper Noun,Abstract Noun (ഭാവവാചക നാമം),Pronoun,2,Parts of Speech
+English,Vocabulary,'Industrious' എന്ന വാക്കിന്റെ സമർത്ഥമായ പദം (Synonym) ഏത്?,Lazy,Hardworking (കഠിനാധ്വാനി),Dull,Slow,1,Synonyms
+English,Grammar,'If I were a bird, I ___ fly.' ശരിയായ Modal Verb തിരഞ്ഞെടുക്കുക.,will,would,can,could,1,Conditional Sentences
+English,Plurals,'Criterion' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Criterions,Criteria (Criteria),Criterias,Criterion,1,Plural Forms
+English,Pronouns,'___ of the students passed the test.' ശരിയായ Determiner തിരഞ്ഞെടുക്കുക.,None,Every,All,Both,0,Pronouns & Determiners
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Accomodation,Acommodation,Accommodation (താമസസൗകര്യം),Acomodation,2,Spelling Accuracy
+English,Tenses,'By next year, she will have completed her graduation.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Future Perfect (ഭാവി പൂർണ്ണ കാലം),Future Continuous,Present Perfect,Past Perfect,0,Verb Tenses
+English,Action Verbs,'Seek' എന്ന ക്രിയയുടെ Past Participle (V3) രൂപം ഏത്?,Sought,Seeked,Seeking,Seeks,0,Verb Forms
+English,Question Words,'___ did you reach the station?' സമയം ചോദിക്കാൻ ഏത് ചോദ്യപദം ഉപയോഗിക്കണം?,What,Where,When,Who,2,Wh-Questions
+English,Rhyming Words,'Sight' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Night,Light,Right,All of these (എല്ലാം ശരിയാണ്),3,Rhyming Words
+Science,Matter in Our Surroundings,പദാർത്ഥത്തിന്റെ കണികകൾ തമ്മിലുള്ള ആകർഷണബലം ഏറ്റവും കൂടുതലുള്ള അവസ്ഥ ഏത്?,വാതകം,ദ്രാവകം,ഖരം (Solid),പ്ലാസ്മ,2,States of Matter
+Science,Is Matter Around Us Pure,ഉപ്പ് വെള്ളത്തിൽ നിന്ന് ഉപ്പ് വേർതിരിച്ചെടുക്കാൻ ഉപയോഗിക്കുന്ന പ്രധാന ശാസ്ത്രീയ രീതി ഏത്?,അരിച്ചെടുക്കുക,ബാഷ്പീകരണം (Evaporation),കാന്തിക വേർതിരിവ്,തെളിച്ചെടുക്കുക,1,Separation of Mixtures
+Science,Atoms and Molecules,ജലത്തിന്റെ (H2O) തന്മാത്രാ ഭാരം (Molecular Mass) എത്ര amu ആണ്?,16 amu,18 amu (18 amu),20 amu,32 amu,1,Atomic and Molecular Mass
+Science,Structure of the Atom,ഇലക്ട്രോൺ കണ്ടുപിടിച്ചത് ആരാണ്?,ജെ.ജെ. തോംസൺ (J. J. Thomson),റുതർഫോർഡ്,ചാഡ്വിക്,ബോർ,0,Atomic Structure
+Science,The Fundamental Unit of Life,സസ്യകോശങ്ങൾക്ക് മാത്രം കാണപ്പെടുന്നതും ജന്തുക്കോശങ്ങളിൽ ഇല്ലാത്തതുമായ പ്രധാന ഭാഗം ഏത്?,മൈറ്റോകോൺട്രിയ,കേന്ദ്രകം,ശ്ലേഷ്മസ്തരം / കോശഭിത്തി (Cell Wall),റൈബോസോം,2,Cell Biology
+Science,Tissues,സസ്യങ്ങളിൽ ജലവും ലവണങ്ങളും താഴെ നിന്ന് മുകളിലേക്ക് എത്തിക്കുന്ന ടിഷ്യു ഏത്?,സൈലം (Xylem),ഫ്ലോയം,മൃദूतक,സ്ഥിര ടിഷ്യു,0,Plant Tissues
+Science,Motion,വേഗതയുടെ അന്താരാഷ്ട്ര അളവുകോൽ (SI Unit) എന്താണ്?,കി.മീ./മണി,മീറ്റർ/സെക്കൻഡ് (m/s),സെ.മീ./സെക്കൻഡ്,കിലോമീറ്റർ,1,Kinematics
+Science,Force and Laws of Motion,ന്യൂട്ടന്റെ രണ്ടാം ചലന നിയമം പ്രകാരം ബലം (Force) എന്തിന് തുല്യമാണ്?,वस्तुमानाവും ത്വരണവും തമ്മിലുള്ള ഗുണനഫലത്തിന് (Mass * Acceleration),വേഗതയും സമയവും,സംവേഗ മാറ്റത്തിന്റെ നിരക്കിന്,ഒന്നും ബാധകമല്ല,0,Laws of Motion
+Science,Gravitation,രണ്ട് വസ്തുക്കൾക്കിടയിലുള്ള ഗുരുത്വാകർഷണ ബലം അവയുടെ ദൂരത്തിന്റെ വർഗ്ഗത്തിന് എങ്ങനെയായിരിക്കും?,നേരDem പ്രമാണത്തിൽ,വ്യുത്ക്രമ പ്രമാണത്തിൽ (Inversely proportional to square of distance),തുല്യം,മാറ്റമില്ലാത്തത്,1,Gravitation
+Science,Work and Energy,യാന്ത്രിക ഊർജ്ജത്തിൽ (Mechanical Energy) ഉൾപ്പെടുന്ന പ്രധാന ഊർജ്ജ രൂപങ്ങൾ ഏവ?,താപവും പ്രകാശവും,ഗതികോർജ്ജവും സ്ഥിതികോർജ്ജവും (Kinetic and Potential Energy),രാസോർജ്ജം,വൈദ്യുതോർജ്ജം,1,Work and Energy
+Social Studies,History,ഫ്രഞ്ച് വിപ്ലവം പൊട്ടിപ്പുറപ്പെട്ട വർഷം ഏത്?,1789 (1789),1776,1799,1857,0,French Revolution
+Social Studies,Geography,ഇന്ത്യയുടെ മധ്യത്തിലൂടെ കടന്നുപോകുന്ന പ്രധാന അക്ഷാംശം ഏത്?,ഭൂമുവൃത്തം,കർക്കടകം രേഖ (Tropic of Cancer),മകരം രേഖ,ആർട്ടിക് വൃത്തം,1,Indian Geography
+Social Studies,Civic Sense,ഇന്ത്യൻ ഭരണഘടനയുടെ ആമുഖത്തിൽ (Preamble) 'സെക്കുലർ' (Secular) എന്നാൽ എന്താണ് അർത്ഥമാക്കുന്നത്?,സർക്കാരിന് പ്രത്യേക മതമുണ്ട്,രാഷ്ട്രത്തിന് സ്വന്തമായി ഔദ്യോഗിക മതമില്ല, എല്ലാ മതങ്ങളെയും തുല്യമായി കാണുന്നു (Freedom of Religion),മതവിശ്വാസം നിരോധിച്ചിരിക്കുന്നു,മതിയായ മതമില്ല,2,Indian Preamble
+Social Studies,Economics,പാലാമ്പൂർ ഗ്രാമത്തിലെ കർഷകരുടെ പ്രധാന വരുമാന മാർഗ്ഗം ഏത്?,വ്യവസായങ്ങൾ,കൃഷി (Farming / Agriculture),മത്സ്യബന്ധനം,കച്ചവടം മാത്രം,1,Economics Basics
+Social Studies,History,റഷ്യൻ വിപ്ലവത്തിന് നേതൃത്വം നൽകിയ ബോൾഷെവിക് പാർട്ടിയുടെ നേതാവ് ആരായിരുന്നു?,സ്റ്റാലിൻ,ലെനിൻ (Vladimir Lenin),കാറൽ മാർക്സ്,സാർ നിക്കോളായ് രണ്ടാമൻ,1,Russian Revolution
+Social Studies,Geography,ഇന്ത്യയിൽ മൺസൂൺ മഴയ്ക്ക് പ്രധാന കാരണം ആയ കാറ്റുകൾ ഏവ?,വ്യാപാര കാറ്റുകൾ,തെക്കുപടിഞ്ഞാറൻ മൺസൂൺ കാറ്റുകൾ (South-West Monsoon Winds),വടക്കുകിഴക്കൻ കാറ്റുകൾ,പ്രാദേശിക കാറ്റുകൾ,1,Monsoon Climate
+Social Studies,Civic Sense,ദക്ഷിണാഫ്രിക്കയിൽ വർണ്ണവിവേചനത്തിനെതിരെ (Apartheid) സമരം നയിച്ച ലോകപ്രശസ്ത നേതാവ് ആരാണ്?,മഹാത്മാഗാന്ധി,നെൽസൺ മണ്ടേല (Nelson Mandela),മാർട്ടിൻ ലൂഥർ കിംഗ്,ഏബ്രഹാം ലിങ്കൺ,1,Democratic Politics
+Social Studies,Economics,ഇന്ത്യയിൽ തൊഴിലില്ലായ്മ പരിഹരിക്കാനും ഗ്രാമീണ മേഖലയിൽ ഉറപ്പായ തൊഴിൽ നൽകാനും നടപ്പിലാക്കിയ പ്രധാന പദ്ധതി ഏത്?,MGNREGA (മഹാത്മാഗാന്ധി ദേശീയ ഗ്രാമീണ തൊഴിലുറപ്പ് പദ്ധതി),മെയ്ക്ക് ഇൻ ഇന്ത്യ,സ്റ്റാർട്ടപ്പ് ഇന്ത്യ,പ്രധാനമന്ത്രി ആവാസ് യോജന,0,Poverty as a Challenge
+Social Studies,History,നാസി ജർമ്മനിയുടെ ഏകാധിപതിയായിരുന്ന അഡോൾഫ് ഹിറ്റ്ലറുടെ രാഷ്ട്രീയ പാർട്ടിയുടെ പേര് എന്തായിരുന്നു?,കമ്മ്യൂണിസ്റ്റ് പാർട്ടി,നാഷണൽ സോഷ്യലിസ്റ്റ് ജർമ്മൻ വർക്കേഴ്സ് പാർട്ടി (Nazi Party / NSDAP),സോഷ്യൽ ഡെമോക്രാറ്റിക് പാർട്ടി,ഫാസിസ്റ്റ് പാർട്ടി,1,Nazism and Hitler
+Social Studies,Geography,ഇന്ത്യയുടെ സമുദ്രതീരത്തിന്റെ ആകെ നീളം (ദ്വീപുകൾ ഉൾപ്പെടെ) എത്ര കിലോമീറ്ററാണ്?,7516.6 കിലോമീറ്റർ (7516.6 km),6100 കിലോമീറ്റർ,5000 കിലോമീറ്റർ,10000 കിലോമീറ്റർ,0,India Size and Location
+Mathematics,Number Systems,sqrt(2) എന്നത് എന്ത് തരം സംഖ്യയാണ്?,പരിമേയ സംഖ്യ,അപരിമേയ സംഖ്യ (Irrational Number),പൂർണ്ണ സംഖ്യ,യഥാർത്ഥ സംഖ്യ അല്ല,1,Number Systems
+Mathematics,Polynomials,p(x) = 2x + 5 ന്റെ ശൂന്യത (Zero of the polynomial) എന്താണ്?,5/2,-5/2 ( -5/2 ),2/5,-2/5,1,Polynomials
+Mathematics,Coordinate Geometry,(3, -4) എന്ന ബിന്ദു കാർട്ടീഷ്യൻ തലത്തിൽ ഏത് ചതുർത്ഥകത്തിലാണ് (Quadrant) സ്ഥിതി ചെയ്യുന്നത്?,ഒന്നാം ചതുർത്ഥകം,രണ്ടാം ചതുർത്ഥകം,മൂന്നാം ചതുർത്ഥകം,നാലാം ചതുർത്ഥകം (Fourth Quadrant),3,Coordinate Geometry
+Mathematics,Linear Equations,x = 2, y = 1 എന്നത് 2x + 3y = k എന്ന സമവാക്യത്തിന്റെ പരിഹാരമാണെങ്കിൽ k ന്റെ വില എത്ര?,5,7 ( 7 ),8,10,1,Linear Equations
+Mathematics,Lines and Angles,രണ്ട് സമാന്തര വരകളെ ഒരു ഛേദകം ഛേദിക്കുമ്പോൾ ഉണ്ടാകുന്ന അനുരൂപ കോണുകൾ (Corresponding Angles) എങ്ങനെയായിരിക്കും?,അസമം,തുല്യമായത് (Equal),മട്ടകോണുകൾ,പൂരകകോണുകൾ,1,Lines and Angles
+Mathematics,Triangles,ഒരു ത്രികോണത്തിന്റെ രണ്ട് വശങ്ങൾ 5 സെ.മീ., 7 സെ.മീ. എങ്കിൽ മൂന്നാം വശത്തിന്റെ നീളം എന്തിനേക്കാൾ ചെറുതായിരിക്കണം?,12 സെ.മീ. (Sum of two sides > third side),10 സെ.മീ.,5 സെ.മീ.,2 സെ.മീ.,0,Triangle Inequalities
+Mathematics,Quadrilaterals,ഒരു ചതുരത്തിന്റെ ഡയഗണലുകൾ പരസ്പരം എങ്ങനെയുള്ളവയാണ്?,തുല്യവും ലമ്പമായി ഛേദിക്കുന്നവയും (Equal and bisect at right angles),അസമം,ഛേദിക്കുന്നില്ല,സമാന്തരമായിട്ടുള്ളത്,0,Quadrilateral Properties
+Mathematics,Circles,ഒരേ വൃത്തത്തിലെ തുല്യ ചാപങ്ങൾ കേന്ദ്രത്തിൽ ഉണ്ടാക്കുന്ന കോണുകൾ എങ്ങനെയായിരിക്കും?,അസമം,തുല്യമായത് (Equal),ഇരട്ടി,പകുതി,1,Circles
+Mathematics,Herons Formula,സമഭുജ ത്രികോണത്തിന്റെ (Equilateral Triangle) ഒരു വശം 'a' ആയാൽ ഹെറോൺസ് സൂത്രവാക്യം പ്രകാരം വിസ്തീർണ്ണം എത്ര?,(sqrt(3)/4)*a^2,(1/2)*a^2,sqrt(3)*a^2,a^2/2,0,Heron's Formula
+Mathematics,Surface Areas and Volumes,ഒരു സിലിണ്ടറിന്റെ പാത്രത്തിന്റെ ആരം 7 സെ.മീ., ഉയരം 10 സെ.മീ. ആയാൽ വക്രതല വിസ്തീർണ്ണം (Curved Surface Area) എത്ര? (pi = 22/7),220 ച.സെ.മീ.,440 ച.സെ.മീ. (440 sq cm),154 ച.സെ.മീ.,330 ച.സെ.മീ.,1,Cylinder Mensuration
+English,Grammar,'She said, "I am reading a book."' എന്ന വാക്യത്തിന്റെ Indirect Speech എന്താകും?,She said that she was reading a book.,She says that she is reading a book.,She told that she is reading a book.,She asked if she was reading a book.,0,Direct and Indirect Speech
+English,Vocabulary,'Transparent' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Opaque (അപारदर्शक),Clear,Bright,Clean,0,Opposite Words
+English,Grammar,'He speaks English well, ___ he?' ശരിയായ Question Tag തിരഞ്ഞെടുക്കുക.,doesn't he (doesn't he),does he,did he,isn't he,0,Question Tags
+English,Plurals,'Tooth' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Tooths,Teeth (Teeth),Teeths,Tooth,1,Irregular Plurals
+English,Pronouns,'This is my pen. It is ___.' ശരിയായ Possessive Pronoun തിരഞ്ഞെടുക്കുക.,mine (mine),my,me,i,0,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Necessary,Neccesary,Necessay,Nessessary,0,Spelling Accuracy
+English,Tenses,'By next week, she will have been working here for 5 years.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Future Perfect Continuous (ഭാവി പൂർണ്ണ തുടർച്ച കാലം),Future Continuous,Present Perfect,Past Perfect,0,Verb Tenses
+English,Action Verbs,'Write' എന്ന ക്രിയയുടെ Past Participle രൂപം ഏത്?,Wrote,Written (Written),Writing,Writes,1,Verb Forms
+English,Question Wordsራትരാത്രി എവിടെ പോകുന്നു എന്ന് ചോദിക്കാൻ ഏത് ചോദ്യപദം ഉപയോഗിക്കണം?,Where (Where),What,Who,When,0,Wh-Questions
+English,Rhyming Words,'Light' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Night (Night),Sun,Cat,Pen,0,Rhyming Words
+Science,Matter in Our Surroundings,ദ്രാവകം വാതകമായി മാറുന്ന പ്രക്രിയയെ എന്താണ് വിളിക്കുന്നത്?,ബാഷ്പീകരണം / തിളയ്ക്കൽ (Vaporization / Boiling),ഘനീഭവനം,ഉരുളൽ,രൂപീകരണം,0,Matter States
+Science,Is Matter Around Us Pure,ഒരു യഥാർത്ഥ ലായനി (True Solution) എന്നത് എന്ത് തരം മിശ്രിതമാണ്?,ഏകമാന മിശ്രിതം (Homogeneous Mixture),വിഷമമാന മിശ്രിതം,കൊളോയ്ഡ്,സസ്പെൻഷൻ,0,Mixtures and Solutions
+Science,Atoms and Molecules,കാർബൺ ഡൈഓക്സൈഡിന്റെ (CO2) തന്മാത്രാ ഭാരം എത്ര amu ആണ്?,28 amu,32 amu,44 amu (44 amu),16 amu,2,Molecular Mass
+Science,Structure of the Atom,ന്യൂട്രോൺ കണ്ടുപിടിച്ചത് ആരാണ്?,ജെ.ജെ. തോംസൺ,റുതർഫോർഡ്,ജെയിംസ് ചാഡ്വിക് (James Chadwick),ബോർ,2,Atomic Particles
+Science,The Fundamental Unit of Life,കോസിലെ 'പ്രോട്ടീൻ ഫാക്ടറി' എന്നറിയപ്പെടുന്ന അവയവം ഏത്?,മൈറ്റോകോൺട്രിയ,റൈബോസോം (Ribosomes),ലൈസോസോം,ഗോൾഗി ഉപകരണം,1,Cell Organelles
+Science,Tissues,രക്തം ഏത് തരം ടിഷ്യുവാണ്?,പേശി ടിഷ്യു,നാഡീ ടിഷ്യു,സംയോജക ടിഷ്യു (Connective Tissue),ആവരണ ടിഷ്യു,2,Animal Tissues
+Science,Motion,വേഗതയിൽ കാലത്തിനനുസരിച്ച് ഉണ്ടാകുന്ന മാറ്റത്തിന്റെ നിരക്കിനെ (Rate of change of velocity) എന്താണ് വിളിക്കുന്നത്?,വേഗത,ത്വരണം (Acceleration),ദൂരം,സംവേഗം,1,Kinematics
+Science,Force and Laws of Motion,പ്രകൃതിയിൽ രണ്ട് വസ്തുക്കൾക്കിടയിൽ പ്രവർത്തിക്കുന്ന പ്രവർത്തനവും പ്രതിപ്രവർത്തനവും (Action and Reaction) എങ്ങനെയുള്ളവയാണ്?,തുല്യവും എതിർദിശയിലുള്ളതും (Equal and Opposite),തുല്യവും ഒരേ ദിശയിലുള്ളതും,അസമമായത്,ഒന്നുമില്ല,0,Newton's Third Law
+Science,Gravitation,ഭൂമിയുടെ ഉപരിതലത്തിൽ നിന്ന് മുകളിലേക്ക് പോകുമ്പോൾ ഗുരുത്വീയ त्वरण (g) ന്റെ മൂല്യത്തിൽ എന്ത് മാറ്റം വരുന്നു?,വർദ്ധിക്കുന്നു,കുറയുന്നു (Decreases),മാറ്റമില്ലാതെ തുടരുന്നു,പൂജ്യമാകുന്നു,1,Gravitation Physics
+Science,Work and Energy,ആഘാതബലവും സ്ഥാനഭ്രംശവും തമ്മിലുള്ള കോൺ 90 ഡിഗ്രി ആയാൽ പ്രവൃത്തിയുടെ (Work done) അളവ് എത്രയായിരിക്കും?,പരമാവധി,കുറഞ്ഞത്,പൂജ്യം (Zero Work),1 തൊഴിൽ,2,Work Done Physics
+Social Studies,History,1789-ലെ ഫ്രഞ്ച് വിപ്ലവ കാലത്ത് ഫ്രാൻസിലെ രാജാവ് ആരായിരുന്നു?,ലൂയി പതിനാറാമൻ (Louis XVI),ലൂയി പതിനഞ്ചാമൻ,നെപ്പോളിയൻ,കാറൽ മാർക്സ്,0,French Revolution
+Social Studies,Geography,ഇന്ത്യയുടെ ഏറ്റവും തെക്കേ അറ്റത്തുള്ള 'ഇന്ദിരാ പോയിന്റ്' ഏത് സുനാമി ബാധിത വർഷമാണ് കടലിൽ മുങ്ങിപ്പോയത്?,2001,2004 (2004),2008,2011,1,Geography Facts
+Social Studies,Civic Sense,ഒരു രാജ്യത്തിന്റെ ജനാധിപത്യ സ്വഭാവം നിർണ്ണയിക്കുന്ന ഏറ്റവും സുപ്രധാന ഘടകം ഏത്?,സ്വതന്ത്രവും നീതിയുക്തവുമായ തിരഞ്ഞെടുപ്പുകൾ (Free and Fair Elections),വലിയ കെട്ടിടങ്ങൾ,സൈനിക ശക്തി,പണത്തിന്റെ ലഭ്യത,0,Democratic Politics
+Social Studies,Economics,പാലാമ്പൂർ ഗ്രാമത്തിലെ കാർഷിക ഉൽപ്പാദനക്ഷമത വർദ്ധിപ്പിക്കാൻ സഹായിച്ച പ്രധാന ആധുനിക മാർഗ്ഗം ഏത്?,ഹരിതവിപ്ലവം / വീര്യമുള്ള വിത്തുകളും രാസവളങ്ങളും (Green Revolution),പരമ്പരാഗത രീതികൾ,കൃഷി നിർത്തൽ,മറ്റ് ജോലികൾ,0,Green Revolution
+Social Studies,History,സ്റ്റാലിന്റെ കൂട്ടകൃഷി നയത്തെ (Collectivization) എതിർത്ത കർഷകരെ സോവിയറ്റ് യൂണിയനിൽ എന്താണ് വിളിച്ചിരുന്നത്?,കുലാക്കുകൾ (Kulaks),സോഷ്യലിസ്റ്റുകൾ,മുതലാളിമാർ,തൊഴിലാളികൾ,0,Russian Revolution
+Social Studies,Geography,ഇന്ത്യയിലെ മൺസൂൺ പ്രതിഭാസത്തിന് ആക്കം കൂട്ടുന്ന പ്രധാന കാറ്റുകൾ ഏവ?,വ്യാപാര കാറ്റുകൾ,ജെറ്റ് പ്രവാഹങ്ങൾ (Jet Streams),പ്രാദേശിക കാറ്റുകൾ,ചൂട് കാറ്റ്,1,Monsoon Weather
+Social Studies,Civic Sense,ഇന്ത്യൻ ഭരണഘടനയുടെ ശില്പി എന്ന് അറിയപ്പെടുന്നത് ആരാണ്?,ഡോ. ബി.ആർ. അംബേദ്കർ (Dr. B. R. Ambedkar),മഹാത്മാഗാന്ധി,ജവഹർലാൽ നെഹ്റു,രാജേന്ദ്ര പ്രസാദ്,0,Indian Constitution
+Social Studies,Economics,ഇന്ത്യയിൽ ദാരിദ്ര്യ നിർമ്മാർജ്ജനത്തിനായി സർക്കാർ നടപ്പിലാക്കുന്ന പ്രധാന റേഷൻ സംവിധാനം ഏത്?,പൊതുവിതരണ സമ്പ്രദായം / റേഷൻ കടകൾ (Public Distribution System),സ്വകാര്യ കച്ചവടം,ബാങ്ക് ലോൺ,ഒന്നുമില്ല,0,Poverty Alleviation
+Social Studies,History,ഹിറ്റ്‌ലറുടെ ജർമ്മനിയിൽ ജൂതന്മാരെ കൂട്ടക്കൊല ചെയ്ത നാസി ക്യാമ്പുകളെ എന്താണ് വിളിച്ചിരുന്നത്?,തടങ്കൽ പാളയങ്ങൾ / കോൺസെൻട്രേഷൻ ക്യാമ്പുകൾ (Concentration Camps),വിദ്യാലയങ്ങൾ,ആശുപത്രികൾ,ഫാക്ടറികൾ,0,World History
+Social Studies,Geography,ഇന്ത്യയുടെ മൊത്തത്തിലുള്ള ഭൂപ്രകൃതിയെ പ്രധാനമായും എത്ര ഭൗതിക വിഭാഗങ്ങളായി തിരിക്കാം?,4,6 (ആറ് ഭൗതിക വിഭാഗങ്ങൾ),8,10,1,Physical Divisions of India
