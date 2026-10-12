@@ -1,0 +1,91 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Relations and Functions,സഞ്ചം A ൽ 3 ഘടകങ്ങളും സഞ്ചം B ൽ 2 ഘടകങ്ങളും ഉണ്ടെങ്കിൽ A ൽ നിന്ന് B യിലേക്കുള്ള ബന്ധങ്ങളുടെ (Relations) ആകെ എണ്ണം എത്ര?,8,16,32,64,3,Relations and Functions
+Mathematics,Inverse Trigonometric Functions,sin^(-1)(1/2) ന്റെ പ്രധാന വില (Principal value) എന്താണ്?,pi/3,pi/6,pi/4,pi/2,1,Inverse Trigonometry
+Mathematics,Matrices,A എന്നത് 2x2 കോശത്തിലുള്ള ചതുര മാട്രിക്സും det(A) = 5 ഉം ആയാൽ det(5A) ന്റെ വില എത്ര?,25,125,5,625,1,Matrices and Determinants
+Mathematics,Continuity and Differentiability,f(x) = |x| എന്ന ഫങ്ഷൻ x = 0 എന്ന ബിന്ദുവിൽ എങ്ങനെയുള്ളതാണ്?,തുടർച്ചയുള്ളതും ഡിഫറൻഷബിൾ ആയതുമാണ്,തുടർച്ചയുള്ളതാണ് എന്നാൽ ഡിഫറൻഷബിൾ അല്ല,തുടർച്ചയില്ലാത്തത്,മറ്റൊന്ന്,1,Continuity and Differentiability
+Mathematics,Integrals,int e^x (1 + x) / cos^2(e^x * x) dx ന്റെ സമാകലിത (Integration) വില എത്ര?,tan(e^x * x) + C,-tan(e^x * x) + C,cot(e^x * x) + C,മറ്റൊന്ന്,0,Integral Calculus
+Mathematics,Differential Equations,(dy/dx) + y cot x = 2x + x^2 cot x എന്ന അവകല സമവാക്യത്തിന്റെ ഇന്റഗ്രേറ്റിംഗ് ഫാക്ടർ (Integrating Factor, IF) എന്താണ്?,sin x,cos x,tan x,sec x,0,Differential Equations
+Mathematics,Vectors,a ഉം b ഉം പരസ്പരം ലംബമായ (Perpendicular) വെക്ടറുകൾ ആയാൽ അവയുടെ ഡോട്ട് ഗുണനഫലം (Dot Product) എത്രയായിരിക്കും?,1,-1,0,അനന്തം,2,Vector Algebra
+Mathematics,Three Dimensional Geometry,ത്രിത്രിമിത ജ്യാമിതിയിൽ ഒരു രേഖയുടെ ഡയറക്ഷൻ കൊസൈനുകളുടെ (Direction Cosines) വർഗ്ഗങ്ങളുടെ തുക എത്രയാണ്?,0,1,2,നിശ്ചയിക്കപ്പെട്ടിട്ടില്ല,1,3D Geometry
+Mathematics,Linear Programming,ലീനിയർ പ്രോഗ്രാമിംഗ് പ്രശ്നങ്ങളിൽ ഒബ്ജക്റ്റീവ് ഫങ്ഷന്റെ ഒപ്റ്റിമൽ വിലകൾ എവിടെയാണ് കാണപ്പെടുന്നത്?,കേന്ദ്രത്തിൽ,ഗ്രാഫിന്റെ മൂല ബിന്ദുക്കളിൽ (Corner points),അക്ഷങ്ങളിൽ മാത്രം,മറ്റൊന്ന്,1,Linear Programming
+Mathematics,Probability,P(A) = 0.6, P(B) = 0.3 ഉം P(A ഛേദം B) = 0.2 ഉം ആയാൽ P(A/B) ന്റെ വില എത്ര?,2/3,1/3,3/4,1/2,0,Probability Basics
+English,Grammar,'Had I known you were coming, I would have received you.' ഇത് ഏത് തരം Conditional ആണ്?,First Conditional,Second Conditional,Third Conditional (Inverted),Zero Conditional,2,Conditionals
+English,Vocabulary,'Meticulous' എന്ന വാക്കിന്റെ സമാനപദം (Synonym) ഏത്?,Careless,Careful / Thorough (സൂക്ഷ്മമായ),Slow,Dull,1,Synonyms
+English,Grammar,'She insisted ___ going there.' ശരിയായ Preposition തിരഞ്ഞെടുക്കുക.,on,in,at,for,0,Prepositions
+English,Plurals,'Criterion' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Criterions,Criteria,Criterias,Criterion,1,Plural Forms
+English,Pronouns,'___ of the two candidates was selected.' ശരിയായ Determiner തിരഞ്ഞെടുക്കുക.,Neither,Every,All,Both,0,Determiners
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Lieutenant,Leutinant,Lietenant,Lieutanent,0,Spelling Accuracy
+English,Tenses,'By next year, she will have completed her graduation.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Future Continuous,Future Perfect (ഭാവി പൂർണ്ണ കാലം),Present Perfect,Past Perfect,1,Verb Tenses
+English,Action Verbs,'Strive' എന്ന ക്രിയയുടെ Past Participle (V3) രൂപം ഏത്?,Strived,Striven,Striving,Strives,1,Verb Forms
+English,Question Words,'___ brilliant the performance was!' ആശ്ചര്യവാചകങ്ങളിൽ ഏത് പദമാണ് ഉപയോഗിക്കുന്നത്?,What,How,Which,Whose,1,Exclamatory Sentences
+English,Rhyming Words,'MIND' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Find,Kind,Wind,All of these (എല്ലാം ശരിയാണ്),3,Rhyming Words
+Physics,Electric Charges and Fields,സ്ഥിരവൈദ്യുത മണ്ഡലത്തിൽ രണ്ട് ചാർജുകൾ തമ്മിലുള്ള ബലം കണക്കാക്കാൻ സഹായിക്കുന്ന നിയമം ഏത്?,ഗോസ് നിയമം,കൂളോംബ് നിയമം (Coulomb's Law),ആമ്പിയർ നിയമം,ഫാരഡെ നിയമം,1,Electrostatics
+Physics,Current Electricity,ചൂട് വർദ്ധിക്കുമ്പോൾ അർദ്ധചാഹകങ്ങളുടെ (Semiconductor) വൈദ്യുത പ്രതിരോധം (Resistance) എങ്ങനെ മാറുന്നു?,വർദ്ധിക്കുന്നു,കുറയുന്നു (Decreases),മാറ്റമില്ലാതെ നിൽക്കുന്നു,പൂജ്യമാകുന്നു,1,Current Electricity
+Physics,Moving Charges and Magnetism,കാന്തികക്ഷേത്രത്തിലൂടെ ചലിക്കുന്ന ചാർജ്ഡ് കണിക അനുഭവിക്കുന്ന ബലത്തെ എന്താണ് വിളിക്കുന്നത്?,കൂളോംബ് ബലം,ലോറന്റ്സ് ബലം (Lorentz Force),ഗുരുത്വാകർഷണ ബലം,കേന്ദ്രാഭിമുഖ ബലം,1,Magnetism
+Physics,Electromagnetic Induction,വൈദ്യുതകാന്തിക പ്രേരണ നിയമങ്ങൾ (Laws of Electromagnetic Induction) ആവിഷ്കരിച്ചത് ആര്?,ഓഹം,ഫാരഡെ (Michael Faraday),ജൂൾ,ലെൻസ്,1,EMI
+Physics,Alternating Current,എ.സി സർക്യൂട്ടുകളിൽ പ്യൂർ ഇൻഡക്ടർ (Pure Inductor) കാരണം വോൾട്ടേജിന് എത്ര കോൺ പിന്നിലാണ് കറന്റ് നിൽക്കുന്നത്?,0 ഡിഗ്രി,90 ഡിഗ്രി (pi/2 radians),180 ഡിഗ്രി,45 ഡിഗ്രി,1,Alternating Current
+Physics,Ray Optics,പ്രകാശത്തിന്റെ പൂർണ്ണ ആന്തരീക പ്രതിഫലനം (Total Internal Reflection) നടക്കാൻ പ്രകാശം ഏത് മാധ്യമത്തിൽ നിന്ന് ഏതിലേക്ക് സഞ്ചരിക്കണം?,വ്യതിരിക്ത മാധ്യമത്തിൽ നിന്ന് മറ്റൊന്നിലേക്ക്,സാന്ദ്രത കൂടിയ മാധ്യമത്തിൽ നിന്ന് കുറഞ്ഞ മാധ്യമത്തിലേക്ക് (Denser to Rarer),തുല്യ മാധ്യമത്തിലൂടെ,മറ്റൊന്ന്,1,Ray Optics
+Physics,Wave Optics,യംഗിന്റെ ഡബിൾ സ്ലിറ്റ് പരീക്ഷണത്തിൽ ഫ്രിഞ്ചിന്റെ വീതി എന്തിന് നേർപ്രമാണത്തിലാണ്?,തരംഗദൈർഘ്യം (Wavelength / lambda),അകലം,വലിപ്പം,വേഗത,0,Wave Optics
+Physics,Dual Nature of Radiation and Matter,ഡി-ബ്രോഗ്ലി തരംഗദൈർഘ്യത്തിന്റെ (De Broglie Wavelength) സമവാക്യം ഏത്?,lambda = h / p,lambda = h * p,lambda = p / h,lambda = m * c,0,Dual Nature
+Physics,Atoms,ബോർ മാതൃകയനുസരിച്ച് ഹൈഡ്രജൻ അണുവിലെ ഇലക്ട്രോണിന്റെ കോണീയ ആക്കം എന്തിന്റെ പൂർണ്ണ ഗുണിതമാണ്?,h / (2 * pi),h / pi,2 * pi * h,h,0,Atomic Physics
+Physics,Semiconductor Electronics,പി-എൻ ജങ്ഷൻ ഡയോഡിന്റെ ഫോർവേഡ് ബയാസ് (Forward Bias) അവസ്ഥയിൽ പ്രതിരോധം എങ്ങനെയുണ്ടാകും?,വളരെ കൂടുതൽ,വളരെ കുറവ് / പൂജ്യം (Very low / zero resistance),അനന്തം,മാറ്റമില്ലാത്തത്,1,Semiconductors
+Chemistry,Solutions,ലായനികളുടെ സാന്ദ്രതയും താപനിലയും തമ്മിലുള്ള ബന്ധം വിശദീകരിക്കുന്ന പ്രധാന നിയമം ഏത്?,ഹെൻട്രി നിയമം (Henry's Law),റൗൾട്ട് നിയമം,ബോയിൽ നിയമം,ചാൾസ് നിയമം,0,Solutions Chemistry
+Chemistry,Electrochemistry,സ്റ്റാൻഡേർഡ് ഹൈഡ്രജൻ ഇലക്ട്രോഡിന്റെ (SHE) മാനക പൊട്ടൻഷ്യൽ വില എത്രയായി കണക്കാക്കുന്നു?,0.00 V,1.00 V,-1.00 V,0.50 V,0,Electrochemistry
+Chemistry,Chemical Kinetics,പൂജ്യാംഗ പ്രതിപ്രവർത്തനത്തിന്റെ (Zero Order Reaction) വേഗത എന്തിനെ ആശ്രയിച്ചിരിക്കുന്നു?,പ്രതിപ്രവർത്തകങ്ങളുടെ സാന്ദ്രതയെ,താപനിലയെ,സാന്ദ്രതയെ ആശ്രയിച്ചിരിക്കുന്നു (Independent of concentration),ഉൽപ്പന്നങ്ങളെ,2,Chemical Kinetics
+Chemistry,d and f Block Elements,സംക്രമണ മൂലകങ്ങളുടെ (Transition Elements) പൊതുവായ ഇലക്ട്രോണിക് വിന്യാസം ഏത്?,(n-1)d^(1-10) ns^(1-2),ns^2 np^6,(n-1)d^10 ns^2,ns^(1-2),0,d-Block Elements
+Chemistry,Coordination Compounds,കോർഡിനേഷൻ സംയുക്തങ്ങളിൽ കേന്ദ്ര ലോഹ അണുവുമായി ബന്ധിപ്പിച്ചിരിക്കുന്ന ലിഗാൻഡുകളുടെ എണ്ണത്തെ എന്താണ് വിളിക്കുന്നത്?,കോർഡിനേഷൻ സംഖ്യ (Coordination Number),ഓക്സിഡേഷൻ നമ്പർ,അണുസംഖ്യ,മോൾ സംഖ്യ,0,Coordination Compounds
+Chemistry,Haloalkanes and Haloarenes,SN1 പ്രതിപ്രവർത്തനത്തിന്റെ വേഗത പ്രധാനമായും എന്തിന്റെ സ്ഥിരതയെ ആശ്രയിച്ചിരിക്കുന്നു?,കാർബോകാറ്റയാൻ (Carbocation stability),കാർബാനിയൻ,സ്വതന്ത്ര റാഡിക്കൽ,തന്മാത്ര,0,Haloalkanes
+Chemistry,Alcohols Phenols and Ethers,ഇഥനോളിനെ ഉയർന്ന താപനിലയിൽ സ്യൂഫ്യൂരിക് ആസിഡുമായി പ്രവർത്തിപ്പിച്ചാൽ ലഭിക്കുന്ന പ്രധാന ഉൽപ്പന്നം ഏത്?,ഇഥീൻ / ആൽക്കെയ്ൻ (Ethene / Alkene),ഇഥേൻ,ഇഥൈൻ,ഡൈഇഥൈൽ ഈതർ,0,Alcohols and Ethers
+Chemistry,Aldehydes Ketones and Carboxylic Acids,കാനിസാരോ പ്രതിപ്രവർത്തനത്തിൽ (Cannizzaro Reaction) പങ്കെടുക്കാത്ത ആൽഡിഹൈഡ് ഏത്?,ഫോർമാൽഡിഹൈഡ്,ബെൻസാൽഡിഹൈഡ്,അസറ്റാൽഡിഹൈഡ് (Acetaldehyde - lacks alpha-hydrogen),ട്രൈക്ലോറോ അസറ്റാൽഡിഹൈഡ്,2,Aldehydes and Ketones
+Chemistry,Amines,ജലീയ മാധ്യമത്തിൽ അമൈനുകളുടെ ബേസ് സ്വഭാവത്തിന്റെ (Basicity) ക്രമം ഏതാണ്?,3^° > 2^° > 1^° > NH3,2^° > 3^° > 1^° > NH3 (Secondary > Tertiary > Primary),1^° > 2^° > 3^°,NH3 > 1^° > 2^° > 3^°,1,Amines
+Chemistry,Biomolecules,ആർ.എൻ.എ (RNA) യിൽ അടങ്ങിയിരിക്കുന്ന പ്രധാന ശർക്കര ഘടകം (Sugar) ഏത്?,ഡിഓക്സിറൈബോസ്,റൈബോസ് ശർക്കര (Ribose sugar),ഗ്ലുക്കോസ്,ഫ്രക്ടോസ്,1,Biomolecules
+Biology,Reproduction in Organisms,സസ്യ-ജന്തു ജാതികളിൽ ലൈംഗിക പ്രജനന വേളയിൽ ഗമേറ്റ് സംയോജനത്തിന് കാരണമാകുന്ന പ്രക്രിയ ഏത്?,ഗമേറ്റ് കൈമാറ്റവും ഫലീകരണവും (Gamete transfer and Fertilization),വിഭജനം മാത്രം,മുകുളനം മാത്രം,ബീജോത്പാദനം,0,Reproduction
+Biology,Sexual Reproduction in Flowering Plants,ആൻജിയോസ്പേം സസ്യങ്ങളിലെ എംബ്രിയോ സാക്കിൽ (Embryo Sac) സാധാരണയായി കാണപ്പെടുന്ന കോശങ്ങളുടെ എണ്ണം എത്ര?,5 കോശങ്ങൾ,7 കോശങ്ങൾ (7-celled and 8-nucleate),8 കോശങ്ങൾ,10 കോശങ്ങൾ,1,Plant Reproduction
+Biology,Human Reproduction,മനുഷ്യ സ്ത്രീകളിലെ ഫെല്ലോപിയൻ ട്യൂബിൽ ഫലീകരണം (Fertilization) പ്രധാനമായും നടക്കുന്ന ഭാഗം ഏത്?,ആമ്പുല്ല-ഇസ്തുമസ് ജങ്ഷൻ (Ampulla-isthmus junction),ഗർഭപാത്രം,യോനി,അണ്ഡാശയം,0,Human Reproduction
+Biology,Reproductive Health,ഇന്ത്യയിൽ ഗർഭച്ഛിദ്രം നിയമവിധേയമാക്കിയ MTP നിയമം നിലവിൽ വന്ന വർഷം ഏത്?,1971 (MTP Act 1971),1950,1985,1991,0,Reproductive Health
+Biology,Principles of Inheritance and Variation,മെൻഡലിന്റെ ഡൈഹൈബ്രിഡ് ക്രോസ്സ് (Dihybrid Cross) ഫിനോടൈപ്പിക് അനുപാതം എത്രയാണ്?,3:1,9:3:3:1 (Phenotypic ratio),1:2:1,9:4:3,1,Genetics
+Biology,Molecular Basis of Inheritance,ഡി.എൻ.എ (DNA) ഇരട്ട കോണിപ്പാലിൽ അഡിനിൻ എപ്പോഴും ഏത് നൈട്രജൻ ബേസുമായാണ് ബന്ധപ്പെടുന്നത്?,തൈമിൻ (Thymine with 2 H-bonds),സൈറ്റോസിൻ,ഗ്വനൈൻ,യുറാസിൽ,0,Molecular Genetics
+Biology,Evolution,ഡാർവിന്റെ സ്വാഭാവിക തിരഞ്ഞെടുപ്പ് സിദ്ധാന്തത്തിന്റെ (Theory of Natural Selection) പ്രധാന അടിത്തറ എന്തായിരുന്നു?,അതിജീവന പോരാട്ടം (Survival of the Fittest),പെട്ടെന്നുള്ള മ്യൂട്ടേഷൻ,ഉപയോഗവും ഉപയോഗശൂന്യതയും,മറ്റൊന്ന്,0,Evolution
+Biology,Human Health and Disease,എയ്ഡ്സ് (AIDS) രോഗബാധ നിർണ്ണയിക്കാൻ സഹായിക്കുന്ന പ്രധാന വൈദ്യശാസ്ത്ര പരിശോധന ഏത്?,എലൈസ പരിശോധന (ELISA Test),വിഡാൽ ടെസ്റ്റ്,പി.സി.ആർ,മലേറിയ സ്ലൈഡ്,0,Human Diseases
+Biology,Strategies for Enhancement in Food Production,സസ്യങ്ങളിൽ സങ്കരയിനങ്ങൾ (Hybrid varieties) ഉണ്ടാക്കുന്നതിനായി ബ്രീഡിംഗിൽ ഉപയോഗിക്കുന്ന പ്രധാന രീതി ഏത്?,ഇമാസ്ക്കുലേഷനും ബാഗിങ്ങും (Emasculation and Bagging),കാട് വെട്ടൽ,രാസവള പ്രയോഗം,വെള്ളം കെട്ടൽ,0,Plant Breeding
+Biology,Microbes in Human Welfare,പെനിസിലിൻ എന്ന ആന്റിബയോട്ടിക് ആദ്യമായി വേർതിരിച്ചെടുത്തത് ആരിൽ നിന്നാണ്?,ഫംഗസ് / പൂപ്പൽ (Penicillium notatum),ബാക്ടീരിയ,വൈറസ്,ആൽഗ,0,Microbiology
+Mathematics,Relations and Functions,R = {(x, y) : x + y = 5} എന്ന ബന്ധം സ്വാഭാവിക സംഖ്യകളിൽ (Natural Numbers) എങ്ങനെയുള്ളതാണ്?,റിഫ്ലെക്സീവ്,സിമ്മട്രിക് എന്നാൽ റിഫ്ലെക്സീവ് അല്ല,പരസ്പര വിരുദ്ധം,മറ്റൊന്ന്,1,Relations
+Mathematics,Inverse Trigonometric Functions,tan^(-1)(1) + cos^(-1)(-1/2) + sin^(-1)(-1/2) ന്റെ വില എത്ര?,pi/4,3pi/4,pi/2,5pi/4,1,Inverse trigonometry
+Mathematics,Matrices,A എന്നത് ഒരു ത്രീകോണ മാട്രിക്സും det(A) = 4 ഉം ആയാൽ adj(A) ന്റെ ഡിറ്റർമിനന്റ് എത്ര?,4,16,64,1,1,Matrices
+Mathematics,Continuity and Differentiability,f(x) = x^3 - 3x എന്ന ഫങ്ഷന്റെ ലോക്കൽ മാക്സിമം (Local Maxima) വില എത്ര?,2,-2,0,4,0,Applications of Derivatives
+Mathematics,Integrals,int dx / (x^2 + a^2) ന്റെ സമാകലിത വില എന്താണ്?,(1/a) * tan^(-1)(x/a) + C,ln|x + a| + C,sin^(-1)(x/a) + C,(1/(2a)) * ln|(x-a)/(x+a)| + C,0,Integrals
+Mathematics,Differential Equations,dy/dx = (1 + y^2) / (1 + x^2) എന്ന അവകല സമവാക്യത്തിന്റെ പൊതു പരിഹാരം ഏത്?,y = x + C,(y - x) / (1 + xy) = C,tan^(-1)(y) = tan^(-1)(x) + C,log(y) = log(x) + C,2,Differential Equations
+Mathematics,Vectors,a = 2i + j + k ഉം b = i - j + 2k ഉം ആയാൽ a ക്രോസ്സ് b യുടെ മാഗ്നിറ്റ്യൂഡ് എത്ര?,sqrt(26),3*sqrt(3),5,6,1,Vector Cross Product
+Mathematics,Three Dimensional Geometry,രണ്ട് രേഖകളുടെ ഡയറക്ഷൻ കൊസൈനുകൾ l1, m1, n1 ഉം l2, m2, n2 ഉം ആയാൽ അവ ലംബമാകാനുള്ള നിബന്ധന എന്ത്?,l1*l2 + m1*m2 + n1*n2 = 0,l1/l2 = m1/m2 = n1/n2,l1+l2 = 0,മറ്റൊന്ന്,0,3D Geometry
+Mathematics,Linear Programming,ലീനിയർ പ്രോഗ്രാമിംഗ് പ്രശ്നങ്ങളിൽ ഒബ്ജക്റ്റീവ് ഫങ്ഷന്റെ പരമാവധി വില (Maximum value) എവിടെയാണ് ഉണ്ടാകുക?,കേന്ദ്രത്തിൽ മാത്രം,ഗ്രാഫിന്റെ മൂല ബിന്ദുക്കളിൽ (Corner Points),അക്ഷങ്ങളിൽ മാത്രം,ഏതെങ്കിലും ബിന്ദുവിൽ,1,Linear Programming
+Mathematics,Probability,രണ്ട് ഡൈസുകൾ ഒരേസമയം എറിയുമ്പോൾ രണ്ടിലും ഇരട്ട സംഖ്യകൾ (Even numbers) വരാനുള്ള സാധ്യത എത്ര?,1/4,1/2,1/6,1/36,0,Probability
+English,Grammar,'Scarcely had I arrived at the station ___ the train left.' ശരിയായ Conjunction തിരഞ്ഞെടുക്കുക.,than,when,then,before,1,Conjunctions
+English,Vocabulary,'Transient' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Permanent (ശാശ്വതം / എക്കാലത്തെയും),Temporary,Fleeting,Brief,0,Opposite Words
+English,Grammar,'He talks as if he ___ everything.' ശരിയായ ക്രിയ തിരഞ്ഞെടുക്കുക.,know,knew (Hypothetical),known,has known,1,Subjunctive Mood
+English,Plurals,'Alumnus' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Alumnuses,Alumni (അലുമ്നായി),Alumnae,Alumnu,1,Plural Forms
+English,Pronouns,'___ of the students failed the exam.' ശരിയായ Determiner തിരഞ്ഞെടുക്കുക.,None,Every,All,Both,0,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Millennium,Milennium,Milenium,Milleniumm,0,Spelling Accuracy
+English,Tenses,'By next week, she will have been working here for 5 years.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Future Perfect Continuous (ഭാവി പൂർണ്ണ തുടർച്ച കാലം),Future Continuous,Present Perfect,Past Perfect,0,Verb Tenses
+English,Action Verbs,'Tear' എന്ന ക്രിയയുടെ Past Participle രൂപം ഏത്?,Tore,Torn,Tearing,Tears,1,Verb Forms
+English,Question Words,'___ clever she is!' ആശ്ചര്യവാചകങ്ങളിൽ ഏത് പദമാണ് ഉപയോഗിക്കുന്നത്?,What,How,Which,Whose,1,Exclamations
+English,Rhyming Words,'Sight' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Night,Light,Right,All of these (എല്ലാം ശരിയാണ്),3,Rhyming Words
+Physics,Electric Charges and Fields,ഇലക്ട്രിക് ഫ്ലക്സിന്റെ (Electric Flux) എസ്.ഐ യൂണിറ്റ് (SI Unit) എന്താണ്?,N * m^2 / C,V * m,N / C,A * s,0,Electrostatics
+Physics,Current Electricity,സെല്ലിന്റെ ആന്തരിക പ്രതിരോധം (Internal Resistance) എന്തിനെ ആശ്രയിച്ചിരിക്കുന്നില്ല?,ഇലക്ട്രോഡുകൾ തമ്മിലുള്ള അകലം,ഇലക്ട്രോലൈറ്റിന്റെ സാന്ദ്രത,ബാഹ്യ പ്രതിരോധം (External resistance),ഇലക്ട്രോഡിന്റെ വിസ്തീർണ്ണം,2,Current Electricity
+Physics,Moving Charges and Magnetism,സൈക്ലോട്രോൺ ഉപയോഗിച്ച് താഴെ പറയുന്നവയിൽ ഏതാണ് ത്വരിതപ്പെടുത്താൻ കഴിയാത്തത്?,പ്രോട്ടോൺ,അയോണുകൾ,ന്യൂട്രോണുകൾ (Neutral neutrons cannot be accelerated),ഇലക്ട്രോൺ,2,Magnetism
+Physics,Electromagnetic Induction,ലെൻസിന്റെ നിയമം (Lenz's Law) ഏത് തത്വത്തെ അടിസ്ഥാനമാക്കിയുള്ളതാണ്?,ഊർജ്ജ സംരക്ഷണ നിയമം (Conservation of Energy),ചാർജ് സംരക്ഷണം,ആക്ക സംരക്ഷണ നിയമം,വസ്തുമാത്ര സംരക്ഷണം,0,EMI
+Physics,Alternating Current,എൽ.സി.ആർ സർക്യൂട്ടിൽ (LCR Circuit) അനുനാദം (Resonance) നടക്കുമ്പോൾ ഇംപെഡൻസ് (Impedance, Z) എത്രയായിരിക്കും?,പരമാവധി,കുറഞ്ഞതും പ്രതിരോധത്തിന് തുല്യവുമായ അളവ് (Minimum, Z = R),പൂജ്യം,അനന്തം,1,Alternating Current
+Physics,Ray Optics,സംയുക്ത സൂക്ഷ്മദർശിനിയുടെ (Compound Microscope) ലെൻസുകളുടെ ഫോക്കസ് ദൂരങ്ങൾ എങ്ങനെയുണ്ടാകണം?,രണ്ടും വലുത്,ഒബ്ജക്റ്റീവ് ലെൻസ് ചെറുതും ഐപീസ് വലുതും (Objective small, Eyepiece large),രണ്ടും ചെറുത്,മറ്റൊന്ന്,1,Ray Optics
+Physics,Wave Optics,പ്രകാശത്തിന്റെ ധ്രൂവീകരണം (Polarization) ഏത് തരം തരംഗങ്ങളിൽ മാത്രമാണ് നടക്കുന്നത്?,അനുദൈർഘ്യ തരംഗങ്ങൾ,അനുപ്രസ്ഥ തരംഗങ്ങൾ (Transverse Waves),എല്ലാ തരംഗങ്ങളിലും,ശബ്ദ തരംഗങ്ങൾ,1,Wave Optics
+Physics,Dual Nature of Radiation and Matter,ഫോട്ടോ ഇലക്ട്രിക് പ്രഭാവത്തിൽ പുറത്തുവരുന്ന ഇലക്ട്രോണുകളുടെ പരമാവധി ഗതികോർജ്ജം എന്തിനെ ആശ്രയിച്ചിരിക്കുന്നു?,പ്രകാശത്തിന്റെ തീവ്രത,പ്രകാശത്തിന്റെ ആവൃത്തി (Frequency of Incident Light),പ്രകാശത്തിന്റെ വേഗത,മറ്റൊന്ന്,1,Dual Nature
+Physics,Atoms,ഹൈഡ്രജൻ വർണ്ണപടത്തിലെ ലൈമൻ സീരീസ് (Lyman Series) ഏത് മേഖലയിലാണ് കാണപ്പെടുന്നത്?,അൾട്രാ വയലറ്റ് മേഖല (Ultraviolet Region),ദൃശ്യ മേഖല,ഇൻഫ്രാറെഡ് മേഖല,എക്സ്-റേ,0,Atomic Physics
+Physics,Semiconductor Electronics,എൻ-ടൈപ്പ് അർദ്ധചാഹകങ്ങളിൽ പ്രധാന ചാർജ് വാഹകർ (Majority Charge Carriers) ആരാണ്?,ഹോളുകൾ,ഇലക്ട്രോണുകൾ (Electrons),പ്രോട്ടോണുകൾ,അയോണുകൾ,1,Semiconductors
+Chemistry,Solutions,ആവിയാകാത്ത ദ്രാവകത്തിൽ ബാഷ്പശീലമുള്ള ലായകം ചേർക്കുമ്പോൾ ലായനിയുടെ വാഷ്പമർദ്ദം (Vapour Pressure) എന്ത് സംഭവിക്കുന്നു?,വർദ്ധിക്കുന്നു,കുറയുന്നു (Decreases),മാറ്റമില്ലാതെ നിൽക്കുന്നു,പൂജ്യമാകുന്നു,1,Solutions
+Chemistry,Electrochemistry,ഫാരഡെയുടെ വൈദ്യുത വിശകലന നിയമങ്ങൾ പ്രകാരം w = ? ശരിയായ സമവാക്യം ഏത്?,w = Z * I * t,E = mc^2,PV = nRT,PV = constant,0,Electrochemistry
+Chemistry,Chemical Kinetics,പ്രതിപ്രവർത്തന വേഗത സ്ഥിരാങ്കം (Rate Constant, k) പ്രധാനമായും എന്തിനെ മാത്രമാണ് ആശ്രയിച്ചിരിക്കുന്നത്?,താപനിലയെ (Temperature),സാന്ദ്രതയെ,മർദ്ദത്തെ,ഉൽപ്പന്നങ്ങളെ,0,Chemical Kinetics
+Chemistry,d and f Block Elements,ലന്തനൈഡ് സങ്കോചത്തിന് (Lanthanoid Contraction) പ്രധാന കാരണം എന്ത്?,4f ഇലക്ട്രോണുകളുടെ കുറഞ്ഞ ഷീൽഡിങ് പ്രഭാവം (Poor shielding of 4f electrons),5d ഇലക്ട്രോണുകൾ,ന്യൂക്ലിയസ് ചാർജ് കുറയുന്നത്,മറ്റൊന്ന്,0,d-Block Elements
+Chemistry,Coordination Compounds,CO (കാർബൺ മോണോക്സൈഡ്) ഒരു ലിഗാൻഡ് എന്ന നിലയിൽ എങ്ങനെയുള്ളതാണ്?,ഏകദന്തിക ലിഗാൻഡ് / ന്യൂട്രൽ (Monodentate / neutral strong field ligand),ദ്വിദന്തിക ലിഗാൻഡ്,ത്രിദന്തിക ലിഗാൻഡ്,അയണീകരിച്ചത്,0,Coordination Compounds
+Chemistry,Haloalkanes and Haloarenes,ക്ലോറോബെൻസീൻ സോഡിയവും അൽക്കൈൽ ഹാലൈഡുമായി പ്രവർത്തിക്കുന്ന വുർട്സ്-ഫിറ്റിഗ് പ്രതിപ്രവർത്തനത്തിലൂടെ ലഭിക്കുന്ന പ്രധാന ഉൽപ്പന്നം ഏത്?,ടൊർബ്യൂൻ / അൽക്കൈൽ ബെൻസീൻ (Toluene / Alkyl benzene),ബെൻസീൻ,ഡിഫൈനിൽ,ഫീനോൾ,0,Haloarenes
+Chemistry,Alcohols Phenols and Ethers,ഫീനോളിനെ നൈട്രിക് ആസിഡുമായി പ്രവർത്തിപ്പിച്ചാൽ ലഭിക്കുന്ന പ്രധാന സ്ഫോടക പദാർത്ഥം ഏത്?,പिक्रിക് ആസിഡ് (Picric acid / 2,4,6-trinitrophenol),സാലിസിലിക് ആസിഡ്,ബെൻസോയിക് ആസിഡ്,നാഫ്തോൾ,0,Phenols Chemistry
+Chemistry,Aldehydes Ketones and Carboxylic Acids,ഫെലിംഗ് ലായനിയുമായി (Fehling's Solution) പ്രവർത്തിച്ച് ചുവന്ന അവക്ഷിപ്തം നൽകുന്ന സംയുക്തം ഏത്?,ബെൻസാൽഡിഹൈഡ്,അസറ്റാൽഡിഹൈഡ് (Aliphatic aldehydes),അസെട്ടോൺ,ഈതർ,1,Aldehydes
+Chemistry,Amines,പ്രാഥമിക അമൈനുകളെ തിരിച്ചറിയാൻ സഹായിക്കുന്ന പ്രധാന പരിശോധന ഏത്?,കാർബിലാമൈൻ പരിശോധന (Carbylamine Test),ലൂക്കാസ് ടെസ്റ്റ്,ടോളൻസ് ടെസ്റ്റ്,ഫെഡിങ് ടെസ്റ്റ്,0,Amines
+Chemistry,Biomolecules,വിറ്റാമിൻ സി യുടെ (Vitamin C) രാസനാമം എന്താണ്?,അസ്കോർബിക് ആസിഡ് (Ascorbic Acid),റെറ്റിനോൾ,തയാമിൻ,ടോകോഫെറോൾ,0,Biomolecules
