@@ -1,0 +1,114 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Place Value,What is the place value of 6 in 46,582,600,6000,60,60000,1,Large Number Place Value
+Mathematics,Place Value,Which is the standard form of 50000 + 4000 + 300 + 20 + 1,54321,504321,540321,543201,0,Expanded Form
+Mathematics,Numbers,Which is the smallest 5-digit number,10000,99999,10001,11111,0,Number Properties
+Mathematics,Addition,What is 4,325 + 2,143,6,468,6,458,6,368,6,568,0,4-Digit Addition
+Mathematics,Subtraction,What is 8,500 - 3,250,5,250,5,350,5,150,5,200,0,4-Digit Subtraction
+Mathematics,Multiplication,What is 125 × 8,1000,1050,1200,950,0,Multiplication Skills
+Mathematics,Multiplication,What is 45 × 11,495,455,505,485,0,Multiplication Skills
+Mathematics,Division,What is 144 ÷ 12,11,12,13,14,1,Division Mastery
+Mathematics,Division,What is the quotient when 250 is divided by 5,40,50,60,25,1,Division Mastery
+Mathematics,Division,What is the remainder when 17 is divided by 3,1,2,0,3,1,Division with Remainder
+Mathematics,Factors,Which of these is a factor of 24,5,7,8,9,2,Factors and Multiples
+Mathematics,Multiples,Which of these is a multiple of 9,28,36,42,50,1,Factors and Multiples
+Mathematics,Fractions,What is 38 + 28,58,516,18,68,0,Fraction Addition
+Mathematics,Fractions,Which of these is an equivalent fraction of 12,23,24,35,47,1,Equivalent Fractions
+Mathematics,Decimals,How is 310 written as a decimal,0.03,0.3,3.0,0.33,1,Decimals
+Mathematics,Decimals,In 4.56, what is the place value of 6,Tenths,Hundredths,Thousandths,Ones,1,Decimal Place Value
+Mathematics,Geometry,An angle less than 90 degrees is called an,Right angle,Obtuse angle,Acute angle,Straight angle,2,Angles & Geometry
+Mathematics,Geometry,An angle that measures exactly 90 degrees is a,Acute angle,Right angle,Obtuse angle,Reflex angle,1,Angles & Geometry
+Mathematics,Geometry,How many lines of symmetry does a square have,1,2,4,8,2,Symmetry
+Mathematics,Perimeter,What is the perimeter of a square with side 6 cm,12 cm,24 cm,36 cm,18 cm,1,Perimeter Calculation
+Mathematics,Area,What is the area of a rectangle with length 5 cm and breadth 4 cm,18 sq cm,20 sq cm,9 sq cm,22 sq cm,1,Area Calculation
+Mathematics,Time,How many seconds are in 5 minutes,120,300,240,360,1,Time Conversion
+Mathematics,Time,Convert 3 hours into minutes,120 minutes,180 minutes,200 minutes,150 minutes,1,Time Conversion
+Mathematics,Measurement,Convert 4 meters into centimeters,40 cm,400 cm,4000 cm,40000 cm,1,Unit Conversion
+Mathematics,Measurement,How many grams are in 3.5 kilograms,350 g,3500 g,35000 g,35 g,1,Unit Conversion
+Mathematics,Measurement,How many milliliters are in 2 liters,200 ml,2000 ml,20000 ml,20 ml,1,Unit Conversion
+Mathematics,Money,Convert 750 paise into Rupees,Rs 7.50,Rs 75.00,Rs 0.75,Rs 750.00,0,Money Conversion
+Mathematics,Patterns,Complete the sequence 2, 4, 8, 16, 32, _,48,64,50,60,1,Geometric Sequences
+Mathematics,Word Problems,A bus carries 45 passengers. How many passengers in 12 buses,500,540,520,560,1,Applied Word Problems
+Mathematics,Word Problems,Ria spends Rs 120 per day. How much does she spend in a week,Rs 720,Rs 840,Rs 800,Rs 900,1,Applied Word Problems
+Science,Plants,The green color of plant leaves is due to the presence of,Melanin,Chlorophyll,Hemoglobin,Xanthophyll,1,Photosynthesis
+Science,Plants,Unwanted plants that grow alongside crops are called,Herbs,Shrubs,Weeds,Climbers,2,Agricultural Science
+Science,Plants,Which trees do not shed all their leaves at once in winter,Deciduous trees,Evergreen trees,Desert plants,Aquatic plants,1,Plant Adaptation
+Science,Plants,Cactus plants store water in their fleshy,Leaves,Roots,Stem,Thorns,2,Plant Adaptation
+Science,Animals,Animals that give birth to young ones and feed them milk are,Reptiles,Amphibians,Mammals,Birds,2,Animal Classification
+Science,Animals,Which animal lays eggs instead of giving direct birth,Whale,Bat,Platypus,Dog,2,Animal Classification
+Science,Animals,The hard outer shell of insects is made of,Chitin,Calcium,Keratin,Bone,0,Animal Anatomy
+Science,Animals,Frogs breathe through lungs on land and through ____ in water.,Gills,Moist skin,Spiracles,Fins,1,Amphibian Respiration
+Science,Human Body,Digestion of food begins in the,Stomach,Small intestine,Mouth,Large Intestine,2,Digestive System
+Science,Human Body,Which blood vessel carries blood away from the heart to body parts,Veins,Arteries,Capillaries,Nerves,1,Circulatory System
+Science,Human Body,Our teeth are coated with a hard outer layer called,Dentine,Pulp,Enamel,Gum,2,Dental Physiology
+Science,Human Body,How many permanent teeth does an adult human normally have,28,30,32,34,2,Dental Physiology
+Science,Food & Health,Diseases caused by lack of nutrients in diet are called,Communicable diseases,Deficiency diseases,Genetic diseases,Allergies,1,Health & Nutrition
+Science,Food & Health,Lack of Vitamin C in diet causes which disease,Scurvy,Rickets,Beriberi,Night blindness,0,Deficiency Diseases
+Science,Food & Health,Lack of Vitamin A in diet causes,Rickets,Night blindness,Goitre,Scurvy,1,Deficiency Diseases
+Science,Food & Health,Goitre is caused due to deficiency of which mineral,Iron,Calcium,Iodine,Sodium,2,Deficiency Diseases
+Science,Matter,The changing of a gas into a liquid on cooling is called,Evaporation,Condensation,Sublimation,Melting,1,States of Matter
+Science,Matter,The process by which a solid directly changes into gas is,Freezing,Sublimation,Evaporation,Condensation,1,States of Matter
+Science,Matter,Salt dissolved in water forms a homogenous mixture called a,Solute,Solvent,Solution,Sediment,2,Solutions & Mixtures
+Science,Matter,In a salt solution, salt is the ____ and water is the ____.,SolventSolute,SoluteSolvent,SolutionSolute,SoluteSolution,1,Solutions & Mixtures
+Science,Force & Work,The force that pulls everything towards the center of Earth is,Frictional force,Magnetic force,Gravitational force,Electrostatic force,2,Physics Fundamentals
+Science,Force & Work,The force that resists motion when two surfaces rub together is,Gravity,Friction,Tension,Magnetism,1,Physics Fundamentals
+Science,Force & Work,Work is said to be done only when a force causes an object to,Heat up,Move in direction of force,Change color,Stop vibrating,1,Work & Energy
+Science,Simple Machines,A inclined plane wrapped around a cylinder is a,Lever,Pulley,Screw,Wedge,2,Simple Machines
+Science,Simple Machines,A knife edge is an example of which simple machine,Wedge,Lever,Screw,Pulley,0,Simple Machines
+Science,Space,Which is the smallest planet in our solar system,Mars,Venus,Mercury,Pluto,2,Solar System
+Science,Space,Which planet is known as the 'Red Planet',Jupiter,Mars,Venus,Saturn,1,Solar System
+Science,Space,The imaginary line around which Earth rotates is called its,Orbit,Axis,Equator,Pole,1,Earth Science
+Science,Space,The imaginary line dividing Earth into Northern and Southern hemispheres is,Prime Meridian,Axis,Equator,Tropic of Cancer,2,Earth Science
+Science,Environment,The protective gas layer in Earth's atmosphere that blocks UV rays is,Oxygen layer,Ozone layer,Nitrogen layer,Carbon layer,1,Environmental Science
+Science,Environment,Soil erosion is prevented effectively by,Deforestation,Afforestation (planting trees),Overgrazing,Overwatering,1,Soil Conservation
+Science,Water,The process of settling down of insoluble heavy impurities in water is,Filtration,Decantation,Sedimentation,Evaporation,2,Water Purification
+Science,Water,Pouring out clear water after heavy particles settle at the bottom is,Sedimentation,Decantation,Filtration,Distillation,1,Water Purification
+English,Grammar,Select the abstract noun 'Honesty is the best policy.',Honesty and policy,is,the,best,0,Nouns & Types
+English,Grammar,Choose the correct collective noun 'A ____ of directors.',board,fleet,flock,colony,0,Collective Nouns
+English,Grammar,Choose the correct collective noun 'A ____ of ships.',fleet,pack,board,gang,0,Collective Nouns
+English,Grammar,Choose the proper reflexive pronoun 'She made the dress ____.',himself,herself,itself,myself,1,Reflexive Pronouns
+English,Grammar,Choose the reflexive pronoun 'They solved the problem .',himself,themselves,yourselves,herself,1,Reflexive Pronouns
+English,Grammar,Identify the adjective of quality 'He is an Indian citizen.',He,is,Indian,citizen,2,Adjectives
+English,Grammar,Comparative degree of 'bad' is,badder,worse,worst,badly,1,Degrees of Comparison
+English,Grammar,Superlative degree of 'little' is,less,least,littlest,littler,1,Degrees of Comparison
+English,Grammar,Choose correct tense 'They ____ live in London before moving here.',used to,use to,using to,uses to,0,Past Tenses
+English,Grammar,Identify the transitive verb in 'Rohan plays cricket.',Rohan,plays,cricket,Rohan plays,1,Transitive Verbs
+English,Grammar,Identify the adverb of manner in 'The soldier fought bravely.',soldier,fought,bravely,The,2,Adverbs of Manner
+English,Grammar,Identify the adverb of place 'Come inside immediately.',Come,inside,immediately,inside immediately,1,Adverbs of Place
+English,Grammar,Identify the adverb of time 'We are going to school tomorrow.',going,school,tomorrow,We,2,Adverbs of Time
+English,Grammar,Choose the correct preposition 'Divide the sweets ____ the two brothers.',among,between,with,for,1,Preposition Rules
+English,Grammar,Choose the correct preposition 'Distribute the books ____ all students.',between,among,with,to,1,Preposition Rules
+English,Grammar,Choose the correct preposition 'He has been living here ____ 2010.',for,since,from,in,1,Preposition Rules
+English,Grammar,Choose the correct conjunction 'Although he was tired, ____ he kept walking.',so,yet,and,because,1,Correlative Conjunctions
+English,Grammar,Choose the correct article 'He is ____ MLA.',a,an,the,no article,1,Articles
+English,Grammar,Choose the correct article ' Pacific Ocean is vast.',A,An,The,No article,2,Articles
+English,Vocabulary,Synonym of 'Abundant' is,Plentiful,Scarce,Rare,Little,0,Synonyms
+English,Vocabulary,Synonym of 'Conceal' is,Show,Hide,Open,Reveal,1,Synonyms
+English,Vocabulary,Synonym of 'Fragile' is,Strong,Delicate,Tough,Hard,1,Synonyms
+English,Vocabulary,Antonym of 'Gentle' is,Soft,Harsh,Kind,Calm,1,Antonyms
+English,Vocabulary,Antonym of 'Miser' is,Spendthrift,Greedy,Poor,Selfish,0,Antonyms
+English,Vocabulary,Antonym of 'Artificial' is,Synthetic,Natural,Fake,Man-made,1,Antonyms
+English,Spelling,Select the correctly spelled word,Accommodation,Acommodation,Accomodation,Acomodation,0,Spelling Skills
+English,Spelling,Select the correctly spelled word,Grammar,Grammer,Gramar,Grammerr,0,Spelling Skills
+English,Spelling,Select the correctly spelled word,Separate,Seperate,Separait,Seperait,0,Spelling Skills
+English,Spelling,Select the correctly spelled word,Pronunciation,Pronounciation,Pronunsiation,Pronountiation,0,Spelling Skills
+English,Punctuation,Which sentence uses contraction apostrophe correctly,Don't do that.,Dont' do that.,Dont do that.,Do'nt do that.,0,Punctuation Rules
+English,Grammar,Convert to passive voice 'The cat killed the mouse.',The mouse was killed by the cat.,The mouse killed the cat.,The cat is killing the mouse.,The cat was killed mouse.,0,Active and Passive Voice
+English,Grammar,Convert to reported speech 'She said, I am happy.',She said that she is happy.,She said that she was happy.,She said I am happy.,She says she was happy.,1,Direct and Indirect Speech
+English,Vocabulary,Homophone check 'The ____ shines in the sky.',son,sun,soon,sum,1,Homophones
+English,Vocabulary,Homophone check 'I would like a ____ of paper.',peace,piece,peas,peese,1,Homophones
+English,Vocabulary,Homophone check 'She wore a ____ of shoes.',pare,pair,pear,peer,1,Homophones
+English,Vocabulary,Idioms 'A piece of cake' means,A slice of food,Very easy task,A sweet dessert,A birthday gift,1,Idioms and Phrases
+English,Vocabulary,Idioms 'Once in a blue moon' means,Every night,Rarely,Always,Full moon day,1,Idioms and Phrases
+English,Vocabulary,One-word substitution 'A place where books are kept',Auditorium,Library,Laboratory,Museum,1,Vocabulary Expansion
+English,Vocabulary,One-word substitution 'A person who travels into space',Pilot,Astronaut,Sailor,Astronomer,1,Vocabulary Expansion
+English,Vocabulary,One-word substitution 'Life story of a person written by himself',Biography,Autobiography,Novel,History,1,Vocabulary Expansion
+Mathematics,Fractions,What is 34 - 14,24,14,44,28,0,Fraction Subtraction
+Mathematics,Decimals,What is 1.2 + 2.5,3.7,3.5,4.0,3.2,0,Decimal Addition
+Mathematics,Geometry,A shape with 5 sides is called a,Quadrilateral,Pentagon,Hexagon,Octagon,1,2D Shapes
+Mathematics,Measurement,How many grams make 12 kilogram,250 g,500 g,750 g,1000 g,1,Unit Conversions
+Science,Space,The group of stars forming a recognizable pattern is called a,Galaxy,Constellation,Nebula,Solar system,1,Astronomy Basics
+Science,Human Body,The organ system that eliminates liquid wastes from body is,Digestive,Excretory,Nervous,Respiratory,1,Excretory System
+Science,Environment,The temperature at which water boils at sea level is,50°C,100°C,0°C,150°C,1,Properties of Water
+Science,Animals,Animals that eat plant-eating animals are primary,Herbivores,Carnivores,Decomposers,Producers,1,Food Chains
+English,Grammar,Plural form of 'Ox' is,Oxes,Oxen,Oxies,Oxs,1,Irregular Plurals
+English,Grammar,Plural form of 'Index' is,Indexes,Indices,Indexies,Indexen,1,Irregular Plurals
