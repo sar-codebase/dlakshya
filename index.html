@@ -52,20 +52,24 @@
                 </div>
             </div>
             
-            <!-- Dual Portal Tabs & Contact Us -->
-            <nav class="flex space-x-8" aria-label="Tabs">
-                <button id="tab-evaluator-btn" onclick="switchTab('evaluator')" class="tab-active py-4 px-2 inline-flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    Evaluator, Mentor & Supervisor Portal
+            <!-- Navigation Tabs -->
+            <nav class="flex space-x-6" aria-label="Tabs">
+                <button id="tab-evaluator-btn" onclick="switchTab('evaluator')" class="tab-active py-4 px-2 inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    Evaluator & Supervisor Portal
                 </button>
-                <button id="tab-student-btn" onclick="switchTab('student')" class="py-4 px-2 inline-flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-slate-600 transition disabled:cursor-not-allowed" disabled>
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                <button id="tab-student-btn" onclick="switchTab('student')" class="py-4 px-2 inline-flex items-center gap-1.5 text-sm font-medium text-slate-400 hover:text-slate-600 transition disabled:cursor-not-allowed" disabled>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
                     Student Portal
-                    <span id="student-portal-lock" class="bg-slate-200 text-slate-600 text-[10px] px-2 py-0.5 rounded-full font-bold">Locked</span>
+                    <span id="student-portal-lock" class="bg-slate-200 text-slate-600 text-[10px] px-1.5 py-0.5 rounded-full font-bold">Locked</span>
                 </button>
-                <button id="tab-contact-btn" onclick="switchTab('contact')" class="py-4 px-2 inline-flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                    Contact us
+                <button id="tab-admin-btn" onclick="switchTab('admin')" class="py-4 px-2 inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    Parent / School Admin Portal
+                </button>
+                <button id="tab-contact-btn" onclick="switchTab('contact')" class="py-4 px-2 inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    Contact Support
                 </button>
             </nav>
         </div>
@@ -79,7 +83,7 @@
             <div class="bg-gradient-to-r from-blue-900 to-slate-900 text-white p-6 rounded-2xl shadow-md">
                 <h2 class="text-2xl font-bold mb-2">Evaluator, Mentor & Supervisor Control Suite</h2>
                 <p class="text-blue-200 text-sm max-w-3xl">
-                    Configure subject-specific assessments, set timer durations, manage parent/school keys, or perform multi-attempt student diagnostic reviews.
+                    Configure subject-specific assessments, set timer durations, or perform multi-attempt student diagnostic reviews.
                 </p>
             </div>
 
@@ -87,7 +91,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 
                 <!-- Box 1: Question Bank, Subject & Timer Configuration -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between lg:col-span-2">
                     <div>
                         <div class="flex justify-between items-start mb-4">
                             <div>
@@ -97,7 +101,7 @@
                             <span class="p-2 bg-blue-50 text-blue-600 rounded-lg text-xs font-semibold">Step 1</span>
                         </div>
 
-                        <div class="space-y-4 my-4">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
                             <div>
                                 <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Target Assessment Subject</label>
                                 <select id="evaluator-subject-select" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
@@ -114,53 +118,21 @@
                             </div>
 
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Assessment Timer Duration (Minutes)</label>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Assessment Timer (Minutes)</label>
                                 <input type="number" id="evaluator-timer-input" value="30" min="1" max="180" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
                             </div>
 
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Upload Custom Question Bank CSV (UTF-8 Recommended)</label>
-                                <input type="file" id="qb-file-input" accept=".csv" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pt-4 border-t border-slate-100 space-y-2">
-                        <button onclick="loadQuestionBank()" class="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition shadow-sm flex items-center justify-center gap-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"></path></svg>
-                            Authorize Test & Enable Student Portal
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Box 1B: Parent / School Admin Password Portal -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-slate-900">Parent / School Admin Portal</h3>
-                                <p class="text-xs text-slate-500">Manage device locks and reset student access key slots if a device is changed.</p>
-                            </div>
-                            <span class="p-2 bg-indigo-50 text-indigo-600 rounded-lg text-xs font-semibold">Admin</span>
-                        </div>
-
-                        <div class="space-y-4 my-4">
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Master Admin Password</label>
-                                <input type="password" id="admin-portal-password" placeholder="Enter admin password" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Student Access Key to Reset</label>
-                                <input type="text" id="admin-reset-key" placeholder="e.g. A1B2C3D4" class="w-full text-sm font-mono uppercase px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-                                <p class="text-[11px] text-slate-400 mt-1">Clears all bound devices for this key so the student can register fresh home devices.</p>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Upload Question Bank CSV</label>
+                                <input type="file" id="qb-file-input" accept=".csv" class="w-full text-xs text-slate-500 file:mr-2 file:py-2 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1">
                             </div>
                         </div>
                     </div>
 
                     <div class="pt-4 border-t border-slate-100">
-                        <button onclick="handleAdminResetKey()" class="w-full py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg text-sm transition shadow-sm flex items-center justify-center gap-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                            Reset Device Slots for Key
+                        <button onclick="loadQuestionBank()" class="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition shadow-sm flex items-center justify-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"></path></svg>
+                            Authorize Test & Enable Student Portal
                         </button>
                     </div>
                 </div>
@@ -264,10 +236,9 @@
                     <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
                         <h4 class="font-bold text-slate-900 text-sm flex items-center justify-between">
                             <span>Longitudinal Progress Trend</span>
-                            <span id="trend-badge" class="text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">Trajectory</span>
+                            <span class="text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">Score Trajectory</span>
                         </h4>
-                        <div id="trendline-display" class="w-full overflow-x-auto bg-white p-3 rounded-lg border border-slate-200 flex flex-col gap-2"></div>
-                        <p id="trend-insights-text" class="text-xs text-slate-700 leading-relaxed font-medium">Analyzing multi-attempt progression...</p>
+                        <div id="trendline-display" class="w-full overflow-x-auto bg-white p-3 rounded-lg border border-slate-200 flex items-center justify-center"></div>
                     </div>
 
                     <div class="p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
@@ -465,28 +436,82 @@
 
         </section>
 
-        <!-- CONTACT US SECTION -->
-        <section id="portal-contact" class="hidden space-y-8 max-w-2xl mx-auto">
+        <!-- PARENT / SCHOOL ADMIN PORTAL -->
+        <section id="portal-admin" class="hidden space-y-8 max-w-2xl mx-auto">
+            <div class="bg-gradient-to-r from-indigo-900 to-slate-900 text-white p-6 rounded-2xl shadow-md">
+                <h2 class="text-2xl font-bold mb-2">Parent / School Admin Control Portal</h2>
+                <p class="text-indigo-200 text-sm">
+                    Manage device locks and reset student access key slots securely when a student switches devices.
+                </p>
+            </div>
+
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
-                <div class="text-center pb-6 border-b border-slate-200">
-                    <div class="p-3 bg-blue-100 text-blue-600 rounded-full inline-block mb-3">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                    </div>
-                    <h2 class="text-2xl font-extrabold text-slate-900">Contact Us</h2>
-                    <p class="text-xs text-slate-500 mt-1">Get in touch with the D-Lakshya support team for assistance.</p>
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900">Device Slot & Key Reset</h3>
+                    <p class="text-xs text-slate-500 mt-0.5">Enter master administrator password and target access key to clear active device bounds.</p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="p-5 bg-slate-50 rounded-xl border border-slate-100 space-y-2 text-center">
-                        <div class="text-blue-600 font-bold text-xs uppercase tracking-wider">Phone Support</div>
-                        <div class="text-lg font-extrabold text-slate-900 font-mono">12345</div>
-                        <div class="text-xs text-slate-500 font-medium">Standard Timings:<br><strong>9:00 AM to 6:00 PM</strong></div>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Master Admin Password</label>
+                        <input type="password" id="admin-portal-password" placeholder="Enter admin password" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                     </div>
-                    <div class="p-5 bg-slate-50 rounded-xl border border-slate-100 space-y-2 text-center">
-                        <div class="text-blue-600 font-bold text-xs uppercase tracking-wider">Email Support</div>
-                        <div class="text-sm font-extrabold text-slate-900 font-mono pt-1">dlakshyaofficial@gmail.com</div>
-                        <div class="text-xs text-slate-500 font-medium pt-1">Response within 24 hours</div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Student Access Key to Reset</label>
+                        <input type="text" id="admin-reset-key" placeholder="e.g. A1B2C3D4" class="w-full text-sm font-mono uppercase px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <p class="text-[11px] text-slate-400 mt-1">Clears all bound devices for this key so the student can register fresh home devices.</p>
                     </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-100">
+                    <button onclick="handleAdminResetKey()" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg text-sm transition shadow-sm flex items-center justify-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                        Reset Device Slots for Key
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT US PORTAL -->
+        <section id="portal-contact" class="hidden space-y-8 max-w-4xl mx-auto">
+            <div class="bg-gradient-to-r from-blue-900 to-slate-900 text-white p-6 rounded-2xl shadow-md">
+                <h2 class="text-2xl font-bold mb-2">Contact Support & Institutional Assistance</h2>
+                <p class="text-blue-200 text-sm">
+                    Get in touch with the D-Lakshya mentor team for technical support, offline deployment guidance, or institutional onboarding services.
+                </p>
+            </div>
+
+            <!-- Contact Information Cards -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-4">
+                        <div class="p-3 bg-blue-100 text-blue-600 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wide">Phone Support</h4>
+                            <p class="text-base font-extrabold text-slate-900 mt-1">123456</p>
+                            <p class="text-[11px] text-slate-500 mt-0.5">Mon - Sat (9:00 AM - 6:00 PM)</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 flex items-start space-x-4">
+                        <div class="p-3 bg-indigo-100 text-indigo-600 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wide">Email Inquiries</h4>
+                            <p class="text-base font-extrabold text-slate-900 mt-1 font-mono">dlakshyaofficial@gmail.com</p>
+                            <p class="text-[11px] text-slate-500 mt-0.5">Response within 24 business hours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-5 bg-blue-50/60 rounded-xl border border-blue-200 text-xs text-blue-900 space-y-2">
+                    <h4 class="font-bold uppercase tracking-wide">Local Privacy Assurance</h4>
+                    <p class="leading-relaxed">
+                        D-Lakshya operates 100% offline within your browser environment. No student or teacher evaluation logs are ever sent to a central server. When contacting support regarding technical setups or custom CSV formatting, please include your Assessment ID for reference.
+                    </p>
                 </div>
             </div>
         </section>
@@ -557,6 +582,22 @@
             return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
         }
 
+        function parseCSVFallback(text) {
+            const lines = text.split(/\r\n|\n/).filter(line => line.trim().length > 0);
+            if (lines.length < 2) return [];
+            const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
+            const data = [];
+            for (let i = 1; i < lines.length; i++) {
+                const values = lines[i].split(',').map(v => v.trim().replace(/^"|"$/g, ''));
+                if (values.length === headers.length) {
+                    const obj = {};
+                    headers.forEach((h, idx) => obj[h] = values[idx]);
+                    data.push(obj);
+                }
+            }
+            return data;
+        }
+
         // Unique Student ID + Key Validation (Max 2 Devices: Laptop + Mobile)
         async function validateStudentAccessKey(studentIdInput, inputKey) {
             if (!studentIdInput || !inputKey) return { valid: false, message: "Please enter both Student ID and Access Key." };
@@ -566,6 +607,7 @@
             const currentDate = new Date();
             const validKeys = [];
 
+            // Check current month and previous month window (2 months total)
             for (let offset = 0; offset <= 1; offset++) {
                 const targetDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - offset, 1);
                 const year = targetDate.getFullYear();
@@ -580,6 +622,7 @@
                 return { valid: false, message: "Invalid Access Key for the given Student ID, or the key has expired." };
             }
 
+            // Get or create local device persistent fingerprint
             let deviceId = localStorage.getItem('dl_device_id');
             if (!deviceId) {
                 deviceId = 'dev_' + Math.random().toString(36).substring(2, 15);
@@ -602,6 +645,7 @@
             }
         }
 
+        // Admin Reset Feature for Parent/School Portal
         function handleAdminResetKey() {
             const password = document.getElementById('admin-portal-password').value.trim();
             const rawKey = document.getElementById('admin-reset-key').value.trim();
@@ -617,6 +661,8 @@
             }
 
             const keyToReset = rawKey.toUpperCase();
+            
+            // Search localStorage for any matching storage key containing the access code
             let found = false;
             for (let i = 0; i < localStorage.length; i++) {
                 const storageKey = localStorage.key(i);
@@ -649,10 +695,12 @@
 
             document.getElementById('tab-evaluator-btn').classList.toggle('tab-active', portal === 'evaluator');
             document.getElementById('tab-student-btn').classList.toggle('tab-active', portal === 'student');
+            document.getElementById('tab-admin-btn').classList.toggle('tab-active', portal === 'admin');
             document.getElementById('tab-contact-btn').classList.toggle('tab-active', portal === 'contact');
 
             document.getElementById('portal-evaluator').classList.toggle('hidden', portal !== 'evaluator');
             document.getElementById('portal-student').classList.toggle('hidden', portal !== 'student');
+            document.getElementById('portal-admin').classList.toggle('hidden', portal !== 'admin');
             document.getElementById('portal-contact').classList.toggle('hidden', portal !== 'contact');
         }
 
@@ -696,7 +744,7 @@
             const lock = document.getElementById('student-portal-lock');
             btn.disabled = false;
             btn.classList.remove('text-slate-400', 'disabled:cursor-not-allowed');
-            lock.className = "bg-emerald-100 text-emerald-700 text-[10px] px-2 py-0.5 rounded-full font-bold";
+            lock.className = "bg-emerald-100 text-emerald-700 text-[10px] px-1.5 py-0.5 rounded-full font-bold";
             lock.innerText = "Authorized";
 
             document.getElementById('login-assessment-id').value = currentAssessmentId;
@@ -840,22 +888,10 @@
             document.getElementById('report-gaps-list').innerHTML = currentStudentData.gaps.map(g => `<li>${g}</li>`).join('') || '<li>No major gaps detected! Great job!</li>';
 
             downloadStudentAttemptCSV();
-            lockStudentPortalTab();
-        }
-
-        function lockStudentPortalTab() {
-            isQuestionBankLoaded = false;
-            const btn = document.getElementById('tab-student-btn');
-            const lock = document.getElementById('student-portal-lock');
-            btn.disabled = true;
-            btn.classList.add('text-slate-400', 'disabled:cursor-not-allowed');
-            lock.className = "bg-slate-200 text-slate-600 text-[10px] px-2 py-0.5 rounded-full font-bold";
-            lock.innerText = "Locked";
         }
 
         function downloadStudentAttemptCSV() {
             const dateStamp = new Date().toISOString().slice(0,10);
-            const timestampIso = new Date().toISOString();
             const fileName = `${currentStudentData.name.replace(/\s+/g, '_')}_Class${currentStudentData.class}_${dateStamp}.csv`;
             const exportRows = currentStudentData.answers.map(a => ({
                 AssessmentID: currentAssessmentId,
@@ -865,7 +901,6 @@
                 ScorePercentage: currentStudentData.score,
                 TimeTakenSeconds: currentStudentData.timeTakenSeconds || 0,
                 TotalTimerMinutes: configuredTimerMinutes,
-                SubmissionTimestamp: timestampIso,
                 Question: a.Question,
                 Skill: a.Skill,
                 IsCorrect: a.IsCorrect
@@ -927,92 +962,21 @@
                     }
                     if (parsedFilesCount === files.length) {
                         currentAuditStudentName = studentName;
-                        renderAuditResults({ studentName, studentClass, totalQuestions: totalQuestionsAttempted, totalCorrect: totalCorrectAnswers, skillDeficits, skillTotals }, files.length);
+                        renderAuditResults({ studentName, studentClass, totalQuestions: totalQuestionsAttempted, totalCorrect: totalCorrectAnswers, skillDeficits, skillTotals });
                     }
                 };
             });
         }
 
-        function renderAuditResults(metrics, fileCount) {
+        function renderAuditResults(metrics) {
             const avgScore = metrics.totalQuestions > 0 ? Math.round((metrics.totalCorrect / metrics.totalQuestions) * 100) : 0;
             const sortedGaps = Object.keys(metrics.skillDeficits).sort((a,b) => metrics.skillDeficits[b] - metrics.skillDeficits[a]);
 
             document.getElementById('teacher-audit-output').classList.remove('hidden');
-            document.getElementById('audit-attempt-count').innerText = fileCount;
             document.getElementById('audit-student-name').innerText = `Cumulative Diagnostic: ${metrics.studentName}`;
             document.getElementById('audit-student-meta').innerText = `Class: ${metrics.studentClass} | Total Questions Evaluated: ${metrics.totalQuestions}`;
             document.getElementById('audit-avg-score').innerText = `${avgScore}%`;
             document.getElementById('audit-gaps-count').innerText = `${sortedGaps.length} Skills`;
-
-            // Group rows by AssessmentID / File to extract multi-attempt scores
-            const attemptsMap = {};
-            currentBatchAuditData.forEach(row => {
-                const id = row.AssessmentID || row.SubmissionTimestamp || 'Attempt';
-                if (!attemptsMap[id]) {
-                    attemptsMap[id] = { score: parseInt(row.ScorePercentage) || avgScore, timestamp: row.SubmissionTimestamp || new Date().toISOString() };
-                }
-            });
-
-            const attemptsArray = Object.values(attemptsMap);
-            attemptsArray.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
-
-            // Render Longitudinal Progress Trend & Key Diagnostic Insights
-            const trendDisplay = document.getElementById('trendline-display');
-            const trendInsights = document.getElementById('trend-insights-text');
-            const trendBadge = document.getElementById('trend-badge');
-
-            if (attemptsArray.length > 1) {
-                const firstScore = attemptsArray[0].score;
-                const lastScore = attemptsArray[attemptsArray.length - 1].score;
-                const diff = lastScore - firstScore;
-
-                trendDisplay.innerHTML = attemptsArray.map((att, idx) => `
-                    <div class="flex items-center justify-between text-xs py-1 border-b border-slate-100 last:border-0">
-                        <span class="font-semibold text-slate-700">Attempt ${idx + 1} (${new Date(att.timestamp).toLocaleDateString()})</span>
-                        <span class="font-extrabold text-blue-600">${att.score}%</span>
-                    </div>
-                `).join('');
-
-                if (diff > 0) {
-                    trendBadge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
-                    trendBadge.innerText = "Upward Trajectory";
-                    trendInsights.innerText = `Positive learning curve detected. Scores improved by +${diff}% across attempts, confirming effective retention and remediation.`;
-                } else if (diff < 0) {
-                    trendBadge.className = "text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full";
-                    trendBadge.innerText = "Declining Trajectory";
-                    trendInsights.innerText = `Scores decreased by ${diff}% across attempts. Watch for fatigue, increasing difficulty, or unaddressed foundational gaps.`;
-                } else {
-                    trendBadge.className = "text-[10px] font-semibold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full";
-                    trendBadge.innerText = "Plateau Trajectory";
-                    trendInsights.innerText = `Performance has plateaued at a consistent level. Consider introducing advanced problem-solving challenges to stimulate growth.`;
-                }
-            } else {
-                trendDisplay.innerHTML = `<div class="text-xs text-slate-500 text-center py-2">Single attempt loaded (${avgScore}%). Upload multiple attempt files to view longitudinal trajectory.</div>`;
-                trendInsights.innerText = "Upload 2 or more student attempt CSV files to unlock longitudinal trend and learning curve diagnostics.";
-            }
-
-            // Dynamic Behavioral & Pacing Diagnostics Calculation
-            const firstRow = currentBatchAuditData[0] || {};
-            const timeTakenSec = parseInt(firstRow.TimeTakenSeconds) || 0;
-            const totalMinutes = parseInt(firstRow.TotalTimerMinutes) || 30;
-            const totalSecAllocated = totalMinutes * 60;
-            
-            const pacingBadge = document.getElementById('pacing-badge');
-            const pacingText = document.getElementById('pacing-details-text');
-
-            if (timeTakenSec > 0 && timeTakenSec < (totalSecAllocated * 0.25)) {
-                pacingBadge.className = "text-[10px] font-semibold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full";
-                pacingBadge.innerText = "Rushed Pacing";
-                pacingText.innerText = `Student completed the assessment significantly faster than the ${totalMinutes}-minute allocation. Indicates potential rushing anxiety, superficial guessing, or high confidence requiring accuracy verification.`;
-            } else if (timeTakenSec >= (totalSecAllocated * 0.95)) {
-                pacingBadge.className = "text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full";
-                pacingBadge.innerText = "Time Fatigue / Slow Pacing";
-                pacingText.innerText = `Student utilized nearly the full time allocation (${totalMinutes} minutes). Indicates potential reading comprehension hesitation, complex conceptual roadblocks, or attention span fatigue toward the end of the test.`;
-            } else {
-                pacingBadge.className = "text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full";
-                pacingBadge.innerText = "Optimal Pacing";
-                pacingText.innerText = `Student maintained a steady, balanced rhythm throughout the assessment, demonstrating good time management, cognitive stamina, and engaged attention.`;
-            }
 
             const matrixElem = document.getElementById('topic-mastery-matrix');
             matrixElem.innerHTML = Object.keys(metrics.skillTotals).map(skill => {
@@ -1023,14 +987,7 @@
             }).join('');
 
             document.getElementById('audit-gaps-list').innerHTML = sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${metrics.skillDeficits[g]} errors)</li>`).join('') || '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
-
-            if (sortedGaps.length === 0) {
-                document.getElementById('audit-parental-strategy').innerText = 
-                    "Outstanding performance! 100% mastery achieved. Encourage advanced problem-solving, lateral thinking challenges, or peer-mentoring to sustain engagement.";
-            } else {
-                document.getElementById('audit-parental-strategy').innerText = 
-                    `Review skill gaps: ${sortedGaps.slice(0, 3).join(', ')}. Dedicate 20 minutes daily for targeted practice.`;
-            }
+            document.getElementById('audit-parental-strategy').innerText = `Review skill gaps: ${sortedGaps.slice(0, 3).join(', ')}. Dedicate 20 minutes daily for targeted practice.`;
         }
 
         function exportStudentHistoryLogCSV() {
