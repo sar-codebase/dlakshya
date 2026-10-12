@@ -1,0 +1,101 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Large Numbers,संख्या '४,५२३' मधील ५ ची स्थानिक किंमत (Place Value) किती?,5,50,500,5000,2,Place Value
+Mathematics,Addition,१,४५२ आणि २,३४१ यांची बेरीज किती येते?,३,७९३,३,६९३,३,८९३,३,५९३,0,Addition
+Mathematics,Subtraction,७,८५४ मधून ३,४२१ वजा केल्यास किती उरतात?,४,४३३,४,३३३,४,५३३,४,२३३,0,Subtraction
+Mathematics,Multiplication,२४५ ला ३ ने गुणल्यास गुणनफल किती येते?,७२५,७३५,७४५,७५५,1,Multiplication
+Mathematics,Division,७२ ला ६ ने भागल्यास भागाकार किती येतो?,10,11,12,13,2,Division
+Mathematics,Fractions,एका भाकरीचे ८ समान भाग केले, त्यातील ३ भाग म्हणजे अपूर्णांकात कसे लिहाल?,३/८,८/३,५/८,१/८,0,Fraction Basics
+Mathematics,Geometry,चौकोनाच्या चारही कोनांची बेरीज किती अंश असते?,१८० अंश,३६० अंश,९० अंश,२७० अंश,1,Geometry Properties
+Mathematics,Measurement,२ किलोमीटर आणि ५०० मीटर म्हणजे एकूण किती मीटर?,२५० मीटर,२५०० मीटर,२५०00 मीटर,२५ मीटर,1,Measurement Units
+Mathematics,Time,पाच वाजून पंधरा मिनिटे झाली म्हणजे किती मिनिटे झाली?,१५ मिनिटे,४५ मिनिटे,७५ मिनिटे,३० मिनिटे,2,Time Reading
+Mathematics,Money,₹१०० च्या नोटेचे ₹१० च्या किती नोटा होतात?,५,१०,२०,५०,1,Money Calculation
+English,Grammar,'The sun shines brightly.' या वाक्यातील विशेषण (Adjective) ओळखा.,Sun,Shines,Brightly,The,2,Describing Words
+English,Vocabulary,'Honest' या शब्दाचा विरुद्धार्थी शब्द कोणता?,True,Dishonest,Kind,False,1,Opposite Words
+English,Grammar,'The cat jumped ___ the wall.' योग्य शब्द निवडा.,on,in,over,at,2,Prepositions
+English,Plurals,'Tooth' या शब्दाचे अनेकवचन (Plural) काय होते?,Teeth,Tooths,Teethes,Toothses,0,Singular Plural
+English,Pronouns,'Amit is a good boy. ___ helps everyone.' योग्य सर्वनाम भरा.,He,She,It,They,0,Pronouns
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Beautiful,Beutiful,Batiful,Beautyful,0,Spelling Accuracy
+English,Tenses,'She is reading a book.' हे वाक्य कोणत्या काळातील आहे?,Simple Present,Present Continuous,Simple Past,Future Tense,1,Verb Tenses
+English,Action Verbs,नदी वाहणे याला इंग्रजीत काय म्हणतात?,Flow,Run,Walk,Fly,0,Action Verbs
+English,Question Words,'___ do you live?' योग्य प्रश्नार्थक शब्द निवडा.,What,Where,When,Who,1,Wh-Questions
+English,Rhyming Words,'Night' या शब्दाशी जुळणारा शब्द ओळखा:,Light,Day,Sun,Night,0,Rhyming Words
+Science,Digestive System,आपल्या शरीरात अन्नाचे पचन प्रामुख्याने कोठे होते?,जठर (Stomach),फुफ्फुस,हृदय,मेंदू,0,Human Body Organs
+Science,States of Matter,बर्फाचे पाण्यात रूपांतर होणे या बदलाला काय म्हणतात?,साठवणे,वितळणे (Melting),उकळणे,बाष्पीभवन,1,States of Matter
+Science,Plants,वनस्पती पानांद्वारे सूर्यप्रकाशात अन्न तयार करतात, या प्रक्रियेला काय म्हणतात?,श्वसन,प्रकाशसंश्लेषण (Photosynthesis),उत्सर्जन,बाष्पोत्सर्जन,1,Plant Physiology
+Science,Animals,शाकाहारी प्राण्यांचे मुख्य अन्न काय असते?,मांस,पालेभाज्या व गवत,फक्त कीटक,काहीही नाही,1,Animal Diets
+Science,Water,पाण्याचे बाष्पात रूपांतर होण्याच्या प्रक्रियेला काय म्हणतात?,घनीभवन,बाष्पीभवन (Evaporation),गाळणे,वितळणे,1,Water Cycle
+Science,Force & Work,वस्तू उचलण्यासाठी किंवा ढकलण्यासाठी कशाची गरज असते?,शक्ती किंवा बल (Force),विद्युत,अंधार,काहीही नाही,0,Force Basics
+Science,Environment,सजीवांना जिवंत राहण्यासाठी कशाची अत्यंत आवश्यकता असते?,प्लस्टिक,पाणी व हवा,लाकूड,लोखंड,1,Basic Needs
+Science,Solar System,पृथ्वी सूर्यभोवती फिरते, या गतीला काय म्हणतात?,परिवलन (Rotation),परिभ्रमण (Revolution),स्थिरता,उडी,1,Earth Movements
+Science,Health,आपले दात निरोगी ठेवण्यासाठी रोज काय करावे?,चॉकलेट खावे,दिवसातून दोनदा ब्रश करावा,रात्री तसंच झोपावे,काही करू नये,1,Oral Hygiene
+Science,Materials,चुंबक कोणत्या धातूला आपल्याकडे आकर्षित करतो?,लोखंड (Iron),प्लास्टिक,लाकूड,कापूस,0,Magnetism Basics
+Social Studies,Maps,नकाशात उत्तर दिशा सहसा कोणत्या बाजूला दर्शवली जाते?,खाली,वर (Top),डावीकडे,उजवीकडे,1,Map Reading
+Social Studies,History,शिवरायांच्या बालपणीचा काळ कोणत्या स्वराज्याच्या स्थापनेशी जोडलेला आहे?,मराठा स्वराज्य,मुघल साम्राज्य,ब्रिटिश राजवट,यापैकी नाही,0,Historical Awareness
+Social Studies,Geography,महाराष्ट्राची सर्वात लांब नदी कोणती?,कृष्णा,गोदावरी,नर्मदा,तापी,1,Geography of Maharashtra
+Social Studies,Civic Sense,आपल्या देशाचे संविधान कोणी तयार केले?,महात्मा गांधी,डॉ. बाबासाहेब आंबेडकर,पं. जवाहरलाल नेहरू,लोकमान्य टिळक,1,Indian Constitution
+Social Studies,Festivals,दिवाळी हा सण कोणत्या ऋतुमध्ये येतो?,उन्हाळा,पावसाळा,हिवाळा,वसंत,2,Cultural Seasons
+Social Studies,Earth,पृथ्वीचा आस किती अंशाने झुकलेला आहे?,२३.५ अंश,९० अंश,४५ अंश,१८० अंश,0,Earth Tilt
+Social Studies,Transport,कोंकण रेल्वेमार्गावर सर्वाधिक कशाचा सामना करावा लागतो?,बोगदे (Tunnels),समुद्र,वाळवंट,मोठी मैदाने,0,Transport Geography
+Social Studies,Economy,शेतकरी शेतात काय पिकवतो?,वाहने,अन्नधान्य व पिके,पुस्तके,इमारती,1,Economic Activities
+Social Studies,General Awareness,भारताचे राष्ट्रगीत कोणी लिहिले?,रवींद्रनाथ टागोर,बंकीमचंद्र चटर्जी,महात्मा गांधी,लोकमान्य टिळक,0,National Heritage
+Social Studies,Environment,पर्यावरण संरक्षणासाठी आपण काय रोवले पाहिजे?,कारखाने,झाडे (Trees),प्लस्टिकच्या वस्तू,काचेचे दिवे,1,Environmental Conservation
+Mathematics,Large Numbers,सहा हजार पाचशे चौतीस अंकात कसे लिहाल?,६५३४,५६३४,६३५४,६४३५,0,Large Numbers
+Mathematics,Addition,४५२ + ३२१ + १२३ ची बेरीज किती?,८९६,८८६,८७६,८६६,0,Addition
+Mathematics,Subtraction,१००० मधून ५२५ वजा करा.,४६५,४७५,४८५,४९५,1,Subtraction
+Mathematics,Multiplication,१५ गुणिले १२ किती होतात?,१७०,१८०,१९०,१६०,1,Multiplication
+Mathematics,Division,९६ ला ८ ने भागल्यास उत्तर किती येते?,११,१२,१३,१४,1,Division
+Mathematics,Fractions,२/५ आणि १/५ ची बेरीज किती?,३/१०,३/५,२/२५,५/३,1,Fraction Operations
+Mathematics,Geometry,वर्तுळाच्या मध्यबिंदूपासून परिघापर्यंतच्या अंतराला काय म्हणतात?,व्यास (Diameter),त्रिज्‍या (Radius),जिवा,वर्तुल,1,Geometry Basics
+Mathematics,Measurement,१ लिटर म्हणजे किती मिलिलिटर?,१०० मिली,५०० मिली,१००० मिली,२००० मिली,2,Measurement Units
+Mathematics,Time,एका वर्षात एकूण किती महिने असतात?,१०,१२,२४,३६५,1,Time Measurement
+Mathematics,Money,₹५०० ची एक नोट आणि ₹५० च्या दोन नोटा मिळून किती झाले?,₹५५०,₹६००,₹६५०,₹७००,1,Money Calculation
+English,Grammar,'The dog barks.' या वाक्यातील क्रियापद (Verb) कोणते?,The,Dog,Barks,None,2,Verbs Identification
+English,Vocabulary,'Strong' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Weak,Hard,Tough,Brave,0,Opposite Words
+English,Grammar,'The book is ___ the table.' (टेबलवर) योग्य शब्द निवडा.,in,on,under,behind,1,Prepositions
+English,Plurals,'Child' या शब्दाचे अनेकवचन काय होईल?,Childs,Children,Childes,Childer,1,Singular Plural
+English,Pronouns,'My name is Rohit. ___ am in Class 4.' योग्य सर्वनाम भरा.,He,She,I,It,2,Pronouns
+English,Spelling,योग्य स्पेलिंग ओळखा:,Elephant,Elefent,Elifant,Eliphant,0,Spelling Accuracy
+English,Tenses,'He will go to school tomorrow.' हे वाक्य कोणत्या काळातील आहे?,Present,Past,Future Tense,Continuous,2,Verb Tenses
+English,Action Verbs,पक्षी आकाशात काय करतात?,Fly,Swim,Run,Crawl,0,Action Verbs
+English,Question Words,'___ did you come late?' कारण विचारण्यासाठी कोणता शब्द वापरतात?,What,Where,Why,Who,2,Wh-Questions
+English,Rhyming Words,'Cat' शी जुळणारा शब्द ओळखा:,Bat,Dog,Sun,Pen,0,Rhyming Words
+Science,Digestive System,अन्नातील पोषक घटक शरीरात कोण पोहोचवतो?,रक्त (Blood),पाणी,श्वास,घाम,0,Circulatory System
+Science,States of Matter,पाण्याचे बर्फ होण्याच्या प्रक्रियेला काय म्हणतात?,वितळणे,गोठवणे (Freezing),बाष्पीभवन,उकळणे,1,States of Matter
+Science,Plants,वनस्पतींच्या कोणत्या भागाला वनस्पतीचे 'कारखाने' म्हणतात?,मुळे,पाने (Leaves),खोड,फुले,1,Plant Parts
+Science,Animals,इतर प्राण्यांची शिकार करून खाणाऱ्या प्राण्यांना काय म्हणतात?,शाकाहारी,मांसाहारी (Carnivores),उभयचर,कीटक,1,Animal Diets
+Science,Water,पाण्याचा शुद्ध व पिण्यायोग्य स्त्रोत कोणता?,समुद्राचे पाणी,शुद्ध केलेले व उकडलेले पाणी,कारखान्याचे सांडपाणी,खाारे पाणी,1,Water Resources
+Science,Force & Work,खिशातून खाली पडलेला पेन खाली जातो, यामागे कोणते बल असते?,चुंबकीय बल,गुरुत्वाकर्षण बल (Gravity),घर्षण बल,स्नायू बल,1,Physics Basics
+Science,Environment,वृक्षारोपण केल्याने पर्यावरणावर काय अनुकूल परिणाम होतो?,प्रदूषण वाढते,ऑक्सिजन व शुद्ध हवा मिळते,पाणी कमी होते,अंधार होतो,1,Environmental Benefits
+Science,Solar System,पृथ्वी स्वतःभोवती फिरते या गतीला काय म्हणतात?,परिभ्रमण,परिवलन (Rotation),स्थिरता,कक्षा,1,Earth Movements
+Science,Health,आपल्या शरीराला ऊर्जा मिळवण्यासाठी कशाची गरज असते?,कचरा,संतुलित व पौष्टिक अन्न,प्लास्टिक,रासायनिक द्रव्ये,1,Nutrition
+Science,Materials,काच कोणтримуतुच्या कोणत्या गुणधर्मामुळे ओळखली जाते?,पारदर्शक (Transparent),अपारदर्शक,चुंबकीय,चिवट,0,Material Properties
+Social Studies,Maps,महाराष्ट्राच्या पूर्वेला कोणते राज्य आहे?,गुजरात,छत्तीसगढ व तेलंगणा,गोवा,कर्नाटक,1,Geography
+Social Studies,History,छत्रपती शिवाजी महाराजांचा जन्म कोणत्या किल्ल्यावर झाला?,रायगड,शिवनेरी,सिंहगड,प्रतापगड,1,Historical Forts
+Social Studies,Geography,महाराष्ट्रात प्रामुख्याने कोणत्या ऋतूत पाऊस पडतो?,उन्हाळा,पावसाळा (Monsoon),हिवाळा,वसंत,1,Seasons
+Social Studies,Civic Sense,ग्रामपंचायतीच्या प्रमुखाला काय म्हणतात?,सरपंच (Sarpanch),मुख्यमंत्री,महापौर,राज्यपाल,0,Local Governance
+Social Studies,Festivals,मकर संक्रांतीला आपण कोणता गोड पदार्थ बनवतो?,मोदक,तिळगुळ,पुरणपोळी,गुलाबजामुन,1,Cultural Festivals
+Social Studies,Earth,पृथ्वीला स्वतःभोवती एक फेरी पूर्ण करण्यास किती तास लागतात?,१२ तास,२४ तास,४८ तास,३६५ तास,1,Earth Rotation
+Social Studies,Transport,वाहतुकीचे सर्वात जुने साधन कोणते?,विमान,चलत चालणे किंवा बैलगाडी,मेट्रो रेल्वे,हेलिकॉप्टर,1,Transport History
+Social Studies,Economy,व्यापारी काय करतो?,वस्तूंची खरेदी व विक्री,फक्त शेती,फक्त शिक्षण,फक्त उपचार,0,Economic Roles
+Social Studies,General Awareness,महाराष्ट्राची सांस्कृतिक राजधानी कोणती मानली जाते?,मुंबई,पुणे,नागपूर,नाशिक,1,Cultural Hubs
+Social Studies,Environment,प्लास्टिक थैल्यांऐवजी कशाचा वापर करावा?,कापडी पिशव्या,काचेच्या वस्तू,लोखंडी पट्ट्या,कागदी कचरा,0,Eco-Friendly Practices
+Mathematics,Large Numbers,दहा हजार ही संख्या अंकात कशी लिहाल?,१०,०००,१,००,०००,१,०००,१००,0,Large Numbers
+Mathematics,Addition,१२३४ + ५६७८ ची बेरीज किती?,६९०२,६९१२,६९२२,६९३२,1,Addition
+Mathematics,Subtraction,५००० - २४६८ वजाबाकी करा.,२५३२,२६३२,२४३२,२७३२,0,Subtraction
+Mathematics,Multiplication,२५ गुणिले २५ किती होतात?,६००,६२५,६५०,७००,1,Multiplication
+Mathematics,Division,१४४ ला १२ ने भागल्यास भागाकार किती येतो?,१०,११,१२,१३,2,Division
+Mathematics,Fractions,३/४ चा अर्थ काय?,चार पैकी तीन भाग,तीन पैकी चार भाग,एकूण चार भाग,काहीही नाही,0,Fraction Concept
+Mathematics,Geometry,ज्या त्रिकोणाच्या तिन्ही बाजू समान असतात, त्याला काय म्हणतात?,समभुज त्रिकोण (Equilateral),विषमभुज,कोन,चौरस,0,Geometry Properties
+Mathematics,Measurement,५०० ग्रॅम म्हणजे किती किलोग्राम?,१/२ किलो,१ किलो,२ किलो,५ किलो,0,Weight Conversion
+Mathematics,Time,घड्याळात ३:३० वाजले म्हणजे किती वेळ झाला?,साडेतीन वाजले,सवा तीन,पाऊण तीन,तीन वाजले,0,Time Concepts
+Mathematics,Money,₹१०० च्या नोटेची किंमत किती?,१०० रुपये,१० रुपये,५० रुपये,५०० रुपये,0,Money Basics
+English,Grammar,'Birds fly in the sky.' या वाक्यातील संज्ञा (Noun) कोणती?,Birds,Fly,In,Sky,0,Parts of Speech
+English,Vocabulary,'Cold' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Hot,Warm,Cool,Ice,0,Opposite Words
+English,Grammar,'The apple is ___ the basket.' योग्य शब्द निवडा.,in,on,under,behind,0,Prepositions
+English,Plurals,'Box' या शब्दाचे अनेकवचन काय होते?,Boxes,Boxs,Boxses,Bokses,0,Singular Plural
+English,Pronouns,'Seema is studying. ___ is a smart girl.' योग्य सर्वनाम भरा.,He,She,It,They,1,Pronouns
+English,Spelling,योग्य स्पेलिंग ओळखा:,School,Scool,Skool,Schoool,0,Spelling Accuracy
+English,Tenses,'They played cricket yesterday.' हे वाक्य कोणत्या काळातील आहे?,Present,Past (भूतकाळ),Future,Continuous,1,Verb Tenses
+English,Action Verbs,'Sleeping' चा मराठी अर्थ काय?,खाणे,झोपणे,धावणे,वाचणे,1,Action Verbs
+English,Question Words,'___ are you doing?' योग्य शब्द निवडा.,What,Where,When,Who,0,Wh-Questions
+English,Rhyming Words,'Sun' शी जुळणारा शब्द ओळखा:,Fun,Cat,Dog,Pen,0,Rhyming Words
