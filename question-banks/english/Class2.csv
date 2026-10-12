@@ -1,0 +1,175 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Place Value,What is the place value of 5 in 52?,5,50,500,2,1,Place Value Understanding
+Mathematics,Place Value,What is the place value of 3 in 43?,3,30,300,4,0,Place Value Understanding
+Mathematics,Place Value,What is the place value of 8 in 89?,8,80,800,9,1,Place Value Understanding
+Mathematics,Place Value,What is 2 tens and 4 ones?,24,42,204,420,0,Place Value Understanding
+Mathematics,Place Value,What is 6 tens and 0 ones?,6,60,600,66,1,Place Value Understanding
+Mathematics,Place Value,What is 9 tens and 9 ones?,99,90,9,18,0,Place Value Understanding
+Mathematics,Addition,What is 15 + 10?,20,25,30,15,1,2-Digit Addition
+Mathematics,Addition,What is 23 + 12?,35,33,25,45,0,2-Digit Addition
+Mathematics,Addition,What is 40 + 30?,60,70,80,50,1,2-Digit Addition
+Mathematics,Addition,What is 18 + 5?,22,23,24,25,1,Addition with Carrying
+Mathematics,Addition,What is 27 + 6?,33,32,34,31,0,Addition with Carrying
+Mathematics,Addition,What is 50 + 45?,90,95,85,100,1,2-Digit Addition
+Mathematics,Addition,What is 14 + 14?,28,26,30,24,0,2-Digit Addition
+Mathematics,Addition,What is 33 + 22?,55,44,66,50,0,2-Digit Addition
+Mathematics,Addition,What is 19 + 11?,30,29,31,40,0,2-Digit Addition
+Mathematics,Subtraction,What is 45 - 15?,30,25,35,20,0,2-Digit Subtraction
+Mathematics,Subtraction,What is 30 - 12?,18,17,19,20,0,Subtraction with Borrowing
+Mathematics,Subtraction,What is 50 - 20?,20,30,40,10,1,2-Digit Subtraction
+Mathematics,Subtraction,What is 28 - 9?,19,18,17,20,0,Subtraction with Borrowing
+Mathematics,Subtraction,What is 64 - 20?,44,34,54,24,0,2-Digit Subtraction
+Mathematics,Subtraction,What is 85 - 5?,80,75,85,90,0,2-Digit Subtraction
+Mathematics,Subtraction,What is 99 - 99?,1,0,99,9,1,2-Digit Subtraction
+Mathematics,Subtraction,What is 42 - 10?,32,22,40,30,0,2-Digit Subtraction
+Mathematics,Subtraction,What is 73 - 11?,62,63,61,52,0,2-Digit Subtraction
+Mathematics,Multiplication,What is 2 × 5?,8,10,12,15,1,Basic Multiplication
+Mathematics,Multiplication,What is 3 × 3?,6,9,12,3,1,Basic Multiplication
+Mathematics,Multiplication,What is 5 × 4?,15,20,25,10,1,Basic Multiplication
+Mathematics,Multiplication,What is 10 × 2?,12,20,22,10,1,Basic Multiplication
+Mathematics,Multiplication,What is 4 × 2?,6,8,10,12,1,Basic Multiplication
+Mathematics,Multiplication,What is 2 × 8?,14,16,18,12,1,Basic Multiplication
+Mathematics,Multiplication,What is 5 × 5?,20,25,30,35,1,Basic Multiplication
+Mathematics,Multiplication,What is 3 × 4?,10,12,14,16,1,Basic Multiplication
+Mathematics,Multiplication,What is 10 × 5?,40,50,60,55,1,Basic Multiplication
+Mathematics,Multiplication,What is 2 × 9?,16,18,20,19,1,Basic Multiplication
+Mathematics,Money,How many 50 paise coins make 1 Rupee?,1,2,3,4,1,Money Concepts
+Mathematics,Money,How many 10 Rupee notes make 50 Rupees?,3,4,5,6,2,Money Concepts
+Mathematics,Money,Riya buys an eraser for 5 Rupees and a pencil for 10 Rupees. Total cost?,12,15,20,10,1,Money Calculations
+Mathematics,Money,If you give 20 Rupees for a 12 Rupee toy, what change do you get?,6,8,10,5,1,Money Calculations
+Mathematics,Time,How many hours are there in a day?,12,24,48,60,1,Time Understanding
+Mathematics,Time,How many minutes are in one hour?,30,60,90,120,1,Time Understanding
+Mathematics,Time,If the long hand of a clock is at 12 and short hand is at 3, what time is it?,12 o'clock,3 o'clock,6 o'clock,9 o'clock,1,Reading Clocks
+Mathematics,Time,Which day comes after Tuesday?,Monday,Wednesday,Thursday,Friday,1,Calendar Concepts
+Mathematics,Time,Which month comes before January?,February,December,November,March,1,Calendar Concepts
+Mathematics,Shapes,How many corners does a triangle have?,2,3,4,0,1,2D Shapes
+Mathematics,Shapes,A solid ball is an example of a:,Cube,Sphere,Cylinder,Cone,1,3D Shapes
+Mathematics,Shapes,A party hat looks like a:,Sphere,Cone,Cube,Cylinder,1,3D Shapes
+Mathematics,Shapes,A can of soup is shaped like a:,Cube,Cylinder,Sphere,Cone,1,3D Shapes
+Mathematics,Measurement,Which unit is used to measure length of a pencil?,Meters,Centimeters,Kilograms,Liters,1,Measurement Units
+Mathematics,Measurement,Which unit is used to measure weight of apples?,Liters,Kilograms,Meters,Centimeters,1,Measurement Units
+Mathematics,Measurement,Which unit is used to measure liquid like milk?,Kilograms,Liters,Meters,Grams,1,Measurement Units
+Mathematics,Measurement,How many centimeters are in 1 meter?,10,100,1000,50,1,Measurement Conversion
+Mathematics,Patterns,Complete the pattern: 5, 10, 15, 20, *?,22,25,30,24,1,Number Patterns
+Mathematics,Patterns,Complete the pattern: 100, 90, 80, 70, *?,60,50,65,75,0,Number Patterns
+Mathematics,Patterns,Complete the pattern: 2, 4, 8, 16, *?,20,32,24,30,1,Number Patterns
+Mathematics,Patterns,Complete the pattern: 11, 22, 33, 44, *?,50,55,66,45,1,Number Patterns
+Mathematics,Word Problems,A box has 24 red balls and 12 blue balls. How many balls in total?,34,36,38,40,1,Applied Addition
+Mathematics,Word Problems,There were 35 birds on a tree. 15 flew away. How many remain?,15,20,25,30,1,Applied Subtraction
+Mathematics,Word Problems,Each dog has 4 legs. How many legs do 3 dogs have in total?,8,12,16,10,1,Applied Multiplication
+Mathematics,Word Problems,A packet contains 10 chocolates. How many chocolates in 4 packets?,30,40,50,20,1,Applied Multiplication
+Mathematics,Word Problems,A classroom has 20 desks. 5 new desks are added. How many desks now?,23,25,30,22,1,Applied Addition
+Science,Plants,Which part of the plant holds it upright above the ground?,Root,Stem,Leaf,Flower,1,Plant Structure
+Science,Plants,Plants that need support to climb up are called:,Trees,Climbers,Shrubs,Herbs,1,Plant Types
+Science,Plants,Small and bushy plants with hard stems are called:,Herbs,Shrubs,Trees,Creepers,1,Plant Types
+Science,Plants,Very small plants with soft green stems are called:,Shrubs,Herbs,Trees,Climbers,1,Plant Types
+Science,Plants,Which of these is a climber plant?,Pea plant,Rose plant,Banyan tree,Tulsi,0,Plant Types
+Science,Plants,Thorns protect plants from being eaten by:,Insects,Animals,Rain,Sun,1,Plant Adaptation
+Science,Animals,Animals that live in forests are called:,Domestic animals,Wild animals,Pet animals,Farm animals,1,Animal Habitat
+Science,Animals,Which animal lives in a kennel?,Horse,Dog,Lion,Cow,1,Animal Homes
+Science,Animals,Which animal lives in a stable?,Cow,Horse,Lion,Pig,1,Animal Homes
+Science,Animals,Which animal lives in a shed?,Horse,Cow,Dog,Rabbit,1,Animal Homes
+Science,Animals,Birds eat with the help of their:,Teeth,Beak,Paws,Hands,1,Animal Anatomy
+Science,Animals,Insects have how many legs?,2,4,6,8,2,Animal Features
+Science,Animals,Which animal spins a web?,Ant,Spider,Bee,Butterfly,1,Animal Behavior
+Science,Animals,Which insect makes honey?,Mosquito,Honeybee,Butterfly,Ant,1,Insect Knowledge
+Science,Human Body,Which internal organ helps us digest food?,Brain,Stomach,Heart,Lungs,1,Internal Organs
+Science,Human Body,Which internal organ pumps blood to the whole body?,Brain,Heart,Lungs,Stomach,1,Internal Organs
+Science,Human Body,Which internal organs help us breathe air?,Heart,Lungs,Stomach,Bones,1,Internal Organs
+Science,Human Body,Which organ controls all functions of our body?,Heart,Brain,Lungs,Liver,1,Internal Organs
+Science,Human Body,Our body frame made of bones is called the:,Muscles,Skeleton,Skin,Joints,1,Human Anatomy
+Science,Human Body,Bones and ____ help us move our body parts.,Hair,Muscles,Nails,Skin,1,Human Anatomy
+Science,Human Body,How many bones does an adult human body have?,100,206,300,150,1,Human Anatomy
+Science,Food,Food items like milk, cheese, and butter are called:,Grain products,Dairy products,Poultry products,Junk food,1,Food Groups
+Science,Food,Pulses,beans, and eggs help our body to:,Burn energy,Grow and build muscle,Cool down,Sleep,1,Nutritional Functions
+Science,Food,Which of these is a protective food that prevents diseases?,Fruits and Vegetables,Rice,Butter,Sugar,0,Food Groups
+Science,Food,Meals eaten in the morning are called:,Lunch,Breakfast,Dinner,Snacks,1,Daily Routines
+Science,Water,The process of water turning into water vapor due to heat is:,Condensation,Evaporation,Precipitation,Freezing,1,Water Cycle
+Science,Water,Rainwater that seeps into the earth is called:,Surface water,Groundwater,Ocean water,River water,1,Water Sources
+Science,Water,To make water safe for drinking, we should ____ it.,Freeze,Boil,Filter and Boil,Color,2,Water Safety
+Science,Air,Moving air is called:,Storm,Wind,Breeze,Gale,1,Air & Weather
+Science,Air,A gentle and pleasant wind is called a:,Storm,Breeze,Gale,Cyclone,1,Air & Weather
+Science,Air,Air contains gas that all living things need to breathe, named:,Carbon dioxide,Oxygen,Nitrogen,Helium,1,Air Composition
+Science,Air,Smoke from factories and vehicles makes the air:,Clean,Polluted,Fresh,Cool,1,Environmental Health
+Science,Weather & Seasons,Very fast and strong winds along with rain is called a:,Breeze,Storm,Draft,Fog,1,Weather Phenomena
+Science,Weather & Seasons,Leaves turn yellow and fall off trees in which season?,Spring,Autumn,Winter,Summer,1,Seasons
+Science,Weather & Seasons,New flowers bloom and trees grow fresh green leaves in:,Autumn,Spring,Winter,Summer,1,Seasons
+Science,Shadows,A shadow is formed when an object ____ light.,Reflects,Blocks,Creates,Bends,1,Light & Shadows
+Science,Shadows,At what time of the day is our shadow the shortest?,Morning,Noon,Evening,Night,1,Light & Shadows
+Science,Shadows,At what times of the day are shadows the longest?,Noon,Morning and Evening,Midnight,Afternoon,1,Light & Shadows
+Science,Safety,We should cross the road only at the:,Red light,Zebra crossing,Footover bridge,Corner,1,Safety Rules
+Science,Safety,Which light on the traffic signal tells vehicles to stop?,Green,Red,Yellow,Blue,1,Safety Rules
+Science,Safety,Which light on the traffic signal tells vehicles to get ready?,Red,Yellow,Green,White,1,Safety Rules
+Science,Materials,Objects made of iron, gold, or copper are made of:,Wood,Metal,Plastic,Fabric,1,Materials
+Science,Materials,Clothes we wear in summer are made of:,Wool,Cotton,Silk,Nylon,1,Materials
+Science,Materials,Raincoats are made from waterproof material like:,Cotton,Plastic or Rubber,Wool,Silk,1,Materials
+Science,Rocks & Minerals,The hard mineral inside pencils used for writing is:,Coal,Graphite,Chalk,Granite,1,Earth Science
+Science,Rocks & Minerals,The Taj Mahal is built using which type of rock/stone?,Granite,White Marble,Sandstone,Slate,1,Earth Science
+English,Grammar,Select the proper noun in: 'Delhi is a big city.',Delhi,big,city,is,0,Nouns
+English,Grammar,Select the common noun in: 'Mr. Sharma is a doctor.',Mr. Sharma,doctor,is,good,1,Nouns
+English,Grammar,Which noun is a collective noun for a group of cows?,Flock,Herd,Pack,Swarm,1,Collective Nouns
+English,Grammar,Which collective noun refers to a group of birds?,Herd,Flock,Pack,School,1,Collective Nouns
+English,Grammar,Which collective noun refers to a group of fish?,Flock,School,Herd,Pride,1,Collective Nouns
+English,Grammar,Choose the correct possessive pronoun: 'This pen belongs to me. It is **.',his,mine,hers,yours,1,Pronouns
+English,Grammar,Choose the correct pronoun: 'Rahul and I are friends. ____ play together.',He,We,They,She,1,Pronouns
+English,Grammar,Choose the correct adjective: 'An elephant is a ____ animal.',small,huge,tiny,short,1,Adjectives
+English,Grammar,Identify the adjective: 'She wears a beautiful dress.',She,wears,beautiful,dress,2,Adjectives
+English,Grammar,Identify the adjective: 'I have three red balloons.',three and red,have,balloons,I,0,Adjectives
+English,Grammar,Fill with correct verb: 'The sun ____ in the east.',rises,sets,runs,flies,0,Verbs
+English,Grammar,Fill with correct verb: 'Fish ____ in water.',walk,swim,fly,jump,1,Verbs
+English,Grammar,Identify the action verb: 'The dog barked loudly at the stranger.',dog,barked,loudly,stranger,1,Verbs
+English,Grammar,Fill in the blank: 'Yesterday, I ____ to the zoo.',go,went,going,will go,1,Past Tense
+English,Grammar,Fill in the blank: 'She ____ a delicious cake last night.',bakes,baked,baking,will bake,1,Past Tense
+English,Grammar,Fill in the blank: 'Look! The baby is **.',sleep,sleeping,slept,sleeps,1,Present Continuous
+English,Grammar,Fill in the blank: 'They are ____ football in the park.',played,playing,plays,play,1,Present Continuous
+English,Grammar,Choose the correct preposition: 'The ball rolled ____ the bed.',under,above,sky,happy,0,Prepositions
+English,Grammar,Choose the correct preposition: 'The picture is hanging ____ the wall.',on,in,under,inside,0,Prepositions
+English,Grammar,Choose the correct preposition: 'The bird is sitting ____ the branch.',on,under,in,behind,0,Prepositions
+English,Grammar,Choose the correct preposition: 'He is hiding ____ the curtain.',on,behind,over,under,1,Prepositions
+English,Grammar,Choose the correct conjunction: 'I like apples ____ oranges.',and,but,or,so,0,Conjunctions
+English,Grammar,Choose the correct conjunction: 'He ran fast, ____ he missed the bus.',and,but,or,because,1,Conjunctions
+English,Grammar,Choose the correct conjunction: 'Is that a dog ____ a cat?',and,or,but,so,1,Conjunctions
+English,Grammar,Choose the correct article: '** European country',A,An,The,No article,0,Articles
+English,Grammar,Choose the correct article: '** hour ago',A,An,The,No article,1,Articles
+English,Grammar,Choose the correct article: '**** Moon shines at night.',A,An,The,No article,2,Articles
+English,Vocabulary,Synonym of 'Giant' is:,Small,Huge,Tiny,Short,1,Synonyms
+English,Vocabulary,Synonym of 'Silent' is:,Loud,Quiet,Noisy,Fast,1,Synonyms
+English,Vocabulary,Synonym of 'Begin' is:,End,Start,Stop,Finish,1,Synonyms
+English,Vocabulary,Synonym of 'Glad' is:,Sad,Happy,Angry,Sick,1,Synonyms
+English,Vocabulary,Synonym of 'Fast' is:,Slow,Quick,Late,Calm,1,Synonyms
+English,Vocabulary,Antonym of 'Brave' is:,Strong,Cowardly,Bold,Smart,1,Antonyms
+English,Vocabulary,Antonym of 'Smooth' is:,Soft,Rough,Flat,Slick,1,Antonyms
+English,Vocabulary,Antonym of 'Always' is:,Often,Never,Forever,Daily,1,Antonyms
+English,Vocabulary,Antonym of 'Full' is:,Empty,Filled,Complete,Heavy,0,Antonyms
+English,Vocabulary,Antonym of 'Dark' is:,Black,Light,Dim,Night,1,Antonyms
+English,Spelling,Select the correctly spelled word:,Beautifull,Beautiful,Beutiful,Beautifil,1,Spelling
+English,Spelling,Select the correctly spelled word:,Elephant,Elefant,Eliphant,Elephent,0,Spelling
+English,Spelling,Select the correctly spelled word:,Tomorrow,Tommorow,Tomorow,Tommorrow,0,Spelling
+English,Spelling,Select the correctly spelled word:,Because,Bicause,Becaouse,Becaus,0,Spelling
+English,Spelling,Select the correctly spelled word:,Butterfly,Buterfly,Butterflai,Buterflai,0,Spelling
+English,Spelling,Select the correctly spelled word:,Daughter,Dautor,Doughter,Daughtar,0,Spelling
+English,Spelling,Select the correctly spelled word:,Neighbour,Neighbor,Nabor,Neigbor,0,Spelling
+English,Spelling,Select the correctly spelled word:,Garden,Garten,Gardin,Gardan,0,Spelling
+English,Spelling,Select the correctly spelled word:,Holiday,Holeday,Holidai,Hollyday,0,Spelling
+English,Spelling,Select the correctly spelled word:,Umbrella,Umbrela,Umbrellah,Umbralla,0,Spelling
+English,Punctuation,Which sentence is punctuated correctly?,where is my bag,Where is my bag?,Where is my bag.,where is my bag?,1,Punctuation
+English,Punctuation,Which sentence is punctuated correctly?,I love ice cream.,i love ice cream,I love ice cream,i love ice cream.,0,Punctuation
+English,Punctuation,What punctuation mark shows strong feeling like excitement?,Full stop,Comma,Exclamation mark (!),Question mark,2,Punctuation
+English,Grammar,Irregular plural of 'Child' is:,Childs,Children,Childrens,Childes,1,Irregular Plurals
+English,Grammar,Irregular plural of 'Mouse' is:,Mouses,Mice,Mices,Mouse,1,Irregular Plurals
+English,Grammar,Irregular plural of 'Foot' is:,Foots,Feet,Feets,Footes,1,Irregular Plurals
+English,Grammar,Irregular plural of 'Leaf' is:,Leafs,Leaves,Leafes,Leavs,1,Irregular Plurals
+English,Grammar,Irregular plural of 'Knife' is:,Knifes,Knives,Knifess,Knive,1,Irregular Plurals
+English,Comprehension,A lion lives in a den. Where does a lion live?,Shed,Den,Nest,Stable,1,Reading Skills
+English,Comprehension,Rani has a pet dog named Bruno. What is the dog's name?,Rani,Bruno,Pet,Dog,1,Reading Skills
+English,Comprehension,The sun sets in the west. Where does the sun set?,East,West,North,South,1,Reading Skills
+English,Vocabulary,A person who bakes bread and cakes is a:,Baker,Doctor,Pilot,Farmer,0,Occupations
+English,Vocabulary,A person who flies an airplane is a:,Driver,Pilot,Sailor,Tailor,1,Occupations
+English,Vocabulary,A person who stitches clothes is a:,Cobbler,Tailor,Barber,Baker,1,Occupations
+English,Vocabulary,A person who mends shoes is a:,Tailor,Cobbler,Carpenter,Plumber,1,Occupations
+English,Vocabulary,A place where animals are kept for public display is a:,Park,Zoo,School,Hospital,1,Places
+English,Vocabulary,A place where we go to buy medicines is a:,Bakery,Pharmacy / Chemist,Library,Bank,1,Places
+English,Vocabulary,Young one of a sheep is called a:,Puppy,Lamb,Calf,Cub,1,Animal Young Ones
+English,Vocabulary,Young one of a duck is called a:,Chick,Duckling,Kitten,Calf,1,Animal Young Ones
+English,Vocabulary,Sound made by a lion is called a:,Bark,Roar,Mew,Neigh,1,Animal Sounds
+English,Vocabulary,Sound made by a horse is called a:,Roar,Neigh,Bleat,Quack,1,Animal Sounds
