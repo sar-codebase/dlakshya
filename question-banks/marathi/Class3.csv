@@ -1,0 +1,101 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Addition,145 आणि 232 ची बेरीज किती येते?,377,367,387,357,0,Three Digit Addition
+Mathematics,Subtraction,584 मधून 231 वजा केल्यास किती उरतात?,353,343,363,333,0,Three Digit Subtraction
+Mathematics,Multiplication,12 गुणिले 5 किती होतात?,50,55,60,65,2,Multiplication Tables
+Mathematics,Division,36 ला 4 ने भागल्यास उत्तर किती येते?,7,8,9,6,2,Division Basics
+Mathematics,Fractions,एका भाकरीचे 4 समान भाग केले, त्यातील 1 भाग म्हणजे किती?,1/2,1/4,3/4,एक संपूर्ण,1,Fraction Basics
+Mathematics,Geometry,चौकोनाला किती शिरोबिंदू (Vertices) असतात?,3,4,5,6,1,Geometric Properties
+Mathematics,Measurement,दोन किलोमीटर मध्ये किती मीटर असतात?,100 मीटर,500 मीटर,1000 मीटर,2000 मीटर,3,Distance Measurement
+Mathematics,Time,घड्याळात मिनिट काटा पूर्ण एक फेरी मारतो तेव्हा किती मिनिटे होतात?,30 मिनिटे,60 मिनिटे,90 मिनिटे,12 मिनिटे,1,Time Measurement
+Mathematics,Money,₹50 ची एक नोट आणि ₹20 ची एक नोट मिळून एकूण किती रुपये होतात?,₹60,₹70,₹80,₹100,1,Money Calculation
+Mathematics,Patterns,क्रम पूर्ण करा: 12, 15, 18, 21, ?,22,23,24,25,2,Number Patterns
+English,Grammar,'The sun ___ in the east.' योग्य क्रियापद भरा.,rise,rises,rising,rose,1,Present Simple Tense
+English,Vocabulary,'Honest' या शब्दाचा विरुद्धार्थी शब्द कोणता?,True,Dishonest,Bad,False,1,Opposite Words
+English,Grammar,'Birds are flying ___ the sky.' योग्य शब्द भरा.,on,in,under,at,1,Prepositions
+English,Plurals,'Child' या शब्दाचे अनेकवचन काय होते?,Childs,Children,Childrens,Childes,1,Singular Plural
+English,Pronouns,'Geeta is singing. ___ has a sweet voice.' योग्य सर्वनाम भरा.,He,She,It,They,1,Pronouns
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Beautiful,Beutiful,Batiful,Beautyful,0,Spelling Accuracy
+English,Adjectives,हा पर्वत खूप उंच आहे. या वाक्यात विशेषण (Adjective) कोणते?,पर्वत,खूप,उंच,आहे,2,Describing Words
+English,Action Verbs,मुले बागेत काय करत आहेत? 'Playing' चा अर्थ काय?,धावणे,खेळणे,वाचणे,लिहणे,1,Action Verbs
+English,Question Words,'___ old are you?' योग्य प्रश्नार्थक शब्द निवडा.,What,How,Where,Who,1,Wh-Questions
+English,Rhyming Words,'House' शी जुळणारा शब्द ओळखा:,Mouse,Cat,Sun,Pen,0,Rhyming Words
+EVS,Body Parts,आपल्या शरीराला ताठ उभे राहण्यासाठी कशाची मदत होते?,हाताची बोटे,हाडांची सांगाडा (Skeleton),केसांची,नखांची,1,Skeletal System
+EVS,Animals,गवताशिवाय मांस खाणारे प्राणी कोणते?,गाय,हरण,वाघ (Tiger),ससा,2,Carnivorous Animals
+EVS,Plants,वनस्पतींना अन्न तयार करण्यासाठी कशाची गरज असते?,फक्त अंधार,सूर्यप्रकाश, पाणी व हवा,फक्त माती,फक्त दगड,1,Photosynthesis Basics
+EVS,Water,पाण्याचे मुख्य नैसर्गिक रूप कोणते?,समुद्र / पाऊस,कृत्रिम तलाव,नल,बाटली,0,Water Sources
+EVS,Shelter,पक्षी आपले घरटे कशाने बनवतात?,सिमेंट,काड्या व गवत,लोखंड,प्लास्टिक,1,Bird Nests
+EVS,Seasons,हिवाळ्यात आपण कोणते कपडे वापरतो?,सुती कपडे,उबदार लोकरीचे कपडे (Woolen),रेनकोट,पातळ कपडे,1,Clothing & Seasons
+EVS,Community Helpers,शहराची स्वच्छता राखण्याचे काम कोण करतात?,डॉक्टर,स्वच्छता कर्मचारी (Safai Kamgar),वकील,इंजीनियर,1,Community Helpers
+EVS,Safety,रस्त्यावरून चालताना नेहमी कुठून चालावे?,रस्त्याच्या मध्यभागी,फुटपाथवर,धावत,विरुद्ध दिशेने,1,Pedestrian Safety
+EVS,Food,आपल्याला ताजी फळे व पालेभाज्यापासून काय मिळते?,जीवनसत्त्वे व खनिजे (Vitamins),फक्त चरबी,फक्त मीठ,काहीही नाही,0,Nutrition Basics
+EVS,Transport,जलद प्रवासासाठी सर्वात वेगाने जाणारे वाहन कोणते?,सायकल,बैलगाडी,विमान (Aeroplane),चालत जाणे,2,Air Transport
+Social Studies,National Symbols,आपले राष्ट्रीय चिन्ह (National Emblem) कोणावरून घेतले गेले आहे?,अशोक स्तंभ (सारनाथ),लाल किल्ला,ताजमहल,इंडिया गेट,0,National Symbols
+Social Studies,Festivals,दिवाळी हा सण कोणत्या ऋतूत येतो?,उन्हाळा,पावसाळा,हिवाळा,वसंत,2,Seasons & Festivals
+Social Studies,Directions,नकाशात वरची बाजू कोणती दिशा दर्शवते?,पूर्व,पश्चिम,उत्तर,दक्षिण,2,Map Directions
+Social Studies,Family,आईचे वडील आपले कोण होतात?,आजोबा,मामा,काका,आज्जी,0,Family Relations
+Social Studies,Community Helpers,लोकांना न्याय मिळवून देण्याचे काम कोण करतो?,शिक्षक,न्यायाधीश (Judge),वैद्य,पोलीस,1,Community Roles
+Social Studies,Earth,पृथ्वीचा किती भाग पाण्याने व्यापलेला आहे?,एक चतुर्थांश,जवळपास तीन चतुर्थांश (71%),फक्त अर्धा भाग,काहीच नाही,1,Earth Geography
+Social Studies,Time,एका वर्षात किती दिवस असतात?,305 दिवस,365 दिवस,366 दिवस (लीप वर्ष वगळून साधारणपणे),350 दिवस,2,Calendar Basics
+Social Studies,Environment,पर्यावरण संरक्षणासाठी जास्तीत जास्त काय लावले पाहिजे?,कारखाने,इमारती,झाडे (Trees),रस्ते,2,Environmental Conservation
+Social Studies,Civic Sense,आपल्या देशाचे राष्ट्रीय गीत कोणते आहे?,जन गण मन,वंदे मातरम्,सारे जहाँ से अच्छा,जय हिंद,1,National Songs
+Social Studies,General Awareness,भारताचे पहिले पंतप्रधान कोण होते?,महात्मा गांधी,पंडित जवाहरलाल नेहरू,डॉ. राजेंद्र प्रसाद,सர்தார் படேல்,1,Historical Figures
+Mathematics,Addition,234 + 123 ची बेरीज किती?,357,347,367,377,0,Three Digit Addition
+Mathematics,Subtraction,450 - 125 वजाबाकी करा.,315,325,335,345,1,Three Digit Subtraction
+Mathematics,Multiplication,5 गुणिले 8 किती होतात?,35,40,45,50,1,Multiplication Tables
+Mathematics,Division,45 ला 5 ने भागल्यास उत्तर किती येते?,8,9,10,7,1,Division Basics
+Mathematics,Fractions,एका संत्र्याचे 2 समान भाग केले, तर एका भागाला काय म्हणतात?,अर्धा (1/2),पाऊण (3/4),पाव (1/4),पूर्ण,0,Fraction Basics
+Mathematics,Geometry,त्रिकोणाला किती कोन असतात?,2,3,4,5,1,Geometric Properties
+Mathematics,Measurement,1 किलोग्राम म्हणजे किती ग्रॅम?,500 ग्रॅम,1000 ग्रॅम,2000 ग्रॅम,100 ग्रॅम,1,Weight Units
+Mathematics,Time,एका दिवसात किती तास असतात?,12 तास,24 तास,48 तास,60 तास,1,Time Measurement
+Mathematics,Money,₹100 ची नोट आणि ₹50 ची नोट मिळून किती होतात?,₹120,₹140,₹150,₹200,2,Money Calculation
+Mathematics,Patterns,क्रम पूर्ण करा: 5, 10, 15, 20, ?,22,25,30,35,1,Skip Counting
+English,Grammar,'He ___ football every evening.' योग्य क्रियापद भरा.,play,plays,playing,played,1,Present Simple Tense
+English,Vocabulary,'Cold' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Hot,Warm,Cool,Ice,0,Opposite Words
+English,Grammar,'The cat is sleeping ___ the bed.' योग्य शब्द भरा.,in,on,under,at,1,Prepositions
+English,Plurals,'Leaf' (पान) या शब्दाचे अनेकवचन काय होते?,Leafs,Leaves,Lefs,Leavs,1,Singular Plural
+English,Pronouns,'This is Riya. ___ is a good dancer.' योग्य सर्वनाम भरा.,He,She,It,They,1,Pronouns
+English,Spelling,योग्य स्पेलिंग ओळखा:,Elephant,Elefent,Elifant,Elliphant,0,Spelling Accuracy
+English,Adjectives,हा आंबा गोड आहे. वाक्यातील विशेषण शोधा.,हा,आंबा,गोड,आहे,2,Describing Words
+English,Action Verbs,'Writing' चा मराठी अर्थ काय?,वाचणे,लिहिणे,पाहणे,ऐकणे,1,Action Verbs
+English,Question Words,'___ are you going?' योग्य शब्द निवडा.,What,Where,When,Who,1,Wh-Questions
+English,Rhyming Words,'Cat' शी जुळणारा शब्द ओळखा:,Bat,Dog,Sun,Moon,0,Rhyming Words
+EVS,Body Parts,आपल्या शरीरातील सर्वात कठीण भाग कोणता?,दात (Enamel),त्वचा,नख,केस,0,Human Body Facts
+EVS,Animals,पाण्यात आणि जमिनीवर दोन्हीकडे राहू शकणाऱ्या प्राण्याला काय म्हणतात?,जलचर,उभयचर (Amphibian),भूचर,खेचर,1,Animal Habitats
+EVS,Plants,झाडाचा कोणता भाग जमिनीखाली असतो?,पाने,फूल,मूळ (Root),फळ,2,Parts of Plants
+EVS,Water,पिण्याच्या पाण्यासाठी आपण काय करणे सर्वात सुरक्षित असते?,तलावातील पाणी पिणे,उकळून थंड केलेले पाणी पिणे,नदीचे गढूळ पाणी पिणे,पाऊस थेट पिणे,1,Water Purification
+EVS,Shelter,कुत्रा कुठे राहतो?,पिंजऱ्यात,बिळात,केनेल (Kennel / कुत्र्याचे घर),घरट्यात,2,Animal Homes
+EVS,Seasons,उन्हाळ्यात कशाचा त्रास जास्त होतो?,थंडीचा,कडक उन्हाचा व त्रासाचा,पावसाचा,बर्फवृष्टीचा,1,Seasons
+EVS,Community Helpers,रुग्णांवर औषधोपचार कोण करतात?,शिक्षक,डॉक्टर (Doctor),शिंपी,सुतार,1,Community Helpers
+EVS,Safety,घरी गॅस शेगडीजवळ काय करू नये?,खेळणे / हात लावणे,स्वयंपाक पाहणे,आईला मदत करणे,दूर उभे राहणे,0,Safety Rules
+EVS,Food,कोणत्या अन्नामुळे आपले दात मजबूत होतात?,चॉकलेट,दूध व हिरव्या पालेभाज्या,कोल्ड ड्रिंक्स,चिप्स,1,Healthy Food
+EVS,Transport,लोखंडी रुळांवर चालणारी गाडी कोणती?,बस,कार,रेल्वे (Train),विमान,2,Rail Transport
+Social Studies,National Symbols,आपले राष्ट्रीय जलचर प्राणी कोणता?,डॉल्फिन (गंगा नदीतील),मासा,सुसर,तिमिंगेल,0,National Symbols
+Social Studies,Festivals,स्वातंत्र्य दिन कधी साजरा केला जातो?,26 जानेवारी,15 ऑगस्ट,2 ऑक्टोबर,1 मे,1,National Festivals
+Social Studies,Directions,उगवत्या सूर्याच्या दिशेने तोंड करून उभे राहिल्यास डाव्या हाताची कोणती दिशा असते?,पूर्व,पश्चिम,उत्तर,दक्षिण,2,Cardinal Directions
+Social Studies,Family,वडीलांच्या भावाला काय म्हणतात?,माமா,काका (Uncle),आत्या,मावशी,1,Family Relations
+Social Studies,Community Helpers,देशाच्या सीमांचे रक्षण कोण करतात?,सैनिक (Soldier),शेतकरी,कामगार,व्यापारी,0,National Security
+Social Studies,Earth,पृथ्वीवरील सर्वात मोठा महासागर कोणता?,अटलांटिक,प्रशांत महासागर (Pacific),हिंदी महासागर,आर्कटिक,1,Geographical Facts
+Social Studies,Time,एका वर्षात किती महिने असतात?,10,12,6,24,1,Months of the Year
+Social Studies,Environment,कागदाचा जास्तीत जास्त वापर टाळून काय वाचवले पाहिजे?,पाणी,झाडे (Forests),वीज,माती,1,Environmental Awareness
+Social Studies,Civic Sense,सार्वजनिक ठिकाणी कचरा टाकायचा असल्यास कशाचा वापर करावा?,रस्त्याचा,कचराकुंडीचा (Dustbin),खिडकीचा,कोपऱ्याचा,1,Civic Responsibility
+Social Studies,General Awareness,महाराष्ट्र राज्यातील लांब नदी कोणती?,कृsi,गोदावरी,नर्मदा,तापी,1,Rivers of Maharashtra
+Mathematics,Addition,321 + 213 ची बेरीज किती?,524,534,544,514,1,Three Digit Addition
+Mathematics,Subtraction,675 - 342 वजाबाकी करा.,323,333,343,353,1,Three Digit Subtraction
+Mathematics,Multiplication,6 गुणिले 7 किती होतात?,40,42,48,36,1,Multiplication Tables
+Mathematics,Division,56 ला 8 ने भागल्यास उत्तर किती येते?,6,7,8,9,1,Division Basics
+Mathematics,Fractions,¾ ला मराठीत काय म्हणतात?,पाव,अर्धा,पाऊण,पूर्ण,2,Fraction Basics
+Mathematics,Geometry,आयत आणि चौकोनाला एकूण किती बाजू असतात?,2,3,4,5,2,Geometric Properties
+Mathematics,Measurement,5 मीटर मध्ये किती सेंटीमीटर असतात?,50 सेमी,500 सेमी,5000 सेमी,5 सेमी,1,Measurement Units
+Mathematics,Time,एका तासात किती मिनिटे असतात?,30 मिनिटे,60 मिनिटे,120 मिनिटे,24 मिनिटे,1,Time Measurement
+Mathematics,Money,₹20 च्या 3 नोटा म्हणजे किती रुपये होतात?,₹40,₹50,₹60,₹80,2,Money Calculation
+Mathematics,Patterns,क्रम पूर्ण करा: 10, 20, 30, 40, ?,45,50,55,60,1,Skip Counting
+English,Grammar,'They ___ playing in the garden.' योग्य शब्द भरा.,is,are,am,be,1,Plural Verbs
+English,Vocabulary,'Happy' चा विरुद्धार्थी शब्द कोणता?,Sad,Glad,Joy,Smile,0,Opposite Words
+English,Grammar,'The ball is ___ the box.' (पेटीच्या आत) योग्य शब्द भरा.,in,on,under,near,0,Prepositions
+English,Plurals,'Box' या शब्दाचे अनेकवचन काय होते?,Boxs,Boxes,Boxes,Bokses,1,Singular Plural
+English,Pronouns,'Rahul and Amit are friends. ___ study together.' योग्य सर्वनाम भरा.,He,She,It,They,3,Pronouns
+English,Spelling,योग्य स्पेलिंग ओळखा:,Friend,Freind,Frind,Frend,0,Spelling Accuracy
+English,Adjectives,गुलाब सुंदर फूल आहे. विशेषण ओळखा.,गुलाब,सुंदर,फूल,आहे,1,Describing Words
+English,Action Verbs,'Reading' चा मराठी अर्थ काय?,लिहिणे,वाचणे,पाहणे,ऐकणे,1,Action Verbs
+English,Question Words,'___ is your best friend?' योग्य प्रश्नार्थक शब्द निवडा.,What,Where,When,Who,3,Wh-Questions
+English,Rhyming Words,'Day' शी जुळणारा शब्द ओळखा:,Way,Sun,Cat,Pen,0,Rhyming Words
