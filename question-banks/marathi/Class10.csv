@@ -1,0 +1,101 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Real Numbers,संख्या 140 चे मूळ अवयवांच्या गुणाकार रूपात कसे लिहू शकाल?,2^2 * 5 * 7,2 * 5^2 * 7,2 * 5 * 7^2,2^3 * 5 * 7,0,Real Numbers & Prime Factorization
+Mathematics,Polynomials,द्विघात बहुपद x^2 - 2x - 8 च्या शून्यांकांची (Zeros) बेरीज किती येईल?,2,-2,4,-4,0,Polynomials
+Mathematics,Pair of Linear Equations,रेशीय समीकरणे x + y = 14 आणि x - y = 4 ची उकल काय असेल?,x = 9, y = 5,x = 8, y = 6,x = 10, y = 4,x = 7, y = 7,0,Linear Equations in Two Variables
+Mathematics,Quadratic Equations,द्विघात समीकरण x^2 - 5x + 6 = 0 चे मूळ खालीलपैकी कोणते आहे?,x = 1,x = 2,x = 4,x = 5,1,Quadratic Equations
+Mathematics,Arithmetic Progressions,अंकगणिती श्रेणी (AP): 2, 7, 12, ... चे 10 वे पद कोणते असेल?,27,32,47,52,2,Arithmetic Progressions
+Mathematics,Coordinate Geometry,बिंदू (2, 3) आणि (4, 1) यांच्यामधील अंतर किती असेल?,2 units,2*sqrt(2) units,4 units,sqrt(2) units,1,Coordinate Geometry
+Mathematics,Trigonometry,9 * sec^2(A) - 9 * tan^2(A) ची किंमत किती?,1,9,8,0,1,Trigonometric Identities
+Mathematics,Circles,वर्तुळाच्या बाहेरील बिंदूपासून वर्तुळाला जास्तीत जास्त किती स्पर्शिका काढता येतात?,0,1,2,अनंत,2,Circles Tangents
+Mathematics,Areas Related to Circles,वर्तुळाची त्रिज्या 7 सेमी असल्यास त्याचे क्षेत्रफळ किती येईल?,22 चौसेमी,44 चौसेमी,154 चौसेमी,308 चौसेमी,2,Areas Related to Circles
+Mathematics,Statistics,दिलेल्या सांख्यिकीय माहितीतून मध्यक (Median) काढण्याचे सूत्र कोणते?,l + ((n/2 - cf)/f) * h,l + ((f1 - f0)/(2f1 - f0 - f2)) * h,sum(fx)/sum(f),यापैकी नाही,0,Statistics
+English,Grammar,'He said, "I am reading a book."' याचे Indirect Speech काय होईल?,He said that he is reading a book.,He said that he was reading a book.,He tells that he is reading a book.,He said he reads a book.,1,Direct and Indirect Speech
+English,Vocabulary,'Transparent' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Clear,Opaque (अपारदर्शक),Bright,Translucent,1,Opposite Words
+English,Grammar,'If you had studied well, you ___ passed the exam.' योग्य Modal Verb निवडा.,will,would have,could,might,1,Conditional Sentences
+English,Plurals,'Phenomenon' या शब्दाचे अनेकवचन काय होते?,Phenomenons,Phenomena,Phenomenas,Phenomenon,1,Singular Plural
+English,Pronouns,'___ of the two applicants was selected.' योग्य Determiner भरा.,Neither,Every,All,Both,0,Pronouns & Determiners
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Accommodation,Acomodation,Accomodationn,Acomodationn,0,Spelling Accuracy
+English,Tenses,'By next March, she will have completed her matriculation.' हा कोणता काळ आहे?,Future Continuous,Future Perfect (भविष्य पूर्ण काळ),Present Perfect,Past Perfect,1,Verb Tenses
+English,Action Verbs,'Freeze' या क्रियापदाचे V2 (Past Tense) रूप कोणते?,Freezed,Froze,Frozen,Freezing,1,Verb Forms
+English,Question Words,'___ pen is this on the desk?' स्वामित्व विचारण्यासाठी कोणता शब्द वापरतात?,What,Which,Whose,Who,2,Wh-Questions
+English,Rhyming Words,'Sight' शी जुळणारा शब्द ओळखा:,Night,Light,Right,All of these,3,Rhyming Words
+Science,Chemical Reactions,लोखंडाच्या वस्तूंना गंज चढणे ही कोणत्या प्रकारची अभिक्रिया आहे?,क्षारन (Corrosion / Oxidation),अक्षारन,विस्थापन,उदासिनीकरण,0,Chemical Reactions and Equations
+Science,Acids Bases and Salts,अम्लारीची (Bases) pH मूल्य कक्षा किती असते?,7 पेक्षा कमी,बरोबर 7,7 पेक्षा जास्त (Between 7 and 14),0 ते 7,2,Acids, Bases, and Salts
+Science,Metals and Non-metals,खालीलपैकी कोणता धातू सर्वात जास्त टणक व कठीण असतो?,सोने,प्लॅटिनम,लोखंड,तांबे,1,Metals and Non-metals
+Science,Carbon Compounds,इथेनॉलचे (Ethanol) अणू सूत्र काय आहे?,CH3COOH,C2H5OH,CH3OH,CH4,1,Carbon and its Compounds
+Science,Life Processes,मानवी शरीरात मूत्रपिंड (Kidneys) कशाचे कार्य पार पाडतात?,श्वसन,उत्सर्जन (Excretion),रक्ताभिसरण,पचन,1,Life Processes
+Science,Control and Coordination,मदू आणि पाठीचा कणा कशाचे मुख्य भाग आहेत?,मध्यवर्ती मज्जासंस्था (Central Nervous System),परिमिती मज्जासंस्था,स्वयंचलित मज्जासंस्था,स्नायू संस्था,0,Control and Coordination
+Science,Heredity and Evolution,मानवामध्ये लिंगनिश्चय (Sex Determination) कोणत्या गुणसूत्रांवर अवलंबून असते?,फक्त माता,पिता (Father's X and Y chromosomes),आईचे आईचे गुणसूत्र,यापैकी नाही,1,Heredity and Evolution
+Science,Light Reflection and Refraction,बहिर्गोल लेन्सची (Convex Lens) नाभीय लांबी (Focal Length) कशी असते?,धन (+),ऋण (-),शून्य,अनंत,0,Light Reflection and Refraction
+Science,Human Eye,मानवी डोळ्यातील कोणत्या भागावर वस्तूची प्रतिमा तयार होते?,पारपटल (Cornea),नेत्रापटल / दृष्टिपटल (Retina),बाहुली,कडा,1,The Human Eye and Colourful World
+Science,Electricity,विद्युत रोधाचे (Resistance) आंतरराष्ट्रीय एकक (SI Unit) काय आहे?,अंपिअर,व्होल्ट,ओहम (Ohm),वॉट,2,Electricity
+Social Studies,History,भारतात असहकार चळवळ (Non-Cooperation Movement) कधी स्थगित करण्यात आली?,फेब्रुवारी 1922 (Chauri Chaura incident),ऑगस्ट 1942,जानेवारी 1930,मार्च 1919,0,Nationalism in India
+Social Studies,Geography,भारतातील काळी मृद (Black Soil) प्रामुख्याने कोणत्या पिकाच्या लागवडीसाठी उत्तम मानली जाते?,तांदूळ,गहू,कापूस (Cotton),चहा,2,Resources and Development
+Social Studies,Civic Sense,सत्तेचे विकेंद्रीकरण (Decentralization) भारतात कोणत्या घटनादुरुस्तीद्वारे बळकट केले गेले?,73 वी व 74 वी घटनादुरुस्ती (1992),42 वी घटनादुरुस्ती,44 वी घटनादुरुस्ती,86 वी घटनादुरुस्ती,0,Power Sharing & Federalism
+Social Studies,Economics,भारतामध्ये पक्क्या उत्पादनांची गुणवत्ता प्रमाणित करण्यासाठी कोणते चिन्ह वापरले जाते?,ISI / AGMARK / Hallmark,ISO,BIS,यापैकी सर्व,3,Consumer Rights & Economy
+Social Studies,History,ग्युसेपे माझिनी (Giuseppe Mazzini) यांचा संबंध कोणत्या देशाच्या एकात्मिकरण चळवळीशी होता?,इटली (Italy),जर्मनी,फ्रान्स,ब्रिटन,0,The Rise of Nationalism in Europe
+Social Studies,Geography,भारतातील सर्वात मोठा ऊर्जा स्त्रोत औष्णिक वीज निर्मितीसाठी कोणता खनिज वापरला जातो?,कोळसा (Coal),पेट्रोलियम,नैसर्गिक वायू,अणुऊर्जा,0,Minerals and Energy Resources
+Social Studies,Civic Sense,लोकशाहीत राजकीय पक्षांना मान्यता कोण प्रदान करते?,राष्ट्रपती,निवडणूक आयोग (Election Commission of India),संसदेचे अध्यक्ष,सर्वोच्च न्यायालय,1,Political Parties
+Social Studies,Economics,एका देशातून दुसऱ्या देशात होणाऱ्या वस्तूंच्या खरेदी-विक्रीला काय म्हणतात?,आंतरराष्ट्रीय व्यापार (International Trade),अंतर्देशीय व्यापार,स्थानिक व्यापार,घाऊक व्यापार,0,Lifelines of National Economy
+Social Studies,History,महामंदीची (Great Depression) सुरुवात जगात कोणत्या वर्षापासून झाली?,1929 (Great Depression),1914,1939,1945,0,The Making of a Global World
+Social Studies,Geography,भारतातील पहिले सिमेंट कारखाने कोठे स्थापन झाले?,चेन्नई (1904),मुंबई,कोलकाता,पुणे,0,Manufacturing Industries
+Mathematics,Real Numbers,26 आणि 91 चा मसावि (HCF) किती येईल?,13,26,7,2,0,HCF and LCM
+Mathematics,Polynomials,द्विघात बहुपद 4u^2 + 8u चे शून्यांक (Zeros) काय असतील?,0 आणि -2,0 आणि 2,1 आणि -2,-1 आणि -2,0,Polynomial Roots
+Mathematics,Pair of Linear Equations,जर दोन रेषा परस्पर समांतर असतील तर त्यांच्या जोडीला काय म्हणतात?,सुसंगत (Consistent),असुसंगत (Inconsistent),अनंत उकल असणाऱ्या,एकमेकींना छेदणाऱ्या,1,Linear Equations
+Mathematics,Quadratic Equations,द्विघात समीकरण 2x^2 - 4x + 3 = 0 चे विवेचक (Discriminant, D) किती येईल?,D = 8,D = -8,D = 4,D = 0,1,Discriminant
+Mathematics,Arithmetic Progressions,अंकगणिती श्रेणी 10, 7, 4, ... चे 30 वे पद कोणते असेल?,97,77,-77,-87,2,Arithmetic Progressions
+Mathematics,Coordinate Geometry,बिंदू (4, 0) आणि (0, 3) मधील अंतर किती येईल?,5 units,7 units,1 unit,4 units,0,Distance Formula
+Mathematics,Trigonometry,sin(90 - A) खालीलपैकी कोणाशी समान आहे?,cos(A),tan(A),cot(A),sec(A),0,Trigonometric Ratios
+Mathematics,Circles,वर्तुळाच्या कोणत्याही बिंदूवर काढलेली स्पर्शिका त्या बिंदूतून जाणार्‍या त्रिज्याशी किती कोनाची असते?,90 अंश (Right Angle),60 अंश,45 अंश,180 अंश,0,Circles Properties
+Mathematics,Areas Related to Circles,त्रिज्‍या R असलेल्या वर्तुळाच्या एका अंशदाब (Theta) असलेल्या वर्तुळपाकळीचे क्षेत्रफळ किती?,(theta/360) * 2*pi*R,(theta/360) * pi*R^2,(theta/180) * pi*R^2,(theta/360) * 2*pi*R^2,1,Sector Area
+Mathematics,Statistics,वर्गीकृत वारंवारता वितरणाचा मध्य काढण्यासाठी कोणती पद्धत वापरली जात नाही?,प्रत्यक्ष पद्धत,कल्पित मध्य पद्धत,पद-विचलन पद्धत,यापैकी नाही,3,Statistics Methods
+English,Grammar,'Unless you try, you cannot succeed.' या वाक्यातील 'Unless' चा अर्थ काय?,If,If not (जर नाही तर),Because,Although,1,Conditional Sentences
+English,Vocabulary,'Expand' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Contract / Shrink (आकुंचन पावणे),Enlarge,Increase,Broaden,0,Opposite Words
+English,Grammar,'He behaves as if he ___ a king.' योग्य Verb निवडा.,is,were (Hypothetical),was,has,1,Subjunctive Mood
+English,Plurals,'Radius' या शब्दाचे अनेकवचन काय होते?,Radiuses,Radii (रेडियसचे बहु."),Radius,Radia,1,Plural Forms
+English,Pronouns,'___ of the students submitted the assignment on time.' योग्य शब्द भरा.,All,Every,Each,Both,0,Pronouns
+English,Spelling,योग्य स्पेलिंग ओळखा:,Millennium,Milennium,Milenium,Milleniumm,0,Spelling Accuracy
+English,Tenses,'When I reached the station, the train had already left.' हा कोणता काळ आहे?,Past Perfect (भूतकाळ पूर्ण काळ),Present Perfect,Past Continuous,Simple Past,0,Verb Tenses
+English,Action Verbs,'Bite' या क्रियापदाचे V3 (Past Participle) रूप कोणते?,Bit,Bitten,Biting,Bites,1,Verb Forms
+English,Question Words,'___ did you spend your vacation?' ठिकाण विचारण्यासाठी कोणता शब्द वापरतात?,What,Where,When,Who,1,Wh-Questions
+English,Rhyming Words,'Night' शी जुळणारा शब्द ओळखा:,Light,Right,Bright,All of these,3,Rhyming Words
+Science,Chemical Reactions,जिंक (Zn) ची सल्फ्यूरिक अम्ल (H2SO4) सोबत अभिक्रिया झाल्यास कोणता वायू बाहेर पडतो?,ऑक्सिजन,हायड्रोजन (Hydrogen),नायट्रोजन,कार्बन डायऑक्साइड,1,Chemical Reactions
+Science,Acids Bases and Salts,बेकिंग सोडाचे (Baking Soda) रासायनिक सूत्र काय आहे?,NaHCO3,Na2CO3,NaOH,NaCl,0,Chemical Compounds
+Science,Metals and Non-metals,सिनेबार (Cinnabar) हे कोणत्या धातूचे खनिज आहे?,लोखंड,तांबे,पारा / मर्क्युरी (Mercury),जस्ता,2,Metals and Ores
+Science,Carbon Compounds,साबन कशाच्या प्रक्रियेने तयार केला जातो?,साबुनीकरण (Saponification via Alkali & Fats),किण्वन,ऑक्सिडीभवन,हायड्रोजनीकरण,0,Carbon Compounds
+Science,Life Processes,मानवी रक्ताभिसरण संस्थेत ऑक्सिजनयुक्त रक्ताचे वहन कोण करते?,महाशिरा,महाधमनी / फुफ्फुसीय शिरा (Pulmonary Vein / Aorta),मूत्रपिंड,यकृत,1,Life Processes
+Science,Control and Coordination,मानवी मज्जासंस्थेच्या मूलभूत युनिटला काय म्हणतात?,नेफ्रॉन,न्युरॉन (Neuron),ऍक्सॉन,सिनाॅप्स,1,Nervous System
+Science,Heredity and Evolution,मेंडेलने आपल्या प्रयोगासाठी कोणत्या वनस्पतीची निवड केली होती?,मटार (Pea Plant / Pisum sativum),गुलाब,सूर्यफूल,कांदा,0,Heredity
+Science,Light Reflection and Refraction,पाण्यात बुडवलेली पेन्सिल पाण्या-हवेच्या सीमेवर वाकलेली दिसली, यामागे काय कारण आहे?,अपवर्तन (Refraction of Light),परावर्तन,विवर्तन,विसरण,0,Optics
+Science,Human Eye,डोळ्याची समंजन क्षमता (Accommodation) कमी झाल्यामुळे कोणता दृष्टीदोष निर्माण होतो?,निकटदृष्टिता,दूरदृष्टिता,जरादृष्टिता (Presbyopia),αστίγματισμός,2,Human Eye Defects
+Science,Electricity,एका विद्युत उपकरणातून 0.5 A विद्युत धारा 10 मिनिटे वाहिल्यास किती विद्युत आवेश (Charge) प्रवाहित होईल?,300 C,60 C,1800 C,150 C,0,Electric Current
+Social Studies,History,जलियनवाला बाग हत्याकांडाच्या निषेधार्थ कोन्त्या भारतीय नेत्याने 'सर' (Knight) किताब परत केला?,महात्मा गांधी,रवींद्रनाथ टागोर (Rabindranath Tagore),सुभाष चंद्र बोस,लोकमान्य टिळक,1,Nationalism in India
+Social Studies,Geography,भारतातील कोणत्या राज्यामध्ये सर्वाधिक खनिजे व कोळशाचे साठे आढळतात?,पंजाब,झारखंड, छत्तीसगड व ओरिसा,राजस्थान,हरियाणा,1,Mineral Resources
+Social Studies,Civic Sense,भारताच्या संविधानातील कोणत्या अनुच्छेदानुसार अस्पृश्यता नष्ट करण्यात आली?,अनुच्छेद 17 (Article 17),अनुच्छेद 14,अनुच्छेद 19,अनुच्छेद 21,0,Fundamental Rights
+Social Studies,Economics,भारतातील बँका आपल्या एकूण ठेवींच्या किती रक्कम रोख स्वरूपात जवळ बाळगतात?,5%,15% (Cash Reserve Ratio),50%,100%,1,Banking and Money
+Social Studies,History,जगातील पहिली छापील पुस्तके (Printing) कोणत्या देशात तयार झाली?,चीन (China),जपान,भारत,इजिप्त,0,Print Culture and the Modern World
+Social Studies,Geography,भारतामध्ये रबी हंगामाची पिके प्रामुख्याने कधी पेरली जातात?,ऑक्टोबर ते डिसेंबर (Winter Season),जून ते जुलै,मार्च ते मे,यापैकी नाही,0,Agriculture Geography
+Social Studies,Civic Sense,भारतामध्ये बहुपक्षीय प्रणाली (Multi-party system) स्वीकारण्याचे मुख्य कारण काय आहे?,देशाची सामाजिक व भौगोलिक विविधता,आर्थिक सधनता,कमी लोकसंख्या,यापैकी नाही,0,Political Parties
+Social Studies,Economics,बहुराष्ट्रीय कंपन्यांच्या (MNCs) गुंतवणुकीला काय म्हणतात?,परकीय गुंतवणूक (Foreign Investment),स्थानिक कर्ज,सरकारी अनुदान,यापैकी नाही,0,Globalization
+Social Studies,History,हुतात्मा बिरसा मुंडा यांनी कोणत्या भागातील आदिवासी आंदोलनाचे नेतृत्व केले?,छोटानगपूर / झारखंड (Chota Nagpur Plateau),पंजाब,बंगाल,महाराष्ट्र,0,Tribal Movements
+Social Studies,Geography,भारतातील जलमार्गांपैकी राष्ट्रीय जलमार्ग क्र. 1 (National Waterway 1) कोणत्या नदीवर आहे?,गंगा नदी (Allahabad to Haldia),ब्रह्मपुत्रा नदी,गोदावरी नदी,कावेरी नदी,0,Transport Geography
+Mathematics,Real Numbers,7 * 11 * 13 + 13 ही संख्या कोणती संख्या आहे?,मूळ संख्या,संयुक्त संख्या (Composite Number),परिमेय संख्या नसलेली,अपरिमेय संख्या,1,Number Systems
+Mathematics,Polynomials,जर a आणि b हे बहुपद x^2 - p(x + 1) - c चे शून्यांक असतील आणि (a + 1)(b + 1) = 0 असेल, तर c ची किंमत किती?,1,-1,2,-2,0,Polynomials
+Mathematics,Pair of Linear Equations,k च्या कोणत्या मूल्यासाठी समीकरण जोडी kx + 3y = k - 3 आणि 12x + ky = k ला अनंत उकल असतील?,6,-6,2,-2,0,Linear Equations
+Mathematics,Quadratic Equations,द्विघात समीकरण 3x^2 - 2x + 1/3 = 0 चीमुळे कशी असतील?,वास्तव व भिन्न,वास्तव व समान (Equal roots),वास्तव नसलेली,यापैकी नाही,1,Quadratic Equations
+Mathematics,Arithmetic Progressions,एका अंकगणिती श्रेणीचे पहिले पद 5 आणि शेवटचे पद 45 आहे, बेरीज 400 असल्यास एकूण पदे किती?,10,16,20,25,1,Arithmetic Progressions
+Mathematics,Coordinate Geometry,बिंदू (3, p) आणि (6, 5) मधील अंतर 5 असल्यास p ची किंमत किती?,1 किंवा 9,2 किंवा 8,3 किंवा 7,4 किंवा 6,0,Coordinate Geometry
+Mathematics,Trigonometry,(1 + tan^2(A)) / (1 + cot^2(A)) ची किंमत खालीलपैकी किती?,sec^2(A),-1,cot^2(A),tan^2(A),3,Trigonometry
+Mathematics,Circles,एका वर्तुळाची त्रिज्या 5 सेमी आहे आणि वर्तुळाच्या केंद्रापासून 13 सेमी अंतरावर असलेल्या बिंदूवरून काढलेल्या स्पर्शिकेची लांबी किती?,12 सेमी,10 सेमी,8 सेमी,6 सेमी,0,Circles
+Mathematics,Areas Related to Circles,एका घड्याळाच्या मिनिट काठ्याची लांबी 14 सेमी आहे, तर 5 मिनिटांत पार केलेले क्षेत्रफळ किती?,154.3 वर्गसेमी,51.33 वर्गसेमी,77 वर्गसेमी,22 वर्गसेमी,1,Areas
+Mathematics,Statistics,मध्य (Mean), मध्यक (Median) आणि बहुलक (Mode) यांच्यातील अचूक संबंध कोणता?,Mode = 3 Median - 2 Mean,Mode = 2 Median - 3 Mean,Mode = Median - Mean,Mode = Mean + Median,0,Statistics Empirical Relation
+English,Grammar,'Had I known the truth, I would have informed you.' हे वाक्य कोणत्या Conditional रचनेचे आहे?,First Conditional,Second Conditional,Third Conditional (Inverted),Zero Conditional,2,Conditionals
+English,Vocabulary,'Industrious' या शब्दाचा समानार्थी शब्द कोणता?,Lazy,Hardworking (कष्टाळू),Dull,Slow,1,Synonyms
+English,Grammar,'He congratulated me ___ my success.' योग्य Preposition निवडा.,on,in,for,at,0,Prepositions
+English,Plurals,'Analysis' या शब्दाचे अनेकवचन काय होते?,Analyses,Analysises,Analyzes,Analysis,0,Plural Forms
+English,Pronouns,'___ of them could solve the difficult puzzle.' योग्य pronoun भरा.,None,Every,All,Both,0,Pronouns
+English,Spelling,योग्य स्पेलिंग ओळखा:,Privilege,Priviledge,Prevelige,Prevelege,0,Spelling Accuracy
+English,Tenses,'By the time we arrive, the movie will have started.' हा कोणता काळ आहे?,Future Continuous,Future Perfect (भविष्य पूर्ण काळ),Present Perfect,Past Perfect,1,Verb Tenses
+English,Action Verbs,'Wear' या क्रियापदाचे V3 (Past Participle) रूप कोणते?,Wore,Worn,Wearing,Wears,1,Verb Forms
+English,Question Words,'___ book is more interesting?' निवड करण्यासाठी कोणता शब्द वापरतात?,What,Which,Whose,Who,1,Wh-Questions
+English,Rhyming Words,'Bright' शी जुळणारा शब्द ओळखा:,Light,Night,Right,All of these,3,Rhyming Words
