@@ -1,0 +1,101 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Large Numbers,56,789 ലെ ആറക്ക സംഖ്യയുടെ (6) മുഖവില (Face Value) എത്ര?,6,60,600,6000,0,Face Value & Place Value
+Mathematics,Addition,25,480 ഉം 12,350 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,37,830,37,730,38,830,36,830,0,Large Number Addition
+Mathematics,Subtraction,89,450 ൽ നിന്ന് 34,210 കുറച്ചാൽ എത്ര ബാക്കി വരും?,55,240,54,240,56,240,53,240,1,Large Number Subtraction
+Mathematics,Multiplication,125 ഗുണിക്കണം 24 എത്രയാണ്?,2,500,3,000,3,500,2,800,1,Multiplication Mastery
+Mathematics,Division,1250 നെ 25 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,40,45,50,60,2,Division Concepts
+Mathematics,Fractions,3/4 ഉം 1/4 ഉം കൂട്ടിയാൽ ആകെ എത്ര കിട്ടും?,1/2,1 (ഒന്ന്),2/4,3/16,1,Fraction Addition
+Mathematics,Decimals,0.75 എന്ന ദശാംശ സംഖ്യ ഭിന്നസംഖ്യയിൽ എങ്ങനെ എഴുതാം?,1/2,3/4,1/4,2/3,1,Decimals to Fractions
+Mathematics,Geometry,ഒരു വൃത്തത്തിന്റെ കേന്ദ്രത്തിൽ നിന്ന് പരിധിയിലേക്കുള്ള അകലത്തെ എന്താണ് വിളിക്കുന്നത്?,വ്യാസം,ഞാജൻ,ആരം (Radius),ചുറ്റളവ്,2,Circle Properties
+Mathematics,Measurement,4 കിലോമീറ്ററും 500 മീറ്ററും എന്നാൽ ആകെ എത്ര മീറ്റർ?,4500 മീറ്റർ,4050 മീറ്റർ,5400 മീറ്റർ,450 മീറ്റർ,0,Unit Conversions
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 2, 6, 18, 54, ?,108,162,216,324,1,Number Patterns
+English,Grammar,'She ___ to the market yesterday.' ശരിയായ Past Tense ക്രിയ തിരഞ്ഞെടുക്കുക.,go,goes,went,gone,2,Past Tense Verbs
+English,Vocabulary,'Ancient' എന്ന വാക്കിന്റെ വിപരീത പദം (Antonym) ഏത്?,Modern,Old,Past,Recent,0,Opposite Words
+English,Grammar,'The dog is sleeping ___ the tree.' ശരിയായ Preposition തിരഞ്ഞെടുക്കുക.,in,on,under,at,2,Prepositions
+English,Plurals,'Mouse' എന്ന വാക്കിന്റെ ബഹുവചനം (Plural) എന്താണ്?,Mouses,Mice,Micees,Mouse,1,Irregular Plurals
+English,Pronouns,'This book is ___.' ശരിയായ Possessive Pronoun തിരഞ്ഞെടുക്കുക.,mine,my,me,I,0,Pronouns
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Necessary,Neccesary,Necessay,Nessessary,0,Spelling Accuracy
+English,Adjectives,ഈ പർവ്വതം വളരെ ഉയരമുള്ളതാണ്. ഈ വാക്യത്തിലെ Adjective ഏത്?,ഈ,പർവ്വതം,വളരെ,ഉയരമുള്ള (Tall),3,Adjectives
+English,Action Verbs,'Swimming' എന്നാൽ മലയാളത്തിൽ എന്താണ്?,ഓടുക,നീന്തുക (Swimming),ചാടുക,നടക്കുക,1,Action Verbs
+English,Question Words,'___ did you complete this project?' ശരിയായ ചോദ്യപദം തിരഞ്ഞെടുക്കുക.,What,Where,How,Who,2,Wh-Questions
+English,Rhyming Words,'Bright' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Night,Sun,Cat,Pen,0,Rhyming Words
+EVS,Body Parts,നമ്മുടെ ശരീരത്തിലെ പ്രധാന വിസർജ്ജനാവംഗം (Excretory Organ) ഏത്?,ഹൃദയം,വൃക്ക (Kidneys),ശ്വാസകോശം,ആമാശയം,1,Human Excretory System
+EVS,Animals,തേനീച്ച വളർത്തലിനെ ശാസ്ത്രീയമായി എന്താണ് വിളിക്കുന്നത്?,സെറികൾച്ചർ,അപികൾച്ചർ (Apiculture),പിസികൾച്ചർ,ഹോർട്ടികൾച്ചർ,1,Animal Husbandry
+EVS,Plants,തണ്ടുകളിലൂടെ പുതിയ സസ്യങ്ങൾ ഉണ്ടാകുന്ന സസ്യത്തിന് ഉദാഹരണം ഏത്?,മാവ്,കരിമ്പ് / റോസാച്ചെടി (Sugarcane / Rose),നെല്ല്,ഗോതമ്പ്,1,Plant Propagation
+EVS,Water,മഴവെള്ളത്തിന്റെ ഏറ്റവും ശുദ്ധമായ രൂപം ഏത്?,കുഴൽക്കിണർ വെള്ളം,മഴവെള്ളം (Rainwater),നദീജലം,കടൽവെള്ളം,1,Water Sources
+EVS,Shelter,അസമിലെ കനത്ത മഴയിൽ വീടുകൾ വെള്ളത്തിൽ നിന്ന് സംരക്ഷിക്കാൻ അവ എങ്ങനെയാണ് നിർമ്മിക്കുന്നത്?,നിലത്തുനിന്ന് ഉയർത്തി തൂണുകളിൽ (Stilt Houses),ഭൂമിക്കടിയിൽ,മരങ്ങൾക്ക് മുകളിൽ,ഗുഹകളിൽ,0,Traditional Architecture
+EVS,Seasons,ഭൂമിയിൽ വ്യത്യസ്ത ഋതുക്കൾ ഉണ്ടാകാൻ പ്രധാന കാരണം എന്ത്?,ഭൂമിയുടെ ഭ്രമണം,ഭൂമിയുടെ പരിക്രമണവും അക്ഷത്തിലെ ചരിവും (Revolution & Tilt),സൂര്യന്റെ കറക്കം,ചന്ദ്രന്റെ ആകർഷണം,1,Earth Movements
+EVS,Community Helpers,നമ്മുടെ സമൂഹത്തിൽ ദുരന്തമുഖത്ത് രക്ഷാപ്രവർത്തനം നടത്തുന്ന പ്രധാന സേന ഏത്?,അഗ്നിശമന സേനയും ദുരന്തനിവാരണ സേനയും (Disaster Management Forces),വ്യാപാരികൾ,തൊഴിലാളികൾ,ഒന്നുമില്ല,0,Community Services
+EVS,Safety,വൈദ്യുതാഘാതം ഏൽക്കുന്ന ഒരാൾക്ക് പ്രഥമശുശ്രൂഷ നൽകിയ ശേഷം ആദ്യം എന്ത് ചെയ്യണം?,വെള്ളം കുടിക്കാൻ നൽകുക,ഉടൻ വൈദ്യസഹായം ലഭ്യമാക്കുക (Medical Help),ഓടിക്കാൻ പറയുക,ഒന്നുമില്ല,1,Safety & First Aid
+EVS,Food,ഭക്ഷ്യവസ്തുക്കൾ കേടുകൂടാതെ സൂക്ഷിക്കുന്ന രീതികളിൽ (Food Preservation) ഉൾപ്പെടാത്തത് ഏത്?,ഉപ്പിലിടുക,ഫ്രിഡ്ജിൽ വെക്കുക,തീയിൽ കത്തിക്കുക (Burning),വറ്റിക്കുക,2,Food Preservation
+EVS,Transport,ഇന്ത്യയിൽ ആദ്യമായി ആരംഭിച്ച മെട്രോ റെയിൽ സർവീസ് ഏത് നഗരത്തിലാണ്?,മുംബൈ,കൊൽക്കത്ത (Kolkata),ഡൽഹി,ചെന്നായ്,1,Transport Systems
+Social Studies,National Symbols,നമ്മുടെ ദേശീയ പതാകയുടെ നീളവും വീതിയും തമ്മിലുള്ള അനുപാതം എത്രയാണ്?,2:1,3:2,4:3,5:3,1,National Symbols
+Social Studies,Festivals,കേരളത്തിന്റെ ദേശീയോത്സവമായ ഓണത്തിൽ പ്രധാനമായും നടക്കുന്ന ജലോത്സവം ഏത്?,നെഹ്റു ട്രോഫി വള്ളംകളി (Vallam Kali),അറബിക്കടൽ ഉത്സവം,പൂരക്കളി,ഒന്നുമില്ല,0,Cultural Festivals
+Social Studies,Directions,ഭൂപടങ്ങളിൽ വടക്ക് ദിശയുടെ നേരെ താഴെ വരുന്ന എതിർ ദിശ ഏത്?,കിഴക്ക്,പടിഞ്ഞാറ്,തെക്ക് (South),വടക്കുപടിഞ്ഞാറ്,2,Map Directions
+Social Studies,Family,ഒരു കുടുംബത്തിൽ പരസ്പര സഹകരണവും സ്നേഹവും വളർത്താൻ എന്ത് സഹായിക്കുന്നു?,പരസ്പര ആശയവിനിമയവും ബഹുമാനവും (Communication & Respect),തർക്കങ്ങൾ,അഹങ്കാരം,ഒന്നുമില്ല,0,Family Values
+Social Studies,Community Helpers,ഇന്ത്യയിലെ ഗ്രാമങ്ങളിൽ പ്രാദേശിക ഭരണത്തിന് നേതൃത്വം നൽകുന്ന ഭരണസംവിധാനം ഏത്?,മുൻസിപ്പാലിറ്റി,ഗ്രാമപഞ്ചായത്ത് (Gram Panchayat),കോർപ്പറേഷൻ,പാർലമെന്റ്,1,Local Governance
+Social Studies,Earth,ഭൂമിയുടെ അന്തർഭാഗത്തെ പ്രധാന പാളികളിൽ ഉൾപ്പെടാത്തത് ഏത്?,ഭൂവൽക്കം (Crust),പ്രാवरण (Mantle),ഗാभा (Core),ആകാശം (Sky),3,Earth Layers
+Social Studies,Time,ഒരു നൂറ്റാണ്ടിൽ ആകെ എത്ര വർഷങ്ങളുണ്ട്?,50 വർഷങ്ങൾ,100 വർഷങ്ങൾ (100 Years),1000 വർഷങ്ങൾ,10 വർഷങ്ങൾ,1,Time Units
+Social Studies,Environment,മണ്ണൊലിപ്പ് തടയാൻ ഏറ്റവും ഫലപ്രദമായ മാർഗ്ഗം ഏത്?,മരങ്ങൾ വെട്ടിമാറ്റുക,വലിയ തോതിൽ വൃക്ഷത്തൈകൾ നടുക (Afforestation),കെട്ടിടങ്ങൾ പണിയുക,തീയിടുക,1,Environmental Protection
+Social Studies,Civic Sense,നമ്മുടെ രാജ്യത്തെ നിയമങ്ങൾ പാലിക്കേണ്ടത് ആരുടെ ചുമതലയാണ്?,കേവലം സർക്കാരിന്റെ,രാജ്യത്തെ എല്ലാ പൗരന്മാരുടെയും (Every Citizen),പോലീസിന്റെ മാത്രം,ഒന്നുമില്ല,1,Civic Responsibility
+Social Studies,General Awareness,കേരളത്തിന്റെ സാഹിത്യ ചരിത്രത്തിൽ 'ആധുനിക കവിത്രയങ്ങളിൽ' ഒരാൾ ആരാണ്?,കുമാരനാശാൻ / ഉള്ളൂർ / വള്ളത്തോൾ,മഹാത്മാഗാന്ധി,എ.പി.ജെ. അബ്ദുൽ കലാം,ഒന്നുമില്ല,0,Cultural Heritage
+Mathematics,Large Numbers,3,45,678 ലെ സംഖ്യയിൽ 4 ന്റെ സ്ഥാനവില (Place Value) എത്ര?,4000,40,000 (40,000),400,4,00,000,1,Place Value
+Mathematics,Addition,1,23,456 ഉം 34,123 ഉം കൂട്ടിയാൽ എത്ര?,1,57,579,1,56,579,1,58,579,1,54,579,0,Large Number Addition
+Mathematics,Subtraction,5,00,000 ൽ നിന്ന് 1,23,450 കുറച്ചാൽ എത്ര?,3,76,550,3,75,550,3,77,550,3,74,550,0,Large Number Subtraction
+Mathematics,Multiplication,345 ഗുണിക്കണം 15 എത്രയാണ്?,5,175,5,075,5,275,4,975,0,Multiplication Mastery
+Mathematics,Division,2,400 നെ 12 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,150,200 (200),250,300,1,Division Concepts
+Mathematics,Fractions,2/3 ന്റെ തുല്യ ഭിന്നസംഖ്യ (Equivalent Fraction) ഏത്?,4/6,3/9,5/12,1/3,0,Equivalent Fractions
+Mathematics,Decimals,3.5 ഉം 1.2 ഉം കൂട്ടിയാൽ എത്ര കിട്ടും?,4.7 (4.7),4.5,5.7,3.7,0,Decimal Addition
+Mathematics,Geometry,ഒരു ചതുരഭുജത്തിന്റെ (Quadrilateral) നാല് കോണുകളുടെ ആകെ തുക എത്ര ഡിഗ്രിയാണ്?,180°,270°,360° (360 Degrees),540°,2,Quadrilateral Angles
+Mathematics,Measurement,5 ലിറ്ററും 250 മില്ലിലീറ്ററും എന്നാൽ എത്ര മില്ലിലീറ്റർ?,5025 മില്ലി,5250 മില്ലി (5250 ml),5500 മില്ലി,5000 മില്ലി,1,Capacity Conversions
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 1, 4, 9, 16, 25, ?,30,35,36 (36),49,2,Square Number Patterns
+English,Grammar,'They ___ playing cricket when it started to rain.' ശരിയായ Tense ക്രിയ തിരഞ്ഞെടുക്കുക.,is,are,were,was,2,Past Continuous
+English,Vocabulary,'Transparent' എന്ന വാക്കിന്റെ വിപരീത പദം ഏത്?,Opaque (അപारदर्शक),Clear,Bright,Clean,0,Opposite Words
+English,Grammar,'If you work hard, you ___ pass the exam.' ശരിയായ Modal Verb തിരഞ്ഞെടുക്കുക.,will,would,could,might,0,Conditionals
+English,Plurals,'Leaf' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Leafs,Leaves (Leaves),Lefs,Leavs,1,Singular Plural
+English,Pronouns,'___ of the two boys won the prize.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,Each,Every,All,Both,0,Pronouns & Determiners
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Environment,Envirement,Enviroment,Invironment,0,Spelling Accuracy
+English,Tenses,'She has finished her homework.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Present Perfect (പൂർണ്ണ വർത്തമാനകാലം),Past Simple,Future Simple,Past Continuous,0,Verb Tenses
+English,Action Verbs,'Write' എന്ന ക്രിയയുടെ Past Participle (V3) രൂപം ഏത്?,Wrote,Written (Written),Writing,Writes,1,Verb Forms
+English,Question Words,'___ book is this on the table?' ശരിയായ ചോദ്യപദം തിരഞ്ഞെടുക്കുക.,What,Which,Whose,Who,2,Wh-Questions
+English,Rhyming Words,'Day' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Way,Sun,Cat,Pen,0,Rhyming Words
+EVS,Body Parts,ശരീരത്തിലെ രക്തചംക്രമണ വ്യവസ്ഥയിൽ പ്രധാന പങ്ക് വഹിക്കുന്ന അവയവം ഏത്?,ഹൃദയം (Heart),കരൾ,വൃക്ക,ആമാശയം,0,Circulatory System
+EVS,Animals,വനജീവികളെ സംരക്ഷിക്കാനായി ഇന്ത്യയിൽ രൂപീകരിച്ച പ്രധാന നിയമം ഏത്?,വന്യജീവി സംരക്ഷണ നിയമം (Wildlife Protection Act),വന നശീകരണ നിയമം,മത്സ്യ ബന്ധന നിയമം,ഒന്നുമില്ല,0,Environmental Laws
+EVS,Plants,സസ്യങ്ങൾ തങ്ങളുടെ ആഹാരം നിർമ്മിക്കുന്ന പ്രക്രിയയെ എന്താണ് വിളിക്കുന്നത്?,പ്രകാശസംശ്ലേഷണം (Photosynthesis),ശ്വസനം,ബാष्पीभवन,വിസർജ്ജനം,0,Plant Nutrition
+EVS,Water,ഭൂമിയിലെ ആകെ ജലാംശത്തിൽ കുടിവെള്ളത്തിന്റെ (ശുദ്ധജലത്തിന്റെ) അളവ് ഏകദേശം എത്ര ശതമാനമാണ്?,ഏകദേശം 2.5% - 3%,50%,75%,90%,0,Water Resources
+EVS,Shelter,ഭൂകമ്പങ്ങളെ പ്രതിരോധിക്കാൻ കഴിയുന്ന വിധത്തിൽ വീടുകൾ നിർമ്മിക്കുന്ന സാങ്കേതിക വിദ്യയെ എന്താണ് വിളിക്കുന്നത്?,ഭൂകമ്പ പ്രതിരോധ നിർമ്മാണം (Earthquake Resistant Building),മരപ്പണി,പ്ലാസ്റ്റിക് നിർമ്മാണം,ഒന്നുമില്ല,0,Disaster Resistant Buildings
+EVS,Seasons,ഇന്ത്യയിൽ തെക്കുപടിഞ്ഞാറൻ മൺസൂൺ കാലത്ത് ഏറ്റവും കൂടുതൽ മഴ ലഭിക്കുന്ന സംസ്ഥാനം ഏത്?,രാജസ്ഥാൻ,മേഘാലയ (Meghalaya),പഞ്ചാബ്,ഹരിയാന,1,Monsoon Geography
+EVS,Community Helpers,നമ്മുടെ രാജ്യത്തിന്റെ നിയമങ്ങളും ഭരണഘടനയും സംരക്ഷിക്കുന്നതിൽ മുഖ്യ പങ്ക് വഹിക്കുന്നത് ആരാണ്?,കോടതികളും നീതിപീഠവും (Judiciary),വ്യാപാരികൾ,കർഷകർ,ഒന്നുമില്ല,0,Civic Roles
+EVS,Safety,തീപിടുത്തം ഉണ്ടാകുമ്പോൾ അത് അണയ്ക്കാൻ ഉപയോഗിക്കുന്ന പ്രധാന വാതകം ഏത്?,ഓക്സിജൻ,കാർബൺ ഡൈഓക്സൈഡ് (Carbon Dioxide),നൈട്രജൻ,ഹൈഡ്രജൻ,1,Safety Rules
+EVS,Food,നമ്മുടെ ശരീരത്തിന് പ്രതിരോധശേഷി (Immunity) നൽകുന്ന പ്രധാന പോഷകങ്ങൾ ഏതൊക്കെ?,വിറ്റാമിനുകളും ധാതുക്കളും (Vitamins & Minerals),കൊഴുപ്പ് മാത്രം,കാർബോഹൈഡ്രേറ്റ് മാത്രം,ഒന്നുമില്ല,0,Nutrition Basics
+EVS,Transport,ഇന്ത്യയിലെ ഏറ്റവും വലിയ പൊതു ഗതാഗത സംവിധാനം ഏത്?,റേഡിയോ ടാക്സി,ഇന്ത്യൻ റെയിൽവേ (Indian Railways),സ്വകാര്യ ബസുകൾ,വായുവഴിയുള്ള യാത്ര,1,Transport Infrastructure
+Social Studies,National Symbols,നമ്മുടെ ദേശീയ ഗീതമായ 'വന്ദേമാതരം' രചിച്ചത് ആരാണ്?,ബങ്കിം ചന്ദ്ര ചാറ്റർജി (Bankim Chandra Chatterjee),രവീന്ദ്രനാഥ ടാഗോർ,മഹാത്മാഗാന്ധി,സുബ്രഹ്മണ്യ ഭാരതി,0,National History
+Social Studies,Festivals,വിവിധ മതങ്ങളുടെ സൗഹാർദ്ദവും ദേശീയ ഐക്യവും വിളിച്ചോതുന്ന ആഘോഷങ്ങൾ ഏവ?,റിപ്പബ്ലിക് ദിനം / സ്വാതന്ത്ര്യ ദിനം / ഗാന്ധി ജയന്തി (National Festivals),പ്രാദേശിക ഉൽസവങ്ങൾ മാത്രം,ഒന്നുമില്ല,ഒന്നുമില്ല,0,National Integration
+Social Studies,Directions,ഭൂപടത്തിൽ കിഴക്കും പടിഞ്ഞാറും തമ്മിലുള്ള കോൺ എത്ര ഡിഗ്രിയാണ്?,90°,180° (180 Degrees),360°,45°,1,Map Directions
+Social Studies,Family,ഒരു കുടുംബത്തിന്റെ സുഗമമായ നടത്തിപ്പിന് ഏറ്റവും അത്യാവശ്യമായ ഘടകം ഏത്?,പരസ്പര സ്നേഹവും വിട്ടവീഴ്ചയും (Mutual Love & Understanding),പണം മാത്രം,വലിയ വീട്,ഒന്നുമില്ല,0,Family Ethics
+Social Studies,Community Helpers,തപാൽ വകുപ്പിലൂടെ രാജ്യത്തുടനീളം ആശയവിനിമയം സുഗമമാക്കുന്ന സംവിധാനം ഏത്?,ഇന്ത്യൻ പോസ്റ്റൽ സർവീസ് (India Post),സ്വകാര്യ കൊറിയർ മാത്രം,ഇന്റർനെറ്റ് മാത്രം,ഒന്നുമില്ല,0,Postal Services
+Social Studies,Earth,ഭൂമിയുടെ ആവരണത്തിന് (Atmosphere) ഏറ്റവും അടുത്തുള്ള വാതക പാളി ഏത്?,ക്ഷോഭമണ്ഡലം (Troposphere),താപമണ്ഡലം,അയോണോസ്ഫിയർ,സ്ട്രാറ്റോസ്ഫിയർ,0,Atmospheric Layers
+Social Studies,Time,ഇന്ത്യയുടെ ഔദ്യോഗിക സമയം കണക്കാക്കുന്ന യുകെ സമയം (GMT) അപേക്ഷിച്ച് എത്ര മണിക്കൂർ മുന്നിലാണ്?,3 മണിക്കൂർ,5 മണിക്കൂർ 30 മിനിറ്റ് (+5:30 GMT),6 മണിക്കൂർ,4 മണിക്കൂർ,1,Standard Time Zones
+Social Studies,Environment,ആഗോള താപനത്തിന് (Global Warming) പ്രധാന കാരണം ആയ വാതകം ഏത്?,ഓക്സിജൻ,കാർബൺ ഡൈഓക്സൈഡ് (Carbon Dioxide),നൈട്രജൻ,ഹൈഡ്രജൻ,1,Environmental Issues
+Social Studies,Civic Sense,പൊതുസ്ഥലങ്ങളും സ്മാരകങ്ങളും സംരക്ഷിക്കേണ്ടത് ആരുടെ കടമയാണ്?,സർക്കാരിന്റെ മാത്രം,ഓരോ പൗരന്റെയും (Every Citizen),വിദേശികളുടെ,ഒന്നുമില്ല,1,Civic Duty
+Social Studies,General Awareness,കേരളത്തിൽ 'കാട്ടാളന്മാരുടെ നാട്' എന്നറിയപ്പെടുന്ന ജില്ല ഏത്?,വയനാട്,ഇടുക്കി (Idukki),പാലക്കാട്,കോഴിക്കോട്,1,District Profiles
+Mathematics,Large Numbers,10,00,000 (പത്തു ലക്ഷം) എന്നത് എത്ര അക്കങ്ങളുള്ള സംഖ്യയാണ്?,6 അക്കങ്ങൾ,7 അക്കങ്ങൾ (7 Digits),8 അക്കങ്ങൾ,5 അക്കങ്ങൾ,1,Number Systems
+Mathematics,Addition,45,670 ഉം 54,320 ഉം കൂട്ടിയാൽ എത്ര?,99,990 (99,990),98,990,1,00,000,99,890,0,Addition Practice
+Mathematics,Subtraction,1,00,000 ൽ നിന്ന് 45,670 കുറച്ചാൽ എത്ര?,54,330 (54,330),55,330,54,230,53,330,0,Subtraction Practice
+Mathematics,Multiplication,450 ഗുണിക്കണം 12 എത്രയാണ്?,5,400 (5,400),5,200,5,600,5,000,0,Multiplication Practice
+Mathematics,Division,3,600 നെ 18 കൊണ്ട് ഹരിച്ചാൽ ഉത്തരം എത്ര?,150,200 (200),250,300,1,Division Practice
+Mathematics,Fractions,5/8 ൽ നിന്ന് 2/8 കുറച്ചാൽ ബാക്കി എത്ര?,3/8 (3/8),1/8,4/8,7/8,0,Fraction Subtraction
+Mathematics,Decimals,12.45 നെ 10 കൊണ്ട് ഹരിച്ചാൽ ഫലം എന്തо?,1.245 (1.245),12.45,124.5,0.1245,0,Decimal Division
+Mathematics,Geometry,ഒരു ലംബകോണത്രികോണത്തിൽ ഒരു കോൺ 90 ഡിഗ്രി ആയാൽ ബാക്കി രണ്ട് കോണുകളുടെ ആകെ തുക എത്ര?,90° (90 Degrees),180°,45°,60°,0,Triangle Angles
+Mathematics,Measurement,2 കിലോഗ്രാം 500 ഗ്രാം എന്നാൽ ഗ്രாமിൽ എത്ര?,2000 ഗ്രാം,2500 ഗ്രാം (2500g),2050 ഗ്രാം,3000 ഗ്രാം,1,Mass Conversions
+Mathematics,Patterns,തുടർച്ച പൂർത്തിയാക്കുക: 5, 10, 20, 40, ?,60,70,80 (80),100,2,Geometric Patterns
+English,Grammar,'Neither he nor his friends ___ coming to the party.' ശരിയായ Verb തിരഞ്ഞെടുക്കുക.,is,are (Are),was,has,1,Subject-Verb Agreement
+English,Vocabulary,'Industrious' എന്ന വാക്കിന്റെ സമർത്ഥമായ പദം (Synonym) ഏത്?,Lazy,Hardworking (കष्टाळू / കഠിനാധ്വാനി),Dull,Slow,1,Synonyms
+English,Grammar,'He congratulated me ___ my success.' ശരിയായ Preposition തിരഞ്ഞെടുക്കുക.,on,in,for,at,0,Prepositions
+English,Plurals,'Criterion' എന്ന വാക്കിന്റെ ബഹുവചനം എന്താണ്?,Criterions,Criteria (Criteria),Criterias,Criterion,1,Plural Forms
+English,Pronouns,'___ of the students passed the exam.' ശരിയായ പദം തിരഞ്ഞെടുക്കുക.,All,Every,Each,Both,0,Pronouns & Determiners
+English,Spelling,ശരിയായ സ്പെല്ലിംഗ് ഉള്ള വാക്ക് ഏത്?,Privilege,Priviledge,Prevelige,Prevelege,0,Spelling Accuracy
+English,Tenses,'By next year, she will have completed her graduation.' ഈ വാക്യം ഏത് കാലത്തിലാണ്?,Future Perfect (ഭുവിഷ്യ പൂർണ്ണ കാലം),Future Continuous,Present Perfect,Past Perfect,0,Verb Tenses
+English,Action Verbs,'Freeze' എന്ന ക്രിയയുടെ Past Tense (V2) രൂപം ഏത്?,Freezed,Froze (Froze),Frozen,Freezing,1,Verb Forms
+English,Question Words,'___ pen is this on the desk?' ശരിയായ ചോദ്യപദം തിരഞ്ഞെടുക്കുക.,What,Which,Whose (Whose),Who,2,Wh-Questions
+English,Rhyming Words,'Night' എന്ന വാക്കുമായി താളം ഒത്തുപോകുന്ന വാക്ക് ഏത്?,Light,Right,Bright,All of these (എല്ലാം ശരിയാണ്),3,Rhyming Words
