@@ -1,0 +1,41 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Rational Numbers,What is the additive inverse of -7/19?,7/19,-7/19,19/7,-19/7,0,Rational Number Properties
+Mathematics,Rational Numbers,Which property is shown by a × (b + c) = a × b + a × c?,Commutative,Associative,Distributive,Closure,2,Properties of Numbers
+Mathematics,Linear Equations,If 3x + 7 = 22, what is the value of x?,3,5,6,15,1,Linear Equations in One Variable
+Mathematics,Linear Equations,The sum of three consecutive integers is 51. The largest integer is:,16,17,18,19,2,Word Problems
+Mathematics,Understanding Quadrilaterals,The sum of interior angles of a pentagon is:,360°,540°,720°,180°,1,Polygons & Angles
+Mathematics,Understanding Quadrilaterals,A quadrilateral with one pair of parallel sides is called a:,Parallelogram,Rhombus,Trapezium,Kite,2,Quadrilateral Types
+Mathematics,Data Handling,In a pie chart, the total angle at the center is:,180°,270°,360°,90°,2,Data Representation
+Mathematics,Squares and Square Roots,What is the square root of 625?,15,25,35,45,1,Square Roots
+Mathematics,Cubes and Cube Roots,Which of the following is a perfect cube?,100,125,200,250,1,Cube Roots
+Mathematics,Comparing Quantities,If 20% of x is 50, then x is equal to:,100,200,250,500,2,Percentages & Applications
+Mathematics,Comparing Quantities,Find the compound interest on Rs 1000 at 10% per annum for 2 years compounded annually:,Rs 100,Rs 200,Rs 210,Rs 1210,2,Compound Interest
+Mathematics,Algebraic Expressions,Multiply (2x + 3) and (x - 4):,2x^2 - 5x - 12,2x^2 + 5x - 12,2x^2 - 12,2x^2 - 8x + 3,0,Algebraic Identities
+Mathematics,Mensuration,The area of a rhombus with diagonals 10 cm and 12 cm is:,120 sq cm,60 sq cm,44 sq cm,30 sq cm,1,Area of Special Polygons
+Mathematics,Exponents and Powers,The value of (2^-1 + 3^-1)^0 is:,0,1,5/6,6/5,1,Laws of Exponents
+Mathematics,Direct and Inverse Proportions,If 12 workers finish a task in 6 days, how many days will 8 workers take?,4 days,8 days,9 days,10 days,2,Inverse Variation
+Science,Crop Production,Which of the following is a Rabi crop?,Rice,Maize,Wheat,Cotton,2,Agricultural Practices
+Science,Microorganisms,Which microorganism is responsible for converting milk into curd?,Rhizobium,Lactobacillus,Yeast,Amoeba,1,Microorganisms
+Science,Synthetic Fibres and Plastics,Which synthetic fiber is known as artificial silk?,Nylon,Rayon,Polyester,Acrylic,1,Synthetic Fibres
+Science,Materials: Metals and Non-Metals,Which non-metal is stored in water to prevent reaction with air?,Sodium,Potassium,Phosphorus,Sulphur,2,Properties of Non-Metals
+Science,Coal and Petroleum,Which of the following is a fossil fuel?,Wood,Biogas,Coal,Charcoal,2,Natural Resources
+Science,Combustion and Flame,The hottest zone of a candle flame is the:,Innermost zone,Middle zone,Outer zone,Luminous zone,2,Combustion & Flame
+Science,Cell Structure and Functions,Which cell organelle is known as the powerhouse of the cell?,Nucleus,Mitochondria,Ribosome,Chloroplast,1,Cell Biology
+Science,Reproduction in Animals,Fertilization that takes place outside the female body is called:,Internal fertilization,External fertilization,In vitro fertilization,Binary fission,1,Animal Reproduction
+Science,Force and Pressure,Pressure is defined as:,Force × Area,Force / Area,Area / Force,Force + Area,1,Force and Pressure
+Science,Friction,Which type of friction is the smallest in magnitude?,Static friction,Sliding friction,Rolling friction,Fluid friction,2,Friction Types
+Science,Sound,Sound cannot travel through which of the following media?,Solids,Liquids,Gases,Vacuum,3,Sound Propagation
+Science,Chemical Effects of Electric Current,The process of depositing a layer of any desired metal on another material by means of electricity is:,Electrolysis,Electroplating,Galvanization,Ionization,1,Electrochemistry
+Science,Natural Phenomena,The point inside the Earth where an earthquake originates is called the:,Epicenter,Focus,Fault line,Tectonic center,1,Earthquakes
+Science,Light,The angle of incidence is equal to the angle of reflection:,Always,Sometimes,Under special conditions,Never,0,Laws of Reflection
+Science,Stars and the Solar System,Which planet is known as the Morning or Evening Star?,Mars,Venus,Jupiter,Saturn,1,Solar System
+English,Grammar,Choose the correct active voice form: 'The letter was delivered by the postman.',The postman delivers the letter.,The postman delivered the letter.,The postman has delivered the letter.,The postman is delivering the letter.,1,Active and Passive Voice
+English,Grammar,Choose the correct indirect speech: 'She said to me, "Where are you going?"',She asked me where I was going.,She told me where I was going.,She asked me where was I going.,She asked me where I am going.,0,Direct and Indirect Speech
+English,Grammar,Identify the non-finite verb (participle) in: 'Barking dogs seldom bite.',Barking,dogs,seldom,bite,0,Non-Finite Verbs
+English,Grammar,Choose the correct preposition: 'He was accused ____ theft.',with,for,of,by,2,Prepositional Usage
+English,Grammar,Identify the condition in: 'If you study hard, you will pass.',Zero conditional,First conditional,Second conditional,Third conditional,1,Conditionals
+English,Grammar,Choose the correct conjunction: 'He failed ____ he did not work hard.',so,although,because,unless,2,Conjunctions
+English,Vocabulary,Synonym of 'Audacious' is:,Timid,Bold,Polite,Careful,1,Synonyms
+English,Vocabulary,Antonym of 'Frugal' is:,Extravagant,Thrifty,Economical,Sparing,0,Antonyms
+English,Vocabulary,One-word substitution: 'A government by the people':,Autocracy,Democracy,Monarchy,Oligarchy,1,Vocabulary Expansion
+English,Spelling,Choose the correctly spelled word:,Bureaucracy,Beureaucracy,Bureacracy,Bureucracy,0,Spelling Skills
