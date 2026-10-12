@@ -1,0 +1,91 @@
+Subject,Topic,Question,Option0,Option1,Option2,Option3,CorrectOptionIndex,Skill
+Mathematics,Relations and Functions,जर संच A मध्ये 3 घटक असतील आणि संच B मध्ये 2 घटक असतील, तर A वरून B वरील संबंधांची (Relations) एकूण संख्या किती?,8,16,32,64,3,Relations and Functions
+Mathematics,Inverse Trigonometric Functions,sin^(-1)(1/2) चे मुख्य मूल्य किती असते?,pi/3,pi/6,pi/4,pi/2,1,Inverse Trigonometry
+Mathematics,Matrices,जर A हा 2x2 कोटीचा चौरस матрицы असून det(A) = 5 असेल, तर det(5A) चे मूल्य किती?,25,125,5,625,1,Matrices and Determinants
+Mathematics,Continuity and Differentiability,फंक्शन f(x) = |x| हा बिंदू x = 0 वर कसा असतो?,सतत आणि अवकलनीय,सतत पण अवकलनीय नाही,असतत,काहीही नाही,1,Continuity and Differentiability
+Mathematics,Integrals,समाकलित (Integration) int e^x (1 + x) / cos^2(e^x * x) dx चे मान किती?,tan(e^x * x) + C,-tan(e^x * x) + C,cot(e^x * x) + C,यापैकी नाही,0,Integral Calculus
+Mathematics,Differential Equations,विकल्पीय समीकरण (dy/dx) + y cot x = 2x + x^2 cot x चे एकात्मिक गुणाकार (Integrating Factor, IF) काय असेल?,sin x,cos x,tan x,sec x,0,Differential Equations
+Mathematics,Vectors,दोन सदिश a आणि b एकमेकांना लंब (Perpendicular) असतील तर त्यांचा अदिश गुणाकार (Dot Product) किती असतो?,1,-1,0,अनंत,2,Vector Algebra
+Mathematics,Three Dimensional Geometry,त्रिमितीय भूमितीत दोन रेषांच्या दिशानिर्देश कोनांच्या (Direction Cosines) वर्गांची बेरीज किती असते?,0,1,2,अवलंबून नाही,1,3D Geometry
+Mathematics,Linear Programming,रैखिक प्रोग्रामिंग समस्येत उद्देशीय फलकाची (Objective Function) इष्टतम (Optimal) मूल्ये कोठे मिळतात?,केंद्रकात,आलेखीय क्षेत्राच्या शिरोबिंदूंवर (Corner points),केवळ अक्षीय बिंदूंवर,यापैकी नाही,1,Linear Programming
+Mathematics,Probability,जर P(A) = 0.6 आणि P(B) = 0.3 आणि P(A intersection B) = 0.2 असेल, तर P(A/B) किती?,2/3,1/3,3/4,1/2,0,Probability Basics
+English,Grammar,'Had I known you were coming, I would have received you.' हे वाक्य कोणत्या रचनेचे आहे?,First Conditional,Second Conditional,Third Conditional (Inverted),Zero Conditional,2,Conditionals
+English,Vocabulary,'Meticulous' (अतिदक्ष / कसून) या शब्दाचा समानार्थी शब्द कोणता?,Careless,Careful / Thorough,Slow,Dull,1,Synonyms
+English,Grammar,'She insisted ___ going there.' योग्य Preposition निवडा.,on,in,at,for,0,Prepositions
+English,Plurals,'Criterion' या शब्दाचे अनेकवचन काय होते?,Criterions,Criteria,Criterias,Criterion,1,Plural Forms
+English,Pronouns,'___ of the two candidates was selected.' योग्य Determiner भरा.,Neither,Every,All,Both,0,Determiners
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Lieutenant,Leutinant,Lietenant,Lieutanent,0,Spelling Accuracy
+English,Tenses,'By next year, she will have completed her graduation.' हा कोणता काळ आहे?,Future Continuous,Future Perfect (भविष्य पूर्ण काळ),Present Perfect,Past Perfect,1,Verb Tenses
+English,Action Verbs,'Strive' या क्रियापदाचे V3 (Past Participle) रूप कोणते?,Strived,Striven,Striving,Strives,1,Verb Forms
+English,Question Words,'___ brilliant the performance was!' उद्गारवाचक वाक्यात कोणता शब्द वापरतात?,What,How,Which,Whose,1,Exclamatory Sentences
+English,Rhyming Words,'MIND' शी जुळणारा शब्द ओळखा:,Find,Kind,Wind,All of these,3,Rhyming Words
+Physics,Electric Charges and Fields,स्थिर विद्युत क्षेत्रामध्ये दोन सजातीय प्रभारांमध्ये प्रयुक्त होणारे बल कोणत्या नियमानुसार मोजले जाते?,गॉसचा नियम,कुलॉम्बचा नियम (Coulomb's Law),अँपिअरचा नियम,फॅराडेचा नियम,1,Electrostatics
+Physics,Current Electricity,विद्युत रोधाचे (Resistance) तापमान वाढवल्यास अर्धसंवाहकाचा (Semiconductor) रोध कसा बदलतो?,वाढतो,कमी होतो (Decreases),स्थिर राहतो,शून्य होतो,1,Current Electricity
+Physics,Moving Charges and Magnetism,चुंबकीय क्षेत्रात हलणाऱ्या गतिमान चार्जवरील बलाला काय म्हणतात?,कुलॉम्ब बल,लॉरेन्ज बल (Lorentz Force),गुरुत्वीय बल,केंद्रीय बल,1,Magnetism
+Physics,Electromagnetic Induction,विद्युतचुंबकीय प्रेरणेचा (Electromagnetic Induction) नियम कोणी मांडला?,ओहम,फॅराडे (Michael Faraday),जूल,लेन्झ,1,EMI
+Physics,Alternating Current,एसी सर्किट्समध्ये (AC Circuits) शुद्ध प्रेक्षक (Pure Inductor) मुळे विद्युत प्रवाह व्होल्टेजच्या किती कोनाने मागे राहतो?,0 अंश,90 अंश (pi/2 radians),180 अंश,45 अंश,1,Alternating Current
+Physics,Ray Optics,पूर्ण आन्तरिक परावर्तन (Total Internal Reflection) होण्यासाठी प्रकाश किरण कोणत्या माध्यमातून प्रवास करावा लागतो?,विरल माध्यमातून घट्ट माध्यमात,घट्ट माध्यमातून विरल माध्यमात (Denser to Rarer medium),समान माध्यमातून,यापैकी नाही,1,Ray Optics
+Physics,Wave Optics,यंगच्या द्वि-छिद्र प्रयोगात (Young's Double Slit Experiment) फ्रिंजची रुंदी कशाच्या समप्रमाणात असते?,तरंग लांबीच्या (Wavelength / lambda),अंतर,आकार,वेग,0,Wave Optics
+Physics,Dual Nature of Radiation and Matter,डी-ब्रोग्ली तरंगलांबीचे (De Broglie Wavelength) सूत्र काय आहे?,lambda = h / p,lambda = h * p,lambda = p / h,lambda = m * c,0,Dual Nature
+Physics,Atoms,बोहरच्या हायड्रोजन अणूच्या मॉडेलमध्ये कोनीय संवेग (Angular Momentum) कशाचे पूर्णांक गुणक असते?,h / (2 * pi),h / pi,2 * pi * h,h,0,Atomic Physics
+Physics,Semiconductor Electronics,P-N जंक्शन डायोडच्या फॉरवर्ड बायसमध्ये (Forward Bias) रोध कसा असतो?,फार जास्त,खूप कमी (Very low / zero resistance),अनंत,स्थिर,1,Semiconductors
+Chemistry,Solutions,द्रावणाच्या संपृक्ततेवर तापमानाचा परिणाम काय होतो हे कोणता नियम स्पष्ट करतो?,हेन्रीचा नियम (Henry's Law),राऊल्टचा नियम,बॉयलचा नियम,चार्ल्सचा नियम,0,Solutions Chemistry
+Chemistry,Electrochemistry,मानक हायड्रोजन इलेक्ट्रोडचे (SHE) मानक विभव किती मानले जाते?,0.00 V,1.00 V,-1.00 V,0.50 V,0,Electrochemistry
+Chemistry,Chemical Kinetics,शून्य कोटीच्या अभिक्रियेचा (Zero Order Reaction) वेग कशावर अवलंबून असतो?,अभिक्रियाकांच्या सांद्रतेवर,तापमानावर,अभिक्रियाकांच्या सांद्रतेवर अवलंबून नसतो (Independent of concentration),उत्पादनांवर,2,Chemical Kinetics
+Chemistry,d and f Block Elements,संक्रमण मूलव्यांचे (Transition Elements) सामान्य इलेक्ट्रॉनिक विन्यास काय असते?,(n-1)d^(1-10) ns^(1-2),ns^2 np^6,(n-1)d^10 ns^2,ns^(1-2),0,d-Block Elements
+Chemistry,Coordination Compounds,सहसंयोजक उपसंयुजी संयुगांमध्ये केंद्रीय धातू अणूशी जोडलेल्या लिगांड्सच्या संख्येस काय म्हणतात?,उपसंयुजी संख्या (Coordination Number),ऑक्सिडीभवन अंक,अणूक्रमांक,मोल संख्या,0,Coordination Compounds
+Chemistry,Haloalkanes and Haloarenes,SN1 अभिक्रियेचा वेग प्रामुख्याने कशाच्या स्थिरतेवर अवलंबून असतो?,कार्बोकॅटायन (Carbocation stability),कार्बॅनायन,मुक्त मूलक,उदासीन रेणू,0,Haloalkanes
+Chemistry,Alcohols Phenols and Ethers,इथेनॉलची सल्फ्यूरिक अम्लासोबत उच्च तापमानाला विक्रिया झाल्यास कोणता मुख्य पदार्थ मिळतो?,इथीन (Ethene / Alkene),इथेन,इथाइन,डायइथील इथर,0,Alcohols and Ethers
+Chemistry,Aldehydes Ketones and Carboxylic Acids,कॅनिझारो अभिक्रिया (Cannizzaro Reaction) कोण दर्शवत नाही?,फॉर्मालडिहाइड,बेन्झालडिहाइड,ॲसिटॅलडिहाइड (Acetaldehyde - lacks alpha hydrogen condition),ट्रायक्लोरोअ‍ॅसिटॅलडिहाइड,2,Aldehydes and Ketones
+Chemistry,Amines,अमीन्सच्या क्षारीयतेचा (Basicity) क्रम जलीय माध्यमात कोणता असतो?,3^° > 2^° > 1^° > NH3,2^° > 3^° > 1^° > NH3 (Secondary > Tertiary > Primary),1^° > 2^° > 3^°,NH3 > 1^° > 2^° > 3^°,1,Amines
+Chemistry,Biomolecules,न्युक्लिक अम्लामध्ये (Nucleic Acids) आरएनए (RNA) मध्ये कोणता शर्करा घटक असतो?,डिऑक्सीराइबोझ,राइबोझ शर्करा (Ribose sugar),ग्लुकोझ,फ्रुक्टोज,1,Biomolecules
+Biology,Reproduction in Organisms,सजीवांच्या लैंगिक प्रजननात युमज निर्मितीसाठी कोणती प्रक्रिया घडते?,युग्मकजनन व निषेचन (Gamete transfer and Fertilization),फक्त विभाजन,फक्त मुकुलायन,बीजाणू निर्मिती,0,Reproduction
+Biology,Sexual Reproduction in Flowering Plants,आवृतबीजी वनस्पतींच्या भ्रूणकोशात (Embryo Sac) सर्वसाधारणपणे किती पेशी असतात?,5 पेशी,7 पेशी (7-celled and 8-nucleate),8 पेशी,10 पेशी,1,Plant Reproduction
+Biology,Human Reproduction,मानवी स्त्रीच्या अंडवाहिनीत (Fallopian Tube) फलन प्रक्रियेसाठी कोणता भाग मुख्य असतो?,तुंबिका (Ampulla-isthmus junction),गर्भाशय,योनीमार्ग,अंडाशय,0,Human Reproduction
+Biology,Reproductive Health,भारतात गर्भधारणा रोखण्यासाठी कायदेशीर गर्भपात (MTP) कायदा कधी लागू करण्यात आला?,1971 (MTP Act 1971),1950,1985,1991,0,Reproductive Health
+Biology,Principles of Inheritance and Variation,मेंडेलच्या द्विसंकराच्या प्रयोगात (Dihybrid Cross) लक्षणीय फिनोटाइप प्रमाण किती असते?,3:1,9:3:3:1 (Phenotypic ratio),1:2:1,9:4:3,1,Genetics
+Biology,Molecular Basis of Inheritance,डीएनए (DNA) रेणूच्या दोन धाग्यांमध्ये असणाऱ्या नायट्रोजन बेस जोडणीत एडिनिन कोणाशी जोडतो?,थायमीन (Thymine with 2 hydrogen bonds),सायटोसीन,गुवानिन,युरॅसिल,0,Molecular Genetics
+Biology,Evolution,डार्विनच्या नैसर्गिक निवडवादाचा मुख्य सिद्धांत कशावर आधारित होता?,योग्यतेचा सातत्यपूर्ण विकास व संघर्ष (Survival of the Fittest),अचानक उत्परिवर्तन,वापराचा व वापराचा अभाव,यापैकी नाही,0,Evolution
+Biology,Human Health and Disease,एड्स (AIDS) रोगाचे निदान करण्यासाठी कोणती वैद्यकीय चाचणी केली जाते?,एलिसा चाचणी (ELISA Test),विडाल चाचणी,पीसीआर,मलेरिया स्लाइड,0,Human Diseases
+Biology,Strategies for Enhancement in Food Production,पिकांच्या संकरित जाती विकसित करण्यासाठी वनस्पती प्रजननात कोणते तंत्र वापरले जाते?,इमास्क्युलेशन व बॅगिंग (Emasculation and Bagging),जंगल तोडणे,रासायनिक फवारणी,पाणी साचवणे,0,Plant Breeding
+Biology,Microbes in Human Welfare,पेनिसिलिन प्रतिजैविक (Antibiotic) सर्वप्रथम कोणापासून मिळवले गेले?,बुरशी (Penicillium notatum / Fungi),जिवाणू,व्हायरस,शेवाळ,0,Microbiology
+Mathematics,Relations and Functions,जर R = {(x, y) : x + y = 5} हा संच N वरील संबंध असेल, तर हा संबंध कसा आहे?,स्वतुल्य (Reflexive),संमित (Symmetric) पण स्वतुल्य नाही,परस्परविरोधी,तुल्य नाही,1,Relations
+Mathematics,Inverse Trigonometric Functions,tan^(-1)(1) + cos^(-1)(-1/2) + sin^(-1)(-1/2) चे मुख्य मूल्य किती?,pi/4,3pi/4,pi/2,5pi/4,1,Inverse Trigonometry
+Mathematics,Matrices,जर A हा त्रिकोणी कोटीचा मॅट्रिक्स असेल आणि det(A) = 4 असेल, तर adj(A) चा determinant किती?,4,16,64,1,1,Matrices
+Mathematics,Continuity and Differentiability,फंक्शन f(x) = x^3 - 3x चे स्थानीय उच्चिष्ठ (Local Maxima) मूल्य किती असेल?,2,-2,0,4,0,Applications of Derivatives
+Mathematics,Integrals,int dx / (x^2 + a^2) चे समाकलित (Integration) मान काय असते?,(1/a) * tan^(-1)(x/a) + C,ln|x + a| + C,sin^(-1)(x/a) + C,(1/(2a)) * ln|(x-a)/(x+a)| + C,0,Integrals
+Mathematics,Differential Equations,dy/dx = (1 + y^2) / (1 + x^2) या विकल्पीय समीकरणाची सामान्य उकल काय?,y = x + C,(y - x) / (1 + xy) = C,tan^(-1)(y) = tan^(-1)(x) + C,log(y) = log(x) + C,2,Differential Equations
+Mathematics,Vectors,जर सदिश a = 2i + j + k आणि b = i - j + 2k असतील, तर a क्रॉस b चे परिमाण (Magnitude) किती?,sqrt(26),3*sqrt(3),5,6,1,Vector Cross Product
+Mathematics,Three Dimensional Geometry,दोन रेषांच्या दिशा कोसाइन l1, m1, n1 आणि l2, m2, n2 असल्यास त्या लंब असण्याची अट काय?,l1*l2 + m1*m2 + n1*n2 = 0,l1/l2 = m1/m2 = n1/n2,l1+l2 = 0,यापैकी नाही,0,3D Geometry
+Mathematics,Linear Programming,रैखिक प्रोग्रामिंग समस्येच्या उद्देशीय फलकाचे कमाल मूल्य (Maximum value) नेहमी कोठे असते?,केवळ मध्यभागी,आलेखीय क्षेत्राच्या शिरोबिंदूवर (Corner Points),केवळ अक्षांवर,कोणत्याही बिंदूवर,1,Linear Programming
+Mathematics,Probability,दोन फासे एकदा फेकले असता दोन्हीवर सम संख्या मिळण्याची संभाव्यता किती?,1/4,1/2,1/6,1/36,0,Probability
+English,Grammar,'Scarcely had I arrived at the station ___ the train left.' योग्य Conjunction निवडा.,than,when,then,before,1,Conjunctions
+English,Vocabulary,'Transient' या शब्दाचा विरुद्धार्थी शब्द कोणता?,Permanent (शाश्वत / कायमस्वरूपी),Temporary,Fleeting,Brief,0,Opposite Words
+English,Grammar,'He talks as if he ___ everything.' योग्य Verb निवडा.,know,knew (Hypothetical),known,has known,1,Subjunctive Mood
+English,Plurals,'Alumnus' या शब्दाचे अनेकवचन काय होते?,Alumnuses,Alumni (अलुम्नाय),Alumnae,Alumnu,1,Plural Forms
+English,Pronouns,'___ of the students failed the exam.' योग्य Determiner भरा.,None,Every,All,Both,0,Determiners
+English,Spelling,योग्य स्पेलिंग असलेला शब्द ओळखा:,Millennium,Milennium,Milenium,Milleniumm,0,Spelling Accuracy
+English,Tenses,'By next week, she will have been working here for 5 years.' हा कोणता काळ आहे?,Future Perfect Continuous (चालू पूर्ण भविष्यकाळ),Future Continuous,Present Perfect,Past Perfect,0,Verb Tenses
+English,Action Verbs,'Tear' या क्रियापदाचे V3 (Past Participle) रूप कोणते?,Tore,Torn,Tearing,Tears,1,Verb Forms
+English,Question Words,'___ clever she is!' उद्गारवाचक वाक्यात काय वापरतात?,What,How,Which,Whose,1,Exclamations
+English,Rhyming Words,'Sight' शी जुळणारा शब्द ओळखा:,Night,Light,Right,All of these,3,Rhyming Words
+Physics,Electric Charges and Fields,विद्युत फ्लक्सचे (Electric Flux) आंतरराष्ट्रीय एकक (SI Unit) काय आहे?,N * m^2 / C,V * m,N / C,A * s,0,Electrostatics
+Physics,Current Electricity,विद्युत सेलचा अंतर्गत रोध (Internal Resistance) कशावर अवलंबून नसतो?,इलेक्ट्रोड्समधील अंतर,इलेक्ट्रोलाइटचे सांद्रता,बाह्य रोध (External resistance),इलेक्ट्रोड्सचे क्षेत्रफळ,2,Current Electricity
+Physics,Moving Charges and Magnetism,सायक्लोट्रॉनचा वापर कशासाठी केला जात नाही?,प्रॉटन त्वरित करण्यासाठी,आयन्स त्वरित करण्यासाठी,उदासीन न्यूट्रॉन त्वरित करण्यासाठी (Neutral neutrons cannot be accelerated),इलेक्ट्रॉन त्वरित करण्यासाठी,2,Magnetism
+Physics,Electromagnetic Induction,लेन्झचा नियम (Lenz's Law) कशाच्या संवर्धनावर आधारित आहे?,ऊर्जा संवर्धनाचा नियम (Conservation of Energy),चार्ज संवर्धन,संवेग संवर्धन,वस्तुमान संवर्धन,0,EMI
+Physics,Alternating Current,एलसीआर सर्किट्समध्ये (LCR Circuit) अनुनाद (Resonance) असताना प्रतिबाधा (Impedance, Z) किती असते?,महत्तम,किमान व रोधाएवढी (Minimum, Z = R),शून्य,अनंत,1,Alternating Current
+Physics,Ray Optics,संयुक्त सूक्ष्मदर्शकाची (Compound Microscope) भिंगांची नाभीय लांबी कशी असते?,दोन्ही मोठी,अभिदृश्य भिंग लहान आणि नेत्रभिंग मोठे (Objective small, Eyepiece large),दोन्ही लहान,यापैकी नाही,1,Ray Optics
+Physics,Wave Optics,ध्रुवीकरण (Polarization) प्रक्रिया केवळ कोणत्या प्रकारच्या लहरींमध्ये घडून येते?,अनुदैर्ध्य लहरी,अनुप्रस्थ लहरी (Transverse Waves),सर्व प्रकारच्या लहरी,ध्वनी लहरी,1,Wave Optics
+Physics,Dual Nature of Radiation and Matter,प्रकाशविद्युत परिणामात (Photoelectric Effect) उत्सर्जित होणाऱ्या इलेक्ट्रॉन्सची महत्त्तम गतिज ऊर्जा कशावर अवलंबून असते?,प्रकाशाची तीव्रता,प्रकाशाची वारंवारता (Frequency of Incident Light),प्रकाशाचा वेग,यापैकी नाही,1,Dual Nature
+Physics,Atoms,हायड्रोजन वर्णपटातील लाइमन मालिका (Lyman Series) कोणत्या वर्णपट क्षेत्रात आढळते?,अतिनील क्षेत्र (Ultraviolet Region),दृश्य क्षेत्र,अवरक्त क्षेत्र,क्ष-किरण,0,Atomic Physics
+Physics,Semiconductor Electronics,एन-टाइप (N-type) अर्धसंवाहकामध्ये मुख्य वाहक (Majority Charge Carriers) कोण असतात?,होल (Holes),इलेक्ट्रॉन (Electrons),प्रोटॉन,आयन,1,Semiconductors
+Chemistry,Solutions,वाष्पशील द्रावकांमधील अवाष्पशील द्राव्य मिसळल्यास द्रावणाचा वाष्पदवाब कसा होतो?,वाढतो,कमी होतो (Lowers / Decreases),स्थिर राहतो,शून्य होतो,1,Solutions
+Chemistry,Electrochemistry,फॅराडेचा विद्युत विघटनाचा पहिला नियम कशाशी संबंधित आहे?,w = Z * I * t,E = mc^2,PV = nRT,PV = constant,0,Electrochemistry
+Chemistry,Chemical Kinetics,अभिक्रीयेचा वेग स्थिरांक (Rate Constant, k) केवळ कशावर अवलंबून असतो?,तापमानावर (Temperature),अभिक्रियाकांच्या सांद्रतेवर,दाबावर,उत्पादनांवर,0,Chemical Kinetics
+Chemistry,d and f Block Elements,लॅंथेनाइड आकुंचन (Lanthanoid Contraction) कशामुळे होते?,4f इलेक्ट्रॉन्सचे अपुरे आवरण प्रभाव (Poor shielding of 4f electrons),5d इलेक्ट्रॉन्स,केंद्रकीय चार्ज कमी होणे,यापैकी नाही,0,d-Block Elements
+Chemistry,Coordination Compounds,CO (कार्बन मॉनाक्साइड) हा लिगांड कसा असतो?,एकदंतीय (Monodentate / neutral strong field ligand),द्विदंतीय,त्रिदंतीय,आयनीकृत,0,Coordination Compounds
+Chemistry,Haloalkanes and Haloarenes,क्लोरobenzene ची Wurtz-Fittig अभिक्रियेत सोडियम आणि अल्कील हॅलाइडसोबत विक्रियेतून काय मिळते?,टोल्युईन (Toluene / Alkyl benzene),बेंझिन,डिफिनिल,फिनॉल,0,Haloarenes
+Chemistry,Alcohols Phenols and Ethers,फिनॉलची नायट्रिक अम्लासोबत विक्रिया झाल्यास कोणता मुख्य स्फोटक पदार्थ तयार होतो?,पिक्रिक अम्ल (Picric acid / 2,4,6-trinitrophenol),सॅलिसिलिक अम्ल,बेंझोइक अम्ल,नॅप्थॉल,0,Phenols Chemistry
+Chemistry,Aldehydes Ketones and Carboxylic Acids,फेलिंग द्रावणासोबत (Fehling's Solution) कोणते संयुग लाल अवक्षेप देतो?,बेन्झालडिहाइड,अॅसिटॅलडिहाइड (Aliphatic aldehydes),अॅसिटोन,इथर,1,Aldehydes
+Chemistry,Amines,प्राथमिक अमीन (Primary amine) ओळखण्यासाठी कोणती महत्त्वाची चाचणी वापरली जाते?,कार्बिलामीन चाचणी (Carbylamine Test),लुकास चाचणी,टोलेंस चाचणी,फेडिंग चाचणी,0,Amines
+Chemistry,Biomolecules,जीवनसत्त्व सी (Vitamin C) चे रासायनिक नाव काय आहे?,अस्कॉर्बिक अम्ल (Ascorbic Acid),रेटिनॉल,थायमीन,टोकोफेरॉल,0,Biomolecules
