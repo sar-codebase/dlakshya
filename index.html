@@ -473,18 +473,23 @@
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-6 border-b border-slate-200 gap-4">
                     <div>
                         <div class="flex flex-wrap items-center gap-2 mb-1">
-                            <span class="text-xs font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">Completed</span>
+                            <span class="text-xs font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">Completed & Locked</span>
                             <span class="text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 px-3 py-1 rounded-full font-mono">ID: <span id="report-assessment-id"></span></span>
                         </div>
                         <h3 id="report-student-name" class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">Performance Report</h3>
                         <p id="report-timestamp" class="text-xs text-slate-500"></p>
                     </div>
                     <div class="flex items-center gap-3">
-                        <button onclick="returnToMainPage()" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition flex items-center gap-2 shadow">
+                        <button onclick="returnToMainPage()" class="px-5 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold rounded-lg text-xs transition flex items-center gap-2">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 001 1m-6 0h6"></path></svg>
-                            Return to home
+                            Home
                         </button>
                     </div>
+                </div>
+
+                <!-- Completed Notice Box -->
+                <div class="p-4 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-900 font-medium">
+                    🔒 <strong>Assessment Locked:</strong> This assessment has already been completed and submitted. Re-attempts are restricted for security.
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
@@ -783,6 +788,45 @@
         let currentBatchAuditData = [];
         let currentAuditStudentName = "";
 
+        // Check sessionStorage on page load to restore active or completed student session state
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedState = sessionStorage.getItem('dl_student_session_state');
+            if (savedState) {
+                try {
+                    const stateObj = JSON.parse(savedState);
+                    isQuestionBankLoaded = true;
+                    
+                    const btn = document.getElementById('tab-student-btn');
+                    const lock = document.getElementById('student-portal-lock');
+                    btn.disabled = false;
+                    btn.classList.remove('text-slate-400', 'disabled:cursor-not-allowed');
+                    lock.className = "bg-emerald-100 text-emerald-700 text-[10px] px-1.5 py-0.5 rounded-full font-bold";
+                    lock.innerText = "Authorized";
+
+                    currentAssessmentId = stateObj.assessmentId;
+                    document.getElementById('login-assessment-id').value = currentAssessmentId;
+
+                    if (stateObj.status === 'completed') {
+                        // Restore completed report view
+                        currentStudentData = stateObj.studentData;
+                        document.getElementById('student-login-card').classList.add('hidden');
+                        document.getElementById('student-test-engine').classList.add('hidden');
+                        document.getElementById('student-report-view').classList.remove('hidden');
+
+                        document.getElementById('report-assessment-id').innerText = currentAssessmentId;
+                        document.getElementById('report-student-name').innerText = `Performance Report: ${currentStudentData.name}`;
+                        document.getElementById('report-timestamp').innerText = `Submitted on: ${stateObj.submittedAt}`;
+                        document.getElementById('report-score').innerText = `${currentStudentData.score}%`;
+                        document.getElementById('report-correct').innerText = `${currentStudentData.answers.filter(a => a.IsCorrect).length} / ${currentStudentData.answers.length}`;
+                        document.getElementById('report-gaps-count').innerText = currentStudentData.gaps.length;
+                        document.getElementById('report-gaps-list').innerHTML = currentStudentData.gaps.map(g => `<li>${g}</li>`).join('') || '<li>No major gaps detected! Great job!</li>';
+                    }
+                } catch (e) {
+                    console.error("Failed to restore session state", e);
+                }
+            }
+        });
+
         function showDownloadToast(fileName) {
             const toast = document.getElementById('mobile-download-toast');
             document.getElementById('toast-file-name').innerHTML = `File saved to <strong>Downloads folder</strong>:<br><span class="underline">${fileName}</span>`;
@@ -960,6 +1004,7 @@
 
         function resetStudentSessionDueToReauthorization() {
             clearInterval(timerInterval);
+            sessionStorage.removeItem('dl_student_session_state');
             document.getElementById('student-test-engine').classList.add('hidden');
             document.getElementById('student-report-view').classList.add('hidden');
             document.getElementById('student-login-card').classList.remove('hidden');
@@ -1144,12 +1189,21 @@
             currentStudentData.answers = answers;
             currentStudentData.gaps = Object.keys(gapsMap);
 
+            // Save state in sessionStorage so navigation away and back keeps the report locked
+            const submissionTimestamp = new Date().toLocaleString();
+            sessionStorage.setItem('dl_student_session_state', JSON.stringify({
+                status: 'completed',
+                assessmentId: currentAssessmentId,
+                submittedAt: submissionTimestamp,
+                studentData: currentStudentData
+            }));
+
             document.getElementById('student-test-engine').classList.add('hidden');
             document.getElementById('student-report-view').classList.remove('hidden');
             
             document.getElementById('report-assessment-id').innerText = currentAssessmentId;
             document.getElementById('report-student-name').innerText = `Performance Report: ${currentStudentData.name}`;
-            document.getElementById('report-timestamp').innerText = `Submitted on: ${new Date().toLocaleString()}`;
+            document.getElementById('report-timestamp').innerText = `Submitted on: ${submissionTimestamp}`;
             document.getElementById('report-score').innerText = `${pct}%`;
             document.getElementById('report-correct').innerText = `${score} / ${questions.length}`;
             document.getElementById('report-gaps-count').innerText = currentStudentData.gaps.length;
@@ -1186,12 +1240,6 @@
         }
 
         function returnToMainPage() {
-            document.getElementById('student-report-view').classList.add('hidden');
-            document.getElementById('student-login-card').classList.remove('hidden');
-            document.getElementById('student-id-verify').value = "";
-            document.getElementById('student-access-key').value = "";
-            document.getElementById('student-name').value = "";
-            document.getElementById('student-class').value = "";
             switchTab('evaluator');
         }
 
