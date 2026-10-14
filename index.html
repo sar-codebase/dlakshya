@@ -40,7 +40,7 @@
     <!-- Top Privacy Banner -->
     <div class="bg-slate-900 text-white text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-center font-medium flex items-center justify-center gap-2 shadow-inner">
         <svg class="w-4 h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-        <span>100% Offline & Local Privacy Guaranteed — All processing, encryption, and evaluation occur strictly inside your browser.</span>
+        <span>Offline-First Browser Application — All processing, encryption, and evaluation occur strictly local inside your browser with complete data privacy.</span>
     </div>
 
     <!-- Mobile File Generation Notification Toast -->
@@ -245,15 +245,15 @@
                 </div>
 
                 <!-- Multi-Student Batch Macro Overview Section -->
-                <div id="batch-macro-overview-box" class="hidden p-4 sm:p-5 bg-indigo-50/70 rounded-xl border border-indigo-200 space-y-3">
-                    <h4 class="font-bold text-indigo-900 text-sm flex items-center justify-between">
+                <div id="batch-macro-overview-box" class="hidden p-4 sm:p-5 bg-purple-50 rounded-xl border border-purple-200 space-y-3">
+                    <h4 class="font-bold text-purple-900 text-sm flex items-center justify-between">
                         <span class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-indigo-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <svg class="w-4 h-4 text-purple-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                             Batch Macro Overview (Class / Multi-Student Summary)
                         </span>
-                        <span class="text-[10px] font-semibold bg-indigo-200 text-indigo-800 px-2 py-0.5 rounded-full">Macro Analytics</span>
+                        <span class="text-[10px] font-semibold bg-purple-200 text-purple-900 px-2.5 py-0.5 rounded-full">Macro Analytics</span>
                     </h4>
-                    <div id="batch-macro-content" class="text-xs text-indigo-950 font-medium leading-relaxed space-y-1"></div>
+                    <div id="batch-macro-content" class="text-xs text-purple-950 font-medium leading-relaxed space-y-1"></div>
                 </div>
 
                 <!-- Summary Grid -->
@@ -592,7 +592,7 @@
                         </div>
                     </div>
                     <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-4">
-                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 100% Offline Single-Device Access</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Offline Single-Device Access</li>
                         <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Standard CBSE/ICSE Question Banks</li>
                         <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> CSV Attempt Logs Export</li>
                     </ul>
@@ -653,23 +653,35 @@
                     </span>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="p-4 bg-blue-50/70 rounded-xl border-2 border-blue-200 space-y-1.5 relative">
-                        <span class="absolute top-3 right-3 bg-blue-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full shadow">#1 Best Choice</span>
-                        <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Advantage 1: Offline Architecture -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-1.5 relative shadow-sm">
+                        <span id="badge-offline" class="absolute top-3 right-3 text-lg leading-none">🥇</span>
+                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2 pr-10">
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                            100% Offline Capability
+                            Offline-First Browser Architecture
                         </h4>
-                        <p class="text-xs text-blue-900/80 leading-relaxed font-medium">Operates entirely without internet, preventing classroom disruptions during power or Wi-Fi outages.</p>
+                        <p class="text-xs text-slate-600 leading-relaxed font-medium">Operates locally inside your browser with zero active server dependency during runtime, preventing classroom disruptions during internet dropouts.</p>
                     </div>
 
-                    <div class="p-4 bg-indigo-50/70 rounded-xl border-2 border-indigo-200 space-y-1.5 relative">
-                        <span class="absolute top-3 right-3 bg-indigo-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full shadow">#2 Best Choice</span>
-                        <h4 class="font-bold text-indigo-900 text-xs flex items-center gap-2">
-                            <svg class="w-4 h-4 text-indigo-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    <!-- Advantage 2: Data Privacy -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-1.5 relative shadow-sm">
+                        <span id="badge-privacy" class="absolute top-3 right-3 text-lg leading-none">🥈</span>
+                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2 pr-10">
+                            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                             Complete Data Privacy & Security
                         </h4>
-                        <p class="text-xs text-indigo-900/80 leading-relaxed font-medium">All student performance records and logs stay securely on your local device—no cloud uploads or third-party tracking.</p>
+                        <p class="text-xs text-slate-600 leading-relaxed font-medium">All student performance records and logs stay securely on your local device—no cloud database uploads or third-party tracking.</p>
+                    </div>
+
+                    <!-- Advantage 3: Multi-Student Batch Summary -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-1.5 relative shadow-sm">
+                        <span id="badge-batch" class="absolute top-3 right-3 text-lg leading-none">🥉</span>
+                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2 pr-10">
+                            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            Multi-Student Batch Summary Analytics
+                        </h4>
+                        <p class="text-xs text-slate-600 leading-relaxed font-medium">Instantly aggregate multiple student CSV reports to calculate class averages, spot group-wide misconceptions, and flag at-risk learners.</p>
                     </div>
 
                     <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
@@ -677,7 +689,7 @@
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                             Flexible Custom Question Banks
                         </h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">Teachers preparing for specific exams can share questions with the D-Lakshya team for custom CSV formatting.</p>
+                        <p class="text-xs text-slate-600 leading-relaxed">Teachers preparing for specific exams can load custom CSV question datasets directly into the test engine.</p>
                     </div>
 
                     <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
@@ -715,7 +727,7 @@
                             <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
                         <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
-                            <strong>A:</strong> No! D-Lakshya operates 100% offline directly in your browser or desktop environment with zero internet dependency.
+                            <strong>A:</strong> No! D-Lakshya functions as an <strong>Offline-First Browser Application</strong>. Once loaded into your browser (via GitHub, BigRock, or local file), all assessment logic, grading, timers, and reports execute 100% locally on your device with zero live server dependency.
                         </div>
                     </details>
 
@@ -725,7 +737,17 @@
                             <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
                         <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
-                            <strong>A:</strong> You can share your chapter questions with the D-Lakshya team, and we will quickly format the CSV file for you to load directly into the dashboard.
+                            <strong>A:</strong> You can upload your custom chapter question bank formatted as a CSV file directly into the Evaluator Portal for instant local use.
+                        </div>
+                    </details>
+
+                    <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
+                        <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
+                            <span>Q: Can teachers use the generated PDF reports during Parent-Teacher Meetings (PTMs)?</span>
+                            <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
+                            <strong>A:</strong> Yes, absolutely! Teachers can instantly generate and print or save comprehensive PDF executive summary reports right from the Evaluator Portal. These reports include multi-attempt growth trajectories, topic skill strengths, behavioral pacing diagnostics, and custom AI remediation strategies, making them ideal documentation to share and discuss with parents during Parent-Teacher Meetings (PTMs).
                         </div>
                     </details>
                 </div>
@@ -773,7 +795,7 @@
 
     <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4 no-print">
         <div class="font-bold text-slate-700">© 2026 D-Lakshya. All Rights Reserved.</div>
-        <div>D-Lakshya &bull; Lakshya | Assess, Learn, Achieve &bull; 100% Offline Local Browser Execution</div>
+        <div>D-Lakshya &bull; Lakshya | Assess, Learn, Achieve &bull; Offline-First Browser Application</div>
         <div class="max-w-4xl mx-auto text-[11px] text-slate-400 leading-relaxed px-4">
             <strong>Disclaimer & EULA Notice:</strong> Recommendations and analyses provided are AI-generated for informational and advisory purposes only. Unauthorized copying, reverse engineering, or commercial redistribution of D-Lakshya code is strictly prohibited. Parents, teachers, and guardians should independently evaluate all educational decisions.
         </div>
@@ -1365,6 +1387,32 @@
             }
         }
 
+        // AI Dynamic Priority Ranking & Medal Assignment Function
+        function updateCoreAdvantageBadges(uniqueStudentsCount, totalFiles, averageScore) {
+            const badgeOffline = document.getElementById('badge-offline');
+            const badgePrivacy = document.getElementById('badge-privacy');
+            const badgeBatch = document.getElementById('badge-batch');
+
+            // AI dynamic ranking score based on usage context
+            let batchRelevanceScore = (uniqueStudentsCount > 1 || totalFiles > 1) ? 95 : 70;
+            let offlineRelevanceScore = 90;
+            let privacyRelevanceScore = 85;
+
+            // Sort and assign badges dynamically
+            let ranks = [
+                { id: 'batch', score: batchRelevanceScore, elem: badgeBatch },
+                { id: 'offline', score: offlineRelevanceScore, elem: badgeOffline },
+                { id: 'privacy', score: privacyRelevanceScore, elem: badgePrivacy }
+            ];
+
+            ranks.sort((a, b) => b.score - a.score);
+
+            const medals = ["🥇", "🥈", "🥉"];
+            ranks.forEach((item, index) => {
+                item.elem.innerText = medals[index];
+            });
+        }
+
         function evaluateAIStudentAudit(sessions) {
             currentBatchAuditData = [];
             let studentName = "Student";
@@ -1424,10 +1472,13 @@
             const batchContent = document.getElementById('batch-macro-content');
             
             const uniqueStudentsFound = [...new Set(sessions.map(s => (s.rows[0]?.StudentName || "").trim().toLowerCase()))].filter(Boolean);
+            const classAvg = allStudentScores.length > 0 ? Math.round(allStudentScores.reduce((a, b) => a + b, 0) / allStudentScores.length) : 0;
+
+            // Trigger AI Dynamic Rating Adjustment for Core Advantages
+            updateCoreAdvantageBadges(uniqueStudentsFound.length, sessions.length, classAvg);
 
             if (uniqueStudentsFound.length > 1) {
                 batchBox.classList.remove('hidden');
-                const classAvg = Math.round(allStudentScores.reduce((a, b) => a + b, 0) / allStudentScores.length);
                 const sortedGapsBatch = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
                 const atRiskCount = allStudentScores.filter(sc => sc < 50).length;
 
