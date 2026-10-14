@@ -30,7 +30,8 @@
         @media print {
             body * { visibility: hidden; }
             #teacher-audit-output, #teacher-audit-output * { visibility: visible; }
-            #teacher-audit-output { position: absolute; left: 0; top: 0; width: 100%; box-shadow: none; border: none; }
+            #teacher-audit-output { position: absolute; left: 0; top: 0; width: 100%; box-shadow: none; border: none; padding: 10px; }
+            .no-print { display: none !important; }
         }
     </style>
 </head>
@@ -53,7 +54,7 @@
     </div>
 
     <!-- Header Navigation -->
-    <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40">
+    <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-40 no-print">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center py-3 sm:py-0 sm:h-16 gap-3 sm:gap-0">
             <div class="flex items-center justify-between w-full sm:w-auto">
                 <div class="flex items-center space-x-3">
@@ -233,12 +234,12 @@
                     <div>
                         <span class="text-xs font-bold uppercase tracking-wider bg-blue-100 text-blue-800 px-3 py-1 rounded-full">AI Executive Summary Report</span>
                         <h3 id="audit-student-name" class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">Student Cumulative Analysis</h3>
-                        <p id="audit-student-meta" class="text-xs text-slate-500"></p>
+                        <p id="audit-student-meta" class="text-xs text-slate-500 font-mono mt-1"></p>
                     </div>
                     <div class="flex items-center gap-2">
-                        <button onclick="window.print()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs transition flex items-center gap-2 border border-slate-300">
+                        <button onclick="window.print()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs transition flex items-center gap-2 border border-slate-300 shadow-sm">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
-                            Print Report Card
+                            Print / Save as PDF (PTM Report)
                         </button>
                     </div>
                 </div>
@@ -586,7 +587,7 @@
                         <h3 class="text-xl font-extrabold text-slate-900 mt-3">Home Edition</h3>
                         <p class="text-xs text-slate-500 mt-1">Ideal for single student offline practice and self-paced diagnostics.</p>
                         <div class="mt-4 mb-2">
-                            <span class="text-3xl font-extrabold text-slate-900">₹499</span>
+                            <span class="text-3xl font-extrabold text-slate-900">₹599</span>
                             <span class="text-xs text-slate-500 font-medium"> / year</span>
                         </div>
                     </div>
@@ -606,7 +607,7 @@
                         <h3 class="text-xl font-extrabold text-slate-900 mt-3">Mentor Suite</h3>
                         <p class="text-xs text-slate-500 mt-1">Designed for private tutors and supervisors managing multiple students.</p>
                         <div class="mt-4 mb-2">
-                            <span class="text-3xl font-extrabold text-blue-600">₹4,999</span>
+                            <span class="text-3xl font-extrabold text-blue-600">₹5,999</span>
                             <span class="text-xs text-slate-500 font-medium"> / year</span>
                         </div>
                     </div>
@@ -700,6 +701,16 @@
                 <div class="space-y-3">
                     <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
                         <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
+                            <span>Q: Is D-Lakshya a one-time assessment test, or can it be used repeatedly?</span>
+                            <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
+                            <strong>A:</strong> D-Lakshya is designed for continuous, repetitive assessments throughout the academic year. Teachers can upload new chapter question banks or adjust tests based on current classroom progress. Students can retake assessments multiple times to track growth, master weak areas, and view long-term performance trendlines.
+                        </div>
+                    </details>
+
+                    <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
+                        <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
                             <span>Q: Do I need an active internet connection to run tests?</span>
                             <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
@@ -760,7 +771,7 @@
 
     </main>
 
-    <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4">
+    <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4 no-print">
         <div class="font-bold text-slate-700">© 2026 D-Lakshya. All Rights Reserved.</div>
         <div>D-Lakshya &bull; Lakshya | Assess, Learn, Achieve &bull; 100% Offline Local Browser Execution</div>
         <div class="max-w-4xl mx-auto text-[11px] text-slate-400 leading-relaxed px-4">
@@ -1365,11 +1376,16 @@
             let sessionSummaries = [];
             let allStudentScores = [];
 
+            // Extract and unify session rows from all uploaded files with name normalization
             sessions.forEach(s => {
-                currentBatchAuditData.push(...s.rows);
-                if (s.rows.length > 0) {
-                    studentName = s.rows[0].StudentName || studentName;
-                    studentClass = s.rows[0].Class || studentClass;
+                if (s.rows && s.rows.length > 0) {
+                    const extractedName = (s.rows[0].StudentName || "").trim();
+                    if (extractedName) studentName = extractedName;
+                    
+                    const extractedClass = (s.rows[0].Class || "").trim();
+                    if (extractedClass) studentClass = extractedClass;
+
+                    currentBatchAuditData.push(...s.rows);
                     
                     let qCount = s.rows.length;
                     let correctCount = s.rows.filter(r => String(r.IsCorrect).toLowerCase() === 'true').length;
@@ -1392,33 +1408,45 @@
                         fileName: s.fileName,
                         score: scorePct,
                         timeTaken: timeSec,
-                        totalTimer: timerMin * 60
+                        totalTimer: timerMin * 60,
+                        assessmentId: s.rows[0].AssessmentID || s.fileName
                     });
                 }
             });
 
+            // Sort sessions chronologically by filename order to ensure accurate trendlines
+            sessionSummaries.sort((a, b) => a.fileName.localeCompare(b.fileName));
+
             currentAuditStudentName = studentName;
             
-            // Macro Comparative Summary Logic for Multiple Student Files
+            // Macro Comparative Summary Logic
             const batchBox = document.getElementById('batch-macro-overview-box');
             const batchContent = document.getElementById('batch-macro-content');
-            if (sessions.length > 1) {
+            
+            const uniqueStudentsFound = [...new Set(sessions.map(s => (s.rows[0]?.StudentName || "").trim().toLowerCase()))].filter(Boolean);
+
+            if (uniqueStudentsFound.length > 1) {
                 batchBox.classList.remove('hidden');
                 const classAvg = Math.round(allStudentScores.reduce((a, b) => a + b, 0) / allStudentScores.length);
                 const sortedGapsBatch = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
                 const atRiskCount = allStudentScores.filter(sc => sc < 50).length;
 
                 batchContent.innerHTML = `
-                    &bull; <strong>Total Attempt Files Processed:</strong> ${sessions.length} student files<br>
-                    &bull; <strong>Batch Average Score:</strong> ${classAvg}%<br>
+                    &bull; <strong>Total Students Analyzed:</strong> ${uniqueStudentsFound.length} students (${sessions.length} files)<br>
+                    &bull; <strong>Class / Group Average Score:</strong> ${classAvg}%<br>
                     &bull; <strong>Primary Batch Misconception:</strong> ${sortedGapsBatch[0] || 'General core concepts'}<br>
                     &bull; <strong>Students Below Threshold (&lt;50%):</strong> ${atRiskCount} student(s) flagged for priority teacher intervention.
                 `;
             } else {
-                batchBox.classList.add('hidden');
+                batchBox.classList.remove('hidden');
+                batchContent.innerHTML = `
+                    &bull; <strong>Student Name:</strong> ${studentName} (Class ${studentClass})<br>
+                    &bull; <strong>Total Attempts Logged:</strong> ${sessions.length} sessions<br>
+                    &bull; <strong>Latest Assessment File:</strong> ${sessionSummaries[sessionSummaries.length - 1]?.fileName || 'N/A'}<br>
+                    &bull; <strong>Cumulative Progress:</strong> Showing improvement trajectory across submitted attempts.
+                `;
             }
 
-            // Rubric Integration Note injected if rubric file was uploaded
             if (loadedRubricContent) {
                 console.log("Rubric successfully applied into AI evaluation pipeline:", loadedRubricContent.substring(0, 50) + "...");
             }
@@ -1470,8 +1498,11 @@
             const auditOutputElem = document.getElementById('teacher-audit-output');
             auditOutputElem.classList.remove('hidden');
             
+            const fileNamesList = sessions.map(s => s.fileName).join(', ');
+            const latestTimestamp = new Date().toLocaleString();
+
             document.getElementById('audit-student-name').innerText = `Performance Report: ${studentName}`;
-            document.getElementById('audit-student-meta').innerText = `Class: ${studentClass} | Total Questions Evaluated: ${totalQuestionsAttempted} | Files Analyzed: ${sessions.length}`;
+            document.getElementById('audit-student-meta').innerHTML = `<strong>Class:</strong> ${studentClass} &bull; <strong>Source File(s):</strong> <span class="text-blue-600">${fileNamesList}</span> &bull; <strong>Evaluated On:</strong> ${latestTimestamp}`;
             document.getElementById('audit-attempt-count').innerText = sessions.length;
             document.getElementById('audit-avg-score').innerText = `${avgScore}%`;
             document.getElementById('audit-gaps-count').innerText = `${sortedGaps.length} Skills`;
@@ -1505,8 +1536,8 @@
 
         function exportStudentHistoryLogCSV() {
             if (currentBatchAuditData.length === 0) { alert("No data to export."); return; }
-            const teacherComments = document.getElementById('teacher-comments-input').value.trim();
-            const exportData = currentBatchAuditData.map(row => ({ ...row, TeacherRemarks: teacherComments || "N/A" }));
+            const teachercomments = document.getElementById('teacher-comments-input').value.trim();
+            const exportData = currentBatchAuditData.map(row => ({ ...row, TeacherRemarks: teachercomments || "N/A" }));
             const fileName = `Student_${currentAuditStudentName.replace(/\s+/g, '_')}_History_Log_${new Date().toISOString().slice(0,10)}.csv`;
             
             const link = document.createElement("a");
