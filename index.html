@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Font-Awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; user-select: none; -webkit-user-select: none; }
+        body { font-family: 'Inter', sans-serif; user-select: none; -webkit-user-select: none; scroll-behavior: smooth; }
         .tab-active { border-bottom: 3px solid #2563EB; color: #1D4ED8; font-weight: 600; }
         @media print {
             body * { visibility: hidden; }
@@ -215,9 +215,9 @@
                     </div>
 
                     <div class="pt-4 border-t border-slate-100">
-                        <button onclick="processTeacherBatchReview()" class="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition shadow-sm flex items-center justify-center gap-2">
+                        <button id="generate-report-btn" onclick="processTeacherBatchReview()" class="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition shadow-sm flex items-center justify-center gap-2">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-                            Generate Audit Report
+                            <span id="generate-btn-text">Generate Audit Report</span>
                         </button>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
             </div>
 
             <!-- Comprehensive Teacher Audit Output Section -->
-            <div id="teacher-audit-output" class="hidden bg-white p-5 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
+            <div id="teacher-audit-output" class="hidden bg-white p-5 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6 transition-all duration-300">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-6 border-b border-slate-200 gap-4">
                     <div>
                         <span class="text-xs font-bold uppercase tracking-wider bg-blue-100 text-blue-800 px-3 py-1 rounded-full">AI Executive Summary Report</span>
@@ -1207,8 +1207,12 @@
 
             const input = document.getElementById('teacher-review-input');
             if (input.files.length === 0) { alert("Please select at least one student attempt CSV file."); return; }
-            const files = Array.from(input.files);
             
+            // Show loading state on button
+            const btnText = document.getElementById('generate-btn-text');
+            btnText.innerText = "Generating Audit Report...";
+
+            const files = Array.from(input.files);
             let parsedFilesCount = 0;
             let allSessionsData = [];
 
@@ -1222,6 +1226,7 @@
                         allSessionsData.push({ fileName: file.name, rows: rows });
                     }
                     if (parsedFilesCount === files.length) {
+                        btnText.innerText = "Generate Audit Report";
                         evaluateAIStudentAudit(allSessionsData);
                     }
                 };
@@ -1357,7 +1362,9 @@
             let whatsappText = `📊 *D-Lakshya Progress Update* 📊\n\nStudent: *${studentName}* (Class ${studentClass})\nOverall Score: *${avgScore}%*\n\n_Teacher Verified & Approved_`;
             document.getElementById('whatsapp-summary-box').innerText = whatsappText;
 
-            document.getElementById('teacher-audit-output').classList.remove('hidden');
+            const auditOutputElem = document.getElementById('teacher-audit-output');
+            auditOutputElem.classList.remove('hidden');
+            
             document.getElementById('audit-student-name').innerText = `Performance Report: ${studentName}`;
             document.getElementById('audit-student-meta').innerText = `Class: ${studentClass} | Total Questions Evaluated: ${totalQuestionsAttempted} | Files Analyzed: ${sessions.length}`;
             document.getElementById('audit-attempt-count').innerText = sessions.length;
@@ -1377,6 +1384,9 @@
 
             document.getElementById('audit-gaps-list').innerHTML = sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${skillDeficits[g]} errors)</li>`).join('') || '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
             document.getElementById('audit-parental-strategy').innerHTML = remediationText;
+
+            // Automatically scroll smoothly to the generated report so teachers never miss it!
+            auditOutputElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
         function copyRemediationScript() {
