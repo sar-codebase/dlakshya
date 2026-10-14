@@ -110,35 +110,30 @@
                         <div class="flex justify-between items-start mb-4">
                             <div>
                                 <h3 class="text-base sm:text-lg font-bold text-slate-900">1. Question Bank & Assessment Setup</h3>
-                                <p class="text-xs text-slate-500">Configure target subject, timer duration, and question bank (UTF-8 supported).</p>
+                                <p class="text-xs text-slate-500">Upload question bank CSV first to populate available subjects, then select target subject and timer duration.</p>
                             </div>
                             <span class="p-2 bg-blue-50 text-blue-600 rounded-lg text-xs font-semibold shrink-0">Step 1</span>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+                            <!-- 1. Upload Question Bank CSV (First) -->
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Target Assessment Subject</label>
-                                <select id="evaluator-subject-select" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">1. Upload Question Bank CSV</label>
+                                <input type="file" id="qb-file-input" accept=".csv" onchange="handleQuestionBankFileSelect(event)" class="w-full text-xs text-slate-500 file:mr-2 file:py-2 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1 bg-white">
+                            </div>
+
+                            <!-- 2. Target Assessment Subject (Second - Dynamically Populated) -->
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">2. Target Assessment Subject</label>
+                                <select id="evaluator-subject-select" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
                                     <option value="ALL">All Subjects (Comprehensive Diagnostic)</option>
-                                    <option value="Mathematics">Mathematics</option>
-                                    <option value="Science">Science</option>
-                                    <option value="Physics">Physics</option>
-                                    <option value="Chemistry">Chemistry</option>
-                                    <option value="Biology">Biology</option>
-                                    <option value="English">English</option>
-                                    <option value="EVS">EVS (Environmental Studies)</option>
-                                    <option value="Social Studies">Social Studies</option>
                                 </select>
                             </div>
 
+                            <!-- 3. Assessment Timer (Last) -->
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Assessment Timer (Minutes)</label>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">3. Assessment Timer (Minutes)</label>
                                 <input type="number" id="evaluator-timer-input" value="30" min="1" max="180" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                            </div>
-
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Upload Question Bank CSV</label>
-                                <input type="file" id="qb-file-input" accept=".csv" class="w-full text-xs text-slate-500 file:mr-2 file:py-2 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1">
                             </div>
                         </div>
                     </div>
@@ -908,6 +903,52 @@
                 const fileSizeKB = (file.size / 1024).toFixed(1);
                 badge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
                 badge.innerText = `Rubric Loaded: ${file.name} (${fileSizeKB} KB)`;
+            };
+        }
+
+        // Dynamically populate Subject Dropdown when CSV is selected
+        function handleQuestionBankFileSelect(event) {
+            const file = event.target.files[0];
+            const subjectSelect = document.getElementById('evaluator-subject-select');
+            
+            if (!file) {
+                subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.readAsText(file, "UTF-8");
+            reader.onload = function (e) {
+                if (typeof Papa !== 'undefined') {
+                    Papa.parse(e.target.result, {
+                        header: true,
+                        skipEmptyLines: true,
+                        complete: function (results) {
+                            if (results.data && results.data.length > 0) {
+                                activeQuestionBank = results.data;
+                                
+                                // Extract unique subjects from column index 1 / Subject field
+                                const subjectsSet = new Set();
+                                results.data.forEach(row => {
+                                    if (row.Subject) {
+                                        subjectsSet.add(row.Subject.trim());
+                                    }
+                                });
+
+                                // Re-populate dropdown
+                                subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
+                                subjectsSet.forEach(subj => {
+                                    const opt = document.createElement('option');
+                                    opt.value = subj;
+                                    opt.textContent = subj;
+                                    subjectSelect.appendChild(opt);
+                                });
+                            } else {
+                                alert("Invalid CSV structure or empty question bank.");
+                            }
+                        }
+                    });
+                }
             };
         }
 
