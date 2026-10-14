@@ -145,9 +145,21 @@
                         <div class="flex justify-between items-start mb-4">
                             <div>
                                 <h3 class="text-base sm:text-lg font-bold text-slate-900">2. Review Student Reports</h3>
-                                <p class="text-xs text-slate-500">Upload student-answered CSV files to generate diagnostic analysis.</p>
+                                <p class="text-xs text-slate-500">Authorize with your Teacher ID & Access Key, then upload student-answered CSV files to generate diagnostic analysis.</p>
                             </div>
                             <span class="p-2 bg-blue-50 text-blue-600 rounded-lg text-xs font-semibold shrink-0">Step 2</span>
+                        </div>
+
+                        <!-- Teacher ID & Access Key Authorization Fields -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 p-4 bg-slate-50 rounded-xl border border-slate-200">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Teacher ID</label>
+                                <input type="text" id="teacher-id-verify" placeholder="e.g. TEACHER01" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Teacher Access Key</label>
+                                <input type="text" id="teacher-access-key" placeholder="Enter 8-character Key" class="w-full text-sm font-mono tracking-wider px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
+                            </div>
                         </div>
 
                         <div class="space-y-4 my-4">
@@ -497,9 +509,9 @@
                         <input type="password" id="admin-portal-password" placeholder="Enter admin password" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Student Access Key to Reset</label>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Access Key to Reset (Student or Teacher)</label>
                         <input type="text" id="admin-reset-key" placeholder="e.g. A1B2C3D4" class="w-full text-sm font-mono uppercase px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-                        <p class="text-[11px] text-slate-400 mt-1">Clears all bound devices for this key so the student can register fresh home devices.</p>
+                        <p class="text-[11px] text-slate-400 mt-1">Clears all bound devices for this key so the user can register fresh devices.</p>
                     </div>
                 </div>
 
@@ -582,7 +594,7 @@
                 </div>
             </div>
 
-            <!-- CORE ADVANTAGES SECTION (AI Ranked with Badge #1 and Badge #2) -->
+            <!-- CORE ADVANTAGES SECTION -->
             <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
                 <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                     <div>
@@ -597,7 +609,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <!-- Rank 1 Badge -->
                     <div class="p-4 bg-blue-50/70 rounded-xl border-2 border-blue-200 space-y-1.5 relative">
                         <span class="absolute top-3 right-3 bg-blue-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full shadow">#1 Best Choice</span>
                         <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2">
@@ -607,7 +618,6 @@
                         <p class="text-xs text-blue-900/80 leading-relaxed font-medium">Operates entirely without internet, preventing classroom disruptions during power or Wi-Fi outages.</p>
                     </div>
 
-                    <!-- Rank 2 Badge -->
                     <div class="p-4 bg-indigo-50/70 rounded-xl border-2 border-indigo-200 space-y-1.5 relative">
                         <span class="absolute top-3 right-3 bg-indigo-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full shadow">#2 Best Choice</span>
                         <h4 class="font-bold text-indigo-900 text-xs flex items-center gap-2">
@@ -615,38 +625,6 @@
                             Complete Data Privacy & Security
                         </h4>
                         <p class="text-xs text-indigo-900/80 leading-relaxed font-medium">All student performance records and logs stay securely on your local device—no cloud uploads or third-party tracking.</p>
-                    </div>
-
-                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
-                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2">
-                            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                            Flexible Custom Question Banks
-                        </h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">Teachers preparing for specific exams (like quarterly assessments covering Chapters 1, 2, and 3) can share questions with the D-Lakshya team, who quickly format the CSV file for direct loading.</p>
-                    </div>
-
-                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
-                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2">
-                            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
-                            Curriculum Aligned (All Boards)
-                        </h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">Tailored to fit any curriculum standard including CBSE, ICSE, state boards, or custom school test patterns.</p>
-                    </div>
-
-                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
-                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2">
-                            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            Built-in Timer & Controls
-                        </h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">Simulates strict exam environments with automatic countdown timers and pacing controls.</p>
-                    </div>
-
-                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
-                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2">
-                            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-                            Instant Diagnostic Feedback
-                        </h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">Instantly highlights student learning gaps and generates remediation scripts right after test completion.</p>
                     </div>
                 </div>
             </div>
@@ -660,7 +638,6 @@
                 </div>
 
                 <div class="space-y-3">
-                    <!-- FAQ Item 1 -->
                     <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
                         <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
                             <span>Q: Do I need an active internet connection to run tests?</span>
@@ -668,39 +645,6 @@
                         </summary>
                         <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
                             <strong>A:</strong> No! D-Lakshya operates 100% offline directly in your browser or desktop environment with zero internet dependency.
-                        </div>
-                    </details>
-
-                    <!-- FAQ Item 2 -->
-                    <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
-                        <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
-                            <span>Q: How do I add my own syllabus or quarterly exam questions?</span>
-                            <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </summary>
-                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
-                            <strong>A:</strong> It's very simple. You can share your chapter questions (e.g., Chapters 1 to 3) with the D-Lakshya team, and we will quickly create and format the CSV file for you to load directly into the dashboard.
-                        </div>
-                    </details>
-
-                    <!-- FAQ Item 3 -->
-                    <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
-                        <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
-                            <span>Q: Is student performance data secure?</span>
-                            <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </summary>
-                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
-                            <strong>A:</strong> Yes. All assessment data, history logs, and scores are stored locally on your own computer, ensuring complete privacy.
-                        </div>
-                    </details>
-
-                    <!-- FAQ Item 4 -->
-                    <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
-                        <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
-                            <span>Q: Which exam boards and assessment patterns are supported?</span>
-                            <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </summary>
-                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
-                            <strong>A:</strong> The platform is fully flexible, supporting multiple-choice, subjective, diagnostic, and objective formats tailored to CBSE, ICSE, state boards, or custom school test patterns.
                         </div>
                     </details>
                 </div>
@@ -717,7 +661,6 @@
                         <div>
                             <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wide">Phone Support</h4>
                             <p class="text-sm sm:text-base font-extrabold text-slate-900 mt-1">123456</p>
-                            <p class="text-[11px] text-slate-500 mt-0.5">Mon - Sat (9:00 AM - 6:00 PM)</p>
                         </div>
                     </div>
 
@@ -728,16 +671,8 @@
                         <div>
                             <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wide">Email Inquiries</h4>
                             <p class="text-xs sm:text-base font-extrabold text-slate-900 mt-1 font-mono break-all">dlakshyaofficial@gmail.com</p>
-                            <p class="text-[11px] text-slate-500 mt-0.5">Response within 24 business hours</p>
                         </div>
                     </div>
-                </div>
-
-                <div class="p-4 sm:p-5 bg-blue-50/60 rounded-xl border border-blue-200 text-xs text-blue-900 space-y-2">
-                    <h4 class="font-bold uppercase tracking-wide">Local Privacy Assurance</h4>
-                    <p class="leading-relaxed">
-                        D-Lakshya operates 100% offline within your browser environment. No student or teacher evaluation logs are ever sent to a central server. When contacting support regarding technical setups or custom CSV formatting, please include your Assessment ID for reference.
-                    </p>
                 </div>
             </div>
         </section>
@@ -747,7 +682,7 @@
     <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4">
         <div>D-Lakshya &bull; Lakshya | Assess, Learn, Achieve &bull; 100% Offline Local Browser Execution</div>
         <div class="max-w-4xl mx-auto text-[11px] text-slate-400 leading-relaxed px-4">
-            <strong>Disclaimer:</strong> Recommendations and analyses provided are AI-generated for informational and advisory purposes only. AI outputs may occasionally contain errors or inaccuracies. Parents, teachers, and guardians should independently evaluate and take full ownership of all educational decisions and strategies.
+            <strong>Disclaimer:</strong> Recommendations and analyses provided are AI-generated for informational and advisory purposes only.
         </div>
     </footer>
 
@@ -782,7 +717,6 @@
         let currentStudentData = { name: "", class: "", answers: [], score: 0, gaps: [], timeTakenSeconds: 0 };
         let currentBatchAuditData = [];
         let currentAuditStudentName = "";
-        let uploadedFilesMap = {};
 
         function showDownloadToast(fileName) {
             const toast = document.getElementById('mobile-download-toast');
@@ -802,9 +736,9 @@
             return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
         }
 
-        async function validateStudentAccessKey(studentIdInput, inputKey) {
-            if (!studentIdInput || !inputKey) return { valid: false, message: "Please enter both Student ID and Access Key." };
-            const studentId = studentIdInput.trim().toUpperCase();
+        async function validateKeyForEntity(entityIdInput, inputKey) {
+            if (!entityIdInput || !inputKey) return { valid: false, message: "Please enter both ID and Access Key." };
+            const entityId = entityIdInput.trim().toUpperCase();
             const keyToTest = inputKey.trim().toUpperCase();
 
             const currentDate = new Date();
@@ -816,12 +750,12 @@
                 const month = String(targetDate.getMonth() + 1).padStart(2, '0');
                 const monthStr = `${year}-${month}`;
 
-                const fullHash = await sha256Hex(APP_SECRET_SEED + ":" + monthStr + ":" + studentId);
+                const fullHash = await sha256Hex(APP_SECRET_SEED + ":" + monthStr + ":" + entityId);
                 validKeys.push(fullHash.substring(0, 8).toUpperCase());
             }
 
             if (!validKeys.includes(keyToTest)) {
-                return { valid: false, message: "Invalid Access Key for the given Student ID, or the key has expired." };
+                return { valid: false, message: "Invalid Access Key for the given ID, or the key has expired." };
             }
 
             let deviceId = localStorage.getItem('dl_device_id');
@@ -830,7 +764,7 @@
                 localStorage.setItem('dl_device_id', deviceId);
             }
 
-            const storageKey = `dl_multidevice_${studentId}_${keyToTest}`;
+            const storageKey = `dl_multidevice_${entityId}_${keyToTest}`;
             let boundDevices = JSON.parse(localStorage.getItem(storageKey) || "[]");
 
             if (boundDevices.includes(deviceId)) {
@@ -842,8 +776,16 @@
                 localStorage.setItem(storageKey, JSON.stringify(boundDevices));
                 return { valid: true };
             } else {
-                return { valid: false, message: "Access Denied: This student key has reached its 2-device limit (Laptop & Mobile). Contact admin to reset device slots." };
+                return { valid: false, message: "Access Denied: This key has reached its 2-device limit. Contact admin to reset device slots." };
             }
+        }
+
+        async function validateStudentAccessKey(studentIdInput, inputKey) {
+            return validateKeyForEntity(studentIdInput, inputKey);
+        }
+
+        async function validateTeacherAccessKey(teacherIdInput, inputKey) {
+            return validateKeyForEntity(teacherIdInput, inputKey);
         }
 
         function handleAdminResetKey() {
@@ -856,7 +798,7 @@
             }
 
             if (!rawKey) {
-                alert("Please enter the student access key to reset.");
+                alert("Please enter the access key to reset.");
                 return;
             }
 
@@ -891,6 +833,12 @@
                 return;
             }
 
+            // SECURITY FIX: Clear teacher credentials whenever navigating away from evaluator portal
+            if (portal !== 'evaluator') {
+                document.getElementById('teacher-id-verify').value = "";
+                document.getElementById('teacher-access-key').value = "";
+            }
+
             document.getElementById('tab-evaluator-btn').classList.toggle('tab-active', portal === 'evaluator');
             document.getElementById('tab-student-btn').classList.toggle('tab-active', portal === 'student');
             document.getElementById('tab-admin-btn').classList.toggle('tab-active', portal === 'admin');
@@ -902,10 +850,22 @@
             document.getElementById('portal-contact').classList.toggle('hidden', portal !== 'contact');
         }
 
+        function resetStudentSessionDueToReauthorization() {
+            clearInterval(timerInterval);
+            document.getElementById('student-test-engine').classList.add('hidden');
+            document.getElementById('student-report-view').classList.add('hidden');
+            document.getElementById('student-login-card').classList.remove('hidden');
+            document.getElementById('student-id-verify').value = "";
+            document.getElementById('student-access-key').value = "";
+            document.getElementById('login-assessment-id').value = "";
+        }
+
         function loadQuestionBank() {
             selectedEvaluatorSubject = document.getElementById('evaluator-subject-select').value;
             configuredTimerMinutes = parseInt(document.getElementById('evaluator-timer-input').value) || 30;
             const fileInput = document.getElementById('qb-file-input');
+
+            resetStudentSessionDueToReauthorization();
 
             if (fileInput.files.length === 0) {
                 currentAssessmentId = generateUniqueAssessmentId(selectedEvaluatorSubject);
@@ -946,7 +906,7 @@
             lock.innerText = "Authorized";
 
             document.getElementById('login-assessment-id').value = currentAssessmentId;
-            alert(`Assessment Authorized!\nAssessment ID: ${currentAssessmentId}\nSubject: ${selectedEvaluatorSubject}\nStudent Portal unlocked.`);
+            alert(`Assessment Re-Authorized & Updated!\nAssessment ID: ${currentAssessmentId}\nSubject: ${selectedEvaluatorSubject}\nStudent portal sessions have been reset.`);
             switchTab('student');
         }
 
@@ -977,7 +937,6 @@
             }
             if (filtered.length < 2) filtered = [...activeQuestionBank];
 
-            // Shuffle and limit to 25 random questions
             filtered.sort(() => Math.random() - 0.5);
             filtered = filtered.slice(0, 25);
             
@@ -1112,6 +1071,8 @@
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
             link.setAttribute("download", fileName);
+            document.setAttribute("download", fileName);
+            link.setAttribute("download", fileName);
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -1128,7 +1089,16 @@
             switchTab('evaluator');
         }
 
-        function processTeacherBatchReview() {
+        async function processTeacherBatchReview() {
+            const teacherIdInput = document.getElementById('teacher-id-verify').value.trim();
+            const teacherAccessKey = document.getElementById('teacher-access-key').value.trim();
+
+            const authCheck = await validateTeacherAccessKey(teacherIdInput, teacherAccessKey);
+            if (!authCheck.valid) {
+                alert("Teacher Verification Failed: " + authCheck.message);
+                return;
+            }
+
             const input = document.getElementById('teacher-review-input');
             if (input.files.length === 0) { alert("Please select at least one student attempt CSV file."); return; }
             const files = Array.from(input.files);
@@ -1181,8 +1151,7 @@
                         const isCorrect = String(row.IsCorrect).toLowerCase() === 'true';
                         const skill = row.Skill || row.Topic || 'Core Concept';
                         skillTotals[skill] = (skillTotals[skill] || 0) + 1;
-                        if (isCorrect) totalCorrectAnswers;
-                        else skillDeficits[skill] = (skillDeficits[skill] || 0) + 1;
+                        if (!isCorrect) skillDeficits[skill] = (skillDeficits[skill] || 0) + 1;
                     });
 
                     sessionSummaries.push({
@@ -1196,74 +1165,50 @@
 
             currentAuditStudentName = studentName;
             
-            // 1. Score Growth History Rationale
             let trendText = "";
             if (sessionSummaries.length < 2) {
-                trendText = `<strong>More details needed:</strong> Only 1 attempt report was uploaded (${sessionSummaries[0]?.score || 0}% score). Please upload at least 2 or more historical assessment CSV files to establish a comparative growth history and measure progress over time.`;
+                trendText = `<strong>More details needed:</strong> Only 1 attempt report was uploaded (${sessionSummaries[0]?.score || 0}% score). Please upload at least 2 or more historical assessment CSV files to establish a comparative growth history.`;
             } else {
                 let first = sessionSummaries[0].score;
                 let last = sessionSummaries[sessionSummaries.length - 1].score;
                 let diff = last - first;
                 if (diff > 5) {
-                    trendText = `<strong>Upward Trajectory (+${diff}%):</strong> Comparing across ${sessionSummaries.length} assessment files, the student shows clear cognitive growth and concept retention improvement. Prior practice guides are effectively working.`;
+                    trendText = `<strong>Upward Trajectory (+${diff}%):</strong> Comparing across ${sessionSummaries.length} assessment files, the student shows clear cognitive growth and concept retention improvement.`;
                 } else if (diff < -5) {
-                    trendText = `<strong>Downward Trend (${diff}%):</strong> Performance declined across uploaded sessions. This indicates emerging fatigue, loss of focus, or transition into more complex unmastered topics requiring immediate adult intervention.`;
+                    trendText = `<strong>Downward Trend (${diff}%):</strong> Performance declined across uploaded sessions, indicating emerging fatigue or unmastered topics.`;
                 } else {
-                    trendText = `<strong>Stable / Plateaued Trajectory:</strong> Scores remain consistent around ~${last}%. While stable, the student requires targeted challenges to break past current skill plateaus.`;
+                    trendText = `<strong>Stable / Plateaued Trajectory:</strong> Scores remain consistent around ~${last}%.`;
                 }
             }
 
-            // 2. Behavioral & Pacing Diagnostics
             let avgScore = totalQuestionsAttempted > 0 ? Math.round((totalCorrectAnswers / totalQuestionsAttempted) * 100) : 0;
             let pacingText = "";
             let pacingBadge = document.getElementById('pacing-badge');
             
             let avgTimePerQ = sessionSummaries.reduce((acc, s) => acc + (s.timeTaken / 25), 0) / (sessionSummaries.length || 1);
             if (avgTimePerQ < 20 && avgScore < 60) {
-                pacingText = `<strong>AI Diagnosis: Quick Answering without Information (Fluke/Guessing).</strong> The student completed questions exceptionally fast (under 20 seconds per question) while scoring low (${avgScore}%). This signals random guessing, rushed navigation, or lack of conceptual reading rather than confidence.`;
+                pacingText = `<strong>AI Diagnosis: Quick Answering without Information (Guessing).</strong>`;
                 pacingBadge.className = "text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full";
                 pacingBadge.innerText = "Rushed / Guessing";
             } else if (avgTimePerQ < 20 && avgScore >= 80) {
-                pacingText = `<strong>AI Diagnosis: High Confidence & Mastery.</strong> The candidate solved questions very quickly while maintaining high accuracy (${avgScore}%). This confirms strong domain familiarity, quick recall, and genuine subject confidence.`;
+                pacingText = `<strong>AI Diagnosis: High Confidence & Mastery.</strong>`;
                 pacingBadge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
                 pacingBadge.innerText = "Confident Mastery";
-            } else if (avgTimePerQ > 60 && avgScore < 50) {
-                pacingText = `<strong>AI Diagnosis: Reading Hesitation & Cognitive Fatigue.</strong> The student took a long time per question but struggled with accuracy. This indicates reading comprehension barriers, hesitation, or conceptual blocks.`;
-                pacingBadge.className = "text-[10px] font-semibold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full";
-                pacingBadge.innerText = "Hesitation / Fatigue";
             } else {
-                pacingText = `<strong>AI Diagnosis: Balanced & Normal Pacing.</strong> The test pacing matches standard cognitive allocation per question with steady deliberative effort.`;
+                pacingText = `<strong>AI Diagnosis: Balanced & Normal Pacing.</strong>`;
                 pacingBadge.className = "text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full";
                 pacingBadge.innerText = "Normal Pacing";
             }
 
-            // 3. How Parents Can Help at Home
             const sortedGaps = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
-            let remediationText = "";
-            if (sortedGaps.length === 0) {
-                remediationText = `<strong>Outstanding Performance:</strong> No major skill deficits were recorded across the uploaded logs. Parent Strategy: Maintain current study rhythm and introduce advanced challenge modules to sustain engagement.`;
-            } else {
-                let topGaps = sortedGaps.slice(0, 3).join(', ');
-                remediationText = `<strong>Inferred Gaps & Action Plan:</strong> Analysis of incorrect responses highlights primary recurring errors in <em>(${topGaps})</em>. These errors stem from fundamental conceptual gaps rather than careless errors. <strong>Parent Strategy:</strong> Dedicate 20 minutes daily exclusively to revising ${sortedGaps[0]}. Review foundational textbook examples together before allowing another assessment attempt.`;
-            }
+            let remediationText = sortedGaps.length === 0 ? "No major skill deficits recorded." : `Dedicate time exclusively to revising: ${sortedGaps.slice(0, 3).join(', ')}.`;
 
-            // 4. Personalized AI Remediation Script Generator
-            let scriptText = "";
-            if (sortedGaps.length === 0) {
-                scriptText = `🌟 Great job, ${studentName}! No major knowledge gaps were detected in this session.\n\n[TUTOR/PARENT SCRIPT]:\n"You did exceptionally well! Let's try some advanced challenge questions tomorrow to keep your skills sharp."`;
-            } else {
-                let primaryGap = sortedGaps[0];
-                let errorCount = skillDeficits[primaryGap];
-                scriptText = `📚 PRACTICE GUIDE FOR: ${primaryGap} (${errorCount} missed errors)\n\n[STEP 1 - CONCEPT REVIEW (5 Mins)]:\nSit with ${studentName} and review the fundamental rule behind '${primaryGap}'. Use real objects or physical examples to explain why previous answers were incorrect.\n\n[STEP 2 - GUIDED PRACTICE (10 Mins)]:\nWrite down 3 similar practice questions on paper together. Ask ${studentName} to explain their reasoning out loud before writing down the final answer.\n\n[STEP 3 - INDEPENDENT CHECK (5 Mins)]:\nHave ${studentName} re-attempt a quick quiz tomorrow focusing solely on ${primaryGap}.`;
-            }
+            let scriptText = sortedGaps.length === 0 ? `🌟 Great job, ${studentName}! No major gaps detected.` : `📚 PRACTICE GUIDE FOR: ${sortedGaps[0]}\n\n[STEP 1 - CONCEPT REVIEW]: Review fundamental rules.\n[STEP 2 - GUIDED PRACTICE]: Solve 3 sample problems together.`;
             document.getElementById('remediation-script-box').innerText = scriptText;
 
-            // 5. Parent WhatsApp / Email Report Card Summarizer
-            let topGapsSummary = sortedGaps.length > 0 ? sortedGaps.slice(0, 2).join(', ') : "None (Mastery achieved)";
-            let whatsappText = `📊 *D-Lakshya Progress Update* 📊\n\nStudent: *${studentName}* (Class ${studentClass})\nOverall Score: *${avgScore}%* (${totalCorrectAnswers}/${totalQuestionsAttempted} correct)\n\n🎯 *Key Strength:* Consistent effort & completion\n⚠️ *Focus Area:* ${topGapsSummary}\n\n💡 *Action Plan:* 15 mins daily review on focus areas.\n\n_Reviewed and Approved by Teacher via D-Lakshya Offline Portal_`;
+            let whatsappText = `📊 *D-Lakshya Progress Update* 📊\n\nStudent: *${studentName}* (Class ${studentClass})\nOverall Score: *${avgScore}%*\n\n_Teacher Verified & Approved_`;
             document.getElementById('whatsapp-summary-box').innerText = whatsappText;
 
-            // Render output
             document.getElementById('teacher-audit-output').classList.remove('hidden');
             document.getElementById('audit-student-name').innerText = `Performance Report: ${studentName}`;
             document.getElementById('audit-student-meta').innerText = `Class: ${studentClass} | Total Questions Evaluated: ${totalQuestionsAttempted} | Files Analyzed: ${sessions.length}`;
@@ -1288,28 +1233,12 @@
 
         function copyRemediationScript() {
             const scriptContent = document.getElementById('remediation-script-box').innerText.trim();
-            if (!scriptContent || scriptContent.includes("Upload student attempt CSV")) { 
-                alert("No practice guide available to copy. Please upload student CSV files first."); 
-                return; 
-            }
-            navigator.clipboard.writeText(scriptContent).then(() => {
-                alert("Practice Guide (Teacher Approved & Edited) copied to clipboard successfully!");
-            }).catch(err => {
-                alert("Failed to copy text.");
-            });
+            navigator.clipboard.writeText(scriptContent).then(() => alert("Practice Guide copied to clipboard!"));
         }
 
         function copyWhatsAppSummary() {
             const whatsappContent = document.getElementById('whatsapp-summary-box').innerText.trim();
-            if (!whatsappContent || whatsappContent.includes("Upload student attempt CSV")) { 
-                alert("No WhatsApp summary available to copy. Please upload student CSV files first."); 
-                return; 
-            }
-            navigator.clipboard.writeText(whatsappContent).then(() => {
-                alert("WhatsApp Report Card Summary (Teacher Approved & Edited) copied to clipboard! Ready to paste into WhatsApp or email.");
-            }).catch(err => {
-                alert("Failed to copy text.");
-            });
+            navigator.clipboard.writeText(whatsappContent).then(() => alert("WhatsApp Summary copied to clipboard!"));
         }
 
         function exportStudentHistoryLogCSV() {
