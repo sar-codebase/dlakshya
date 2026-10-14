@@ -1,3 +1,14 @@
+<!--
+    ========================================================================
+    D-Lakshya | Lakshya | Assess, Learn, Achieve
+    Copyright © 2026 D-Lakshya. All Rights Reserved.
+    
+    NOTICE: This software, user interface design, question datasets, and 
+    associated evaluation architecture are protected by international copyright laws.
+    Unauthorized copying, reverse engineering, modification, or commercial 
+    redistribution of this code is strictly prohibited.
+    ========================================================================
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -229,15 +240,6 @@
                     </div>
                 </div>
 
-                <!-- AI Disclaimer Notice Card -->
-                <div class="p-4 bg-amber-50 border border-amber-200 rounded-xl flex items-start gap-3">
-                    <svg class="w-5 h-5 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <div class="text-xs text-amber-900 leading-relaxed">
-                        <strong class="font-bold uppercase tracking-wider block mb-0.5">Important AI Advisory Notice:</strong>
-                        This report and its remediation recommendations are AI-assisted diagnostic aids generated for informational and advisory purposes only. <strong>AI can make mistakes or misinterpret context.</strong> This summary should be reviewed by an educator or parent and should not be considered a final or comprehensive educational evaluation.
-                    </div>
-                </div>
-
                 <!-- Summary Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
                     <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-100">
@@ -300,18 +302,7 @@
                     </div>
                 </div>
 
-                <!-- INTERACTIVE TEACHER VERIFICATION & SIGN-OFF GATE -->
-                <div class="p-4 bg-amber-50 border-2 border-amber-300 rounded-xl flex items-start gap-3 shadow-sm">
-                    <input type="checkbox" id="teacher-verification-checkbox" onchange="toggleTeacherSignOff()" class="w-5 h-5 text-blue-600 rounded border-amber-400 focus:ring-blue-500 mt-0.5 cursor-pointer shrink-0">
-                    <div class="text-xs text-amber-950 font-medium leading-relaxed">
-                        <label for="teacher-verification-checkbox" class="cursor-pointer font-bold block text-sm text-amber-900 mb-0.5">
-                            Mandatory Teacher Review & Sign-Off Confirmation
-                        </label>
-                        I confirm that I have personally reviewed this AI diagnostic report, verified the student's performance data, and approved the remediation scripts and remarks below for distribution.
-                    </div>
-                </div>
-
-                <!-- NEW FEATURE 1: AI Remediation Script Generator -->
+                <!-- AI Remediation Script Generator -->
                 <div class="p-4 sm:p-5 bg-blue-50/60 rounded-xl border border-blue-200 space-y-3">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                         <div class="flex items-center gap-2 flex-wrap">
@@ -319,20 +310,24 @@
                                 <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
                                 Personalized AI Remediation Script
                             </h4>
-                            <span id="badge-script-status" class="bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide transition">🔒 Pending Teacher Sign-off</span>
                         </div>
-                        <button id="btn-copy-script" onclick="copyRemediationScript()" disabled class="px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed">
+                        <button id="copy-script-btn" onclick="copyRemediationScript()" disabled class="px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                             Copy Script
                         </button>
                     </div>
+                    <!-- Teacher Verification Checkbox for Remediation Script -->
+                    <div class="flex items-center gap-2 pt-1 pb-1">
+                        <input type="checkbox" id="verify-remediation-chk" onchange="toggleScriptButtonState()" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                        <label for="verify-remediation-chk" class="text-xs font-bold text-blue-900 cursor-pointer">Reviewed and Approved by Teacher</label>
+                    </div>
                     <p class="text-[11px] text-blue-700 italic">Click inside the box below to edit or customize the remediation instructions before sharing.</p>
-                    <div id="remediation-script-box" contenteditable="false" class="p-3.5 bg-white rounded-lg border border-blue-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-xs text-slate-900 font-medium leading-relaxed whitespace-pre-line opacity-60">
-                        Upload student attempt CSV(s) above and check the teacher verification box to enable editing and copying.
+                    <div id="remediation-script-box" contenteditable="true" class="p-3.5 bg-white rounded-lg border border-blue-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-xs text-slate-900 font-medium leading-relaxed whitespace-pre-line">
+                        Upload student attempt CSV(s) above to generate custom remediation scripts.
                     </div>
                 </div>
 
-                <!-- NEW FEATURE 2: Parent WhatsApp/Email Report Card Summarizer -->
+                <!-- Parent WhatsApp/Email Report Card Summarizer -->
                 <div class="p-4 sm:p-5 bg-blue-50/60 rounded-xl border border-blue-200 space-y-3">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                         <div class="flex items-center gap-2 flex-wrap">
@@ -340,16 +335,20 @@
                                 <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
                                 Parent WhatsApp / Email Report Card Summarizer
                             </h4>
-                            <span id="badge-whatsapp-status" class="bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide transition">🔒 Pending Teacher Sign-off</span>
                         </div>
-                        <button id="btn-copy-whatsapp" onclick="copyWhatsAppSummary()" disabled class="px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed">
+                        <button id="copy-whatsapp-btn" onclick="copyWhatsAppSummary()" disabled class="px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                             Copy WhatsApp Summary
                         </button>
                     </div>
+                    <!-- Teacher Verification Checkbox for WhatsApp Summary -->
+                    <div class="flex items-center gap-2 pt-1 pb-1">
+                        <input type="checkbox" id="verify-whatsapp-chk" onchange="toggleWhatsAppButtonState()" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                        <label for="verify-whatsapp-chk" class="text-xs font-bold text-blue-900 cursor-pointer">Reviewed and Approved by Teacher</label>
+                    </div>
                     <p class="text-[11px] text-blue-700 italic">Click inside the box below to edit or personalize the WhatsApp message before sending.</p>
-                    <div id="whatsapp-summary-box" contenteditable="false" class="p-3.5 bg-white rounded-lg border border-blue-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-xs text-slate-900 font-mono leading-relaxed whitespace-pre-line opacity-60">
-                        Upload student attempt CSV(s) above and check the teacher verification box to enable editing and copying.
+                    <div id="whatsapp-summary-box" contenteditable="true" class="p-3.5 bg-white rounded-lg border border-blue-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-xs text-slate-900 font-mono leading-relaxed whitespace-pre-line">
+                        Upload student attempt CSV(s) above to generate instant WhatsApp summary text.
                     </div>
                 </div>
 
@@ -359,13 +358,18 @@
                         <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
                         Teacher Remarks & Sign-off
                     </label>
-                    <textarea id="teacher-comments-input" rows="3" disabled placeholder="Check the teacher verification box above to unlock custom remarks..." class="w-full text-xs px-3 py-2 border border-amber-300 bg-white rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none resize-none cursor-not-allowed opacity-60"></textarea>
+                    <textarea id="teacher-comments-input" rows="3" placeholder="Enter custom observations, notes, or qualitative recommendations..." class="w-full text-xs px-3 py-2 border border-amber-300 bg-white rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none resize-none"></textarea>
                 </div>
 
-                <div class="pt-4 border-t border-slate-200 flex justify-end">
+                <!-- Student History Log Export with Teacher Verification Checkbox -->
+                <div class="pt-4 border-t border-slate-200 space-y-3 flex flex-col items-end">
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="verify-history-export-chk" onchange="toggleHistoryExportButtonState()" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                        <label for="verify-history-export-chk" class="text-xs font-bold text-slate-900 cursor-pointer">Reviewed and Approved by Teacher for Export</label>
+                    </div>
                     <button id="export-history-log-btn" onclick="exportStudentHistoryLogCSV()" disabled class="w-full sm:w-auto px-6 py-3 bg-slate-300 text-slate-500 font-bold rounded-xl text-xs transition flex items-center justify-center gap-2 shadow-sm cursor-not-allowed">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                        <span id="export-btn-label">Student History Log CSV (Locked)</span>
+                        <span id="export-btn-label">Student History Log CSV</span>
                     </button>
                 </div>
             </div>
@@ -536,7 +540,8 @@
                 </div>
 
                 <div class="pt-4 border-t border-slate-100">
-                    <button onclick="handleAdminResetKey()" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg text-sm transition shadow-sm flex items-center justify-center gap-2">
+                    <!-- Uniform Blue Button Color -->
+                    <button onclick="handleAdminResetKey()" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition shadow-sm flex items-center justify-center gap-2">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
                         Reset Device Slots for Key
                     </button>
@@ -571,7 +576,7 @@
                         <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Standard CBSE/ICSE Question Banks</li>
                         <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> CSV Attempt Logs Export</li>
                     </ul>
-                    <button onclick="alert('Please contact us via email to acquire a Home Edition key.')" class="w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold rounded-xl text-xs transition">Select Plan</button>
+                    <button onclick="alert('Please contact us via email at dlakshyaofficial@gmail.com to acquire a Home Edition key.')" class="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition shadow">Select Plan</button>
                 </div>
 
                 <!-- Tier 2: Tutor / Mentor (Featured) -->
@@ -591,7 +596,7 @@
                         <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Multi-CSV Teacher Audit & Trendlines</li>
                         <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Custom Rubrics & Behavioral Checklist</li>
                     </ul>
-                    <button onclick="alert('Please contact us via email to acquire a Mentor Suite license.')" class="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition shadow">Select Plan</button>
+                    <button onclick="alert('Please contact us via email at dlakshyaofficial@gmail.com to acquire a Mentor Suite license.')" class="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition shadow">Select Plan</button>
                 </div>
 
                 <!-- Tier 3: Institution / School -->
@@ -610,21 +615,8 @@
                         <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Electron Desktop Installer Support</li>
                         <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Priority Technical Onboarding</li>
                     </ul>
-                    <button onclick="alert('Please email dlakshyaofficial@gmail.com for institutional custom quotations.')" class="w-full py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg text-xs transition">Contact for Quote</button>
-                </div>
-            </div>
-
-            <!-- END-USER LICENSE AGREEMENT (EULA) / TERMS OF USE SECTION -->
-            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-4">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-800 px-3 py-1 rounded-full">Legal & Licensing</span>
-                    <h3 class="text-xl font-bold text-slate-900 mt-2">End-User License Agreement (EULA) & Terms of Use</h3>
-                    <p class="text-xs text-slate-500 mt-0.5">Please review the usage terms governing the D-Lakshya application suite.</p>
-                </div>
-                <div class="text-xs text-slate-600 space-y-2 leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-200">
-                    <p><strong>1. Ownership & Copyright:</strong> © 2026 D-Lakshya. All Rights Reserved. The D-Lakshya code, architecture, user interface design, diagnostic logic, and associated assets are the exclusive intellectual property of the creators.</p>
-                    <p><strong>2. Permitted Use:</strong> Authorized licensees (Students, Tutors, and Educational Institutions) are granted a non-exclusive, non-transferable right to execute and use this application strictly for local educational and assessment purposes within the permitted device limits.</p>
-                    <p><strong>3. Restrictions:</strong> Unauthorized copying, modification, reverse engineering, deobfuscating, renting, leasing, or commercial redistribution of the D-Lakshya source code or user interface elements is strictly prohibited by law.</p>
+                    <!-- Uniform Blue Button Color -->
+                    <button onclick="alert('Please email dlakshyaofficial@gmail.com for institutional custom quotations.')" class="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition shadow">Contact for Quote</button>
                 </div>
             </div>
 
@@ -660,6 +652,22 @@
                         </h4>
                         <p class="text-xs text-indigo-900/80 leading-relaxed font-medium">All student performance records and logs stay securely on your local device—no cloud uploads or third-party tracking.</p>
                     </div>
+
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
+                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2">
+                            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Flexible Custom Question Banks
+                        </h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Teachers preparing for specific exams can share questions with the D-Lakshya team for custom CSV formatting.</p>
+                    </div>
+
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
+                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2">
+                            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                            Curriculum Aligned (All Boards)
+                        </h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Tailored to fit any curriculum standard including CBSE, ICSE, state boards, or custom school test patterns.</p>
+                    </div>
                 </div>
             </div>
 
@@ -681,6 +689,27 @@
                             <strong>A:</strong> No! D-Lakshya operates 100% offline directly in your browser or desktop environment with zero internet dependency.
                         </div>
                     </details>
+
+                    <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
+                        <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
+                            <span>Q: How do I add my own syllabus or quarterly exam questions?</span>
+                            <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
+                            <strong>A:</strong> You can share your chapter questions with the D-Lakshya team, and we will quickly format the CSV file for you to load directly into the dashboard.
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Terms of Use & EULA Section -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+                <span class="text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Legal Agreement</span>
+                <h3 class="text-base font-bold text-slate-900">End-User License Agreement (EULA) & Terms of Use</h3>
+                <div class="text-xs text-slate-600 leading-relaxed space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <p><strong>1. License Grant:</strong> D-Lakshya grants you a non-exclusive, non-transferable license to use this software application locally in accordance with your purchased tier.</p>
+                    <p><strong>2. Prohibited Conduct:</strong> Unauthorized copying, reverse engineering, decompilation, modification, or commercial redistribution of the D-Lakshya source code, user interface design, or proprietary evaluation rubric is strictly prohibited.</p>
+                    <p><strong>3. Intellectual Property:</strong> All code, interface design layouts, and assessment algorithms remain the exclusive intellectual property of D-Lakshya. All rights reserved.</p>
                 </div>
             </div>
 
@@ -714,9 +743,10 @@
     </main>
 
     <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4">
-        <div>© 2026 D-Lakshya. All Rights Reserved. &bull; Lakshya | Assess, Learn, Achieve &bull; 100% Offline Local Browser Execution</div>
+        <div class="font-bold text-slate-700">© 2026 D-Lakshya. All Rights Reserved.</div>
+        <div>D-Lakshya &bull; Lakshya | Assess, Learn, Achieve &bull; 100% Offline Local Browser Execution</div>
         <div class="max-w-4xl mx-auto text-[11px] text-slate-400 leading-relaxed px-4">
-            <strong>Disclaimer:</strong> Recommendations and analyses provided are AI-generated for informational and advisory purposes only. AI can make mistakes. Unauthorized copying, reverse engineering, or commercial redistribution is strictly prohibited.
+            <strong>Disclaimer & EULA Notice:</strong> Recommendations and analyses provided are AI-generated for informational and advisory purposes only. Unauthorized copying, reverse engineering, or commercial redistribution of D-Lakshya code is strictly prohibited. Parents, teachers, and guardians should independently evaluate all educational decisions.
         </div>
     </footer>
 
@@ -1198,6 +1228,48 @@
             });
         }
 
+        function toggleScriptButtonState() {
+            const chk = document.getElementById('verify-remediation-chk');
+            const btn = document.getElementById('copy-script-btn');
+            if (chk.checked) {
+                btn.disabled = false;
+                btn.classList.remove('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
+                btn.classList.add('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-sm');
+            } else {
+                btn.disabled = true;
+                btn.classList.remove('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-sm');
+                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
+            }
+        }
+
+        function toggleWhatsAppButtonState() {
+            const chk = document.getElementById('verify-whatsapp-chk');
+            const btn = document.getElementById('copy-whatsapp-btn');
+            if (chk.checked) {
+                btn.disabled = false;
+                btn.classList.remove('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
+                btn.classList.add('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-sm');
+            } else {
+                btn.disabled = true;
+                btn.classList.remove('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-sm');
+                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
+            }
+        }
+
+        function toggleHistoryExportButtonState() {
+            const chk = document.getElementById('verify-history-export-chk');
+            const btn = document.getElementById('export-history-log-btn');
+            if (chk.checked) {
+                btn.disabled = false;
+                btn.classList.remove('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
+                btn.classList.add('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-md');
+            } else {
+                btn.disabled = true;
+                btn.classList.remove('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-md');
+                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
+            }
+        }
+
         function evaluateAIStudentAudit(sessions) {
             currentBatchAuditData = [];
             let studentName = "Student";
@@ -1285,10 +1357,6 @@
             let whatsappText = `📊 *D-Lakshya Progress Update* 📊\n\nStudent: *${studentName}* (Class ${studentClass})\nOverall Score: *${avgScore}%*\n\n_Teacher Verified & Approved_`;
             document.getElementById('whatsapp-summary-box').innerText = whatsappText;
 
-            // Reset teacher checkbox state on new report generation
-            document.getElementById('teacher-verification-checkbox').checked = false;
-            toggleTeacherSignOff();
-
             document.getElementById('teacher-audit-output').classList.remove('hidden');
             document.getElementById('audit-student-name').innerText = `Performance Report: ${studentName}`;
             document.getElementById('audit-student-meta').innerText = `Class: ${studentClass} | Total Questions Evaluated: ${totalQuestionsAttempted} | Files Analyzed: ${sessions.length}`;
@@ -1309,74 +1377,6 @@
 
             document.getElementById('audit-gaps-list').innerHTML = sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${skillDeficits[g]} errors)</li>`).join('') || '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
             document.getElementById('audit-parental-strategy').innerHTML = remediationText;
-        }
-
-        function toggleTeacherSignOff() {
-            const isChecked = document.getElementById('teacher-verification-checkbox').checked;
-            
-            // Elements to toggle
-            const scriptBox = document.getElementById('remediation-script-box');
-            const whatsappBox = document.getElementById('whatsapp-summary-box');
-            const commentsInput = document.getElementById('teacher-comments-input');
-            const btnCopyScript = document.getElementById('btn-copy-script');
-            const btnCopyWhatsapp = document.getElementById('btn-copy-whatsapp');
-            const exportBtn = document.getElementById('export-history-log-btn');
-            const badgeScript = document.getElementById('badge-script-status');
-            const badgeWhatsapp = document.getElementById('badge-whatsapp-status');
-
-            if (isChecked) {
-                // Enable editable boxes and copy/export buttons
-                scriptBox.setAttribute('contenteditable', 'true');
-                scriptBox.classList.remove('opacity-60');
-                
-                whatsappBox.setAttribute('contenteditable', 'true');
-                whatsappBox.classList.remove('opacity-60');
-
-                commentsInput.removeAttribute('disabled');
-                commentsInput.classList.remove('cursor-not-allowed', 'opacity-60');
-
-                btnCopyScript.removeAttribute('disabled');
-                btnCopyScript.className = "px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0";
-
-                btnCopyWhatsapp.removeAttribute('disabled');
-                btnCopyWhatsapp.className = "px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0";
-
-                exportBtn.removeAttribute('disabled');
-                exportBtn.className = "w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-xs transition flex items-center justify-center gap-2 shadow-md cursor-pointer";
-                document.getElementById('export-btn-label').innerText = "Student History Log CSV";
-
-                badgeScript.className = "bg-blue-200 text-blue-900 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide transition";
-                badgeScript.innerText = "✓ Reviewed and Approved by Teacher";
-
-                badgeWhatsapp.className = "bg-blue-200 text-blue-900 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide transition";
-                badgeWhatsapp.innerText = "✓ Reviewed and Approved by Teacher";
-            } else {
-                // Lock fields and buttons
-                scriptBox.setAttribute('contenteditable', 'false');
-                scriptBox.classList.add('opacity-60');
-
-                whatsappBox.setAttribute('contenteditable', 'false');
-                whatsappBox.classList.add('opacity-60');
-
-                commentsInput.setAttribute('disabled', 'true');
-                commentsInput.classList.add('cursor-not-allowed', 'opacity-60');
-
-                btnCopyScript.setAttribute('disabled', 'true');
-                btnCopyScript.className = "px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed";
-
-                btnCopyWhatsapp.setAttribute('disabled', 'true');
-                btnCopyWhatsapp.className = "px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed";
-
-                exportBtn.setAttribute('disabled', 'true');
-                exportBtn.className = "w-full sm:w-auto px-6 py-3 bg-slate-300 text-slate-500 font-bold rounded-xl text-xs transition flex items-center justify-center gap-2 shadow-sm cursor-not-allowed";
-                document.getElementById('export-btn-label').innerText = "Student History Log CSV (Locked)";
-
-                badgeScript.className = "bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide transition";
-                badgeScript.innerText = "🔒 Pending Teacher Sign-off";
-
-                badgeWhatsapp.className = "bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide transition";
-                badgeWhatsapp.innerText = "🔒 Pending Teacher Sign-off";
-            }
         }
 
         function copyRemediationScript() {
