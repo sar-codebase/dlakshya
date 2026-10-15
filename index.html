@@ -30,8 +30,9 @@
         @media print {
             body * { visibility: hidden; }
             #teacher-audit-output, #teacher-audit-output * { visibility: visible; }
-            #teacher-audit-output { position: absolute; left: 0; top: 0; width: 100%; box-shadow: none; border: none; padding: 10px; }
+            #teacher-audit-output { position: absolute; left: 0; top: 0; width: 100%; box-shadow: none; border: none; padding: 15mm; margin: 0; }
             .no-print { display: none !important; }
+            @page { size: A4; margin: 10mm; }
         }
     </style>
 </head>
@@ -177,7 +178,7 @@
                             </div>
 
                             <!-- Habits & Focus Checklist -->
-                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                            <div class="p-4 sm:p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
                                 <label class="block text-xs font-semibold text-slate-800 uppercase tracking-wide flex items-center gap-1.5">
                                     <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
                                     Habits & Focus Checklist (Optional)
@@ -203,7 +204,7 @@
                             </div>
 
                             <!-- Optional Standard Focus Guidelines Upload with Live Preview Indicator -->
-                            <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
+                            <div class="p-4 sm:p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
                                 <div class="flex justify-between items-center">
                                     <label class="block text-xs font-semibold text-slate-700 uppercase">Upload Standard Focus Guidelines / Rubric File (Optional)</label>
                                     <span id="rubric-status-badge" class="text-[10px] font-semibold bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full">No Rubric Loaded</span>
@@ -274,32 +275,38 @@
                             <span>Score Growth History</span>
                             <span class="text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">Score Trajectory</span>
                         </h4>
-                        <div id="trendline-display" class="text-xs text-slate-700 leading-relaxed font-medium bg-white p-3 rounded-lg border border-slate-200">Analyzing trend data...</div>
+                        <div id="trendline-display" class="text-xs text-slate-700 leading-relaxed font-medium bg-white p-3 rounded-lg border border-slate-200">
+                            <span class="text-slate-400 italic">No attempt files analyzed yet. Upload student CSV reports above to populate score growth trajectories.</span>
+                        </div>
                     </div>
 
                     <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
                         <h4 class="font-bold text-slate-900 text-sm flex items-center justify-between">
                             <span>Behavioral & Pacing Diagnostics</span>
-                            <span id="pacing-badge" class="text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">Normal Pacing</span>
+                            <span id="pacing-badge" class="text-[10px] font-semibold bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full">Awaiting Data</span>
                         </h4>
-                        <p id="pacing-details-text" class="text-xs text-slate-700 leading-relaxed font-medium">Analyzing test timing...</p>
+                        <p id="pacing-details-text" class="text-xs text-slate-500 italic leading-relaxed font-medium">Awaiting student report logs to analyze test timing and pacing habits...</p>
                     </div>
                 </div>
 
-                <!-- Topic Skill Strength -->
+                <!-- Topic Skill Strength (Scrollable Container) -->
                 <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
                     <h4 class="font-bold text-slate-900 text-sm flex items-center justify-between">
                         <span>Topic Skill Strength</span>
                         <span class="text-[10px] font-semibold bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full">Skill Breakdown</span>
                     </h4>
-                    <div id="topic-mastery-matrix" class="space-y-3"></div>
+                    <div id="topic-mastery-matrix" class="max-h-64 overflow-y-auto pr-2 space-y-3">
+                        <p class="text-xs text-slate-400 italic text-center py-4">No skill metrics available. Upload student attempt reports to view detailed mastery bars.</p>
+                    </div>
                 </div>
 
                 <!-- AI Rationale & Gaps Section -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="p-4 sm:p-5 bg-rose-50/50 rounded-xl border border-rose-100 space-y-2">
                         <h4 class="font-bold text-rose-900 text-sm">Priority Focus Areas (Gaps Identified)</h4>
-                        <ul id="audit-gaps-list" class="list-disc list-inside text-xs text-rose-800 space-y-1"></ul>
+                        <ul id="audit-gaps-list" class="list-disc list-inside text-xs text-rose-800 space-y-1">
+                            <li class="text-rose-500 italic">No gaps recorded. Upload attempts to generate focus targets.</li>
+                        </ul>
                     </div>
 
                     <div class="p-4 sm:p-5 bg-blue-50/50 rounded-xl border border-blue-100 space-y-3 flex flex-col justify-between">
@@ -308,13 +315,13 @@
                                 <span>How Parents Can Help at Home</span>
                                 <span id="strategy-badge" class="text-[10px] font-semibold bg-blue-200 text-blue-800 px-2 py-0.5 rounded-full">AI Guided Strategy</span>
                             </h4>
-                            <p id="audit-parental-strategy" class="text-xs text-blue-900 leading-relaxed font-medium mt-2"></p>
+                            <p id="audit-parental-strategy" class="text-xs text-blue-900/70 italic leading-relaxed font-medium mt-2">Upload student files above to generate customized coaching guidelines for parents.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- AI Remediation Script Generator -->
-                <div class="p-4 sm:p-5 bg-blue-50/60 rounded-xl border border-blue-200 space-y-3">
+                <div class="p-4 sm:p-6 bg-blue-50/60 rounded-xl border border-blue-200 space-y-3">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                         <div class="flex items-center gap-2 flex-wrap">
                             <h4 class="font-bold text-blue-900 text-sm flex items-center gap-2">
@@ -324,7 +331,7 @@
                         </div>
                         <button id="copy-script-btn" onclick="copyRemediationScript()" disabled class="px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
-                            Copy Script
+                            <span id="copy-script-label">Copy Script</span>
                         </button>
                     </div>
                     <!-- Teacher Verification Checkbox for Remediation Script -->
@@ -339,7 +346,7 @@
                 </div>
 
                 <!-- Parent WhatsApp/Email Report Card Summarizer -->
-                <div class="p-4 sm:p-5 bg-blue-50/60 rounded-xl border border-blue-200 space-y-3">
+                <div class="p-4 sm:p-6 bg-blue-50/60 rounded-xl border border-blue-200 space-y-3">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                         <div class="flex items-center gap-2 flex-wrap">
                             <h4 class="font-bold text-blue-900 text-sm flex items-center gap-2">
@@ -349,7 +356,7 @@
                         </div>
                         <button id="copy-whatsapp-btn" onclick="copyWhatsAppSummary()" disabled class="px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
-                            Copy WhatsApp Summary
+                            <span id="copy-whatsapp-label">Copy WhatsApp Summary</span>
                         </button>
                     </div>
                     <!-- Teacher Verification Checkbox for WhatsApp Summary -->
@@ -364,7 +371,7 @@
                 </div>
 
                 <!-- Teacher Remarks Area -->
-                <div class="p-4 sm:p-5 bg-amber-50/60 rounded-xl border border-amber-200 space-y-2">
+                <div class="p-4 sm:p-6 bg-amber-50/60 rounded-xl border border-amber-200 space-y-2">
                     <label for="teacher-comments-input" class="font-bold text-amber-900 text-sm flex items-center gap-2">
                         <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
                         Teacher Remarks & Sign-off
@@ -634,25 +641,25 @@
                 </div>
             </div>
 
-            <!-- CORE ADVANTAGES SECTION -->
-            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
-                <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+            <!-- CORE ADVANTAGES SECTION (Redesigned with Blue Tab-Style Theme & Borders) -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-6 py-5 flex flex-col sm:flex-row justify-between sm:items-center gap-3">
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Core Advantages</span>
-                        <h3 class="text-xl font-bold text-slate-900 mt-2">Why Educators & Schools Choose D-Lakshya</h3>
-                        <p class="text-xs text-slate-500 mt-0.5">Built from the ground up for robust, secure, and offline-first classroom assessments.</p>
+                        <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-200 px-2.5 py-1 rounded-full border border-blue-400/30">Core Advantages</span>
+                        <h3 class="text-lg sm:text-xl font-bold mt-1.5">Why Educators & Schools Choose D-Lakshya</h3>
+                        <p class="text-xs text-blue-200 mt-0.5">Built from the ground up for robust, secure, and offline-first classroom assessments.</p>
                     </div>
-                    <span class="bg-amber-100 text-amber-900 text-[11px] font-bold px-3 py-1 rounded-lg border border-amber-200 shrink-0 flex items-center gap-1.5">
-                        <svg class="w-3.5 h-3.5 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.690h3.462c.969 0 1.371 1.24.588 1.810l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.690l1.07-3.292z"/></svg>
+                    <span class="bg-amber-400 text-slate-900 text-[11px] font-extrabold px-3 py-1.5 rounded-lg shadow-sm shrink-0 flex items-center gap-1.5">
+                        <svg class="w-3.5 h-3.5 text-amber-900" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.690h3.462c.969 0 1.371 1.24.588 1.810l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.690l1.07-3.292z"/></svg>
                         AI Ranked Impact
                     </span>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
                     <!-- Advantage 1: Offline Architecture -->
-                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-1.5 relative shadow-sm">
-                        <span id="badge-offline" class="absolute top-3 right-3 text-lg leading-none">🥇</span>
-                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2 pr-10">
+                    <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
+                        <span id="badge-offline" class="absolute top-4 right-4 text-lg leading-none">🥇</span>
+                        <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2 pr-8">
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                             Offline-First Browser Architecture
                         </h4>
@@ -660,9 +667,9 @@
                     </div>
 
                     <!-- Advantage 2: Data Privacy -->
-                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-1.5 relative shadow-sm">
-                        <span id="badge-privacy" class="absolute top-3 right-3 text-lg leading-none">🥈</span>
-                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2 pr-10">
+                    <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
+                        <span id="badge-privacy" class="absolute top-4 right-4 text-lg leading-none">🥈</span>
+                        <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2 pr-8">
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                             Complete Data Privacy & Security
                         </h4>
@@ -670,16 +677,16 @@
                     </div>
 
                     <!-- Advantage 3: Multi-Student Batch Summary -->
-                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-1.5 relative shadow-sm">
-                        <span id="badge-batch" class="absolute top-3 right-3 text-lg leading-none">🥉</span>
-                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2 pr-10">
+                    <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
+                        <span id="badge-batch" class="absolute top-4 right-4 text-lg leading-none">🥉</span>
+                        <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2 pr-8">
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                             Multi-Student Batch Summary Analytics
                         </h4>
                         <p class="text-xs text-slate-600 leading-relaxed font-medium">Instantly aggregate multiple student CSV reports to calculate class averages, spot group-wide misconceptions, and flag at-risk learners.</p>
                     </div>
 
-                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                         <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2">
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                             Flexible Custom Question Banks
@@ -687,7 +694,7 @@
                         <p class="text-xs text-slate-600 leading-relaxed">Teachers preparing for specific exams can load custom CSV question datasets directly into the test engine.</p>
                     </div>
 
-                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                         <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2">
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
                             Curriculum Aligned (All Boards)
@@ -697,51 +704,51 @@
                 </div>
             </div>
 
-            <!-- COLLAPSIBLE FAQ SECTION -->
-            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-wider bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">Support & Clarity</span>
-                    <h3 class="text-xl font-bold text-slate-900 mt-2">Frequently Asked Questions (FAQ)</h3>
-                    <p class="text-xs text-slate-500 mt-0.5">Click any question below to expand and view the answer.</p>
+            <!-- COLLAPSIBLE FAQ SECTION (Redesigned with Blue Tab-Style Theme & Borders) -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-6 py-5">
+                    <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-200 px-2.5 py-1 rounded-full border border-blue-400/30">Support & Clarity</span>
+                    <h3 class="text-lg sm:text-xl font-bold mt-1.5">Frequently Asked Questions (FAQ)</h3>
+                    <p class="text-xs text-blue-200 mt-0.5">Click any question below to expand and view the answer.</p>
                 </div>
 
-                <div class="space-y-3">
-                    <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
-                        <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
+                <div class="p-6 space-y-3">
+                    <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
+                        <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Is D-Lakshya a one-time assessment test, or can it be used repeatedly?</span>
-                            <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
-                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
                             <strong>A:</strong> D-Lakshya is designed for continuous, repetitive assessments throughout the academic year. Teachers can upload new chapter question banks or adjust tests based on current classroom progress. Students can retake assessments multiple times to track growth, master weak areas, and view long-term performance trendlines.
                         </div>
                     </details>
 
-                    <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
-                        <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
+                    <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
+                        <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Do I need an active internet connection to run tests?</span>
-                            <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
-                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
                             <strong>A:</strong> No! D-Lakshya functions as an <strong>Offline-First Browser Application</strong>. Once loaded into your browser (via GitHub, BigRock, or local file), all assessment logic, grading, timers, and reports execute 100% locally on your device with zero live server dependency.
                         </div>
                     </details>
 
-                    <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
-                        <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
+                    <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
+                        <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: How do I add my own syllabus or quarterly exam questions?</span>
-                            <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
-                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
                             <strong>A:</strong> You can upload your custom chapter question bank formatted as a CSV file directly into the Evaluator Portal for instant local use.
                         </div>
                     </details>
 
-                    <details class="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden transition">
-                        <summary class="font-bold text-slate-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-slate-100">
+                    <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
+                        <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Can teachers use the generated PDF reports during Parent-Teacher Meetings (PTMs)?</span>
-                            <svg class="w-4 h-4 text-slate-500 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
-                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-200/60 bg-white">
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
                             <strong>A:</strong> Yes, absolutely! Teachers can instantly generate and print or save comprehensive PDF executive summary reports right from the Evaluator Portal. These reports include multi-attempt growth trajectories, topic skill strengths, behavioral pacing diagnostics, and custom AI remediation strategies, making them ideal documentation to share and discuss with parents during Parent-Teacher Meetings (PTMs).
                         </div>
                     </details>
@@ -831,7 +838,6 @@
         let currentAuditStudentName = "";
         let loadedRubricContent = "";
 
-        // Check sessionStorage on page load to restore active or completed student session state
         window.addEventListener('DOMContentLoaded', () => {
             const savedState = sessionStorage.getItem('dl_student_session_state');
             if (savedState) {
@@ -907,7 +913,6 @@
             };
         }
 
-        // Dynamically populate Subject Dropdown when CSV is selected
         function handleQuestionBankFileSelect(event) {
             const file = event.target.files[0];
             const subjectSelect = document.getElementById('evaluator-subject-select');
@@ -927,8 +932,6 @@
                         complete: function (results) {
                             if (results.data && results.data.length > 0) {
                                 activeQuestionBank = results.data;
-                                
-                                // Extract unique subjects from column index 1 / Subject field
                                 const subjectsSet = new Set();
                                 results.data.forEach(row => {
                                     if (row.Subject) {
@@ -936,7 +939,6 @@
                                     }
                                 });
 
-                                // Re-populate dropdown
                                 subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
                                 subjectsSet.forEach(subj => {
                                     const opt = document.createElement('option');
@@ -1429,18 +1431,15 @@
             }
         }
 
-        // AI Dynamic Priority Ranking & Medal Assignment Function
         function updateCoreAdvantageBadges(uniqueStudentsCount, totalFiles, averageScore) {
             const badgeOffline = document.getElementById('badge-offline');
             const badgePrivacy = document.getElementById('badge-privacy');
             const badgeBatch = document.getElementById('badge-batch');
 
-            // AI dynamic ranking score based on usage context
             let batchRelevanceScore = (uniqueStudentsCount > 1 || totalFiles > 1) ? 95 : 70;
             let offlineRelevanceScore = 90;
             let privacyRelevanceScore = 85;
 
-            // Sort and assign badges dynamically
             let ranks = [
                 { id: 'batch', score: batchRelevanceScore, elem: badgeBatch },
                 { id: 'offline', score: offlineRelevanceScore, elem: badgeOffline },
@@ -1466,7 +1465,6 @@
             let sessionSummaries = [];
             let allStudentScores = [];
 
-            // Extract and unify session rows from all uploaded files with name normalization
             sessions.forEach(s => {
                 if (s.rows && s.rows.length > 0) {
                     const extractedName = (s.rows[0].StudentName || "").trim();
@@ -1504,19 +1502,15 @@
                 }
             });
 
-            // Sort sessions chronologically by filename order to ensure accurate trendlines
             sessionSummaries.sort((a, b) => a.fileName.localeCompare(b.fileName));
-
             currentAuditStudentName = studentName;
             
-            // Macro Comparative Summary Logic
             const batchBox = document.getElementById('batch-macro-overview-box');
             const batchContent = document.getElementById('batch-macro-content');
             
             const uniqueStudentsFound = [...new Set(sessions.map(s => (s.rows[0]?.StudentName || "").trim().toLowerCase()))].filter(Boolean);
             const classAvg = allStudentScores.length > 0 ? Math.round(allStudentScores.reduce((a, b) => a + b, 0) / allStudentScores.length) : 0;
 
-            // Trigger AI Dynamic Rating Adjustment for Core Advantages
             updateCoreAdvantageBadges(uniqueStudentsFound.length, sessions.length, classAvg);
 
             if (uniqueStudentsFound.length > 1) {
@@ -1538,10 +1532,6 @@
                     &bull; <strong>Latest Assessment File:</strong> ${sessionSummaries[sessionSummaries.length - 1]?.fileName || 'N/A'}<br>
                     &bull; <strong>Cumulative Progress:</strong> Showing improvement trajectory across submitted attempts.
                 `;
-            }
-
-            if (loadedRubricContent) {
-                console.log("Rubric successfully applied into AI evaluation pipeline:", loadedRubricContent.substring(0, 50) + "...");
             }
 
             let trendText = "";
@@ -1618,17 +1608,30 @@
         }
 
         function copyRemediationScript() {
+            const btnLabel = document.getElementById('copy-script-label');
+            btnLabel.innerText = "Copied! ✓";
+            setTimeout(() => { btnLabel.innerText = "Copy Script"; }, 1500);
+
             const scriptContent = document.getElementById('remediation-script-box').innerText.trim();
-            navigator.clipboard.writeText(scriptContent).then(() => alert("Practice Guide copied to clipboard!"));
+            navigator.clipboard.writeText(scriptContent);
         }
 
         function copyWhatsAppSummary() {
+            const btnLabel = document.getElementById('copy-whatsapp-label');
+            btnLabel.innerText = "Copied! ✓";
+            setTimeout(() => { btnLabel.innerText = "Copy WhatsApp Summary"; }, 1500);
+
             const whatsappContent = document.getElementById('whatsapp-summary-box').innerText.trim();
-            navigator.clipboard.writeText(whatsappContent).then(() => alert("WhatsApp Summary copied to clipboard!"));
+            navigator.clipboard.writeText(whatsappContent);
         }
 
         function exportStudentHistoryLogCSV() {
             if (currentBatchAuditData.length === 0) { alert("No data to export."); return; }
+            
+            const btnLabel = document.getElementById('export-btn-label');
+            btnLabel.innerText = "Exporting... ⏳";
+            setTimeout(() => { btnLabel.innerText = "Student History Log CSV"; }, 1200);
+
             const teachercomments = document.getElementById('teacher-comments-input').value.trim();
             const exportData = currentBatchAuditData.map(row => ({ ...row, TeacherRemarks: teachercomments || "N/A" }));
             const fileName = `Student_${currentAuditStudentName.replace(/\s+/g, '_')}_History_Log_${new Date().toISOString().slice(0,10)}.csv`;
