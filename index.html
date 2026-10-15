@@ -67,7 +67,7 @@
                 </div>
             </div>
             
-            <!-- Navigation Tabs -->
+            <!-- Navigation Tabs (Admin Portal Removed) -->
             <nav class="flex items-center space-x-2 sm:space-x-6 overflow-x-auto w-full sm:w-auto pb-2 sm:pb-0 scrollbar-none" aria-label="Tabs">
                 <button id="tab-evaluator-btn" onclick="switchTab('evaluator')" class="tab-active py-2 sm:py-4 px-2 inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 whitespace-nowrap transition">
                     <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
@@ -77,10 +77,6 @@
                     <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
                     Student Portal
                     <span id="student-portal-lock" class="bg-slate-200 text-slate-600 text-[10px] px-1.5 py-0.5 rounded-full font-bold">Locked</span>
-                </button>
-                <button id="tab-admin-btn" onclick="switchTab('admin')" class="py-2 sm:py-4 px-2 inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 whitespace-nowrap transition">
-                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                    Admin Portal
                 </button>
                 <button id="tab-contact-btn" onclick="switchTab('contact')" class="py-2 sm:py-4 px-2 inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 whitespace-nowrap transition">
                     <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -535,42 +531,6 @@
 
         </section>
 
-        <!-- PARENT / SCHOOL ADMIN PORTAL -->
-        <section id="portal-admin" class="hidden space-y-8 max-w-2xl mx-auto">
-            <div class="bg-gradient-to-r from-indigo-900 to-slate-900 text-white p-5 sm:p-6 rounded-2xl shadow-md">
-                <h2 class="text-xl sm:text-2xl font-bold mb-2">Parent / School Admin Control Portal</h2>
-                <p class="text-indigo-200 text-xs sm:text-sm">
-                    Manage device locks and reset student access key slots securely when a student switches devices.
-                </p>
-            </div>
-
-            <div class="bg-white p-5 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
-                <div>
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900">Device Slot & Key Reset</h3>
-                    <p class="text-xs text-slate-500 mt-0.5">Enter master administrator password and target access key to clear active device bounds.</p>
-                </div>
-
-                <div class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Master Admin Password</label>
-                        <input type="password" id="admin-portal-password" placeholder="Enter admin password" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Access Key to Reset (Student or Teacher)</label>
-                        <input type="text" id="admin-reset-key" placeholder="e.g. A1B2C3D4" class="w-full text-sm font-mono uppercase px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-                        <p class="text-[11px] text-slate-400 mt-1">Clears all bound devices for this key so the user can register fresh devices.</p>
-                    </div>
-                </div>
-
-                <div class="pt-4 border-t border-slate-100">
-                    <button onclick="handleAdminResetKey()" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition shadow-sm flex items-center justify-center gap-2">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                        Reset Device Slots for Key
-                    </button>
-                </div>
-            </div>
-        </section>
-
         <!-- PRICING & CONTACT SUPPORT PORTAL -->
         <section id="portal-contact" class="hidden space-y-8 max-w-5xl mx-auto">
             <div class="bg-gradient-to-r from-blue-900 to-slate-900 text-white p-5 sm:p-6 rounded-2xl shadow-md">
@@ -641,7 +601,7 @@
                 </div>
             </div>
 
-            <!-- CORE ADVANTAGES SECTION (Redesigned with Blue Tab-Style Theme & Borders) -->
+            <!-- CORE ADVANTAGES SECTION -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                 <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-6 py-5 flex flex-col sm:flex-row justify-between sm:items-center gap-3">
                     <div>
@@ -656,7 +616,6 @@
                 </div>
 
                 <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <!-- Advantage 1: Offline Architecture -->
                     <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
                         <span id="badge-offline" class="absolute top-4 right-4 text-lg leading-none">🥇</span>
                         <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2 pr-8">
@@ -666,7 +625,6 @@
                         <p class="text-xs text-slate-600 leading-relaxed font-medium">Operates locally inside your browser with zero active server dependency during runtime, preventing classroom disruptions during internet dropouts.</p>
                     </div>
 
-                    <!-- Advantage 2: Data Privacy -->
                     <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
                         <span id="badge-privacy" class="absolute top-4 right-4 text-lg leading-none">🥈</span>
                         <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2 pr-8">
@@ -676,7 +634,6 @@
                         <p class="text-xs text-slate-600 leading-relaxed font-medium">All student performance records and logs stay securely on your local device—no cloud database uploads or third-party tracking.</p>
                     </div>
 
-                    <!-- Advantage 3: Multi-Student Batch Summary -->
                     <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
                         <span id="badge-batch" class="absolute top-4 right-4 text-lg leading-none">🥉</span>
                         <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2 pr-8">
@@ -704,7 +661,7 @@
                 </div>
             </div>
 
-            <!-- COLLAPSIBLE FAQ SECTION (Redesigned with Blue Tab-Style Theme & Borders) -->
+            <!-- COLLAPSIBLE FAQ SECTION -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                 <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-6 py-5">
                     <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-200 px-2.5 py-1 rounded-full border border-blue-400/30">Support & Clarity</span>
@@ -817,7 +774,6 @@
 
         const STUDENT_SECRET_SEED = "DLAKSHYA-STUDENT-SEED-2026";
         const TEACHER_SECRET_SEED = "DLAKSHYA-TEACHER-MASTER-SECRET-999";
-        const ADMIN_MASTER_PASSWORD = "ADMIN";
 
         const BUILTIN_QUESTION_BANK = [
             {Class:"1", Subject:"Mathematics", Topic:"Addition", Question:"What is 5 + 3?", Option0:"7", Option1:"8", Option2:"9", Option3:"6", CorrectOptionIndex:"1", Skill:"Basic Addition"},
@@ -1051,38 +1007,6 @@
             }
         }
 
-        function handleAdminResetKey() {
-            const password = document.getElementById('admin-portal-password').value.trim();
-            const rawKey = document.getElementById('admin-reset-key').value.trim();
-
-            if (password !== ADMIN_MASTER_PASSWORD) {
-                alert("Incorrect Admin Master Password.");
-                return;
-            }
-
-            if (!rawKey) {
-                alert("Please enter the access key to reset.");
-                return;
-            }
-
-            const keyToReset = rawKey.toUpperCase();
-            let found = false;
-            for (let i = 0; i < localStorage.length; i++) {
-                const storageKey = localStorage.key(i);
-                if (storageKey && storageKey.includes(keyToReset)) {
-                    localStorage.removeItem(storageKey);
-                    found = true;
-                }
-            }
-
-            if (found) {
-                alert(`Success! Device slots for key ${keyToReset} have been reset.`);
-                document.getElementById('admin-reset-key').value = "";
-            } else {
-                alert(`No active device bindings found for key ${keyToReset}.`);
-            }
-        }
-
         function generateUniqueAssessmentId(subject) {
             const dateStr = new Date().toISOString().slice(0, 10).replace(/-/g, '');
             const subCode = (subject || "GEN").substring(0, 4).toUpperCase();
@@ -1103,12 +1027,10 @@
 
             document.getElementById('tab-evaluator-btn').classList.toggle('tab-active', portal === 'evaluator');
             document.getElementById('tab-student-btn').classList.toggle('tab-active', portal === 'student');
-            document.getElementById('tab-admin-btn').classList.toggle('tab-active', portal === 'admin');
             document.getElementById('tab-contact-btn').classList.toggle('tab-active', portal === 'contact');
 
             document.getElementById('portal-evaluator').classList.toggle('hidden', portal !== 'evaluator');
             document.getElementById('portal-student').classList.toggle('hidden', portal !== 'student');
-            document.getElementById('portal-admin').classList.toggle('hidden', portal !== 'admin');
             document.getElementById('portal-contact').classList.toggle('hidden', portal !== 'contact');
         }
 
