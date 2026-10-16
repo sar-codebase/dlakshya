@@ -19,8 +19,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- PapaParse CDN for robust CSV parsing -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-    <!-- CryptoJS CDN for AES Encryption/Decryption -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/CryptoJS/4.1.1/crypto-js.min.js"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Font-Awesome/6.4.0/css/all.min.css">
     <style>
@@ -41,14 +39,35 @@
     <!-- Top Privacy Banner -->
     <div class="bg-slate-900 text-white text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-center font-medium flex items-center justify-center gap-2 shadow-inner">
         <svg class="w-4 h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-        <span>Offline-First Browser Application — All processing, encryption, and evaluation occur strictly local inside your browser with complete data privacy.</span>
+        <span>Offline-First Browser Application — All processing, decryption, and evaluation occur strictly local inside your browser with complete data privacy.</span>
+    </div>
+
+    <!-- Tab Switch / Focus Loss Warning Modal -->
+    <div id="focus-warning-modal" class="hidden fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 space-y-4 animate-scaleIn">
+            <div class="flex items-center space-x-3 text-amber-600">
+                <svg class="w-8 h-8 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                <h3 class="text-lg font-bold text-slate-900">Security Warning</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
+                Warning: Leaving the assessment window is not permitted.
+            </p>
+            <div class="flex items-center justify-end gap-3 pt-3 border-t border-slate-100">
+                <button onclick="dismissFocusWarning()" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold rounded-lg text-xs transition">
+                    Cancel (Return to Assessment)
+                </button>
+                <button onclick="confirmLockAssessmentSession()" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold rounded-lg text-xs transition">
+                    Proceed (Lock Portal)
+                </button>
+            </div>
+        </div>
     </div>
 
     <!-- Mobile File Generation Notification Toast -->
     <div id="mobile-download-toast" class="hidden fixed bottom-6 right-6 z-50 bg-emerald-600 text-white px-5 py-4 rounded-2xl shadow-2xl flex items-center gap-3 border border-emerald-400 max-w-sm animate-bounce">
         <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
         <div>
-            <h4 class="font-bold text-xs uppercase tracking-wide">CSV File Generated Successfully!</h4>
+            <h4 class="font-bold text-xs uppercase tracking-wide">File Generated Successfully!</h4>
             <p id="toast-file-name" class="text-[11px] text-emerald-100 font-mono mt-0.5">Check your device <strong>Downloads folder</strong>.</p>
         </div>
         <button onclick="dismissToast()" class="ml-auto text-emerald-200 hover:text-white font-bold px-2">&times;</button>
@@ -111,15 +130,15 @@
                         <div class="flex justify-between items-start mb-4">
                             <div>
                                 <h3 class="text-base sm:text-lg font-bold text-slate-900">1. Question Bank & Assessment Setup</h3>
-                                <p class="text-xs text-slate-500">Upload question bank CSV (including Chapter column) first to populate available subjects, then select target subject and timer duration.</p>
+                                <p class="text-xs text-slate-500">Upload encrypted question bank file (.enc / .dlakshya) provided by admin to populate available subjects, then select target subject and timer duration.</p>
                             </div>
                             <span class="p-2 bg-blue-50 text-blue-600 rounded-lg text-xs font-semibold shrink-0">Step 1</span>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">1. Upload Question Bank CSV</label>
-                                <input type="file" id="qb-file-input" accept=".csv" onchange="handleQuestionBankFileSelect(event)" class="w-full text-xs text-slate-500 file:mr-2 file:py-2 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1 bg-white">
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">1. Upload Question Bank File (.enc)</label>
+                                <input type="file" id="qb-file-input" accept=".enc,.dlakshya" onchange="handleQuestionBankFileSelect(event)" class="w-full text-xs text-slate-500 file:mr-2 file:py-2 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1 bg-white">
                             </div>
 
                             <div>
@@ -150,7 +169,7 @@
                         <div class="flex justify-between items-start mb-4">
                             <div>
                                 <h3 class="text-base sm:text-lg font-bold text-slate-900">2. Review Student Reports</h3>
-                                <p class="text-xs text-slate-500">Authorize with your Teacher ID & Access Key, then upload student-answered CSV files to generate diagnostic analysis.</p>
+                                <p class="text-xs text-slate-500">Authorize with your Teacher ID & Access Key, then upload encrypted student attempt files to generate diagnostic analysis.</p>
                             </div>
                             <span class="p-2 bg-blue-50 text-blue-600 rounded-lg text-xs font-semibold shrink-0">Step 2</span>
                         </div>
@@ -163,15 +182,15 @@
                             </div>
                             <div>
                                 <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Teacher Access Key</label>
-                                <input type="text" id="teacher-access-key" placeholder="Enter 8-character Key" class="w-full text-sm font-mono tracking-wider px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
+                                <input type="password" id="teacher-access-key" placeholder="Enter 8-character Key" class="w-full text-sm font-mono tracking-wider px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
                             </div>
                         </div>
 
                         <div class="space-y-4 my-4">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Upload Student Attempt CSV(s) (Supports History Logs)</label>
-                                <input type="file" id="teacher-review-input" multiple accept=".csv" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1">
-                                <p class="text-[11px] text-slate-400 mt-1">Select one or multiple CSV files (including prior assessment history logs) for combined longitudinal evaluation.</p>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Upload Student Attempt File(s) (.enc)</label>
+                                <input type="file" id="teacher-review-input" multiple accept=".enc,.dlakshya" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1">
+                                <p class="text-[11px] text-slate-400 mt-1">Select one or multiple encrypted student attempt files (supports automatic decryption).</p>
                             </div>
 
                             <!-- Habits & Focus Checklist -->
@@ -206,7 +225,7 @@
                                     <label class="block text-xs font-semibold text-slate-700 uppercase">Upload Standard Focus Guidelines / Rubric File (Optional)</label>
                                     <span id="rubric-status-badge" class="text-[10px] font-semibold bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full">No Rubric Loaded</span>
                                 </div>
-                                <input type="file" id="teacher-standard-points-file" accept=".csv, .txt" onchange="handleRubricFileSelection(event)" class="w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-amber-100 file:text-amber-800 hover:file:bg-amber-200 border border-slate-200 rounded-lg p-1 bg-white">
+                                <input type="file" id="teacher-standard-points-file" accept=".enc,.dlakshya" onchange="handleRubricFileSelection(event)" class="w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-amber-100 file:text-amber-800 hover:file:bg-amber-200 border border-slate-200 rounded-lg p-1 bg-white">
                             </div>
                         </div>
                     </div>
@@ -281,7 +300,7 @@
                             <span class="text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">Score Trajectory</span>
                         </h4>
                         <div id="trendline-display" class="text-xs text-slate-700 leading-relaxed font-medium bg-white p-3 rounded-lg border border-slate-200">
-                            <span class="text-slate-400 italic">No attempt files analyzed yet. Upload student CSV reports above to populate score growth trajectories.</span>
+                            <span class="text-slate-400 italic">No attempt files analyzed yet. Upload student attempt reports above to populate score growth trajectories.</span>
                         </div>
                     </div>
 
@@ -345,7 +364,7 @@
                     </div>
                     <p class="text-[11px] text-blue-700 italic">Click inside the box below to edit or customize the remediation instructions before sharing.</p>
                     <div id="remediation-script-box" contenteditable="true" class="p-3.5 bg-white rounded-lg border border-blue-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-xs text-slate-900 font-medium leading-relaxed whitespace-pre-line">
-                        Upload student attempt CSV(s) above to generate custom remediation scripts.
+                        Upload student attempt files above to generate custom remediation scripts.
                     </div>
                 </div>
 
@@ -369,7 +388,7 @@
                     </div>
                     <p class="text-[11px] text-blue-700 italic">Click inside the box below to edit or personalize the summary before sharing.</p>
                     <div id="parent-summary-box" contenteditable="true" class="p-3.5 bg-white rounded-lg border border-blue-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-xs text-slate-900 font-mono leading-relaxed whitespace-pre-line">
-                        Upload student attempt CSV(s) above to generate instant Parent Report Card Summary text.
+                        Upload student attempt files above to generate instant Parent Report Card Summary text.
                     </div>
                 </div>
 
@@ -388,9 +407,9 @@
                         <input type="checkbox" id="verify-history-export-chk" onchange="toggleHistoryExportButtonState()" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
                         <label for="verify-history-export-chk" class="text-xs font-bold text-slate-900 cursor-pointer">Reviewed and Approved by Teacher for Export</label>
                     </div>
-                    <button id="export-history-log-btn" onclick="exportStudentHistoryLogCSV()" disabled class="w-full sm:w-auto px-6 py-3 bg-slate-300 text-slate-500 font-bold rounded-xl text-xs transition flex items-center justify-center gap-2 shadow-sm cursor-not-allowed">
+                    <button id="export-history-log-btn" onclick="exportStudentHistoryLogEncrypted()" disabled class="w-full sm:w-auto px-6 py-3 bg-slate-300 text-slate-500 font-bold rounded-xl text-xs transition flex items-center justify-center gap-2 shadow-sm cursor-not-allowed">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                        <span id="export-btn-label">Student History Log CSV</span>
+                        <span id="export-btn-label">Student History Log</span>
                     </button>
                 </div>
             </div>
@@ -423,7 +442,7 @@
                             <span>Student Access Key</span>
                             <span class="text-[10px] text-blue-600 font-semibold uppercase">Max 2 Devices Allowed</span>
                         </label>
-                        <input type="text" id="student-access-key" placeholder="Enter 8-character Key" class="w-full text-sm font-mono tracking-wider px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
+                        <input type="password" id="student-access-key" placeholder="Enter 8-character Key" class="w-full text-sm font-mono tracking-wider px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
                     </div>
 
                     <div>
@@ -682,7 +701,7 @@
                             <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
                         <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
-                            <strong>A:</strong> No! D-Lakshya functions as an <strong>Offline-First Browser Application</strong>. Once loaded into your browser (via GitHub, BigRock, or local file), all assessment logic, grading, timers, and reports execute 100% locally on your device with zero live server dependency.
+                            <strong>A:</strong> No! D-Lakshya functions as an <strong>Offline-First Browser Application</strong>. Once loaded into your browser, all assessment logic, grading, timers, and reports execute 100% locally on your device with zero live server dependency.
                         </div>
                     </details>
 
@@ -692,7 +711,7 @@
                             <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
                         <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
-                            <strong>A:</strong> You can upload your custom chapter question bank formatted as a CSV file directly into the Evaluator Portal for instant local use.
+                            <strong>A:</strong> You can upload your custom chapter question bank formatted as an encrypted file or CSV directly into the Evaluator Portal for instant local use.
                         </div>
                     </details>
 
@@ -779,7 +798,7 @@
                     <div class="p-5 bg-blue-50/50 rounded-xl border border-blue-100 space-y-2">
                         <h4 class="font-bold text-blue-900 text-sm">⚡ Offline Reliability</h4>
                         <p class="text-xs text-slate-600 leading-relaxed">
-                            Designed to withstand network dropouts and remote classroom environments, ensuring seamless test execution and CSV log management without internet interruption.
+                            Designed to withstand network dropouts and remote classroom environments, ensuring seamless test execution and file log management without internet interruption.
                         </p>
                     </div>
                 </div>
@@ -790,6 +809,10 @@
     <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4 no-print">
         <div class="font-bold text-slate-700">© 2026 D-Lakshya. All Rights Reserved.</div>
         <div>D-Lakshya &bull; Lakshya | Assess, Learn, Achieve &bull; Offline-First Browser Application</div>
+        <div class="max-w-4xl mx-auto text-[11px] text-slate-400 leading-relaxed px-4 space-y-1">
+            <p><strong>Disclaimer & EULA Notice:</strong> Recommendations and analyses provided are AI-generated for informational and advisory purposes only. Unauthorized copying, reverse engineering, or commercial redistribution of D-Lakshya code is strictly prohibited. Parents, teachers, and guardians should independently evaluate all educational decisions.</p>
+            <p><strong>Privacy & Data Notice:</strong> We collect only basic contact details (Name, Email, Phone) solely to issue license keys and provide support. All student assessment data remains 100% private and stored locally on your device.</p>
+        </div>
     </footer>
 
     <!-- INLINE SCRIPT LOGIC -->
@@ -803,6 +826,7 @@
 
         const STUDENT_SECRET_SEED = "DLAKSHYA-STUDENT-SEED-2026";
         const TEACHER_SECRET_SEED = "DLAKSHYA-TEACHER-MASTER-SECRET-999";
+        const MASTER_SYMMETRIC_PASSWORD = "ADMIN2026";
 
         const BUILTIN_QUESTION_BANK = [
             {Class:"1", Subject:"Mathematics", Chapter:"Chapter 1: Number Sense", Topic:"Addition", Question:"What is 5 + 3?", Option0:"7", Option1:"8", Option2:"9", Option3:"6", CorrectOptionIndex:"1", Skill:"Basic Addition"},
@@ -822,6 +846,24 @@
         let currentBatchAuditData = [];
         let currentAuditStudentName = "";
         let loadedRubricContent = "";
+        let isAssessmentActive = false;
+
+        // Tab Switch / Focus-Loss Event Listener
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden && isAssessmentActive) {
+                document.getElementById('focus-warning-modal').classList.remove('hidden');
+            }
+        });
+
+        function dismissFocusWarning() {
+            document.getElementById('focus-warning-modal').classList.add('hidden');
+        }
+
+        function confirmLockAssessmentSession() {
+            document.getElementById('focus-warning-modal').classList.add('hidden');
+            alert("Security Alert: Assessment session locked due to tab switching violation.");
+            submitStudentAssessment();
+        }
 
         window.addEventListener('DOMContentLoaded', () => {
             const savedState = sessionStorage.getItem('dl_student_session_state');
@@ -875,6 +917,55 @@
             return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
         }
 
+        // Web Crypto API Helpers (AES-GCM with PBKDF2 Key Derivation)
+        async function getCryptoKey(password, salt) {
+            const enc = new TextEncoder();
+            const keyMaterial = await window.crypto.subtle.importKey(
+                "raw", enc.encode(password), { name: "PBKDF2" }, false, ["deriveKey"]
+            );
+            return window.crypto.subtle.deriveKey(
+                { name: "PBKDF2", salt: salt, iterations: 100000, hash: "SHA-256" },
+                keyMaterial,
+                { name: "AES-GCM", length: 256 },
+                false,
+                ["encrypt", "decrypt"]
+            );
+        }
+
+        async function decryptPayloadToString(fileText) {
+            try {
+                const payload = JSON.parse(fileText);
+                if (!payload.salt || !payload.iv || !payload.data) {
+                    throw new Error("Invalid payload format");
+                }
+                const salt = new Uint8Array(payload.salt);
+                const iv = new Uint8Array(payload.iv);
+                const data = new Uint8Array(payload.data);
+                
+                const key = await getCryptoKey(MASTER_SYMMETRIC_PASSWORD, salt);
+                const decrypted = await window.crypto.subtle.decrypt({ name: "AES-GCM", iv: iv }, key, data);
+                return new TextDecoder().decode(decrypted);
+            } catch (e) {
+                throw new Error("Decryption failed. Incorrect password ('ADMIN2026') or invalid encrypted file structure.");
+            }
+        }
+
+        async function encryptPayloadToString(plainText) {
+            const salt = window.crypto.getRandomValues(new Uint8Array(16));
+            const iv = window.crypto.getRandomValues(new Uint8Array(12));
+            const key = await getCryptoKey(MASTER_SYMMETRIC_PASSWORD, salt);
+            
+            const encoded = new TextEncoder().encode(plainText);
+            const ciphertext = await window.crypto.subtle.encrypt({ name: "AES-GCM", iv: iv }, key, encoded);
+            
+            const payload = {
+                salt: Array.from(salt),
+                iv: Array.from(iv),
+                data: Array.from(new Uint8Array(ciphertext))
+            };
+            return JSON.stringify(payload);
+        }
+
         function handleRubricFileSelection(event) {
             const file = event.target.files[0];
             const badge = document.getElementById('rubric-status-badge');
@@ -884,10 +975,33 @@
                 badge.innerText = "No Rubric Loaded";
                 return;
             }
+            
+            // Strict Validation on File Type / Extension (.enc or .dlakshya)
+            const fileNameLower = file.name.toLowerCase();
+            if (!fileNameLower.endsWith('.enc') && !fileNameLower.endsWith('.dlakshya')) {
+                alert("❌ Error: Invalid file type. Only encrypted files (.enc or .dlakshya) are allowed for rubric upload.");
+                event.target.value = "";
+                loadedRubricContent = "";
+                badge.className = "text-[10px] font-semibold bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full";
+                badge.innerText = "Invalid File Type Rejected";
+                return;
+            }
+
             const reader = new FileReader();
             reader.readAsText(file, "UTF-8");
-            reader.onload = function(e) {
-                loadedRubricContent = e.target.result;
+            reader.onload = async function(e) {
+                let content = e.target.result;
+                try {
+                    content = await decryptPayloadToString(content);
+                } catch (err) {
+                    alert("❌ Failed to decrypt rubric file: " + err.message);
+                    event.target.value = "";
+                    loadedRubricContent = "";
+                    badge.className = "text-[10px] font-semibold bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full";
+                    badge.innerText = "Decryption Failed";
+                    return;
+                }
+                loadedRubricContent = content;
                 badge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
                 badge.innerText = `Rubric Loaded: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
             };
@@ -900,11 +1014,30 @@
                 subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
                 return;
             }
+
+            // Strict Validation on File Type / Extension (.enc or .dlakshya)
+            const fileNameLower = file.name.toLowerCase();
+            if (!fileNameLower.endsWith('.enc') && !fileNameLower.endsWith('.dlakshya')) {
+                alert("❌ Error: Invalid file type. Only encrypted question bank files (.enc or .dlakshya) are allowed.");
+                event.target.value = "";
+                subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
+                return;
+            }
+
             const reader = new FileReader();
             reader.readAsText(file, "UTF-8");
-            reader.onload = function (e) {
+            reader.onload = async function (e) {
+                let fileText = e.target.result;
+                try {
+                    fileText = await decryptPayloadToString(fileText);
+                } catch (err) {
+                    alert("❌ Failed to decrypt Question Bank: " + err.message);
+                    event.target.value = "";
+                    subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
+                    return;
+                }
                 if (typeof Papa !== 'undefined') {
-                    Papa.parse(e.target.result, {
+                    Papa.parse(fileText, {
                         header: true,
                         skipEmptyLines: true,
                         complete: function (results) {
@@ -968,6 +1101,12 @@
 
         function switchTab(portal) {
             if (portal === 'student' && !isQuestionBankLoaded) { alert("Student Portal is locked! Authorize the Question Bank first."); return; }
+            
+            if (portal !== 'evaluator') {
+                document.getElementById('teacher-id-verify').value = '';
+                document.getElementById('teacher-access-key').value = '';
+            }
+
             document.getElementById('tab-evaluator-btn').classList.toggle('tab-active', portal === 'evaluator');
             document.getElementById('tab-student-btn').classList.toggle('tab-active', portal === 'student');
             document.getElementById('tab-contact-btn').classList.toggle('tab-active', portal === 'contact');
@@ -989,17 +1128,32 @@
                 unlockStudentPortal(`Built-in System Bank (${selectedEvaluatorSubject})`);
                 return;
             }
+
+            const file = fileInput.files[0];
+            const fileNameLower = file.name.toLowerCase();
+            if (!fileNameLower.endsWith('.enc') && !fileNameLower.endsWith('.dlakshya')) {
+                alert("❌ Error: Invalid file type. Only encrypted files (.enc or .dlakshya) are accepted.");
+                return;
+            }
+
             const reader = new FileReader();
-            reader.readAsText(fileInput.files[0], "UTF-8");
-            reader.onload = function (e) {
-                Papa.parse(e.target.result, {
+            reader.readAsText(file, "UTF-8");
+            reader.onload = async function (e) {
+                let fileText = e.target.result;
+                try {
+                    fileText = await decryptPayloadToString(fileText);
+                } catch (err) {
+                    alert("❌ Failed to decrypt Question Bank: " + err.message);
+                    return;
+                }
+                Papa.parse(fileText, {
                     header: true, skipEmptyLines: true,
                     complete: function (results) {
                         if (results.data && results.data.length > 0 && results.data[0].Question) {
                             currentAssessmentId = generateUniqueAssessmentId(selectedEvaluatorSubject);
                             activeQuestionBank = results.data;
                             unlockStudentPortal(`Custom Bank (${selectedEvaluatorSubject})`);
-                        } else { alert("Invalid CSV structure."); }
+                        } else { alert("Invalid CSV structure inside encrypted file."); }
                     }
                 });
             };
@@ -1048,6 +1202,7 @@
             document.getElementById('display-student-subtitle').innerText = `Class ${studentClass} | Subject: ${selectedEvaluatorSubject}`;
             document.getElementById('test-progress-counter').innerText = `${filtered.length} Questions`;
 
+            isAssessmentActive = true;
             startTestTimer(configuredTimerMinutes);
             renderQuestions(filtered);
         }
@@ -1097,9 +1252,10 @@
             });
         }
 
-        function submitStudentAssessment() {
+        async function submitStudentAssessment() {
             clearInterval(timerInterval);
-            alert("Assessment completed successfully! Report generated and downloaded.");
+            isAssessmentActive = false;
+            alert("Assessment completed successfully! Encrypted report generated and downloaded.");
 
             const questions = currentStudentData.questions;
             let score = 0;
@@ -1145,18 +1301,21 @@
             document.getElementById('report-gaps-count').innerText = currentStudentData.gaps.length;
             document.getElementById('report-gaps-list').innerHTML = currentStudentData.gaps.map(g => `<li>${g}</li>`).join('');
 
-            downloadStudentAttemptCSV();
+            await downloadStudentAttemptEncrypted();
         }
 
-        function downloadStudentAttemptCSV() {
+        async function downloadStudentAttemptEncrypted() {
             const subjectName = (selectedEvaluatorSubject !== "ALL" ? selectedEvaluatorSubject : "General").replace(/\s+/g, '_');
-            const fileName = `${currentStudentData.name.replace(/\s+/g, '_')}_Class${currentStudentData.class}_${subjectName}_${new Date().toISOString().slice(0,10)}.csv`;
+            const fileName = `${currentStudentData.name.replace(/\s+/g, '_')}_Class${currentStudentData.class}_${subjectName}_${new Date().toISOString().slice(0,10)}.enc`;
             const exportRows = currentStudentData.answers.map(a => ({
                 AssessmentID: currentAssessmentId, StudentName: currentStudentData.name, Class: currentStudentData.class,
                 Subject: selectedEvaluatorSubject, ScorePercentage: currentStudentData.score, TimeTakenSeconds: currentStudentData.timeTakenSeconds || 0,
                 TotalTimerMinutes: configuredTimerMinutes, Question: a.Question, Chapter: a.Chapter, Skill: a.Skill, IsCorrect: a.IsCorrect
             }));
-            const blob = new Blob(["\ufeff" + Papa.unparse(exportRows)], { type: 'text/csv;charset=utf-8;' });
+            const rawCsv = "\ufeff" + Papa.unparse(exportRows);
+            const encryptedPayload = await encryptPayloadToString(rawCsv);
+
+            const blob = new Blob([encryptedPayload], { type: 'text/plain;charset=utf-8;' });
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
             link.setAttribute("download", fileName);
@@ -1173,17 +1332,34 @@
             if (!authCheck.valid) { alert("Teacher Verification Failed: " + authCheck.message); return; }
 
             const input = document.getElementById('teacher-review-input');
-            if (input.files.length === 0) { alert("Please select at least one student attempt or history log CSV file."); return; }
+            if (input.files.length === 0) { alert("Please select at least one student attempt or history log file."); return; }
 
             const files = Array.from(input.files);
+            
+            // Strict Validation on File Type for all uploaded student attempt files
+            for (let f of files) {
+                const lowerName = f.name.toLowerCase();
+                if (!lowerName.endsWith('.enc') && !lowerName.endsWith('.dlakshya')) {
+                    alert(`❌ Error: Invalid file type for "${f.name}". Only encrypted files (.enc or .dlakshya) are allowed.`);
+                    return;
+                }
+            }
+
             let parsedCount = 0;
             let allSessions = [];
 
             files.forEach(file => {
                 const reader = new FileReader();
                 reader.readAsText(file, "UTF-8");
-                reader.onload = function(e) {
-                    const rows = Papa.parse(e.target.result, { header: true, skipEmptyLines: true }).data || [];
+                reader.onload = async function(e) {
+                    let fileText = e.target.result;
+                    try {
+                        fileText = await decryptPayloadToString(fileText);
+                    } catch (err) {
+                        alert(`❌ Failed to decrypt file ${file.name}: ` + err.message);
+                        return;
+                    }
+                    const rows = Papa.parse(fileText, { header: true, skipEmptyLines: true }).data || [];
                     parsedCount++;
                     if (rows.length > 0) allSessions.push({ fileName: file.name, rows: rows });
                     if (parsedCount === files.length) evaluateAIStudentAudit(allSessions);
@@ -1380,13 +1556,17 @@
             alert("Parent report card summary copied to clipboard!");
         }
 
-        function exportStudentHistoryLogCSV() {
+        async function exportStudentHistoryLogEncrypted() {
             if (currentBatchAuditData.length === 0) { alert("No data to export."); return; }
             const remarks = document.getElementById('teacher-comments-input').value.trim();
             const exportData = currentBatchAuditData.map(row => ({ ...row, TeacherRemarks: remarks || "N/A" }));
             const subjectName = (window.lastEvaluatedSubject || "General").replace(/\s+/g, '_');
-            const fileName = `Student_${currentAuditStudentName.replace(/\s+/g, '_')}_Class${currentBatchAuditData[0]?.Class || '1'}_${subjectName}_HistoryLog_${new Date().toISOString().slice(0,10)}.csv`;
-            const blob = new Blob(["\ufeff" + Papa.unparse(exportData)], { type: 'text/csv;charset=utf-8;' });
+            const fileName = `Student_${currentAuditStudentName.replace(/\s+/g, '_')}_Class${currentBatchAuditData[0]?.Class || '1'}_${subjectName}_HistoryLog_${new Date().toISOString().slice(0,10)}.enc`;
+            
+            const rawCsv = "\ufeff" + Papa.unparse(exportData);
+            const encryptedPayload = await encryptPayloadToString(rawCsv);
+
+            const blob = new Blob([encryptedPayload], { type: 'text/plain;charset=utf-8;' });
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
             link.setAttribute("download", fileName);
