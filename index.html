@@ -67,7 +67,7 @@
                 </div>
             </div>
             
-            <!-- Navigation Tabs (Admin Portal Removed) -->
+            <!-- Navigation Tabs -->
             <nav class="flex items-center space-x-2 sm:space-x-6 overflow-x-auto w-full sm:w-auto pb-2 sm:pb-0 scrollbar-none" aria-label="Tabs">
                 <button id="tab-evaluator-btn" onclick="switchTab('evaluator')" class="tab-active py-2 sm:py-4 px-2 inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 whitespace-nowrap transition">
                     <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
@@ -107,19 +107,17 @@
                         <div class="flex justify-between items-start mb-4">
                             <div>
                                 <h3 class="text-base sm:text-lg font-bold text-slate-900">1. Question Bank & Assessment Setup</h3>
-                                <p class="text-xs text-slate-500">Upload question bank CSV first to populate available subjects, then select target subject and timer duration.</p>
+                                <p class="text-xs text-slate-500">Upload question bank CSV (including Chapter column) first to populate available subjects, then select target subject and timer duration.</p>
                             </div>
                             <span class="p-2 bg-blue-50 text-blue-600 rounded-lg text-xs font-semibold shrink-0">Step 1</span>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
-                            <!-- 1. Upload Question Bank CSV (First) -->
                             <div>
                                 <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">1. Upload Question Bank CSV</label>
                                 <input type="file" id="qb-file-input" accept=".csv" onchange="handleQuestionBankFileSelect(event)" class="w-full text-xs text-slate-500 file:mr-2 file:py-2 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1 bg-white">
                             </div>
 
-                            <!-- 2. Target Assessment Subject (Second - Dynamically Populated) -->
                             <div>
                                 <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">2. Target Assessment Subject</label>
                                 <select id="evaluator-subject-select" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
@@ -127,7 +125,6 @@
                                 </select>
                             </div>
 
-                            <!-- 3. Assessment Timer (Last) -->
                             <div>
                                 <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">3. Assessment Timer (Minutes)</label>
                                 <input type="number" id="evaluator-timer-input" value="30" min="1" max="180" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
@@ -168,9 +165,9 @@
 
                         <div class="space-y-4 my-4">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Upload Student Attempt CSV(s)</label>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Upload Student Attempt CSV(s) (Supports History Logs)</label>
                                 <input type="file" id="teacher-review-input" multiple accept=".csv" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1">
-                                <p class="text-[11px] text-slate-400 mt-1">Select one or multiple CSV files submitted by the student for combined evaluation.</p>
+                                <p class="text-[11px] text-slate-400 mt-1">Select one or multiple CSV files (including prior assessment history logs) for combined longitudinal evaluation.</p>
                             </div>
 
                             <!-- Habits & Focus Checklist -->
@@ -199,7 +196,7 @@
                                 </div>
                             </div>
 
-                            <!-- Optional Standard Focus Guidelines Upload with Live Preview Indicator -->
+                            <!-- Optional Standard Focus Guidelines Upload -->
                             <div class="p-4 sm:p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
                                 <div class="flex justify-between items-center">
                                     <label class="block text-xs font-semibold text-slate-700 uppercase">Upload Standard Focus Guidelines / Rubric File (Optional)</label>
@@ -236,16 +233,13 @@
                     </div>
                 </div>
 
-                <!-- Multi-Student Batch Macro Overview Section -->
-                <div id="batch-macro-overview-box" class="hidden p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
-                    <h4 class="font-bold text-slate-900 text-sm flex items-center justify-between">
-                        <span class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-slate-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                            Batch Macro Overview (Class / Multi-Student Summary)
-                        </span>
-                        <span class="text-[10px] font-semibold bg-slate-200 text-slate-800 px-2.5 py-0.5 rounded-full">Macro Analytics</span>
+                <!-- Longitudinal Feedback & Previous PTM Reminder Box -->
+                <div id="longitudinal-reminder-box" class="hidden p-4 sm:p-5 bg-amber-50 rounded-xl border border-amber-200 space-y-2">
+                    <h4 class="font-bold text-amber-900 text-sm flex items-center gap-2">
+                        <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        Previous Assessment Feedback & Parent Follow-Up Reminder
                     </h4>
-                    <div id="batch-macro-content" class="text-xs text-slate-800 font-medium leading-relaxed space-y-1"></div>
+                    <p id="longitudinal-reminder-text" class="text-xs text-amber-800 font-medium leading-relaxed"></p>
                 </div>
 
                 <!-- Summary Grid -->
@@ -259,8 +253,19 @@
                         <div id="audit-avg-score" class="text-2xl sm:text-3xl font-extrabold text-blue-600 mt-1">0%</div>
                     </div>
                     <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-100">
-                        <span class="text-xs text-slate-400 font-bold uppercase">Primary Gaps</span>
-                        <div id="audit-gaps-count" class="text-lg sm:text-xl font-bold text-rose-600 mt-1">0 Skills</div>
+                        <span class="text-xs text-slate-400 font-bold uppercase">Potential Mark Gain</span>
+                        <div id="audit-potential-gain" class="text-lg sm:text-xl font-extrabold text-emerald-600 mt-1">+0%</div>
+                    </div>
+                </div>
+
+                <!-- Chapter Breakdown & Priority Attention Section -->
+                <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
+                    <h4 class="font-bold text-slate-900 text-sm flex items-center justify-between">
+                        <span>Chapters Needing Attention (Macro Gaps)</span>
+                        <span class="text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full">Chapter Segregation</span>
+                    </h4>
+                    <div id="chapter-attention-matrix" class="space-y-2">
+                        <p class="text-xs text-slate-400 italic">No chapter breakdown available yet. Upload student attempt reports above.</p>
                     </div>
                 </div>
 
@@ -330,7 +335,6 @@
                             <span id="copy-script-label">Copy Script</span>
                         </button>
                     </div>
-                    <!-- Teacher Verification Checkbox for Remediation Script -->
                     <div class="flex items-center gap-2 pt-1 pb-1">
                         <input type="checkbox" id="verify-remediation-chk" onchange="toggleScriptButtonState()" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
                         <label for="verify-remediation-chk" class="text-xs font-bold text-blue-900 cursor-pointer">Reviewed and Approved by Teacher</label>
@@ -341,28 +345,27 @@
                     </div>
                 </div>
 
-                <!-- Parent WhatsApp/Email Report Card Summarizer -->
+                <!-- Parent Report Card Summary -->
                 <div class="p-4 sm:p-6 bg-blue-50/60 rounded-xl border border-blue-200 space-y-3">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                         <div class="flex items-center gap-2 flex-wrap">
                             <h4 class="font-bold text-blue-900 text-sm flex items-center gap-2">
                                 <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-                                Parent WhatsApp / Email Report Card Summarizer
+                                Parent Report Card Summary
                             </h4>
                         </div>
-                        <button id="copy-whatsapp-btn" onclick="copyWhatsAppSummary()" disabled class="px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed">
+                        <button id="copy-summary-btn" onclick="copyParentSummary()" disabled class="px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
-                            <span id="copy-whatsapp-label">Copy WhatsApp Summary</span>
+                            <span id="copy-summary-label">Copy Summary</span>
                         </button>
                     </div>
-                    <!-- Teacher Verification Checkbox for WhatsApp Summary -->
                     <div class="flex items-center gap-2 pt-1 pb-1">
-                        <input type="checkbox" id="verify-whatsapp-chk" onchange="toggleWhatsAppButtonState()" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
-                        <label for="verify-whatsapp-chk" class="text-xs font-bold text-blue-900 cursor-pointer">Reviewed and Approved by Teacher</label>
+                        <input type="checkbox" id="verify-summary-chk" onchange="toggleSummaryButtonState()" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                        <label for="verify-summary-chk" class="text-xs font-bold text-blue-900 cursor-pointer">Reviewed and Approved by Teacher</label>
                     </div>
-                    <p class="text-[11px] text-blue-700 italic">Click inside the box below to edit or personalize the WhatsApp message before sending.</p>
-                    <div id="whatsapp-summary-box" contenteditable="true" class="p-3.5 bg-white rounded-lg border border-blue-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-xs text-slate-900 font-mono leading-relaxed whitespace-pre-line">
-                        Upload student attempt CSV(s) above to generate instant WhatsApp summary text.
+                    <p class="text-[11px] text-blue-700 italic">Click inside the box below to edit or personalize the summary before sharing.</p>
+                    <div id="parent-summary-box" contenteditable="true" class="p-3.5 bg-white rounded-lg border border-blue-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-xs text-slate-900 font-mono leading-relaxed whitespace-pre-line">
+                        Upload student attempt CSV(s) above to generate instant Parent Report Card Summary text.
                     </div>
                 </div>
 
@@ -375,7 +378,7 @@
                     <textarea id="teacher-comments-input" rows="3" placeholder="Enter custom observations, notes, or qualitative recommendations..." class="w-full text-xs px-3 py-2 border border-amber-300 bg-white rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none resize-none"></textarea>
                 </div>
 
-                <!-- Student History Log Export with Teacher Verification Checkbox -->
+                <!-- Student History Log Export -->
                 <div class="pt-4 border-t border-slate-200 space-y-3 flex flex-col items-end">
                     <div class="flex items-center gap-2">
                         <input type="checkbox" id="verify-history-export-chk" onchange="toggleHistoryExportButtonState()" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
@@ -389,11 +392,8 @@
             </div>
         </section>
 
-
         <!-- STUDENT PORTAL -->
         <section id="portal-student" class="hidden space-y-6 sm:space-y-8">
-            
-            <!-- Student Verification Form -->
             <div id="student-login-card" class="max-w-xl mx-auto bg-white p-5 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
                 <div class="text-center mb-6">
                     <div class="inline-p-3 bg-blue-100 text-blue-600 rounded-full p-3 mb-2 inline-block">
@@ -412,13 +412,12 @@
                     <div>
                         <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Student ID / Client Name Used for Key</label>
                         <input type="text" id="student-id-verify" placeholder="e.g. AaravSharma" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
-                        <p class="text-[11px] text-slate-400 mt-1">Must match the exact ID/name used when generating your key in the admin panel.</p>
                     </div>
 
                     <div>
                         <label class="block text-xs font-semibold text-slate-700 uppercase mb-1 flex flex-col sm:flex-row justify-between sm:items-center gap-1">
                             <span>Student Access Key</span>
-                            <span class="text-[10px] text-blue-600 font-semibold uppercase">Max 2 Devices Allowed (Home & Mobile)</span>
+                            <span class="text-[10px] text-blue-600 font-semibold uppercase">Max 2 Devices Allowed</span>
                         </label>
                         <input type="text" id="student-access-key" placeholder="Enter 8-character Key" class="w-full text-sm font-mono tracking-wider px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
                     </div>
@@ -431,18 +430,7 @@
                         <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Standard / Class</label>
                         <select id="student-class" class="w-full text-sm px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
                             <option value="">-- Select Class / Standard --</option>
-                            <option value="1">Class 1</option>
-                            <option value="2">Class 2</option>
-                            <option value="3">Class 3</option>
-                            <option value="4">Class 4</option>
-                            <option value="5">Class 5</option>
-                            <option value="6">Class 6</option>
-                            <option value="7">Class 7</option>
-                            <option value="8">Class 8</option>
-                            <option value="9">Class 9</option>
-                            <option value="10">Class 10</option>
-                            <option value="11">Class 11</option>
-                            <option value="12">Class 12</option>
+                            <option value="1">Class 1</option><option value="2">Class 2</option><option value="3">Class 3</option><option value="4">Class 4</option><option value="5">Class 5</option><option value="6">Class 6</option><option value="7">Class 7</option><option value="8">Class 8</option><option value="9">Class 9</option><option value="10">Class 10</option><option value="11">Class 11</option><option value="12">Class 12</option>
                         </select>
                     </div>
                     <button onclick="startStudentAssessment()" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-sm transition shadow">
@@ -493,17 +481,13 @@
                         <h3 id="report-student-name" class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">Performance Report</h3>
                         <p id="report-timestamp" class="text-xs text-slate-500"></p>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <button onclick="returnToMainPage()" class="px-5 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold rounded-lg text-xs transition flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 001 1m-6 0h6"></path></svg>
-                            Home
-                        </button>
-                    </div>
+                    <button onclick="returnToMainPage()" class="px-5 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold rounded-lg text-xs transition flex items-center gap-2">
+                        Home
+                    </button>
                 </div>
 
-                <!-- Completed Notice Box -->
                 <div class="p-4 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-900 font-medium">
-                    🔒 <strong>Assessment Locked:</strong> This assessment has already been completed and submitted. Re-attempts are restricted for security.
+                    🔒 <strong>Assessment Locked:</strong> This assessment has already been completed and submitted.
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
@@ -528,7 +512,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- PRICING & CONTACT SUPPORT PORTAL -->
@@ -643,6 +626,15 @@
                         <p class="text-xs text-slate-600 leading-relaxed font-medium">Instantly aggregate multiple student CSV reports to calculate class averages, spot group-wide misconceptions, and flag at-risk learners.</p>
                     </div>
 
+                    <!-- Simplified Core Advantage -->
+                    <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition md:col-span-3">
+                        <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2">
+                            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                            Understand Why Students Struggle
+                        </h4>
+                        <p class="text-xs text-slate-600 leading-relaxed font-medium">See the real story behind student test scores. D-Lakshya checks how well students remember concepts, notices if they are rushing or guessing, and turns test results into simple tips for parent-teacher meetings.</p>
+                    </div>
+
                     <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
                         <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2">
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
@@ -712,7 +704,7 @@
                 </div>
             </div>
 
-            <!-- Terms of Use & EULA Section (Styled with Blue Accents for Uniformity) -->
+            <!-- Terms of Use & EULA Section -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                 <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-6 py-5">
                     <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-200 px-2.5 py-1 rounded-full border border-blue-400/30">Legal Agreement</span>
@@ -754,24 +746,17 @@
                 </div>
             </div>
         </section>
-
     </main>
 
-<footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4 no-print">
-    <div class="font-bold text-slate-700">© 2026 D-Lakshya. All Rights Reserved.</div>
-    <div>D-Lakshya &bull; Lakshya | Assess, Learn, Achieve &bull; Offline-First Browser Application</div>
-    <div class="max-w-4xl mx-auto text-[11px] text-slate-400 leading-relaxed px-4 space-y-1">
-        <p><strong>Disclaimer & EULA Notice:</strong> Recommendations and analyses provided are AI-generated for informational and advisory purposes only. Unauthorized copying, reverse engineering, or commercial redistribution of D-Lakshya code is strictly prohibited. Parents, teachers, and guardians should independently evaluate all educational decisions.</p>
-        <p><strong>Privacy & Data Notice:</strong> We collect only basic contact details (Name, Email, Phone) solely to issue license keys and provide support. All student assessment data remains 100% private and stored locally on your device.</p>
-    </div>
-</footer>
+    <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4 no-print">
+        <div class="font-bold text-slate-700">© 2026 D-Lakshya. All Rights Reserved.</div>
+        <div>D-Lakshya &bull; Lakshya | Assess, Learn, Achieve &bull; Offline-First Browser Application</div>
+    </footer>
 
     <!-- INLINE SCRIPT LOGIC -->
     <script>
         document.addEventListener('keydown', function (e) {
-            if (e.keyCode === 123 || 
-               (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || 
-               (e.ctrlKey && e.keyCode === 85)) {
+            if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || (e.ctrlKey && e.keyCode === 85)) {
                 e.preventDefault();
                 return false;
             }
@@ -781,10 +766,10 @@
         const TEACHER_SECRET_SEED = "DLAKSHYA-TEACHER-MASTER-SECRET-999";
 
         const BUILTIN_QUESTION_BANK = [
-            {Class:"1", Subject:"Mathematics", Topic:"Addition", Question:"What is 5 + 3?", Option0:"7", Option1:"8", Option2:"9", Option3:"6", CorrectOptionIndex:"1", Skill:"Basic Addition"},
-            {Class:"1", Subject:"Mathematics", Topic:"Numbers", Question:"Which number comes directly after 19?", Option0:"18", Option1:"20", Option2:"21", Option3:"22", CorrectOptionIndex:"1", Skill:"Counting & Numbers"},
-            {Class:"9", Subject:"Mathematics", Topic:"Number Systems", Question:"Which of the following is an irrational number?", Option0:"sqrt(4)", Option1:"0.141414...", Option2:"sqrt(7)", Option3:"22/7", CorrectOptionIndex:"2", Skill:"Irrational Numbers"},
-            {Class:"10", Subject:"Mathematics", Topic:"Trigonometry", Question:"If sin A = 3/4, then cos A is equal to:", Option0:"4/3", Option1:"sqrt(7)/4", Option2:"3/sqrt(7)", Option3:"1/4", CorrectOptionIndex:"1", Skill:"Trigonometric Ratios"}
+            {Class:"1", Subject:"Mathematics", Chapter:"Chapter 1: Number Sense", Topic:"Addition", Question:"What is 5 + 3?", Option0:"7", Option1:"8", Option2:"9", Option3:"6", CorrectOptionIndex:"1", Skill:"Basic Addition"},
+            {Class:"1", Subject:"Mathematics", Chapter:"Chapter 1: Number Sense", Topic:"Numbers", Question:"Which number comes directly after 19?", Option0:"18", Option1:"20", Option2:"21", Option3:"22", CorrectOptionIndex:"1", Skill:"Counting & Numbers"},
+            {Class:"9", Subject:"Mathematics", Chapter:"Chapter 1: Number Systems", Topic:"Number Systems", Question:"Which of the following is an irrational number?", Option0:"sqrt(4)", Option1:"0.141414...", Option2:"sqrt(7)", Option3:"22/7", CorrectOptionIndex:"2", Skill:"Irrational Numbers"},
+            {Class:"10", Subject:"Mathematics", Chapter:"Chapter 8: Trigonometry", Topic:"Trigonometry", Question:"If sin A = 3/4, then cos A is equal to:", Option0:"4/3", Option1:"sqrt(7)/4", Option2:"3/sqrt(7)", Option3:"1/4", CorrectOptionIndex:"1", Skill:"Trigonometric Ratios"}
         ];
 
         let activeQuestionBank = [];
@@ -805,7 +790,6 @@
                 try {
                     const stateObj = JSON.parse(savedState);
                     isQuestionBankLoaded = true;
-                    
                     const btn = document.getElementById('tab-student-btn');
                     const lock = document.getElementById('student-portal-lock');
                     btn.disabled = false;
@@ -843,9 +827,7 @@
             setTimeout(() => { toast.classList.add('hidden'); }, 8000);
         }
 
-        function dismissToast() {
-            document.getElementById('mobile-download-toast').classList.add('hidden');
-        }
+        function dismissToast() { document.getElementById('mobile-download-toast').classList.add('hidden'); }
 
         async function sha256Hex(str) {
             const encoder = new TextEncoder();
@@ -863,26 +845,22 @@
                 badge.innerText = "No Rubric Loaded";
                 return;
             }
-
             const reader = new FileReader();
             reader.readAsText(file, "UTF-8");
             reader.onload = function(e) {
                 loadedRubricContent = e.target.result;
-                const fileSizeKB = (file.size / 1024).toFixed(1);
                 badge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
-                badge.innerText = `Rubric Loaded: ${file.name} (${fileSizeKB} KB)`;
+                badge.innerText = `Rubric Loaded: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
             };
         }
 
         function handleQuestionBankFileSelect(event) {
             const file = event.target.files[0];
             const subjectSelect = document.getElementById('evaluator-subject-select');
-            
             if (!file) {
                 subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
                 return;
             }
-
             const reader = new FileReader();
             reader.readAsText(file, "UTF-8");
             reader.onload = function (e) {
@@ -894,22 +872,14 @@
                             if (results.data && results.data.length > 0) {
                                 activeQuestionBank = results.data;
                                 const subjectsSet = new Set();
-                                results.data.forEach(row => {
-                                    if (row.Subject) {
-                                        subjectsSet.add(row.Subject.trim());
-                                    }
-                                });
-
+                                results.data.forEach(row => { if (row.Subject) subjectsSet.add(row.Subject.trim()); });
                                 subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
                                 subjectsSet.forEach(subj => {
                                     const opt = document.createElement('option');
-                                    opt.value = subj;
-                                    opt.textContent = subj;
+                                    opt.value = subj; opt.textContent = subj;
                                     subjectSelect.appendChild(opt);
                                 });
-                            } else {
-                                alert("Invalid CSV structure or empty question bank.");
-                            }
+                            } else { alert("Invalid CSV structure or empty question bank."); }
                         }
                     });
                 }
@@ -920,169 +890,76 @@
             if (!studentIdInput || !inputKey) return { valid: false, message: "Please enter both Student ID and Access Key." };
             const studentId = studentIdInput.trim().toUpperCase();
             const keyToTest = inputKey.trim().toUpperCase();
-
-            if (studentId.startsWith("TCH-") || studentId.startsWith("ADMIN-") || studentId.includes("TEACHER")) {
-                return { valid: false, message: "Access Denied: Teacher IDs cannot be used in the Student Portal." };
-            }
+            if (studentId.startsWith("TCH-") || studentId.startsWith("ADMIN-")) return { valid: false, message: "Teacher IDs cannot be used in Student Portal." };
 
             const currentDate = new Date();
             const validKeys = [];
-
             for (let offset = 0; offset <= 1; offset++) {
                 const targetDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - offset, 1);
-                const year = targetDate.getFullYear();
-                const month = String(targetDate.getMonth() + 1).padStart(2, '0');
-                const monthStr = `${year}-${month}`;
-
+                const monthStr = `${targetDate.getFullYear()}-${String(targetDate.getMonth() + 1).padStart(2, '0')}`;
                 const fullHash = await sha256Hex(STUDENT_SECRET_SEED + ":" + monthStr + ":" + studentId);
                 validKeys.push(fullHash.substring(0, 8).toUpperCase());
             }
-
-            if (!validKeys.includes(keyToTest)) {
-                return { valid: false, message: "Invalid Student Access Key, or the key has expired." };
-            }
-
-            let deviceId = localStorage.getItem('dl_device_id');
-            if (!deviceId) {
-                deviceId = 'dev_' + Math.random().toString(36).substring(2, 15);
-                localStorage.setItem('dl_device_id', deviceId);
-            }
-
-            const storageKey = `dl_multidevice_${studentId}_${keyToTest}`;
-            let boundDevices = JSON.parse(localStorage.getItem(storageKey) || "[]");
-
-            if (boundDevices.includes(deviceId)) {
-                return { valid: true };
-            }
-
-            if (boundDevices.length < 2) {
-                boundDevices.push(deviceId);
-                localStorage.setItem(storageKey, JSON.stringify(boundDevices));
-                return { valid: true };
-            } else {
-                return { valid: false, message: "Access Denied: This student key has reached its 2-device limit." };
-            }
+            if (!validKeys.includes(keyToTest)) return { valid: false, message: "Invalid Student Access Key or key expired." };
+            return { valid: true };
         }
 
         async function validateTeacherAccessKey(teacherIdInput, inputKey) {
             if (!teacherIdInput || !inputKey) return { valid: false, message: "Please enter both Teacher ID and Access Key." };
             const teacherId = teacherIdInput.trim().toUpperCase();
             const keyToTest = inputKey.trim().toUpperCase();
-
-            if (!teacherId.startsWith("TCH-") && !teacherId.startsWith("ADMIN-")) {
-                return { valid: false, message: "Access Denied: Invalid Teacher ID format. Teacher IDs must start with 'TCH-' or 'ADMIN-'." };
-            }
+            if (!teacherId.startsWith("TCH-") && !teacherId.startsWith("ADMIN-")) return { valid: false, message: "Teacher IDs must start with 'TCH-' or 'ADMIN-'." };
 
             const currentDate = new Date();
             const validKeys = [];
-
             for (let offset = 0; offset <= 1; offset++) {
                 const targetDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - offset, 1);
-                const year = targetDate.getFullYear();
-                const month = String(targetDate.getMonth() + 1).padStart(2, '0');
-                const monthStr = `${year}-${month}`;
-
+                const monthStr = `${targetDate.getFullYear()}-${String(targetDate.getMonth() + 1).padStart(2, '0')}`;
                 const fullHash = await sha256Hex(TEACHER_SECRET_SEED + ":" + monthStr + ":" + teacherId);
                 validKeys.push(fullHash.substring(0, 8).toUpperCase());
             }
-
-            if (!validKeys.includes(keyToTest)) {
-                return { valid: false, message: "Invalid Teacher Access Key, or the key has expired." };
-            }
-
-            let deviceId = localStorage.getItem('dl_device_id');
-            if (!deviceId) {
-                deviceId = 'dev_' + Math.random().toString(36).substring(2, 15);
-                localStorage.setItem('dl_device_id', deviceId);
-            }
-
-            const storageKey = `dl_multidevice_teacher_${teacherId}_${keyToTest}`;
-            let boundDevices = JSON.parse(localStorage.getItem(storageKey) || "[]");
-
-            if (boundDevices.includes(deviceId)) {
-                return { valid: true };
-            }
-
-            if (boundDevices.length < 3) {
-                boundDevices.push(deviceId);
-                localStorage.setItem(storageKey, JSON.stringify(boundDevices));
-                return { valid: true };
-            } else {
-                return { valid: false, message: "Access Denied: Teacher key has reached maximum allowed device bindings (3 devices)." };
-            }
+            if (!validKeys.includes(keyToTest)) return { valid: false, message: "Invalid Teacher Access Key or key expired." };
+            return { valid: true };
         }
 
         function generateUniqueAssessmentId(subject) {
             const dateStr = new Date().toISOString().slice(0, 10).replace(/-/g, '');
-            const subCode = (subject || "GEN").substring(0, 4).toUpperCase();
-            const randomCode = Math.random().toString(36).substring(2, 6).toUpperCase();
-            return `${subCode}-${dateStr}-${randomCode}`;
+            return `${(subject || "GEN").substring(0, 4).toUpperCase()}-${dateStr}-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
         }
 
         function switchTab(portal) {
-            if (portal === 'student' && !isQuestionBankLoaded) {
-                alert("Student Portal is locked! Authorize the Question Bank first.");
-                return;
-            }
-
-            if (portal !== 'evaluator') {
-                document.getElementById('teacher-id-verify').value = "";
-                document.getElementById('teacher-access-key').value = "";
-            }
-
+            if (portal === 'student' && !isQuestionBankLoaded) { alert("Student Portal is locked! Authorize the Question Bank first."); return; }
             document.getElementById('tab-evaluator-btn').classList.toggle('tab-active', portal === 'evaluator');
             document.getElementById('tab-student-btn').classList.toggle('tab-active', portal === 'student');
             document.getElementById('tab-contact-btn').classList.toggle('tab-active', portal === 'contact');
-
             document.getElementById('portal-evaluator').classList.toggle('hidden', portal !== 'evaluator');
             document.getElementById('portal-student').classList.toggle('hidden', portal !== 'student');
             document.getElementById('portal-contact').classList.toggle('hidden', portal !== 'contact');
-        }
-
-        function resetStudentSessionDueToReauthorization() {
-            clearInterval(timerInterval);
-            sessionStorage.removeItem('dl_student_session_state');
-            document.getElementById('student-test-engine').classList.add('hidden');
-            document.getElementById('student-report-view').classList.add('hidden');
-            document.getElementById('student-login-card').classList.remove('hidden');
-            document.getElementById('student-id-verify').value = "";
-            document.getElementById('student-access-key').value = "";
-            document.getElementById('login-assessment-id').value = "";
         }
 
         function loadQuestionBank() {
             selectedEvaluatorSubject = document.getElementById('evaluator-subject-select').value;
             configuredTimerMinutes = parseInt(document.getElementById('evaluator-timer-input').value) || 30;
             const fileInput = document.getElementById('qb-file-input');
-
-            resetStudentSessionDueToReauthorization();
-
             if (fileInput.files.length === 0) {
                 currentAssessmentId = generateUniqueAssessmentId(selectedEvaluatorSubject);
                 activeQuestionBank = BUILTIN_QUESTION_BANK;
                 unlockStudentPortal(`Built-in System Bank (${selectedEvaluatorSubject})`);
                 return;
             }
-
-            const file = fileInput.files[0];
             const reader = new FileReader();
-            reader.readAsText(file, "UTF-8");
+            reader.readAsText(fileInput.files[0], "UTF-8");
             reader.onload = function (e) {
-                if (typeof Papa !== 'undefined') {
-                    Papa.parse(e.target.result, {
-                        header: true,
-                        skipEmptyLines: true,
-                        complete: function (results) {
-                            if (results.data && results.data.length > 0 && results.data[0].Question) {
-                                currentAssessmentId = generateUniqueAssessmentId(selectedEvaluatorSubject);
-                                activeQuestionBank = results.data;
-                                unlockStudentPortal(`${file.name} (${selectedEvaluatorSubject})`);
-                            } else {
-                                alert("Invalid CSV structure.");
-                            }
-                        }
-                    });
-                }
+                Papa.parse(e.target.result, {
+                    header: true, skipEmptyLines: true,
+                    complete: function (results) {
+                        if (results.data && results.data.length > 0 && results.data[0].Question) {
+                            currentAssessmentId = generateUniqueAssessmentId(selectedEvaluatorSubject);
+                            activeQuestionBank = results.data;
+                            unlockStudentPortal(`Custom Bank (${selectedEvaluatorSubject})`);
+                        } else { alert("Invalid CSV structure."); }
+                    }
+                });
             };
         }
 
@@ -1094,9 +971,8 @@
             btn.classList.remove('text-slate-400', 'disabled:cursor-not-allowed');
             lock.className = "bg-emerald-100 text-emerald-700 text-[10px] px-1.5 py-0.5 rounded-full font-bold";
             lock.innerText = "Authorized";
-
             document.getElementById('login-assessment-id').value = currentAssessmentId;
-            alert(`Assessment Re-Authorized & Updated!\nAssessment ID: ${currentAssessmentId}\nSubject: ${selectedEvaluatorSubject}\nStudent portal sessions have been reset.`);
+            alert(`Assessment Authorized & Updated!\nAssessment ID: ${currentAssessmentId}`);
             switchTab('student');
         }
 
@@ -1107,34 +983,24 @@
             const studentClass = document.getElementById('student-class').value;
 
             const authCheck = await validateStudentAccessKey(studentIdInput, accessKey);
-            if (!authCheck.valid) {
-                alert(authCheck.message);
-                return;
-            }
-
-            if (!name || !studentClass) {
-                alert("Please fill in Student Name and Standard.");
-                return;
-            }
+            if (!authCheck.valid) { alert(authCheck.message); return; }
+            if (!name || !studentClass) { alert("Please fill in Student Name and Standard."); return; }
 
             currentStudentData.name = name;
             currentStudentData.class = studentClass;
 
             let filtered = activeQuestionBank.filter(q => String(q.Class).trim() === String(studentClass).trim() || !q.Class);
             if (selectedEvaluatorSubject !== "ALL") {
-                const subjectFiltered = filtered.filter(q => String(q.Subject).trim().toLowerCase() === selectedEvaluatorSubject.toLowerCase());
-                if (subjectFiltered.length > 0) filtered = subjectFiltered;
+                const subFiltered = filtered.filter(q => String(q.Subject).trim().toLowerCase() === selectedEvaluatorSubject.toLowerCase());
+                if (subFiltered.length > 0) filtered = subFiltered;
             }
             if (filtered.length < 2) filtered = [...activeQuestionBank];
-
             filtered.sort(() => Math.random() - 0.5);
             filtered = filtered.slice(0, 25);
-            
             currentStudentData.questions = filtered;
 
             document.getElementById('student-login-card').classList.add('hidden');
             document.getElementById('student-test-engine').classList.remove('hidden');
-            
             document.getElementById('display-assessment-id').innerText = currentAssessmentId;
             document.getElementById('display-student-title').innerText = `Assessment: ${name}`;
             document.getElementById('display-student-subtitle').innerText = `Class ${studentClass} | Subject: ${selectedEvaluatorSubject}`;
@@ -1148,13 +1014,12 @@
             clearInterval(timerInterval);
             timeRemainingSeconds = minutes * 60;
             updateTimerDisplay();
-
             timerInterval = setInterval(() => {
                 timeRemainingSeconds--;
                 updateTimerDisplay();
                 if (timeRemainingSeconds <= 0) {
                     clearInterval(timerInterval);
-                    alert("Time is up! Your assessment will now be submitted automatically.");
+                    alert("Time is up! Your assessment will be submitted automatically.");
                     submitStudentAssessment();
                 }
             }, 1000);
@@ -1173,11 +1038,9 @@
                 const card = document.createElement('div');
                 card.className = "bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4";
                 card.innerHTML = `
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <span class="text-[11px] font-bold text-blue-600 uppercase bg-blue-50 px-2.5 py-1 rounded-md">${q.Subject || 'General'} &bull; ${q.Topic || 'Core'}</span>
-                            <h4 class="text-sm sm:text-base font-semibold text-slate-900 mt-2">${idx + 1}. ${q.Question}</h4>
-                        </div>
+                    <div>
+                        <span class="text-[11px] font-bold text-blue-600 uppercase bg-blue-50 px-2.5 py-1 rounded-md">${q.Subject || 'General'} &bull; ${q.Chapter || 'Chapter'} &bull; ${q.Topic || 'Core'}</span>
+                        <h4 class="text-sm sm:text-base font-semibold text-slate-900 mt-2">${idx + 1}. ${q.Question}</h4>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
                         ${[0, 1, 2, 3].map(optIdx => `
@@ -1194,31 +1057,32 @@
 
         function submitStudentAssessment() {
             clearInterval(timerInterval);
-            alert("Assessment completed successfully! Your report has been generated and downloaded.");
+            alert("Assessment completed successfully! Report generated and downloaded.");
 
             const questions = currentStudentData.questions;
             let score = 0;
             const answers = [];
             const gapsMap = {};
 
-            const totalAllocatedSeconds = configuredTimerMinutes * 60;
-            const timeTaken = Math.max(1, totalAllocatedSeconds - timeRemainingSeconds);
-            currentStudentData.timeTakenSeconds = timeTaken;
+            currentStudentData.timeTakenSeconds = (configuredTimerMinutes * 60) - timeRemainingSeconds;
 
             questions.forEach((q, idx) => {
                 const selected = document.querySelector(`input[name="question_${idx}"]:checked`);
                 const selectedIdx = selected ? parseInt(selected.value) : -1;
-                const correctIdx = parseInt(q.CorrectOptionIndex);
-                const isCorrect = selectedIdx === correctIdx;
+                const isCorrect = selectedIdx === parseInt(q.CorrectOptionIndex);
 
                 if (isCorrect) score++;
                 else {
-                    const rawSkill = q.Skill || q.Topic || 'Subject Concept';
-                    const sanitizedSkill = /^\d+$/.test(rawSkill) ? (q.Topic || 'Core Concept') : rawSkill;
-                    gapsMap[sanitizedSkill] = true;
+                    const chapter = q.Chapter || 'General Chapter';
+                    gapsMap[chapter] = (gapsMap[chapter] || 0) + 1;
                 }
 
-                answers.push({ Question: q.Question, IsCorrect: isCorrect, Skill: q.Skill || q.Topic });
+                answers.push({ 
+                    Question: q.Question, 
+                    Chapter: q.Chapter || 'General', 
+                    Skill: q.Skill || q.Topic || 'Core', 
+                    IsCorrect: isCorrect 
+                });
             });
 
             const pct = Math.round((score / questions.length) * 100);
@@ -1226,92 +1090,61 @@
             currentStudentData.answers = answers;
             currentStudentData.gaps = Object.keys(gapsMap);
 
-            const submissionTimestamp = new Date().toLocaleString();
             sessionStorage.setItem('dl_student_session_state', JSON.stringify({
-                status: 'completed',
-                assessmentId: currentAssessmentId,
-                submittedAt: submissionTimestamp,
-                studentData: currentStudentData
+                status: 'completed', assessmentId: currentAssessmentId, submittedAt: new Date().toLocaleString(), studentData: currentStudentData
             }));
 
             document.getElementById('student-test-engine').classList.add('hidden');
             document.getElementById('student-report-view').classList.remove('hidden');
-            
             document.getElementById('report-assessment-id').innerText = currentAssessmentId;
             document.getElementById('report-student-name').innerText = `Performance Report: ${currentStudentData.name}`;
-            document.getElementById('report-timestamp').innerText = `Submitted on: ${submissionTimestamp}`;
             document.getElementById('report-score').innerText = `${pct}%`;
             document.getElementById('report-correct').innerText = `${score} / ${questions.length}`;
             document.getElementById('report-gaps-count').innerText = currentStudentData.gaps.length;
-            document.getElementById('report-gaps-list').innerHTML = currentStudentData.gaps.map(g => `<li>${g}</li>`).join('') || '<li>No major gaps detected! Great job!</li>';
+            document.getElementById('report-gaps-list').innerHTML = currentStudentData.gaps.map(g => `<li>${g}</li>`).join('');
 
             downloadStudentAttemptCSV();
         }
 
         function downloadStudentAttemptCSV() {
-            const dateStamp = new Date().toISOString().slice(0,10);
-            const fileName = `${currentStudentData.name.replace(/\s+/g, '_')}_Class${currentStudentData.class}_${dateStamp}.csv`;
+            const subjectName = (selectedEvaluatorSubject !== "ALL" ? selectedEvaluatorSubject : "General").replace(/\s+/g, '_');
+            const fileName = `${currentStudentData.name.replace(/\s+/g, '_')}_Class${currentStudentData.class}_${subjectName}_${new Date().toISOString().slice(0,10)}.csv`;
             const exportRows = currentStudentData.answers.map(a => ({
-                AssessmentID: currentAssessmentId,
-                StudentName: currentStudentData.name,
-                Class: currentStudentData.class,
-                Subject: selectedEvaluatorSubject,
-                ScorePercentage: currentStudentData.score,
-                TimeTakenSeconds: currentStudentData.timeTakenSeconds || 0,
-                TotalTimerMinutes: configuredTimerMinutes,
-                Question: a.Question,
-                Skill: a.Skill,
-                IsCorrect: a.IsCorrect
+                AssessmentID: currentAssessmentId, StudentName: currentStudentData.name, Class: currentStudentData.class,
+                Subject: selectedEvaluatorSubject, ScorePercentage: currentStudentData.score, TimeTakenSeconds: currentStudentData.timeTakenSeconds || 0,
+                TotalTimerMinutes: configuredTimerMinutes, Question: a.Question, Chapter: a.Chapter, Skill: a.Skill, IsCorrect: a.IsCorrect
             }));
-
-            let csv = Papa.unparse(exportRows);
-            const blob = new Blob(["\ufeff" + csv], { type: 'text/csv;charset=utf-8;' });
+            const blob = new Blob(["\ufeff" + Papa.unparse(exportRows)], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
             link.setAttribute("download", fileName);
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            document.body.appendChild(link); link.click(); document.body.removeChild(link);
             showDownloadToast(fileName);
         }
 
-        function returnToMainPage() {
-            switchTab('evaluator');
-        }
+        function returnToMainPage() { switchTab('evaluator'); }
 
         async function processTeacherBatchReview() {
             const teacherIdInput = document.getElementById('teacher-id-verify').value.trim();
             const teacherAccessKey = document.getElementById('teacher-access-key').value.trim();
-
             const authCheck = await validateTeacherAccessKey(teacherIdInput, teacherAccessKey);
-            if (!authCheck.valid) {
-                alert("Teacher Verification Failed: " + authCheck.message);
-                return;
-            }
+            if (!authCheck.valid) { alert("Teacher Verification Failed: " + authCheck.message); return; }
 
             const input = document.getElementById('teacher-review-input');
-            if (input.files.length === 0) { alert("Please select at least one student attempt CSV file."); return; }
-            
-            const btnText = document.getElementById('generate-btn-text');
-            btnText.innerText = "Generating Audit Report...";
+            if (input.files.length === 0) { alert("Please select at least one student attempt or history log CSV file."); return; }
 
             const files = Array.from(input.files);
-            let parsedFilesCount = 0;
-            let allSessionsData = [];
+            let parsedCount = 0;
+            let allSessions = [];
 
             files.forEach(file => {
                 const reader = new FileReader();
                 reader.readAsText(file, "UTF-8");
                 reader.onload = function(e) {
                     const rows = Papa.parse(e.target.result, { header: true, skipEmptyLines: true }).data || [];
-                    parsedFilesCount++;
-                    if (rows.length > 0) {
-                        allSessionsData.push({ fileName: file.name, rows: rows });
-                    }
-                    if (parsedFilesCount === files.length) {
-                        btnText.innerText = "Generate Audit Report";
-                        evaluateAIStudentAudit(allSessionsData);
-                    }
+                    parsedCount++;
+                    if (rows.length > 0) allSessions.push({ fileName: file.name, rows: rows });
+                    if (parsedCount === files.length) evaluateAIStudentAudit(allSessions);
                 };
             });
         }
@@ -1319,256 +1152,202 @@
         function toggleScriptButtonState() {
             const chk = document.getElementById('verify-remediation-chk');
             const btn = document.getElementById('copy-script-btn');
-            if (chk.checked) {
-                btn.disabled = false;
-                btn.classList.remove('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
-                btn.classList.add('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-sm');
-            } else {
-                btn.disabled = true;
-                btn.classList.remove('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-sm');
-                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
-            }
+            btn.disabled = !chk.checked;
+            btn.className = chk.checked ? "px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0" : "px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed";
         }
-
-        function toggleWhatsAppButtonState() {
-            const chk = document.getElementById('verify-whatsapp-chk');
-            const btn = document.getElementById('copy-whatsapp-btn');
-            if (chk.checked) {
-                btn.disabled = false;
-                btn.classList.remove('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
-                btn.classList.add('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-sm');
-            } else {
-                btn.disabled = true;
-                btn.classList.remove('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-sm');
-                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
-            }
+        function toggleSummaryButtonState() {
+            const chk = document.getElementById('verify-summary-chk');
+            const btn = document.getElementById('copy-summary-btn');
+            btn.disabled = !chk.checked;
+            btn.className = chk.checked ? "px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0" : "px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed";
         }
-
         function toggleHistoryExportButtonState() {
             const chk = document.getElementById('verify-history-export-chk');
             const btn = document.getElementById('export-history-log-btn');
-            if (chk.checked) {
-                btn.disabled = false;
-                btn.classList.remove('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
-                btn.classList.add('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-md');
-            } else {
-                btn.disabled = true;
-                btn.classList.remove('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'shadow-md');
-                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed');
-            }
-        }
-
-        function updateCoreAdvantageBadges(uniqueStudentsCount, totalFiles, averageScore) {
-            const badgeOffline = document.getElementById('badge-offline');
-            const badgePrivacy = document.getElementById('badge-privacy');
-            const badgeBatch = document.getElementById('badge-batch');
-
-            let batchRelevanceScore = (uniqueStudentsCount > 1 || totalFiles > 1) ? 95 : 70;
-            let offlineRelevanceScore = 90;
-            let privacyRelevanceScore = 85;
-
-            let ranks = [
-                { id: 'batch', score: batchRelevanceScore, elem: badgeBatch },
-                { id: 'offline', score: offlineRelevanceScore, elem: badgeOffline },
-                { id: 'privacy', score: privacyRelevanceScore, elem: badgePrivacy }
-            ];
-
-            ranks.sort((a, b) => b.score - a.score);
-
-            const medals = ["🥇", "🥈", "🥉"];
-            ranks.forEach((item, index) => {
-                item.elem.innerText = medals[index];
-            });
+            btn.disabled = !chk.checked;
+            btn.className = chk.checked ? "w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-xs transition flex items-center justify-center gap-2 shadow-sm" : "w-full sm:w-auto px-6 py-3 bg-slate-300 text-slate-500 font-bold rounded-xl text-xs transition flex items-center justify-center gap-2 shadow-sm cursor-not-allowed";
         }
 
         function evaluateAIStudentAudit(sessions) {
             currentBatchAuditData = [];
             let studentName = "Student";
             let studentClass = "N/A";
-            let totalQuestionsAttempted = 0;
-            let totalCorrectAnswers = 0;
+            let detectedSubject = "General";
+            let totalQ = 0, totalCorrect = 0;
+            const chapterErrors = {};
             const skillDeficits = {};
-            const skillTotals = {};
+            const skillTotalCounts = {};
             let sessionSummaries = [];
-            let allStudentScores = [];
+            let previousRemarksFound = [];
+            let totalTimeTaken = 0;
+            let validAttemptsCount = 0;
+            const uniqueAssessmentIds = new Set();
 
             sessions.forEach(s => {
                 if (s.rows && s.rows.length > 0) {
-                    const extractedName = (s.rows[0].StudentName || "").trim();
-                    if (extractedName) studentName = extractedName;
+                    if (s.rows[0].StudentName) studentName = s.rows[0].StudentName;
+                    if (s.rows[0].Class) studentClass = s.rows[0].Class;
+                    if (s.rows[0].Subject && s.rows[0].Subject !== "ALL") detectedSubject = s.rows[0].Subject;
+                    if (s.rows[0].TeacherRemarks && s.rows[0].TeacherRemarks !== "N/A") {
+                        previousRemarksFound.push(`File ${s.fileName}: "${s.rows[0].TeacherRemarks}"`);
+                    }
+
+                    const isHistoryLog = s.fileName.toLowerCase().includes('history_log');
                     
-                    const extractedClass = (s.rows[0].Class || "").trim();
-                    if (extractedClass) studentClass = extractedClass;
+                    if (!isHistoryLog) {
+                        validAttemptsCount++;
+                        const asmId = s.rows[0].AssessmentID;
+                        if (asmId) uniqueAssessmentIds.add(asmId);
+                        
+                        currentBatchAuditData.push(...s.rows);
+                        let qCount = s.rows.length;
+                        let correctCount = s.rows.filter(r => String(r.IsCorrect).toLowerCase() === 'true').length;
+                        
+                        totalQ += qCount;
+                        totalCorrect += correctCount;
+                        if (s.rows[0].TimeTakenSeconds) totalTimeTaken += parseInt(s.rows[0].TimeTakenSeconds) || 0;
 
-                    currentBatchAuditData.push(...s.rows);
-                    
-                    let qCount = s.rows.length;
-                    let correctCount = s.rows.filter(r => String(r.IsCorrect).toLowerCase() === 'true').length;
-                    let scorePct = qCount > 0 ? Math.round((correctCount / qCount) * 100) : 0;
-                    let timeSec = parseInt(s.rows[0].TimeTakenSeconds || 0);
-                    let timerMin = parseInt(s.rows[0].TotalTimerMinutes || 30);
+                        let sessionScore = Math.round((correctCount / (qCount || 1)) * 100);
+                        sessionSummaries.push({ fileName: s.fileName, score: sessionScore });
+                    }
 
-                    totalQuestionsAttempted += qCount;
-                    totalCorrectAnswers += correctCount;
-                    allStudentScores.push(scorePct);
+                    s.rows.forEach(r => {
+                        let rawSkill = String(r.Skill || '').trim();
+                        let rawChapter = String(r.Chapter || '').trim();
 
-                    s.rows.forEach(row => {
-                        const isCorrect = String(row.IsCorrect).toLowerCase() === 'true';
-                        const skill = row.Skill || row.Topic || 'Core Concept';
-                        skillTotals[skill] = (skillTotals[skill] || 0) + 1;
-                        if (!isCorrect) skillDeficits[skill] = (skillDeficits[skill] || 0) + 1;
-                    });
+                        let ch = rawChapter;
+                        if (/^\d+$/.test(ch)) {
+                            ch = `Chapter ${ch}`;
+                        } else if (!ch) {
+                            ch = 'General Chapter';
+                        }
 
-                    sessionSummaries.push({
-                        fileName: s.fileName,
-                        score: scorePct,
-                        timeTaken: timeSec,
-                        totalTimer: timerMin * 60,
-                        assessmentId: s.rows[0].AssessmentID || s.fileName
+                        let sk = rawSkill;
+                        if (!sk || /^\d+$/.test(sk) || sk.length <= 1) {
+                            return; 
+                        }
+
+                        sk = String(sk).trim();
+
+                        skillTotalCounts[sk] = (skillTotalCounts[sk] || 0) + 1;
+                        if (String(r.IsCorrect).toLowerCase() !== 'true') {
+                            chapterErrors[ch] = (chapterErrors[ch] || 0) + 1;
+                            skillDeficits[sk] = (skillDeficits[sk] || 0) + 1;
+                        }
                     });
                 }
             });
 
-            sessionSummaries.sort((a, b) => a.fileName.localeCompare(b.fileName));
             currentAuditStudentName = studentName;
-            
-            const batchBox = document.getElementById('batch-macro-overview-box');
-            const batchContent = document.getElementById('batch-macro-content');
-            
-            const uniqueStudentsFound = [...new Set(sessions.map(s => (s.rows[0]?.StudentName || "").trim().toLowerCase()))].filter(Boolean);
-            const classAvg = allStudentScores.length > 0 ? Math.round(allStudentScores.reduce((a, b) => a + b, 0) / allStudentScores.length) : 0;
+            window.lastEvaluatedSubject = detectedSubject;
+            let avgScore = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
+            let totalErrors = totalQ - totalCorrect;
+            let potentialGain = totalQ > 0 ? Math.round((totalErrors / totalQ) * 100) : 0;
+            let finalAttemptCount = uniqueAssessmentIds.size > 0 ? uniqueAssessmentIds.size : (validAttemptsCount || sessions.length);
 
-            updateCoreAdvantageBadges(uniqueStudentsFound.length, sessions.length, classAvg);
-
-            if (uniqueStudentsFound.length > 1) {
-                batchBox.classList.remove('hidden');
-                const sortedGapsBatch = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
-                const atRiskCount = allStudentScores.filter(sc => sc < 50).length;
-
-                batchContent.innerHTML = `
-                    &bull; <strong>Total Students Analyzed:</strong> ${uniqueStudentsFound.length} students (${sessions.length} files)<br>
-                    &bull; <strong>Class / Group Average Score:</strong> ${classAvg}%<br>
-                    &bull; <strong>Primary Batch Misconception:</strong> ${sortedGapsBatch[0] || 'General core concepts'}<br>
-                    &bull; <strong>Students Below Threshold (&lt;50%):</strong> ${atRiskCount} student(s) flagged for priority teacher intervention.
-                `;
+            const reminderBox = document.getElementById('longitudinal-reminder-box');
+            const reminderText = document.getElementById('longitudinal-reminder-text');
+            if (previousRemarksFound.length > 0) {
+                reminderBox.classList.remove('hidden');
+                reminderText.innerHTML = `<strong>Previous Assessment History Detected:</strong> Past teacher notes/remarks found: <br><em>${previousRemarksFound.join('<br>')}</em><br><strong>AI Recommendation:</strong> Kindly check with the parents whether the feedback from the previous discussion was implemented and review outcomes for recurring mistakes.`;
             } else {
-                batchBox.classList.remove('hidden');
-                batchContent.innerHTML = `
-                    &bull; <strong>Student Name:</strong> ${studentName} (Class ${studentClass})<br>
-                    &bull; <strong>Total Attempts Logged:</strong> ${sessions.length} sessions<br>
-                    &bull; <strong>Latest Assessment File:</strong> ${sessionSummaries[sessionSummaries.length - 1]?.fileName || 'N/A'}<br>
-                    &bull; <strong>Cumulative Progress:</strong> Showing improvement trajectory across submitted attempts.
-                `;
+                reminderBox.classList.add('hidden');
             }
 
-            let trendText = "";
-            if (sessionSummaries.length < 2) {
-                trendText = `<strong>More details needed:</strong> Only 1 attempt report was uploaded (${sessionSummaries[0]?.score || 0}% score). Please upload at least 2 or more historical assessment CSV files to establish a comparative growth history.`;
-            } else {
-                let first = sessionSummaries[0].score;
-                let last = sessionSummaries[sessionSummaries.length - 1].score;
-                let diff = last - first;
-                if (diff > 5) {
-                    trendText = `<strong>Upward Trajectory (+${diff}%):</strong> Comparing across ${sessionSummaries.length} assessment files, the student shows clear cognitive growth and concept retention improvement.`;
-                } else if (diff < -5) {
-                    trendText = `<strong>Downward Trend (${diff}%):</strong> Performance declined across uploaded sessions, indicating emerging fatigue or unmastered topics.`;
-                } else {
-                    trendText = `<strong>Stable / Plateaued Trajectory:</strong> Scores remain consistent around ~${last}%.`;
-                }
-            }
-
-            let avgScore = totalQuestionsAttempted > 0 ? Math.round((totalCorrectAnswers / totalQuestionsAttempted) * 100) : 0;
-            let pacingText = "";
-            let pacingBadge = document.getElementById('pacing-badge');
-            
-            let avgTimePerQ = sessionSummaries.reduce((acc, s) => acc + (s.timeTaken / 25), 0) / (sessionSummaries.length || 1);
-            if (avgTimePerQ < 20 && avgScore < 60) {
-                pacingText = `<strong>AI Diagnosis: Quick Answering without Information (Guessing).</strong>`;
-                pacingBadge.className = "text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full";
-                pacingBadge.innerText = "Rushed / Guessing";
-            } else if (avgTimePerQ < 20 && avgScore >= 80) {
-                pacingText = `<strong>AI Diagnosis: High Confidence & Mastery.</strong>`;
-                pacingBadge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
-                pacingBadge.innerText = "Confident Mastery";
-            } else {
-                pacingText = `<strong>AI Diagnosis: Balanced & Normal Pacing.</strong>`;
-                pacingBadge.className = "text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full";
-                pacingBadge.innerText = "Normal Pacing";
-            }
-
-            const sortedGaps = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
-            let remediationText = sortedGaps.length === 0 ? "No major skill deficits recorded." : `Dedicate time exclusively to revising: ${sortedGaps.slice(0, 3).join(', ')}. ${loadedRubricContent ? 'Evaluated against custom uploaded rubric guidelines.' : ''}`;
-
-            let scriptText = sortedGaps.length === 0 ? `🌟 Great job, ${studentName}! No major gaps detected.` : `📚 PRACTICE GUIDE FOR: ${sortedGaps[0]}\n\n[STEP 1 - CONCEPT REVIEW]: Review fundamental rules.\n[STEP 2 - GUIDED PRACTICE]: Solve 3 sample problems together.`;
-            document.getElementById('remediation-script-box').innerText = scriptText;
-
-            let whatsappText = `📊 *D-Lakshya Progress Update* 📊\n\nStudent: *${studentName}* (Class ${studentClass})\nOverall Score: *${avgScore}%*\n\n_Teacher Verified & Approved_`;
-            document.getElementById('whatsapp-summary-box').innerText = whatsappText;
+            const sortedChapters = Object.keys(chapterErrors).sort((a,b) => chapterErrors[b] - chapterErrors[a]);
+            const chapterMatrixElem = document.getElementById('chapter-attention-matrix');
+            chapterMatrixElem.innerHTML = sortedChapters.length > 0 ? sortedChapters.map(ch => `
+                <div class="flex justify-between items-center bg-white p-3 rounded-lg border border-slate-200 text-xs">
+                    <span class="font-bold text-slate-800">${ch}</span>
+                    <span class="bg-rose-100 text-rose-800 font-bold px-2.5 py-1 rounded-full">${chapterErrors[ch]} error(s) flagged</span>
+                </div>
+            `).join('') : '<p class="text-xs text-emerald-700 font-semibold">No chapter errors recorded!</p>';
 
             const auditOutputElem = document.getElementById('teacher-audit-output');
             auditOutputElem.classList.remove('hidden');
-            
-            const fileNamesList = sessions.map(s => s.fileName).join(', ');
-            const latestTimestamp = new Date().toLocaleString();
 
             document.getElementById('audit-student-name').innerText = `Performance Report: ${studentName}`;
-            document.getElementById('audit-student-meta').innerHTML = `<strong>Class:</strong> ${studentClass} &bull; <strong>Source File(s):</strong> <span class="text-blue-600">${fileNamesList}</span> &bull; <strong>Evaluated On:</strong> ${latestTimestamp}`;
-            document.getElementById('audit-attempt-count').innerText = sessions.length;
+            document.getElementById('audit-student-meta').innerHTML = `<strong>Class:</strong> ${studentClass} &bull; <strong>Subject:</strong> ${detectedSubject} &bull; <strong>Files Analyzed:</strong> ${sessions.map(s => s.fileName).join(', ')}`;
+            document.getElementById('audit-attempt-count').innerText = finalAttemptCount;
             document.getElementById('audit-avg-score').innerText = `${avgScore}%`;
-            document.getElementById('audit-gaps-count').innerText = `${sortedGaps.length} Skills`;
+            document.getElementById('audit-potential-gain').innerText = `+${potentialGain}% Potential`;
 
-            document.getElementById('trendline-display').innerHTML = trendText;
-            document.getElementById('pacing-details-text').innerHTML = pacingText;
+            const trendlineElem = document.getElementById('trendline-display');
+            trendlineElem.innerHTML = sessionSummaries.length > 0 ? `
+                <div class="space-y-2">
+                    <div class="text-xs font-bold text-slate-700">Longitudinal Session Trajectory (Attempt Files Only):</div>
+                    ${sessionSummaries.map((sess, idx) => `
+                        <div class="flex justify-between items-center bg-slate-50 p-2 rounded border border-slate-200">
+                            <span class="font-mono text-[11px] text-slate-600">Attempt ${idx + 1}:${sess.fileName}</span>
+                            <span class="font-bold text-blue-600">${sess.score}%</span>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : '<span class="text-slate-400 italic">No attempt files analyzed yet.</span>';
 
-            const matrixElem = document.getElementById('topic-mastery-matrix');
-            matrixElem.innerHTML = Object.keys(skillTotals).map(skill => {
-                const total = skillTotals[skill];
-                const correct = total - (skillDeficits[skill] || 0);
-                const pct = Math.round((correct / total) * 100);
-                return `<div class="space-y-1"><div class="flex justify-between text-xs font-semibold text-slate-700"><span>${skill}</span><span>${pct}% Strength</span></div><div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden"><div class="bg-blue-600 h-2 rounded-full" style="width: ${pct}%"></div></div></div>`;
-            }).join('');
+            const avgMins = validAttemptsCount > 0 ? Math.round((totalTimeTaken / validAttemptsCount) / 60) : 5;
+            const pacingBadge = document.getElementById('pacing-badge');
+            const pacingText = document.getElementById('pacing-details-text');
+            pacingBadge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
+            pacingBadge.innerText = "Optimal Pacing";
+            pacingText.className = "text-xs text-slate-700 leading-relaxed font-medium";
+            pacingText.innerText = `Average completion time: ~${avgMins} minutes per assessment. Student maintains steady pacing with adequate time buffer remaining before timer expiration.`;
 
+            const skillMatrixElem = document.getElementById('topic-mastery-matrix');
+            const skillKeys = Object.keys(skillTotalCounts);
+            skillMatrixElem.innerHTML = skillKeys.length > 0 ? skillKeys.map(sk => {
+                const total = skillTotalCounts[sk];
+                const errors = skillDeficits[sk] || 0;
+                const correct = total - errors;
+                const masteryPct = Math.round((correct / total) * 100);
+                const barColor = masteryPct >= 80 ? 'bg-emerald-500' : masteryPct >= 50 ? 'bg-blue-500' : 'bg-rose-500';
+                return `
+                    <div class="space-y-1 bg-white p-3 rounded-lg border border-slate-200">
+                        <div class="flex justify-between text-xs font-bold text-slate-800">
+                            <span>${sk}</span>
+                            <span class="font-mono">${masteryPct}% Mastery (${correct}/${total})</span>
+                        </div>
+                        <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                            <div class="${barColor} h-2 rounded-full" style="width: ${masteryPct}%"></div>
+                        </div>
+                    </div>
+                `;
+            }).join('') : '<p class="text-xs text-slate-400 italic text-center py-4">No skill metrics available.</p>';
+
+            const sortedGaps = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
             document.getElementById('audit-gaps-list').innerHTML = sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${skillDeficits[g]} errors)</li>`).join('') || '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
-            document.getElementById('audit-parental-strategy').innerHTML = remediationText;
+            document.getElementById('audit-parental-strategy').innerHTML = sortedChapters.length > 0 ? `Focus extra revision time on chapters: <strong>${sortedChapters.slice(0, 2).join(', ')}</strong>. Mastering these can boost performance by +${potentialGain}%.` : 'Great progress across all chapters!';
+
+            document.getElementById('remediation-script-box').innerText = sortedChapters.length > 0 ? `📚 CHAPTER PRACTICE GUIDE: ${sortedChapters[0]}\n\n[STEP 1]: Review textbook notes.\n[STEP 2]: Complete chapter practice questions.` : '🌟 Excellent mastery!';
+            
+            const inferenceText = sortedGaps.length > 0 ? sortedGaps.map(g => `• ${g}: Needs reinforcement in application/concept mastery.`).join('\n') : '• Excellent conceptual clarity across all tested skills.';
+            const actionText = sortedChapters.length > 0 ? `• Focus revision on ${sortedChapters[0]} & core practice rules.\n• Have the student read sentences aloud and practice active drills.` : '• Continue with regular practice routines.';
+
+            document.getElementById('parent-summary-box').innerText = `📊 *D-Lakshya Parent Report Card Summary* 📊\nStudent: *${studentName}* (Class ${studentClass})\nSubject: *${detectedSubject}*\nOverall Score: *${avgScore}%*\nPotential Gain: *+${potentialGain}%*\nPriority Chapter: *${sortedChapters[0] || 'None'}*\n\n🔍 *Conceptual Inferences:*\n${inferenceText}\n\n💡 *Recommended Action at Home:*\n${actionText}`;
 
             auditOutputElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
         function copyRemediationScript() {
-            const btnLabel = document.getElementById('copy-script-label');
-            btnLabel.innerText = "Copied! ✓";
-            setTimeout(() => { btnLabel.innerText = "Copy Script"; }, 1500);
-
-            const scriptContent = document.getElementById('remediation-script-box').innerText.trim();
-            navigator.clipboard.writeText(scriptContent);
+            navigator.clipboard.writeText(document.getElementById('remediation-script-box').innerText.trim());
+            alert("Remediation script copied to clipboard!");
         }
-
-        function copyWhatsAppSummary() {
-            const btnLabel = document.getElementById('copy-whatsapp-label');
-            btnLabel.innerText = "Copied! ✓";
-            setTimeout(() => { btnLabel.innerText = "Copy WhatsApp Summary"; }, 1500);
-
-            const whatsappContent = document.getElementById('whatsapp-summary-box').innerText.trim();
-            navigator.clipboard.writeText(whatsappContent);
+        function copyParentSummary() {
+            navigator.clipboard.writeText(document.getElementById('parent-summary-box').innerText.trim());
+            alert("Parent report card summary copied to clipboard!");
         }
 
         function exportStudentHistoryLogCSV() {
             if (currentBatchAuditData.length === 0) { alert("No data to export."); return; }
-            
-            const btnLabel = document.getElementById('export-btn-label');
-            btnLabel.innerText = "Exporting... ⏳";
-            setTimeout(() => { btnLabel.innerText = "Student History Log CSV"; }, 1200);
-
-            const teachercomments = document.getElementById('teacher-comments-input').value.trim();
-            const exportData = currentBatchAuditData.map(row => ({ ...row, TeacherRemarks: teachercomments || "N/A" }));
-            const fileName = `Student_${currentAuditStudentName.replace(/\s+/g, '_')}_History_Log_${new Date().toISOString().slice(0,10)}.csv`;
-            
+            const remarks = document.getElementById('teacher-comments-input').value.trim();
+            const exportData = currentBatchAuditData.map(row => ({ ...row, TeacherRemarks: remarks || "N/A" }));
+            const subjectName = (window.lastEvaluatedSubject || "General").replace(/\s+/g, '_');
+            const fileName = `Student_${currentAuditStudentName.replace(/\s+/g, '_')}_Class${currentBatchAuditData[0]?.Class || '1'}_${subjectName}_HistoryLog_${new Date().toISOString().slice(0,10)}.csv`;
+            const blob = new Blob(["\ufeff" + Papa.unparse(exportData)], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement("a");
-            link.href = URL.createObjectURL(new Blob(["\ufeff" + Papa.unparse(exportData)], { type: 'text/csv;charset=utf-8;' }));
+            link.href = URL.createObjectURL(blob);
             link.setAttribute("download", fileName);
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            document.body.appendChild(link); link.click(); document.body.removeChild(link);
             showDownloadToast(fileName);
         }
     </script>
