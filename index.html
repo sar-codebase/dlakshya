@@ -82,6 +82,10 @@
                     <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     Pricing & Contact
                 </button>
+                <button id="tab-about-btn" onclick="switchTab('about')" class="py-2 sm:py-4 px-2 inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 whitespace-nowrap transition">
+                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    About Us
+                </button>
             </nav>
         </div>
     </header>
@@ -746,6 +750,41 @@
                 </div>
             </div>
         </section>
+
+        <!-- ABOUT US PORTAL -->
+        <section id="portal-about" class="hidden space-y-8 max-w-5xl mx-auto">
+            <div class="bg-gradient-to-r from-blue-900 to-slate-900 text-white p-5 sm:p-6 rounded-2xl shadow-md">
+                <h2 class="text-xl sm:text-2xl font-bold mb-2">About D-Lakshya</h2>
+                <p class="text-blue-200 text-xs sm:text-sm">
+                    Empowering educators, mentors, and students with secure, offline-first educational diagnostics.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
+                <div class="space-y-3">
+                    <h3 class="text-lg font-bold text-slate-900">Our Mission & Educational Philosophy</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        D-Lakshya was built with a singular vision: to bridge the gap between testing and true conceptual understanding. Traditional evaluations often provide a surface-level grade without uncovering the root causes behind recurring student mistakes. Our platform leverages local browser analytics to diagnose concept mastery, evaluate pacing habits, and generate actionable parent-teacher meeting (PTM) follow-ups.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-100">
+                    <div class="p-5 bg-blue-50/50 rounded-xl border border-blue-100 space-y-2">
+                        <h4 class="font-bold text-blue-900 text-sm">🔒 Complete Data Sovereignty</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            We believe student data belongs strictly in the hands of educators and parents. D-Lakshya operates 100% locally inside your browser with zero active cloud dependencies or third-party trackers.
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-blue-50/50 rounded-xl border border-blue-100 space-y-2">
+                        <h4 class="font-bold text-blue-900 text-sm">⚡ Offline Reliability</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Designed to withstand network dropouts and remote classroom environments, ensuring seamless test execution and CSV log management without internet interruption.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4 no-print">
@@ -932,9 +971,12 @@
             document.getElementById('tab-evaluator-btn').classList.toggle('tab-active', portal === 'evaluator');
             document.getElementById('tab-student-btn').classList.toggle('tab-active', portal === 'student');
             document.getElementById('tab-contact-btn').classList.toggle('tab-active', portal === 'contact');
+            document.getElementById('tab-about-btn').classList.toggle('tab-active', portal === 'about');
+            
             document.getElementById('portal-evaluator').classList.toggle('hidden', portal !== 'evaluator');
             document.getElementById('portal-student').classList.toggle('hidden', portal !== 'student');
             document.getElementById('portal-contact').classList.toggle('hidden', portal !== 'contact');
+            document.getElementById('portal-about').classList.toggle('hidden', portal !== 'about');
         }
 
         function loadQuestionBank() {
@@ -1249,9 +1291,10 @@
             const reminderText = document.getElementById('longitudinal-reminder-text');
             if (previousRemarksFound.length > 0) {
                 reminderBox.classList.remove('hidden');
-                reminderText.innerHTML = `<strong>Previous Assessment History Detected:</strong> Past teacher notes/remarks found: <br><em>${previousRemarksFound.join('<br>')}</em><br><strong>AI Recommendation:</strong> Kindly check with the parents whether the feedback from the previous discussion was implemented and review outcomes for recurring mistakes.`;
+                reminderText.innerHTML = `<strong>Previous Assessment History & Parent Follow-Up:</strong><br>Past discussion comments: <br><em>${previousRemarksFound.join('<br>')}</em><br><br><strong>AI Recommendation:</strong> Kindly check with the parents whether the feedback from the previous discussion was implemented and review outcomes for recurring mistakes.`;
             } else {
-                reminderBox.classList.add('hidden');
+                reminderBox.classList.remove('hidden');
+                reminderText.innerHTML = `<strong>Parent Follow-Up Reminder:</strong><br><em>No explicit previous meeting comments found in uploaded history logs.</em><br><br><strong>AI Recommendation:</strong> Kindly check with the parents whether the feedback from the previous discussion was implemented and review outcomes for recurring mistakes.`;
             }
 
             const sortedChapters = Object.keys(chapterErrors).sort((a,b) => chapterErrors[b] - chapterErrors[a]);
