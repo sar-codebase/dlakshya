@@ -182,7 +182,12 @@
                             </div>
                             <div>
                                 <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Teacher Access Key</label>
-                                <input type="password" id="teacher-access-key" placeholder="Enter 8-character Key" class="w-full text-sm font-mono tracking-wider px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
+                                <div class="relative">
+                                    <input type="password" id="teacher-access-key" placeholder="Enter 8-character Key" class="w-full text-sm font-mono tracking-wider px-3 py-2 pr-10 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
+                                    <button type="button" onclick="togglePasswordVisibility('teacher-access-key', 'teacher-key-eye-icon')" class="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-700 focus:outline-none">
+                                        <i id="teacher-key-eye-icon" class="fa-solid fa-eye text-xs"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
@@ -225,7 +230,7 @@
                                     <label class="block text-xs font-semibold text-slate-700 uppercase">Upload Standard Focus Guidelines / Rubric File (Optional)</label>
                                     <span id="rubric-status-badge" class="text-[10px] font-semibold bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full">No Rubric Loaded</span>
                                 </div>
-                                <input type="file" id="teacher-standard-points-file" accept=".enc,.dlakshya" onchange="handleRubricFileSelection(event)" class="w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-amber-100 file:text-amber-800 hover:file:bg-amber-200 border border-slate-200 rounded-lg p-1 bg-white">
+                                <input type="file" id="teacher-standard-points-file" accept=".enc,.dlakshya,.txt,.csv,.md" onchange="handleRubricFileSelection(event)" class="w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-amber-100 file:text-amber-800 hover:file:bg-amber-200 border border-slate-200 rounded-lg p-1 bg-white">
                             </div>
                         </div>
                     </div>
@@ -284,9 +289,10 @@
                 <!-- Chapter Breakdown & Priority Attention Section -->
                 <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
                     <h4 class="font-bold text-slate-900 text-sm flex items-center justify-between">
-                        <span>Chapters Needing Attention (Macro Gaps)</span>
-                        <span class="text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full">Chapter Segregation</span>
+                        <span>Chapters Needing Attention (Macro Gaps) - Select to Recalibrate Target Gain</span>
+                        <span class="text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full">Interactive Intervention</span>
                     </h4>
+                    <p class="text-[11px] text-slate-500">Uncheck chapters below to narrow down priority focus areas and dynamically recalculate potential mark gains.</p>
                     <div id="chapter-attention-matrix" class="space-y-2">
                         <p class="text-xs text-slate-400 italic">No chapter breakdown available yet. Upload student attempt reports above.</p>
                     </div>
@@ -442,7 +448,12 @@
                             <span>Student Access Key</span>
                             <span class="text-[10px] text-blue-600 font-semibold uppercase">Max 2 Devices Allowed</span>
                         </label>
-                        <input type="password" id="student-access-key" placeholder="Enter 8-character Key" class="w-full text-sm font-mono tracking-wider px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
+                        <div class="relative">
+                            <input type="password" id="student-access-key" placeholder="Enter 8-character Key" class="w-full text-sm font-mono tracking-wider px-3 py-2 pr-10 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none uppercase">
+                            <button type="button" onclick="togglePasswordVisibility('student-access-key', 'student-key-eye-icon')" class="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-700 focus:outline-none">
+                                <i id="student-key-eye-icon" class="fa-solid fa-eye text-xs"></i>
+                            </button>
+                        </div>
                     </div>
 
                     <div>
@@ -847,6 +858,23 @@
         let currentAuditStudentName = "";
         let loadedRubricContent = "";
         let isAssessmentActive = false;
+        let globalChapterErrorsData = {};
+        let globalTotalQuestionsCount = 0;
+
+        // Password Visibility Toggle Function
+        function togglePasswordVisibility(fieldId, iconId) {
+            const passwordField = document.getElementById(fieldId);
+            const eyeIcon = document.getElementById(iconId);
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                eyeIcon.classList.remove("fa-eye");
+                eyeIcon.classList.add("fa-eye-slash");
+            } else {
+                passwordField.type = "password";
+                eyeIcon.classList.remove("fa-eye-slash");
+                eyeIcon.classList.add("fa-eye");
+            }
+        }
 
         // Tab Switch / Focus-Loss Event Listener
         document.addEventListener("visibilitychange", function() {
@@ -975,32 +1003,28 @@
                 badge.innerText = "No Rubric Loaded";
                 return;
             }
-            
-            // Strict Validation on File Type / Extension (.enc or .dlakshya)
-            const fileNameLower = file.name.toLowerCase();
-            if (!fileNameLower.endsWith('.enc') && !fileNameLower.endsWith('.dlakshya')) {
-                alert("❌ Error: Invalid file type. Only encrypted files (.enc or .dlakshya) are allowed for rubric upload.");
-                event.target.value = "";
-                loadedRubricContent = "";
-                badge.className = "text-[10px] font-semibold bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full";
-                badge.innerText = "Invalid File Type Rejected";
-                return;
-            }
 
             const reader = new FileReader();
             reader.readAsText(file, "UTF-8");
             reader.onload = async function(e) {
                 let content = e.target.result;
-                try {
-                    content = await decryptPayloadToString(content);
-                } catch (err) {
-                    alert("❌ Failed to decrypt rubric file: " + err.message);
-                    event.target.value = "";
-                    loadedRubricContent = "";
-                    badge.className = "text-[10px] font-semibold bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full";
-                    badge.innerText = "Decryption Failed";
-                    return;
+                const fileNameLower = file.name.toLowerCase();
+                
+                // If the file explicitly ends with .enc or .dlakshya, attempt decryption
+                if (fileNameLower.endsWith('.enc') || fileNameLower.endsWith('.dlakshya')) {
+                    try {
+                        content = await decryptPayloadToString(content);
+                    } catch (err) {
+                        alert("❌ Failed to decrypt rubric file: " + err.message);
+                        event.target.value = "";
+                        loadedRubricContent = "";
+                        badge.className = "text-[10px] font-semibold bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full";
+                        badge.innerText = "Decryption Failed";
+                        return;
+                    }
                 }
+                // Otherwise, treat as a standard unencrypted text, markdown, or csv file
+                
                 loadedRubricContent = content;
                 badge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
                 badge.innerText = `Rubric Loaded: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
@@ -1458,6 +1482,8 @@
 
             currentAuditStudentName = studentName;
             window.lastEvaluatedSubject = detectedSubject;
+            globalChapterErrorsData = chapterErrors;
+            globalTotalQuestionsCount = totalQ;
             let avgScore = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
             let totalErrors = totalQ - totalCorrect;
             let potentialGain = totalQ > 0 ? Math.round((totalErrors / totalQ) * 100) : 0;
@@ -1473,14 +1499,7 @@
                 reminderText.innerHTML = `<strong>Parent Follow-Up Reminder:</strong><br><em>No explicit previous meeting comments found in uploaded history logs.</em><br><br><strong>AI Recommendation:</strong> Kindly check with the parents whether the feedback from the previous discussion was implemented and review outcomes for recurring mistakes.`;
             }
 
-            const sortedChapters = Object.keys(chapterErrors).sort((a,b) => chapterErrors[b] - chapterErrors[a]);
-            const chapterMatrixElem = document.getElementById('chapter-attention-matrix');
-            chapterMatrixElem.innerHTML = sortedChapters.length > 0 ? sortedChapters.map(ch => `
-                <div class="flex justify-between items-center bg-white p-3 rounded-lg border border-slate-200 text-xs">
-                    <span class="font-bold text-slate-800">${ch}</span>
-                    <span class="bg-rose-100 text-rose-800 font-bold px-2.5 py-1 rounded-full">${chapterErrors[ch]} error(s) flagged</span>
-                </div>
-            `).join('') : '<p class="text-xs text-emerald-700 font-semibold">No chapter errors recorded!</p>';
+            renderChapterAttentionMatrix(chapterErrors);
 
             const auditOutputElem = document.getElementById('teacher-audit-output');
             auditOutputElem.classList.remove('hidden');
@@ -1535,16 +1554,96 @@
 
             const sortedGaps = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
             document.getElementById('audit-gaps-list').innerHTML = sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${skillDeficits[g]} errors)</li>`).join('') || '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
-            document.getElementById('audit-parental-strategy').innerHTML = sortedChapters.length > 0 ? `Focus extra revision time on chapters: <strong>${sortedChapters.slice(0, 2).join(', ')}</strong>. Mastering these can boost performance by +${potentialGain}%.` : 'Great progress across all chapters!';
-
-            document.getElementById('remediation-script-box').innerText = sortedChapters.length > 0 ? `📚 CHAPTER PRACTICE GUIDE: ${sortedChapters[0]}\n\n[STEP 1]: Review textbook notes.\n[STEP 2]: Complete chapter practice questions.` : '🌟 Excellent mastery!';
             
-            const inferenceText = sortedGaps.length > 0 ? sortedGaps.map(g => `• ${g}: Needs reinforcement in application/concept mastery.`).join('\n') : '• Excellent conceptual clarity across all tested skills.';
-            const actionText = sortedChapters.length > 0 ? `• Focus revision on ${sortedChapters[0]} & core practice rules.\n• Have the student read sentences aloud and practice active drills.` : '• Continue with regular practice routines.';
-
-            document.getElementById('parent-summary-box').innerText = `📊 *D-Lakshya Parent Report Card Summary* 📊\nStudent: *${studentName}* (Class ${studentClass})\nSubject: *${detectedSubject}*\nOverall Score: *${avgScore}%*\nPotential Gain: *+${potentialGain}%*\nPriority Chapter: *${sortedChapters[0] || 'None'}*\n\n🔍 *Conceptual Inferences:*\n${inferenceText}\n\n💡 *Recommended Action at Home:*\n${actionText}`;
+            updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps);
 
             auditOutputElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function renderChapterAttentionMatrix(chapterErrors) {
+            const sortedChapters = Object.keys(chapterErrors).sort((a,b) => chapterErrors[b] - chapterErrors[a]);
+            const chapterMatrixElem = document.getElementById('chapter-attention-matrix');
+            
+            chapterMatrixElem.innerHTML = sortedChapters.length > 0 ? sortedChapters.map(ch => `
+                <label class="flex justify-between items-center bg-white p-3 rounded-lg border border-slate-200 text-xs cursor-pointer hover:bg-slate-50 transition">
+                    <div class="flex items-center gap-2.5">
+                        <input type="checkbox" class="chapter-selection-chk w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer" value="${ch}" checked onchange="recalculatePotentialGainAndSummaries()">
+                        <span class="font-bold text-slate-800">${ch}</span>
+                    </div>
+                    <span class="bg-rose-100 text-rose-800 font-bold px-2.5 py-1 rounded-full">${chapterErrors[ch]} error(s) flagged</span>
+                </label>
+            `).join('') : '<p class="text-xs text-emerald-700 font-semibold">No chapter errors recorded!</p>';
+        }
+
+        function recalculatePotentialGainAndSummaries() {
+            if (!globalChapterErrorsData || globalTotalQuestionsCount === 0) return;
+
+            const checkboxes = document.querySelectorAll('.chapter-selection-chk');
+            let selectedErrorsSum = 0;
+            let selectedChaptersList = [];
+
+            checkboxes.forEach(chk => {
+                if (chk.checked) {
+                    const chName = chk.value;
+                    selectedChaptersList.push(chName);
+                    selectedErrorsSum += (globalChapterErrorsData[chName] || 0);
+                }
+            });
+
+            const dynamicPotentialGain = Math.round((selectedErrorsSum / globalTotalQuestionsCount) * 100);
+            document.getElementById('audit-potential-gain').innerText = `+${dynamicPotentialGain}% Potential`;
+
+            const chaptersText = selectedChaptersList.length > 0 ? selectedChaptersList.join(', ') : 'None';
+
+            document.getElementById('audit-parental-strategy').innerHTML = selectedChaptersList.length > 0 ? `Focus extra revision time on selected chapters: <strong>${chaptersText}</strong>. Mastering these can boost performance by +${dynamicPotentialGain}%.` : 'No chapters selected for targeted intervention.';
+
+            let remediationText = '🌟 Select at least one chapter above to generate a remediation script.';
+            if (selectedChaptersList.length > 0) {
+                remediationText = `📚 TARGETED CHAPTER PRACTICE GUIDES:\n\n` + selectedChaptersList.map((ch, idx) => 
+                    `[CHAPTER ${idx + 1}: ${ch}]\n• Review key textbook concepts and definitions for ${ch}.\n• Complete targeted practice exercises to resolve recorded errors.`
+                ).join('\n\n');
+            }
+            document.getElementById('remediation-script-box').innerText = remediationText;
+
+            const studentName = currentAuditStudentName || "Student";
+            const detectedSubject = window.lastEvaluatedSubject || "General";
+            const avgScoreText = document.getElementById('audit-avg-score').innerText;
+
+            document.getElementById('parent-summary-box').innerText = `📊 *D-Lakshya Parent Report Card Summary* 📊\nStudent: *${studentName}*\nSubject: *${detectedSubject}*\nOverall Score: *${avgScoreText}*\nTargeted Potential Gain: *+${dynamicPotentialGain}%*\nPriority Chapter Focus: *${chaptersText}*\n\n💡 *Recommended Action at Home:*\n• Focus revision specifically on: *${chaptersText}*.\n• Practice active drills and guided step-by-step review for selected focus areas.`;
+        }
+
+        function updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps) {
+            const checkboxes = document.querySelectorAll('.chapter-selection-chk');
+            let selectedErrorsSum = 0;
+            let selectedChaptersList = [];
+
+            checkboxes.forEach(chk => {
+                if (chk.checked) {
+                    const chName = chk.value;
+                    selectedChaptersList.push(chName);
+                    selectedErrorsSum += (globalChapterErrorsData[chName] || 0);
+                }
+            });
+
+            const dynamicPotentialGain = globalTotalQuestionsCount > 0 ? Math.round((selectedErrorsSum / globalTotalQuestionsCount) * 100) : 0;
+            document.getElementById('audit-potential-gain').innerText = `+${dynamicPotentialGain}% Potential`;
+
+            const chaptersText = selectedChaptersList.length > 0 ? selectedChaptersList.join(', ') : 'None';
+
+            document.getElementById('audit-parental-strategy').innerHTML = selectedChaptersList.length > 0 ? `Focus extra revision time on selected chapters: <strong>${chaptersText}</strong>. Mastering these can boost performance by +${dynamicPotentialGain}%.` : 'No chapters selected for targeted intervention.';
+
+            let remediationText = '🌟 Select at least one chapter above to generate a remediation script.';
+            if (selectedChaptersList.length > 0) {
+                remediationText = `📚 TARGETED CHAPTER PRACTICE GUIDES:\n\n` + selectedChaptersList.map((ch, idx) => 
+                    `[CHAPTER ${idx + 1}: ${ch}]\n• Review key textbook concepts and definitions for ${ch}.\n• Complete targeted practice exercises to resolve recorded errors.`
+                ).join('\n\n');
+            }
+            document.getElementById('remediation-script-box').innerText = remediationText;
+
+            const inferenceText = sortedGaps.length > 0 ? sortedGaps.map(g => `• ${g}: Needs reinforcement in application/concept mastery.`).join('\n') : '• Excellent conceptual clarity across all tested skills.';
+            const actionText = selectedChaptersList.length > 0 ? `• Focus revision specifically on ${chaptersText}.\n• Have the student read sentences aloud and practice active drills.` : '• Continue with regular practice routines.';
+
+            document.getElementById('parent-summary-box').innerText = `📊 *D-Lakshya Parent Report Card Summary* 📊\nStudent: *${studentName}* (Class ${studentClass})\nSubject: *${detectedSubject}*\nOverall Score: *${avgScore}%*\nTargeted Potential Gain: *+${dynamicPotentialGain}%*\nPriority Chapter Focus: *${chaptersText}*\n\n🔍 *Conceptual Inferences:*\n${inferenceText}\n\n💡 *Recommended Action at Home:*\n${actionText}`;
         }
 
         function copyRemediationScript() {
