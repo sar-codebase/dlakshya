@@ -1386,194 +1386,207 @@
         }
 
 function evaluateAIStudentAudit(sessions) {
-            currentBatchAuditData = [];
-            let studentName = "Student";
-            let studentClass = "N/A";
-            let detectedSubject = "General";
-            let totalQ = 0, totalCorrect = 0;
-            const chapterErrors = {};
-            const skillDeficits = {};
-            const skillTotalCounts = {};
-            const questionErrorCounts = {};
-            let sessionSummaries = [];
-            let previousRemarksFound = [];
-            let totalTimeTaken = 0;
-            let validAttemptsCount = 0;
-            const uniqueAssessmentIds = new Set();
-            let allAggregatedAnswers = [];
+    currentBatchAuditData = [];
+    let studentName = "Student";
+    let studentClass = "N/A";
+    let detectedSubject = "General";
+    let totalQ = 0, totalCorrect = 0;
+    const chapterErrors = {};
+    const skillDeficits = {};
+    const skillTotalCounts = {};
+    const questionErrorCounts = {};
+    let sessionSummaries = [];
+    let previousRemarksFound = [];
+    let validAttemptsCount = 0;
+    const uniqueAssessmentIds = new Set();
+    let allAggregatedAnswers = [];
 
-            sessions.forEach(s => {
-                if (s.rows && s.rows.length > 0) {
-                    s.rows = s.rows.map(row => {
-                        const normalized = {};
-                        for (let key in row) {
-                            normalized[key.trim().toLowerCase()] = row[key];
-                        }
-                        return {
-                            StudentName: normalized['studentname'] || normalized['name'] || studentName,
-                            Class: normalized['class'] || studentClass,
-                            Subject: normalized['subject'] || detectedSubject,
-                            AssessmentID: normalized['assessmentid'] || 'ASSESS-01',
-                            Question: normalized['question'] || 'Untitled Question',
-                            Chapter: normalized['chapter'] || normalized['chap'] || 'General Chapter',
-                            Skill: normalized['skill'] || normalized['topic'] || 'Core',
-                            IsCorrect: String(normalized['iscorrect'] || '').trim().toLowerCase() === 'true',
-                            UserAnswerIndex: normalized['useranswerindex'] !== undefined && normalized['useranswerindex'] !== '' ? parseInt(normalized['useranswerindex']) : -1,
-                            CorrectOptionIndex: normalized['correctoptionindex'] !== undefined && normalized['correctoptionindex'] !== '' ? parseInt(normalized['correctoptionindex']) : 0,
-                            TimeTakenSeconds: parseInt(normalized['timetakenseconds'] || 0),
-                            ScorePercentage: parseInt(normalized['scorepercentage'] || 0),
-                            Option0: normalized['option0'] || '',
-                            Option1: normalized['option1'] || '',
-                            Option2: normalized['option2'] || '',
-                            Option3: normalized['option3'] || '',
-                            TeacherRemarks: normalized['teacherremarks'] || normalized['teachercomments'] || normalized['remarks'] || 'N/A'
-                        };
-                    });
-
-                    if (s.rows[0].StudentName && s.rows[0].StudentName !== "Student") studentName = s.rows[0].StudentName;
-                    if (s.rows[0].Class && s.rows[0].Class !== "N/A") studentClass = s.rows[0].Class;
-                    if (s.rows[0].Subject && s.rows[0].Subject !== "ALL") detectedSubject = s.rows[0].Subject;
-
-                    const remarksVal = s.rows[0].TeacherRemarks;
-                    if (remarksVal && remarksVal !== "N/A" && remarksVal.trim() !== "" && remarksVal !== "undefined") {
-                        previousRemarksFound.push(`File ${s.fileName}: "${remarksVal}"`);
-                    }
-
-                    const isHistoryLog = s.fileName.toLowerCase().includes('history_log');
-                    
-                    if (!isHistoryLog) {
-                        validAttemptsCount++;
-                        const asmId = s.rows[0].AssessmentID;
-                        if (asmId) uniqueAssessmentIds.add(asmId);
-                        
-                        currentBatchAuditData.push(...s.rows);
-                        let qCount = s.rows.length;
-                        let correctCount = s.rows.filter(r => r.IsCorrect).length;
-                        
-                        totalQ += qCount;
-                        totalCorrect += correctCount;
-                        
-                        let fileTimeSec = s.rows[0].TimeTakenSeconds || 0;
-                        if (fileTimeSec > 0) {
-                            totalTimeTaken += fileTimeSec;
-                        }
-
-                        let sessionScore = s.rows[0].ScorePercentage || Math.round((correctCount / (qCount || 1)) * 100);
-                        sessionSummaries.push({ fileName: s.fileName, score: sessionScore, timeTakenSeconds: fileTimeSec });
-                    }
-
-                    s.rows.forEach(r => {
-                        allAggregatedAnswers.push(r);
-                        let qText = r.Question;
-                        if (!questionErrorCounts[qText]) {
-                            questionErrorCounts[qText] = { 
-                                totalAttempts: 0, 
-                                incorrectCount: 0, 
-                                question: qText, 
-                                chapter: r.Chapter, 
-                                skill: r.Skill, 
-                                options: [r.Option0, r.Option1, r.Option2, r.Option3], 
-                                correctIdx: r.CorrectOptionIndex,
-                                userAnswerIdx: r.UserAnswerIndex
-                            };
-                        }
-                        questionErrorCounts[qText].totalAttempts++;
-                        if (!r.IsCorrect) {
-                            questionErrorCounts[qText].incorrectCount++;
-                        }
-
-                        let rawSkill = String(r.Skill || '').trim();
-                        let rawChapter = String(r.Chapter || '').trim();
-                        let ch = /^\d+$/.test(rawChapter) ? `Chapter ${rawChapter}` : (rawChapter || 'General Chapter');
-                        let sk = rawSkill;
-                        if (!sk || /^\d+$/.test(sk) || sk.length <= 1) sk = ch;
-
-                        skillTotalCounts[sk] = (skillTotalCounts[sk] || 0) + 1;
-                        if (!r.IsCorrect) {
-                            chapterErrors[ch] = (chapterErrors[ch] || 0) + 1;
-                            skillDeficits[sk] = (skillDeficits[sk] || 0) + 1;
-                        }
-                    });
+    sessions.forEach(s => {
+        if (s.rows && s.rows.length > 0) {
+            s.rows = s.rows.map(row => {
+                const normalized = {};
+                for (let key in row) {
+                    normalized[key.trim().toLowerCase()] = row[key];
                 }
+                return {
+                    StudentName: normalized['studentname'] || normalized['name'] || studentName,
+                    Class: normalized['class'] || studentClass,
+                    Subject: normalized['subject'] || detectedSubject,
+                    AssessmentID: normalized['assessmentid'] || 'ASSESS-01',
+                    Question: normalized['question'] || 'Untitled Question',
+                    Chapter: normalized['chapter'] || normalized['chap'] || 'General Chapter',
+                    Skill: normalized['skill'] || normalized['topic'] || 'Core',
+                    IsCorrect: String(normalized['iscorrect'] || '').trim().toLowerCase() === 'true',
+                    UserAnswerIndex: normalized['useranswerindex'] !== undefined && normalized['useranswerindex'] !== '' ? parseInt(normalized['useranswerindex']) : -1,
+                    CorrectOptionIndex: normalized['correctoptionindex'] !== undefined && normalized['correctoptionindex'] !== '' ? parseInt(normalized['correctoptionindex']) : 0,
+                    TimeTakenSeconds: parseInt(normalized['timetakenseconds'] || 0),
+                    ScorePercentage: parseInt(normalized['scorepercentage'] || 0),
+                    Option0: normalized['option0'] || '',
+                    Option1: normalized['option1'] || '',
+                    Option2: normalized['option2'] || '',
+                    Option3: normalized['option3'] || '',
+                    TeacherRemarks: normalized['teacherremarks'] || normalized['teachercomments'] || normalized['remarks'] || 'N/A'
+                };
             });
 
-            currentAuditStudentName = studentName;
-            window.lastEvaluatedSubject = detectedSubject;
-            globalChapterErrorsData = chapterErrors;
-            globalTotalQuestionsCount = totalQ;
-            let avgScore = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
-            let totalErrors = totalQ - totalCorrect;
-            let potentialGain = totalQ > 0 ? Math.round((totalErrors / totalQ) * 100) : 0;
-            let finalAttemptCount = uniqueAssessmentIds.size > 0 ? uniqueAssessmentIds.size : (validAttemptsCount || sessions.length);
+            if (s.rows[0].StudentName && s.rows[0].StudentName !== "Student") studentName = s.rows[0].StudentName;
+            if (s.rows[0].Class && s.rows[0].Class !== "N/A") studentClass = s.rows[0].Class;
+            if (s.rows[0].Subject && s.rows[0].Subject !== "ALL") detectedSubject = s.rows[0].Subject;
 
-            const reminderBox = document.getElementById('longitudinal-reminder-box');
-            const reminderText = document.getElementById('longitudinal-reminder-text');
-            reminderBox.classList.remove('hidden');
-            reminderText.innerHTML = previousRemarksFound.length > 0 ? `<strong>Previous Assessment History & Parent Follow-Up:</strong><br>Past discussion comments: <br><em>${previousRemarksFound.join('<br>')}</em>` : `<strong>Parent Follow-Up Reminder:</strong><br><em>No explicit previous meeting comments found in uploaded history logs.</em>`;
-
-            renderChapterAttentionMatrix(chapterErrors);
-            renderTeacherItemizedReview(questionErrorCounts);
-            renderTopicMasteryMatrix(skillTotalCounts, skillDeficits);
-
-            const auditOutputElem = document.getElementById('teacher-audit-output');
-            auditOutputElem.classList.remove('hidden');
-
-            document.getElementById('audit-student-name').innerText = `Performance Report: ${studentName}`;
-            document.getElementById('audit-student-meta').innerHTML = `<strong>Class:</strong> ${studentClass} &bull; <strong>Subject:</strong> ${detectedSubject} &bull; <strong>Files Analyzed:</strong> ${sessions.map(s => s.fileName).join(', ')}`;
-            document.getElementById('audit-attempt-count').innerText = finalAttemptCount;
-            document.getElementById('audit-avg-score').innerText = `${avgScore}%`;
-            document.getElementById('audit-potential-gain').innerText = `+${potentialGain}% Potential`;
-
-            const trendlineElem = document.getElementById('trendline-display');
-            trendlineElem.innerHTML = sessionSummaries.length > 0 ? `
-                <div class="space-y-2">
-                    <div class="text-xs font-bold text-slate-700">Longitudinal Session Trajectory (${sessionSummaries.length} Attempt${sessionSummaries.length > 1 ? 's' : ''}):</div>
-                    ${sessionSummaries.map((sess, idx) => `
-                        <div class="flex justify-between items-center bg-slate-50 p-2 rounded border border-slate-200">
-                            <span class="font-mono text-[11px] text-slate-600">Attempt ${idx + 1}:${sess.fileName}</span>
-                            <span class="font-bold text-blue-600">${sess.score}%</span>
-                        </div>
-                    `).join('')}
-                </div>
-            ` : '<span class="text-slate-400 italic">No attempt files analyzed yet.</span>';
-
-            const pacingBadge = document.getElementById('pacing-badge');
-            const pacingText = document.getElementById('pacing-details-text');
-            
-            const representativeTimeSec = validAttemptsCount > 0 ? Math.round(totalTimeTaken / validAttemptsCount) : 0;
-            const speedRatio = representativeTimeSec > 0 ? representativeTimeSec / (configuredTimerMinutes * 60) : 0;
-            const completionMinutesVal = (representativeTimeSec / 60).toFixed(1);
-
-            if (representativeTimeSec > 0 && speedRatio < 0.15) {
-                pacingBadge.className = "text-[10px] font-semibold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full";
-                pacingBadge.innerText = "Rapid Completion Alert";
-                pacingText.className = "text-xs text-amber-900 leading-relaxed font-semibold bg-amber-50 p-3 rounded-lg border border-amber-200 space-y-2";
-                pacingText.innerHTML = `
-                    <div>⚠️ <strong>Rapid Completion Detected:</strong> The total allocated time for the assessment was set to <strong>${configuredTimerMinutes} minutes</strong>, but the student completed the assessment in just ~${completionMinutesVal} minutes.</div>
-                    <div class="text-slate-700 mt-1">💡 <strong>Teacher Highlight (For Summary Report):</strong> The student finished extremely quickly (~${completionMinutesVal} mins), which may indicate impulsive guessing or high familiarity.</div>
-                `;
-            } else if (representativeTimeSec > 0 && speedRatio < 0.5) {
-                pacingBadge.className = "text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full";
-                pacingBadge.innerText = "Comfortable Pacing";
-                pacingText.className = "text-xs text-slate-700 leading-relaxed font-semibold bg-slate-50 p-3 rounded-lg border border-slate-200 space-y-2";
-                pacingText.innerHTML = `
-                    <div>⏱️ <strong>Comfortable Completion:</strong> The assessment was completed in ~${completionMinutesVal} minutes (within the ${configuredTimerMinutes}-minute limit).</div>
-                    <div class="text-slate-600">💡 <strong>Teacher Highlight:</strong> The student finished comfortably ahead of time with confident pacing.</div>
-                `;
-            } else {
-                pacingBadge.className = "text-[10px] font-semibold bg-slate-100 text-slate-800 px-2 py-0.5 rounded-full";
-                pacingBadge.innerText = "Standard Pacing";
-                pacingText.className = "text-xs text-slate-700 leading-relaxed font-medium";
-                pacingText.innerText = `Evaluated from assessment attempt records.`;
+            const remarksVal = s.rows[0].TeacherRemarks;
+            if (remarksVal && remarksVal !== "N/A" && remarksVal.trim() !== "" && remarksVal !== "undefined") {
+                previousRemarksFound.push(`File ${s.fileName}: "${remarksVal}"`);
             }
 
-            const sortedGaps = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
-            document.getElementById('audit-gaps-list').innerHTML = sortedGaps.length > 0 ? sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${skillDeficits[g]} errors)</li>`).join('') : '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
+            // --- BUG FIX 1: Exclude History Log files from live attempt counts ---
+            const isHistoryLog = s.fileName.toLowerCase().includes('historylog') || s.fileName.toLowerCase().includes('history_log');
             
-            updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps);
-            auditOutputElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+            if (!isHistoryLog) {
+                validAttemptsCount++;
+                const asmId = s.rows[0].AssessmentID;
+                if (asmId) uniqueAssessmentIds.add(asmId);
+                
+                currentBatchAuditData.push(...s.rows);
+                let qCount = s.rows.length;
+                let correctCount = s.rows.filter(r => r.IsCorrect).length;
+                
+                totalQ += qCount;
+                totalCorrect += correctCount;
+                
+                let fileTimeSec = s.rows[0].TimeTakenSeconds || 0;
+                let sessionScore = s.rows[0].ScorePercentage || Math.round((correctCount / (qCount || 1)) * 100);
+                
+                sessionSummaries.push({ 
+                    fileName: s.fileName, 
+                    score: sessionScore, 
+                    timeTakenSeconds: fileTimeSec,
+                    completionMinutes: (fileTimeSec / 60).toFixed(1)
+                });
+            }
 
+            s.rows.forEach(r => {
+                allAggregatedAnswers.push(r);
+                let qText = r.Question;
+                if (!questionErrorCounts[qText]) {
+                    questionErrorCounts[qText] = { 
+                        totalAttempts: 0, 
+                        incorrectCount: 0, 
+                        question: qText, 
+                        chapter: r.Chapter, 
+                        skill: r.Skill, 
+                        options: [r.Option0, r.Option1, r.Option2, r.Option3], 
+                        correctIdx: r.CorrectOptionIndex,
+                        userAnswerIdx: r.UserAnswerIndex
+                    };
+                }
+                questionErrorCounts[qText].totalAttempts++;
+                if (!r.IsCorrect) {
+                    questionErrorCounts[qText].incorrectCount++;
+                }
+
+                let rawSkill = String(r.Skill || '').trim();
+                let rawChapter = String(r.Chapter || '').trim();
+                let ch = /^\d+$/.test(rawChapter) ? `Chapter ${rawChapter}` : (rawChapter || 'General Chapter');
+                let sk = rawSkill;
+                if (!sk || /^\d+$/.test(sk) || sk.length <= 1) sk = ch;
+
+                skillTotalCounts[sk] = (skillTotalCounts[sk] || 0) + 1;
+                if (!r.IsCorrect) {
+                    chapterErrors[ch] = (chapterErrors[ch] || 0) + 1;
+                    skillDeficits[sk] = (skillDeficits[sk] || 0) + 1;
+                }
+            });
+        }
+    });
+
+    currentAuditStudentName = studentName;
+    window.lastEvaluatedSubject = detectedSubject;
+    globalChapterErrorsData = chapterErrors;
+    globalTotalQuestionsCount = totalQ;
+    let avgScore = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
+    let totalErrors = totalQ - totalCorrect;
+    let potentialGain = totalQ > 0 ? Math.round((totalErrors / totalQ) * 100) : 0;
+    let finalAttemptCount = uniqueAssessmentIds.size > 0 ? uniqueAssessmentIds.size : (validAttemptsCount || sessions.length);
+
+    const reminderBox = document.getElementById('longitudinal-reminder-box');
+    const reminderText = document.getElementById('longitudinal-reminder-text');
+    reminderBox.classList.remove('hidden');
+    reminderText.innerHTML = previousRemarksFound.length > 0 ? `<strong>Previous Assessment History & Parent Follow-Up:</strong><br>Past discussion comments: <br><em>${previousRemarksFound.join('<br>')}</em>` : `<strong>Parent Follow-Up Reminder:</strong><br><em>No explicit previous meeting comments found in uploaded history logs.</em>`;
+
+    renderChapterAttentionMatrix(chapterErrors);
+    renderTeacherItemizedReview(questionErrorCounts);
+    renderTopicMasteryMatrix(skillTotalCounts, skillDeficits);
+
+    const auditOutputElem = document.getElementById('teacher-audit-output');
+    auditOutputElem.classList.remove('hidden');
+
+    document.getElementById('audit-student-name').innerText = `Performance Report: ${studentName}`;
+    document.getElementById('audit-student-meta').innerHTML = `<strong>Class:</strong> ${studentClass} &bull; <strong>Subject:</strong> ${detectedSubject} &bull; <strong>Files Analyzed:</strong> ${sessions.map(s => s.fileName).join(', ')}`;
+    document.getElementById('audit-attempt-count').innerText = finalAttemptCount;
+    document.getElementById('audit-avg-score').innerText = `${avgScore}%`;
+    document.getElementById('audit-potential-gain').innerText = `+${potentialGain}% Potential`;
+
+    const trendlineElem = document.getElementById('trendline-display');
+    trendlineElem.innerHTML = sessionSummaries.length > 0 ? `
+        <div class="space-y-2">
+            <div class="text-xs font-bold text-slate-700">Longitudinal Session Trajectory (${sessionSummaries.length} Attempt${sessionSummaries.length > 1 ? 's' : ''}):</div>
+            ${sessionSummaries.map((sess, idx) => `
+                <div class="flex justify-between items-center bg-slate-50 p-2 rounded border border-slate-200">
+                    <span class="font-mono text-[11px] text-slate-600">Attempt ${idx + 1} (${sess.score}%)</span>
+                    <span class="font-bold text-blue-600">${sess.completionMinutes} mins</span>
+                </div>
+            `).join('')}
+        </div>
+    ` : '<span class="text-slate-400 italic">No attempt files analyzed yet.</span>';
+
+    // --- BUG FIX 2: Per-Assessment Segregated Pacing Diagnostics ---
+    const pacingBadge = document.getElementById('pacing-badge');
+    const pacingText = document.getElementById('pacing-details-text');
+    
+    if (sessionSummaries.length > 0) {
+        pacingBadge.className = "text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full";
+        pacingBadge.innerText = "Per-Attempt Breakdown";
+        
+        pacingText.className = "text-xs text-slate-700 leading-relaxed font-medium space-y-2 bg-white p-3 rounded-lg border border-slate-200";
+        pacingText.innerHTML = sessionSummaries.map((sess, idx) => {
+            let timeVal = parseFloat(sess.completionMinutes);
+            let speedRatio = timeVal / configuredTimerMinutes;
+            let statusBadge = "";
+            let rationale = "";
+
+            if (speedRatio < 0.15) {
+                statusBadge = '<span class="text-rose-600 font-bold">⚠️ Rapid / Rushed</span>';
+                rationale = 'Completed very quickly; potential guessing or high familiarity.';
+            } else if (speedRatio < 0.6) {
+                statusBadge = '<span class="text-emerald-600 font-bold">⏱️ Comfortable Pacing</span>';
+                rationale = 'Finished comfortably within the allocated time window.';
+            } else {
+                statusBadge = '<span class="text-blue-600 font-bold">📖 Thorough Pacing</span>';
+                rationale = 'Utilized most of the test duration thoughtfully.';
+            }
+
+            return `
+                <div class="border-b border-slate-100 pb-1.5 last:border-none last:pb-0">
+                    <div class="flex justify-between font-semibold">
+                        <span>Attempt #${idx + 1} (${sess.completionMinutes} mins):</span>
+                        ${statusBadge}
+                    </div>
+                    <div class="text-[11px] text-slate-500 italic">${rationale}</div>
+                </div>
+            `;
+        }).join('');
+    } else {
+        pacingBadge.className = "text-[10px] font-semibold bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full";
+        pacingBadge.innerText = "Awaiting Data";
+        pacingText.innerText = `Awaiting student report logs to analyze test timing and pacing habits...`;
+    }
+
+    const sortedGaps = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
+    document.getElementById('audit-gaps-list').innerHTML = sortedGaps.length > 0 ? sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${skillDeficits[g]} errors)</li>`).join('') : '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
+    
+    updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps);
+    auditOutputElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
         function renderTopicMasteryMatrix(skillTotalCounts, skillDeficits) {
             const container = document.getElementById('topic-mastery-matrix');
             const skills = Object.keys(skillTotalCounts);
