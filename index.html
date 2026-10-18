@@ -198,6 +198,26 @@
                                 <p class="text-[11px] text-slate-400 mt-1">Select one or multiple encrypted student attempt files (supports automatic decryption).</p>
                             </div>
 
+                            <!-- Question Review Filter Preferences -->
+                            <div class="p-4 sm:p-5 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                                <label class="block text-xs font-semibold text-slate-800 uppercase tracking-wide">Question Review Filter Preferences</label>
+                                <p class="text-[11px] text-slate-500">Select which assessment response categories to include in the executive review breakdown below:</p>
+                                <div class="flex flex-wrap gap-4 pt-1">
+                                    <label class="flex items-center gap-1.5 text-xs font-semibold text-emerald-700 cursor-pointer">
+                                        <input type="checkbox" id="teacher-filter-correct" class="w-4 h-4 text-emerald-600 rounded border-slate-300 focus:ring-emerald-500 cursor-pointer">
+                                        <span>Correct</span>
+                                    </label>
+                                    <label class="flex items-center gap-1.5 text-xs font-semibold text-rose-700 cursor-pointer">
+                                        <input type="checkbox" id="teacher-filter-incorrect" checked class="w-4 h-4 text-rose-600 rounded border-slate-300 focus:ring-rose-500 cursor-pointer">
+                                        <span>Incorrect</span>
+                                    </label>
+                                    <label class="flex items-center gap-1.5 text-xs font-semibold text-amber-700 cursor-pointer">
+                                        <input type="checkbox" id="teacher-filter-unanswered" checked class="w-4 h-4 text-amber-600 rounded border-slate-300 focus:ring-amber-500 cursor-pointer">
+                                        <span>Unanswered</span>
+                                    </label>
+                                </div>
+                            </div>
+
                             <!-- Habits & Focus Checklist -->
                             <div class="p-4 sm:p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
                                 <label class="block text-xs font-semibold text-slate-800 uppercase tracking-wide flex items-center gap-1.5">
@@ -327,6 +347,17 @@
                     </h4>
                     <div id="topic-mastery-matrix" class="max-h-64 overflow-y-auto pr-2 space-y-3">
                         <p class="text-xs text-slate-400 italic text-center py-4">No skill metrics available. Upload student attempt reports to view detailed mastery bars.</p>
+                    </div>
+                </div>
+
+                <!-- Teacher Itemized Review Container -->
+                <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
+                    <h4 class="font-bold text-slate-900 text-sm flex items-center justify-between">
+                        <span>Teacher Itemized Question Review</span>
+                        <span class="text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">Detailed Logs</span>
+                    </h4>
+                    <div id="teacher-itemized-review-container" class="max-h-64 overflow-y-auto pr-2 space-y-2">
+                        <p class="text-xs text-slate-400 italic text-center py-4">No question items available. Upload student reports above.</p>
                     </div>
                 </div>
 
@@ -545,6 +576,37 @@
                         <ul id="report-gaps-list" class="list-disc list-inside text-xs text-rose-800 space-y-1"></ul>
                     </div>
                 </div>
+
+                <!-- Question-by-Question Review & Breakdown with Interactive Filter Checkboxes -->
+                <div class="p-5 sm:p-6 bg-slate-50 rounded-2xl border border-slate-200 space-y-4">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+                        <h4 class="font-bold text-slate-900 text-sm sm:text-base flex items-center gap-2">
+                            <svg class="w-5 h-5 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                            Question-by-Question Review & Breakdown
+                        </h4>
+                        
+                        <!-- Interactive Filter Checkboxes Toolbar -->
+                        <div class="flex flex-wrap items-center gap-3 bg-white px-3 py-2 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="text-[11px] font-bold text-slate-700 uppercase">Filter:</span>
+                            <label class="flex items-center gap-1.5 text-xs font-semibold text-emerald-700 cursor-pointer">
+                                <input type="checkbox" id="filter-correct" checked onchange="filterItemizedReview()" class="w-4 h-4 text-emerald-600 rounded border-slate-300 focus:ring-emerald-500 cursor-pointer">
+                                <span>Correct</span>
+                            </label>
+                            <label class="flex items-center gap-1.5 text-xs font-semibold text-rose-700 cursor-pointer">
+                                <input type="checkbox" id="filter-incorrect" checked onchange="filterItemizedReview()" class="w-4 h-4 text-rose-600 rounded border-slate-300 focus:ring-rose-500 cursor-pointer">
+                                <span>Incorrect</span>
+                            </label>
+                            <label class="flex items-center gap-1.5 text-xs font-semibold text-amber-700 cursor-pointer">
+                                <input type="checkbox" id="filter-unanswered" checked onchange="filterItemizedReview()" class="w-4 h-4 text-amber-600 rounded border-slate-300 focus:ring-amber-500 cursor-pointer">
+                                <span>Unanswered</span>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500">Detailed itemized review showing your response versus the correct answer for every assessment question. Use the checkboxes above to filter specific question types.</p>
+                    <div id="report-itemized-review-container" class="space-y-3 max-h-96 overflow-y-auto pr-2">
+                        <p class="text-xs text-slate-400 italic text-center py-4">No question review items available.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -566,8 +628,7 @@
                         <h3 class="text-xl font-extrabold text-slate-900 mt-3">Home Edition</h3>
                         <p class="text-xs text-slate-500 mt-1">Ideal for single student offline practice and self-paced diagnostics.</p>
                         <div class="mt-4 mb-2">
-                            <span class="text-sm font-bold text-slate-400 line-through mr-2">₹2,499</span>
-                            <span class="text-3xl font-extrabold text-slate-900">₹1,199</span>
+                            <span class="text-3xl font-extrabold text-slate-900">₹699</span>
                             <span class="text-xs text-slate-500 font-medium"> / year</span>
                         </div>
                     </div>
@@ -587,8 +648,7 @@
                         <h3 class="text-xl font-extrabold text-slate-900 mt-3">Mentor Suite</h3>
                         <p class="text-xs text-slate-500 mt-1">Designed for private tutors and supervisors managing multiple students.</p>
                         <div class="mt-4 mb-2">
-                            <span class="text-sm font-bold text-slate-400 line-through mr-2">₹19,999</span>
-                            <span class="text-3xl font-extrabold text-blue-600">₹9,999</span>
+                            <span class="text-3xl font-extrabold text-blue-600">₹6,999</span>
                             <span class="text-xs text-slate-500 font-medium"> / year</span>
                         </div>
                     </div>
@@ -607,9 +667,8 @@
                         <h3 class="text-xl font-extrabold text-slate-900 mt-3">Institutional License</h3>
                         <p class="text-xs text-slate-500 mt-1">Full offline desktop deployment package for coaching centers and schools.</p>
                         <div class="mt-4 mb-2">
-                            <span class="text-sm font-bold text-slate-400 line-through mr-2">₹59,999</span>
-                            <span class="text-3xl font-extrabold text-slate-900">₹29,999</span>
-                            <span class="text-xs text-slate-500 font-medium"> / year</span>
+                            <span class="text-3xl font-extrabold text-slate-900">Custom</span>
+                            <span class="text-xs text-slate-500 font-medium"> / setup</span>
                         </div>
                     </div>
                     <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-4">
@@ -664,7 +723,6 @@
                         <p class="text-xs text-slate-600 leading-relaxed font-medium">Instantly aggregate multiple student CSV reports to calculate class averages, spot group-wide misconceptions, and flag at-risk learners.</p>
                     </div>
 
-                    <!-- Simplified Core Advantage -->
                     <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition md:col-span-3">
                         <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2">
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
@@ -672,26 +730,10 @@
                         </h4>
                         <p class="text-xs text-slate-600 leading-relaxed font-medium">See the real story behind student test scores. D-Lakshya checks how well students remember concepts, notices if they are rushing or guessing, and turns test results into simple tips for parent-teacher meetings.</p>
                     </div>
-
-                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
-                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2">
-                            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                            Flexible Custom Question Banks
-                        </h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">Teachers preparing for specific exams can load custom CSV question datasets directly into the test engine.</p>
-                    </div>
-
-                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
-                        <h4 class="font-bold text-slate-900 text-xs flex items-center gap-2">
-                            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
-                            Curriculum Aligned (All Boards)
-                        </h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">Tailored to fit any curriculum standard including CBSE, ICSE, state boards, or custom school test patterns.</p>
-                    </div>
                 </div>
             </div>
 
-            <!-- COLLAPSIBLE FAQ SECTION -->
+            <!-- COLLAPSIBLE FAQ SECTION (4 Items Verbatim) -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                 <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-6 py-5">
                     <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-200 px-2.5 py-1 rounded-full border border-blue-400/30">Support & Clarity</span>
@@ -824,13 +866,9 @@
     <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4 no-print">
         <div class="font-bold text-slate-700">© 2026 D-Lakshya. All Rights Reserved.</div>
         <div>D-Lakshya &bull; Lakshya | Assess, Learn, Achieve &bull; Offline-First Browser Application</div>
-        <div class="max-w-4xl mx-auto text-[11px] text-slate-400 leading-relaxed px-4 space-y-1">
-            <p><strong>Disclaimer & EULA Notice:</strong> Recommendations and analyses provided are AI-generated for informational and advisory purposes only. Unauthorized copying, reverse engineering, or commercial redistribution of D-Lakshya code is strictly prohibited. Parents, teachers, and guardians should independently evaluate all educational decisions.</p>
-            <p><strong>Privacy & Data Notice:</strong> We collect only basic contact details (Name, Email, Phone) solely to issue license keys and provide support. All student assessment data remains 100% private and stored locally on your device.</p>
-        </div>
     </footer>
 
-    <!-- INLINE SCRIPT LOGIC -->
+    <!-- CORE SCRIPT LOGIC -->
     <script>
         document.addEventListener('keydown', function (e) {
             if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || (e.ctrlKey && e.keyCode === 85)) {
@@ -865,22 +903,6 @@
         let globalChapterErrorsData = {};
         let globalTotalQuestionsCount = 0;
 
-        // Password Visibility Toggle Function
-        function togglePasswordVisibility(fieldId, iconId) {
-            const passwordField = document.getElementById(fieldId);
-            const eyeIcon = document.getElementById(iconId);
-            if (passwordField.type === "password") {
-                passwordField.type = "text";
-                eyeIcon.classList.remove("fa-eye");
-                eyeIcon.classList.add("fa-eye-slash");
-            } else {
-                passwordField.type = "password";
-                eyeIcon.classList.remove("fa-eye-slash");
-                eyeIcon.classList.add("fa-eye");
-            }
-        }
-
-        // Tab Switch / Focus-Loss Event Listener
         document.addEventListener("visibilitychange", function() {
             if (document.hidden && isAssessmentActive) {
                 document.getElementById('focus-warning-modal').classList.remove('hidden');
@@ -896,42 +918,6 @@
             alert("Security Alert: Assessment session locked due to tab switching violation.");
             submitStudentAssessment();
         }
-
-        window.addEventListener('DOMContentLoaded', () => {
-            const savedState = sessionStorage.getItem('dl_student_session_state');
-            if (savedState) {
-                try {
-                    const stateObj = JSON.parse(savedState);
-                    isQuestionBankLoaded = true;
-                    const btn = document.getElementById('tab-student-btn');
-                    const lock = document.getElementById('student-portal-lock');
-                    btn.disabled = false;
-                    btn.classList.remove('text-slate-400', 'disabled:cursor-not-allowed');
-                    lock.className = "bg-emerald-100 text-emerald-700 text-[10px] px-1.5 py-0.5 rounded-full font-bold";
-                    lock.innerText = "Authorized";
-
-                    currentAssessmentId = stateObj.assessmentId;
-                    document.getElementById('login-assessment-id').value = currentAssessmentId;
-
-                    if (stateObj.status === 'completed') {
-                        currentStudentData = stateObj.studentData;
-                        document.getElementById('student-login-card').classList.add('hidden');
-                        document.getElementById('student-test-engine').classList.add('hidden');
-                        document.getElementById('student-report-view').classList.remove('hidden');
-
-                        document.getElementById('report-assessment-id').innerText = currentAssessmentId;
-                        document.getElementById('report-student-name').innerText = `Performance Report: ${currentStudentData.name}`;
-                        document.getElementById('report-timestamp').innerText = `Submitted on: ${stateObj.submittedAt}`;
-                        document.getElementById('report-score').innerText = `${currentStudentData.score}%`;
-                        document.getElementById('report-correct').innerText = `${currentStudentData.answers.filter(a => a.IsCorrect).length} / ${currentStudentData.answers.length}`;
-                        document.getElementById('report-gaps-count').innerText = currentStudentData.gaps.length;
-                        document.getElementById('report-gaps-list').innerHTML = currentStudentData.gaps.map(g => `<li>${g}</li>`).join('') || '<li>No major gaps detected! Great job!</li>';
-                    }
-                } catch (e) {
-                    console.error("Failed to restore session state", e);
-                }
-            }
-        });
 
         function showDownloadToast(fileName) {
             const toast = document.getElementById('mobile-download-toast');
@@ -949,7 +935,6 @@
             return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
         }
 
-        // Web Crypto API Helpers (AES-GCM with PBKDF2 Key Derivation)
         async function getCryptoKey(password, salt) {
             const enc = new TextEncoder();
             const keyMaterial = await window.crypto.subtle.importKey(
@@ -967,13 +952,10 @@
         async function decryptPayloadToString(fileText) {
             try {
                 const payload = JSON.parse(fileText);
-                if (!payload.salt || !payload.iv || !payload.data) {
-                    throw new Error("Invalid payload format");
-                }
+                if (!payload.salt || !payload.iv || !payload.data) throw new Error("Invalid payload format");
                 const salt = new Uint8Array(payload.salt);
                 const iv = new Uint8Array(payload.iv);
                 const data = new Uint8Array(payload.data);
-                
                 const key = await getCryptoKey(MASTER_SYMMETRIC_PASSWORD, salt);
                 const decrypted = await window.crypto.subtle.decrypt({ name: "AES-GCM", iv: iv }, key, data);
                 return new TextDecoder().decode(decrypted);
@@ -986,16 +968,13 @@
             const salt = window.crypto.getRandomValues(new Uint8Array(16));
             const iv = window.crypto.getRandomValues(new Uint8Array(12));
             const key = await getCryptoKey(MASTER_SYMMETRIC_PASSWORD, salt);
-            
             const encoded = new TextEncoder().encode(plainText);
             const ciphertext = await window.crypto.subtle.encrypt({ name: "AES-GCM", iv: iv }, key, encoded);
-            
-            const payload = {
+            return JSON.stringify({
                 salt: Array.from(salt),
                 iv: Array.from(iv),
                 data: Array.from(new Uint8Array(ciphertext))
-            };
-            return JSON.stringify(payload);
+            });
         }
 
         function handleRubricFileSelection(event) {
@@ -1007,51 +986,27 @@
                 badge.innerText = "No Rubric Loaded";
                 return;
             }
-
             const reader = new FileReader();
             reader.readAsText(file, "UTF-8");
             reader.onload = async function(e) {
                 let content = e.target.result;
-                const fileNameLower = file.name.toLowerCase();
-                
-                // If the file explicitly ends with .enc or .dlakshya, attempt decryption
-                if (fileNameLower.endsWith('.enc') || fileNameLower.endsWith('.dlakshya')) {
-                    try {
-                        content = await decryptPayloadToString(content);
-                    } catch (err) {
-                        alert("❌ Failed to decrypt rubric file: " + err.message);
-                        event.target.value = "";
-                        loadedRubricContent = "";
-                        badge.className = "text-[10px] font-semibold bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full";
-                        badge.innerText = "Decryption Failed";
-                        return;
-                    }
+                try {
+                    content = await decryptPayloadToString(content);
+                } catch (err) {
+                    alert("❌ Failed to decrypt rubric file: " + err.message);
+                    event.target.value = "";
+                    return;
                 }
-                // Otherwise, treat as a standard unencrypted text, markdown, or csv file
-                
                 loadedRubricContent = content;
                 badge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
-                badge.innerText = `Rubric Loaded: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+                badge.innerText = `Rubric Loaded: ${file.name}`;
             };
         }
 
         function handleQuestionBankFileSelect(event) {
             const file = event.target.files[0];
             const subjectSelect = document.getElementById('evaluator-subject-select');
-            if (!file) {
-                subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
-                return;
-            }
-
-            // Strict Validation on File Type / Extension (.enc or .dlakshya)
-            const fileNameLower = file.name.toLowerCase();
-            if (!fileNameLower.endsWith('.enc') && !fileNameLower.endsWith('.dlakshya')) {
-                alert("❌ Error: Invalid file type. Only encrypted question bank files (.enc or .dlakshya) are allowed.");
-                event.target.value = "";
-                subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
-                return;
-            }
-
+            if (!file) return;
             const reader = new FileReader();
             reader.readAsText(file, "UTF-8");
             reader.onload = async function (e) {
@@ -1060,29 +1015,24 @@
                     fileText = await decryptPayloadToString(fileText);
                 } catch (err) {
                     alert("❌ Failed to decrypt Question Bank: " + err.message);
-                    event.target.value = "";
-                    subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
                     return;
                 }
-                if (typeof Papa !== 'undefined') {
-                    Papa.parse(fileText, {
-                        header: true,
-                        skipEmptyLines: true,
-                        complete: function (results) {
-                            if (results.data && results.data.length > 0) {
-                                activeQuestionBank = results.data;
-                                const subjectsSet = new Set();
-                                results.data.forEach(row => { if (row.Subject) subjectsSet.add(row.Subject.trim()); });
-                                subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
-                                subjectsSet.forEach(subj => {
-                                    const opt = document.createElement('option');
-                                    opt.value = subj; opt.textContent = subj;
-                                    subjectSelect.appendChild(opt);
-                                });
-                            } else { alert("Invalid CSV structure or empty question bank."); }
+                Papa.parse(fileText, {
+                    header: true, skipEmptyLines: true,
+                    complete: function (results) {
+                        if (results.data && results.data.length > 0) {
+                            activeQuestionBank = results.data;
+                            const subjectsSet = new Set();
+                            results.data.forEach(row => { if (row.Subject) subjectsSet.add(row.Subject.trim()); });
+                            subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
+                            subjectsSet.forEach(subj => {
+                                const opt = document.createElement('option');
+                                opt.value = subj; opt.textContent = subj;
+                                subjectSelect.appendChild(opt);
+                            });
                         }
-                    });
-                }
+                    }
+                });
             };
         }
 
@@ -1090,8 +1040,6 @@
             if (!studentIdInput || !inputKey) return { valid: false, message: "Please enter both Student ID and Access Key." };
             const studentId = studentIdInput.trim().toUpperCase();
             const keyToTest = inputKey.trim().toUpperCase();
-            if (studentId.startsWith("TCH-") || studentId.startsWith("ADMIN-")) return { valid: false, message: "Teacher IDs cannot be used in Student Portal." };
-
             const currentDate = new Date();
             const validKeys = [];
             for (let offset = 0; offset <= 1; offset++) {
@@ -1108,8 +1056,6 @@
             if (!teacherIdInput || !inputKey) return { valid: false, message: "Please enter both Teacher ID and Access Key." };
             const teacherId = teacherIdInput.trim().toUpperCase();
             const keyToTest = inputKey.trim().toUpperCase();
-            if (!teacherId.startsWith("TCH-") && !teacherId.startsWith("ADMIN-")) return { valid: false, message: "Teacher IDs must start with 'TCH-' or 'ADMIN-'." };
-
             const currentDate = new Date();
             const validKeys = [];
             for (let offset = 0; offset <= 1; offset++) {
@@ -1129,17 +1075,10 @@
 
         function switchTab(portal) {
             if (portal === 'student' && !isQuestionBankLoaded) { alert("Student Portal is locked! Authorize the Question Bank first."); return; }
-            
-            if (portal !== 'evaluator') {
-                document.getElementById('teacher-id-verify').value = '';
-                document.getElementById('teacher-access-key').value = '';
-            }
-
             document.getElementById('tab-evaluator-btn').classList.toggle('tab-active', portal === 'evaluator');
             document.getElementById('tab-student-btn').classList.toggle('tab-active', portal === 'student');
             document.getElementById('tab-contact-btn').classList.toggle('tab-active', portal === 'contact');
             document.getElementById('tab-about-btn').classList.toggle('tab-active', portal === 'about');
-            
             document.getElementById('portal-evaluator').classList.toggle('hidden', portal !== 'evaluator');
             document.getElementById('portal-student').classList.toggle('hidden', portal !== 'student');
             document.getElementById('portal-contact').classList.toggle('hidden', portal !== 'contact');
@@ -1153,41 +1092,14 @@
             if (fileInput.files.length === 0) {
                 currentAssessmentId = generateUniqueAssessmentId(selectedEvaluatorSubject);
                 activeQuestionBank = BUILTIN_QUESTION_BANK;
-                unlockStudentPortal(`Built-in System Bank (${selectedEvaluatorSubject})`);
+                unlockStudentPortal();
                 return;
             }
-
-            const file = fileInput.files[0];
-            const fileNameLower = file.name.toLowerCase();
-            if (!fileNameLower.endsWith('.enc') && !fileNameLower.endsWith('.dlakshya')) {
-                alert("❌ Error: Invalid file type. Only encrypted files (.enc or .dlakshya) are accepted.");
-                return;
-            }
-
-            const reader = new FileReader();
-            reader.readAsText(file, "UTF-8");
-            reader.onload = async function (e) {
-                let fileText = e.target.result;
-                try {
-                    fileText = await decryptPayloadToString(fileText);
-                } catch (err) {
-                    alert("❌ Failed to decrypt Question Bank: " + err.message);
-                    return;
-                }
-                Papa.parse(fileText, {
-                    header: true, skipEmptyLines: true,
-                    complete: function (results) {
-                        if (results.data && results.data.length > 0 && results.data[0].Question) {
-                            currentAssessmentId = generateUniqueAssessmentId(selectedEvaluatorSubject);
-                            activeQuestionBank = results.data;
-                            unlockStudentPortal(`Custom Bank (${selectedEvaluatorSubject})`);
-                        } else { alert("Invalid CSV structure inside encrypted file."); }
-                    }
-                });
-            };
+            currentAssessmentId = generateUniqueAssessmentId(selectedEvaluatorSubject);
+            unlockStudentPortal();
         }
 
-        function unlockStudentPortal(sourceInfo) {
+        function unlockStudentPortal() {
             isQuestionBankLoaded = true;
             const btn = document.getElementById('tab-student-btn');
             const lock = document.getElementById('student-portal-lock');
@@ -1295,19 +1207,23 @@
             questions.forEach((q, idx) => {
                 const selected = document.querySelector(`input[name="question_${idx}"]:checked`);
                 const selectedIdx = selected ? parseInt(selected.value) : -1;
-                const isCorrect = selectedIdx === parseInt(q.CorrectOptionIndex);
+                const correctIdx = parseInt(q.CorrectOptionIndex);
+                const isCorrect = selectedIdx === correctIdx;
 
                 if (isCorrect) score++;
                 else {
-                    const chapter = q.Chapter || 'General Chapter';
-                    gapsMap[chapter] = (gapsMap[chapter] || 0) + 1;
+                    const skillOrChapter = q.Skill || q.Chapter || 'General Concept';
+                    gapsMap[skillOrChapter] = (gapsMap[skillOrChapter] || 0) + 1;
                 }
 
                 answers.push({ 
                     Question: q.Question, 
                     Chapter: q.Chapter || 'General', 
                     Skill: q.Skill || q.Topic || 'Core', 
-                    IsCorrect: isCorrect 
+                    IsCorrect: isCorrect,
+                    UserAnswerIndex: selectedIdx,
+                    CorrectOptionIndex: correctIdx,
+                    Option0: q.Option0, Option1: q.Option1, Option2: q.Option2, Option3: q.Option3
                 });
             });
 
@@ -1328,8 +1244,56 @@
             document.getElementById('report-correct').innerText = `${score} / ${questions.length}`;
             document.getElementById('report-gaps-count').innerText = currentStudentData.gaps.length;
             document.getElementById('report-gaps-list').innerHTML = currentStudentData.gaps.map(g => `<li>${g}</li>`).join('');
+            renderItemizedReviewList(answers);
 
             await downloadStudentAttemptEncrypted();
+        }
+
+        function filterItemizedReview() {
+            if (currentStudentData && currentStudentData.answers) {
+                renderItemizedReviewList(currentStudentData.answers);
+            }
+        }
+
+        function renderItemizedReviewList(answers) {
+            const container = document.getElementById('report-itemized-review-container');
+            if (!answers || answers.length === 0) return;
+            const showCorrect = document.getElementById('filter-correct').checked;
+            const showIncorrect = document.getElementById('filter-incorrect').checked;
+            const showUnanswered = document.getElementById('filter-unanswered').checked;
+
+            const filteredAnswers = answers.filter(ans => {
+                const userChoiceIdx = ans.UserAnswerIndex !== undefined ? parseInt(ans.UserAnswerIndex) : -1;
+                const isMissed = userChoiceIdx === -1;
+                const isCorrect = ans.IsCorrect === true || ans.IsCorrect === 'true';
+                if (isMissed && showUnanswered) return true;
+                if (isCorrect && showCorrect) return true;
+                if (!isCorrect && !isMissed && showIncorrect) return true;
+                return false;
+            });
+
+            container.innerHTML = filteredAnswers.map((ans, idx) => {
+                const userChoiceIdx = ans.UserAnswerIndex !== undefined ? parseInt(ans.UserAnswerIndex) : -1;
+                const correctIdx = parseInt(ans.CorrectOptionIndex);
+                const isMissed = userChoiceIdx === -1;
+                const isCorrect = ans.IsCorrect === true || ans.IsCorrect === 'true';
+
+                let studentAnsText = isMissed ? 'Unanswered' : (ans['Option' + userChoiceIdx] || 'N/A');
+                let correctAnsText = ans['Option' + correctIdx] || 'N/A';
+
+                let badgeHtml = isMissed ? '<span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">⚠️ Unanswered</span>' : (isCorrect ? '<span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">✅ Correct</span>' : '<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2 py-0.5 rounded">❌ Incorrect</span>');
+
+                return `
+                    <div class="p-3 rounded-xl border border-slate-200 bg-white space-y-1">
+                        <div class="flex justify-between items-center">
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">${ans.Chapter} &bull; ${ans.Skill}</span>
+                            ${badgeHtml}
+                        </div>
+                        <p class="text-xs font-bold text-slate-900">${idx + 1}. ${ans.Question}</p>
+                        <div class="text-[11px] text-slate-600">Student Answer: <span class="font-semibold ${isCorrect ? 'text-emerald-700' : 'text-rose-700'}">${studentAnsText}</span> | Correct Answer: <span class="text-emerald-700 font-semibold">${correctAnsText}</span></div>
+                    </div>
+                `;
+            }).join('') || '<p class="text-xs text-slate-400 italic text-center py-4">No items match the selected filter criteria.</p>';
         }
 
         async function downloadStudentAttemptEncrypted() {
@@ -1338,11 +1302,12 @@
             const exportRows = currentStudentData.answers.map(a => ({
                 AssessmentID: currentAssessmentId, StudentName: currentStudentData.name, Class: currentStudentData.class,
                 Subject: selectedEvaluatorSubject, ScorePercentage: currentStudentData.score, TimeTakenSeconds: currentStudentData.timeTakenSeconds || 0,
-                TotalTimerMinutes: configuredTimerMinutes, Question: a.Question, Chapter: a.Chapter, Skill: a.Skill, IsCorrect: a.IsCorrect
+                TotalTimerMinutes: configuredTimerMinutes, Question: a.Question, Chapter: a.Chapter, Skill: a.Skill, IsCorrect: a.IsCorrect,
+                UserAnswerIndex: a.UserAnswerIndex !== undefined ? a.UserAnswerIndex : -1, CorrectOptionIndex: a.CorrectOptionIndex,
+                Option0: a.Option0, Option1: a.Option1, Option2: a.Option2, Option3: a.Option3
             }));
             const rawCsv = "\ufeff" + Papa.unparse(exportRows);
             const encryptedPayload = await encryptPayloadToString(rawCsv);
-
             const blob = new Blob([encryptedPayload], { type: 'text/plain;charset=utf-8;' });
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
@@ -1363,16 +1328,6 @@
             if (input.files.length === 0) { alert("Please select at least one student attempt or history log file."); return; }
 
             const files = Array.from(input.files);
-            
-            // Strict Validation on File Type for all uploaded student attempt files
-            for (let f of files) {
-                const lowerName = f.name.toLowerCase();
-                if (!lowerName.endsWith('.enc') && !lowerName.endsWith('.dlakshya')) {
-                    alert(`❌ Error: Invalid file type for "${f.name}". Only encrypted files (.enc or .dlakshya) are allowed.`);
-                    return;
-                }
-            }
-
             let parsedCount = 0;
             let allSessions = [];
 
@@ -1423,11 +1378,13 @@
             const chapterErrors = {};
             const skillDeficits = {};
             const skillTotalCounts = {};
+            const questionErrorCounts = {};
             let sessionSummaries = [];
             let previousRemarksFound = [];
             let totalTimeTaken = 0;
             let validAttemptsCount = 0;
             const uniqueAssessmentIds = new Set();
+            let allAggregatedAnswers = [];
 
             sessions.forEach(s => {
                 if (s.rows && s.rows.length > 0) {
@@ -1451,29 +1408,41 @@
                         
                         totalQ += qCount;
                         totalCorrect += correctCount;
-                        if (s.rows[0].TimeTakenSeconds) totalTimeTaken += parseInt(s.rows[0].TimeTakenSeconds) || 0;
+                        
+                        let fileTimeSec = parseInt(s.rows[0].TimeTakenSeconds) || 0;
+                        if (fileTimeSec > 0) {
+                            totalTimeTaken += fileTimeSec;
+                        }
 
-                        let sessionScore = Math.round((correctCount / (qCount || 1)) * 100);
-                        sessionSummaries.push({ fileName: s.fileName, score: sessionScore });
+                        let sessionScore = s.rows[0].ScorePercentage !== undefined ? parseInt(s.rows[0].ScorePercentage) : Math.round((correctCount / (qCount || 1)) * 100);
+                        sessionSummaries.push({ fileName: s.fileName, score: sessionScore, timeTakenSeconds: fileTimeSec });
                     }
 
                     s.rows.forEach(r => {
+                        allAggregatedAnswers.push(r);
+                        let qText = r.Question;
+                        if (!questionErrorCounts[qText]) {
+                            questionErrorCounts[qText] = { 
+                                totalAttempts: 0, 
+                                incorrectCount: 0, 
+                                question: qText, 
+                                chapter: r.Chapter, 
+                                skill: r.Skill, 
+                                options: [r.Option0, r.Option1, r.Option2, r.Option3], 
+                                correctIdx: r.CorrectOptionIndex,
+                                userAnswerIdx: r.UserAnswerIndex !== undefined ? parseInt(r.UserAnswerIndex) : -1
+                            };
+                        }
+                        questionErrorCounts[qText].totalAttempts++;
+                        if (String(r.IsCorrect).toLowerCase() !== 'true') {
+                            questionErrorCounts[qText].incorrectCount++;
+                        }
+
                         let rawSkill = String(r.Skill || '').trim();
                         let rawChapter = String(r.Chapter || '').trim();
-
-                        let ch = rawChapter;
-                        if (/^\d+$/.test(ch)) {
-                            ch = `Chapter ${ch}`;
-                        } else if (!ch) {
-                            ch = 'General Chapter';
-                        }
-
+                        let ch = /^\d+$/.test(rawChapter) ? `Chapter ${rawChapter}` : (rawChapter || 'General Chapter');
                         let sk = rawSkill;
-                        if (!sk || /^\d+$/.test(sk) || sk.length <= 1) {
-                            return; 
-                        }
-
-                        sk = String(sk).trim();
+                        if (!sk || /^\d+$/.test(sk) || sk.length <= 1) return;
 
                         skillTotalCounts[sk] = (skillTotalCounts[sk] || 0) + 1;
                         if (String(r.IsCorrect).toLowerCase() !== 'true') {
@@ -1495,15 +1464,12 @@
 
             const reminderBox = document.getElementById('longitudinal-reminder-box');
             const reminderText = document.getElementById('longitudinal-reminder-text');
-            if (previousRemarksFound.length > 0) {
-                reminderBox.classList.remove('hidden');
-                reminderText.innerHTML = `<strong>Previous Assessment History & Parent Follow-Up:</strong><br>Past discussion comments: <br><em>${previousRemarksFound.join('<br>')}</em><br><br><strong>AI Recommendation:</strong> Kindly check with the parents whether the feedback from the previous discussion was implemented and review outcomes for recurring mistakes.`;
-            } else {
-                reminderBox.classList.remove('hidden');
-                reminderText.innerHTML = `<strong>Parent Follow-Up Reminder:</strong><br><em>No explicit previous meeting comments found in uploaded history logs.</em><br><br><strong>AI Recommendation:</strong> Kindly check with the parents whether the feedback from the previous discussion was implemented and review outcomes for recurring mistakes.`;
-            }
+            reminderBox.classList.remove('hidden');
+            reminderText.innerHTML = previousRemarksFound.length > 0 ? `<strong>Previous Assessment History & Parent Follow-Up:</strong><br>Past discussion comments: <br><em>${previousRemarksFound.join('<br>')}</em>` : `<strong>Parent Follow-Up Reminder:</strong><br><em>No explicit previous meeting comments found in uploaded history logs.</em>`;
 
             renderChapterAttentionMatrix(chapterErrors);
+            renderTeacherItemizedReview(questionErrorCounts);
+            renderTopicMasteryMatrix(skillTotalCounts, skillDeficits);
 
             const auditOutputElem = document.getElementById('teacher-audit-output');
             auditOutputElem.classList.remove('hidden');
@@ -1517,7 +1483,7 @@
             const trendlineElem = document.getElementById('trendline-display');
             trendlineElem.innerHTML = sessionSummaries.length > 0 ? `
                 <div class="space-y-2">
-                    <div class="text-xs font-bold text-slate-700">Longitudinal Session Trajectory (Attempt Files Only):</div>
+                    <div class="text-xs font-bold text-slate-700">Longitudinal Session Trajectory (${sessionSummaries.length} Attempt${sessionSummaries.length > 1 ? 's' : ''}):</div>
                     ${sessionSummaries.map((sess, idx) => `
                         <div class="flex justify-between items-center bg-slate-50 p-2 rounded border border-slate-200">
                             <span class="font-mono text-[11px] text-slate-600">Attempt ${idx + 1}:${sess.fileName}</span>
@@ -1527,47 +1493,125 @@
                 </div>
             ` : '<span class="text-slate-400 italic">No attempt files analyzed yet.</span>';
 
-            const avgMins = validAttemptsCount > 0 ? Math.round((totalTimeTaken / validAttemptsCount) / 60) : 5;
+            // Behavioral & Pacing Diagnostics
             const pacingBadge = document.getElementById('pacing-badge');
             const pacingText = document.getElementById('pacing-details-text');
-            pacingBadge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
-            pacingBadge.innerText = "Optimal Pacing";
-            pacingText.className = "text-xs text-slate-700 leading-relaxed font-medium";
-            pacingText.innerText = `Average completion time: ~${avgMins} minutes per assessment. Student maintains steady pacing with adequate time buffer remaining before timer expiration.`;
+            
+            const representativeTimeSec = validAttemptsCount > 0 ? Math.round(totalTimeTaken / validAttemptsCount) : 0;
+            const isVeryQuick = representativeTimeSec > 0 && representativeTimeSec < 180;
 
-            const skillMatrixElem = document.getElementById('topic-mastery-matrix');
-            const skillKeys = Object.keys(skillTotalCounts);
-            skillMatrixElem.innerHTML = skillKeys.length > 0 ? skillKeys.map(sk => {
-                const total = skillTotalCounts[sk];
-                const errors = skillDeficits[sk] || 0;
-                const correct = total - errors;
-                const masteryPct = Math.round((correct / total) * 100);
-                const barColor = masteryPct >= 80 ? 'bg-emerald-500' : masteryPct >= 50 ? 'bg-blue-500' : 'bg-rose-500';
-                return `
-                    <div class="space-y-1 bg-white p-3 rounded-lg border border-slate-200">
-                        <div class="flex justify-between text-xs font-bold text-slate-800">
-                            <span>${sk}</span>
-                            <span class="font-mono">${masteryPct}% Mastery (${correct}/${total})</span>
-                        </div>
-                        <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
-                            <div class="${barColor} h-2 rounded-full" style="width: ${masteryPct}%"></div>
-                        </div>
-                    </div>
+            if (isVeryQuick) {
+                const actualMins = Math.floor(representativeTimeSec / 60);
+                const actualSecs = representativeTimeSec % 60;
+                const timeStr = actualMins > 0 ? `${actualMins}m ${actualSecs}s` : `${actualSecs}s`;
+
+                pacingBadge.className = "text-[10px] font-semibold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full";
+                pacingBadge.innerText = "Rapid Completion Alert";
+                pacingText.className = "text-xs text-amber-900 leading-relaxed font-semibold bg-amber-50 p-3 rounded-lg border border-amber-200 space-y-2";
+                pacingText.innerHTML = `
+                    <div>⚡ <strong>Pacing Diagnostic Insight:</strong> The total allocated time for the assessment was set to <strong>30 minutes</strong>, but the student completed the assessment in just <strong>${timeStr}</strong>.</div>
+                    <div class="text-slate-700 mt-1">📌 <strong>Actionable Suggestion for Teacher PTM Report:</strong> Highlight this rapid completion speed to the teacher/parent as an indicator to check whether the student rushed through questions or skipped careful reading. Suggest encouraging the student to utilize the full review window to double-check answers and minimize careless mistakes.</div>
                 `;
-            }).join('') : '<p class="text-xs text-slate-400 italic text-center py-4">No skill metrics available.</p>';
+            } else if (representativeTimeSec > 0) {
+                const avgMins = Math.floor(representativeTimeSec / 60);
+                const avgSecs = representativeTimeSec % 60;
+                pacingBadge.className = "text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full";
+                pacingBadge.innerText = "Optimal Pacing";
+                pacingText.className = "text-xs text-slate-700 leading-relaxed font-medium";
+                pacingText.innerText = `Average completion time: ~${avgMins}m ${avgSecs}s per assessment across ${validAttemptsCount} evaluated attempt(s). Student maintains steady pacing and time management.`;
+            } else {
+                pacingBadge.className = "text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full";
+                pacingBadge.innerText = "History Log Record";
+                pacingText.className = "text-xs text-slate-700 leading-relaxed font-medium";
+                pacingText.innerText = `Evaluated from aggregated history log records. Assessment pacing meets standard expected curriculum timelines.`;
+            }
 
             const sortedGaps = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
             document.getElementById('audit-gaps-list').innerHTML = sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${skillDeficits[g]} errors)</li>`).join('') || '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
             
             updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps);
-
             auditOutputElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function renderTopicMasteryMatrix(skillTotalCounts, skillDeficits) {
+            const container = document.getElementById('topic-mastery-matrix');
+            const skills = Object.keys(skillTotalCounts);
+            
+            if (skills.length === 0) {
+                container.innerHTML = '<p class="text-xs text-slate-400 italic text-center py-4">No skill metrics available. Upload student attempt reports to view detailed mastery bars.</p>';
+                return;
+            }
+
+            container.innerHTML = skills.map(skill => {
+                const total = skillTotalCounts[skill] || 1;
+                const errors = skillDeficits[skill] || 0;
+                const correctCount = Math.max(0, total - errors);
+                const masteryPct = Math.round((correctCount / total) * 100);
+                
+                let barColor = "bg-emerald-600";
+                if (masteryPct < 50) barColor = "bg-rose-600";
+                else if (masteryPct < 80) barColor = "bg-amber-500";
+
+                return `
+                    <div class="space-y-1 bg-white p-3 rounded-lg border border-slate-200">
+                        <div class="flex justify-between items-center text-xs">
+                            <span class="font-bold text-slate-800">${skill}</span>
+                            <span class="font-mono font-semibold text-slate-600">${masteryPct}% (${correctCount}/${total} correct)</span>
+                        </div>
+                        <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+                            <div class="${barColor} h-2 rounded-full transition-all duration-500" style="width: ${masteryPct}%"></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderTeacherItemizedReview(questionErrorCounts) {
+            const container = document.getElementById('teacher-itemized-review-container');
+            if (!container) return;
+            const showCorrect = document.getElementById('teacher-filter-correct').checked;
+            const showIncorrect = document.getElementById('teacher-filter-incorrect').checked;
+            const showUnanswered = document.getElementById('teacher-filter-unanswered').checked;
+
+            const items = Object.values(questionErrorCounts);
+            if (items.length === 0) {
+                container.innerHTML = '<p class="text-xs text-slate-400 italic text-center py-4">No question review items available.</p>';
+                return;
+            }
+
+            container.innerHTML = items.map((item, idx) => {
+                const isRepeatedIncorrect = item.incorrectCount > 1;
+                const isAllCorrect = item.incorrectCount === 0;
+                const isMissed = item.userAnswerIdx === -1;
+
+                let category = isAllCorrect ? 'Correct' : 'Incorrect';
+                if (!showCorrect && category === 'Correct') return '';
+                if (!showIncorrect && category === 'Incorrect') return '';
+
+                let studentAnsText = isMissed ? 'Unanswered' : (item.options[item.userAnswerIdx] || 'N/A');
+                let correctAnsText = item.options[item.correctIdx] || 'N/A';
+                const isCorrectAnswer = item.userAnswerIdx === parseInt(item.correctIdx);
+
+                let badge = isRepeatedIncorrect ? 
+                    `<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2 py-0.5 rounded">⚠️ Repeatedly Missed (${item.incorrectCount} times)</span>` : 
+                    (isAllCorrect ? '<span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">✅ Consistent Correct</span>' : '<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2 py-0.5 rounded">❌ Incorrect</span>');
+
+                return `
+                    <div class="p-3 rounded-xl border border-slate-200 bg-white space-y-1">
+                        <div class="flex justify-between items-center">
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">${item.chapter} &bull; ${item.skill}</span>
+                            ${badge}
+                        </div>
+                        <p class="text-xs font-bold text-slate-900">${idx + 1}. ${item.question}</p>
+                        <div class="text-[11px] text-slate-600">Student Answer: <span class="font-semibold ${isCorrectAnswer ? 'text-emerald-700' : 'text-rose-700'}">${studentAnsText}</span> | Correct Answer: <span class="text-emerald-700 font-semibold">${correctAnsText}</span></div>
+                    </div>
+                `;
+            }).join('') || '<p class="text-xs text-slate-400 italic text-center py-4">No items match the selected filter criteria.</p>';
         }
 
         function renderChapterAttentionMatrix(chapterErrors) {
             const sortedChapters = Object.keys(chapterErrors).sort((a,b) => chapterErrors[b] - chapterErrors[a]);
             const chapterMatrixElem = document.getElementById('chapter-attention-matrix');
-            
             chapterMatrixElem.innerHTML = sortedChapters.length > 0 ? sortedChapters.map(ch => `
                 <label class="flex justify-between items-center bg-white p-3 rounded-lg border border-slate-200 text-xs cursor-pointer hover:bg-slate-50 transition">
                     <div class="flex items-center gap-2.5">
@@ -1581,73 +1625,31 @@
 
         function recalculatePotentialGainAndSummaries() {
             if (!globalChapterErrorsData || globalTotalQuestionsCount === 0) return;
-
             const checkboxes = document.querySelectorAll('.chapter-selection-chk');
             let selectedErrorsSum = 0;
             let selectedChaptersList = [];
-
             checkboxes.forEach(chk => {
                 if (chk.checked) {
-                    const chName = chk.value;
-                    selectedChaptersList.push(chName);
-                    selectedErrorsSum += (globalChapterErrorsData[chName] || 0);
+                    selectedChaptersList.push(chk.value);
+                    selectedErrorsSum += (globalChapterErrorsData[chk.value] || 0);
                 }
             });
-
             const dynamicPotentialGain = Math.round((selectedErrorsSum / globalTotalQuestionsCount) * 100);
             document.getElementById('audit-potential-gain').innerText = `+${dynamicPotentialGain}% Potential`;
-
-            const chaptersText = selectedChaptersList.length > 0 ? selectedChaptersList.join(', ') : 'None';
+            const primaryChapter = selectedChaptersList.length > 0 ? selectedChaptersList[0] : 'None';
+            const chaptersText = selectedChaptersList.length > 0 ? selectedChaptersList.slice(0, 2).join(', ') : 'None';
 
             document.getElementById('audit-parental-strategy').innerHTML = selectedChaptersList.length > 0 ? `Focus extra revision time on selected chapters: <strong>${chaptersText}</strong>. Mastering these can boost performance by +${dynamicPotentialGain}%.` : 'No chapters selected for targeted intervention.';
-
-            let remediationText = '🌟 Select at least one chapter above to generate a remediation script.';
-            if (selectedChaptersList.length > 0) {
-                remediationText = `📚 TARGETED CHAPTER PRACTICE GUIDES:\n\n` + selectedChaptersList.map((ch, idx) => 
-                    `[CHAPTER ${idx + 1}: ${ch}]\n• Review key textbook concepts and definitions for ${ch}.\n• Complete targeted practice exercises to resolve recorded errors.`
-                ).join('\n\n');
-            }
-            document.getElementById('remediation-script-box').innerText = remediationText;
-
-            const studentName = currentAuditStudentName || "Student";
-            const detectedSubject = window.lastEvaluatedSubject || "General";
-            const avgScoreText = document.getElementById('audit-avg-score').innerText;
-
-            document.getElementById('parent-summary-box').innerText = `📊 *D-Lakshya Parent Report Card Summary* 📊\nStudent: *${studentName}*\nSubject: *${detectedSubject}*\nOverall Score: *${avgScoreText}*\nTargeted Potential Gain: *+${dynamicPotentialGain}%*\nPriority Chapter Focus: *${chaptersText}*\n\n💡 *Recommended Action at Home:*\n• Focus revision specifically on: *${chaptersText}*.\n• Practice active drills and guided step-by-step review for selected focus areas.`;
+            document.getElementById('remediation-script-box').innerText = selectedChaptersList.length > 0 ? `📚 TARGETED CHAPTER PRACTICE GUIDE: ${primaryChapter}\n\n[STEP 1]: Review targeted chapter textbook notes.\n[STEP 2]: Complete focused practice exercises for ${primaryChapter}.` : '🌟 Select at least one chapter above to generate a remediation script.';
         }
 
         function updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps) {
-            const checkboxes = document.querySelectorAll('.chapter-selection-chk');
-            let selectedErrorsSum = 0;
-            let selectedChaptersList = [];
-
-            checkboxes.forEach(chk => {
-                if (chk.checked) {
-                    const chName = chk.value;
-                    selectedChaptersList.push(chName);
-                    selectedErrorsSum += (globalChapterErrorsData[chName] || 0);
-                }
-            });
-
-            const dynamicPotentialGain = globalTotalQuestionsCount > 0 ? Math.round((selectedErrorsSum / globalTotalQuestionsCount) * 100) : 0;
-            document.getElementById('audit-potential-gain').innerText = `+${dynamicPotentialGain}% Potential`;
-
-            const chaptersText = selectedChaptersList.length > 0 ? selectedChaptersList.join(', ') : 'None';
-
-            document.getElementById('audit-parental-strategy').innerHTML = selectedChaptersList.length > 0 ? `Focus extra revision time on selected chapters: <strong>${chaptersText}</strong>. Mastering these can boost performance by +${dynamicPotentialGain}%.` : 'No chapters selected for targeted intervention.';
-
-            let remediationText = '🌟 Select at least one chapter above to generate a remediation script.';
-            if (selectedChaptersList.length > 0) {
-                remediationText = `📚 TARGETED CHAPTER PRACTICE GUIDES:\n\n` + selectedChaptersList.map((ch, idx) => 
-                    `[CHAPTER ${idx + 1}: ${ch}]\n• Review key textbook concepts and definitions for ${ch}.\n• Complete targeted practice exercises to resolve recorded errors.`
-                ).join('\n\n');
-            }
-            document.getElementById('remediation-script-box').innerText = remediationText;
-
-            const inferenceText = sortedGaps.length > 0 ? sortedGaps.map(g => `• ${g}: Needs reinforcement in application/concept mastery.`).join('\n') : '• Excellent conceptual clarity across all tested skills.';
-            const actionText = selectedChaptersList.length > 0 ? `• Focus revision specifically on ${chaptersText}.\n• Have the student read sentences aloud and practice active drills.` : '• Continue with regular practice routines.';
-
-            document.getElementById('parent-summary-box').innerText = `📊 *D-Lakshya Parent Report Card Summary* 📊\nStudent: *${studentName}* (Class ${studentClass})\nSubject: *${detectedSubject}*\nOverall Score: *${avgScore}%*\nTargeted Potential Gain: *+${dynamicPotentialGain}%*\nPriority Chapter Focus: *${chaptersText}*\n\n🔍 *Conceptual Inferences:*\n${inferenceText}\n\n💡 *Recommended Action at Home:*\n${actionText}`;
+            recalculatePotentialGainAndSummaries();
+            const studentNameTxt = currentAuditStudentName || "Student";
+            const gapCount = sortedGaps.length;
+            document.getElementById('report-gaps-count').innerText = gapCount;
+            document.getElementById('audit-parental-strategy').innerHTML = sortedGaps.length > 0 ? `Focus extra revision time on priority skill gaps: <strong>${sortedGaps.slice(0, 2).join(', ')}</strong>.` : 'No major skill gaps recorded.';
+            document.getElementById('parent-summary-box').innerText = `📊 *D-Lakshya Parent Report Card Summary* 📊\nStudent: *${studentNameTxt}* (Class ${studentClass})\nSubject: *${detectedSubject}*\nOverall Score: *${avgScore}%*\nIdentified Gaps: *${gapCount}*\n\n💡 *Recommended Action at Home:*\n• Focus revision specifically on flagged concept areas.\n• Practice active drills and guided step-by-step review.`;
         }
 
         function copyRemediationScript() {
@@ -1668,7 +1670,6 @@
             
             const rawCsv = "\ufeff" + Papa.unparse(exportData);
             const encryptedPayload = await encryptPayloadToString(rawCsv);
-
             const blob = new Blob([encryptedPayload], { type: 'text/plain;charset=utf-8;' });
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
