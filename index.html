@@ -1389,7 +1389,6 @@ function evaluateAIStudentAudit(sessions) {
 
             sessions.forEach(s => {
                 if (s.rows && s.rows.length > 0) {
-                    // Normalize row keys to handle variations safely
                     s.rows = s.rows.map(row => {
                         const normalized = {};
                         for (let key in row) {
@@ -1401,11 +1400,11 @@ function evaluateAIStudentAudit(sessions) {
                             Subject: normalized['subject'] || detectedSubject,
                             AssessmentID: normalized['assessmentid'] || 'ASSESS-01',
                             Question: normalized['question'] || 'Untitled Question',
-                            Chapter: normalized['chapter'] || 'General Chapter',
+                            Chapter: normalized['chapter'] || normalized['chap'] || 'General Chapter',
                             Skill: normalized['skill'] || normalized['topic'] || 'Core',
                             IsCorrect: String(normalized['iscorrect'] || '').trim().toLowerCase() === 'true',
-                            UserAnswerIndex: normalized['useranswerindex'] !== undefined ? parseInt(normalized['useranswerindex']) : -1,
-                            CorrectOptionIndex: normalized['correctoptionindex'] !== undefined ? parseInt(normalized['correctoptionindex']) : 0,
+                            UserAnswerIndex: normalized['useranswerindex'] !== undefined && normalized['useranswerindex'] !== '' ? parseInt(normalized['useranswerindex']) : -1,
+                            CorrectOptionIndex: normalized['correctoptionindex'] !== undefined && normalized['correctoptionindex'] !== '' ? parseInt(normalized['correctoptionindex']) : 0,
                             TimeTakenSeconds: parseInt(normalized['timetakenseconds'] || 0),
                             ScorePercentage: parseInt(normalized['scorepercentage'] || 0),
                             Option0: normalized['option0'] || '',
@@ -1472,7 +1471,7 @@ function evaluateAIStudentAudit(sessions) {
                         let rawChapter = String(r.Chapter || '').trim();
                         let ch = /^\d+$/.test(rawChapter) ? `Chapter ${rawChapter}` : (rawChapter || 'General Chapter');
                         let sk = rawSkill;
-                        if (!sk || /^\d+$/.test(sk) || sk.length <= 1) sk = ch; // Fallback to chapter if skill is missing
+                        if (!sk || /^\d+$/.test(sk) || sk.length <= 1) sk = ch;
 
                         skillTotalCounts[sk] = (skillTotalCounts[sk] || 0) + 1;
                         if (!r.IsCorrect) {
