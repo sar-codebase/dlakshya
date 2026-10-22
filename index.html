@@ -267,14 +267,16 @@
 
             <!-- Comprehensive Teacher Audit Output Section -->
             <div id="teacher-audit-output" class="hidden bg-white p-5 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6 transition-all duration-300">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-6 border-b border-slate-200 gap-4">
+
+
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-5 border-b border-slate-200 gap-4 bg-slate-50/80 p-5 rounded-xl border border-slate-200 shadow-sm">
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider bg-blue-100 text-blue-800 px-3 py-1 rounded-full">AI Executive Summary Report</span>
-                        <h3 id="audit-student-name" class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">Student Cumulative Analysis</h3>
-                        <p id="audit-student-meta" class="text-xs text-slate-500 font-mono mt-1"></p>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-100 px-2.5 py-1 rounded-md">Executive Assessment Audit</span>
+                        <h3 id="audit-student-name" class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2 tracking-tight">Performance Report</h3>
+                        <p id="audit-student-meta" class="text-xs text-slate-600 font-mono mt-1"></p>
                     </div>
                     <div class="flex items-center gap-2">
-                        <button onclick="window.print()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs transition flex items-center gap-2 border border-slate-300 shadow-sm">
+                        <button onclick="window.print()" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-xs transition flex items-center gap-2 shadow-sm">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
                             Print / Save as PDF (PTM Report)
                         </button>
@@ -764,15 +766,60 @@
                 </div>
             </div>
 
-            <!-- COLLAPSIBLE FAQ SECTION (4 Items Verbatim) -->
+ 
+<!-- COLLAPSIBLE FAQ SECTION -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                 <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-6 py-5">
-
                     <h3 class="text-lg sm:text-xl font-bold mt-1.5">Frequently Asked Questions (FAQ)</h3>
                     <p class="text-xs text-blue-200 mt-0.5">Click any question below to expand and view the answer.</p>
                 </div>
 
                 <div class="p-6 space-y-3">
+                    <!-- FAQ 1: Encrypted Files -->
+                    <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
+                        <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
+                            <span>Q: Why are we not able to see or directly open the question bank and student report log files?</span>
+                            <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
+                            <strong>Answer:</strong> The question bank files and student report logs are intentionally encrypted and stored in secure, proprietary formats for strict data security, privacy protection, and intellectual property defense. Because D-Lakshya operates on an offline-first architecture, direct external access or manual modification of these raw files is restricted to prevent accidental corruption, data leaks, or unauthorized tampering with evaluation metrics. All parsing, decryption, and processing occur securely inside your browser environment.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 2: Data Safety & Offline Processing -->
+                    <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
+                        <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
+                            <span>Q: Is my student and assessment data safe since it's processed offline?</span>
+                            <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
+                            <strong>Answer:</strong> Yes. All student assessment data, pacing habits, and diagnostic logs remain 100% private and are stored locally on your device's browser storage. No personal student information or performance logs are ever uploaded to external servers or cloud databases.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 3: License Key Troubleshooting -->
+                    <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
+                        <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
+                            <span>Q: What should I do if my license key is not recognized or has expired?</span>
+                            <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
+                            <strong>Answer:</strong> License keys are tied to authorized device sessions and registered user credentials. If you encounter an activation error, please verify that your internet connection is active temporarily to re-verify the license, or reach out via our support portal with your registered Name and Email to reissue or renew your key.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 4: Multiple Devices / Browsers -->
+                    <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
+                        <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
+                            <span>Q: Can I use D-Lakshya across multiple different devices or browsers?</span>
+                            <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
+                            <strong>Answer:</strong> Because student logs and configurations are securely housed locally within your browser storage to maintain data privacy, data does not automatically sync across different devices. It is recommended to maintain your assessment workflow within your primary authorized browser environment.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 5: Continuous Assessments & Repetitive Use -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Is D-Lakshya a one-time assessment test, or can it be used repeatedly?</span>
@@ -783,6 +830,7 @@
                         </div>
                     </details>
 
+                    <!-- FAQ 6: Offline Connection -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Do I need an active internet connection to run tests?</span>
@@ -793,7 +841,8 @@
                         </div>
                     </details>
 
-                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
+                    <!-- FAQ 7: Custom Syllabus -->
+                    <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: How do I add my own syllabus or quarterly exam questions?</span>
                             <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -803,6 +852,7 @@
                         </div>
                     </details>
 
+                    <!-- FAQ 8: PTM Reports -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Can teachers use the generated PDF reports during Parent-Teacher Meetings (PTMs)?</span>
@@ -813,7 +863,7 @@
                         </div>
                     </details>
 
-                    <!-- New Individual Plan Teacher FAQ -->
+                    <!-- FAQ 9: Individual Plan Mentor Review -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: For the Individual Plan, who acts as the teacher or supervisor to review reports?</span>
@@ -824,9 +874,10 @@
                             <p class="text-blue-900 font-semibold"><em>Note: Upon request, we can also help arrange a qualified mentor or teacher to review the student's reports, subject to availability and nominal, affordable service charges.</em></p>
                         </div>
                     </details>
-
                 </div>
             </div>
+
+
 
             <!-- Terms of Use & EULA Section -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
@@ -1732,15 +1783,41 @@ function evaluateAIStudentAudit(sessions) {
             document.getElementById('remediation-script-box').innerText = selectedChaptersList.length > 0 ? `📚 TARGETED CHAPTER PRACTICE GUIDE: ${primaryChapter}\n\n[STEP 1]: Review targeted chapter textbook notes.\n[STEP 2]: Complete focused practice exercises for ${primaryChapter}.` : '🌟 Select at least one chapter above to generate a remediation script.';
         }
 
-        function updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps) {
-            recalculatePotentialGainAndSummaries();
-            const studentNameTxt = currentAuditStudentName || "Student";
-            const gapCount = sortedGaps.length;
-            document.getElementById('report-gaps-count').innerText = gapCount;
-            document.getElementById('audit-parental-strategy').innerHTML = sortedGaps.length > 0 ? `Focus extra revision time on priority skill gaps: <strong>${sortedGaps.slice(0, 2).join(', ')}</strong>.` : 'No major skill gaps recorded.';
-            document.getElementById('parent-summary-box').innerText = `📊 *D-Lakshya Parent Report Card Summary* 📊\nStudent: *${studentNameTxt}* (Class ${studentClass})\nSubject: *${detectedSubject}*\nOverall Score: *${avgScore}%*\nIdentified Gaps: *${gapCount}*\n\n💡 *Recommended Action at Home:*\n• Focus revision specifically on flagged concept areas.\n• Practice active drills and guided step-by-step review.`;
-        }
+function updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps) {
+    recalculatePotentialGainAndSummaries();
+    const studentNameTxt = currentAuditStudentName || "Student";
+    const gapCount = sortedGaps.length;
+    document.getElementById('report-gaps-count').innerText = gapCount;
+    document.getElementById('audit-parental-strategy').innerHTML = sortedGaps.length > 0 ? `Focus extra revision time on priority skill gaps: <strong>${sortedGaps.slice(0, 2).join(', ')}</strong>.` : 'No major skill gaps recorded.';
+    
+    // Determine qualitative progress status based on average score
+    let progressStatus = "Building Competency 📈";
+    let statusEmoji = "📈";
+    if (avgScore >= 85) {
+        progressStatus = "Advanced Mastery 🌟";
+        statusEmoji = "🌟";
+    } else if (avgScore >= 70) {
+        progressStatus = "Solid Foundation 👍";
+        statusEmoji = "👍";
+    } else if (avgScore < 50) {
+        progressStatus = "Needs Closer Support ⚠️";
+        statusEmoji = "⚠️";
+    }
 
+    // Extract top focus areas for the summary
+    const topGapsText = sortedGaps.length > 0 ? sortedGaps.slice(0, 2).join(', ') : 'General Concept Review';
+
+    document.getElementById('parent-summary-box').innerText = 
+        `📊 *D-Lakshya Parent Report Card Summary* 📊\n` +
+        `Student: *${studentNameTxt}* (Class ${studentClass})\n` +
+        `Subject: *${detectedSubject}*\n` +
+        `Overall Score: *${avgScore}%* (Status: *${progressStatus}*)\n` +
+        `Identified Gaps: *${gapCount}* (Primary Focus: *${topGapsText}*)\n\n` +
+        `⏱️ *Test Temperament & Pacing:* Completed efficiently within target testing window.\n\n` +
+        `💡 *Targeted Action at Home:*\n` +
+        `• **Concept Focus:** Practice hands-on positioning and foundational drills for ${topGapsText}.\n` +
+        `• **Active Review:** Walk through missed questions step-by-step to bridge procedural skills with real-world application.`;
+}
         function copyRemediationScript() {
             navigator.clipboard.writeText(document.getElementById('remediation-script-box').innerText.trim());
             alert("Remediation script copied to clipboard!");
