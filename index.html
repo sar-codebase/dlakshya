@@ -113,7 +113,7 @@
     <main class="flex-grow max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8">
 
         <!-- EVALUATOR / MENTOR / SUPERVISOR PORTAL -->
-        <section id="portal-evaluator" class="space-y-6 sm:space-y-8">
+        <section id="portal-evaluator" class="space-y-6">
             <div class="bg-gradient-to-r from-blue-900 to-slate-900 text-white p-5 sm:p-6 rounded-2xl shadow-md">
                 <h2 class="text-xl sm:text-2xl font-bold mb-2">Evaluator, Mentor & Supervisor Control Suite</h2>
                 <p class="text-blue-200 text-xs sm:text-sm max-w-3xl">
@@ -122,7 +122,7 @@
             </div>
 
             <!-- Dashboard Grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+            <div class="space-y-6 sm:space-y-8">
                 
                 <!-- Box 1: Question Bank, Subject & Timer Configuration -->
                 <div class="bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between lg:col-span-2">
@@ -266,12 +266,9 @@
             </div>
 
             <!-- Comprehensive Teacher Audit Output Section -->
-            <div id="teacher-audit-output" class="hidden bg-white p-5 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6 transition-all duration-300">
-
-
+            <div id="teacher-audit-output" class="hidden bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-200 space-y-6 transition-all duration-300">
 <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-5 border-b border-slate-200 gap-4 bg-slate-50/80 p-5 rounded-xl border border-slate-200 shadow-sm">
                     <div>
-                        <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-100 px-2.5 py-1 rounded-md">Executive Assessment Audit</span>
                         <h3 id="audit-student-name" class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2 tracking-tight">Performance Report</h3>
                         <p id="audit-student-meta" class="text-xs text-slate-600 font-mono mt-1"></p>
                     </div>
@@ -685,7 +682,7 @@
             <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                 <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-6 py-5 flex flex-col sm:flex-row justify-between sm:items-center gap-3">
                     <div>
-                        <h3 class="text-lg sm:text-xl font-bold mt-1.5">Why Educators & Schools Choose D-Lakshya</h3>
+                        <h3 class="text-lg sm:text-xl font-bold mt-1.5">Why Evaluators & Schools Choose D-Lakshya</h3>
                         <p class="text-xs text-blue-200 mt-0.5">Built from the ground up for robust, secure, and offline-first classroom assessments.</p>
                     </div>
                     <span class="bg-amber-400 text-slate-900 text-[11px] font-extrabold px-3 py-1.5 rounded-lg shadow-sm shrink-0 flex items-center gap-1.5">
@@ -767,6 +764,8 @@
             </div>
 
  
+
+
 <!-- COLLAPSIBLE FAQ SECTION -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                 <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-6 py-5">
@@ -775,7 +774,7 @@
                 </div>
 
                 <div class="p-6 space-y-3">
-                    <!-- FAQ 1: Encrypted Files -->
+                    <!-- FAQ 1: Encrypted Files Visibility -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Why are we not able to see or directly open the question bank and student report log files?</span>
@@ -786,7 +785,18 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 2: Data Safety & Offline Processing -->
+                    <!-- FAQ 2: File Upload / .enc.txt Troubleshooting (NEW) -->
+                    <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
+                        <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
+                            <span>Q: I cannot see or select my student assessment file (.enc) when trying to upload. What should I do?</span>
+                            <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
+                            <strong>Answer:</strong> Sometimes, operating systems or browsers automatically append a <code>.txt</code> extension to downloaded files, saving them as <code>*.enc.txt</code>. If your upload dialog window filters strictly for <code>.enc</code> files and hides your file, simply switch the file picker dropdown filter from "Custom Files" to <strong>"All Files (*.*)"</strong> in your file browser window to locate and select your assessment file smoothly.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 3: Data Safety & Offline Processing -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Is my student and assessment data safe since it's processed offline?</span>
@@ -797,18 +807,19 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 3: License Key Troubleshooting -->
+                    <!-- FAQ 4: License Key & Credential Troubleshooting (UPDATED) -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
-                            <span>Q: What should I do if my license key is not recognized or has expired?</span>
+                            <span>Q: What should I do if my student or teacher access key / credentials are not recognized?</span>
                             <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
-                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
-                            <strong>Answer:</strong> License keys are tied to authorized device sessions and registered user credentials. If you encounter an activation error, please verify that your internet connection is active temporarily to re-verify the license, or reach out via our support portal with your registered Name and Email to reissue or renew your key.
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white space-y-2">
+                            <p><strong>Answer:</strong> Invalid access key errors usually happen due to minor typographical errors, accidental trailing spaces, or mismatched casing when entering the <strong>Student ID / Client Name</strong> or <strong>Teacher ID / Access Key</strong>.</p>
+                            <p>Please double-check that your spelling and uppercase/lowercase formatting match your assigned credentials precisely. If your key has expired or you encounter persistent activation errors, verify your internet connection temporarily to re-verify or reach out via our support portal with your registered Name and Email to renew your key.</p>
                         </div>
                     </details>
 
-                    <!-- FAQ 4: Multiple Devices / Browsers -->
+                    <!-- FAQ 5: Multiple Devices / Browsers -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Can I use D-Lakshya across multiple different devices or browsers?</span>
@@ -819,7 +830,7 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 5: Continuous Assessments & Repetitive Use -->
+                    <!-- FAQ 6: Continuous Assessments & Repetitive Use -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Is D-Lakshya a one-time assessment test, or can it be used repeatedly?</span>
@@ -830,7 +841,7 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 6: Offline Connection -->
+                    <!-- FAQ 7: Offline Connection -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Do I need an active internet connection to run tests?</span>
@@ -841,7 +852,7 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 7: Custom Syllabus -->
+                    <!-- FAQ 8: Custom Syllabus -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: How do I add my own syllabus or quarterly exam questions?</span>
@@ -852,7 +863,7 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 8: PTM Reports -->
+                    <!-- FAQ 9: PTM Reports -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Can teachers use the generated PDF reports during Parent-Teacher Meetings (PTMs)?</span>
@@ -863,10 +874,10 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 9: Individual Plan Mentor Review -->
+                    <!-- FAQ 10: Individual Plan Mentor Review -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
-                            <span>Q: For the Individual Plan, who acts as the teacher or supervisor to review reports?</span>
+                            <span>Q: For the Individual Plan, who acts as the evaluator or supervisor to review reports?</span>
                             <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
                         <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white space-y-2">
@@ -876,7 +887,6 @@
                     </details>
                 </div>
             </div>
-
 
 
             <!-- Terms of Use & EULA Section -->
@@ -1706,7 +1716,7 @@ function evaluateAIStudentAudit(sessions) {
             }).join('');
         }
 
-        function renderTeacherItemizedReview(questionErrorCounts) {
+  function renderTeacherItemizedReview(questionErrorCounts) {
             const container = document.getElementById('teacher-itemized-review-container');
             if (!container) return;
             const showCorrect = document.getElementById('teacher-filter-correct').checked;
@@ -1723,18 +1733,23 @@ function evaluateAIStudentAudit(sessions) {
                 const isRepeatedIncorrect = item.incorrectCount > 1;
                 const isAllCorrect = item.incorrectCount === 0;
                 const isMissed = item.userAnswerIdx === -1;
+                const isCorrectAnswer = item.userAnswerIdx === parseInt(item.correctIdx);
 
-                let category = isAllCorrect ? 'Correct' : 'Incorrect';
-                if (!showCorrect && category === 'Correct') return '';
-                if (!showIncorrect && category === 'Incorrect') return '';
+                let includeItem = false;
+                if (showCorrect && isAllCorrect) includeItem = true;
+                if (showIncorrect && !isCorrectAnswer && !isMissed) includeItem = true;
+                if (showUnanswered && isMissed) includeItem = true;
+
+                if (!includeItem) return '';
 
                 let studentAnsText = isMissed ? 'Unanswered' : (item.options[item.userAnswerIdx] || 'N/A');
                 let correctAnsText = item.options[item.correctIdx] || 'N/A';
-                const isCorrectAnswer = item.userAnswerIdx === parseInt(item.correctIdx);
 
-                let badge = isRepeatedIncorrect ? 
-                    `<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2 py-0.5 rounded">⚠️ Repeatedly Missed (${item.incorrectCount} times)</span>` : 
-                    (isAllCorrect ? '<span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">✅ Consistent Correct</span>' : '<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2 py-0.5 rounded">❌ Incorrect</span>');
+                let badge = isMissed ? 
+                    '<span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">⚠️ Unanswered</span>' : 
+                    (isRepeatedIncorrect ? 
+                        `<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2 py-0.5 rounded">⚠️ Repeatedly Missed (${item.incorrectCount} times)</span>` : 
+                        (isAllCorrect ? '<span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">✅ Consistent Correct</span>' : '<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2 py-0.5 rounded">❌ Incorrect</span>'));
 
                 return `
                     <div class="p-3 rounded-xl border border-slate-200 bg-white space-y-1">
