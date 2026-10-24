@@ -1126,7 +1126,7 @@
             };
         }
 
-        function handleQuestionBankFileSelect(event) {
+function handleQuestionBankFileSelect(event) {
             const file = event.target.files[0];
             const subjectSelect = document.getElementById('evaluator-subject-select');
             if (!file) return;
@@ -1141,16 +1141,26 @@
                     return;
                 }
                 Papa.parse(fileText, {
-                    header: true, skipEmptyLines: true,
+                    header: true, 
+                    skipEmptyLines: true,
                     complete: function (results) {
                         if (results.data && results.data.length > 0) {
                             activeQuestionBank = results.data;
+                            
+                            // Extract distinct, unique subjects strictly from the CSV's Subject column
                             const subjectsSet = new Set();
-                            results.data.forEach(row => { if (row.Subject) subjectsSet.add(row.Subject.trim()); });
+                            results.data.forEach(row => { 
+                                if (row.Subject && row.Subject.trim() !== "") {
+                                    subjectsSet.add(row.Subject.trim()); 
+                                } 
+                            });
+
+                            // Rebuild the dropdown options exclusively from the CSV values
                             subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
                             subjectsSet.forEach(subj => {
                                 const opt = document.createElement('option');
-                                opt.value = subj; opt.textContent = subj;
+                                opt.value = subj; 
+                                opt.textContent = subj;
                                 subjectSelect.appendChild(opt);
                             });
                         }
@@ -1235,7 +1245,7 @@
             switchTab('student');
         }
 
-        async function startStudentAssessment() {
+async function startStudentAssessment() {
             const studentIdInput = document.getElementById('student-id-verify').value.trim();
             const accessKey = document.getElementById('student-access-key').value.trim();
             const name = document.getElementById('student-name').value.trim();
@@ -1248,12 +1258,28 @@
             currentStudentData.name = name;
             currentStudentData.class = studentClass;
 
-            let filtered = activeQuestionBank.filter(q => String(q.Class).trim() === String(studentClass).trim() || !q.Class);
+            // 1. Robust Class matching: extracts digits from "Class 1" or "1" to match correctly
+            let filtered = activeQuestionBank.filter(q => {
+                const rowClassDigits = String(q.Class || '').replace(/\D/g, '');
+                const selectedClassDigits = String(studentClass).replace(/\D/g, '');
+                return rowClassDigits === selectedClassDigits || !q.Class;
+            });
+
+            // 2. Strict Subject matching from CSV dropdown selection
             if (selectedEvaluatorSubject !== "ALL") {
-                const subFiltered = filtered.filter(q => String(q.Subject).trim().toLowerCase() === selectedEvaluatorSubject.toLowerCase());
-                if (subFiltered.length > 0) filtered = subFiltered;
+                const targetSubject = String(selectedEvaluatorSubject || '').trim().toLowerCase();
+                filtered = filtered.filter(q => {
+                    const rowSubject = String(q.Subject || '').trim().toLowerCase();
+                    return rowSubject === targetSubject;
+                });
             }
-            if (filtered.length < 2) filtered = [...activeQuestionBank];
+
+            // 3. Validation check
+            if (filtered.length === 0) {
+                alert(`❌ No questions found for Class ${studentClass} under subject "${selectedEvaluatorSubject}".`);
+                return;
+            }
+
             filtered.sort(() => Math.random() - 0.5);
             filtered = filtered.slice(0, 25);
             currentStudentData.questions = filtered;
