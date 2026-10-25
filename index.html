@@ -439,6 +439,13 @@
                         <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
                         Teacher Remarks & Sign-off
                     </label>
+<!-- Quick-Insert Observation Chips -->
+    <div class="flex flex-wrap gap-1.5 pt-1 pb-1">
+        <button type="button" onclick="appendTeacherRemark('Needs extra practice on core concepts.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Needs Extra Practice</button>
+        <button type="button" onclick="appendTeacherRemark('Showing excellent progress and improvement.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Excellent Improvement</button>
+        <button type="button" onclick="appendTeacherRemark('Rushed through test questions; needs to pace better.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Rushed Pacing</button>
+        <button type="button" onclick="appendTeacherRemark('Recommended for follow-up discussion in next PTM.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Follow up next PTM</button>
+    </div>
                     <textarea id="teacher-comments-input" rows="3" placeholder="Enter custom observations, notes, or qualitative recommendations..." class="w-full text-xs px-3 py-2 border border-amber-300 bg-white rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none resize-none"></textarea>
                 </div>
 
@@ -1093,6 +1100,29 @@ function togglePasswordVisibility(fieldId, iconId) {
         eyeIcon.classList.add("fa-eye");
     }
 }
+
+
+function appendTeacherRemark(remarkText) {
+    const textarea = document.getElementById('teacher-comments-input');
+    if (!textarea) return;
+
+    let currentText = textarea.value.trim();
+    const signatureLine = currentText.match(/Evaluated & Reviewed by Teacher ID:.*/)?.[0] || "";
+    
+    // Strip out signature temporarily to edit the custom remarks cleanly
+    let customNotes = currentText.replace(/Evaluated & Reviewed by Teacher ID:.*/, "").trim();
+
+    if (customNotes.includes(remarkText)) {
+        customNotes = customNotes.replace(remarkText, "").trim().replace(/\s+/g, " ");
+    } else {
+        customNotes = customNotes !== "" ? customNotes + " " + remarkText : remarkText;
+    }
+
+    // Reassemble notes with the signature line locked at the bottom
+    textarea.value = customNotes + (signatureLine ? "\n\n" + signatureLine : "");
+}
+
+
         async function decryptPayloadToString(fileText) {
             try {
                 const payload = JSON.parse(fileText);
@@ -1868,6 +1898,11 @@ function updateDynamicAuditOutputs(avgScore, studentName, studentClass, detected
     // 1. Grab the Teacher ID entered during step 2 verification and format today's date
     const activeTeacherId = document.getElementById('teacher-id-verify').value.trim().toUpperCase() || "TCH-01";
     const currentDateStr = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+
+    const remarksTextarea = document.getElementById('teacher-comments-input');
+    if (remarksTextarea) {
+        remarksTextarea.value = `Evaluated & Reviewed by Teacher ID: ${activeTeacherId} | Date: ${currentDateStr}`;
+    }
 
     // 2. Populate and unhide the Remediation Script signature footer
     const sigFooter1 = document.getElementById('remediation-signature-footer');
