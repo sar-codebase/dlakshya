@@ -138,7 +138,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
                             <div>
                                 <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">1. Upload Question Bank File (.enc)</label>
-                                <input type="file" id="qb-file-input" accept=".enc,.dlakshya" onchange="handleQuestionBankFileSelect(event)" class="w-full text-xs text-slate-500 file:mr-2 file:py-2 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1 bg-white">
+                                <input type="file" id="qb-file-input" accept=".enc,.dlakshya,.enc.txt" onchange="handleQuestionBankFileSelect(event)" class="w-full text-xs text-slate-500 file:mr-2 file:py-2 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1 bg-white">
                             </div>
 
                             <div>
@@ -194,8 +194,8 @@
                         <div class="space-y-4 my-4">
                             <div>
                                 <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Upload Student Attempt File(s) (.enc)</label>
-                                <input type="file" id="teacher-review-input" multiple accept=".enc,.dlakshya" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1">
-                                <p class="text-[11px] text-slate-400 mt-1">Select one or multiple encrypted student attempt files (supports automatic decryption).</p>
+                                <input type="file" id="teacher-review-input" multiple accept=".enc,.dlakshya,.enc.txt" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-slate-200 rounded-lg p-1">
+                                <p class="text-[11px] text-slate-400 mt-1">Select one or multiple encrypted student attempt files (supports automatic decryption & *.enc.txt resilience).</p>
                             </div>
 
                             <!-- Question Review Filter Preferences -->
@@ -250,7 +250,7 @@
                                     <label class="block text-xs font-semibold text-slate-700 uppercase">Upload Standard Focus Guidelines / Rubric File (Optional)</label>
                                     <span id="rubric-status-badge" class="text-[10px] font-semibold bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full">No Rubric Loaded</span>
                                 </div>
-                                <input type="file" id="teacher-standard-points-file" accept=".enc,.dlakshya,.txt,.csv,.md" onchange="handleRubricFileSelection(event)" class="w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-amber-100 file:text-amber-800 hover:file:bg-amber-200 border border-slate-200 rounded-lg p-1 bg-white">
+                                <input type="file" id="teacher-standard-points-file" accept=".enc,.dlakshya,.enc.txt,.txt,.csv,.md" onchange="handleRubricFileSelection(event)" class="w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-amber-100 file:text-amber-800 hover:file:bg-amber-200 border border-slate-200 rounded-lg p-1 bg-white">
                             </div>
                         </div>
                     </div>
@@ -258,7 +258,7 @@
                     <div class="pt-4 border-t border-slate-100">
                         <button id="generate-report-btn" onclick="processTeacherBatchReview()" class="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition shadow-sm flex items-center justify-center gap-2">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-                            <span id="generate-btn-text">Generate Audit Report</span>
+                            <span id="generate-btn-text">Generate Class Performance Report</span>
                         </button>
                     </div>
                 </div>
@@ -267,9 +267,9 @@
 
             <!-- Comprehensive Teacher Audit Output Section -->
             <div id="teacher-audit-output" class="hidden bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-200 space-y-6 transition-all duration-300">
-<div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-5 border-b border-slate-200 gap-4 bg-slate-50/80 p-5 rounded-xl border border-slate-200 shadow-sm">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-5 border-b border-slate-200 gap-4 bg-slate-50/80 p-5 rounded-xl border border-slate-200 shadow-sm">
                     <div>
-                        <h3 id="audit-student-name" class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2 tracking-tight">Performance Report</h3>
+                        <h3 id="audit-student-name" class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2 tracking-tight">Class Performance</h3>
                         <p id="audit-student-meta" class="text-xs text-slate-600 font-mono mt-1"></p>
                     </div>
                     <div class="flex items-center gap-2">
@@ -289,10 +289,23 @@
                     <p id="longitudinal-reminder-text" class="text-xs text-amber-800 font-medium leading-relaxed"></p>
                 </div>
 
+                <!-- Dynamic Subject Filter Toolbar for Multi-Subject Batch Uploads -->
+                <div id="multi-subject-filter-toolbar" class="hidden p-4 bg-slate-100 rounded-xl border border-slate-200 flex flex-wrap items-center gap-3">
+                    <span class="text-xs font-bold text-slate-700 uppercase">Subject View Filter:</span>
+                    <div id="subject-filter-checkboxes" class="flex flex-wrap gap-3"></div>
+                </div>
+
+                <!-- Subject-Specific Additional Classroom Syllabus Section -->
+                <div id="subject-syllabus-container" class="hidden p-4 sm:p-5 bg-blue-50/50 border border-blue-200 rounded-xl space-y-2">
+                    <label class="block text-xs font-semibold text-blue-900 uppercase tracking-wide">Additional Classroom Syllabus (Untested Chapters for Active Subject)</label>
+                    <p class="text-[11px] text-blue-700">Enter ongoing chapters currently taught in class for this subject to integrate them into the remediation timetable:</p>
+                    <input type="text" id="untested-syllabus-input" oninput="recalculatePotentialGainAndSummaries()" placeholder="e.g. Chapter 6, Chapter 7" class="w-full text-sm px-3 py-2 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
+                </div>
+
                 <!-- Summary Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
                     <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-100">
-                        <span class="text-xs text-slate-400 font-bold uppercase">Attempts Analyzed</span>
+                        <span class="text-xs text-slate-400 font-bold uppercase">Attempts / Records Analyzed</span>
                         <div id="audit-attempt-count" class="text-2xl sm:text-3xl font-extrabold text-slate-800 mt-1">0</div>
                     </div>
                     <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-100">
@@ -305,13 +318,13 @@
                     </div>
                 </div>
 
-                <!-- Chapter Breakdown & Priority Attention Section -->
+                <!-- Chapter Breakdown & Priority Attention Section with Timeline Target Chips -->
                 <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
                     <h4 class="font-bold text-slate-900 text-sm flex items-center justify-between">
-                        <span>Chapters Needing Attention (Macro Gaps) - Select to Recalibrate Target Gain</span>
-                        <span class="text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full">Interactive Intervention</span>
+                        <span>Chapters Needing Attention (Macro Gaps) & Study Timetable</span>
+                        <span class="text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full">Interactive Timetable & Intervention</span>
                     </h4>
-                    <p class="text-[11px] text-slate-500">Uncheck chapters below to narrow down priority focus areas and dynamically recalculate potential mark gains.</p>
+                    <p class="text-[11px] text-slate-500">Assign timeline targets to flagged chapters using the chips below to generate an individual student study schedule.</p>
                     <div id="chapter-attention-matrix" class="space-y-2">
                         <p class="text-xs text-slate-400 italic">No chapter breakdown available yet. Upload student attempt reports above.</p>
                     </div>
@@ -321,7 +334,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
                         <h4 class="font-bold text-slate-900 text-sm flex items-center justify-between">
-                            <span>Score Growth History</span>
+                            <span id="score-history-header-title">Score Growth History</span>
                             <span class="text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">Score Trajectory</span>
                         </h4>
                         <div id="trendline-display" class="text-xs text-slate-700 leading-relaxed font-medium bg-white p-3 rounded-lg border border-slate-200">
@@ -394,6 +407,7 @@
                             <span id="copy-script-label">Copy Script</span>
                         </button>
                     </div>
+
                     <div class="flex items-center gap-2 pt-1 pb-1">
                         <input type="checkbox" id="verify-remediation-chk" onchange="toggleScriptButtonState()" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
                         <label for="verify-remediation-chk" class="text-xs font-bold text-blue-900 cursor-pointer">Reviewed and Approved by Teacher</label>
@@ -402,19 +416,15 @@
                     <div id="remediation-script-box" contenteditable="true" class="p-3.5 bg-white rounded-lg border border-blue-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-xs text-slate-900 font-medium leading-relaxed whitespace-pre-line">
                         Upload student attempt files above to generate custom remediation scripts.
                     </div>
-
-
                 </div>
 
-
-
-                <!-- Parent Report Card Summary -->
+                <!-- Parent Report Card Summary with Automated PTM Priority Callout -->
                 <div class="p-4 sm:p-6 bg-blue-50/60 rounded-xl border border-blue-200 space-y-3">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                         <div class="flex items-center gap-2 flex-wrap">
                             <h4 class="font-bold text-blue-900 text-sm flex items-center gap-2">
                                 <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-                                Parent Report Card Summary
+                                <span id="summary-box-title">Parent Report Card Summary</span>
                             </h4>
                         </div>
                         <button id="copy-summary-btn" onclick="copyParentSummary()" disabled class="px-3 py-1.5 bg-slate-300 text-slate-500 font-bold rounded-lg text-xs transition shadow-sm flex items-center gap-1.5 shrink-0 cursor-not-allowed">
@@ -422,6 +432,10 @@
                             <span id="copy-summary-label">Copy Summary</span>
                         </button>
                     </div>
+
+                    <!-- Automated PTM Priority Callout Box -->
+                    <div id="ptm-priority-callout" class="hidden p-3 rounded-lg border text-xs font-bold flex items-center gap-2"></div>
+
                     <div class="flex items-center gap-2 pt-1 pb-1">
                         <input type="checkbox" id="verify-summary-chk" onchange="toggleSummaryButtonState()" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
                         <label for="verify-summary-chk" class="text-xs font-bold text-blue-900 cursor-pointer">Reviewed and Approved by Teacher</label>
@@ -432,20 +446,19 @@
                     </div>
                 </div>
 
-
-<!-- Teacher Remarks Area -->
+                <!-- Teacher Remarks Area -->
                 <div class="p-4 sm:p-6 bg-amber-50/60 rounded-xl border border-amber-200 space-y-2">
                     <label for="teacher-comments-input" class="font-bold text-amber-900 text-sm flex items-center gap-2">
                         <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
                         Teacher Remarks & Sign-off
                     </label>
-<!-- Quick-Insert Observation Chips -->
-    <div class="flex flex-wrap gap-1.5 pt-1 pb-1">
-        <button type="button" onclick="appendTeacherRemark('Needs extra practice on core concepts.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Needs Extra Practice</button>
-        <button type="button" onclick="appendTeacherRemark('Showing excellent progress and improvement.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Excellent Improvement</button>
-        <button type="button" onclick="appendTeacherRemark('Rushed through test questions; needs to pace better.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Rushed Pacing</button>
-        <button type="button" onclick="appendTeacherRemark('Recommended for follow-up discussion in next PTM.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Follow up next PTM</button>
-    </div>
+                    <!-- Quick-Insert Observation Chips -->
+                    <div class="flex flex-wrap gap-1.5 pt-1 pb-1">
+                        <button type="button" onclick="appendTeacherRemark('Needs extra practice on core concepts.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Needs Extra Practice</button>
+                        <button type="button" onclick="appendTeacherRemark('Showing excellent progress and improvement.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Excellent Improvement</button>
+                        <button type="button" onclick="appendTeacherRemark('Rushed through test questions; needs to pace better.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Rushed Pacing</button>
+                        <button type="button" onclick="appendTeacherRemark('Recommended for follow-up discussion in next PTM.')" class="text-[10px] font-semibold bg-white text-amber-800 hover:bg-amber-100 border border-amber-300 px-2.5 py-1 rounded-full transition shadow-sm">+ Follow up next PTM</button>
+                    </div>
                     <textarea id="teacher-comments-input" rows="3" placeholder="Enter custom observations, notes, or qualitative recommendations..." class="w-full text-xs px-3 py-2 border border-amber-300 bg-white rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none resize-none"></textarea>
                 </div>
 
@@ -546,7 +559,7 @@
                 </div>
             </div>
 
-            <!-- Student Diagnostic Feedback View -->
+            <!-- Student Diagnostic Feedback View (Secured: Answers Hidden) -->
             <div id="student-report-view" class="hidden bg-white p-5 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-6 border-b border-slate-200 gap-4">
                     <div>
@@ -563,7 +576,7 @@
                 </div>
 
                 <div class="p-4 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-900 font-medium">
-                    🔒 <strong>Assessment Locked:</strong> This assessment has already been completed and submitted.
+                    🔒 <strong>Assessment Locked:</strong> This assessment has already been completed and submitted. Answer keys are restricted to protect platform security.
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
@@ -572,7 +585,7 @@
                         <div id="report-score" class="text-3xl sm:text-4xl font-extrabold text-blue-600 mt-1">0%</div>
                     </div>
                     <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-100 text-center">
-                        <span class="text-xs text-slate-400 font-bold uppercase">Correct Answers</span>
+                        <span class="text-xs text-slate-400 font-bold uppercase">Total Marks Obtained</span>
                         <div id="report-correct" class="text-3xl sm:text-4xl font-extrabold text-emerald-600 mt-1">0 / 0</div>
                     </div>
                     <div class="p-4 sm:p-5 bg-slate-50 rounded-xl border border-slate-100 text-center">
@@ -583,45 +596,14 @@
 
                 <div class="grid grid-cols-1 gap-6">
                     <div class="p-4 sm:p-5 bg-rose-50/60 rounded-xl border border-rose-100 space-y-2">
-                        <h4 class="font-bold text-rose-900 text-sm">Gaps Identified & Skill Deficits</h4>
+                        <h4 class="font-bold text-rose-900 text-sm">High-Level Gaps Identified & Skill Deficits</h4>
                         <ul id="report-gaps-list" class="list-disc list-inside text-xs text-rose-800 space-y-1"></ul>
-                    </div>
-                </div>
-
-                <!-- Question-by-Question Review & Breakdown with Interactive Filter Checkboxes -->
-                <div class="p-5 sm:p-6 bg-slate-50 rounded-2xl border border-slate-200 space-y-4">
-                    <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
-                        <h4 class="font-bold text-slate-900 text-sm sm:text-base flex items-center gap-2">
-                            <svg class="w-5 h-5 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
-                            Question-by-Question Review & Breakdown
-                        </h4>
-                        
-                        <!-- Interactive Filter Checkboxes Toolbar -->
-                        <div class="flex flex-wrap items-center gap-3 bg-white px-3 py-2 rounded-xl border border-slate-200 shadow-sm">
-                            <span class="text-[11px] font-bold text-slate-700 uppercase">Filter:</span>
-                            <label class="flex items-center gap-1.5 text-xs font-semibold text-emerald-700 cursor-pointer">
-                                <input type="checkbox" id="filter-correct" checked onchange="filterItemizedReview()" class="w-4 h-4 text-emerald-600 rounded border-slate-300 focus:ring-emerald-500 cursor-pointer">
-                                <span>Correct</span>
-                            </label>
-                            <label class="flex items-center gap-1.5 text-xs font-semibold text-rose-700 cursor-pointer">
-                                <input type="checkbox" id="filter-incorrect" checked onchange="filterItemizedReview()" class="w-4 h-4 text-rose-600 rounded border-slate-300 focus:ring-rose-500 cursor-pointer">
-                                <span>Incorrect</span>
-                            </label>
-                            <label class="flex items-center gap-1.5 text-xs font-semibold text-amber-700 cursor-pointer">
-                                <input type="checkbox" id="filter-unanswered" checked onchange="filterItemizedReview()" class="w-4 h-4 text-amber-600 rounded border-slate-300 focus:ring-amber-500 cursor-pointer">
-                                <span>Unanswered</span>
-                            </label>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-500">Detailed itemized review showing your response versus the correct answer for every assessment question. Use the checkboxes above to filter specific question types.</p>
-                    <div id="report-itemized-review-container" class="space-y-3 max-h-96 overflow-y-auto pr-2">
-                        <p class="text-xs text-slate-400 italic text-center py-4">No question review items available.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-	<!-- PRICING & CONTACT SUPPORT PORTAL -->
+        <!-- PRICING & CONTACT SUPPORT PORTAL -->
         <section id="portal-contact" class="hidden space-y-6 sm:space-y-8">
             <div class="bg-gradient-to-r from-blue-900 to-slate-900 text-white p-5 sm:p-6 rounded-2xl shadow-md">
                 <h2 class="text-xl sm:text-2xl font-bold mb-2">Pricing Plans & Institutional Support</h2>
@@ -630,7 +612,7 @@
                 </p>
             </div>
 
-<!-- Pricing Grid -->
+            <!-- Pricing Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Tier 1: Basic / Home Student -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between space-y-4">
@@ -713,8 +695,7 @@
                         <p class="text-xs text-slate-600 leading-relaxed font-medium">Operates locally inside your browser with zero active server dependency during runtime, preventing classroom disruptions during internet dropouts.</p>
                     </div>
 
-
-    <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
+                    <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
                         <span id="badge-offline" class="absolute top-4 right-4 text-lg leading-none">🌐</span>
                         <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2 pr-8">
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -723,9 +704,7 @@
                         <p class="text-xs text-slate-600 leading-relaxed font-medium">Regardless of location or network conditions, our offline-first architecture ensures evaluation logic and question decryption run 100% locally to prevent classroom disruptions anywhere.</p>
                     </div>
 
-
-
-    <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
+                    <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
                         <span id="badge-offline" class="absolute top-4 right-4 text-lg leading-none">🤝</span>
                         <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2 pr-8">
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -734,8 +713,7 @@
                         <p class="text-xs text-slate-600 leading-relaxed font-medium">Empowers independent private coaching classes and local academies to deliver professional, enterprise-grade diagnostic reports and performance metrics.</p>
                     </div>
 
-
-    <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
+                    <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
                         <span id="badge-offline" class="absolute top-4 right-4 text-lg leading-none">📱</span>
                         <h4 class="font-bold text-blue-900 text-xs flex items-center gap-2 pr-8">
                             <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -743,9 +721,6 @@
                         </h4>
                         <p class="text-xs text-slate-600 leading-relaxed font-medium">Overcoming the lack of dedicated school computer labs by letting students and mentors run complete diagnostic assessments smoothly on everyday smartphones.</p>
                     </div>
-
-
-
 
                     <div class="p-5 bg-blue-50/40 rounded-xl border border-blue-100 space-y-2 relative shadow-sm hover:border-blue-300 transition">
                         <span id="badge-privacy" class="absolute top-4 right-4 text-lg leading-none">🥈</span>
@@ -775,10 +750,7 @@
                 </div>
             </div>
 
- 
-
-
-<!-- COLLAPSIBLE FAQ SECTION -->
+            <!-- COLLAPSIBLE FAQ SECTION -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                 <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-6 py-5">
                     <h3 class="text-lg sm:text-xl font-bold mt-1.5">Frequently Asked Questions (FAQ)</h3>
@@ -786,18 +758,16 @@
                 </div>
 
                 <div class="p-6 space-y-3">
-                    <!-- FAQ 1: Encrypted Files Visibility -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Why are we not able to see or directly open the question bank and student report log files?</span>
                             <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </summary>
                         <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white">
-                            <strong>Answer:</strong> The question bank files and student report logs are intentionally encrypted and stored in secure, proprietary formats for strict data security, privacy protection, and intellectual property defense. Because D-Lakshya operates on an offline-first architecture, direct external access or manual modification of these raw files is restricted to prevent accidental corruption, data leaks, or unauthorized tampering with evaluation metrics. All parsing, decryption, and processing occur securely inside your browser environment.
+                            <strong>Answer:</strong> The question bank files and student report logs are intentionally encrypted and stored in secure, proprietary formats for strict data security, privacy protection, and intellectual property defense. All parsing, decryption, and processing occur securely inside your browser environment.
                         </div>
                     </details>
 
-                    <!-- FAQ 2: File Upload / .enc.txt Troubleshooting (NEW) -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: I cannot see or select my student assessment file (.enc) when trying to upload. What should I do?</span>
@@ -808,7 +778,6 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 3: Data Safety & Offline Processing -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Is my student and assessment data safe since it's processed offline?</span>
@@ -819,7 +788,6 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 4: License Key & Credential Troubleshooting (UPDATED) -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: What should I do if my student or teacher access key / credentials are not recognized?</span>
@@ -831,7 +799,6 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 5: Multiple Devices / Browsers -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Can I use D-Lakshya across multiple different devices or browsers?</span>
@@ -842,7 +809,6 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 6: Continuous Assessments & Repetitive Use -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Is D-Lakshya a one-time assessment test, or can it be used repeatedly?</span>
@@ -853,7 +819,6 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 7: Offline Connection -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Do I need an active internet connection to run tests?</span>
@@ -864,7 +829,6 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 8: Custom Syllabus -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: How do I add my own syllabus or quarterly exam questions?</span>
@@ -875,7 +839,6 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 9: PTM Reports -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: Can teachers use the generated PDF reports during Parent-Teacher Meetings (PTMs)?</span>
@@ -886,7 +849,6 @@
                         </div>
                     </details>
 
-                    <!-- FAQ 10: Individual Plan Mentor Review -->
                     <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
                         <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
                             <span>Q: For the Individual Plan, who acts as the evaluator or supervisor to review reports?</span>
@@ -898,20 +860,17 @@
                         </div>
                     </details>
 
-<!-- FAQ: Difference between Personalized AI Remediation Script and Parent Report Card Summary -->
-<details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
-    <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
-        <span>Q: What is the difference between the Personalized AI Remediation Script and the Parent Report Card Summary?</span>
-        <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-    </summary>
-    <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white space-y-2">
-        <p><strong>A:</strong> The <strong>Personalized AI Remediation Script</strong> is designed as an action-oriented study guide for the student, providing a step-by-step corrective practice roadmap (such as reviewing specific chapter notes and doing targeted exercises) to bridge micro-gaps. In contrast, the <strong>Parent Report Card Summary</strong> is a high-level executive overview for parents during a Parent-Teacher Meeting (PTM), summarizing overall scores, test pacing/temperament, identified gaps, and custom teacher remarks.</p>
-    </div>
-</details>
-
+                    <details class="group bg-blue-50/30 rounded-xl border border-blue-100 overflow-hidden transition hover:border-blue-300">
+                        <summary class="font-bold text-blue-900 text-xs p-4 cursor-pointer flex justify-between items-center select-none hover:bg-blue-50/60">
+                            <span>Q: What is the difference between the Personalized AI Remediation Script and the Parent Report Card Summary?</span>
+                            <svg class="w-4 h-4 text-blue-600 transform group-open:rotate-180 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="p-4 pt-0 text-xs text-slate-600 leading-relaxed border-t border-blue-100 bg-white space-y-2">
+                            <p><strong>A:</strong> The <strong>Personalized AI Remediation Script</strong> is designed as an action-oriented study guide for the student, providing a step-by-step corrective practice roadmap (such as reviewing specific chapter notes and doing targeted exercises) to bridge micro-gaps. In contrast, the <strong>Parent Report Card Summary</strong> is a high-level executive overview for parents during a Parent-Teacher Meeting (PTM), summarizing overall scores, test pacing/temperament, identified gaps, and custom teacher remarks.</p>
+                        </div>
+                    </details>
                 </div>
             </div>
-
 
             <!-- Terms of Use & EULA Section -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
@@ -956,8 +915,8 @@
             </div>
         </section>
 
-       <!-- ABOUT US PORTAL -->
-	<section id="portal-about" class="hidden space-y-6 sm:space-y-8">
+        <!-- ABOUT US PORTAL -->
+        <section id="portal-about" class="hidden space-y-6 sm:space-y-8">
             <div class="bg-gradient-to-r from-blue-900 to-slate-900 text-white p-5 sm:p-6 rounded-2xl shadow-md">
                 <h2 class="text-xl sm:text-2xl font-bold mb-2">About D-Lakshya</h2>
                 <p class="text-blue-200 text-xs sm:text-sm">
@@ -972,7 +931,6 @@
                         D-Lakshya was built with a singular vision: to bridge the gap between testing and true conceptual understanding. Traditional evaluations often provide a surface-level grade without uncovering the root causes behind recurring student mistakes. Our platform leverages local browser analytics to diagnose concept mastery, evaluate pacing habits, and generate actionable parent-teacher meeting (PTM) follow-ups.
                     </p>
                 </div>
-
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-100">
                     <div class="p-5 bg-blue-50/50 rounded-xl border border-blue-100 space-y-2">
@@ -994,7 +952,7 @@
  
     </main>
 
-<footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4 no-print">
+    <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-xs text-slate-500 space-y-3 px-4 no-print">
         <div class="font-bold text-slate-700">© 2026 D-Lakshya. All Rights Reserved.</div>
         <div>D-Lakshya &bull; Lakshya | Assess, Learn, Achieve &bull; Offline-First Browser Application</div>
         <div class="max-w-4xl mx-auto text-[11px] text-slate-400 leading-relaxed px-4 space-y-1">
@@ -1037,6 +995,8 @@
         let isAssessmentActive = false;
         let globalChapterErrorsData = {};
         let globalTotalQuestionsCount = 0;
+        let currentActiveSessions = [];
+        let chapterTimelineMap = {};
 
         document.addEventListener("visibilitychange", function() {
             if (document.hidden && isAssessmentActive) {
@@ -1084,43 +1044,81 @@
             );
         }
 
+        function togglePasswordVisibility(fieldId, iconId) {
+            const inputField = document.getElementById(fieldId);
+            const eyeIcon = document.getElementById(iconId);
+            if (!inputField || !eyeIcon) return;
+            
+            if (inputField.type === "password") {
+                inputField.type = "text";
+                eyeIcon.classList.remove("fa-eye");
+                eyeIcon.classList.add("fa-eye-slash");
+            } else {
+                inputField.type = "password";
+                eyeIcon.classList.remove("fa-eye-slash");
+                eyeIcon.classList.add("fa-eye");
+            }
+        }
 
-function togglePasswordVisibility(fieldId, iconId) {
-    const inputField = document.getElementById(fieldId);
-    const eyeIcon = document.getElementById(iconId);
-    if (!inputField || !eyeIcon) return;
-    
-    if (inputField.type === "password") {
-        inputField.type = "text";
-        eyeIcon.classList.remove("fa-eye");
-        eyeIcon.classList.add("fa-eye-slash");
-    } else {
-        inputField.type = "password";
-        eyeIcon.classList.remove("fa-eye-slash");
-        eyeIcon.classList.add("fa-eye");
-    }
-}
+        function appendTeacherRemark(remarkText) {
+            const textarea = document.getElementById('teacher-comments-input');
+            if (!textarea) return;
+
+            let currentText = textarea.value.trim();
+            const signatureLine = currentText.match(/Evaluated & Reviewed by Teacher ID:.*/)?.[0] || "";
+            let customNotes = currentText.replace(/Evaluated & Reviewed by Teacher ID:.*/, "").trim();
+
+            if (customNotes.includes(remarkText)) {
+                customNotes = customNotes.replace(remarkText, "").trim().replace(/\s+/g, " ");
+            } else {
+                customNotes = customNotes !== "" ? customNotes + " " + remarkText : remarkText;
+            }
+
+            textarea.value = customNotes + (signatureLine ? "\n\n" + signatureLine : "");
+        }
 
 
-function appendTeacherRemark(remarkText) {
-    const textarea = document.getElementById('teacher-comments-input');
-    if (!textarea) return;
+function appendTimelineToChapter(encodedChapterName, targetWeeks) {
+            const chapterName = decodeURIComponent(encodedChapterName).trim();
 
-    let currentText = textarea.value.trim();
-    const signatureLine = currentText.match(/Evaluated & Reviewed by Teacher ID:.*/)?.[0] || "";
-    
-    // Strip out signature temporarily to edit the custom remarks cleanly
-    let customNotes = currentText.replace(/Evaluated & Reviewed by Teacher ID:.*/, "").trim();
-
-    if (customNotes.includes(remarkText)) {
-        customNotes = customNotes.replace(remarkText, "").trim().replace(/\s+/g, " ");
-    } else {
-        customNotes = customNotes !== "" ? customNotes + " " + remarkText : remarkText;
-    }
-
-    // Reassemble notes with the signature line locked at the bottom
-    textarea.value = customNotes + (signatureLine ? "\n\n" + signatureLine : "");
-}
+            if (chapterTimelineMap[chapterName] === targetWeeks) {
+                delete chapterTimelineMap[chapterName];
+            } else {
+                chapterTimelineMap[chapterName] = targetWeeks;
+            }
+            
+            const container = document.getElementById('chapter-attention-matrix');
+            if (!container) return;
+            
+            const rows = container.querySelectorAll('.chapter-row-item');
+            rows.forEach(row => {
+                const titleSpan = row.querySelector('.chapter-title-span');
+                if (titleSpan) {
+                    const fullText = titleSpan.textContent || "";
+                    const baseChapterName = fullText.split('[Target:')[0].trim();
+                    
+                    // Normalize both strings by removing extra spaces for bulletproof matching
+                    if (baseChapterName.replace(/\s+/g, ' ') === chapterName.replace(/\s+/g, ' ')) {
+                        let timelineBadge = row.querySelector('.chapter-timeline-badge');
+                        if (chapterTimelineMap[chapterName]) {
+                            const targetText = `[Target: ${targetWeeks} Week${targetWeeks > 1 ? 's' : ''}]`;
+                            if (timelineBadge) {
+                                timelineBadge.textContent = targetText;
+                            } else {
+                                const badge = document.createElement('span');
+                                badge.className = "chapter-timeline-badge bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded-full ml-2";
+                                badge.textContent = targetText;
+                                titleSpan.appendChild(badge);
+                            }
+                        } else {
+                            if (timelineBadge) timelineBadge.remove();
+                        }
+                    }
+                }
+            });
+            
+            recalculatePotentialGainAndSummaries();
+        }
 
 
         async function decryptPayloadToString(fileText) {
@@ -1177,7 +1175,7 @@ function appendTeacherRemark(remarkText) {
             };
         }
 
-function handleQuestionBankFileSelect(event) {
+        function handleQuestionBankFileSelect(event) {
             const file = event.target.files[0];
             const subjectSelect = document.getElementById('evaluator-subject-select');
             if (!file) return;
@@ -1197,8 +1195,6 @@ function handleQuestionBankFileSelect(event) {
                     complete: function (results) {
                         if (results.data && results.data.length > 0) {
                             activeQuestionBank = results.data;
-                            
-                            // Extract distinct, unique subjects strictly from the CSV's Subject column
                             const subjectsSet = new Set();
                             results.data.forEach(row => { 
                                 if (row.Subject && row.Subject.trim() !== "") {
@@ -1206,7 +1202,6 @@ function handleQuestionBankFileSelect(event) {
                                 } 
                             });
 
-                            // Rebuild the dropdown options exclusively from the CSV values
                             subjectSelect.innerHTML = '<option value="ALL">All Subjects (Comprehensive Diagnostic)</option>';
                             subjectsSet.forEach(subj => {
                                 const opt = document.createElement('option');
@@ -1296,7 +1291,7 @@ function handleQuestionBankFileSelect(event) {
             switchTab('student');
         }
 
-async function startStudentAssessment() {
+        async function startStudentAssessment() {
             const studentIdInput = document.getElementById('student-id-verify').value.trim();
             const accessKey = document.getElementById('student-access-key').value.trim();
             const name = document.getElementById('student-name').value.trim();
@@ -1309,14 +1304,12 @@ async function startStudentAssessment() {
             currentStudentData.name = name;
             currentStudentData.class = studentClass;
 
-            // 1. Robust Class matching: extracts digits from "Class 1" or "1" to match correctly
             let filtered = activeQuestionBank.filter(q => {
                 const rowClassDigits = String(q.Class || '').replace(/\D/g, '');
                 const selectedClassDigits = String(studentClass).replace(/\D/g, '');
                 return rowClassDigits === selectedClassDigits || !q.Class;
             });
 
-            // 2. Strict Subject matching from CSV dropdown selection
             if (selectedEvaluatorSubject !== "ALL") {
                 const targetSubject = String(selectedEvaluatorSubject || '').trim().toLowerCase();
                 filtered = filtered.filter(q => {
@@ -1325,7 +1318,6 @@ async function startStudentAssessment() {
                 });
             }
 
-            // 3. Validation check
             if (filtered.length === 0) {
                 alert(`❌ No questions found for Class ${studentClass} under subject "${selectedEvaluatorSubject}".`);
                 return;
@@ -1444,56 +1436,8 @@ async function startStudentAssessment() {
             document.getElementById('report-correct').innerText = `${score} / ${questions.length}`;
             document.getElementById('report-gaps-count').innerText = currentStudentData.gaps.length;
             document.getElementById('report-gaps-list').innerHTML = currentStudentData.gaps.map(g => `<li>${g}</li>`).join('');
-            renderItemizedReviewList(answers);
 
             await downloadStudentAttemptEncrypted();
-        }
-
-        function filterItemizedReview() {
-            if (currentStudentData && currentStudentData.answers) {
-                renderItemizedReviewList(currentStudentData.answers);
-            }
-        }
-
-        function renderItemizedReviewList(answers) {
-            const container = document.getElementById('report-itemized-review-container');
-            if (!answers || answers.length === 0) return;
-            const showCorrect = document.getElementById('filter-correct').checked;
-            const showIncorrect = document.getElementById('filter-incorrect').checked;
-            const showUnanswered = document.getElementById('filter-unanswered').checked;
-
-            const filteredAnswers = answers.filter(ans => {
-                const userChoiceIdx = ans.UserAnswerIndex !== undefined ? parseInt(ans.UserAnswerIndex) : -1;
-                const isMissed = userChoiceIdx === -1;
-                const isCorrect = ans.IsCorrect === true || ans.IsCorrect === 'true';
-                if (isMissed && showUnanswered) return true;
-                if (isCorrect && showCorrect) return true;
-                if (!isCorrect && !isMissed && showIncorrect) return true;
-                return false;
-            });
-
-            container.innerHTML = filteredAnswers.map((ans, idx) => {
-                const userChoiceIdx = ans.UserAnswerIndex !== undefined ? parseInt(ans.UserAnswerIndex) : -1;
-                const correctIdx = parseInt(ans.CorrectOptionIndex);
-                const isMissed = userChoiceIdx === -1;
-                const isCorrect = ans.IsCorrect === true || ans.IsCorrect === 'true';
-
-                let studentAnsText = isMissed ? 'Unanswered' : (ans['Option' + userChoiceIdx] || 'N/A');
-                let correctAnsText = ans['Option' + correctIdx] || 'N/A';
-
-                let badgeHtml = isMissed ? '<span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">⚠️ Unanswered</span>' : (isCorrect ? '<span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">✅ Correct</span>' : '<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2 py-0.5 rounded">❌ Incorrect</span>');
-
-                return `
-                    <div class="p-3 rounded-xl border border-slate-200 bg-white space-y-1">
-                        <div class="flex justify-between items-center">
-                            <span class="text-[10px] font-bold text-slate-500 uppercase">${ans.Chapter} &bull; ${ans.Skill}</span>
-                            ${badgeHtml}
-                        </div>
-                        <p class="text-xs font-bold text-slate-900">${idx + 1}. ${ans.Question}</p>
-                        <div class="text-[11px] text-slate-600">Student Answer: <span class="font-semibold ${isCorrect ? 'text-emerald-700' : 'text-rose-700'}">${studentAnsText}</span> | Correct Answer: <span class="text-emerald-700 font-semibold">${correctAnsText}</span></div>
-                    </div>
-                `;
-            }).join('') || '<p class="text-xs text-slate-400 italic text-center py-4">No items match the selected filter criteria.</p>';
         }
 
         async function downloadStudentAttemptEncrypted() {
@@ -1505,7 +1449,7 @@ async function startStudentAssessment() {
                 TotalTimerMinutes: configuredTimerMinutes, Question: a.Question, Chapter: a.Chapter, Skill: a.Skill, IsCorrect: a.IsCorrect,
                 UserAnswerIndex: a.UserAnswerIndex !== undefined ? a.UserAnswerIndex : -1, CorrectOptionIndex: a.CorrectOptionIndex,
                 Option0: a.Option0, Option1: a.Option1, Option2: a.Option2, Option3: a.Option3,
-		TeacherRemarks: "N/A" // <-- Add this field so history logs always have the property defined
+                TeacherRemarks: "N/A"
             }));
             const rawCsv = "\ufeff" + Papa.unparse(exportRows);
             const encryptedPayload = await encryptPayloadToString(rawCsv);
@@ -1546,7 +1490,10 @@ async function startStudentAssessment() {
                     const rows = Papa.parse(fileText, { header: true, skipEmptyLines: true }).data || [];
                     parsedCount++;
                     if (rows.length > 0) allSessions.push({ fileName: file.name, rows: rows });
-                    if (parsedCount === files.length) evaluateAIStudentAudit(allSessions);
+                    if (parsedCount === files.length) {
+                        currentActiveSessions = allSessions;
+                        evaluateAIStudentAudit(allSessions);
+                    }
                 };
             });
         }
@@ -1570,208 +1517,248 @@ async function startStudentAssessment() {
             btn.className = chk.checked ? "w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-xs transition flex items-center justify-center gap-2 shadow-sm" : "w-full sm:w-auto px-6 py-3 bg-slate-300 text-slate-500 font-bold rounded-xl text-xs transition flex items-center justify-center gap-2 shadow-sm cursor-not-allowed";
         }
 
-function evaluateAIStudentAudit(sessions) {
-    currentBatchAuditData = [];
-    let studentName = "Student";
-    let studentClass = "N/A";
-    let detectedSubject = "General";
-    let totalQ = 0, totalCorrect = 0;
-    const chapterErrors = {};
-    const skillDeficits = {};
-    const skillTotalCounts = {};
-    const questionErrorCounts = {};
-    let sessionSummaries = [];
-    let previousRemarksFound = [];
-    let validAttemptsCount = 0;
-    const uniqueAssessmentIds = new Set();
-    let allAggregatedAnswers = [];
+        function evaluateAIStudentAudit(sessions, filterSubject = "ALL") {
+            currentBatchAuditData = [];
+            let studentName = "Student";
+            let studentClass = "N/A";
+            let detectedSubject = "General";
+            let totalQ = 0, totalCorrect = 0;
+            const chapterErrors = {};
+            const skillDeficits = {};
+            const skillTotalCounts = {};
+            const questionErrorCounts = {};
+            let sessionSummaries = [];
+            let previousRemarksFound = [];
+            let validAttemptsCount = 0;
+            const uniqueAssessmentIds = new Set();
+            let allAggregatedAnswers = [];
+            const uniqueSubjectsSet = new Set();
+            let studentNamesSet = new Set();
 
-    sessions.forEach(s => {
-        if (s.rows && s.rows.length > 0) {
-            s.rows = s.rows.map(row => {
-                const normalized = {};
-                for (let key in row) {
-                    normalized[key.trim().toLowerCase()] = row[key];
+            sessions.forEach(s => {
+                if (s.rows && s.rows.length > 0) {
+                    s.rows = s.rows.map(row => {
+                        const normalized = {};
+                        for (let key in row) {
+                            normalized[key.trim().toLowerCase()] = row[key];
+                        }
+                        return {
+                            StudentName: normalized['studentname'] || normalized['name'] || studentName,
+                            Class: normalized['class'] || studentClass,
+                            Subject: normalized['subject'] || detectedSubject,
+                            AssessmentID: normalized['assessmentid'] || 'ASSESS-01',
+                            Question: normalized['question'] || 'Untitled Question',
+                            Chapter: normalized['chapter'] || normalized['chap'] || 'General Chapter',
+                            Skill: normalized['skill'] || normalized['topic'] || 'Core',
+                            IsCorrect: String(normalized['iscorrect'] || '').trim().toLowerCase() === 'true',
+                            UserAnswerIndex: normalized['useranswerindex'] !== undefined && normalized['useranswerindex'] !== '' ? parseInt(normalized['useranswerindex']) : -1,
+                            CorrectOptionIndex: normalized['correctoptionindex'] !== undefined && normalized['correctoptionindex'] !== '' ? parseInt(normalized['correctoptionindex']) : 0,
+                            TimeTakenSeconds: parseInt(normalized['timetakenseconds'] || 0),
+                            ScorePercentage: parseInt(normalized['scorepercentage'] || 0),
+                            Option0: normalized['option0'] || '',
+                            Option1: normalized['option1'] || '',
+                            Option2: normalized['option2'] || '',
+                            Option3: normalized['option3'] || '',
+                            TeacherRemarks: normalized['teacherremarks'] || normalized['teachercomments'] || normalized['remarks'] || 'N/A'
+                        };
+                    });
+
+                    const fileSubj = s.rows[0].Subject;
+                    if (fileSubj && fileSubj !== "ALL") uniqueSubjectsSet.add(fileSubj);
+                    const sName = s.rows[0].StudentName;
+                    if (sName) studentNamesSet.add(sName);
+
+                    if (filterSubject !== "ALL" && fileSubj && fileSubj !== filterSubject) {
+                        return;
+                    }
+
+                    if (s.rows[0].StudentName && s.rows[0].StudentName !== "Student") studentName = s.rows[0].StudentName;
+                    if (s.rows[0].Class && s.rows[0].Class !== "N/A") studentClass = s.rows[0].Class;
+                    if (s.rows[0].Subject && s.rows[0].Subject !== "ALL") detectedSubject = s.rows[0].Subject;
+
+                    const remarksVal = s.rows[0].TeacherRemarks;
+                    if (remarksVal && remarksVal !== "N/A" && remarksVal.trim() !== "" && remarksVal !== "undefined") {
+                        previousRemarksFound.push(`File ${s.fileName}: "${remarksVal}"`);
+                    }
+
+                    const isHistoryLog = s.fileName.toLowerCase().includes('historylog') || s.fileName.toLowerCase().includes('history_log');
+                    
+                    if (!isHistoryLog) {
+                        validAttemptsCount++;
+                        const asmId = s.rows[0].AssessmentID;
+                        if (asmId) uniqueAssessmentIds.add(asmId);
+                        
+                        currentBatchAuditData.push(...s.rows);
+                        let qCount = s.rows.length;
+                        let correctCount = s.rows.filter(r => r.IsCorrect).length;
+                        
+                        totalQ += qCount;
+                        totalCorrect += correctCount;
+                        
+                        let fileTimeSec = s.rows[0].TimeTakenSeconds || 0;
+                        let sessionScore = s.rows[0].ScorePercentage || Math.round((correctCount / (qCount || 1)) * 100);
+                        
+                        sessionSummaries.push({ 
+                            fileName: s.fileName, 
+                            score: sessionScore, 
+                            timeTakenSeconds: fileTimeSec,
+                            completionMinutes: (fileTimeSec / 60).toFixed(1)
+                        });
+                    }
+
+                    s.rows.forEach(r => {
+                        allAggregatedAnswers.push(r);
+                        let qText = r.Question;
+                        if (!questionErrorCounts[qText]) {
+                            questionErrorCounts[qText] = { 
+                                totalAttempts: 0, 
+                                incorrectCount: 0, 
+                                question: qText, 
+                                chapter: r.Chapter, 
+                                skill: r.Skill, 
+                                options: [r.Option0, r.Option1, r.Option2, r.Option3], 
+                                correctIdx: r.CorrectOptionIndex,
+                                userAnswerIdx: r.UserAnswerIndex
+                            };
+                        }
+                        questionErrorCounts[qText].totalAttempts++;
+                        if (!r.IsCorrect) {
+                            questionErrorCounts[qText].incorrectCount++;
+                        }
+
+                        let rawSkill = String(r.Skill || '').trim();
+                        let rawChapter = String(r.Chapter || '').trim();
+                        let ch = /^\d+$/.test(rawChapter) ? `Chapter ${rawChapter}` : (rawChapter || 'General Chapter');
+                        let sk = rawSkill;
+                        if (!sk || /^\d+$/.test(sk) || sk.length <= 1) sk = ch;
+
+                        skillTotalCounts[sk] = (skillTotalCounts[sk] || 0) + 1;
+                        if (!r.IsCorrect) {
+                            chapterErrors[ch] = (chapterErrors[ch] || 0) + 1;
+                            skillDeficits[sk] = (skillDeficits[sk] || 0) + 1;
+                        }
+                    });
                 }
-                return {
-                    StudentName: normalized['studentname'] || normalized['name'] || studentName,
-                    Class: normalized['class'] || studentClass,
-                    Subject: normalized['subject'] || detectedSubject,
-                    AssessmentID: normalized['assessmentid'] || 'ASSESS-01',
-                    Question: normalized['question'] || 'Untitled Question',
-                    Chapter: normalized['chapter'] || normalized['chap'] || 'General Chapter',
-                    Skill: normalized['skill'] || normalized['topic'] || 'Core',
-                    IsCorrect: String(normalized['iscorrect'] || '').trim().toLowerCase() === 'true',
-                    UserAnswerIndex: normalized['useranswerindex'] !== undefined && normalized['useranswerindex'] !== '' ? parseInt(normalized['useranswerindex']) : -1,
-                    CorrectOptionIndex: normalized['correctoptionindex'] !== undefined && normalized['correctoptionindex'] !== '' ? parseInt(normalized['correctoptionindex']) : 0,
-                    TimeTakenSeconds: parseInt(normalized['timetakenseconds'] || 0),
-                    ScorePercentage: parseInt(normalized['scorepercentage'] || 0),
-                    Option0: normalized['option0'] || '',
-                    Option1: normalized['option1'] || '',
-                    Option2: normalized['option2'] || '',
-                    Option3: normalized['option3'] || '',
-                    TeacherRemarks: normalized['teacherremarks'] || normalized['teachercomments'] || normalized['remarks'] || 'N/A'
-                };
             });
 
-            if (s.rows[0].StudentName && s.rows[0].StudentName !== "Student") studentName = s.rows[0].StudentName;
-            if (s.rows[0].Class && s.rows[0].Class !== "N/A") studentClass = s.rows[0].Class;
-            if (s.rows[0].Subject && s.rows[0].Subject !== "ALL") detectedSubject = s.rows[0].Subject;
+            const toolbar = document.getElementById('multi-subject-filter-toolbar');
+            const checkboxContainer = document.getElementById('subject-filter-checkboxes');
+            const syllabusContainer = document.getElementById('subject-syllabus-container');
 
-            const remarksVal = s.rows[0].TeacherRemarks;
-            if (remarksVal && remarksVal !== "N/A" && remarksVal.trim() !== "" && remarksVal !== "undefined") {
-                previousRemarksFound.push(`File ${s.fileName}: "${remarksVal}"`);
-            }
-
-            // --- BUG FIX 1: Exclude History Log files from live attempt counts ---
-            const isHistoryLog = s.fileName.toLowerCase().includes('historylog') || s.fileName.toLowerCase().includes('history_log');
-            
-            if (!isHistoryLog) {
-                validAttemptsCount++;
-                const asmId = s.rows[0].AssessmentID;
-                if (asmId) uniqueAssessmentIds.add(asmId);
-                
-                currentBatchAuditData.push(...s.rows);
-                let qCount = s.rows.length;
-                let correctCount = s.rows.filter(r => r.IsCorrect).length;
-                
-                totalQ += qCount;
-                totalCorrect += correctCount;
-                
-                let fileTimeSec = s.rows[0].TimeTakenSeconds || 0;
-                let sessionScore = s.rows[0].ScorePercentage || Math.round((correctCount / (qCount || 1)) * 100);
-                
-                sessionSummaries.push({ 
-                    fileName: s.fileName, 
-                    score: sessionScore, 
-                    timeTakenSeconds: fileTimeSec,
-                    completionMinutes: (fileTimeSec / 60).toFixed(1)
+            if (uniqueSubjectsSet.size > 1 || studentNamesSet.size > 1) {
+                toolbar.classList.remove('hidden');
+                let cbHtml = `<label class="inline-flex items-center gap-1 text-xs font-semibold cursor-pointer"><input type="checkbox" value="ALL" ${filterSubject === 'ALL' ? 'checked' : ''} onchange="handleSubjectFilterChange('ALL')" class="w-4 h-4 text-blue-600 rounded"><span>All Subjects</span></label>`;
+                uniqueSubjectsSet.forEach(subj => {
+                    cbHtml += `<label class="inline-flex items-center gap-1 text-xs font-semibold cursor-pointer"><input type="checkbox" value="${subj}" ${filterSubject === subj ? 'checked' : ''} onchange="handleSubjectFilterChange('${subj}')" class="w-4 h-4 text-blue-600 rounded"><span>${subj}</span></label>`;
                 });
-            }
-
-            s.rows.forEach(r => {
-                allAggregatedAnswers.push(r);
-                let qText = r.Question;
-                if (!questionErrorCounts[qText]) {
-                    questionErrorCounts[qText] = { 
-                        totalAttempts: 0, 
-                        incorrectCount: 0, 
-                        question: qText, 
-                        chapter: r.Chapter, 
-                        skill: r.Skill, 
-                        options: [r.Option0, r.Option1, r.Option2, r.Option3], 
-                        correctIdx: r.CorrectOptionIndex,
-                        userAnswerIdx: r.UserAnswerIndex
-                    };
-                }
-                questionErrorCounts[qText].totalAttempts++;
-                if (!r.IsCorrect) {
-                    questionErrorCounts[qText].incorrectCount++;
-                }
-
-                let rawSkill = String(r.Skill || '').trim();
-                let rawChapter = String(r.Chapter || '').trim();
-                let ch = /^\d+$/.test(rawChapter) ? `Chapter ${rawChapter}` : (rawChapter || 'General Chapter');
-                let sk = rawSkill;
-                if (!sk || /^\d+$/.test(sk) || sk.length <= 1) sk = ch;
-
-                skillTotalCounts[sk] = (skillTotalCounts[sk] || 0) + 1;
-                if (!r.IsCorrect) {
-                    chapterErrors[ch] = (chapterErrors[ch] || 0) + 1;
-                    skillDeficits[sk] = (skillDeficits[sk] || 0) + 1;
-                }
-            });
-        }
-    });
-
-    currentAuditStudentName = studentName;
-    window.lastEvaluatedSubject = detectedSubject;
-    globalChapterErrorsData = chapterErrors;
-    globalTotalQuestionsCount = totalQ;
-    let avgScore = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
-    let totalErrors = totalQ - totalCorrect;
-    let potentialGain = totalQ > 0 ? Math.round((totalErrors / totalQ) * 100) : 0;
-    let finalAttemptCount = uniqueAssessmentIds.size > 0 ? uniqueAssessmentIds.size : (validAttemptsCount || sessions.length);
-
-    const reminderBox = document.getElementById('longitudinal-reminder-box');
-    const reminderText = document.getElementById('longitudinal-reminder-text');
-    reminderBox.classList.remove('hidden');
-    reminderText.innerHTML = previousRemarksFound.length > 0 ? `<strong>Previous Assessment History & Parent Follow-Up:</strong><br>Past discussion comments: <br><em>${previousRemarksFound.join('<br>')}</em>` : `<strong>Parent Follow-Up Reminder:</strong><br><em>No explicit previous meeting comments found in uploaded history logs.</em>`;
-
-    renderChapterAttentionMatrix(chapterErrors);
-    renderTeacherItemizedReview(questionErrorCounts);
-    renderTopicMasteryMatrix(skillTotalCounts, skillDeficits);
-
-    const auditOutputElem = document.getElementById('teacher-audit-output');
-    auditOutputElem.classList.remove('hidden');
-
-    document.getElementById('audit-student-name').innerText = `Performance Report: ${studentName}`;
-    document.getElementById('audit-student-meta').innerHTML = `<strong>Class:</strong> ${studentClass} &bull; <strong>Subject:</strong> ${detectedSubject} &bull; <strong>Files Analyzed:</strong> ${sessions.map(s => s.fileName).join(', ')}`;
-    document.getElementById('audit-attempt-count').innerText = finalAttemptCount;
-    document.getElementById('audit-avg-score').innerText = `${avgScore}%`;
-    document.getElementById('audit-potential-gain').innerText = `+${potentialGain}% Potential`;
-
-    const trendlineElem = document.getElementById('trendline-display');
-    trendlineElem.innerHTML = sessionSummaries.length > 0 ? `
-        <div class="space-y-2">
-            <div class="text-xs font-bold text-slate-700">Longitudinal Session Trajectory (${sessionSummaries.length} Attempt${sessionSummaries.length > 1 ? 's' : ''}):</div>
-            ${sessionSummaries.map((sess, idx) => `
-                <div class="flex justify-between items-center bg-slate-50 p-2 rounded border border-slate-200">
-                    <span class="font-mono text-[11px] text-slate-600">Attempt ${idx + 1} (${sess.score}%)</span>
-                    <span class="font-bold text-blue-600">${sess.completionMinutes} mins</span>
-                </div>
-            `).join('')}
-        </div>
-    ` : '<span class="text-slate-400 italic">No attempt files analyzed yet.</span>';
-
-    // --- BUG FIX 2: Per-Assessment Segregated Pacing Diagnostics ---
-    const pacingBadge = document.getElementById('pacing-badge');
-    const pacingText = document.getElementById('pacing-details-text');
-    
-    if (sessionSummaries.length > 0) {
-        pacingBadge.className = "text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full";
-        pacingBadge.innerText = "Per-Attempt Breakdown";
-        
-        pacingText.className = "text-xs text-slate-700 leading-relaxed font-medium space-y-2 bg-white p-3 rounded-lg border border-slate-200";
-        pacingText.innerHTML = sessionSummaries.map((sess, idx) => {
-            let timeVal = parseFloat(sess.completionMinutes);
-            let speedRatio = timeVal / configuredTimerMinutes;
-            let statusBadge = "";
-            let rationale = "";
-
-            if (speedRatio < 0.15) {
-                statusBadge = '<span class="text-rose-600 font-bold">⚠️ Rapid / Rushed</span>';
-                rationale = 'Completed very quickly; potential guessing or high familiarity.';
-            } else if (speedRatio < 0.6) {
-                statusBadge = '<span class="text-emerald-600 font-bold">⏱️ Comfortable Pacing</span>';
-                rationale = 'Finished comfortably within the allocated time window.';
+                checkboxContainer.innerHTML = cbHtml;
             } else {
-                statusBadge = '<span class="text-blue-600 font-bold">📖 Thorough Pacing</span>';
-                rationale = 'Utilized most of the test duration thoughtfully.';
+                toolbar.classList.add('hidden');
             }
 
-            return `
-                <div class="border-b border-slate-100 pb-1.5 last:border-none last:pb-0">
-                    <div class="flex justify-between font-semibold">
-                        <span>Attempt #${idx + 1} (${sess.completionMinutes} mins):</span>
-                        ${statusBadge}
-                    </div>
-                    <div class="text-[11px] text-slate-500 italic">${rationale}</div>
-                </div>
-            `;
-        }).join('');
-    } else {
-        pacingBadge.className = "text-[10px] font-semibold bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full";
-        pacingBadge.innerText = "Awaiting Data";
-        pacingText.innerText = `Awaiting student report logs to analyze test timing and pacing habits...`;
-    }
+            if (filterSubject !== "ALL") {
+                syllabusContainer.classList.remove('hidden');
+            } else {
+                syllabusContainer.classList.add('hidden');
+                document.getElementById('untested-syllabus-input').value = "";
+            }
 
-    const sortedGaps = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
-    document.getElementById('audit-gaps-list').innerHTML = sortedGaps.length > 0 ? sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${skillDeficits[g]} errors)</li>`).join('') : '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
-    
-    updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps);
-    auditOutputElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
+            const isCohortMode = studentNamesSet.size > 1;
+            const auditOutputElem = document.getElementById('teacher-audit-output');
+            auditOutputElem.classList.remove('hidden');
+
+            const auditTitleElem = document.getElementById('audit-student-name');
+            const scoreHistoryTitle = document.getElementById('score-header-title');
+
+            if (isCohortMode) {
+                auditTitleElem.innerText = `Class Performance`;
+                if (scoreHistoryTitle) scoreHistoryTitle.innerText = `Batch-Level Mastery Matrix`;
+                document.getElementById('summary-box-title').innerText = `Class Cohort Executive Summary`;
+            } else {
+                auditTitleElem.innerText = `Performance Report: ${studentName}`;
+                if (scoreHistoryTitle) scoreHistoryTitle.innerText = `Score Growth History`;
+                document.getElementById('summary-box-title').innerText = `Parent Report Card Summary`;
+            }
+
+            currentAuditStudentName = studentName;
+            window.lastEvaluatedSubject = detectedSubject;
+            globalChapterErrorsData = chapterErrors;
+            globalTotalQuestionsCount = totalQ;
+            let avgScore = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
+            let totalErrors = totalQ - totalCorrect;
+            let potentialGain = totalQ > 0 ? Math.round((totalErrors / totalQ) * 100) : 0;
+            let finalAttemptCount = uniqueAssessmentIds.size > 0 ? uniqueAssessmentIds.size : (validAttemptsCount || sessions.length);
+
+            const reminderBox = document.getElementById('longitudinal-reminder-box');
+            const reminderText = document.getElementById('longitudinal-reminder-text');
+            reminderBox.classList.remove('hidden');
+            reminderText.innerHTML = previousRemarksFound.length > 0 ? `<strong>Previous Assessment History & Parent Follow-Up:</strong><br>Past discussion comments: <br><em>${previousRemarksFound.join('<br>')}</em>` : `<strong>Parent Follow-Up Reminder:</strong><br><em>No explicit previous meeting comments found in uploaded history logs.</em>`;
+
+            renderChapterAttentionMatrix(chapterErrors);
+            renderTeacherItemizedReview(questionErrorCounts);
+            renderTopicMasteryMatrix(skillTotalCounts, skillDeficits);
+
+            document.getElementById('audit-student-meta').innerHTML = `<strong>Class:</strong> ${studentClass} &bull; <strong>Subject:</strong> ${detectedSubject} &bull; <strong>Files Analyzed:</strong> ${sessions.map(s => s.fileName).join(', ')}`;
+            document.getElementById('audit-attempt-count').innerText = finalAttemptCount;
+            document.getElementById('audit-avg-score').innerText = `${avgScore}%`;
+            document.getElementById('audit-potential-gain').innerText = `+${potentialGain}% Potential`;
+
+            const trendlineElem = document.getElementById('trendline-display');
+            if (isCohortMode) {
+                trendlineElem.innerHTML = `
+                    <div class="space-y-1">
+                        <div class="text-xs font-bold text-slate-700">Batch-Level Mastery Summary:</div>
+                        <p class="text-xs text-slate-600">Aggregated across ${studentNamesSet.size} student record(s) and ${uniqueSubjectsSet.size} subject(s). High mastery chapters are prioritized to save instructional time.</p>
+                    </div>
+                `;
+            } else {
+                trendlineElem.innerHTML = sessionSummaries.length > 0 ? `
+                    <div class="space-y-2">
+                        <div class="text-xs font-bold text-slate-700">Longitudinal Session Trajectory (${sessionSummaries.length} Attempt${sessionSummaries.length > 1 ? 's' : ''}):</div>
+                        ${sessionSummaries.map((sess, idx) => `
+                            <div class="flex justify-between items-center bg-slate-50 p-2 rounded border border-slate-200">
+                                <span class="font-mono text-[11px] text-slate-600">Attempt ${idx + 1} (${sess.score}%)</span>
+                                <span class="font-bold text-blue-600">${sess.completionMinutes} mins</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                ` : '<span class="text-slate-400 italic">No attempt files analyzed yet.</span>';
+            }
+
+            const pacingBadge = document.getElementById('pacing-badge');
+            const pacingText = document.getElementById('pacing-details-text');
+            if (sessionSummaries.length > 0 && !isCohortMode) {
+                pacingBadge.className = "text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full";
+                pacingBadge.innerText = "Per-Attempt Breakdown";
+                pacingText.className = "text-xs text-slate-700 leading-relaxed font-medium space-y-2 bg-white p-3 rounded-lg border border-slate-200";
+                pacingText.innerHTML = sessionSummaries.map((sess, idx) => {
+                    let timeVal = parseFloat(sess.completionMinutes);
+                    let speedRatio = timeVal / configuredTimerMinutes;
+                    let statusBadge = speedRatio < 0.15 ? '<span class="text-rose-600 font-bold">⚠️ Rapid / Rushed</span>' : (speedRatio < 0.6 ? '<span class="text-emerald-600 font-bold">⏱️ Comfortable Pacing</span>' : '<span class="text-blue-600 font-bold">📖 Thorough Pacing</span>');
+                    return `<div class="border-b border-slate-100 pb-1.5 last:border-none last:pb-0"><div class="flex justify-between font-semibold"><span>Attempt #${idx + 1} (${sess.completionMinutes} mins):</span>${statusBadge}</div></div>`;
+                }).join('');
+            } else {
+                pacingBadge.className = "text-[10px] font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full";
+                pacingBadge.innerText = "Cohort Aggregated Metrics";
+                pacingText.className = "text-xs text-slate-700 leading-relaxed font-medium bg-white p-3 rounded-lg border border-slate-200 space-y-1";
+                let avgTime = sessionSummaries.length > 0 ? (sessionSummaries.reduce((acc, s) => acc + parseFloat(s.completionMinutes), 0) / sessionSummaries.length).toFixed(1) : 0;
+                pacingText.innerHTML = `
+                    <div><strong>Class Average Completion Time:</strong> ${avgTime} mins out of ${configuredTimerMinutes} mins</div>
+                    <div><strong>Cohort Pacing Status:</strong> ${avgTime < (configuredTimerMinutes * 0.5) ? '⚠️ Group tended to finish rapidly' : '👍 Group maintained steady testing pace'}</div>
+                `;
+            }
+
+            const sortedGaps = Object.keys(skillDeficits).sort((a,b) => skillDeficits[b] - skillDeficits[a]);
+            document.getElementById('audit-gaps-list').innerHTML = sortedGaps.length > 0 ? sortedGaps.map(g => `<li><span class="font-bold">${g}</span> (${skillDeficits[g]} errors)</li>`).join('') : '<li class="text-emerald-700 font-semibold">No major skill deficits detected!</li>';
+            
+            updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps, isCohortMode);
+            auditOutputElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function handleSubjectFilterChange(subject) {
+            evaluateAIStudentAudit(currentActiveSessions, subject);
+        }
+
         function renderTopicMasteryMatrix(skillTotalCounts, skillDeficits) {
             const container = document.getElementById('topic-mastery-matrix');
             const skills = Object.keys(skillTotalCounts);
@@ -1805,7 +1792,7 @@ function evaluateAIStudentAudit(sessions) {
             }).join('');
         }
 
-  function renderTeacherItemizedReview(questionErrorCounts) {
+        function renderTeacherItemizedReview(questionErrorCounts) {
             const container = document.getElementById('teacher-itemized-review-container');
             if (!container) return;
             const showCorrect = document.getElementById('teacher-filter-correct').checked;
@@ -1837,7 +1824,7 @@ function evaluateAIStudentAudit(sessions) {
                 let badge = isMissed ? 
                     '<span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">⚠️ Unanswered</span>' : 
                     (isRepeatedIncorrect ? 
-                        `<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2 py-0.5 rounded">⚠️ Repeatedly Missed (${item.incorrectCount} times)</span>` : 
+                        `<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2 py-0.5 rounded">⚠️ Repeated Mistake (Originally identified on 2026-10-21 — Still Unresolved)</span>` : 
                         (isAllCorrect ? '<span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">✅ Consistent Correct</span>' : '<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2 py-0.5 rounded">❌ Incorrect</span>'));
 
                 return `
@@ -1853,18 +1840,117 @@ function evaluateAIStudentAudit(sessions) {
             }).join('') || '<p class="text-xs text-slate-400 italic text-center py-4">No items match the selected filter criteria.</p>';
         }
 
-        function renderChapterAttentionMatrix(chapterErrors) {
-            const sortedChapters = Object.keys(chapterErrors).sort((a,b) => chapterErrors[b] - chapterErrors[a]);
-            const chapterMatrixElem = document.getElementById('chapter-attention-matrix');
-            chapterMatrixElem.innerHTML = sortedChapters.length > 0 ? sortedChapters.map(ch => `
-                <label class="flex justify-between items-center bg-white p-3 rounded-lg border border-slate-200 text-xs cursor-pointer hover:bg-slate-50 transition">
-                    <div class="flex items-center gap-2.5">
-                        <input type="checkbox" class="chapter-selection-chk w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer" value="${ch}" checked onchange="recalculatePotentialGainAndSummaries()">
-                        <span class="font-bold text-slate-800">${ch}</span>
-                    </div>
-                    <span class="bg-rose-100 text-rose-800 font-bold px-2.5 py-1 rounded-full">${chapterErrors[ch]} error(s) flagged</span>
-                </label>
-            `).join('') : '<p class="text-xs text-emerald-700 font-semibold">No chapter errors recorded!</p>';
+function renderChapterAttentionMatrix(chapterErrors) {
+            const sortedChapters = Object.keys(chapterErrors).sort((a, b) => chapterErrors[b] - chapterErrors[a]);
+            const container = document.getElementById('chapter-attention-matrix');
+            container.innerHTML = ""; // Clear container
+
+            if (sortedChapters.length === 0) {
+                container.innerHTML = '<p class="text-xs text-emerald-700 font-semibold">No chapter errors recorded!</p>';
+                return;
+            }
+
+            sortedChapters.forEach(ch => {
+                const errorCount = chapterErrors[ch];
+                const activeWeeks = chapterTimelineMap[ch];
+
+                // Create row element safely via DOM
+                const rowDiv = document.createElement('div');
+                rowDiv.className = "chapter-row-item flex flex-col sm:flex-row justify-between items-start sm:items-center bg-white p-3 rounded-lg border border-slate-200 text-xs gap-2";
+
+                // Left side: Checkbox & Title
+                const leftDiv = document.createElement('div');
+                leftDiv.className = "flex items-center gap-2.5";
+
+                const checkbox = document.createElement('input');
+                checkbox.type = "checkbox";
+                checkbox.className = "chapter-selection-chk w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer";
+                checkbox.value = ch;
+                checkbox.checked = true;
+                checkbox.onchange = recalculatePotentialGainAndSummaries;
+
+                const titleSpan = document.createElement('span');
+                titleSpan.className = "chapter-title-span font-bold text-slate-800";
+                titleSpan.textContent = ch;
+
+                if (activeWeeks) {
+                    const badge = document.createElement('span');
+                    badge.className = "chapter-timeline-badge bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded-full ml-2";
+                    badge.textContent = `[Target: ${activeWeeks} Week${activeWeeks > 1 ? 's' : ''}]`;
+                    titleSpan.appendChild(badge);
+                }
+
+                leftDiv.appendChild(checkbox);
+                leftDiv.appendChild(titleSpan);
+
+                // Right side: Error counter & Timeline buttons
+                const rightDiv = document.createElement('div');
+                rightDiv.className = "flex items-center gap-2 flex-wrap";
+
+                const errorBadge = document.createElement('span');
+                errorBadge.className = "bg-rose-100 text-rose-800 font-bold px-2.5 py-1 rounded-full";
+                errorBadge.textContent = `${errorCount} error(s) flagged`;
+
+                const btn1Week = document.createElement('button');
+                btn1Week.type = "button";
+                btn1Week.className = "text-[10px] font-semibold bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 px-2 py-1 rounded transition";
+                btn1Week.textContent = "+ Target 1 Week";
+                btn1Week.onclick = () => appendTimelineToChapterDirect(ch, 1);
+
+                const btn2Weeks = document.createElement('button');
+                btn2Weeks.type = "button";
+                btn2Weeks.className = "text-[10px] font-semibold bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 px-2 py-1 rounded transition";
+                btn2Weeks.textContent = "+ Target 2 Weeks";
+                btn2Weeks.onclick = () => appendTimelineToChapterDirect(ch, 2);
+
+                rightDiv.appendChild(errorBadge);
+                rightDiv.appendChild(btn1Week);
+                rightDiv.appendChild(btn2Weeks);
+
+                rowDiv.appendChild(leftDiv);
+                rowDiv.appendChild(rightDiv);
+                container.appendChild(rowDiv);
+            });
+        }
+
+
+function appendTimelineToChapterDirect(chapterName, targetWeeks) {
+            if (chapterTimelineMap[chapterName] === targetWeeks) {
+                delete chapterTimelineMap[chapterName];
+            } else {
+                chapterTimelineMap[chapterName] = targetWeeks;
+            }
+            
+            const container = document.getElementById('chapter-attention-matrix');
+            if (!container) return;
+            
+            const rows = container.querySelectorAll('.chapter-row-item');
+            rows.forEach(row => {
+                const titleSpan = row.querySelector('.chapter-title-span');
+                if (titleSpan) {
+                    const fullText = titleSpan.textContent || "";
+                    const baseChapterName = fullText.split('[Target:')[0].trim();
+                    
+                    if (baseChapterName === chapterName.trim()) {
+                        let timelineBadge = row.querySelector('.chapter-timeline-badge');
+                        if (chapterTimelineMap[chapterName]) {
+                            const targetText = `[Target: ${targetWeeks} Week${targetWeeks > 1 ? 's' : ''}]`;
+                            if (timelineBadge) {
+                                timelineBadge.textContent = targetText;
+                            } else {
+                                const badge = document.createElement('span');
+                                badge.className = "chapter-timeline-badge bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded-full ml-2";
+                                badge.textContent = targetText;
+                                titleSpan.appendChild(badge);
+                            }
+                        } else {
+                            if (timelineBadge) timelineBadge.remove();
+                        }
+                    }
+                }
+            });
+            
+            recalculatePotentialGainAndSummaries();
         }
 
         function recalculatePotentialGainAndSummaries() {
@@ -1880,85 +1966,137 @@ function evaluateAIStudentAudit(sessions) {
             });
             const dynamicPotentialGain = Math.round((selectedErrorsSum / globalTotalQuestionsCount) * 100);
             document.getElementById('audit-potential-gain').innerText = `+${dynamicPotentialGain}% Potential`;
-            const primaryChapter = selectedChaptersList.length > 0 ? selectedChaptersList[0] : 'None';
+            
             const chaptersText = selectedChaptersList.length > 0 ? selectedChaptersList.slice(0, 2).join(', ') : 'None';
 
-            document.getElementById('audit-parental-strategy').innerHTML = selectedChaptersList.length > 0 ? `Focus extra revision time on selected chapters: <strong>${chaptersText}</strong>. Mastering these can boost performance by +${dynamicPotentialGain}%.` : 'No chapters selected for targeted intervention.';
-            document.getElementById('remediation-script-box').innerText = selectedChaptersList.length > 0 ? `📚 TARGETED CHAPTER PRACTICE GUIDE: ${primaryChapter}\n\n[STEP 1]: Review targeted chapter textbook notes.\n[STEP 2]: Complete focused practice exercises for ${primaryChapter}.` : '🌟 Select at least one chapter above to generate a remediation script.';
+            const untestedInput = document.getElementById('untested-syllabus-input');
+            const untestedVal = untestedInput ? untestedInput.value.trim() : "";
+
+            let combinedChaptersText = chaptersText;
+            if (untestedVal) {
+                combinedChaptersText += ` (Ongoing Classroom Pacing: ${untestedVal})`;
+            }
+
+            document.getElementById('audit-parental-strategy').innerHTML = selectedChaptersList.length > 0 ? `Focus extra revision time on selected chapters: <strong>${combinedChaptersText}</strong>. Mastering these can boost performance by +${dynamicPotentialGain}%.` : 'No chapters selected for targeted intervention.';
+            
+            let timelineScheduleText = "";
+            let remediationStepsList = "";
+            selectedChaptersList.forEach((ch, idx) => {
+                if (chapterTimelineMap[ch]) {
+                    const weeks = chapterTimelineMap[ch];
+                    timelineScheduleText += `• ${ch}: Target completion window of ${weeks} Week${weeks > 1 ? 's' : ''}\n`;
+                    remediationStepsList += `[Week 1-${weeks}]: Focused practice and concept drills for ${ch}.\n`;
+                }
+            });
+
+            if (!timelineScheduleText) {
+                timelineScheduleText = "• Standard Mastery Target for Flagged Concepts\n";
+                remediationStepsList = `[Guided Practice]: Targeted concept review and step-by-step revision.\n`;
+            }
+
+            if (untestedVal) {
+                remediationStepsList += `[Ongoing Classroom Integration]: Blend active syllabus chapters (${untestedVal}) alongside remedial practice.\n`;
+            }
+
+            document.getElementById('remediation-script-box').innerText = selectedChaptersList.length > 0 ? 
+                `📚 TARGETED REMEDIATION & STUDY SCHEDULE\n\n` +
+                (timelineScheduleText ? `🎯 Target Timeline Allocation:\n${timelineScheduleText}\n` : '') +
+                `📋 Step-by-Step Remediation Plan:\n${remediationStepsList}` : 
+                '🌟 Select at least one chapter above to generate a remediation script.';
+
+            if (window.lastAuditAvgScore !== undefined) {
+                updateDynamicAuditOutputs(window.lastAuditAvgScore, window.lastAuditStudentName, window.lastAuditStudentClass, window.lastAuditDetectedSubject, window.lastAuditSortedGaps, window.lastIsCohortMode);
+            }
         }
 
+        function updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps, isCohortMode) {
+            window.lastAuditAvgScore = avgScore;
+            window.lastAuditStudentName = studentName;
+            window.lastAuditStudentClass = studentClass;
+            window.lastAuditDetectedSubject = detectedSubject;
+            window.lastAuditSortedGaps = sortedGaps;
+            window.lastIsCohortMode = isCohortMode;
 
+            const studentNameTxt = studentName || "Student";
+            const gapCount = sortedGaps.length;
 
+            const activeTeacherId = document.getElementById('teacher-id-verify').value.trim().toUpperCase() || "TCH-ABC";
+            const currentDateStr = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 
-function updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps) {
-    recalculatePotentialGainAndSummaries();
-    const studentNameTxt = currentAuditStudentName || "Student";
-    const gapCount = sortedGaps.length;
+            const remarksTextarea = document.getElementById('teacher-comments-input');
+            if (remarksTextarea && (!remarksTextarea.value || remarksTextarea.value.includes("Evaluated & Reviewed"))) {
+                remarksTextarea.value = `Evaluated & Reviewed by Teacher ID: ${activeTeacherId} | Date: ${currentDateStr}`;
+            }
 
-    // 1. Grab the Teacher ID entered during step 2 verification and format today's date
-    const activeTeacherId = document.getElementById('teacher-id-verify').value.trim().toUpperCase() || "TCH-01";
-    const currentDateStr = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+            document.getElementById('report-gaps-count').innerText = gapCount;
+            const topGapsText = sortedGaps.length > 0 ? sortedGaps.slice(0, 2).join(', ') : 'General Concept Review';
+            
+            const untestedInput = document.getElementById('untested-syllabus-input');
+            const untestedVal = untestedInput ? untestedInput.value.trim() : "";
 
-    const remarksTextarea = document.getElementById('teacher-comments-input');
-    if (remarksTextarea) {
-        remarksTextarea.value = `Evaluated & Reviewed by Teacher ID: ${activeTeacherId} | Date: ${currentDateStr}`;
-    }
+            const ptmCallout = document.getElementById('ptm-priority-callout');
+            if (ptmCallout) {
+                if (avgScore < 60) {
+                    ptmCallout.className = "p-3 rounded-lg border text-xs font-bold flex items-center gap-2 bg-rose-50 border-rose-200 text-rose-800";
+                    ptmCallout.innerHTML = `⚠️ <strong>Recommended PTM Discussion Priority: High</strong> (Average score below 60% threshold)`;
+                    ptmCallout.classList.remove('hidden');
+                } else {
+                    ptmCallout.className = "p-3 rounded-lg border text-xs font-bold flex items-center gap-2 bg-emerald-50 border-emerald-200 text-emerald-800";
+                    ptmCallout.innerHTML = `✅ <strong>Recommended PTM Discussion Priority: Routine Progress Review</strong>`;
+                    ptmCallout.classList.remove('hidden');
+                }
+            }
 
-    // 2. Populate and unhide the Remediation Script signature footer
-    const sigFooter1 = document.getElementById('remediation-signature-footer');
-    if (sigFooter1) {
-        document.getElementById('sig-teacher-id-1').innerText = activeTeacherId;
-        document.getElementById('sig-date-1').innerText = currentDateStr;
-        sigFooter1.classList.remove('hidden');
-    }
+            const signatureBlock = `─────────────────────────────────\nEvaluated & Reviewed by Teacher ID: ${activeTeacherId} | Date: ${currentDateStr}`;
 
-    // 3. Populate and unhide the Parent Summary signature footer
-    const sigFooter2 = document.getElementById('summary-signature-footer');
-    if (sigFooter2) {
-        document.getElementById('sig-teacher-id-2').innerText = activeTeacherId;
-        document.getElementById('sig-date-2').innerText = currentDateStr;
-        sigFooter2.classList.remove('hidden');
-    }
+            if (isCohortMode) {
+                document.getElementById('parent-summary-box').innerText = 
+                    `📊 *D-Lakshya Class Cohort Executive Summary* 📊\n` +
+                    `Subject: *${detectedSubject}* | Class: *${studentClass}*\n` +
+                    `Class Average Score: *${avgScore}%*\n` +
+                    `Top Priority Group Gaps: *${topGapsText}*\n` +
+                    (untestedVal ? `Ongoing Classroom Syllabus: *${untestedVal}*\n\n` : `\n`) +
+                    `⏱️ *Cohort Pacing:* Group testing behavior evaluated.\n\n` +
+                    `💡 *Actionable Next Steps for Instruction:*\n` +
+                    `• Re-teach priority conceptual bottlenecks during upcoming lecture hours.\n` +
+                    `• Blend ongoing classroom syllabus (${untestedVal || 'Standard Pacing'}) into regular assignments.\n\n` +
+                    signatureBlock;
+            } else {
+                let progressStatus = "Building Competency 📈";
+                if (avgScore >= 85) progressStatus = "Advanced Mastery 🌟";
+                else if (avgScore >= 70) progressStatus = "Solid Foundation 👍";
+                else if (avgScore < 50) progressStatus = "Needs Closer Support ⚠️";
 
-    document.getElementById('report-gaps-count').innerText = gapCount;
-    document.getElementById('audit-parental-strategy').innerHTML = sortedGaps.length > 0 ? `Focus extra revision time on priority skill gaps: <strong>${sortedGaps.slice(0, 2).join(', ')}</strong>.` : 'No major skill gaps recorded.';
-    
-    // Determine qualitative progress status based on average score
-    let progressStatus = "Building Competency 📈";
-    if (avgScore >= 85) {
-        progressStatus = "Advanced Mastery 🌟";
-    } else if (avgScore >= 70) {
-        progressStatus = "Solid Foundation 👍";
-    } else if (avgScore < 50) {
-        progressStatus = "Needs Closer Support ⚠️";
-    }
+                let summaryTimelines = "";
+                const checkboxes = document.querySelectorAll('.chapter-selection-chk');
+                checkboxes.forEach(chk => {
+                    if (chk.checked && chapterTimelineMap[chk.value]) {
+                        const weeks = chapterTimelineMap[chk.value];
+                        summaryTimelines += `• ${chk.value}: ${weeks} Week Target\n`;
+                    }
+                });
 
-    // Extract top focus areas for the summary
-    const topGapsText = sortedGaps.length > 0 ? sortedGaps.slice(0, 2).join(', ') : 'General Concept Review';
+                document.getElementById('parent-summary-box').innerText = 
+                    `📊 *D-Lakshya Parent Report Card Summary* 📊\n` +
+                    `Student: *${studentNameTxt}* (Class ${studentClass})\n` +
+                    `Subject: *${detectedSubject}*\n` +
+                    `Overall Score: *${avgScore}%* (Status: *${progressStatus}*)\n` +
+                    `Identified Gaps: *${gapCount}* (Primary Focus: *${topGapsText}*)\n\n` +
+                    (summaryTimelines ? `📅 *Assigned Timeline Targets:*\n${summaryTimelines}\n` : '') +
+                    (untestedVal ? `🏫 *Ongoing Classroom Syllabus to Blend In:* ${untestedVal}\n\n` : '') +
+                    `⏱️ *Test Temperament & Pacing:* Completed efficiently within target testing window.\n\n` +
+                    `💡 *Targeted Action at Home:*\n` +
+                    `• **Concept Focus:** Practice foundational drills for ${topGapsText}.\n` +
+                    `• **Active Review:** Walk through missed questions step-by-step.\n\n` +
+                    signatureBlock;
+            }
 
-    // 4. Update Parent Report Card Summary box with the signature included in the text
-    document.getElementById('parent-summary-box').innerText = 
-        `📊 *D-Lakshya Parent Report Card Summary* 📊\n` +
-        `Student: *${studentNameTxt}* (Class ${studentClass})\n` +
-        `Subject: *${detectedSubject}*\n` +
-        `Overall Score: *${avgScore}%* (Status: *${progressStatus}*)\n` +
-        `Identified Gaps: *${gapCount}* (Primary Focus: *${topGapsText}*)\n\n` +
-        `⏱️ *Test Temperament & Pacing:* Completed efficiently within target testing window.\n\n` +
-        `💡 *Targeted Action at Home:*\n` +
-        `• **Concept Focus:** Practice hands-on positioning and foundational drills for ${topGapsText}.\n` +
-        `• **Active Review:** Walk through missed questions step-by-step to bridge procedural skills with real-world application.\n\n` +
-        `─────────────────────────────────\n` +
-        `Evaluated & Reviewed by Teacher ID: ${activeTeacherId} | Date: ${currentDateStr}`;
-
-    // 5. Update Personalized AI Remediation Script box to also include the signature text for copying
-    const scriptBox = document.getElementById('remediation-script-box');
-    if (scriptBox && !scriptBox.innerText.includes("Evaluated & Reviewed")) {
-        scriptBox.innerText = scriptBox.innerText.trim() + 
-            `\n\n─────────────────────────────────\n` +
-            `Evaluated & Reviewed by Teacher ID: ${activeTeacherId} | Date: ${currentDateStr}`;
-    }
-}
-
+            const scriptBox = document.getElementById('remediation-script-box');
+            if (scriptBox) {
+                let baseScriptText = scriptBox.innerText.split("─────────────────────────────────")[0].trim();
+                scriptBox.innerText = baseScriptText + "\n\n" + signatureBlock;
+            }
+        }
 
         function copyRemediationScript() {
             navigator.clipboard.writeText(document.getElementById('remediation-script-box').innerText.trim());
