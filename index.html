@@ -2009,7 +2009,7 @@ function appendTimelineToChapterDirect(chapterName, targetWeeks) {
             }
         }
 
-        function updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps, isCohortMode) {
+function updateDynamicAuditOutputs(avgScore, studentName, studentClass, detectedSubject, sortedGaps, isCohortMode) {
             window.lastAuditAvgScore = avgScore;
             window.lastAuditStudentName = studentName;
             window.lastAuditStudentClass = studentClass;
@@ -2093,7 +2093,48 @@ function appendTimelineToChapterDirect(chapterName, targetWeeks) {
 
             const scriptBox = document.getElementById('remediation-script-box');
             if (scriptBox) {
-                let baseScriptText = scriptBox.innerText.split("─────────────────────────────────")[0].trim();
+                let existingContent = scriptBox.innerText.trim();
+                let baseScriptText = "";
+
+                if (existingContent && !existingContent.includes("Upload student attempt files above")) {
+                    // Preserve custom teacher edits by extracting the text before the signature block safely
+                    let parts = existingContent.split("─────────────────────────────────");
+                    baseScriptText = parts[0].trim();
+                }
+
+                if (!baseScriptText || baseScriptText === "" || baseScriptText.startsWith("📚 TARGETED REMEDIATION")) {
+                    // Re-generate fresh if empty or using default header
+                    let selectedChaptersList = [];
+                    document.querySelectorAll('.chapter-selection-chk').forEach(chk => {
+                        if (chk.checked) selectedChaptersList.push(chk.value);
+                    });
+
+                    let timelineScheduleText = "";
+                    let remediationStepsList = "";
+                    selectedChaptersList.forEach((ch) => {
+                        if (chapterTimelineMap[ch]) {
+                            const weeks = chapterTimelineMap[ch];
+                            timelineScheduleText += `• ${ch}: Target completion window of ${weeks} Week${weeks > 1 ? 's' : ''}\n`;
+                            remediationStepsList += `[Week 1-${weeks}]: Focused practice and concept drills for ${ch}.\n`;
+                        }
+                    });
+
+                    if (!timelineScheduleText) {
+                        timelineScheduleText = "• Standard Mastery Target for Flagged Concepts\n";
+                        remediationStepsList = `[Guided Practice]: Targeted concept review and step-by-step revision.\n`;
+                    }
+
+                    if (untestedVal) {
+                        remediationStepsList += `[Ongoing Classroom Integration]: Blend active syllabus chapters (${untestedVal}) alongside remedial practice.\n`;
+                    }
+
+                    baseScriptText = selectedChaptersList.length > 0 ? 
+                        `📚 TARGETED REMEDIATION & STUDY SCHEDULE\n\n` +
+                        (timelineScheduleText ? `🎯 Target Timeline Allocation:\n${timelineScheduleText}\n` : '') +
+                        `📋 Step-by-Step Remediation Plan:\n${remediationStepsList}` : 
+                        '🌟 Select at least one chapter above to generate a remediation script.';
+                }
+
                 scriptBox.innerText = baseScriptText + "\n\n" + signatureBlock;
             }
         }
